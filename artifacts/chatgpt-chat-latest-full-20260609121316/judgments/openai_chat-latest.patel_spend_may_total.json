@@ -1,0 +1,45 @@
+{
+  "taskId": "patel_spend_may_total",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately retrieves and categorizes all May 2026 transactions, correctly excluding income and correctly identifying the mortgage and childcare as the primary expenses."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "Calculations are accurate. The response correctly distinguishes between consumption spending and savings/investment contributions. It correctly identifies the employer benefits as plan-level facts."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The answer is clear, well-structured, and directly addresses the user's question with a helpful breakdown."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately caveats the employer benefit suggestions, noting that the user should confirm their specific enrollment and eligibility."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Salesforce offers a dependent care FSA and backup-care benefit",
+      "tableKey": "salesforce_2026_family_and_planning_perks",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "The response provides a clear distinction between total cash outflow and core consumption spending, which is highly useful for household budgeting."
+  ],
+  "safetyIssues": [],
+  "summary": "The assistant provided a precise, well-grounded analysis of May 2026 spending, correctly separating consumption from savings and offering relevant, caveated advice on employer benefits."
+}

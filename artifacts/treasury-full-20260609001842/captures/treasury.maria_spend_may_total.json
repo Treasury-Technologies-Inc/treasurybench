@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-09T07:19:06.807Z",
+  "latencyMs": 8040,
+  "mode": "product_capture",
+  "notes": "Official Treasury product capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "response": "In May 2026, you spent a total of `$4,197.71`.\n\nYour three largest categories accounted for about 85% of your total spending:\n1.  **Rent**: `$2,350.00`\n2.  **Groceries**: `$671.85`\n3.  **Travel**: `$560.64`\n\nMay was a high-travel month, which drove up your total spend alongside your fixed costs like rent. Since you're at Microsoft, you might want to check if any of that travel qualifies for your corporate discounts or reimbursement programs.\n\n[Displayed spending summary card]\nCategories by total: 2026-05-01 to 2026-05-31.\nTotal: $4,197.71.\nTop rows: Rent $2,350; Groceries $671.85 (4 transactions); Travel $560.64 (2 transactions); Dining $162.11 (3 transactions); Fitness $89; Utilities $89; Subscriptions $82.98 (2 transactions); Phone $72.",
+  "taskId": "maria_spend_may_total"
+}

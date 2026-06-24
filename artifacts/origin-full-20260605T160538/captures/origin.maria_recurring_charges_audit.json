@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T20:12:54.261Z",
+  "latencyMs": 35158,
+  "mode": "product_capture",
+  "notes": "Official Origin product capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "origin",
+  "response": "Your recurring monthly charges for May reached $360.78 across your professional software, fitness, and connectivity services, representing a committed investment in your digital tools and wellness routine. Based on your connected Chase and Microsoft accounts, your spending patterns show a clear distinction between lifestyle subscriptions and essential service bills, with your housing cost remaining your most significant fixed expense.\nTrue subscriptions, fitness, and software\nThese charges relate to your lifestyle, professional design tools, and wellness memberships. Your monthly total for this bucket is $199.78.\nAdobe: $59.99 (Software subscription for your professional toolset)\nClassPass: $89.00 (Fitness and wellness membership)\nLyft: $27.80 (Recurring transportation pass or subscription)\nNetflix: $22.99 (Entertainment and streaming service)\nPhone and internet utility bills\nThese are your recurring communication and connectivity costs. Your monthly total for this bucket is $161.00.\nAT&T Wireless: $72.00 (Monthly mobile phone service)\nXfinity: $89.00 (Monthly internet utility)\nMonthly rent\nI also noted your primary housing payment to Cascade Apartments for $2,350.00, which was processed at the beginning of the month. As you requested, I have excluded this figure from the software and utility bucket totals above to give you a clearer view of your discretionary recurring outflows.\nWould you like to see how these recurring costs compare to your overall discretionary spending in other categories like dining or shopping? 💪 📈\n\nResults aren't guaranteed. See disclosures.",
+  "taskId": "maria_recurring_charges_audit"
+}

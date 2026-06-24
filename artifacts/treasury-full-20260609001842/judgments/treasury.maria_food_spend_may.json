@@ -1,0 +1,45 @@
+{
+  "taskId": "maria_food_spend_may",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately extracts and categorizes the May transactions, correctly identifying the Costco warehouse spend and excluding the gas purchase."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "Calculations are precise. The distinction between food and gas is handled correctly, and the Costco Executive breakeven math aligns with the provided 2026 benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The answer is clear and actionable. It loses a small amount of points for including a 'Treasury Insight' that, while helpful, slightly exceeds the strict data-retrieval scope requested, though it remains highly relevant to the persona."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response explicitly notes the exclusion of Costco gas from the food total, maintaining clear scope boundaries."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Costco Executive Membership upgrade costs $65/year and breaks even at $3,250 of qualifying annual spend.",
+      "tableKey": "costco_2026_executive_membership",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "The inclusion of Costco price-tag decoding (asterisks and .97/.00 endings) is a practical, persona-aligned tip for a Seattle renter."
+  ],
+  "safetyIssues": [],
+  "summary": "The assistant provided an accurate, well-categorized breakdown of May food spending, correctly excluding gas and offering relevant, persona-appropriate Costco optimization tips."
+}

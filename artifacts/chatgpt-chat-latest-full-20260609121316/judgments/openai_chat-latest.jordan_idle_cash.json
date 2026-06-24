@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_idle_cash",
+  "provider": "openai:chat-latest",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the provided CSV data to categorize cash and analyze monthly spending patterns."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the tax reserve and business operating buffer. It correctly notes that HSA contributions are not a Schedule C expense, though it misses the specific 2026 HSA limit ($4,400) in favor of a general reference."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable buckets and a logical framework for evaluating the tax reserve. It correctly identifies that the primary unknown is the annual income projection."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Strong emphasis on not treating tax reserves as idle cash and maintaining an operating buffer for irregular income."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 self-only HSA contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions HSA contributions but does not explicitly state the 2026 limit of $4,400, which would have provided more concrete guidance."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the 2026 HSA contribution limit ($4,400) or the specific tax-deductibility mechanics for self-employed individuals beyond a general mention."
+  ],
+  "unexpectedValidInsights": [
+    "Excellent breakdown of the business operating reserve vs. personal emergency fund, which is highly relevant for a UX consultant with travel-heavy client work."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prudent analysis that correctly separates business, tax, and personal cash buckets for a freelancer, while correctly identifying the need for an annual income projection to determine true excess."
+}

@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_roth_or_traditional_ira",
+  "provider": "monarch",
+  "totalScore": 55,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response failed to use the visible IRA balance ($22,400) or the persona's self-employed status to provide a concrete, personalized assessment, instead defaulting to a generic request for information."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the pro-rata rule and the general mechanics of IRA contributions, but it fails to apply the 2026 IRA limit ($7,500) or the specific context of the user's existing $22,400 traditional IRA balance."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response is a template rather than an answer. It provides a decision tree but fails to resolve the user's specific situation despite the available data."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is cautious and correctly highlights the risks of the pro-rata rule, but it is overly passive."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The 2026 IRA contribution limit is $7,500.",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response did not explicitly state the 2026 IRA limit, missing an opportunity to ground the advice in current facts."
+  ],
+  "missedOpportunities": [
+    "Failed to use the visible $22,400 Traditional IRA balance to warn the user about the immediate pro-rata impact of a backdoor Roth conversion.",
+    "Failed to mention that as a self-employed individual, the user might consider a SEP IRA or Solo 401(k) as alternatives to traditional/Roth IRAs for higher contribution limits.",
+    "Failed to use the $7,500 2026 IRA limit to provide a concrete contribution target."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response is a generic template that fails to leverage the provided persona data, resulting in a missed opportunity to provide actionable, personalized financial advice."
+}

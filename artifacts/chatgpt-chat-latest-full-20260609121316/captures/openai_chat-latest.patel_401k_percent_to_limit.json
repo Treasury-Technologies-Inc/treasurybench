@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:19:07.167Z",
+  "latencyMs": 5310,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "openai:chat-latest",
+  "response": "Assuming the 2026 employee 401(k) elective deferral limit is $24,000 and neither of you qualifies for age-50+ catch-up contributions:\n\n- Priya (Salesforce)\n  - Gross pay: $8,750 semi-monthly × 24 pay periods = $210,000/year\n  - Percentage needed to contribute $24,000:\n    - $24,000 ÷ $210,000 = 11.43%\n  - Current contribution rate: 8%\n  - Current annual deferral: about $16,800\n  - Increase needed: about $7,200/year, or roughly +3.4 percentage points (from 8% to about 11.5%)\n\n- Daniel (UCHealth)\n  - Gross pay: $5,000 semi-monthly × 24 pay periods = $120,000/year\n  - Percentage needed to contribute $24,000:\n    - $24,000 ÷ $120,000 = 20.0%\n  - Current contribution rate: 6%\n  - Current annual deferral: about $7,200\n  - Increase needed: about $16,800/year, or +14 percentage points (from 6% to 20%)\n\nSummary:\n- Priya: approximately 11.5% of pay\n- Daniel: 20% of pay\n\nA few practical notes:\n- Payroll systems often require whole-number percentages, so Priya would likely choose either 11% (slightly under the limit) or 12% (likely reaches the limit before year-end).\n- If either employer provides a matching contribution, that match does not count toward the employee elective deferral limit.\n- Because your stated priority is protecting family cash flow first and you have significant daycare costs (~$1,870/month between daycare and backup care), it may make sense to confirm emergency-fund targets before increasing contributions all the way to the annual maximum.\n\nIf you'd like, I can also estimate the federal and Colorado tax savings from increasing each contribution rate to the maximum.",
+  "taskId": "patel_401k_percent_to_limit",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1807,
+      "outputTokens": 616,
+      "totalTokens": 2423,
+      "reasoningTokens": 192,
+      "cachedInputTokens": 1664
+    }
+  }
+}

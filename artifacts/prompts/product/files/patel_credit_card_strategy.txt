@@ -1,0 +1,1 @@
+Given our current cards and May spending, which card should we use for groceries, dining, daycare, Costco, and utilities?

@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_401k_percent_to_limit",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response fails to use the visible salary data ($2,500 semi-monthly = $60,000 annual) to provide a concrete calculation for Maria, despite having all necessary inputs."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Correctly identifies the 2026 401(k) limit and accurately describes the mechanics of Microsoft's 50% match and the risk of front-loading without a true-up."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response provides a framework but fails to perform the specific math for Maria (e.g., calculating that 8% of $60k is $4,800, which is well below the $24,500 limit)."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good warnings about front-loading and the need to verify plan-specific true-up provisions."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The 2026 401(k) employee elective deferral limit is $24,500.",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft matches employee 401(k) contributions at 50% up to the IRS elective deferral limit.",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to calculate Maria's current annual contribution ($4,800) against the $24,500 limit.",
+    "Failed to explicitly state that Maria is currently contributing 8% ($4,800/year) and needs to increase this significantly to hit the $24,500 limit.",
+    "Did not calculate the specific percentage required to hit the limit (approx 40.8% of $60k)."
+  ],
+  "unexpectedValidInsights": [
+    "Provided a clear, actionable decision framework for balancing match capture vs. limit hitting."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate tax and plan-level information but misses the opportunity to perform the specific math for Maria's situation, leaving the calculation to the user."
+}

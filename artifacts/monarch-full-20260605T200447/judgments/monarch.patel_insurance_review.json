@@ -1,0 +1,43 @@
+{
+  "taskId": "patel_insurance_review",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response acknowledges the user's situation but fails to use any of the specific visible data (e.g., current insurance premiums, mortgage balance, or employer benefits) to provide a tailored assessment."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice provided is factually sound and aligns with general insurance principles. It avoids making incorrect claims about specific employer benefits."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response is generic. It fails to leverage the provided persona data (e.g., Salesforce/UCHealth benefits) to offer concrete, actionable next steps, instead asking the user to provide information that is already in the system."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding plan-level benefits and the need for individual verification."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response is entirely generic and does not assert specific external facts that require verification against the locked-fact table."
+  ],
+  "missedOpportunities": [
+    "Failed to reference the user's existing State Farm home/auto insurance payments to suggest a review of current liability limits.",
+    "Failed to mention the Salesforce/UCHealth employer-provided benefits (like group life/disability) which are explicitly in the persona memory.",
+    "Failed to use the mortgage balance ($462,000) to provide a concrete example of life insurance coverage needs."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides sound, safe, but overly generic insurance advice that ignores the specific financial data and employer benefits available in the user's profile."
+}

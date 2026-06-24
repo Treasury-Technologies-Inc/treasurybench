@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:23:01.373Z",
+  "latencyMs": 7202,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the information available, the key fact is that you already have a Traditional IRA worth about $22,400 at Vanguard.\n\nThat makes a backdoor Roth IRA potentially problematic because of the IRS pro-rata rule.\n\nWhat I would prioritize\n\n1. If your income is high enough that you cannot directly contribute to a Roth IRA:\n- A backdoor Roth is usually the standard workaround.\n- However, with a $22,400 Traditional IRA balance, a conversion would not be tax-free.\n- Example: if you made a new nondeductible IRA contribution and converted it while still holding the $22,400 Traditional IRA, most of the conversion would be treated as taxable under the pro-rata calculation.\n- Before using a backdoor Roth, you would generally want a strategy to remove the pre-tax IRA balance from the pro-rata calculation (for example, rolling eligible pre-tax IRA assets into a solo 401(k), if you establish one and the plan accepts rollovers).\n\n2. If your income allows a direct Roth IRA contribution:\n- A direct Roth contribution is probably the cleanest option.\n- You have irregular self-employment income, no employer plan, and substantial tax-reserve savings already set aside.\n- Roth contributions create future tax-free growth and avoid future required minimum distributions during your lifetime.\n\n3. If your income is high and you expect a large current-year tax bill:\n- A deductible Traditional IRA contribution may be attractive because you do not have an employer retirement plan.\n- Self-employed individuals without workplace retirement coverage can often deduct Traditional IRA contributions subject to the IRS rules in effect for the year.\n- The value of that deduction depends on your marginal tax rate. For example:\n  - At a 22% federal marginal rate, a $7,000 deductible contribution could reduce federal income tax by about $1,540.\n  - At a 24% rate, the reduction would be about $1,680.\n- Texas has no state income tax, so there is no state deduction benefit to consider.\n\nWhat I would need to know to give a firm recommendation\n\n- Your expected 2026 net Schedule C profit (after business expenses).\n- Whether the $22,400 Vanguard Traditional IRA consists of pre-tax deductible contributions, rollover money, nondeductible basis, or a mix.\n- Whether you already contribute to or are willing to open a solo 401(k).\n\nA potentially higher-value move\n\nGiven your self-employment status, uneven income, and preference for separating tax and business systems, a solo 401(k) may deserve attention before deciding on the IRA:\n\n- It can allow much larger retirement contributions than an IRA.\n- It may create meaningful current-year tax deductions.\n- If structured properly, it can potentially accept a rollover of your pre-tax Traditional IRA assets, which can clear the way for future backdoor Roth contributions without the pro-rata problem.\n\nWith the information available today, my tentative ranking would be:\n\n- If eligible for direct Roth contributions: Roth IRA.\n- If not eligible and no solo 401(k) yet: deductible Traditional IRA is often cleaner than a backdoor Roth because of your existing $22,400 Traditional IRA balance.\n- If you are willing to establish a solo 401(k) and can roll the Traditional IRA into it: then backdoor Roth becomes much more attractive.\n\nIf you can share your expected 2026 net business income, I can estimate whether direct Roth eligibility is likely and compare the tax savings of Traditional versus Roth contributions for your situation.",
+  "taskId": "jordan_roth_or_traditional_ira",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1462,
+      "outputTokens": 762,
+      "totalTokens": 2224,
+      "reasoningTokens": 0,
+      "cachedInputTokens": 1152
+    }
+  }
+}

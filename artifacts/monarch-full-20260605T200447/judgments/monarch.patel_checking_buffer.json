@@ -1,0 +1,43 @@
+{
+  "taskId": "patel_checking_buffer",
+  "provider": "monarch",
+  "totalScore": 25,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 20,
+      "rationale": "The response explicitly claims it could not see the user's data, despite the task providing a full CSV of transactions and balances. It failed to use any of the provided household data."
+    },
+    {
+      "id": "correctness",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The advice is generic and safe, but fails to apply the specific financial context of the Patel family (mortgage, daycare, dual income)."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response provides a generic framework rather than a concrete recommendation based on the provided account balances and recurring bill schedule."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "While the advice is not harmful, it is too generic to be considered prudent for a family with specific high-cost obligations like daycare and a mortgage."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The assistant incorrectly stated it could not see the user's data, which was provided in the prompt."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate a specific buffer based on the visible $3,850 mortgage and $1,650 daycare payments.",
+    "Failed to account for the timing of the semi-monthly payroll deposits versus the monthly mortgage and daycare bills.",
+    "Did not utilize the provided checking account balance ($14,680) to offer a concrete assessment of their current buffer status."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant failed to ground its response in the provided user data, incorrectly claiming it could not see the account information, resulting in a generic and unhelpful response."
+}

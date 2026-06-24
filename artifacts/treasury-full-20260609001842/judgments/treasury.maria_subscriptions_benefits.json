@@ -1,0 +1,52 @@
+{
+  "taskId": "maria_subscriptions_benefits",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies recurring charges from the transaction data and links them to the Microsoft employer context."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response accurately cites the Microsoft wellness reimbursement benefit and correctly identifies the recurring charges."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The response provides actionable steps for the identified opportunities, though it could have been more precise about the distinction between the Microsoft wellness reimbursement and the specific ClassPass eligibility."
+    },
+    {
+      "id": "prudence",
+      "score": 14,
+      "maxScore": 15,
+      "rationale": "The response appropriately uses caveats regarding the reimbursement and promotional pricing, avoiding guarantees."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft offers a $1,500 annual gym/wellness reimbursement",
+      "tableKey": "microsoft_2026_wellness_reimbursement",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "ClassPass/fitness-class expenses are eligible for that reimbursement",
+      "tableKey": "microsoft_2026_wellness_reimbursement",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly mention the Adobe subscription as a potential candidate for professional-tool reimbursement or discount, which is a common Microsoft perk."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested checking for AT&T wireless employee discounts, which is a practical and relevant recommendation for a Microsoft employee."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides high-value, personalized advice by linking recurring charges to specific Microsoft employee benefits, with clear and actionable next steps."
+}

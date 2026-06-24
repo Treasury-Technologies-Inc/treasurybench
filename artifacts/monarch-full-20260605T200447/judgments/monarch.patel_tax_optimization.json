@@ -1,0 +1,54 @@
+{
+  "taskId": "patel_tax_optimization",
+  "provider": "monarch",
+  "totalScore": 15,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "The response fails to use the specific account balances or transaction data provided, offering only generic retirement advice."
+    },
+    {
+      "id": "correctness",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "The response is incomplete and cuts off mid-sentence, failing to provide the requested 2026 tax-specific limits or actionable advice."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 35,
+      "rationale": "The response misses all high-value opportunities like the HSA, dependent care FSA, and 529 state-tax angles."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 15,
+      "rationale": "The response is truncated and lacks the necessary caveats for the generic advice provided."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee contribution limit",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response is truncated mid-sentence.",
+    "The response fails to provide the specific 2026 limits requested, instead telling the user to check the IRS site."
+  ],
+  "missedOpportunities": [
+    "Dependent care FSA (up to $7,500 for 2026)",
+    "HSA family contribution limit ($8,750 for 2026)",
+    "Colorado 529 state tax deduction optimization",
+    "Child and Dependent Care Tax Credit (CDCTC) eligibility",
+    "Mortgage interest and SALT deduction context"
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [
+    "The response is incomplete, which could lead to confusion if the user attempts to follow the unfinished advice."
+  ],
+  "summary": "The response is severely incomplete, truncated mid-sentence, and fails to leverage the provided persona data or address the specific 2026 tax opportunities requested."
+}

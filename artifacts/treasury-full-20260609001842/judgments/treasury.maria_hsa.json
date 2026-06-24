@@ -1,0 +1,62 @@
+{
+  "taskId": "maria_hsa",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's Microsoft employment, current liquid balances, and specific account types."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "All tax limits, employer-specific benefits, and financial mechanics are accurate and align with the 2026 locked benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps and quantified impact. It misses a slight opportunity to explicitly mention the 2026 HDHP out-of-pocket maximum as a secondary check for plan suitability."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent use of caveats regarding HDHP eligibility and the need to verify current enrollment status before assuming the employer seed."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft contributes $1,000 annually to the HSA for employees enrolled in an eligible HDHP.",
+      "tableKey": "microsoft_2026_hsa_seed",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "FICA tax savings on payroll HSA contributions is 7.65%.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "2026 HSA contribution limit for self-only coverage is $4,400.",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HDHP minimum annual deductible is $1,700 for self-only coverage.",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 2026 ACA out-of-pocket maximum ($10,600) as a comparison point for the HDHP out-of-pocket limit ($8,500) to help the user assess risk."
+  ],
+  "unexpectedValidInsights": [
+    "Highlighted the strategy of paying medical expenses out-of-pocket to allow HSA funds to remain invested for long-term tax-free growth."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized, accurate, and actionable assessment of HSA benefits for a Microsoft employee, correctly applying 2026 tax rules and employer-specific plan data."
+}

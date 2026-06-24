@@ -1,0 +1,46 @@
+{
+  "taskId": "maria_rsu_tax_withholding",
+  "provider": "monarch",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the $42,000 RSU vest amount and correctly identifies the Microsoft employment context. It misses an opportunity to link the advice to the user's specific cash flow (e.g., the $18,450 checking balance) as a buffer for potential tax shortfalls."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Tax mechanics and withholding logic are accurate for 2026. The distinction between supplemental withholding and marginal tax rates is well-explained. The trading window and insider trading caveats are appropriate."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The checklist format is actionable and clear. It provides specific steps for record-keeping and tax verification. It could have been improved by explicitly suggesting a review of the Microsoft Prime portal for specific RSU management resources."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response is highly prudent, emphasizing that withholding is not final tax, advising on the importance of cost basis tracking, and correctly caveating the need for compliance approval before trading."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The flat federal withholding rate on supplemental wages is 22% on amounts up to $1,000,000.",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly reference the user's $18,450 cash buffer as a resource for covering potential tax shortfalls.",
+    "Could have suggested checking the Microsoft Prime portal specifically for RSU-related tax documents or trading policy links."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "A highly practical, tax-aware, and compliant guide for managing a Microsoft RSU vest, correctly identifying the risks of supplemental withholding and the necessity of checking insider trading policies."
+}

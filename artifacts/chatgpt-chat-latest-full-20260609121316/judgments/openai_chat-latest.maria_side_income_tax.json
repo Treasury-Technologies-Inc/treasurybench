@@ -1,0 +1,50 @@
+{
+  "taskId": "maria_side_income_tax",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the specific freelance transaction amount, the user's employer, and the current account balances to provide tailored advice."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The tax math and self-employment tax mechanics are accurate and align with the 2026 benchmark facts. The advice on estimated taxes and safe harbor is correct."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps. It could have been slightly more explicit about the specific safe-harbor threshold ($1,000) as a concrete trigger for estimated payments."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding business expenses, the variability of tax rates, and the option to adjust W-4 withholding as a simpler alternative to quarterly payments."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employment tax is 15.3% on net earnings (12.4% Social Security + 2.9% Medicare)",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax applies to roughly 92.35% of net self-employment earnings",
+      "tableKey": "se_tax_2026_net_earnings_base",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the $1,000 underpayment penalty threshold as a clear benchmark for when estimated payments become mandatory."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, personalized, and prudent tax advice grounded in the user's specific freelance income and financial profile."
+}

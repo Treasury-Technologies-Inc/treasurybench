@@ -1,0 +1,47 @@
+{
+  "taskId": "maria_mfte_eligibility_check",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses Maria's specific rent ($2,350), income sources (freelance, RSU, base pay), and household status to tailor the advice."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The explanation of MFTE/MHA programs and the distinction between gross income and take-home pay is accurate. The savings estimates are framed conservatively."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable workflow. The inclusion of specific search strategies and the 'promotion rule' caveat adds significant value."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately caveats that eligibility is not guaranteed and emphasizes the need to verify current AMI tables."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Seattle MFTE and MHA are the primary programs for income-restricted housing in market-rate buildings.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the Seattle Office of Housing as the authority for AMI limits, which is the standard practice for these programs."
+  ],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "The inclusion of the 'Promotion Rule' (that income increases after move-in generally do not trigger immediate disqualification) is a high-value, expert-level insight for a renter."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly personalized, actionable, and prudent guide to checking MFTE/MHA eligibility, correctly grounding the advice in the user's specific financial data and Seattle's housing landscape."
+}

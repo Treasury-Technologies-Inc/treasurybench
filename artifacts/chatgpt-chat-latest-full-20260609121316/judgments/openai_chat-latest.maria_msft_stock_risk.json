@@ -1,0 +1,49 @@
+{
+  "taskId": "maria_msft_stock_risk",
+  "provider": "openai:chat-latest",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the RSU vest amount, employment context, and account balances. It fails to explicitly avoid inferring Microsoft stock holdings from the Robinhood account balance, treating the account as if it were a single-stock concentration risk without confirming the actual holdings."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Tax mechanics regarding RSU vesting are accurate. The response correctly identifies the RSU vest as ordinary income and notes the withholding process. It avoids stale IRS limits."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable framework for managing the RSU vest. It misses the opportunity to explicitly mention the Microsoft-specific 401(k) match mechanics (50% match) or the Mega Backdoor Roth potential, which are high-leverage plays for this persona."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Includes good caveats about concentration risk and tax withholding. It lacks a specific warning about trading windows or insider trading restrictions, which are critical for a Microsoft employee."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "RSUs are generally taxed as ordinary wage income at vesting",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not mention the Microsoft-specific 401(k) match (50% up to the IRS limit) or the Mega Backdoor Roth (after-tax contributions/in-plan conversions) as a way to deploy cash flow.",
+    "Failed to mention the Microsoft ESPP (10% discount) as a potential, albeit concentrated, investment vehicle.",
+    "Did not explicitly warn about insider trading windows or blackout periods for selling MSFT stock."
+  ],
+  "unexpectedValidInsights": [
+    "The 'If I had $42,000 cash today, would I choose to buy Microsoft stock?' mental model is an excellent, actionable heuristic for concentration risk."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, grounded framework for managing RSU concentration risk but misses specific high-leverage Microsoft-plan opportunities and fails to address trading-window restrictions."
+}

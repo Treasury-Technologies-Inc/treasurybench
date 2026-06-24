@@ -1,0 +1,64 @@
+{
+  "taskId": "maria_401k_percent_to_limit",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly uses the user's $2,500 semi-monthly gross pay and 8% contribution rate. It correctly identifies the employer as Microsoft and references the correct plan-level match and Mega Backdoor Roth features."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The math for the 2026 limit ($24,500) and the contribution percentage is accurate. The plan-level facts regarding Microsoft's match and Mega Backdoor Roth are correct per the locked facts. The response incorrectly implies the user is currently on pace for the limit, which is a minor logic error."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable percentage (41%) and specific next steps. It effectively explains the match and the Mega Backdoor Roth strategy."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response includes good caveats about bonus/RSU impacts and the true-up provision. It correctly advises checking Fidelity NetBenefits."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft matches 50% of employee 401(k) contributions up to the IRS limit",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft 401(k) plan permits after-tax contributions up to the section 415(c) limit and supports automatic in-plan Roth conversions",
+      "tableKey": "microsoft_2026_mega_backdoor_roth",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 section 415(c) defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response assumes the user's base salary is $60,000 based on two paychecks, but does not explicitly account for the potential impact of the $42,000 RSU vest on total income or tax planning."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly calculated the dollar-amount gap remaining for the rest of the year (June-Dec) rather than just the annual percentage."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the Microsoft 'true-up' provision as a relevant factor for high-contribution strategies."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, actionable, and well-grounded advice for maximizing 401(k) contributions at Microsoft, correctly applying 2026 IRS limits and plan-specific features."
+}

@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_employer_family_benefits",
+  "provider": "monarch",
+  "totalScore": 45,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response fails to use the specific persona data (Salesforce/UCHealth benefits) and ignores the visible transaction data (e.g., daycare, HSA contributions) to provide a personalized analysis."
+    },
+    {
+      "id": "correctness",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response cites a stale $5,000 dependent care FSA limit instead of the 2026 $7,500 limit."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 35,
+      "rationale": "The advice is generic and lacks the high-leverage personalized play expected for this persona, such as specifically referencing the Salesforce backup care or HSA seed."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response correctly distinguishes between plan-level availability and user-specific enrollment."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 dependent care FSA limit is $5,000",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response uses the stale $5,000 dependent care FSA limit instead of the 2026 $7,500 limit."
+  ],
+  "missedOpportunities": [
+    "Failed to mention Salesforce-specific benefits like the $750 HSA seed, backup care, or wellness reimbursement.",
+    "Failed to use the actual daycare transaction data to calculate potential tax savings via the Dependent Care FSA.",
+    "Failed to reference the UCHealth group life/disability benefits."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides generic, stale advice that fails to leverage the specific employer and transaction data provided in the persona."
+}

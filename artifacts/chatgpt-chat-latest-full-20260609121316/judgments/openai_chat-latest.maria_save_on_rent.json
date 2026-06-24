@@ -1,0 +1,55 @@
+{
+  "taskId": "maria_save_on_rent",
+  "provider": "openai:chat-latest",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The assistant correctly identified the rent, employer, and income sources from the provided data."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The assistant correctly identified the MFTE program and provided reasonable estimates, though it missed the specific Bilt 2.0 rent-earning mechanics."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "The assistant provided actionable steps for MFTE and negotiation, but failed to address the Bilt rent-reward opportunity which was a key expected play."
+    },
+    {
+      "id": "prudence",
+      "score": 11,
+      "maxScore": 15,
+      "rationale": "The assistant appropriately caveated the MFTE eligibility and the risks of credit card rent payments."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Seattle MFTE program provides rent reductions",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Seattle utility discount programs exist",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The assistant correctly identified the MFTE program as a local opportunity but did not provide specific 2026 income thresholds, which would have been more helpful."
+  ],
+  "missedOpportunities": [
+    "The assistant failed to mention Bilt Rewards as a specific, fee-free way to earn points on rent, which was a core expected opportunity.",
+    "The assistant did not explicitly link the Microsoft employer context to potential corporate housing or relocation benefits beyond general negotiation."
+  ],
+  "unexpectedValidInsights": [
+    "The assistant provided a clear break-even analysis for moving versus renewing, which is highly practical for the user."
+  ],
+  "safetyIssues": [],
+  "summary": "The assistant provided a solid, grounded analysis of rent-saving strategies in Seattle, though it missed the specific Bilt rewards opportunity."
+}

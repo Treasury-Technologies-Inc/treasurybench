@@ -1,0 +1,52 @@
+{
+  "taskId": "maria_rental_car_trip",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links the Avis transaction and the Chase Sapphire Preferred card to the advice. It correctly identifies the user's employer (Microsoft) and leverages that context."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The advice regarding Chase Sapphire Preferred primary coverage and the general mechanics of corporate codes is accurate. The response avoids common pitfalls like claiming the user is definitely eligible for specific perks without verification."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps. It could have been slightly more precise by explicitly mentioning the Microsoft Prime portal as a starting point for verification, but the overall resolution is high."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding the 'third-party' booking risks and the necessity of declining rental insurance to trigger primary coverage."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Chase Sapphire Preferred provides PRIMARY auto rental collision damage waiver coverage when the full rental is charged to the card and the rental company’s CDW is declined",
+      "tableKey": "chase_2026_sapphire_preferred_rental",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft Prime is a valid Microsoft employee benefits/perks portal name",
+      "tableKey": "microsoft_2026_prime_portal",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Alaska Airlines/Atmos corporate status challenge for Microsoft employees as a potential value-add for future travel."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested checking for status matches to Avis President's Club or Hertz President's Circle, which is a high-leverage move for frequent travelers."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a well-grounded, actionable guide for optimizing rental car bookings by leveraging the user's specific employer benefits and credit card protections."
+}

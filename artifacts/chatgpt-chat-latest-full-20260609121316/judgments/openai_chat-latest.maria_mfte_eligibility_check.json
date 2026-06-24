@@ -1,0 +1,39 @@
+{
+  "taskId": "maria_mfte_eligibility_check",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's specific rent, income sources (base, RSU, freelance), and household size to frame the eligibility discussion."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the complexity of income counting for housing programs and avoids guaranteeing eligibility. It correctly identifies the RSU vest as a potential hurdle."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable workflow. The savings estimates are framed as scenarios rather than guarantees, which is appropriate."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Strong emphasis on the need to verify how specific programs treat RSU and freelance income, which is the most critical risk factor for this user."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Explicitly highlights the ambiguity of how different programs treat RSU and freelance income, which is a high-value insight for a tech employee."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly personalized, actionable, and prudent guide for checking MFTE/MHA eligibility, correctly identifying the user's RSU vest as the primary variable in income-based housing qualification."
+}

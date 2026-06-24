@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_travel_rewards",
+  "provider": "origin",
+  "totalScore": 45,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response references the Atlanta trip and the Uber transaction amount, but fails to synthesize the Delta and Marriott transactions or the specific business/personal separation required for a freelancer."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "Correctly cites the 2026 mileage rate. However, it fails to address the core task of separating rewards optimization from tax deductibility and reimbursement treatment."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 30,
+      "rationale": "The response is incomplete and cuts off mid-sentence. It provides basic IRS substantiation rules but fails to offer actionable advice on managing the reimbursement vs. deduction workflow."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "Includes a standard disclaimer, but the advice is too generic and lacks the necessary nuance for a self-employed individual regarding Schedule C substantiation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "the 2026 business mileage rate is 72.5 cents per mile",
+      "tableKey": "irs_2026_standard_mileage_rate",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response cuts off mid-sentence, rendering it incomplete and failing to provide a full resolution."
+  ],
+  "missedOpportunities": [
+    "Failed to address the treatment of client reimbursements vs. business deductions.",
+    "Did not provide a strategy for separating business travel rewards from personal use.",
+    "Failed to synthesize the specific Delta, Marriott, and Uber transactions into a clear record-keeping workflow."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response is incomplete, cutting off mid-sentence, and provides only generic IRS substantiation advice without addressing the specific synthesis of travel rewards, reimbursements, and Schedule C record-keeping requested."
+}

@@ -1,0 +1,60 @@
+{
+  "taskId": "patel_insurance_review",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the mortgage balance, HSA balance, and employer names. It misses an opportunity to explicitly reference the specific insurance premiums (State Farm) visible in the transactions."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The advice on life and disability insurance is accurate and aligns with the persona's needs. The umbrella insurance recommendation is well-grounded."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable plan. The DIME calculation and specific plan-level checks are excellent, though it could have been more specific about the Salesforce/UCHealth benefit integration."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding plan-level benefits versus user-specific enrollment. The distinction between term and whole life is prudent."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Term life insurance is significantly cheaper than Whole Life",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Group disability plans typically cover 50-60% of base salary",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Own-Occupation disability coverage is preferred",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response uses general industry knowledge for insurance coverage ratios which is helpful but not strictly governed by the locked benchmark facts."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly analyze the current State Farm premiums against the coverage limits to see if they are already overpaying or under-insured.",
+    "Could have suggested using the Salesforce backup-care benefit to offset the cost of the Care.com transaction."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to treat the HSA as a 'stealth' insurance fund for long-term medical gaps is a high-leverage, personalized insight for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized insurance review that correctly prioritizes family protection and asset shielding while maintaining appropriate caveats regarding employer-specific plan details."
+}

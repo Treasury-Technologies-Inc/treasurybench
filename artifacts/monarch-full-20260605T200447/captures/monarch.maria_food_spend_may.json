@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T04:35:07.306Z",
+  "latencyMs": 22383,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "monarch",
+  "response": "From May 1 to May 31, 2026, you spent $833.96 on food, which is a bit over 20% of your total May spending ($4,197.71).\n\nHere’s how that breaks down:\n\nGroceries (including Costco): $671.85\nDining / Restaurants: $162.11\nRestaurants & Bars: $0.00\n\nMost of your food spending is going to at‑home groceries rather than eating out, which usually stretches your dollars further.\n\n🍏\n⚪️\n🍽\n$0\n$200\n$400\n$600\n$800",
+  "taskId": "maria_food_spend_may"
+}

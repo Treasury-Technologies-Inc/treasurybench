@@ -1,0 +1,48 @@
+{
+  "taskId": "jordan_home_office_rent",
+  "provider": "origin",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response mentions the user's Schedule C status and Austin location, but fails to use the specific rent amount ($2,100) or the internet bill amount ($79.99) from the visible transactions to provide concrete, personalized examples."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax rules regarding the home office deduction (exclusive/regular use) and the two calculation methods are accurate for 2026. The distinction between direct business expenses and home office allocations is handled correctly."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable, but it misses the opportunity to address the WeWork expense ($350/month) mentioned in the transactions, which complicates the 'principal place of business' argument for the home office deduction."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate disclaimers, emphasizes the need for documentation, and correctly advises consulting a tax professional."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Simplified home office deduction is $5 per square foot up to 300 square feet.",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the 2026 simplified home office deduction limit."
+  ],
+  "missedOpportunities": [
+    "Failed to address how the $350/month WeWork expense impacts the 'principal place of business' test for the home office deduction.",
+    "Did not use the specific $2,100 rent and $79.99 internet transaction amounts to provide a concrete, personalized calculation."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "A solid, accurate explanation of home office and internet deduction rules, though it misses a key opportunity to address the impact of the user's existing WeWork expense on their home office eligibility."
+}

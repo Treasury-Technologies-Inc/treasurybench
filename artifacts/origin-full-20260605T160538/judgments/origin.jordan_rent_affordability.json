@@ -1,0 +1,48 @@
+{
+  "taskId": "jordan_rent_affordability",
+  "provider": "origin",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific rent, income, and tax reserve data. It correctly identifies the lumpiness of the freelance income."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax and income mechanics are accurate. The response correctly identifies the self-employment tax burden and the need for a tax reserve."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and provides clear steps for evaluating rent affordability, including the use of a trailing 12-month average."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is prudent regarding income volatility, though it could have been more explicit about the separation of business and personal accounts beyond just the tax reserve."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employment tax is 15.3% on net earnings",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly suggest using the business checking account for all business-related expenses to simplify Schedule C reporting.",
+    "Could have suggested a specific percentage-based allocation strategy for the Bluevine account to automate tax and expense buckets."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested pre-paying rent or offering a larger deposit to strengthen a lease application for a freelancer with lumpy income."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, grounded assessment of rent affordability for a freelancer that correctly emphasizes income volatility and tax reserve discipline."
+}

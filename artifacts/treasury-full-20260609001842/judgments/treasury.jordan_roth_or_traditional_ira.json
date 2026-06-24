@@ -1,0 +1,55 @@
+{
+  "taskId": "jordan_roth_or_traditional_ira",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's existing Vanguard Traditional IRA balance and their self-employed status."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 limits and the pro-rata rule. The math on the taxable impact of the conversion is a reasonable estimate based on the provided balances."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. The suggestion to use a Solo 401(k) is a high-leverage, personalized recommendation for this persona."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Includes necessary caveats regarding the pro-rata rule and the December 31st deadline for clearing the IRA balance."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA phaseout for single filers is $153,000 to $168,000",
+      "tableKey": "irs_2026_roth_single_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Identified the potential for Traditional IRA contributions to lower MAGI and increase Premium Tax Credits for marketplace health insurance."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, personalized advice that correctly navigates the pro-rata rule and offers a high-leverage Solo 401(k) strategy for a self-employed user."
+}

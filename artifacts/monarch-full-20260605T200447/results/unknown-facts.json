@@ -1,0 +1,76 @@
+{
+  "unverifiedClaimCount": 7,
+  "uniqueClaimCount": 7,
+  "entries": [
+    {
+      "claim": "After 2017, most W-2 employees can't deduct unreimbursed home office expenses.",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "jordan_home_office_rent"
+      ]
+    },
+    {
+      "claim": "Business credit cards often have high APRs (18-25%+)",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "jordan_extra_8000"
+      ]
+    },
+    {
+      "claim": "Credit cards or personal loans above about 10–12% interest usually come before extra 529 contributions.",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "patel_college_savings_allocation"
+      ]
+    },
+    {
+      "claim": "Employee-paid disability benefits with after-tax dollars are usually tax-free.",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ]
+    },
+    {
+      "claim": "Employer-paid disability benefits are usually taxable.",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ]
+    },
+    {
+      "claim": "Seattle and WA require advance notice for rent hikes (often 60 days+).",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ]
+    },
+    {
+      "claim": "Seattle generally requires a 'just cause' to terminate a tenancy.",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ]
+    }
+  ]
+}

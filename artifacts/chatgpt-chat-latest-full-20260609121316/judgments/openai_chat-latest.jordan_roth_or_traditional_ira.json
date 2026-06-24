@@ -1,0 +1,54 @@
+{
+  "taskId": "jordan_roth_or_traditional_ira",
+  "provider": "openai:chat-latest",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the existing IRA balance and the user's self-employed status. It misses an opportunity to explicitly link the tax-reserve savings to the potential for funding these accounts."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response uses a stale $7,000 IRA limit instead of the 2026 $7,500 limit. It correctly identifies the pro-rata rule and the tax-deductibility of Traditional IRA contributions for those without employer plans."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable, providing a logical decision tree based on income and the solo 401(k) strategy."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding the pro-rata rule and the need for more income data. The suggestion to establish a solo 401(k) is a prudent, high-leverage recommendation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 IRA contribution limit is $7,000",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "Texas has no state income tax",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response uses $7,000 as the 2026 IRA contribution limit, which is stale; the correct 2026 limit is $7,500."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly calculate the impact of the $18,500 tax reserve on the ability to fund the full $7,500 IRA limit immediately."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested a solo 401(k) as a superior alternative to the IRA for a self-employed consultant, which is a high-leverage, grounded recommendation."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides sound, personalized advice for a self-employed consultant but contains a stale 2026 IRA contribution limit."
+}

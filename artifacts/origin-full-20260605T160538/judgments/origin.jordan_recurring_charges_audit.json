@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_recurring_charges_audit",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 35,
+      "maxScore": 40,
+      "rationale": "The response correctly identifies and categorizes the recurring charges from the provided CSV data. It misses the rent payment (Eastside Flats) in the recurring list, which was explicitly mentioned in the scope notes."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "Calculations are accurate based on the provided data. It correctly separates business SaaS from personal bills. It avoids inventing plan tiers, though it suggests reviewing them."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The breakdown is clear and actionable. It fails to include the rent payment in the recurring audit, which is a significant oversight for a freelancer's budget."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "Appropriately includes disclaimers regarding tax advice and professional consultation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The home office deduction for self-employed individuals is a valid tax consideration.",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the business/personal split but misses the rent payment in the recurring audit list."
+  ],
+  "missedOpportunities": [
+    "Failed to include the $2,100 monthly rent payment in the recurring charges audit."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested setting aside monthly amounts for annual fees to smooth cash flow, which is highly relevant for a freelancer with irregular income."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, well-categorized audit of recurring business and personal expenses, though it missed the rent payment in the final audit list."
+}

@@ -1,0 +1,74 @@
+You are a personal finance assistant being evaluated on TreasuryBench.
+
+Benchmark date: 2026-05-31
+Persona: Maria Chen
+Summary: Seattle renter with linked checking, savings, credit card, 401(k), and brokerage data.
+
+Use only the persona memories, account balances, and transactions below as the user's financial context. You may rely on your own current personal-finance knowledge for public rules, IRS limits, benefit concepts, card rewards, local programs, and product terms, but you must be factual, current, relevant, and appropriately caveated. Do not invent user data.
+
+Strong answers:
+- search the data mentally before answering;
+- connect transactions, balances, memories, and finance knowledge;
+- quantify dollar impact when possible;
+- prioritize higher-value opportunities over generic tips;
+- state assumptions and eligibility caveats;
+- give exact next steps.
+
+Memories:
+[
+  {
+    "id": "mem_location_household",
+    "text": "Maria lives alone in Seattle, WA."
+  },
+  {
+    "id": "mem_employer",
+    "text": "Maria works at Microsoft."
+  },
+  {
+    "id": "mem_preferences",
+    "text": "Maria prefers practical recommendations with clear dollar impact and exact next steps."
+  }
+]
+
+Balances CSV:
+Date,Balance,Account
+2026-05-31,18450.00,Chase Total Checking 8511
+2026-05-31,5250.00,Ally Online Savings 3382
+2026-05-31,1840.00,Chase Sapphire Preferred 8600
+2026-05-31,48500.00,MICROSOFT CORPORATION 401K 8216
+2026-05-31,0.00,Fidelity Traditional IRA 4401
+2026-05-31,62300.00,Robinhood Individual Brokerage 7238
+
+Transactions CSV:
+Date,Merchant,Category,Account,Original Statement,Notes,Amount,Tags,Owner
+2026-05-31,Ally Bank Interest,Interest Income,Ally Online Savings 3382,Ally Bank Interest,Monthly savings interest deposit,17.06,,Shared
+2026-05-15,Microsoft Payroll,Income,Chase Total Checking 8511,Microsoft Payroll,"Semi-monthly net payroll deposit; paystub gross base pay $2,500; 401(k) employee deferral 8%",1840.00,,Shared
+2026-05-31,Microsoft Payroll,Income,Chase Total Checking 8511,Microsoft Payroll,"Semi-monthly net payroll deposit; paystub gross base pay $2,500; 401(k) employee deferral 8%",1840.00,,Shared
+2026-05-15,Microsoft 401k Employee Deferral,Retirement Contribution,MICROSOFT CORPORATION 401K 8216,Microsoft 401k Employee Deferral,"Employee 401(k) contribution from 8% of $2,500 semi-monthly gross pay",200.00,,Shared
+2026-05-31,Microsoft 401k Employee Deferral,Retirement Contribution,MICROSOFT CORPORATION 401K 8216,Microsoft 401k Employee Deferral,"Employee 401(k) contribution from 8% of $2,500 semi-monthly gross pay",200.00,,Shared
+2026-05-10,Microsoft RSU Vest,Investment Income,Robinhood Individual Brokerage 7238,Microsoft RSU Vest,Vested Microsoft RSUs deposited to taxable brokerage,42000.00,,Shared
+2026-05-01,Cascade Apartments,Rent,Chase Total Checking 8511,Cascade Apartments,1 bedroom apartment in Seattle,-2350.00,,Shared
+2026-04-01,Cascade Apartments,Rent,Chase Total Checking 8511,Cascade Apartments,,-2350.00,,Shared
+2026-03-01,Cascade Apartments,Rent,Chase Total Checking 8511,Cascade Apartments,,-2350.00,,Shared
+2026-05-04,Costco Wholesale,Groceries,Chase Sapphire Preferred 8600,Costco Wholesale,,-286.41,,Shared
+2026-05-19,Costco Wholesale,Groceries,Chase Sapphire Preferred 8600,Costco Wholesale,,-214.82,,Shared
+2026-05-21,Costco Gas,Gas,Chase Sapphire Preferred 8600,Costco Gas,,-58.23,,Shared
+2026-05-10,Safeway,Groceries,Chase Sapphire Preferred 8600,Safeway,,-94.18,,Shared
+2026-05-17,Trader Joe's,Groceries,Chase Sapphire Preferred 8600,Trader Joe's,,-76.44,,Shared
+2026-05-03,Oddfellows Cafe,Dining,Chase Sapphire Preferred 8600,Oddfellows Cafe,,-42.16,,Shared
+2026-05-08,Tavolata,Dining,Chase Sapphire Preferred 8600,Tavolata,,-88.70,,Shared
+2026-05-24,Ramen Danbo,Dining,Chase Sapphire Preferred 8600,Ramen Danbo,,-31.25,,Shared
+2026-05-06,Alaska Airlines,Travel,Chase Sapphire Preferred 8600,Alaska Airlines,SEA to SFO,-248.20,,Shared
+2026-04-12,Alaska Airlines,Travel,Chase Sapphire Preferred 8600,Alaska Airlines,SFO to SEA,-231.10,,Shared
+2026-05-07,Avis Rent A Car,Travel,Chase Sapphire Preferred 8600,Avis Rent A Car,SFO work trip rental car,-312.44,,Shared
+2026-05-11,Lyft,Transportation,Chase Sapphire Preferred 8600,Lyft,,-27.80,,Shared
+2026-05-22,Uber,Transportation,Chase Sapphire Preferred 8600,Uber,,-34.10,,Shared
+2026-05-05,Xfinity,Utilities,Chase Sapphire Preferred 8600,Xfinity,,-89.00,,Shared
+2026-05-09,AT&T Wireless,Phone,Chase Sapphire Preferred 8600,AT&T Wireless,,-72.00,,Shared
+2026-05-13,Netflix,Subscriptions,Chase Sapphire Preferred 8600,Netflix,,-22.99,,Shared
+2026-05-14,Adobe,Subscriptions,Chase Sapphire Preferred 8600,Adobe,,-59.99,,Shared
+2026-05-16,ClassPass,Fitness,Chase Sapphire Preferred 8600,ClassPass,,-89.00,,Shared
+2026-05-20,Figma Consulting Client,Freelance Income,Chase Total Checking 8511,Figma Consulting Client,,1200.00,,Shared
+
+User question:
+Which May 2026 charges look recurring or subscription-like? Separate true subscriptions/fitness/software from recurring phone/internet utility bills, and give the monthly total for each bucket I should review. Exclude rent from both bucket totals; you can mention it separately if you notice it.

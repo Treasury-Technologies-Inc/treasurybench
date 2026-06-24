@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_recurring_charges_audit",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 35,
+      "maxScore": 40,
+      "rationale": "The response correctly identifies and categorizes the recurring charges from the provided CSV data. It misses the rent payment in the recurring charges list, which was explicitly requested in the scope notes."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "Calculations are accurate based on the May 2026 data. The advice regarding the self-employed health insurance deduction is correct and aligns with the persona's tax needs."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response is well-structured and actionable. It fails to include the rent payment in the audit, which is a significant recurring expense for the user."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately caveats the optimization suggestions and avoids making definitive claims about plan tiers or specific savings amounts."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employed health insurance premiums are an above-the-line deduction (Schedule 1, Form 1040) that reduces AGI",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the tax treatment of health insurance premiums for self-employed individuals."
+  ],
+  "missedOpportunities": [
+    "The response failed to include the $2,100 rent payment in the recurring charges audit, which is a major recurring expense for the user."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to audit AWS for orphaned instances is a high-leverage, actionable insight for a UX consultant with irregular income."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a clear, well-categorized audit of recurring business and personal expenses, though it missed the user's rent payment in the final tally."
+}

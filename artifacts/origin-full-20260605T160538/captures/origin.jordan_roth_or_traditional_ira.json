@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-06T13:40:20.724Z",
+  "latencyMs": 51921,
+  "mode": "product_capture",
+  "notes": "Official Origin product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "origin",
+  "response": "Based on what I know about you — self-employed UX consultant, filing Schedule C, living alone in Austin, TX with no dependents and uneven income — this is actually a well-suited question to work through carefully. Since tax situations involve specialized expertise, I'll explain the concepts educationally. Per CFP Board standards, consult a qualified tax advisor or CPA for advice specific to your situation before making decisions.\nThe short answer depends on three things: your income this year, whether you can deduct a traditional IRA contribution, and whether you have existing pre-tax IRA balances that would complicate a backdoor Roth.\nThe key variable: your net self-employment income\nAs a Schedule C filer, your MAGI for IRA purposes is your net self-employment income after the self-employment tax deduction (you deduct half of SE tax from gross income). Until you know roughly where your income lands this year, the optimal IRA type is hard to pin down — which is actually a feature, not a bug, since you can contribute to a traditional or Roth IRA up until your tax filing deadline (including extensions).\nHere's how the 2026 income thresholds break down for a single filer:\nDirect Roth IRA eligibility phases out between $153,000 and $168,000 MAGI. Below $153,000, you can contribute the full $7,500 (or $8,600 if you're 50+) directly. Above $168,000, no direct Roth contribution is allowed.\n**Traditional IRA de",
+  "taskId": "jordan_roth_or_traditional_ira"
+}

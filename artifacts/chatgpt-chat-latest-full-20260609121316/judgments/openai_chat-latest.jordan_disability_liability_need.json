@@ -1,0 +1,39 @@
+{
+  "taskId": "jordan_disability_liability_need",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the user's specific income, cash reserves, and lack of employer benefits."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The advice correctly distinguishes between disability and professional liability, and the financial logic regarding reserves is sound."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable prioritization framework. It could have been slightly more specific on how to verify E&O requirements in existing contracts."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding 'own occupation' definitions and the necessity of checking specific client contracts."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "The response correctly identifies that a disability affects all future income, whereas a liability claim is typically project-specific, providing a strong rationale for the prioritization."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded, personalized, and prudent assessment that correctly prioritizes disability insurance for a solo consultant based on their specific financial and work context."
+}

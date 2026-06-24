@@ -1,0 +1,53 @@
+{
+  "taskId": "maria_extra_10000",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the user's rent, spending, and account balances to build a personalized cash-buffer recommendation."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits (HSA $4,400, 415(c) $72,000). The logic regarding the emergency fund and tax-advantaged accounts is sound."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable waterfall. The recommendation to prioritize the cash buffer is prudent given the user's high rent and single-income status."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Includes appropriate caveats regarding HDHP eligibility and the pro-rata rule for Backdoor Roths."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 415(c) defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly calculate the tax-savings impact of the 401(k) contribution increase vs. the cash buffer opportunity cost.",
+    "Could have provided more specific guidance on the Microsoft ESPP given the 10% discount and the user's high brokerage balance."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the psychological and financial floor provided by a 6-month emergency fund in a high-cost city like Seattle."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded, prudent, and factually accurate response that prioritizes liquidity while correctly identifying advanced tax-advantaged opportunities for a Microsoft employee."
+}

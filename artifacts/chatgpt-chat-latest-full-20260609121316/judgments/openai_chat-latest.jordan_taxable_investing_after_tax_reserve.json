@@ -1,0 +1,51 @@
+{
+  "taskId": "jordan_taxable_investing_after_tax_reserve",
+  "provider": "openai:chat-latest",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the provided account balances and transaction data to build a personalized cash-flow model."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the need to prioritize tax and emergency reserves. It missed the specific 2026 HSA limit ($4,400) by not mentioning it, though it correctly identified the HSA as a priority."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The prioritization is sound and actionable, clearly separating business, tax, and personal buckets before suggesting investment."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "The response is highly prudent, emphasizing the need for a cash floor and cautioning against over-investing given the irregular income."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the HSA as a priority but fails to explicitly state the 2026 contribution limit, which would have strengthened the advice."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the 2026 HSA contribution limit of $4,400 to provide a concrete target for the user."
+  ],
+  "unexpectedValidInsights": [
+    "The response correctly identifies the need to calculate year-to-date profit to validate the tax reserve, rather than relying on a static percentage."
+  ],
+  "safetyIssues": [
+    "None."
+  ],
+  "summary": "A well-grounded and prudent response that correctly prioritizes tax and emergency reserves over taxable investing for a self-employed consultant."
+}

@@ -1,0 +1,53 @@
+{
+  "taskId": "jordan_solo401k_or_sep",
+  "provider": "monarch",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response fails to use the specific income data from the May transactions to illustrate the contribution math, relying instead on generic descriptions."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response uses a stale $69,000 limit for 2026 (the correct 2026 limit is $72,000 per the locked benchmark facts)."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable, providing a good comparison of the two plans, though it lacks specific calculations based on the user's actual income."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately highlights the pro-rata rule, setup deadlines, and the distinction between employee/employer contributions."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 defined-contribution annual additions limit is $69,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly cites $69,000 as the 2026 defined-contribution limit; the correct 2026 limit is $72,000."
+  ],
+  "missedOpportunities": [
+    "Failed to use the actual May business income ($13,960) to provide a concrete example of contribution capacity.",
+    "Did not explicitly mention the impact of the user's existing Vanguard Traditional IRA on the pro-rata rule beyond the SEP IRA context."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, well-structured comparison of Solo 401(k) and SEP IRA plans but contains a stale 2026 contribution limit and misses opportunities to ground the advice in the user's specific income data."
+}

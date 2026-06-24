@@ -1,0 +1,39 @@
+{
+  "taskId": "maria_spend_may_total",
+  "provider": "origin",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately retrieves and aggregates May 2026 transactions, correctly excluding income and correctly identifying the primary spending categories."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "Calculations for May spending ($4,197.71) and category totals are correct based on the provided CSV data."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response is concise and answers the prompt directly. It misses a minor opportunity to explicitly mention the freelance income/payroll distinction as a buffer, but otherwise provides a clear breakdown."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "Includes appropriate disclaimers and frames the spending as a monthly snapshot."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have highlighted the potential for Microsoft wellness reimbursement for the ClassPass expense."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant provided an accurate, well-grounded, and concise summary of May 2026 spending, correctly identifying the primary categories and total outflow."
+}

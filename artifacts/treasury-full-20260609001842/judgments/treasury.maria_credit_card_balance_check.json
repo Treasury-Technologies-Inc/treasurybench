@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_credit_card_balance_check",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the specific account balances and transaction data to ground its advice."
+    },
+    {
+      "id": "correctness",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Correctly identifies the Sapphire Preferred's 1x earn rate at Costco and provides accurate guidance on interest avoidance. Minor deduction for the APR range being an estimate rather than a specific product term, though acceptable given the context."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. The recommendation to move cash to Ally is a good personalized touch, though it could have been more explicit about the specific interest-rate benefit."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of the 'float' vs. 'revolving debt' distinction and appropriate warnings about pending transactions and autopay configuration."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Chase Sapphire Preferred typical APR of 21%–28%",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Sapphire Preferred earns 1x at Costco",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The APR range is a general market estimate and not a specific locked fact, but it is reasonable for the context."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the benefit of keeping the $1,840 in the Ally account until the due date to capture interest, provided the statement balance is paid in full."
+  ],
+  "unexpectedValidInsights": [
+    "Identified the Costco 'blind spot' for the Sapphire Preferred card, which is a high-value personalized insight for this user."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and prudent response that correctly distinguishes between statement float and revolving debt while offering actionable, data-backed advice."
+}

@@ -1,0 +1,43 @@
+{
+  "taskId": "maria_idle_cash",
+  "provider": "origin",
+  "totalScore": 35,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The assistant correctly identified the transaction-based spending patterns but failed to use the provided CSV balance data, which was explicitly available in the prompt. It incorrectly claimed the balances were $0, ignoring the provided account balances."
+    },
+    {
+      "id": "correctness",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The assistant correctly identified the emergency fund sizing logic but failed to use the actual cash balances provided in the prompt, leading to a failure in the core task of assessing idle cash."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 35,
+      "rationale": "The assistant failed to calculate the idle cash position despite having the data. It asked the user for information that was already provided in the prompt, failing to provide the requested insight."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "The assistant was cautious but failed to leverage the available data, resulting in a generic response that did not address the user's specific financial situation."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The assistant incorrectly claimed that the provided account balances were $0, despite the prompt providing specific balances for Chase, Ally, and Robinhood."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate the total liquid cash ($23,700) from the provided balances.",
+    "Failed to compare the current cash position against the estimated monthly burn to determine if the cash is 'idle' or 'excess'.",
+    "Failed to suggest moving excess cash from the low-yield checking account to the Ally savings account or other higher-yield instruments."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant failed to utilize the provided account balance data, incorrectly claiming the balances were $0, which prevented it from performing the requested idle cash assessment."
+}

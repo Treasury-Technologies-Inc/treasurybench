@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_where_wasting_money",
+  "provider": "origin",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the business income and specific software expenses. However, it incorrectly claims the Ally Tax Reserve account has a $0 balance, despite the provided CSV explicitly showing a balance of $18,500.00."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the self-employed health insurance deduction. However, it contains a major factual error regarding the user's account balances, claiming all accounts are $0 when the CSV provided clear data."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "The advice on tax reserves and software auditing is actionable and relevant. The failure to recognize the existing $18,500 tax reserve balance significantly undermines the quality of the advice provided."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is generally prudent in its tone, but the hallucination of $0 balances makes the advice potentially misleading for the user's financial planning."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employed individuals can deduct 100% of health insurance premiums above the line.",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly states the Ally Tax Reserve Savings account has a $0 balance, contradicting the provided CSV data showing $18,500.00.",
+    "The response incorrectly claims all five connected accounts show $0 balances, contradicting the provided CSV data."
+  ],
+  "missedOpportunities": [
+    "Failed to leverage the existing $18,500 tax reserve to suggest a specific, safe Q2 estimated tax payment strategy.",
+    "Missed the opportunity to discuss the HSA contribution strategy given the user's $3,100 balance and the 2026 self-only limit of $4,400.",
+    "Did not address the potential for optimizing business travel expenses using the Chase Ink Business Preferred's 3x travel category."
+  ],
+  "unexpectedValidInsights": [
+    "Identified the potential for AWS cost optimization by checking for idle resources."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides helpful categories for review but is severely compromised by a failure to read the provided account balance data, leading to incorrect advice regarding the user's tax reserve status."
+}

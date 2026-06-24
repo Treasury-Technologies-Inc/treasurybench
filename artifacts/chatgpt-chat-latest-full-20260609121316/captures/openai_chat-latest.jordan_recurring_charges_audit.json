@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:20:53.752Z",
+  "latencyMs": 6714,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the transactions provided, these are the recurring-looking personal and business charges that are worth reviewing. Amounts shown are the latest monthly charges observed in May 2026.\n\nBusiness expenses\n- WeWork Austin (coworking space): $350.00/month\n- Adobe Creative Cloud: $59.99/month\n- Figma Professional: $15.00/month\n- Webflow: $39.00/month\n- Amazon Web Services (AWS): $82.44/month\n  - This can fluctuate based on usage, so it is best treated as a recurring variable expense.\n- Google Workspace: $14.40/month\n\nEstimated recurring business total:\n- Approximately $560.83/month\n\nPersonal expenses\n- Rent (Eastside Flats): $2,100.00/month\n- HealthCare.gov marketplace premium: $415.00/month\n- Fidelity HSA contribution: $300.00/month\n  - This appears to be a planned contribution rather than a bill, but it is recurring cash outflow.\n- Spectrum Internet: $79.99/month\n- Visible Wireless: $35.00/month\n\nEstimated recurring personal total:\n- Approximately $2,929.99/month\n- Excluding HSA contributions: approximately $2,629.99/month\n\nPotential review priorities by dollar impact\n1. Rent — $2,100/month\n   - Largest fixed expense. Even a 5% reduction at renewal would save about $105/month ($1,260/year).\n\n2. Marketplace health insurance — $415/month\n   - Since you're self-employed with variable income, make sure your projected annual income is updated on HealthCare.gov. This helps avoid subsidy mismatches and tax surprises.\n\n3. WeWork membership — $350/month\n   - Worth confirming that the client and networking value justifies about $4,200/year.\n\n4. AWS — $82.44/month\n   - Cloud services often accumulate unused resources. A quick audit could potentially reduce costs.\n\n5. Adobe + Webflow + Figma — $113.99/month combined\n   - Check for overlapping tools, unused seats, or lower-cost plans.\n\n6. Internet and phone — $114.99/month combined\n   - Since you travel for client work, confirm you're on the most cost-effective plans for your usage.\n\nAnnualized view of recurring software/coworking stack\n- WeWork: about $4,200/year\n- Adobe: about $720/year\n- Webflow: about $468/year\n- AWS (at current run rate): about $989/year\n- Google Workspace: about $173/year\n- Figma: about $180/year\n\nTotal annualized business recurring stack:\n- Approximately $6,730/year\n\nGiven your preference for separate business, tax, emergency, and personal buckets, the highest-value review is likely the business software/coworking stack, because those costs are concentrated, deductible, and easier to optimize than essentials like rent.",
+  "taskId": "jordan_recurring_charges_audit",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1464,
+      "outputTokens": 711,
+      "totalTokens": 2175,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 0
+    }
+  }
+}

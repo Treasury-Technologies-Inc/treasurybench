@@ -1,0 +1,45 @@
+{
+  "taskId": "patel_recurring_charges_audit",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies the recurring charges from the provided transaction data and correctly attributes them to the user's household."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The math is accurate based on the provided transactions. The Salesforce wellness reimbursement claim is correctly framed as a plan-level benefit, though it assumes eligibility for Peloton without explicit verification of the plan's current merchant list."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response clearly separates subscriptions from bills and provides actionable, relevant advice."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response includes appropriate caveats regarding checking for newer pricing and verifying eligibility for benefits."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Salesforce offers a $100/month wellness reimbursement",
+      "tableKey": "salesforce_2026_wellness_reimbursement",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Proactive suggestion to audit streaming usage for 'ghost' subscriptions not visible in the current month."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a precise, well-grounded audit of recurring charges and effectively leverages the persona's employer benefits to suggest high-value savings."
+}

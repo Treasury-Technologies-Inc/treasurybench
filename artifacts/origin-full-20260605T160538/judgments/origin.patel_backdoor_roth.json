@@ -1,0 +1,70 @@
+{
+  "taskId": "patel_backdoor_roth",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the employer plans and HSA account, though it fails to use the specific payroll gross pay figures to calculate the household's proximity to the Roth phase-out limits."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly cites 2026 tax limits (401k, IRA, HSA, Roth phase-outs). It correctly identifies the pro-rata rule and the mega backdoor Roth potential."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable priority stack. It misses the opportunity to use the payroll data to definitively state whether they are currently over the Roth income limit."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent use of caveats regarding tax advice, pro-rata complexity, and the need for plan-level verification."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA limit is $4,400 self-only or $8,750 family",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA catch-up is $1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA MFJ phaseout is $242,000 to $252,000",
+      "tableKey": "irs_2026_roth_mfj_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 415(c) defined-contribution limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not use the provided payroll gross pay ($8,750 + $5,000 semi-monthly = $330,000 annualized) to explicitly confirm the household is above the Roth IRA phase-out limit."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, well-structured tax-advantaged account prioritization, though it could have been more precise by using the provided payroll data to confirm the household's income status relative to Roth limits."
+}

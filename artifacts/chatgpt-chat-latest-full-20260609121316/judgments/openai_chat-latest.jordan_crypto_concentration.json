@@ -1,0 +1,41 @@
+{
+  "taskId": "jordan_crypto_concentration",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately uses all provided account balances and correctly identifies the user's financial structure (tax reserves, business vs. personal)."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The math is accurate, and the advice correctly frames crypto risk in the context of the user's specific liquidity needs and irregular income."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for rebalancing and risk assessment. Could have been slightly more explicit about tax-lot considerations when selling, but otherwise excellent."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately emphasizes protecting tax reserves and operating cash over crypto exposure."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the tax-lot identification strategy (e.g., HIFO or specific identification) to minimize capital gains impact if the user decides to trim the crypto position."
+  ],
+  "unexpectedValidInsights": [
+    "The stress-test scenario (50% and 80% drawdowns) provides a concrete, relatable way for the user to visualize risk relative to their net worth."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a well-grounded, prudent, and mathematically sound assessment of the user's crypto concentration risk, correctly prioritizing the protection of business and tax-reserve liquidity."
+}

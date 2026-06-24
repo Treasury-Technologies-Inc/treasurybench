@@ -1,0 +1,55 @@
+{
+  "taskId": "maria_insurance_review",
+  "provider": "monarch",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the persona's context (single, renter, Microsoft employee) to tailor the advice. It correctly identifies the Microsoft-specific context for disability and life insurance."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The insurance prioritization logic is sound and aligns with the persona's risk profile. The explanation of taxability for employer-paid vs. employee-paid disability insurance is accurate."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for each insurance type. It correctly prioritizes disability over life insurance for a single person with no dependents."
+    },
+    {
+      "id": "prudence",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding employer-provided benefits and the need to verify specific plan details. It appropriately frames umbrella insurance as a secondary consideration."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Employer-paid disability benefits are usually taxable.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Employee-paid disability benefits with after-tax dollars are usually tax-free.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the tax implications of disability insurance premiums, which is a high-value insight for a high-income tech employee."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly calculate the income replacement gap using the $60,000 base salary implied by the $2,500 semi-monthly paystub.",
+    "Could have suggested checking the Microsoft Prime portal specifically for disability plan documents."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified health insurance as a foundational priority despite it not being in the user's list."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded, practical, and accurate insurance prioritization guide tailored to a single Microsoft employee."
+}

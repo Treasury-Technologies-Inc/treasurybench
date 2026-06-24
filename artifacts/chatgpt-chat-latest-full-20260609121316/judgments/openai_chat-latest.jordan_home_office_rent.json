@@ -1,0 +1,43 @@
+{
+  "taskId": "jordan_home_office_rent",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's specific rent ($2,100), coworking expense ($350), and internet bill ($79.99) to illustrate the tax concepts."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The tax rules for home office (exclusive use, simplified vs. actual) and internet allocation are accurate for 2026. The distinction between Schedule C business expenses and personal/above-the-line deductions is maintained."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable. It could have been slightly stronger by explicitly mentioning that the home office deduction is claimed on Form 8829 (for actual expenses) or the simplified worksheet, but the provided steps are sufficient."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response correctly emphasizes the exclusive-use requirement and the need for recordkeeping, and it appropriately notes that the coworking space does not automatically disqualify the home office."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The simplified home-office deduction is $5 per square foot of qualifying space, capped at 300 square feet (maximum $1,500).",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, well-grounded, and prudent advice regarding home office and internet deductions for a self-employed consultant, correctly applying 2026 tax rules."
+}

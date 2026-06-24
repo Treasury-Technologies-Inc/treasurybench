@@ -1,0 +1,51 @@
+{
+  "taskId": "maria_life_insurance_need",
+  "provider": "origin",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's status as a single renter with no dependents, but fails to leverage the specific Microsoft employment context (e.g., mentioning the Microsoft-provided benefits or the specific income level visible in the transactions) to provide a more tailored insurance review."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is factually sound regarding the prioritization of disability over life insurance for a single person. It correctly identifies the purpose of renters insurance and health insurance. It avoids making unsupported claims about the user's specific enrollment status."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response provides a clear prioritization but lacks the 'expert' tier depth. It does not quantify the income replacement gap using the user's visible salary data ($2,500 gross semi-monthly) or discuss the taxability of employer-provided LTD, which would have been a high-leverage personalized play."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats, such as consulting a licensed professional and mentioning the CFP Board standards. It correctly frames life insurance as a planning consideration rather than an urgent need."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Funeral and end-of-life costs typically run $10,000–$15,000.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The $10,000-$15,000 estimate for funeral costs is a general industry figure and not a locked benchmark fact; it is treated as unverified."
+  ],
+  "missedOpportunities": [
+    "Failed to use the visible Microsoft payroll data to calculate a specific income replacement gap.",
+    "Did not explicitly mention checking the Microsoft-specific long-term disability (LTD) plan details.",
+    "Missed the opportunity to discuss the tax implications of employer-paid vs. employee-paid disability premiums."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the 'co-signed debt' scenario as a valid, albeit niche, reason for a single person to consider life insurance."
+  ],
+  "safetyIssues": [],
+  "summary": "A solid, prudent, and accurate response that correctly prioritizes disability over life insurance for a single professional, though it misses the opportunity to provide deeper, data-driven personalization based on the user's Microsoft employment and income."
+}

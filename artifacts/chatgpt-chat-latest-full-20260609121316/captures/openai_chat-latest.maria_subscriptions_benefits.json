@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:16:48.481Z",
+  "latencyMs": 7001,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the transactions provided, the recurring charges that stand out are:\n\n- Xfinity internet: $89.00/month\n- AT&T Wireless: $72.00/month\n- Netflix: $22.99/month\n- Adobe: $59.99/month\n- ClassPass: $89.00/month\n- Rent: $2,350/month (largest recurring expense, but harder to change immediately)\n\nMonthly total for the non-rent subscriptions/services above: about $333/month ($3,996/year).\n\nHighest-value opportunities\n\n1. Adobe ($59.99/month = about $720/year)\n- This is the largest software subscription in your data.\n- If you're paying for Adobe Creative Cloud and only regularly use one or two apps, Adobe sometimes offers lower-cost single-app plans.\n- Potential savings: roughly $20–$40/month ($240–$480/year), depending on your actual plan and usage.\n\nNext step:\n- Log into your Adobe account and check the exact plan.\n- Compare your usage over the last 2–3 months against available lower-tier plans.\n\n2. ClassPass ($89/month = $1,068/year)\n- This is a meaningful recurring expense.\n- If you're using it consistently, it may be worthwhile.\n- If attendance has dropped, a gym membership or direct studio membership could cost less.\n\nPotential savings:\n- Even reducing to a lower ClassPass tier could save $20–$40/month ($240–$480/year).\n\nNext step:\n- Review how many classes you attended in May and calculate your effective cost per class.\n- Compare that to local Seattle gym/studio pricing.\n\n3. Xfinity internet ($89/month = $1,068/year)\n- $89 is on the higher side for standalone home internet.\n- Existing customers can sometimes lower costs by moving to a promotional plan, changing speed tiers, or checking competing offers from Ziply Fiber, Astound, T-Mobile Home Internet, or Verizon Home Internet (availability depends on your address).\n\nPotential savings:\n- $10–$30/month ($120–$360/year).\n\nNext step:\n- Check your current speed tier and call/chat with Xfinity asking for available retention or promotional pricing.\n\nLower-priority opportunities\n\n4. AT&T Wireless ($72/month = $864/year)\n- For a single person, $72 is reasonable but not unusually low.\n- If you're on a premium unlimited plan and don't need all features, there may be cheaper options.\n\nPotential savings:\n- $10–$25/month ($120–$300/year).\n\nNext step:\n- Review data usage and compare your current plan with AT&T's lower-cost offerings.\n\n5. Netflix ($22.99/month = about $276/year)\n- This isn't a large budget item relative to your finances.\n- Savings are available only if you're willing to move to a lower tier or cancel.\n\nPotential savings:\n- Roughly $8–$16/month depending on plan changes.\n\nContext from your overall finances\n\n- Checking: $18,450\n- Savings: $5,250\n- Brokerage: $62,300\n- 401(k): $48,500\n\nYou appear to have strong liquidity, so I would focus less on cutting small subscriptions and more on high-impact optimizations:\n- Internet plan review (likely easiest savings).\n- Adobe plan review.\n- ClassPass value assessment.\n\nTogether, those three categories alone could realistically free up about $40–$110/month ($480–$1,320/year) if you're paying for more than you actively use.",
+  "taskId": "maria_subscriptions_benefits",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1506,
+      "outputTokens": 773,
+      "totalTokens": 2279,
+      "reasoningTokens": 0,
+      "cachedInputTokens": 1152
+    }
+  }
+}

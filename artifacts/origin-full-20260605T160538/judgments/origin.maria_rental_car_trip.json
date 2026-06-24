@@ -1,0 +1,55 @@
+{
+  "taskId": "maria_rental_car_trip",
+  "provider": "origin",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links the Avis transaction, Microsoft employment, and Chase Sapphire Preferred card to the advice. It misses a specific connection to the Microsoft Prime portal as a potential hub for these benefits."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The explanation of CSP primary coverage is accurate. The math for potential savings is conservative and clearly labeled. The claim about Costco Executive membership rewards is accurate, though it assumes the user is an Executive member without evidence."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. It misses the opportunity to explicitly suggest checking the Microsoft Prime portal for the specific corporate code, which would have been the most direct 'next step'."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent use of caveats regarding corporate code eligibility and the distinction between primary/secondary coverage."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Chase Sapphire Preferred provides primary auto rental collision damage waiver coverage",
+      "tableKey": "chase_2026_sapphire_preferred_rental",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Costco Executive Membership gives a 2% annual reward on qualifying Costco purchases",
+      "tableKey": "costco_2026_executive_membership",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response assumes the user has a Costco Executive membership without checking the transaction history for the specific membership fee charge."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention checking the Microsoft Prime portal for the corporate discount code.",
+    "Failed to verify if the user is currently an Executive member at Costco before calculating potential 2% rewards."
+  ],
+  "unexpectedValidInsights": [
+    "Provided a helpful comparison of ride-share costs versus rental car parking fees in San Francisco, which is highly relevant for a Seattle-based traveler."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized response that correctly identifies the value of the user's credit card coverage and employer benefits, though it makes minor assumptions about membership status."
+}

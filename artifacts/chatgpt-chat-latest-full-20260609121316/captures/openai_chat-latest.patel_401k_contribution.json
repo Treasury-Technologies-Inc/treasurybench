@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:19:01.855Z",
+  "latencyMs": 9801,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the payroll and 401(k) transactions you provided:\n\nCurrent contribution pace\n\n- Priya (Salesforce)\n  - Gross pay: $8,750 semi-monthly = about $210,000/year\n  - 401(k) deferral: $700 per paycheck = 8%\n  - Annualized contribution pace: $700 × 24 paychecks = about $16,800/year\n\n- Daniel (UCHealth)\n  - Gross pay: $5,000 semi-monthly = about $120,000/year\n  - 401(k) deferral: $300 per paycheck = 6%\n  - Annualized contribution pace: $300 × 24 paychecks = about $7,200/year\n\n- Combined\n  - Annual household gross income: about $330,000\n  - Annual 401(k) employee contributions: about $24,000\n  - Savings rate into 401(k)s from pay: about 7.3% of gross income\n\nHow that looks\n\n- You are contributing consistently and building meaningful retirement assets:\n  - Salesforce 401(k): $142,000\n  - UCHealth 401(k): $98,000\n  - Combined retirement assets: $240,000 in 401(k)s\n- However, a combined 7.3% employee deferral rate is moderate rather than aggressive for a dual-income household with your income level.\n- I would first confirm that both of you are contributing enough to receive the full employer match. Missing any match would be the highest-priority fix because it is an immediate, risk-free return.\n\nIf cash flow allows\n\nGiven your stated priority of protecting family cash flow first, I'd consider increases in this order:\n\n1. Maximize the HSA before increasing taxable investing\n- Current HSA balance: $6,800\n- Current contribution shown: $400/month = $4,800/year\n- If you're covered by an HSA-eligible family HDHP, the family HSA limit is substantially higher than that contribution level.\n- HSA contributions generally provide a stronger tax benefit than taxable brokerage investing because contributions can be pre-tax, growth is tax-free, and qualified medical withdrawals are tax-free.\n\n2. Increase 401(k) contributions by 1–2% each\n- Priya: 8% → 10%\n  - Additional savings: about $4,200/year\n- Daniel: 6% → 8%\n  - Additional savings: about $2,400/year\n- Combined increase: about $6,600/year, or roughly $550/month before considering tax savings.\n\nBecause 401(k) contributions reduce taxable income, the reduction in take-home pay is usually less than the amount contributed.\n\n3. Consider a longer-term target of 12–15%+ combined employee deferrals\n- At your current salaries:\n  - 12% combined would be roughly $39,600/year\n  - 15% combined would be roughly $49,500/year\n- That may be more realistic once daycare costs decline in future years.\n\nCash-flow check\n\nYour balances suggest you have some flexibility:\n\n- Checking: $14,680\n- Savings: $28,750\n- Total cash: about $43,430\n- Taxable brokerage: $54,000\n\nMajor recurring obligations visible in May:\n- Mortgage: $3,850/month\n- Daycare: $1,650/month\n- Auto loan: $485/month\n\nYou appear to have a solid cash buffer already, so if your emergency-fund target is met, directing additional savings toward tax-advantaged accounts (HSA and 401(k)) is likely more efficient than adding to taxable investments.\n\nRecommended next steps\n\n- Verify both employer match formulas and confirm you're receiving the full match.\n- Check whether Priya is enrolled in the HDHP/HSA option and compare current HSA contributions against the applicable family limit.\n- If cash flow feels comfortable after mortgage, daycare, and emergency-fund needs:\n  - Raise Priya's 401(k) from 8% to 10%.\n  - Raise Daniel's 401(k) from 6% to 8%.\n- Reassess again when daycare expenses change, since that could free up a significant amount of monthly cash flow for retirement savings.\n\nIf you can provide each employer's matching formula, I can estimate exactly how much additional retirement money you're leaving on the table, if any.",
+  "taskId": "patel_401k_contribution",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1802,
+      "outputTokens": 1119,
+      "totalTokens": 2921,
+      "reasoningTokens": 192,
+      "cachedInputTokens": 1664
+    }
+  }
+}

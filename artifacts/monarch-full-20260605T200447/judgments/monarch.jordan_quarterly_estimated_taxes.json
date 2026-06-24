@@ -1,0 +1,57 @@
+{
+  "taskId": "jordan_quarterly_estimated_taxes",
+  "provider": "monarch",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the April 15 payment and the May income, though it misses the specific client names as grounding signals."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax concepts are accurate, though the response relies on a hypothetical 30% rate rather than providing a more nuanced breakdown of SE tax vs. income tax."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and structured, but it cuts off mid-sentence at the end, failing to provide a complete conclusion."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Appropriate caveats regarding tax advice and the need for full-year forecasting are included."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The Q2 2026 estimated-tax payment is due June 15, 2026",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Safe harbor avoids penalty if you pay 90% of current-year tax or 100% of prior-year tax",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response is incomplete, cutting off at the end of the text."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the self-employment tax rate (15.3%) or the impact of the 92.35% net earnings base on the estimated tax calculation.",
+    "Failed to mention the above-the-line deduction for self-employed health insurance premiums, which is highly relevant to Jordan's marketplace coverage."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the need to separate tax reserves from operating cash flow."
+  ],
+  "safetyIssues": [
+    "None; the response includes appropriate disclaimers that it is not tax advice."
+  ],
+  "summary": "The response provides a solid, grounded framework for managing estimated taxes but is marred by an incomplete, cut-off conclusion and a lack of specific detail on self-employment tax mechanics."
+}

@@ -1,0 +1,45 @@
+{
+  "taskId": "maria_recurring_charges_audit",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies all requested recurring charges, correctly separates them into the specified buckets, and excludes rent from the totals as requested."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "Calculations are accurate ($171.98 and $161.00). The reference to the Microsoft wellness reimbursement is factually correct based on the provided benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response is clear and actionable. It loses a small amount of points for including the raw internal display-card syntax at the end, which should have been rendered as a clean UI element rather than literal text."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately caveats the reimbursement claim by noting the user should verify if they have already claimed it."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft offers a $1,500 annual gym/wellness reimbursement",
+      "tableKey": "microsoft_2026_wellness_reimbursement",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Identified the potential for reimbursement on the ClassPass subscription, effectively neutralizing the cost."
+  ],
+  "safetyIssues": [],
+  "summary": "The assistant correctly categorized all recurring charges, performed accurate math, and provided a highly relevant, personalized insight regarding the Microsoft wellness reimbursement."
+}

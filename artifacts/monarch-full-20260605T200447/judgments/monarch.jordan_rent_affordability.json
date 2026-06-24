@@ -1,0 +1,44 @@
+{
+  "taskId": "jordan_rent_affordability",
+  "provider": "monarch",
+  "totalScore": 5,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 0,
+      "maxScore": 25,
+      "rationale": "The response completely ignores the provided transaction data and account balances, failing to ground the advice in the user's actual financial situation."
+    },
+    {
+      "id": "correctness",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response is generic and does not address the specific financial mechanics of a freelancer with irregular income, tax reserves, or the provided rent amount."
+    },
+    {
+      "id": "resolution",
+      "score": 0,
+      "maxScore": 30,
+      "rationale": "The response fails to answer the user's question about rent affordability, instead asking the user to perform the categorization work themselves."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 15,
+      "rationale": "The response provides no guidance on managing volatile income or protecting tax reserves, which are critical for this persona."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response contains no factual claims to evaluate."
+  ],
+  "missedOpportunities": [
+    "Failed to analyze the $2,100 rent against the $13,960 May income.",
+    "Failed to account for the $18,500 tax reserve balance.",
+    "Failed to provide a framework for assessing rent affordability based on irregular income.",
+    "Failed to suggest checking lease costs, commute needs, or roommate options as requested."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response is a generic, unhelpful prompt that ignores all provided user data and fails to address the core task of assessing rent affordability for a freelancer."
+}

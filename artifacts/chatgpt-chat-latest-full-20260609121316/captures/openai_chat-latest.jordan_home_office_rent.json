@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:21:27.028Z",
+  "latencyMs": 7138,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Yes, potentially. As a self-employed Schedule C consultant, you may be able to deduct part of your rent and home internet, but the rules are different for each.\n\nHome office (rent)\n\nYou can generally deduct a portion of your rent if you have a home office that is:\n\n- Used regularly for your business, and\n- Used exclusively for business (not a bedroom, dining table, or mixed-use space), and\n- Your principal place of business, or a place where you regularly perform administrative/management activities for your consulting business.\n\nA coworking membership (you paid WeWork $350 in May) does not automatically disqualify a home office deduction. If your home office is where you handle client administration, invoicing, planning, project work, etc., you may still qualify.\n\nTwo common methods:\n\n- Simplified method:\n  - $5 per square foot of qualifying office space.\n  - Maximum 300 square feet.\n  - Maximum deduction: $1,500/year.\n\n- Actual expense method:\n  - Deduct the business percentage of rent and certain home expenses.\n  - Example: if a qualifying office occupies 10% of your apartment, roughly 10% of rent could be deductible.\n  - With your current rent of $2,100/month, a 10% business-use percentage would be about:\n    - $210/month\n    - $2,520/year\n\nThe actual method can produce a larger deduction, but requires more recordkeeping.\n\nHome internet\n\nInternet does not need to meet the exclusive-use test.\n\nYou can generally deduct the business-use portion of your home internet expense. The key is having a reasonable allocation based on business versus personal use.\n\nUsing your May Spectrum bill:\n\n- Monthly internet bill: $79.99\n- If business use is 50%: deduction ≈ $40/month\n- If business use is 75%: deduction ≈ $60/month\n- Annualized, that would be roughly:\n  - 50% use: about $480/year\n  - 75% use: about $720/year\n\nKeep a reasonable basis for whatever percentage you claim.\n\nA few important notes\n\n- Your apartment rent itself is not fully deductible; only the business-use portion of a qualifying home office.\n- Since you live alone, there is no roommate allocation issue based on the information provided.\n- The home office deduction is available to self-employed individuals filing Schedule C; it is not available to employees working from home.\n- If you claim a home office using the actual-expense method, related expenses such as renters insurance and utilities may also be partially deductible, depending on your situation.\n\nNext steps\n\n1. Measure the square footage of any dedicated workspace in your apartment.\n2. Determine whether the space is used exclusively for your consulting business.\n3. Decide whether the simplified or actual-expense method produces a better result.\n4. Track a reasonable business-use percentage for internet.\n5. Keep records of rent payments and internet bills in case you need to substantiate the deduction.\n\nIf you can tell me the approximate size of your apartment and the size of the workspace you use for consulting, I can estimate the potential annual deduction under both methods.",
+  "taskId": "jordan_home_office_rent",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1462,
+      "outputTokens": 719,
+      "totalTokens": 2181,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

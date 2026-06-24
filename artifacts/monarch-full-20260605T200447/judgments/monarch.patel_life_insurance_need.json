@@ -1,0 +1,42 @@
+{
+  "taskId": "patel_life_insurance_need",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response mentions the mortgage and income, but fails to use the specific visible balances (e.g., $462,000 mortgage, $142,000 401k) to provide a concrete example of the calculation, which was expected given the persona data."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is factually sound and avoids common pitfalls like pushing whole life insurance. It correctly identifies the need for term life based on the household's specific situation."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response provides a clear framework but remains too generic. It misses the opportunity to perform a 'back-of-the-envelope' calculation using the provided account balances, which would have significantly increased the utility."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good emphasis on verifying employer benefits and the need for a needs-based analysis. It appropriately caveats that this is educational and not legal advice."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to use the visible $462,000 mortgage balance and $142,000/$98,000 401(k) balances to provide a concrete, personalized coverage estimate.",
+    "Did not explicitly mention verifying Daniel's UCHealth group life/disability benefits as a first step before purchasing individual coverage."
+  ],
+  "unexpectedValidInsights": [
+    "The inclusion of 'unpaid work' (childcare) in the income replacement calculation is a high-leverage, personalized insight for a family with a toddler."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, safe framework for estimating life insurance needs but misses the opportunity to use the provided account data for a more personalized, actionable calculation."
+}

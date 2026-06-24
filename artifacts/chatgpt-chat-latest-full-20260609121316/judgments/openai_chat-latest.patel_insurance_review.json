@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_insurance_review",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's specific financial situation, including mortgage, daycare, and employer-provided benefits."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies insurance priorities and uses accurate logic regarding employer benefits and liability. It avoids making unsupported claims about specific coverage amounts."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable, and prioritized list of next steps. It could have been slightly more precise in referencing the specific employer-plan facts provided in the context."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately emphasizes the need to verify employer-specific coverage and beneficiary designations, maintaining a safe and conservative tone."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Group life insurance is often only 1–2× salary",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies that employer-provided life insurance is often limited, but this is a general industry observation rather than a specific locked fact."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Salesforce backup-care benefit as a risk-mitigation tool for childcare continuity."
+  ],
+  "unexpectedValidInsights": [
+    "The inclusion of 'loss-of-use' coverage in the homeowners insurance review is a highly relevant and specific insight for a family with a young child."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and prudent insurance review that correctly prioritizes family protection based on the user's specific financial data and employer context."
+}

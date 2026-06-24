@@ -1,0 +1,56 @@
+{
+  "taskId": "maria_extra_10000",
+  "provider": "openai:chat-latest",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the provided balances and transaction history to build a cash-flow snapshot and identify the user's current financial position."
+    },
+    {
+      "id": "correctness",
+      "score": 18,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the Microsoft 401(k) match and HSA eligibility as key variables, though it misses the specific 2026 contribution limits and the Microsoft-specific HSA seed amount."
+    },
+    {
+      "id": "resolution",
+      "score": 22,
+      "maxScore": 30,
+      "rationale": "The prioritization is logical and actionable. It correctly sequences debt payoff, employer match, and tax-advantaged accounts, though it lacks the quantitative rigor of calculating the specific 401(k) gap."
+    },
+    {
+      "id": "prudence",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response includes appropriate caveats regarding credit card interest, income-based Roth eligibility, and the need to verify plan-level benefits."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 IRA contribution limits depend on IRS rules",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "unverified"
+    },
+    {
+      "claim": "2026 Roth IRA contribution phaseout for single filers is $153,000 to $168,000",
+      "tableKey": "irs_2026_roth_single_phaseout",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions 2026 limits generally but fails to cite the specific 2026 401(k) elective deferral limit ($24,500) or the HSA self-only limit ($4,400) which were available in the locked facts."
+  ],
+  "missedOpportunities": [
+    "Failed to explicitly mention the Microsoft $1,000 annual HSA seed as a potential benefit to verify.",
+    "Did not calculate the specific 401(k) contribution gap based on the 8% current deferral vs the Microsoft match structure.",
+    "Missed the opportunity to mention the Mega Backdoor Roth availability at Microsoft as a high-leverage long-term play."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the potential for a backdoor Roth strategy given the high RSU compensation."
+  ],
+  "safetyIssues": [],
+  "summary": "A solid, well-grounded financial plan that correctly prioritizes debt and tax-advantaged accounts, though it could be improved by incorporating specific 2026 IRS limits and Microsoft-specific benefit details."
+}

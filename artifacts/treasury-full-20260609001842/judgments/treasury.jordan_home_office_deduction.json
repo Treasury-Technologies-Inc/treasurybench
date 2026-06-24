@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_home_office_deduction",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links specific transactions (Adobe, Figma, WeWork, Delta, Marriott, Spectrum, Visible) to the advice provided."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly identifies tax rules for 2026, including the simplified home office deduction, 50% meal rule, and the distinction between Schedule C and above-the-line deductions."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable checklist. The advice is tailored to the user's specific financial situation."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of audit risks, specifically regarding the exclusive use requirement for home offices and the distinction between personal and business expenses."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Simplified home office deduction is $5 per square foot up to 300 square feet",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Business meals are generally 50% deductible",
+      "tableKey": "irs_2026_business_meals_deduction",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Explicitly advised separating health insurance premiums from Schedule C to avoid incorrect tax treatment."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, grounded, and highly actionable tax advice tailored to the user's specific 1099 income and expense profile."
+}

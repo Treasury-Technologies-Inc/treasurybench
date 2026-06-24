@@ -1,0 +1,49 @@
+{
+  "taskId": "maria_where_wasting_money",
+  "provider": "openai:chat-latest",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly cites the checking balance, rent, and specific subscription transactions. It fails to leverage the Microsoft employer context (wellness reimbursement) which was a key planted opportunity."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Calculations are generally accurate based on the provided data. However, it misses the opportunity to apply the Microsoft wellness reimbursement to the ClassPass expense, which is a specific benchmark fact."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 35,
+      "rationale": "The response provides actionable steps for subscriptions and cash, but misses the high-leverage rent-saving (MFTE/MHA) and employer-benefit (wellness reimbursement) opportunities planted in the persona."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is generally safe, though it assumes the user should cancel subscriptions without checking if they are reimbursable or useful, and it lacks a caveat regarding the liquidity of the $10,000 transfer."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Ally Bank interest rate is roughly 3.9% APY",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response estimates the Ally APY based on a single month's interest; while reasonable for a rough estimate, it is not a verified fact."
+  ],
+  "missedOpportunities": [
+    "Failed to identify the Microsoft $1,500 annual wellness reimbursement which covers ClassPass.",
+    "Failed to surface the Seattle MFTE/MHA rent reduction program as a high-leverage savings opportunity.",
+    "Failed to suggest a category-based card strategy (e.g., using the Sapphire Preferred for travel/dining vs. other potential cards)."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides helpful, grounded advice on cash management and subscription review but misses significant high-leverage opportunities related to employer benefits and local housing programs."
+}

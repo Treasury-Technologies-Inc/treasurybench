@@ -1,0 +1,49 @@
+{
+  "taskId": "maria_backdoor_roth",
+  "provider": "monarch",
+  "totalScore": 45,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response fails to use the provided persona data (e.g., Maria's income, employer, or account balances) to provide a personalized recommendation, instead offering a generic template."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response cites stale 2024 IRA contribution limits ($7,000) instead of the 2026 limit ($7,500) and fails to apply the 2026 Roth phaseout context."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 30,
+      "rationale": "The response asks the user to provide information that is already available in the persona data (income, IRA balances), failing to synthesize the available information."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response correctly identifies the pro-rata rule and the need to check for existing pre-tax IRA balances, which is a critical safety caveat."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "For 2024, the IRA contribution limit is $7,000 ($8,000 if 50+).",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response uses 2024 tax year limits instead of the 2026 benchmark year limits."
+  ],
+  "missedOpportunities": [
+    "Failed to use Maria's visible income (Microsoft payroll) and RSU vest data to estimate her MAGI and determine if she is over the 2026 Roth phaseout.",
+    "Failed to note that Maria has a $0 balance in her Fidelity Traditional IRA, which makes the backdoor Roth process straightforward (no pro-rata issue).",
+    "Failed to mention that Microsoft's 401(k) plan supports after-tax contributions and automatic in-plan Roth conversions (Mega Backdoor Roth), which is a higher-leverage play for a Microsoft employee."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides generic, stale tax advice and fails to leverage the specific financial data provided for the persona, missing the opportunity to identify the user's eligibility for a backdoor or mega-backdoor Roth."
+}

@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:21:19.889Z",
+  "latencyMs": 7881,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the information available, your current rent of $2,100/month looks reasonable relative to your recent income and cash reserves, but the key issue for a freelancer is not the average month—it's whether rent remains comfortable during slow periods.\n\nWhat your numbers suggest\n\n- May business income:\n  - $8,500\n  - $4,200\n  - $1,260\n  - Total: $13,960\n\n- Monthly rent: $2,100\n\n- Rent as a percentage of May gross business income:\n  - $2,100 ÷ $13,960 ≈ 15%\n\nEven after accounting for taxes and business expenses, 15% of gross revenue is not high.\n\nCash position as of 2026-05-31\n\n- Personal checking: $9,650\n- Business checking: $7,420\n- Tax reserve savings: $18,500\n- Total cash accounts: about $35,570\n\nYou also have investment assets, but given your preference for separate business/tax/emergency buckets, the cash balances are the more relevant measure.\n\nWhat I would check before moving\n\n1. Base the decision on a low-income month, not a good month\n- Freelance income is uneven.\n- Ask: \"Could I comfortably pay the new rent if revenue fell to 50% of a typical month for several months?\"\n- If a prospective apartment would increase rent materially, stress-test it against your weakest recent quarters rather than your strongest months.\n\n2. Preserve separate cash buckets\nBefore taking on higher housing costs, make sure you can still maintain:\n- Tax reserve (currently $18,500)\n- Business operating cash\n- Personal emergency fund\n\nA move that forces you to dip into the tax reserve during slow months is usually a warning sign.\n\n3. Estimate the true moving cost\nBeyond rent, check:\n- Security deposit\n- Application/admin fees\n- Utility deposits\n- Moving costs\n- Furniture or setup costs\n- Parking fees\n- Renters insurance changes\n\nA move can easily cost several thousand dollars upfront even if monthly rent stays similar.\n\n4. Evaluate rent against recurring obligations\nKnown monthly obligations include roughly:\n- Rent: $2,100\n- Marketplace health insurance: $415\n- Internet: $80\n- Phone: $35\n- HSA contribution: $300\n- Therapy: $160\n\nThat's about $3,090/month before groceries, dining, transportation, taxes, and debt repayment.\n\nIf a new apartment pushes rent significantly higher, recalculate this baseline first.\n\n5. Check lease flexibility\nFor a consultant with variable income, flexibility has value.\nConsider:\n- Lease break terms\n- Subletting policy\n- Renewal increases\n- Required notice periods\n\nA slightly more expensive apartment with better lease flexibility can sometimes be safer than a cheaper unit with strict penalties.\n\n6. Consider business-travel convenience\nYou had at least one client trip to Atlanta in May and appear to travel for work.\nA move that:\n- Reduces airport travel time,\n- Improves access to coworking space,\n- Lowers transportation costs,\n\nmay offset some rent increase.\n\nA practical guideline\n\nWithout a full year of income history, I would be cautious about moving above roughly your current housing cost unless:\n- Your client pipeline is strong,\n- Your tax reserve remains fully funded,\n- You still have several months of personal living expenses available outside the tax bucket.\n\nGiven the data provided, $2,100/month does not appear excessive for a solo self-employed professional in Austin. The bigger question is whether a new place would materially increase that number. If you tell me the rent you're considering, I can estimate the cash-flow impact and stress-test it against your current finances.",
+  "taskId": "jordan_rent_affordability",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1467,
+      "outputTokens": 817,
+      "totalTokens": 2284,
+      "reasoningTokens": 0,
+      "cachedInputTokens": 1152
+    }
+  }
+}

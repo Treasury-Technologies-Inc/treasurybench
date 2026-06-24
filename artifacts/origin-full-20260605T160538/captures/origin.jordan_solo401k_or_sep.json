@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-07T03:10:47.616Z",
+  "latencyMs": 33747,
+  "mode": "product_capture",
+  "notes": "Official Origin product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "origin",
+  "response": "Based on your memory that you're self-employed as a UX consultant filing Schedule C in Austin, TX with no dependents and a preference for low-admin financial systems, this is a well-timed question — and the answer depends on how much you want to maximize contributions versus keeping things simple.\nFor most self-employed consultants at moderate-to-high income levels, the solo 401(k) wins on contribution power, but the SEP IRA wins on simplicity and flexibility. Here's how to think through it for your specific situation.\nContribution potential: the core difference\nThe fundamental distinction is that a solo 401(k) lets you contribute in two roles — as both employee and employer — while a SEP IRA only allows employer contributions.\nWith a solo 401(k) in 2026, you can contribute:\nEmployee deferral: up to $24,500 (flat, not percentage-based)\nEmployer contribution: up to roughly 20% of your net self-employment income\nCombined cap: $72,000 total (before any catch-up contributions)\nWith a SEP IRA in 2026, you can contribute:\nEmployer only: up to 25% of net self-employment compensation, capped at $72,000\nNo employee deferral at all\nSince tax matters involve specialized expertise, I'll explain the concepts educationally. Per CFP Board standards, consult a qualified tax advisor or CPA for advice specific",
+  "taskId": "jordan_solo401k_or_sep"
+}

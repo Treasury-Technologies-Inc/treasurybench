@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:21:12.005Z",
+  "latencyMs": 7970,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on your May transactions, the recurring business tools I can see are:\n\n- WeWork Austin: $350/month\n- Adobe Creative Cloud: $59.99/month\n- Figma Professional: $15/month\n- Webflow: $39/month\n- Amazon Web Services: $82.44/month\n- Google Workspace: $14.40/month\n\nApproximate annual cost:\n\n- WeWork: $4,200/year\n- Adobe: about $720/year\n- Figma: $180/year\n- Webflow: $468/year\n- AWS: about $989/year\n- Google Workspace: about $173/year\n\nTotal visible recurring business-tool spend: about $6,730/year before any additional subscriptions not shown.\n\nPriority review opportunities\n\n1. WeWork ($4,200/year) — biggest potential savings\n- This is by far the largest recurring tool expense.\n- If client meetings are infrequent, switching to:\n  - a lower-tier coworking plan,\n  - a meeting-room-only membership,\n  - day passes,\n  - or working primarily from home\n  could save hundreds per month.\n- Even reducing the cost from $350 to $150/month would save about $2,400/year.\n\nQuestions to ask:\n- How many days did you actually use the space in May?\n- Are clients requiring a professional meeting location, or is this mostly a workspace preference?\n\n2. Adobe Creative Cloud ($720/year)\n- Common area for overspending among consultants.\n- If you're mainly doing UX work rather than heavy creative production, review whether you need the full Creative Cloud bundle.\n- Potential alternatives:\n  - Single-app Adobe plans.\n  - Figma-native workflows.\n  - Affinity products (one-time purchase rather than subscription) if your workflow permits.\n\nPotential savings:\n- Downgrading from a full suite to a smaller plan could save roughly $20–$40/month ($240–$480/year), depending on your current package.\n\n3. AWS ($989/year)\n- Worth checking because cloud bills often drift upward unnoticed.\n- Review:\n  - unused instances,\n  - idle storage,\n  - old test environments,\n  - forgotten domains or services.\n- A 25% reduction would save about $250/year with very little disruption.\n\n4. Webflow ($468/year)\n- Keep if it directly supports client work or lead generation.\n- Review whether:\n  - you still need the current plan level,\n  - archived projects can be downgraded,\n  - a client should be paying for hosting instead of you.\n\n5. Figma Professional ($180/year)\n- At $15/month, this is relatively low-cost for a UX consultant.\n- Unless you're not using advanced features, this is probably not the place to focus savings efforts.\n\n6. Google Workspace ($173/year)\n- Very low relative to the value of business email, Drive, and calendar.\n- I would generally keep this unless you have duplicate services elsewhere.\n\nA higher-value observation\n\nYour recurring business-tool spend (~$560/month including WeWork) is modest relative to the business income visible in May ($13,960 received). The largest financial wins for you are likely:\n\n1. Optimizing WeWork if usage is low.\n2. Auditing AWS for waste.\n3. Ensuring all business-travel and software costs are properly deducted on Schedule C.\n4. Maintaining your tax reserve system (currently $18,500 in Ally), which aligns with your preference for tax-safe cash flow.\n\nExact next step:\n- Pull the last 3 months of recurring subscriptions from the Chase Ink card.\n- For each subscription, mark it as:\n  - Revenue-generating,\n  - Client-required,\n  - Nice-to-have,\n  - Unused.\n- Cancel anything in the last two categories first.\n- Start with WeWork and AWS, since those two alone represent roughly $5,200 of the ~$6,700 annual recurring tool spend I can see.",
+  "taskId": "jordan_subscriptions_benefits",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1459,
+      "outputTokens": 866,
+      "totalTokens": 2325,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 0
+    }
+  }
+}

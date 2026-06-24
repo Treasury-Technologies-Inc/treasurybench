@@ -1,0 +1,53 @@
+{
+  "taskId": "maria_hsa",
+  "provider": "openai:chat-latest",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's salary, RSU vest, and current 401(k) contribution rate to contextualize the advice."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the tax advantages and payroll/FICA benefits, but fails to mention the specific Microsoft HSA seed benefit ($1,000) which was a key planted fact."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear, though it misses the opportunity to quantify the specific Microsoft employer seed as part of the total HSA value proposition."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding HDHP eligibility, though it could have been more explicit about the 2026 contribution limit."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft contributes $1,000 annually to the HSA for employees enrolled in an eligible high-deductible health plan.",
+      "tableKey": "microsoft_2026_hsa_seed",
+      "state": "unverified"
+    },
+    {
+      "claim": "Washington has no state income tax.",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response failed to incorporate the specific Microsoft 2026 HSA seed ($1,000) as a concrete benefit of the plan, which was a key planted fact for this persona."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the $1,000 annual Microsoft HSA seed benefit, which significantly increases the value proposition of the HSA for this user.",
+    "Did not explicitly state the 2026 HSA self-only contribution limit ($4,400) to provide a concrete target for the user."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides sound, personalized advice on HSA utility and tax mechanics, but misses the opportunity to incorporate specific Microsoft-provided benefits like the employer HSA seed."
+}

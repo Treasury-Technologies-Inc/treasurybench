@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_business_expenses_may",
+  "provider": "openai:chat-latest",
+  "totalScore": 98,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies and sums business expenses from the provided CSV, correctly excluding personal items like groceries, dining, and medical expenses."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "Calculations are accurate. The response correctly identifies that health insurance and HSA contributions are not Schedule C expenses, aligning with the provided locked facts."
+    },
+    {
+      "id": "resolution",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response is clear and actionable. It provides a helpful breakdown and addresses the user's request for categorization caution."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately flags the need for substantiation for travel and mixed-use internet/phone expenses."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employed health insurance premiums are not a Schedule C business expense",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA contributions are not a Schedule C business expense",
+      "tableKey": "hsa_contribution_treatment",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "The response explicitly highlights the bookkeeping risk of using a business credit card for personal expenses (groceries/dining), which is a high-value insight for a freelancer."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides an accurate, well-grounded analysis of May 2026 business expenses with excellent separation of personal and business financial buckets."
+}

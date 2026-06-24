@@ -1,0 +1,60 @@
+{
+  "taskId": "maria_rent_rewards",
+  "provider": "treasury",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the rent amount and location, and links the advice to the user's existing Chase Sapphire Preferred card and travel preferences."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 30,
+      "rationale": "The response uses the correct Bilt 2.0 product names and fee-free rent mechanics. However, it incorrectly describes the Bilt Blue earning structure (claiming 4% Bilt Cash on everyday spend is a standard feature, whereas it is a specific monthly configuration choice) and misstates the Bilt Obsidian grocery multiplier (3x is not a standard Bilt Obsidian feature)."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable path for rent rewards and includes a helpful checklist. It fails to explicitly annualize the $28,200 rent figure in a summary calculation, though it does the monthly math."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good warnings about portal fees and the need to verify landlord payment methods. The advice is safe and avoids recommending fee-based payment routes."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Bilt Blue earns 4% Bilt Cash on everyday non-housing spend",
+      "tableKey": "bilt_2026_blue_cash_earn",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Bilt Obsidian is a mid-tier Bilt card with a $95 annual fee",
+      "tableKey": "bilt_2026_obsidian_fee_credit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Bilt points transfer 1:1 to Alaska Airlines",
+      "tableKey": "bilt_2026_atmos_transfer_partner",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly attributes a 3x grocery multiplier to the Bilt Obsidian card, which is not a standard feature of that product.",
+    "The description of Bilt Blue's '4% Bilt Cash' implies it is a standing feature rather than a monthly configuration choice."
+  ],
+  "missedOpportunities": [
+    "Failed to explicitly calculate the total annual rent of $28,200 to provide a clear 'total annual value' projection for the user."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the 'Housing-only' mode as a way to avoid the manual unlock step."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a strong, personalized recommendation for Bilt Rewards that aligns with the user's Seattle location and travel goals, though it contains minor inaccuracies regarding specific card multipliers."
+}

@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:13:24.336Z",
+  "latencyMs": 5673,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "In May 2026, you spent $4,197.71 based on the transactions provided.\n\nI counted spending transactions in May and excluded:\n- Income (Microsoft payroll, freelance income, RSU vesting)\n- Interest income\n- 401(k) contributions (savings/investing rather than spending)\n\nLargest spending categories\n\n1. Rent: $2,350.00\n   - Cascade Apartments\n\n2. Groceries: $671.85\n   - Costco: $286.41 + $214.82\n   - Safeway: $94.18\n   - Trader Joe's: $76.44\n\n3. Travel: $560.64\n   - Alaska Airlines: $248.20\n   - Avis Rent A Car: $312.44\n\n4. Dining: $162.11\n   - Oddfellows Cafe: $42.16\n   - Tavolata: $88.70\n   - Ramen Danbo: $31.25\n\n5. Utilities: $89.00\n   - Xfinity\n\n6. Fitness: $89.00\n   - ClassPass\n\n7. Subscriptions: $82.98\n   - Netflix: $22.99\n   - Adobe: $59.99\n\n8. Phone: $72.00\n   - AT&T Wireless\n\n9. Transportation (rideshare): $61.90\n   - Lyft: $27.80\n   - Uber: $34.10\n\n10. Gas: $58.23\n    - Costco Gas\n\nA few useful ratios:\n- Rent was 56.0% of total May spending ($2,350 ÷ $4,197.71).\n- Groceries + dining totaled $833.96 (19.9% of spending).\n- Travel totaled $560.64 (13.4% of spending).\n\nIf you'd like, I can also compare May spending to your income and estimate your May savings rate.",
+  "taskId": "maria_spend_may_total",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1513,
+      "outputTokens": 728,
+      "totalTokens": 2241,
+      "reasoningTokens": 320,
+      "cachedInputTokens": 1152
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "taskId": "maria_tax_optimization",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 12,
+      "maxScore": 20,
+      "rationale": "The response acknowledges the user's W-2 and freelance income but fails to use the specific transaction data (e.g., the $1,200 freelance payment or the 8% 401k contribution) to provide concrete, personalized calculations."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies 2026 limits like the $24,500 401(k) deferral and $72,000 415(c) limit, but it includes stale/vague IRA limit language ($7,000) instead of the correct 2026 $7,500 limit."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response provides a good overview of tax levers but lacks a prioritized, actionable plan based on the user's specific financial situation."
+    },
+    {
+      "id": "prudence",
+      "score": 18,
+      "maxScore": 25,
+      "rationale": "The response includes appropriate disclaimers about tax advice and the need for plan-specific verification, though it could be more explicit about the risks of under-withholding on RSUs."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 415(c) defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is around $7,000",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response cites $7,000 as the 2026 IRA contribution limit, which is stale; the correct 2026 limit is $7,500."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate the specific 401(k) contribution gap based on the user's 8% deferral rate and Microsoft's 50% match.",
+    "Did not explicitly mention the Microsoft HSA seed or the specific 2026 HSA contribution limits.",
+    "Did not provide a concrete estimated tax reserve calculation for the $1,200 freelance payment."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the distinction between the 401(k) elective deferral limit and the overall 415(c) limit for mega backdoor Roth purposes."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid overview of 2026 tax rules but misses the opportunity to provide personalized, data-driven calculations based on the user's visible transactions and employer benefits."
+}

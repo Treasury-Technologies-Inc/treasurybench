@@ -1,0 +1,67 @@
+{
+  "taskId": "maria_401k_contribution",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the visible payroll data ($2,500 gross, $200 deferral) to calculate the current 8% rate and annual pace, and correctly links the advice to Microsoft-specific benefits."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly cites the 2026 IRS 401(k) limit ($24,500) and Microsoft's 50% match. It correctly identifies the HSA limit and ESPP discount. It slightly oversimplifies the match calculation by assuming the match applies to the full $24,500 limit without explicitly noting if there is a plan-level cap, though it remains factually grounded in the provided Microsoft plan facts."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The response provides clear, quantified next steps and explains the 'opportunity gap' in dollar terms, which is highly actionable for the user."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding cash flow and suggests checking enrollment status, maintaining a balanced and safe tone."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 IRS elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft matches 50% of your contributions",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft contributes $1,000 annually to the HSA",
+      "tableKey": "microsoft_2026_hsa_seed",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA contribution limit for self-only is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft ESPP offers a 10% discount",
+      "tableKey": "microsoft_2026_espp",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Mega Backdoor Roth mechanics in more detail given the Microsoft plan context, though it was mentioned in the note."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested using RSU vest cash to offset the impact of higher 401(k) contributions on take-home pay."
+  ],
+  "safetyIssues": [],
+  "summary": "The response is highly accurate, well-grounded in the user's specific financial data and employer benefits, and provides clear, actionable steps to optimize retirement savings."
+}

@@ -1,0 +1,54 @@
+{
+  "taskId": "jordan_health_insurance_marketplace",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's specific marketplace premium, HSA balance, and recent contribution activity."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the need for HDHP verification and the self-employed health insurance deduction. It misses the specific 2026 HSA self-only limit ($4,400) and the OBBBA provision regarding Bronze/Catastrophic plans as 'deemed HDHPs'."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps for verification. It is slightly generic regarding the HSA limit, failing to provide the specific 2026 figure."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response appropriately cautions against assuming HSA eligibility and emphasizes checking plan documents."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Bronze and Catastrophic ACA Exchange plans are HSA-compatible deemed HDHPs",
+      "tableKey": "obbba_2026_bronze_catastrophic_hsa",
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response failed to explicitly state the 2026 HSA self-only contribution limit of $4,400, instead suggesting the user check their limit.",
+    "The response did not mention the OBBBA 2026 provision that allows Bronze/Catastrophic plans to be treated as HSA-eligible."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the 2026 HSA self-only limit of $4,400.",
+    "Failed to mention the OBBBA 2026 provision regarding Bronze/Catastrophic plans as 'deemed HDHPs'."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides solid, grounded advice on verifying HSA eligibility and tax deductions, though it misses specific 2026 regulatory updates that would have provided higher-leverage guidance."
+}

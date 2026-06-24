@@ -1,0 +1,60 @@
+{
+  "taskId": "jordan_quarterly_estimated_taxes",
+  "provider": "treasury",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the May income and the April tax payment. It uses the Ally and Bluevine balances to assess liquidity. It misses the specific client names (Figma/Notion) as context for the income, but correctly identifies the tax reserve status."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The tax math is reasonable for a projection, but the response incorrectly labels the May income as a negative number (-$13,960) in the opening, which is a hallucination of the transaction data. It correctly identifies the June 15 deadline and the safe harbor concept."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear. It provides a specific dollar amount for the payment and links to the IRS Direct Pay portal. It correctly distinguishes between the tax reserve and operating cash."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats about the safe harbor rules and the need to check prior-year tax returns. It correctly advises that the payment is an estimate and suggests consulting an accountant."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The deadline for Q2 estimated taxes is June 15, 2026.",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3% of net profit.",
+      "tableKey": "se_tax_2026_net_earnings_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Texas has no state income tax.",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly displays the May income as -$13,960, which contradicts the positive income transactions in the provided CSV.",
+    "The response uses a 30% estimate for taxes, which is a reasonable heuristic but should be caveated more strongly as a rough estimate rather than a precise requirement."
+  ],
+  "missedOpportunities": [
+    "The response could have explicitly mentioned that the self-employment tax is calculated on net earnings after business expenses (like the WeWork rent and software subscriptions), rather than just gross income."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to use the 'annualized income installment method' is a high-value, expert-level insight for a freelancer with irregular income."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides clear, actionable tax advice grounded in the user's financial data, though it contains a minor data-entry error regarding the sign of the May income."
+}

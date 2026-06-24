@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:14:53.024Z",
+  "latencyMs": 7173,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on your balances and recent spending, you appear to be holding substantially more cash in checking than is needed for near-term bills.\n\nCurrent balances (2026-05-31):\n- Checking: $18,450\n- Ally savings: $5,250\n- Total cash: $23,700\n- Credit card balance: $1,840\n- Brokerage: $62,300\n- 401(k): $48,500\n\nEstimated monthly spending from your recent transactions:\n- Rent: $2,350\n- Utilities/phone: about $161 ($89 Xfinity + $72 AT&T)\n- Subscriptions: about $83 ($23 Netflix + $60 Adobe)\n- Fitness: $89\n- Groceries: about $672\n- Dining: about $162\n- Transportation: about $120\n- Typical non-travel monthly spending subtotal: about $3,640\n\nTravel spending was unusually high in May:\n- Airfare + rental car: about $561\n- I would not necessarily treat that as a recurring monthly bill unless you travel regularly.\n\nIncome observed:\n- Microsoft payroll deposits: $1,840 twice monthly = $3,680/month net deposited to checking.\n- Freelance income: $1,200 in May (may not be recurring).\n\nRecommendation\n\nFor a checking account, a practical target is:\n- 1 month of expected bills plus a buffer for timing and surprises.\n- For you, roughly $5,000-$7,000 in checking is likely sufficient.\n\nExample allocation:\n- Keep $7,000 in checking.\n- Increase savings from $5,250 to around $10,000-$12,000.\n- Move the remainder into T-bills or a Treasury money market fund.\n\nUsing your current balances:\n- Current checking: $18,450\n- Suggested checking: $7,000\n- Excess checking: about $11,450\n\nYou could:\n- Move about $5,000-$7,000 to Ally savings if you want a larger liquid emergency cushion.\n- Move about $4,000-$6,000 into short-term Treasuries (or a Treasury money market fund).\n\nPotential yield impact\n\nYour Ally account earned $17.06 on a $5,250 balance during May, which implies an annualized yield around 3.9% at that time.\n\nIf $11,450 currently sitting in checking earns essentially 0% and you move it to:\n- 4% savings/Treasury yield: about $458/year extra interest.\n- 4.5% Treasury yield: about $515/year extra interest.\n\nWashington has no state income tax, so there is no state-tax advantage from Treasuries versus bank interest. The choice is mostly about yield, liquidity, and convenience.\n\nOne additional consideration\n\nYou received a $42,000 Microsoft RSU vest in May and now have $62,300 in your Robinhood brokerage. Before buying more investments or locking cash into longer maturities, decide how much cash reserve you want overall.\n\nA reasonable structure could be:\n- Checking: $7,000\n- Emergency fund in Ally/high-yield savings: $12,000-$18,000 (roughly 3-5 months of your core expenses)\n- Remaining cash beyond that: short-term T-bills or invested according to your broader goals and risk tolerance\n\nExact next step:\n1. Leave about $7,000 in Chase checking.\n2. Transfer approximately $11,450 out of checking.\n3. Keep total emergency savings at least $12,000-$18,000 between checking and Ally.\n4. Put any cash above that emergency-fund target into:\n   - a Treasury money market fund, or\n   - a 4- to 13-week Treasury bill ladder if you are comfortable managing maturities.\n\nThat approach keeps bills covered while potentially adding roughly $450-$500+ per year in interest compared with leaving the excess cash in checking.",
+  "taskId": "maria_checking_buffer",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1520,
+      "outputTokens": 803,
+      "totalTokens": 2323,
+      "reasoningTokens": 0,
+      "cachedInputTokens": 1152
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_idle_cash",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the visible account balances and transaction data to calculate monthly expenses and identify idle cash. It correctly references the specific accounts (Capital One, Ally, Bluevine)."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the tax reserve as non-spendable. It correctly identifies the need for a buffer. The math is generally sound, though it assumes a 4.5% HYSA rate which is a reasonable market estimate but not a locked fact."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable bucket strategy. It offers specific dollar amounts for transfers and defines the purpose of each bucket well."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats about the tax reserve and the nature of freelance income. It avoids aggressive investment advice."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Ally Tax Reserve account is a great start—ensure it is a High-Yield Savings subtype",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response assumes a 4.5% interest rate for the HYSA; while realistic, it is an external estimate not tied to a locked benchmark fact."
+  ],
+  "missedOpportunities": [
+    "The response could have explicitly mentioned the 2026 self-employment tax rate (15.3%) or the specific quarterly estimated tax due date (June 15, 2026) to add more precision to the tax reserve advice."
+  ],
+  "unexpectedValidInsights": [
+    "The recommendation to automate a 'Tax Sweep' of 30% of every client payment is a high-leverage, actionable play for a freelancer with irregular income."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, grounded, and actionable response that correctly separates business, tax, and personal cash buckets while providing a clear strategy for managing irregular freelance income."
+}

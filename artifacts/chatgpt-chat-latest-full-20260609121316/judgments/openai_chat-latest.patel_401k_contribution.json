@@ -1,0 +1,50 @@
+{
+  "taskId": "patel_401k_contribution",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the visible payroll and 401(k) transaction data to calculate current contribution rates and annualize them."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the need to verify employer matches and HSA limits, but it fails to explicitly mention the 2026 IRS 401(k) elective deferral limit of $24,500, which was a key benchmark fact."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear, providing specific percentage increase recommendations and a logical prioritization order."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding employer plan verification and cash flow, though it could have been more explicit about the distinction between plan-level benefits and individual enrollment."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 family HSA contribution limit",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions the family HSA limit but does not explicitly state the 2026 figure ($8,750), which would have strengthened the resolution."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly state the 2026 IRS 401(k) elective deferral limit ($24,500) to provide a concrete ceiling for the user's goal-setting.",
+    "Could have explicitly referenced the Salesforce 6% match cap ($5,000) as a specific target for Priya."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that 401(k) contributions reduce taxable income, meaning the impact on take-home pay is less than the contribution amount."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a well-grounded, actionable analysis of the user's 401(k) contributions and offers a logical, cash-flow-conscious strategy for increasing savings, though it missed an opportunity to cite specific 2026 IRS limits."
+}

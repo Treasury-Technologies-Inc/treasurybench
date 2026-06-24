@@ -1,0 +1,48 @@
+{
+  "taskId": "maria_rental_car_trip",
+  "provider": "openai:chat-latest",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links the Avis transaction and CSP card usage to the advice. It correctly identifies the user's employer (Microsoft) and the nature of the trip (SFO work trip)."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The explanation of CSP primary rental coverage is accurate. The advice regarding corporate rates and Costco is sound. It correctly identifies that liability insurance is not covered by the card."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response provides actionable steps but misses the opportunity to explicitly mention the Microsoft-linked Alaska/Atmos corporate status challenge or specific Microsoft Prime portal benefits for travel, which were planted opportunities."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent use of caveats regarding corporate policy, insurance exclusions, and the need for verification."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Chase Sapphire Preferred provides primary auto rental collision damage waiver coverage when the full rental is charged to the card and the rental company's CDW is declined",
+      "tableKey": "chase_2026_sapphire_preferred_rental",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not mention the Microsoft-linked Alaska/Atmos corporate status challenge.",
+    "Did not explicitly reference the Microsoft Prime portal as a potential source for travel discounts."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested re-shopping for rental car prices after booking, which is a high-leverage, actionable tip for volatile travel costs."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prudent response that correctly identifies the value of the user's credit card coverage and suggests logical cost-saving measures, though it missed specific Microsoft-related travel perks."
+}

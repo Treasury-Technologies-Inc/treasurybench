@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_extra_8000",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the provided account balances and transaction history to ground its recommendations."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits (HSA $4,400, 401k $24,500). The tax reserve calculation is a reasonable estimate for a freelancer."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable, and prioritized plan. The inclusion of the emergency fund buffer as a secondary consideration is prudent."
+    },
+    {
+      "id": "prudence",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "Excellent emphasis on tax-reserve protection and liquidity before retirement funding."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the self-employed health insurance deduction (Schedule 1) as a way to further optimize tax liability beyond just the HSA."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to keep the Traditional IRA 'clean' for future Backdoor Roth moves by using a Solo 401(k) instead is a high-leverage, expert-level insight for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized, accurate, and prudent financial plan that correctly prioritizes tax obligations and tax-advantaged retirement accounts for a self-employed consultant."
+}

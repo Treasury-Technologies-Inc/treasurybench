@@ -1,0 +1,58 @@
+{
+  "taskId": "maria_401k_percent_to_limit",
+  "provider": "origin",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response acknowledges the Microsoft 401(k) account but fails to use the visible transaction data (which shows a $2,500 semi-monthly gross pay) to calculate the user's actual current contribution pace."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the 2026 $24,500 limit and the Microsoft match structure. However, it uses hypothetical salary examples instead of calculating the user's specific pace based on the visible $2,500 semi-monthly gross pay."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The framework is clear, but the lack of specific math for the user's known salary ($60,000/year) makes the advice less actionable than it could have been."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding plan documents, salary, and age-based catch-up contributions."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The 2026 IRS employee elective deferral limit is $24,500.",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "The 2026 401(k) catch-up contribution for age 50-59 is $8,000.",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft matches 50% of employee 401(k) contributions up to the IRS elective deferral limit.",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to use the visible payroll data ($2,500 semi-monthly gross) to calculate that the user's current 8% contribution ($200/paycheck) is only $4,800 annually, which is significantly off-pace for the $24,500 limit.",
+    "Did not explicitly calculate the required percentage (approx. 40.8%) to hit the $24,500 limit for the remaining 14 paychecks of 2026."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the nuance that Microsoft's match is always pre-tax, even if the employee elects Roth contributions."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate 2026 tax and plan-level facts but misses the opportunity to provide a personalized calculation using the user's visible payroll data."
+}

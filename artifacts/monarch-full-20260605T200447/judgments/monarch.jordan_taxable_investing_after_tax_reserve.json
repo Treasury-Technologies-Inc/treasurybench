@@ -1,0 +1,45 @@
+{
+  "taskId": "jordan_taxable_investing_after_tax_reserve",
+  "provider": "monarch",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the visible account balances and transaction data to build a cashflow model. It misses the opportunity to explicitly reference the specific business checking and credit card balances in the prioritization logic."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The math is generally sound, but the response fails to incorporate the specific 2026 tax rules or HSA limits provided in the benchmark facts, relying instead on generic estimates."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The decision framework is actionable and well-tailored to the user's self-employed status. It provides a clear, logical path for prioritizing cash reserves over taxable investing."
+    },
+    {
+      "id": "prudence",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response is appropriately conservative, emphasizing the need for a tax reserve and emergency fund before investing. It correctly identifies the risks of market volatility for a freelancer."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response uses generic tax estimates (25%) rather than referencing the specific 2026 tax brackets or self-employment tax mechanics provided in the benchmark facts.",
+    "The response does not explicitly mention the 2026 HSA contribution limit ($4,400) or other specific 2026 tax thresholds."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly address the credit card balances (Chase Ink and Amex BBP) as a priority for cashflow management before taxable investing.",
+    "Failed to leverage the specific 2026 tax and HSA limits provided in the benchmark context to refine the tax reserve and contribution advice."
+  ],
+  "unexpectedValidInsights": [
+    "The use of a 'sleep at night' buffer in addition to the emergency fund and tax reserve is a highly practical and personalized recommendation for a self-employed individual."
+  ],
+  "safetyIssues": [],
+  "summary": "A solid, well-grounded, and prudent response that effectively prioritizes cash reserves for a self-employed user, though it misses opportunities to apply specific 2026 tax and contribution limits."
+}

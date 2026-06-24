@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:14:06.678Z",
+  "latencyMs": 8928,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the data you shared, I only see one active credit card: your Chase Sapphire Preferred (balance: $1,840). So I can evaluate your current setup and identify where additional cards could add value.\n\nYour May spending on the Sapphire Preferred\n\n- Dining: $162.11\n- Travel: $560.64\n- Groceries: $671.85\n- Gas: $58.23\n- Rideshare (Lyft/Uber): $61.90\n- Utilities/phone: $161.00\n- Subscriptions: $82.98\n- Fitness: $89.00\n\nHow the Sapphire Preferred fits\n\nGood categories for Sapphire Preferred:\n- Dining: earns 3x Ultimate Rewards points.\n- Most travel purchases: generally 2x points.\n- Lyft may earn enhanced rewards depending on Chase's current Lyft partnership terms at the time of purchase.\n\nLess efficient categories:\n- Costco and other groceries.\n- Gas.\n- Utilities.\n- Phone bill.\n- Subscriptions.\n- Fitness spending.\n\nApproximate rewards from your May spending if all earned standard Sapphire Preferred rates:\n- Dining: ~$162 × 3 = ~486 points\n- Travel: ~$561 × 2 = ~1,121 points\n- Everything else: ~$1,065 × 1 = ~1,065 points\n\nTotal: roughly 2,700 Ultimate Rewards points from the month's spending.\n\nWhere you could earn more\n\n1. Rent is your biggest missed rewards opportunity\n\nYour rent is:\n- $2,350/month\n- $28,200/year\n\nIf your landlord accepts rent through Bilt's network, a Bilt Mastercard could earn:\n- Up to 28,200 Bilt points/year on rent payments without a card-processing fee (subject to program rules).\n\nThat is likely the highest-value card opportunity visible in your data.\n\n2. Groceries are your second-largest optimization target\n\nCurrent grocery spend:\n- ~$672/month\n- ~$8,000/year if consistent\n\nA card earning 3%-6% on groceries would materially outperform Sapphire Preferred's typical 1x earning on in-store grocery purchases.\n\nExample:\n- At 5% cash back instead of roughly 1%, the incremental gain is about:\n  - 4% × $8,000 = ~$320/year\n\n3. Costco purchases\n\nYou spent:\n- $501.23 at Costco in May\n\nMany grocery-focused cards do not treat Costco as a grocery store because Costco only accepts Visa in-store and often codes differently.\n\nIf Costco is a regular shopping destination, a Costco-focused Visa or a strong flat-rate cash-back card could improve rewards on:\n- Costco purchases\n- Gas purchases\n\n4. Utilities, phone, and subscriptions\n\nCombined May spend:\n- Xfinity: $89\n- AT&T: $72\n- Netflix: $22.99\n- Adobe: $59.99\n- Total: ~$244/month\n\nA card earning 3%-5% in these categories could generate roughly:\n- $30-$120 more per year versus a 1% baseline, depending on the card.\n\nSuggested card strategy\n\nIf you want a simple setup:\n\n- Dining: Chase Sapphire Preferred\n- Travel: Chase Sapphire Preferred\n- Rent: Bilt Mastercard (if your building is eligible)\n- Costco/gas/general purchases: strong 2%+ cash-back Visa\n- Groceries (non-Costco): dedicated grocery rewards card\n\nIf you want to stay mostly in the Chase ecosystem:\n\n- Keep Sapphire Preferred for dining and travel.\n- Add a Chase Freedom card for rotating or bonus categories.\n- Use Sapphire Preferred to redeem or transfer Ultimate Rewards points.\n\nHighest-impact next steps\n\n1. Check whether Cascade Apartments can be paid through Bilt.\n   - Potential value: roughly 28,200 points/year on your $28,200 annual rent.\n\n2. Review where you buy groceries most often.\n   - If Costco represents most of your grocery spending, prioritize a Costco-compatible rewards card.\n   - If Safeway/Trader Joe's spending grows, a grocery-focused card becomes more attractive.\n\n3. Keep using Sapphire Preferred for:\n   - Restaurants\n   - Flights\n   - Rental cars\n   - Other travel purchases\n\nFrom the spending shown, the rent opportunity is by far the largest rewards gap, followed by groceries.",
+  "taskId": "maria_credit_card_strategy",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1518,
+      "outputTokens": 1027,
+      "totalTokens": 2545,
+      "reasoningTokens": 128,
+      "cachedInputTokens": 1152
+    }
+  }
+}

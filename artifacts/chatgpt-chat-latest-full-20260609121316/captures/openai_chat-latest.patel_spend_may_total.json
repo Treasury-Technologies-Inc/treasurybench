@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:16:54.948Z",
+  "latencyMs": 6465,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "openai:chat-latest",
+  "response": "For May 2026, your spending was approximately:\n\n- $8,556.08 of household spending (excluding transfers to savings/investment accounts)\n- $9,256.08 if you also count the $300 Colorado 529 contribution and $400 HSA contribution as cash outflows\n\nLargest spending categories (excluding HSA and 529 contributions):\n\n1. Mortgage (Rocket Mortgage)\n   - $3,850.00\n   - About 45.0% of total spending\n\n2. Childcare\n   - Bright Horizons Daycare: $1,650.00\n   - Care.com Backup Care: $220.00\n   - Total: $1,870.00\n   - About 21.9% of total spending\n\n3. Groceries\n   - Costco: $736.80\n   - King Soopers: $286.74\n   - Total: $1,023.54\n   - About 12.0% of total spending\n\n4. Auto Loan\n   - Toyota Financial: $485.00\n   - About 5.7%\n\n5. Insurance\n   - State Farm Auto: $218.00\n   - State Farm Home: $154.00\n   - Total: $372.00\n   - About 4.3%\n\nRemaining categories:\n\n- Household (Target): $242.19\n- Medical (Kaiser, paid from HSA): $185.40\n- Dining: $164.75\n- Utilities (Xcel): $164.22\n- Internet (Xfinity): $119.00\n- Fitness (Peloton): $44.00\n- Subscriptions (Disney+ and Spotify): $35.98\n\nA couple of observations based on your priorities:\n- Housing plus childcare totaled $5,720, which is about 67% of your May spending.\n- Childcare remains your second-largest expense. Since Priya has access to a dependent care FSA and a backup-care benefit through Salesforce, it's worth confirming you're maximizing those benefits because they can provide meaningful tax savings on daycare and backup-care costs.\n- Your HSA contribution was $400 in May, while childcare spending was $1,870 and 529 contributions were $300, so there may be opportunities to increase tax-advantaged savings if cash flow allows.\n\nSummary:\n- Household spending: $8,556.08\n- Plus HSA and 529 contributions: $700.00\n- Total cash outflows recorded: $9,256.08\n- Biggest categories: Mortgage ($3,850), Childcare ($1,870), and Groceries ($1,023.54).",
+  "taskId": "patel_spend_may_total",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1799,
+      "outputTokens": 862,
+      "totalTokens": 2661,
+      "reasoningTokens": 256,
+      "cachedInputTokens": 1664
+    }
+  }
+}

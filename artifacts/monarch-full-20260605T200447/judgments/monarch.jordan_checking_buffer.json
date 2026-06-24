@@ -1,0 +1,44 @@
+{
+  "taskId": "jordan_checking_buffer",
+  "provider": "monarch",
+  "totalScore": 35,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 10,
+      "maxScore": 20,
+      "rationale": "The response correctly identifies the account balances but fails to use the transaction data provided to calculate actual monthly burn rates for rent, health insurance, or business expenses, instead asking the user to define the methodology."
+    },
+    {
+      "id": "correctness",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response is factually neutral but fails to provide the requested buffer analysis, instead deferring the task to the user."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response fails to provide a decision or prioritization, effectively stalling the task by asking the user to configure the system first."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response is safe but lacks the depth required to provide a meaningful buffer strategy for a self-employed individual."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response claims the current date is June 5, 2026, while the benchmark date is May 31, 2026."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate a business operating buffer based on the visible business expenses (WeWork, software, travel).",
+    "Failed to calculate a personal buffer based on rent, health premiums, and recurring bills.",
+    "Failed to suggest a tax reserve percentage based on the 1099 income stream.",
+    "Failed to account for the credit card balances as a priority before moving to investments."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response is a non-answer that defers the requested analysis to the user instead of performing the calculation based on the provided transaction data."
+}

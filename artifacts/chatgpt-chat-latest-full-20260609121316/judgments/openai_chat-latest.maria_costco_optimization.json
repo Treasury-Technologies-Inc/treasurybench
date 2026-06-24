@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_costco_optimization",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the May transaction data to calculate Costco spend and correctly identifies the user's broader financial context (RSU vest, 401k contributions)."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies that Costco only accepts Visa and that the CSP is not a warehouse-specialist card. It correctly notes the Executive Membership breakeven logic. It misses the specific 2026 Costco membership fee ($130/$65) but provides accurate general advice."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear. It correctly prioritizes the RSU/401k optimization over the smaller Costco gains, which is a high-leverage insight."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately caveats the annualization of a single month of spend and avoids guaranteeing specific rewards."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Costco annual membership fees are $65 for Gold Star and $130 for Executive",
+      "tableKey": "costco_2026_membership_fees",
+      "state": "unverified"
+    },
+    {
+      "claim": "Costco Executive Membership gives a 2% annual reward on qualifying Costco purchases",
+      "tableKey": "costco_2026_executive_membership",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response did not explicitly state the current 2026 membership fees, though it correctly described the breakeven logic."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the specific 2026 Costco membership fee amounts ($130/$65) to help the user perform the breakeven math immediately."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that the user's RSU vest and 401k contribution rate are higher-leverage financial moves than optimizing Costco rewards."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and prudent response that correctly prioritizes high-impact financial decisions over minor warehouse-club optimizations."
+}

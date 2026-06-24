@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:19:16.109Z",
+  "latencyMs": 8940,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the information you provided, prioritizing HSA contributions is likely one of the highest-value tax moves available to you this year, assuming Priya is enrolled in an HSA-eligible HDHP.\n\nWhy the HSA is attractive for your household\n\n- Your stated priority is protecting family cash flow first, then optimizing taxes.\n- You already have:\n  - ~$43,000 in cash (checking + savings)\n  - $240,000 in combined 401(k)s\n  - $12,400 in the 529\n- An HSA gives:\n  - A tax deduction on contributions\n  - Tax-free growth\n  - Tax-free withdrawals for qualified medical expenses\n\nThat \"triple tax advantage\" is generally better than making additional taxable brokerage investments once you have sufficient cash reserves.\n\nWhat you're contributing now\n\nYour transaction history shows:\n\n- HSA contribution: $400 on 2026-05-08\n- If that continues monthly, that's about $4,800/year.\n\n2026 HSA limits\n\nFor 2026, the IRS limits are:\n\n- Self-only HDHP coverage: $4,400\n- Family HDHP coverage: $8,750\n- Age 55+ catch-up: additional $1,000 (does not appear applicable)\n\nBecause you are married with a child, many families choose family HDHP coverage, but the actual limit depends on the coverage tier on the health plan.\n\nPotential gap\n\nIf Priya has family HDHP coverage:\n\n- Annual contributions at current pace: about $4,800\n- Family limit: $8,750\n- Remaining capacity: about $3,950\n\nEstimated tax benefit\n\nAssumptions:\n- Married filing jointly\n- Combined gross income roughly $330,000 based on payroll data\n- Federal marginal bracket likely 24%\n- Colorado income tax approximately 4.4%\n\nAn additional $3,950 HSA contribution could save roughly:\n\n- Federal tax: about $948\n- Colorado tax: about $174\n- Total income-tax savings: about $1,122\n\nIf contributions are made through payroll rather than directly from checking, there can also be Social Security and Medicare tax savings, potentially adding roughly another $300 in savings.\n\nEnrollment and eligibility caveats\n\nYou can only contribute to an HSA for months when you are:\n\n- Covered by an HSA-qualified HDHP\n- Not covered by a non-HDHP medical plan\n- Not enrolled in Medicare\n- Not claimed as someone else's dependent\n\nImportant benefit coordination items:\n\n- A Dependent Care FSA does NOT interfere with HSA eligibility.\n- A general-purpose Healthcare FSA usually DOES interfere with HSA eligibility.\n- If Daniel has access to a healthcare FSA that reimburses Priya's expenses, that can affect HSA eligibility.\n- Mid-year plan changes can prorate the allowable contribution limit.\n\nWhat I would prioritize\n\n1. Confirm whether Priya is enrolled in:\n   - An HSA-qualified HDHP\n   - Family coverage vs. self-only coverage\n\n2. If family coverage applies, consider increasing HSA contributions enough to reach the $8,750 limit.\n\n3. Prefer payroll deductions if Salesforce offers them, because payroll HSA contributions can provide additional FICA tax savings beyond the normal deduction.\n\n4. Continue the 529 contributions if they're comfortable, but if you must choose between extra HSA contributions and additional taxable investing, the HSA generally comes first from a tax-efficiency standpoint.\n\nIf you tell me whether Priya currently has self-only or family HDHP coverage and whether the $400 contribution is payroll-based or coming directly from your bank, I can estimate the exact remaining contribution amount and tax savings for 2026.",
+  "taskId": "patel_hsa_family",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1799,
+      "outputTokens": 1026,
+      "totalTokens": 2825,
+      "reasoningTokens": 256,
+      "cachedInputTokens": 1664
+    }
+  }
+}

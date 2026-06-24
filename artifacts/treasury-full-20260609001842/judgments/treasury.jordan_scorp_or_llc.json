@@ -1,0 +1,55 @@
+{
+  "taskId": "jordan_scorp_or_llc",
+  "provider": "treasury",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively references the user's business accounts and specific client income sources. It fails to use the exact dollar amounts from the provided CSVs, relying instead on rounded estimates."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 30,
+      "rationale": "The tax logic is sound and aligns with 2026 rules. It correctly identifies the S-corp tax savings mechanism and the necessity of reasonable salary. It correctly notes the lack of state income tax in Texas."
+    },
+    {
+      "id": "resolution",
+      "score": 24,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable framework for the user. It correctly identifies the need for a CPA and the 75-day election rule. It appropriately cautions against the administrative burden."
+    },
+    {
+      "id": "prudence",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "Good emphasis on the 'reasonable salary' requirement and the potential for compliance costs to outweigh tax savings. It correctly frames the S-corp election as a decision requiring annual profit consistency."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Texas has no state income tax on wage/ordinary income.",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Form 2553 must be filed within the first 75 days of the tax year.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response uses rounded estimates ($13,960) rather than the exact sum of the visible May transactions ($13,960 is actually the correct sum, but the response frames it as an approximation).",
+    "The response mentions 'Late Election Relief' which is a valid procedural concept but lacks specific 2026 regulatory citation."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the impact of the QBI deduction (Section 199A) on the S-corp vs. Sole Prop decision, which is highly relevant for a UX consultant at this income level."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that the user's existing business-specific account structure (Bluevine, Chase Ink, Amex) simplifies the transition to an S-corp by providing clean, separated data."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, well-grounded response that correctly balances the tax-saving potential of an S-corp election against the administrative costs and compliance requirements for a self-employed consultant."
+}

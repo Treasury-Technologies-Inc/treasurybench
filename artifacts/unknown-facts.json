@@ -1,0 +1,909 @@
+{
+  "runs": [
+    "chatgpt-chat-latest-full-20260609121316",
+    "monarch-full-20260605T200447",
+    "origin-full-20260605T160538",
+    "treasury-full-20260609001842"
+  ],
+  "uniqueClaimCount": 69,
+  "totalOccurrences": 69,
+  "entries": [
+    {
+      "claim": "2026 national average auto insurance premium is $2,496",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_property_insurance_review"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "2026 national average homeowners insurance premium is $3,057",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_property_insurance_review"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "A typical rewards card APR can easily be 20%–30%+.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "patel_credit_card_balance_check"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Adobe often triggers a ~$30/mo retention discount for 12 months if you start the cancellation flow",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_subscriptions_benefits"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Adobe single-app plans start around $20-25/month",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_where_wasting_money"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "After 2017, most W-2 employees can't deduct unreimbursed home office expenses.",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "jordan_home_office_rent"
+      ],
+      "runs": [
+        "monarch-full-20260605T200447"
+      ]
+    },
+    {
+      "claim": "Alaska Airlines generally provides complimentary meals in First Class only on flights over 670 miles.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_alaska_microsoft"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Alaska typically charges a $50 fee for confirmed same-day changes.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_alaska_microsoft"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Ally Bank interest rate is roughly 3.9% APY",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "maria_where_wasting_money"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Ally Tax Reserve account is a great start—ensure it is a High-Yield Savings subtype",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_idle_cash"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Amex Blue Business Plus earns 2x on everything up to $50,000/year",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "jordan_credit_card_balance_check"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Business credit cards often have high APRs (18-25%+)",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "jordan_extra_8000"
+      ],
+      "runs": [
+        "monarch-full-20260605T200447"
+      ]
+    },
+    {
+      "claim": "CFP Board standards",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_recurring_charges_audit"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Chase Sapphire Preferred earns 3x on dining",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_credit_card_strategy"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Chase Sapphire Preferred typical APR of 21%–28%",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_credit_card_balance_check"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Credit cards or personal loans above about 10–12% interest usually come before extra 529 contributions.",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "patel_college_savings_allocation"
+      ],
+      "runs": [
+        "monarch-full-20260605T200447"
+      ]
+    },
+    {
+      "claim": "Current 30-year fixed rates are around 6.48% as of early June 2026",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_mortgage_escrow_review"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Denver properties are reassessed every two years.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_mortgage_escrow_review"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Denver-area property taxes can rise with assessed values.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "patel_mortgage_escrow_review"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Dependent care FSA contributions avoid federal income tax and FICA taxes",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "patel_where_wasting_money"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Disability insurance coverage targets of 60% to 70% of pre-tax income",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Disability insurance generally costs 1-3% of annual income.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_disability_liability_need"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Disability insurance typically replaces 60–70% of income.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "jordan_disability_liability_need"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Employee-paid disability benefits with after-tax dollars are usually tax-free.",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ],
+      "runs": [
+        "monarch-full-20260605T200447"
+      ]
+    },
+    {
+      "claim": "Employer-paid disability benefits are usually taxable.",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ],
+      "runs": [
+        "monarch-full-20260605T200447"
+      ]
+    },
+    {
+      "claim": "FICA tax savings on payroll HSA contributions is 7.65%.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_hsa"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Form 2553 must be filed within the first 75 days of the tax year.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_scorp_or_llc"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Funeral and end-of-life costs typically run $10,000–$15,000.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_life_insurance_need"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "General liability covers third-party bodily injury or property damage.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_insurance_review"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Group disability plans typically cover 50-60% of base salary",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Group life insurance is often only 1–2× salary",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Life insurance death benefit benchmarks of 10 to 15 times annual income",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Long-term disability insurance is a high priority for self-employed individuals without employer benefits.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_insurance_review"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "LTD benefits are often taxable if employer-paid and tax-free if employee-paid",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Marcus High Yield Savings is likely earning ~4.50% APY",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_idle_cash"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Marcus Savings APY is ~4.40%",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_credit_card_balance_check"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Microsoft offers corporate discounts or reimbursement programs for travel",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_spend_may_total"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Microsoft provides 3x base salary for life insurance for free.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Microsoft provides 3x your base salary in life insurance at no cost",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_life_insurance_need"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Microsoft provides long-term disability (LTD) coverage at 60% of your base salary",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_life_insurance_need"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Microsoft provides Long-Term Disability (LTD) that covers 60% of base salary up to $15,000/month.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Microsoft typically offers group long-term disability (LTD) coverage",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Non-qualified 529 withdrawals are subject to a 10% federal penalty",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_529_tax_strategy"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "on-time, full payments are the single largest factor in your credit score (~35% of FICO)",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_credit_card_balance_check"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Own-Occupation disability coverage is preferred",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Professional liability (E&O) covers financial losses from project delays or mistakes.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_insurance_review"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Professional liability insurance typically ranges from $500 to $1,200 per year for freelance creatives.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_disability_liability_need"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "QBI Deduction (§199A) allows 20% deduction of taxable business income",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_where_wasting_money"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Refinancing break-even calculation: Closing Costs / Monthly Savings.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_mortgage_escrow_review"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Renters insurance covers personal property and liability.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_insurance_review"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Sapphire Preferred earns 1x at Costco",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_credit_card_balance_check"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Schedule C filers can deduct business software expenses.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "jordan_subscriptions_benefits"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Seattle and WA require advance notice for rent hikes (often 60 days+).",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ],
+      "runs": [
+        "monarch-full-20260605T200447"
+      ]
+    },
+    {
+      "claim": "Seattle generally requires a 'just cause' to terminate a tenancy.",
+      "occurrences": 1,
+      "providers": [
+        "monarch"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ],
+      "runs": [
+        "monarch-full-20260605T200447"
+      ]
+    },
+    {
+      "claim": "Seattle law requires 180 days' written notice for rent increases",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Seattle MFTE and MHA are the primary programs for income-restricted housing in market-rate buildings.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_mfte_eligibility_check"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Seattle MFTE program provides rent reductions",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Seattle MFTE targets households earning 60–90% of Area Median Income (AMI)",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Seattle move-in fees are capped at 10% of first month's rent",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "Seattle utility discount programs exist",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Seattle's King County AMI for 2026 is approximately $130,000 for a 4-person household",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_mfte_eligibility_check"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "SEP IRAs are generally pre-tax only.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_solo401k_or_sep"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Solo 401(k) allows both employee salary-deferral and employer profit-sharing contributions.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_solo401k_or_sep"
+      ],
+      "runs": [
+        "chatgpt-chat-latest-full-20260609121316"
+      ]
+    },
+    {
+      "claim": "Switching to annual billing typically saves ~20% on Webflow",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_subscriptions_benefits"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Term life insurance is remarkably affordable when you're young.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_life_insurance_need"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Term life insurance is significantly cheaper than Whole Life",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "The Sapphire Preferred earns 3x on dining and 2x on travel.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_credit_card_strategy"
+      ],
+      "runs": [
+        "origin-full-20260605T160538"
+      ]
+    },
+    {
+      "claim": "UCHealth group disability policies often have a 90-day elimination period.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_checking_buffer"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    },
+    {
+      "claim": "Umbrella insurance typically costs $200 to $400 per year for the first $1M of coverage.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_property_insurance_review"
+      ],
+      "runs": [
+        "treasury-full-20260609001842"
+      ]
+    }
+  ]
+}

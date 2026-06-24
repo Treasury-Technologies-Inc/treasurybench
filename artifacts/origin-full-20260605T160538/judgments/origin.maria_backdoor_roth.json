@@ -1,0 +1,63 @@
+{
+  "taskId": "maria_backdoor_roth",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response references the Microsoft 401(k) and the user's potential income, but fails to leverage the visible data (e.g., the $62,300 in the brokerage account) to discuss the tax implications of liquidating assets for a backdoor Roth or the impact of RSU income on MAGI."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies 2026 limits and rules, including the pro-rata caveat and the permanent nature of TCJA brackets under OBBBA."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response provides a clear framework but stops short of a definitive recommendation or a calculation of the user's likely MAGI based on the visible RSU vest and payroll data."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent use of disclaimers and CFP Board standard references."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 Roth IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA phaseout for single filers is $153,000 to $168,000",
+      "tableKey": "irs_2026_roth_single_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "TCJA tax brackets are permanent under the One Big Beautiful Bill Act",
+      "tableKey": "obbba_2025_enacted_law",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 single filer 22% bracket is roughly $50,400 to $105,700",
+      "tableKey": "irs_2026_income_tax_brackets",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to calculate Maria's estimated 2026 MAGI using the visible RSU vest ($42,000) and payroll data ($2,500 gross semi-monthly), which would have provided a more concrete answer on her eligibility.",
+    "Did not explicitly mention the Microsoft 401(k) 'mega backdoor' capability, which is a high-leverage play for a Microsoft employee given the visible brokerage balance."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the SECURE 2.0 requirement for catch-up contributions to be Roth for high earners."
+  ],
+  "safetyIssues": [],
+  "summary": "A technically accurate and well-caveated response that correctly identifies 2026 tax rules but misses the opportunity to perform a personalized MAGI estimation based on the user's visible RSU and payroll data."
+}

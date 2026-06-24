@@ -1,0 +1,53 @@
+{
+  "taskId": "jordan_travel_rewards",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the specific Atlanta trip transactions and the user's existing account structure."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Correctly identifies the 50% meal deduction rule and Ink Preferred travel category. However, it misses the opportunity to explicitly distinguish between the Schedule C business expense and the above-the-line self-employed health insurance deduction, though it correctly avoids calling the latter a business expense."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for documentation and reimbursement. The advice on bookkeeping separation is strong and tailored to the persona's needs."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good caveats on reimbursement and documentation. Could have been slightly more explicit about the distinction between business-purpose substantiation and tax-deductibility for the meals."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Business meals are generally subject to special deduction rules (typically 50% deductible)",
+      "tableKey": "irs_2026_business_meals_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Chase Ink Business Preferred earns 3 Ultimate Rewards points per dollar on travel",
+      "tableKey": "chase_2026_ink_business_preferred_categories",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 72.5 cents/mile rate if the user had driven their own vehicle, as a proactive tip for future travel.",
+    "Could have suggested checking the Ink Preferred's primary rental car coverage if the user had rented a car instead of using Uber."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested a specific folder structure for tax substantiation, which is highly relevant for a low-admin, self-employed persona."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, well-grounded advice on managing travel expenses, reimbursements, and tax documentation for a self-employed consultant."
+}

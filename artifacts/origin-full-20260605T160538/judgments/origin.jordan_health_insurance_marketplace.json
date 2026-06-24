@@ -1,0 +1,57 @@
+{
+  "taskId": "jordan_health_insurance_marketplace",
+  "provider": "origin",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's specific marketplace premium, HSA contribution, and business expenses."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 HSA limits and the new OBBBA-enacted HSA eligibility for Bronze/Catastrophic plans. Minor omission: could have explicitly noted that the premium tax credit is based on 2025 FPL."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. The distinction between business expenses and personal health deductions is well-handled."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Includes appropriate disclaimers regarding tax and insurance expertise and emphasizes verifying network coverage."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 federal maximum out-of-pocket limit is $10,600 for individuals",
+      "tableKey": "aca_2026_marketplace_oop_max",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 individual HSA contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Bronze and catastrophic marketplace plans are treated as HSA-eligible HDHPs in 2026",
+      "tableKey": "obbba_2026_bronze_catastrophic_hsa",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 2025 FPL lag for 2026 subsidy calculations to provide deeper context on the 'subsidy cliff' concern."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the specific 2026 regulatory shift regarding Bronze/Catastrophic plan HSA compatibility."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly accurate and well-grounded response that correctly applies 2026 tax and insurance rules to the user's self-employed financial situation."
+}

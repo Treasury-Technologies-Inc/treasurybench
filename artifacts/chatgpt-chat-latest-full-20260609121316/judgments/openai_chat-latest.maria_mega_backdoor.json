@@ -1,0 +1,56 @@
+{
+  "taskId": "maria_mega_backdoor",
+  "provider": "openai:chat-latest",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's 401(k) contribution rate and cash position, though it underestimates the annual salary by extrapolating from a single paystub."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Correctly identifies the need for plan-level verification and the mechanics of the mega backdoor Roth. It avoids stale IRS limits."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "Provides a clear priority list, but fails to calculate the specific 415(c) room or quantify the impact of the Microsoft match gap."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding plan support and cashflow, though it could have been more explicit about the 415(c) limit."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft's 401(k) plan permits after-tax contributions up to the section 415(c) annual-additions limit and supports automatic in-plan Roth conversions",
+      "tableKey": "microsoft_2026_mega_backdoor_roth",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft matches employee 401(k) contributions at 50% up to the IRS elective deferral limit",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response assumes the semi-monthly paystub is representative of annual income without accounting for the RSU vest or potential bonus, leading to an inaccurate annual salary estimate."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate the specific 415(c) room available to the user given the $72,000 limit. Did not explicitly mention the Microsoft 50% match mechanics in the context of the user's current 8% deferral."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the RSU vest as a liquidity event that changes the feasibility of the mega backdoor strategy."
+  ],
+  "safetyIssues": [
+    "None."
+  ],
+  "summary": "A solid, prudent response that correctly identifies the prerequisites for a mega backdoor Roth, though it misses the opportunity to provide a more precise quantitative analysis of the user's specific contribution room."
+}

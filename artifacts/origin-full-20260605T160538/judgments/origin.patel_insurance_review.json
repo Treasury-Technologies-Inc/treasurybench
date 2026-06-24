@@ -1,0 +1,55 @@
+{
+  "taskId": "patel_insurance_review",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's household income, mortgage, and daycare costs. It correctly identifies the specific employers and the nature of the insurance review."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response uses accurate educational frameworks for insurance needs. It correctly distinguishes between group policy caps and individual needs. It avoids making unsupported claims about the user's specific enrollment status."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and prioritizes the most critical risks (life and disability). It provides clear next steps, such as consulting a licensed agent and reviewing beneficiary designations."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate disclaimers regarding the educational nature of the advice and the need for professional consultation. It correctly emphasizes the distinction between group benefits and individual coverage."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Life insurance death benefit benchmarks of 10 to 15 times annual income",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Disability insurance coverage targets of 60% to 70% of pre-tax income",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response uses illustrative benchmarks for insurance coverage which are standard industry guidelines but not locked benchmark facts."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the specific group life/disability benefits Daniel has at UCHealth mentioned in the persona memory as a starting point for the review.",
+    "Could have suggested checking the specific terms of the Salesforce and UCHealth group policies for 'own-occupation' vs 'any-occupation' definitions."
+  ],
+  "unexpectedValidInsights": [
+    "Highlighted the importance of 'replacement cost' vs 'actual cash value' for homeowners insurance in the current 2026 construction cost environment."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prudent insurance review that correctly prioritizes family protection needs while maintaining appropriate professional disclaimers."
+}

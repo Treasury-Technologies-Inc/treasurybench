@@ -1,0 +1,41 @@
+{
+  "taskId": "maria_where_wasting_money",
+  "provider": "monarch",
+  "totalScore": 45,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies and cites specific transactions for subscriptions and fitness. However, it fails to utilize the $18,450 idle cash balance or the $2,350 rent signal."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The math is accurate based on the provided transactions. However, it misses the high-leverage employer benefit (Microsoft wellness reimbursement) which would have offset the ClassPass cost."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 35,
+      "rationale": "The response provides basic subscription-cutting advice but misses the expert-level opportunities: the Microsoft wellness reimbursement for ClassPass and the idle cash opportunity."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "The response fails to check for employer reimbursement before suggesting cancellation of a fitness service, which is a missed opportunity for a 'free' benefit."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to identify the Microsoft wellness reimbursement ($1,500 annual) which covers ClassPass, making the cancellation recommendation suboptimal.",
+    "Failed to address the $18,450 idle cash in Chase checking, which could be moved to a HYSA for yield.",
+    "Failed to address the $2,350 rent as a potential savings target via Seattle-specific programs like MFTE/MHA."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides basic, accurate subscription-cutting advice but misses significant personalized opportunities related to employer benefits and idle cash management."
+}

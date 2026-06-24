@@ -1,0 +1,50 @@
+{
+  "taskId": "maria_insurance_review",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific profile (Microsoft employee, single, no dependents, growing brokerage assets). It correctly identifies the income-replacement risk as the primary concern."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The insurance prioritization is accurate and aligns with the persona's risk profile. The explanation of disability insurance nuances (taxability, definition of disability) is high-quality. It correctly identifies the low priority of life insurance for this specific user."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable hierarchy. It misses a specific quantitative link to the user's $60,000 base salary (derived from the $2,500 semi-monthly paystub) to calculate the potential income-replacement gap, which would have elevated the resolution."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Excellent use of caveats regarding professional advice and the illustrative nature of the coverage ranges. It avoids over-promising on employer benefits."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft typically offers group long-term disability (LTD) coverage",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the need to check employer-specific plan details rather than assuming coverage levels."
+  ],
+  "missedOpportunities": [
+    "Failed to perform a specific income-replacement calculation based on the $60,000 annual base salary (derived from $2,500 semi-monthly gross pay) to help the user visualize the benefit gap.",
+    "Did not explicitly mention the Microsoft-specific benefit of the $1,500 annual wellness reimbursement, which could be used to offset costs for fitness-related risk-mitigation activities."
+  ],
+  "unexpectedValidInsights": [
+    "The distinction between 'any occupation' and 'own occupation' definitions in disability insurance is a high-value insight for a tech professional."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and prudent insurance prioritization that correctly identifies disability coverage as the critical gap for a single, high-earning tech professional."
+}

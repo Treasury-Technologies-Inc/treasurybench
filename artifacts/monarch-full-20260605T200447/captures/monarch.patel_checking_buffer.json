@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T06:24:10.853Z",
+  "latencyMs": 97679,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "monarch",
+  "response": "Here’s a simple way to pick a checking account buffer, using general guidance since I couldn’t see your actual numbers:\n\n1) Pick a target range\n\nIf your income is very stable (W‑2, predictable paydays) and you rarely cut it close:\n→ Aim for about 1 month of essential expenses in checking.\n\nIf your income is variable, commission-based, self‑employed, or you’re anxious about overdrafts:\n→ Aim for 1.5–2 months of essential expenses in checking.\n\n2) Decide what counts as “essential expenses”\n\nFor this, only include what you truly have to pay every month to keep life running:\n\nHousing: rent/mortgage, HOA\nUtilities: power, water, gas, internet, phone\nGroceries (not dining out)\nTransportation: gas, transit, car payment, insurance\nInsurance premiums: health, renters/home, auto (if not already above)\nDebt minimums: credit cards, loans, student loans\nChildcare and other must‑pay obligations\n\n3) How to size it without exact data\n\nSince I couldn’t see any recent transactions, you can ballpark it like this:\n\nLook at your last 1–3 months of bank/credit card statements\nHighlight only the essential items from the list above\nAverage those totals to get your monthly essentials\n\nThen use this:\n\nTarget buffer ≈ 1.0–2.0 × your monthly essentials,\ndepending on how stable your income is and how much peace of mind you want.\n\n4) How to use this in practice\n\nOn payday, if your checking balance is above your target buffer, move the extra to:\nHigh‑yield savings (emergency fund and near‑term goals), and\nInvestments (once your emergency fund is where you want it).\n\nIf you want to get more concrete, tell me roughly what you spend on essentials in a month (even something like “around $3,000–$3,500”) and whether your income is stable or variable, and I can suggest a specific buffer range (for example, “keep about $X–$Y in checking”).",
+  "taskId": "patel_checking_buffer"
+}

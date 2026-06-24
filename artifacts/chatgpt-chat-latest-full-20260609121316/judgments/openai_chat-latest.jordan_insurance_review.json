@@ -1,0 +1,64 @@
+{
+  "taskId": "jordan_insurance_review",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's specific financial situation, including their marketplace health insurance, HSA balance, and business expenses like WeWork and software subscriptions."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The advice aligns with the persona's self-employed status and correctly identifies the priority of disability and liability coverage over life insurance."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, prioritized list of insurance gaps. It could have been slightly more specific about the 2026 HSA contribution limits or the specific tax-deductibility of premiums, but it is highly actionable."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding plan-level availability and the need to verify specific contract requirements."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Long-term disability insurance is a high priority for self-employed individuals without employer benefits.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Professional liability (E&O) covers financial losses from project delays or mistakes.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "General liability covers third-party bodily injury or property damage.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Renters insurance covers personal property and liability.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the lack of employer-provided disability as a major risk for a 1099 consultant."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the self-employed health insurance deduction (Schedule 1) as a way to optimize the tax-safe cashflow mentioned in the persona."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to check if the E&O policy includes cyber liability is a high-leverage, professional-grade insight for a UX consultant using cloud-based tools."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and well-prioritized insurance review that correctly identifies the specific risks of a self-employed UX consultant without dependents."
+}

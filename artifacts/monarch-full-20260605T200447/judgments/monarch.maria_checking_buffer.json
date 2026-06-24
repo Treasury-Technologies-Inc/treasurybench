@@ -1,0 +1,43 @@
+{
+  "taskId": "maria_checking_buffer",
+  "provider": "monarch",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response uses the provided balances and income data well, though it miscalculates the May income by including the RSU vest as 'take-home income' (which is an investment event, not recurring cashflow)."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The math is generally sound, but the classification of the $42,000 RSU vest as 'take-home income' is misleading for cashflow planning. The advice on T-bills and HYSA is safe and accurate."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable range for the checking buffer and a logical sweep strategy. It correctly identifies the need for a buffer despite the high income."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good emphasis on liquidity and conservative sizing. It appropriately caveats the need for better spending data to refine the target."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to account for the Microsoft 401(k) match or ESPP opportunities despite the high cash balance and income.",
+    "Did not explicitly mention the impact of the RSU vest on the cash balance versus recurring payroll income.",
+    "Missed the opportunity to suggest a specific high-yield vehicle (e.g., MMF vs. T-bills) based on the user's tax situation."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to use a floor/ceiling sweep strategy is a highly practical, actionable framework for a high-income earner."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, conservative cash-buffer strategy grounded in the user's balances, though it incorrectly characterizes a large RSU vest as recurring income."
+}

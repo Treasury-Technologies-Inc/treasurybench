@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T19:46:43.460Z",
+  "latencyMs": 62109,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "monarch",
+  "response": "Here’s what your numbers show so far and what we need to sort out to size your buffers correctly.\n\nWhat we know right now\n\nCurrent balances (as of June 5, 2026):\n\nCapital One 360 Checking 4470: $9,650.00\nBluevine Business Checking 8810: $7,420.00\nAlly Tax Reserve Savings 5391 (tax reserve): $18,500.00\n\nIncome mix (last 12 months, June 1, 2025–May 31, 2026):\n\n100% of recorded income ($13,960.00) is Business Income\n0% is W‑2/Paychecks\n\nRight now, there are gaps in the spending data and no business entity set up, so Monarch can’t cleanly separate personal vs business expenses or calculate solid 6–12 month averages. To fix that, we need to decide how to treat your Bluevine account and how strict to be about what “counts” as business.\n\nNext step:\nPick one option so I can give you specific dollar targets for:\n\nyour personal checking buffer\nyour business checking buffer\nhow much to move to tax savings or investments\n\nThen I’ll recalculate everything using your choice.\n\nHow should I treat your accounts and transactions to estimate personal vs business buffers?\n\nTreat all activity in \"Bluevine Business Checking 8810\" as business and recalculate business expenses and revenue from June 1, 2025 to May 31, 2026.\nTreat all activity in \"Bluevine Business Checking 8810\" as business and all other accounts as personal, then recompute both personal and business averages for the requested periods.\nOnly use clearly labeled categories like \"Business Income\", \"Business Travel\", \"Business Rent\", etc., to approximate business activity from June 1, 2025 to May 31, 2026.\nSkip business-specific calculations for now and focus only on personal spending and income using the existing configuration.",
+  "taskId": "jordan_checking_buffer"
+}

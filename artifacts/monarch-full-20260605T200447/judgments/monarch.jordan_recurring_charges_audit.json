@@ -1,0 +1,43 @@
+{
+  "taskId": "jordan_recurring_charges_audit",
+  "provider": "monarch",
+  "totalScore": 0,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 0,
+      "maxScore": 40,
+      "rationale": "The response failed to identify any of the recurring transactions clearly visible in the provided CSV data (e.g., WeWork, Adobe, Figma, Webflow, AWS, Google Workspace, Spectrum, Visible, Rent, Health Insurance). It incorrectly claimed there were no recurring transactions."
+    },
+    {
+      "id": "correctness",
+      "score": 0,
+      "maxScore": 35,
+      "rationale": "The response provided false information regarding the existence of recurring transactions and cited irrelevant merchant examples (e.g., Seattle City Light) not present in the user's data."
+    },
+    {
+      "id": "resolution",
+      "score": 0,
+      "maxScore": 20,
+      "rationale": "The response failed to answer the user's question entirely, instead providing a generic error message that contradicted the provided transaction history."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 5,
+      "rationale": "The response was not prudent as it failed to perform the requested audit despite the data being present."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The assistant claimed there were no recurring transactions in the provided data, which is factually incorrect based on the provided CSV."
+  ],
+  "missedOpportunities": [
+    "Failed to identify and categorize business SaaS (Adobe, Figma, Webflow, AWS, Google Workspace, WeWork).",
+    "Failed to identify and categorize personal bills (Spectrum, Visible, Rent, Health Insurance).",
+    "Failed to provide monthly amounts for identified recurring charges."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant failed to perform the audit, incorrectly claiming no recurring transactions existed despite clear evidence in the provided data."
+}

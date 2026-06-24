@@ -1,0 +1,291 @@
+You are a strict but fair TreasuryBench judge evaluating a personal-finance assistant response.
+
+Core principle:
+Do not give full credit for generic correct advice when this persona contains enough signal for a higher-leverage personalized play. Do give credit for unexpected ideas when they are factual, grounded in the user's data, materially useful, conservatively valued, actionable, and safe.
+
+Benchmark date: 2026-05-31
+Provider: origin
+Task id: patel_529_tax_strategy
+Domain: tax_strategy
+Task type: domain_advice
+User question: Are we using the 529 well for our child, and what tax or flexibility caveats should we know?
+Task intent: Test 529 advice tied to visible contribution, Colorado context, and family goals.
+
+Expected answer scope notes:
+- Use the Colorado 529 account and $300 May contribution.
+- Consider state tax benefit if applicable, investment horizon, gift-tax limits only if large gifts are discussed, and qualified-expense caveats.
+- Do not over-prioritize 529 ahead of emergency fund, high-interest debt, HSA/401(k), or insurance gaps without reasoning.
+
+
+Persona summary:
+Denver married homeowners with a toddler, daycare costs, mortgage, dual W-2 income, HSA access, 529 savings, and family protection needs.
+
+Relevant seeded memories:
+- patel_mem_household: Priya and Daniel are married filing jointly, live in Denver, CO, and have one child age 3.
+- patel_mem_employers: Priya works at Salesforce with a 401(k), HDHP/HSA option, dependent care FSA, and backup-care benefit. Daniel works at UCHealth with a 401(k) and group life/disability benefits.
+- patel_mem_preferences: They want recommendations that protect family cashflow first, then optimize taxes, childcare, rewards, and college savings without creating too much admin.
+
+Visible account balances CSV:
+Date,Balance,Account
+2026-05-31,14680.00,Chase Premier Plus Checking 4412
+2026-05-31,28750.00,Marcus Online Savings 1188
+2026-05-31,3120.00,Chase Freedom Unlimited 2094
+2026-05-31,1850.00,American Express Gold Card 1005
+2026-05-31,-462000.00,Rocket Mortgage Home Loan 7781
+2026-05-31,142000.00,Salesforce 401K Plan 5519
+2026-05-31,98000.00,UCHealth 401K Plan 6621
+2026-05-31,6800.00,HealthEquity HSA 2323
+2026-05-31,12400.00,Colorado 529 CollegeInvest 9150
+2026-05-31,54000.00,Vanguard Taxable Brokerage 3902
+
+Visible transactions CSV:
+Date,Merchant,Category,Account,Original Statement,Notes,Amount,Tags,Owner
+2026-05-15,Salesforce Payroll,Income,Chase Premier Plus Checking 4412,Salesforce Payroll,"Semi-monthly net payroll deposit; paystub gross base pay $8,750; 401(k) employee deferral 8%",5200.00,,Shared
+2026-05-31,Salesforce Payroll,Income,Chase Premier Plus Checking 4412,Salesforce Payroll,"Semi-monthly net payroll deposit; paystub gross base pay $8,750; 401(k) employee deferral 8%",5200.00,,Shared
+2026-05-15,UCHealth Payroll,Income,Chase Premier Plus Checking 4412,UCHealth Payroll,"Semi-monthly net payroll deposit; paystub gross base pay $5,000; 401(k) employee deferral 6%",3125.00,,Shared
+2026-05-31,UCHealth Payroll,Income,Chase Premier Plus Checking 4412,UCHealth Payroll,"Semi-monthly net payroll deposit; paystub gross base pay $5,000; 401(k) employee deferral 6%",3125.00,,Shared
+2026-05-15,Salesforce 401k Employee Deferral,Retirement Contribution,Salesforce 401K Plan 5519,Salesforce 401k Employee Deferral,"8% of $8,750 semi-monthly gross pay",700.00,,Shared
+2026-05-31,Salesforce 401k Employee Deferral,Retirement Contribution,Salesforce 401K Plan 5519,Salesforce 401k Employee Deferral,"8% of $8,750 semi-monthly gross pay",700.00,,Shared
+2026-05-15,UCHealth 401k Employee Deferral,Retirement Contribution,UCHealth 401K Plan 6621,UCHealth 401k Employee Deferral,"6% of $5,000 semi-monthly gross pay",300.00,,Shared
+2026-05-31,UCHealth 401k Employee Deferral,Retirement Contribution,UCHealth 401K Plan 6621,UCHealth 401k Employee Deferral,"6% of $5,000 semi-monthly gross pay",300.00,,Shared
+2026-05-01,Rocket Mortgage,Mortgage,Chase Premier Plus Checking 4412,Rocket Mortgage,"Principal, interest, taxes, and insurance for Denver home",-3850.00,,Shared
+2026-05-03,Bright Horizons Daycare,Childcare,Chase Freedom Unlimited 2094,Bright Horizons Daycare,,-1650.00,,Shared
+2026-05-17,Care.com Backup Care,Childcare,Chase Freedom Unlimited 2094,Care.com Backup Care,One day of backup childcare,-220.00,,Shared
+2026-05-06,Colorado 529 CollegeInvest,Education Savings,Chase Premier Plus Checking 4412,Colorado 529 CollegeInvest,,-300.00,,Shared
+2026-05-08,HealthEquity HSA Contribution,HSA Contribution,Chase Premier Plus Checking 4412,HealthEquity HSA Contribution,,-400.00,,Shared
+2026-05-04,Costco Wholesale,Groceries,Chase Freedom Unlimited 2094,Costco Wholesale,,-424.18,,Shared
+2026-05-18,Costco Wholesale,Groceries,Chase Freedom Unlimited 2094,Costco Wholesale,,-312.62,,Shared
+2026-05-11,King Soopers,Groceries,American Express Gold Card 1005,King Soopers,,-286.74,,Shared
+2026-05-21,Target,Household,Chase Freedom Unlimited 2094,Target,,-242.19,,Shared
+2026-05-10,Snooze AM Eatery,Dining,American Express Gold Card 1005,Snooze AM Eatery,,-86.40,,Shared
+2026-05-24,Blue Pan Pizza,Dining,American Express Gold Card 1005,Blue Pan Pizza,,-78.35,,Shared
+2026-05-12,Xcel Energy,Utilities,Chase Premier Plus Checking 4412,Xcel Energy,,-164.22,,Shared
+2026-05-13,Xfinity,Internet,Chase Premier Plus Checking 4412,Xfinity,,-119.00,,Shared
+2026-05-15,State Farm Auto Insurance,Insurance,Chase Premier Plus Checking 4412,State Farm Auto Insurance,,-218.00,,Shared
+2026-05-16,State Farm Home Insurance,Insurance,Chase Premier Plus Checking 4412,State Farm Home Insurance,,-154.00,,Shared
+2026-05-09,Disney Plus,Subscriptions,Chase Freedom Unlimited 2094,Disney Plus,,-15.99,,Shared
+2026-05-14,Spotify Family,Subscriptions,Chase Freedom Unlimited 2094,Spotify Family,,-19.99,,Shared
+2026-05-23,Peloton,Fitness,Chase Freedom Unlimited 2094,Peloton,,-44.00,,Shared
+2026-05-26,Toyota Financial,Auto Loan,Chase Premier Plus Checking 4412,Toyota Financial,,-485.00,,Shared
+2026-05-27,Kaiser Permanente,Medical,HealthEquity HSA 2323,Kaiser Permanente,,-185.40,,Shared
+
+Locked benchmark facts for factual-currentness grading:
+- irs_2026_401k_employee_deferral [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the 401(k)/403(b)/governmental 457/TSP employee elective deferral limit is $24,500. 2025 was $23,500; 2024 was $23,000.
+- irs_2026_415c_defined_contribution [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the section 415(c) defined-contribution annual additions limit is $72,000 before catch-up contributions.
+- irs_2026_ira_limit [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the traditional/Roth IRA contribution limit is $7,500 before age-based catch-up.
+- irs_2026_roth_single_phaseout [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the Roth IRA contribution phaseout for single filers (and heads of household) is $153,000 to $168,000 modified AGI. Do not penalize a response for applying this range to head-of-household filers.
+- irs_2026_roth_mfj_phaseout [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the Roth IRA contribution phaseout for married filing jointly or qualifying surviving spouse is $242,000 to $252,000 modified AGI.
+- irs_2026_standard_deduction [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the standard deduction is $32,200 for married filing jointly, $16,100 for single or married filing separately, and $24,150 for head of household.
+- irs_2026_salt_cap [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the overall SALT deduction limit is $40,400, or $20,200 for married filing separately, and the limit phases down for modified AGI above $505,000, or $252,500 if married filing separately, but not below $10,000, or $5,000 if married filing separately.
+- irs_2026_hsa_self_only [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the HSA contribution limit for self-only HDHP coverage is $4,400.
+- irs_2026_hsa_family [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the HSA contribution limit for family HDHP coverage is $8,750 before age-based catch-up contributions.
+- irs_2026_dependent_care_fsa [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the dependent care FSA/dependent care assistance program exclusion limit is $7,500 for single filers or married couples filing jointly and $3,750 for married individuals filing separately. The benchmark constants cite IRS Publication 15-B (2026) and the One Big Beautiful Bill Act as the source for this higher 2026 DCAP limit. Employer plans may need to adopt the higher limit, so user-specific availability still requires plan verification.
+- irs_2026_529_k12_limit [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the federal annual 529 distribution limit for qualified K-12 expenses is $20,000 per beneficiary. Treat $10,000 as stale when a response presents it as the current 2026 K-12 529 limit.
+- irs_2026_social_security_wage_base [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the Social Security (OASDI) maximum taxable wage base is $184,500, up from $176,100 in 2025. Do not penalize $184,500 as the 2026 wage base; treat $176,100 as the prior-year (2025) value. Self-employment tax is 15.3% on net earnings (12.4% Social Security up to the $184,500 wage base, plus 2.9% Medicare with no cap), and the 0.9% Additional Medicare Tax applies above $200,000 single or $250,000 married filing jointly.
+- irs_2026_child_dependent_care_credit [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the Child and Dependent Care Tax Credit (CDCTC) eligible-expense caps remain $3,000 for one qualifying individual and $6,000 for two or more. These caps did NOT change for 2026, so do not flag $3,000/$6,000 as stale. The One Big Beautiful Bill Act raised the maximum credit rate to 50% (phasing down to 20%/35% by income), but the expense caps are unchanged. The CDCTC is separate from the dependent care FSA/DCAP exclusion.
+- obbba_2025_enacted_law [locked_benchmark_fact; benchmark_context; tax_rule]: The One Big Beautiful Bill Act (OBBBA) is a real, enacted 2025 federal tax law (signed July 2025) and the source of several 2026 changes used in this benchmark (the $7,500 dependent care FSA/DCAP exclusion, the $20,000 529 K-12 limit, the enhanced CDCTC credit rate, OBBBA-adjusted standard deduction and SALT figures, and the expanded QBI phase-in ranges). OBBBA also made the TCJA individual income-tax rate brackets (10%, 12%, 22%, 24%, 32%, 35%, 37%) permanent. Do not treat references to OBBBA / the One Big Beautiful Bill Act, including the claim that it made the TCJA brackets permanent, as fabricated or hallucinated.
+- irs_2026_qbi_199a_thresholds [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the Section 199A qualified business income (QBI) deduction taxable-income thresholds are $201,750 for single and head-of-household filers (phasing out to $276,750) and $403,500 for married filing jointly (phasing out to $553,500). OBBBA expanded the phase-in range to $75,000 (single) and $150,000 (MFJ). Treat $201,750 / $403,500 as the current thresholds; figures such as $191,950 or $197,300 are prior-year (2024/2025) single-filer values and are stale for 2026.
+- irs_2026_standard_mileage_rate [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the IRS standard mileage rate for business use is 72.5 cents per mile (up from 70 cents in 2025). Treat 67 cents (the 2024 rate) and 70 cents (the 2025 rate) as stale when presented as the current 2026 business mileage rate.
+- irs_2026_catchup_contributions [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, catch-up contribution amounts differ by account type and must not be conflated: IRA catch-up (age 50+) is $1,100 (newly indexed by SECURE 2.0, up from $1,000; total IRA limit $8,600 at 50+); 401(k)/403(b)/457/TSP catch-up (age 50+) is $8,000; the 401(k) super catch-up (ages 60-63) is $11,250; and the HSA catch-up (age 55+) is $1,000 (a fixed statutory amount that is NOT inflation-indexed and remains $1,000). Do not penalize $1,100 as the IRA catch-up, and do not "correct" the $1,000 HSA catch-up to $1,100 — $1,000 is the correct 2026 HSA catch-up.
+- irs_2026_income_tax_brackets [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026 (per Rev. Proc. 2025-32, OBBBA-adjusted), the single-filer ordinary income tax brackets are: 10% to $12,400; 12% to $50,400; 22% to $105,700; 24% to $201,775; 32% to $256,225; 35% to $640,600; 37% above $640,600. Married-filing-jointly: 10% to $24,800; 12% to $100,800; 22% to $211,400; 24% to $403,550; 32% to $512,450; 35% to $768,700; 37% above $768,700. Treat these as the current thresholds — e.g. the single 35% bracket beginning at $256,226 is correct for 2026; do not flag $256,225 or $640,600 as non-standard, and treat the 2025 single figures ($250,525 / $626,350) as stale.
+- irs_2026_child_tax_credit [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the federal Child Tax Credit is $2,200 per qualifying child under age 17 (OBBBA made the credit permanent and began inflation indexing, up from $2,000), with up to $1,700 refundable as the Additional Child Tax Credit. Phaseout begins above $200,000 AGI (single) / $400,000 (MFJ). Treat $2,200 as the current amount; $2,000 is the prior (pre-OBBBA-indexing) value and $2,500 is not a correct 2026 figure. This is distinct from the Child and Dependent Care Tax Credit (CDCTC).
+- obbba_2026_bronze_catastrophic_hsa [locked_benchmark_fact; benchmark_context; tax_rule]: Effective January 1, 2026, OBBBA (clarified by IRS Notice 2026-05) treats Bronze and Catastrophic ACA Exchange plans as HSA-compatible "deemed HDHPs," so enrollees can open and fund an HSA regardless of whether the plan meets the general HDHP definition. Do not treat the claim that OBBBA made Bronze/Catastrophic marketplace plans HSA-eligible as fabricated; it is an accurate 2026 provision.
+- aca_2026_premium_tax_credit_fpl_lag [locked_benchmark_fact; benchmark_context; tax_rule]: For 2026 ACA marketplace coverage, premium tax credit and subsidy eligibility is determined using the PRIOR-YEAR (2025) federal poverty guidelines compared against projected 2026 household income (a deliberate one-year FPL lag). The 2025 FPL for a single-person household in the 48 contiguous states is $15,650. Do not penalize a response for using the 2025 FPL (e.g. $15,650) to evaluate 2026 marketplace subsidies — that is the correct methodology, not a stale-data error.
+- wa_2026_hb1217_rent_cap [locked_benchmark_fact; benchmark_context; program_level]: For benchmark context 2026, Washington State HB 1217 (2025 session, RCW 59.18) caps annual residential rent increases at the lesser of 7% plus CPI or 10%, with no increase allowed in the first 12 months of tenancy. The Department of Commerce set the 2026 maximum allowable rent increase at 9.683% (effective Jan 1–Dec 31, 2026). Do not treat the WA HB 1217 rent cap or the 9.683% 2026 figure as fabricated; it is an officially published 2026 program fact.
+- bilt_2026_atmos_transfer_partner [locked_benchmark_fact; benchmark_context; product_terms]: As of the 2026 benchmark context, Bilt Rewards lists Atmos Rewards (Alaska Airlines + Hawaiian Airlines) as a 1:1 transfer partner. Do not penalize a response for saying Bilt points can transfer to Alaska/Atmos when the statement is otherwise appropriately caveated.
+- bilt_2026_card_lineup [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, Bilt 2.0 uses the Bilt Blue, Bilt Obsidian, and Bilt Palladium card lineup. Do not penalize those product names as fabricated or outdated; do penalize responses that instead rely on obsolete Bilt Mastercard assumptions when they conflict with current Bilt 2.0 terms.
+- bilt_2026_obsidian_fee_credit [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, Bilt Obsidian is a mid-tier Bilt card with a $95 annual fee and an annual hotel credit advertised up to $100. Treat fee/credit economics as requiring terms caveats and user-fit math, not as guaranteed profit.
+- bilt_2026_blue_cash_earn [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, the Bilt Blue card ($0 annual fee) lets the cardholder choose monthly between a Housing path (up to 1.25x points on rent/mortgage when everyday spend unlocks tiers) and a Flexible Bilt Cash path that earns 4% Bilt Cash on everyday non-housing spend. Do not penalize a response for saying Bilt Blue earns 4% Bilt Cash on everyday spend; it is accurate when framed as the Flexible Bilt Cash option (an either/or monthly configuration, not automatic). The Bilt Palladium card also earns 4% Bilt Cash as a standing feature, so attributing 4% Bilt Cash to Palladium is likewise correct.
+- alaska_2026_atmos_card_naming [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, Alaska Airlines loyalty/card language may refer to Atmos Rewards and Atmos-branded card products. Do not penalize current Atmos naming as fabricated merely because older Alaska Mileage Plan naming also exists.
+- chase_2026_ink_business_preferred_categories [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, Chase Ink Business Preferred earns 3x on up to $150,000 in combined account-anniversary-year purchases in shipping, social media/search engine advertising, travel, and internet/cable/phone services. Dining, groceries, office supply stores, and most software/SaaS purchases should not be described as Ink Business Preferred 3x categories unless another current product term specifically supports that merchant coding.
+- amex_2026_blue_business_plus_categories [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, American Express Blue Business Plus is a flat-rate Membership Rewards business card, commonly 2x on eligible purchases up to a yearly cap and 1x after that. It should not be framed as a grocery-specialist or dining-specialist card, though it can be a reasonable fallback for non-bonus spend.
+- alaska_2026_microsoft_corporate_status_challenge [locked_benchmark_fact; benchmark_context; program_level]: For the 2026 benchmark context, Microsoft is an eligible employer for an Alaska/Atmos corporate status challenge. Treat surfacing the Microsoft-linked Alaska/Atmos status challenge as valid when the response includes verification steps and avoids guaranteeing permanent status or eligibility beyond current program terms.
+- salesforce_2026_401k_match [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, the benchmark fixture specifies that Salesforce matches 100% of employee 401(k) contributions on the first 6% of base salary, capped at $5,000 per year, with immediate vesting. Treat this as a verified plan-level Salesforce fact, while still requiring visible data or memory before saying the user is already contributing enough to receive the full match.
+- salesforce_2026_mega_backdoor_roth [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, the benchmark fixture specifies that Salesforce’s 401(k) plan permits after-tax contributions beyond the elective deferral limit and supports in-plan Roth conversions. Treat plan support as verified, but do not infer the user has enabled after-tax contributions or conversions unless visible data or memories show it.
+- salesforce_2026_espp [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, the benchmark fixture specifies that Salesforce’s ESPP allows employees to purchase Salesforce stock at a 15% discount with a lookback provision and payroll deductions up to 15% of base salary, subject to the qualified ESPP annual purchase rules. Treat this as a verified plan-level Salesforce fact, while preserving cashflow, tax, and concentration-risk caveats.
+- salesforce_2026_hsa_seed [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, the benchmark fixture specifies that Salesforce contributes $750 per year to the HSA for employees enrolled in an eligible high-deductible health plan. Treat this as a verified plan-level fact, but penalize claiming the user personally receives it without evidence of HDHP/HSA enrollment.
+- salesforce_2026_wellness_reimbursement [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, the benchmark fixture specifies that Salesforce offers a wellness reimbursement of $100 per month, or $1,200 annually, for gym memberships, fitness classes, and wellness expenses. Treat this as a verified plan-level fact, but require evidence before saying a specific Peloton or other charge is eligible, submitted, approved, or has remaining reimbursement balance.
+- salesforce_2026_family_and_planning_perks [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, the benchmark fixture specifies that Salesforce offers BrightPlan financial planning, Lyra Health therapy sessions, BetterUp coaching, backup-care/family benefits, tuition reimbursement, donation matching, volunteer time off, and a $2,400 annual employee credit. Treat these as plan-level perks to verify against the user’s situation; do not infer claim status, remaining balances, or eligibility for a specific merchant without support.
+- microsoft_2026_hsa_seed [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, Microsoft contributes $500 per half-year, or $1,000 annually, to the HSA for employees enrolled in an eligible high-deductible health plan. Do not penalize a response for citing the $1,000 annual Microsoft HSA seed as a plan-level fact, but do penalize claiming the user personally receives it without evidence of HDHP/HSA enrollment.
+- microsoft_2026_401k_match [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, Microsoft matches employee 401(k) contributions at 50% up to the IRS elective deferral limit, with immediate vesting. Treat this as a verified plan-level fact, but still require user-specific evidence before claiming the user is already contributing enough to receive the full match.
+- microsoft_2026_mega_backdoor_roth [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, Microsoft’s 401(k) plan permits after-tax contributions up to the section 415(c) annual-additions limit and supports automatic in-plan Roth conversions through Fidelity NetBenefits. Treat plan support as verified; do not infer that the user has enabled after-tax contributions or conversions unless visible data or memories show it.
+- microsoft_2026_espp [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, Microsoft’s ESPP allows eligible employees to buy MSFT shares at a 10% discount, with payroll deductions up to 15% of base salary and a $25,000 annual IRS purchase limit for qualified ESPPs. Treat the 10% discount as verified, while preserving tax and concentration-risk caveats.
+- microsoft_2026_wellness_reimbursement [locked_benchmark_fact; benchmark_context; plan_level]: For the 2026 benchmark context, Microsoft offers a $1,500 annual gym/wellness reimbursement, and ClassPass/fitness-class expenses are eligible for that reimbursement. Treat ClassPass as fully reimbursable up to the $1,500 annual cap, but require evidence before saying the user has already claimed it or has remaining reimbursement balance.
+- microsoft_2026_prime_portal [locked_benchmark_fact; benchmark_context; program_level]: For the 2026 benchmark context, Microsoft Prime is a valid Microsoft employee benefits/perks portal name. Do not penalize a response merely for referencing Microsoft Prime, but do penalize unsupported claims that a specific merchant discount or reimbursement definitely exists through that portal unless separately verified.
+- irs_2026_gift_tax_exclusion [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the annual gift tax exclusion is $19,000 per donee (unchanged from 2025; Rev. Proc. 2025-32). The exclusion for gifts to a non-citizen spouse is $194,000.
+- irs_2026_hdhp_limits [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026 (Rev. Proc. 2025-19), an HSA-qualifying HDHP must have a minimum annual deductible of $1,700 self-only / $3,400 family, and out-of-pocket maximums no greater than $8,500 self-only / $17,000 family.
+- irs_2026_home_office_simplified [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the simplified home-office deduction is $5 per square foot of qualifying space, capped at 300 square feet (maximum $1,500). After TCJA, W-2 employees generally cannot deduct unreimbursed home-office expenses; this applies to self-employed/Schedule C filers.
+- irs_2026_business_meals_deduction [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, business meals with clients and meals while traveling for business are generally 50% deductible. OBBBA did NOT change the 50% client/travel-meal rule, but effective for tax years beginning after 2025 it eliminated the deduction for employer-provided / convenience-of-the-employer and on-site cafeteria meals (now 0%, previously 50%).
+- irs_2026_supplemental_wage_withholding [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the flat federal withholding rate on supplemental wages (e.g. RSU vests, bonuses) is 22% on amounts up to $1,000,000, and a mandatory 37% on the portion above $1,000,000. RSU value at vest is ordinary wage income. Withholding is not the final tax owed.
+- irs_2026_estimated_tax_safe_harbor [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, individuals generally must pay estimated taxes if they will owe $1,000 or more after withholding and credits. The safe harbor avoids an underpayment penalty if you pay at least 90% of current-year tax OR 100% of prior-year total tax — 110% of prior-year tax if prior-year AGI exceeded $150,000 ($75,000 if married filing separately). The Q2 2026 estimated-tax payment is due June 15, 2026 (a Monday; no holiday shift).
+- secure2_529_to_roth_rollover [locked_benchmark_fact; benchmark_context; tax_rule]: Under SECURE 2.0, a 529 plan can roll over to the beneficiary’s Roth IRA subject to a $35,000 lifetime cap per beneficiary, a 15-year account-age requirement, annual limits tied to the Roth contribution limit, and an earned-income requirement.
+- se_health_insurance_deduction [locked_benchmark_fact; benchmark_context; tax_rule]: Self-employed health insurance premiums are an above-the-line deduction (Schedule 1, Form 1040) that reduces AGI; they are NOT a Schedule C business expense and do NOT reduce self-employment tax. Marketplace premiums for a self-employed person may qualify for this deduction but are not a Schedule C expense.
+- crypto_2026_wash_sale [locked_benchmark_fact; benchmark_context; tax_rule]: As of 2026, the IRS wash-sale rule (IRC §1091) applies only to stock and securities and does NOT apply to cryptocurrency, which the IRS treats as property (Notice 2014-21). OBBBA (enacted July 4, 2025) did NOT extend the wash-sale rule to digital assets — that proposal was dropped from the final law. Do not claim the wash-sale rule applies to crypto in 2026.
+- single_member_llc_disregarded [locked_benchmark_fact; benchmark_context; tax_rule]: A single-member LLC is by default a disregarded entity for federal income tax; the individual owner reports business activity on Schedule C (Form 1040). It is treated as a separate entity for employment and excise taxes, and may elect corporate (incl. S-corp) treatment.
+- state_2026_no_income_tax [locked_benchmark_fact; benchmark_context; tax_rule]: For 2026, Washington and Texas have no state tax on wage/ordinary income. (Washington separately levies a 7% capital-gains excise tax on long-term gains above an inflation-indexed threshold of roughly $270,000, rising to 9.9% on gains over $1,000,000, but wage income is untaxed.)
+- california_2026_capital_gains [locked_benchmark_fact; benchmark_context; tax_rule]: For 2026, California taxes capital gains as ordinary income at its progressive rates (up to 13.3%); there is no preferential state long-term capital-gains rate regardless of holding period.
+- colorado_2026_income_tax_rate [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, Colorado’s flat state income tax rate is 4.40%. The 4.25% rate was a temporary TABOR-triggered reduction for tax year 2024 only; treat 4.25% as stale for 2026.
+- colorado_2026_529_deduction [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, Colorado’s state income tax deduction for 529 contributions is capped (it is not unlimited) at $26,200 per beneficiary for single filers and $39,200 per beneficiary for married filing jointly (inflation-indexed). Treat “no annual cap” or a $30,000 MFJ figure as incorrect for 2026.
+- costco_2026_citi_visa [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, the Costco Anywhere Visa by Citi earns 5% back on gas at Costco (5% on gas/EV charging combined up to $7,000/year, then 1%), 2% back at Costco warehouse and Costco.com, 3% on restaurants and eligible travel, and 1% on everything else. It earns 2% (not 5%) on in-warehouse Costco purchases.
+- costco_2026_executive_membership [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, Costco Executive Membership gives a 2% annual reward on qualifying Costco purchases (excluding gas and certain categories), capped at $1,250 per year. The upgrade from Gold Star costs $65/year more ($130 vs $65); the $65 upgrade breaks even at $3,250 of qualifying annual spend ($65 / 2%).
+- chase_2026_freedom_unlimited [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, the Chase Freedom Unlimited earns 1.5% on all purchases, 3% on dining (incl. takeout/eligible delivery), 3% at drugstores, and 5% on travel booked through Chase Travel. (It is distinct from the rotating-category Chase Freedom Flex.)
+- chase_2026_ink_business_cash [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, the Chase Ink Business Cash earns 5% at office supply stores and on internet, cable, and phone services on the first $25,000 in combined purchases per account anniversary year (then 1%), plus 2% at gas stations and restaurants on the first $25,000.
+- amex_2026_gold_categories [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, the American Express Gold Card earns 4x Membership Rewards at U.S. supermarkets (on up to $25,000/year, then 1x) and 4x at restaurants worldwide (on up to $50,000/year, then 1x). Do not describe either 4x category as uncapped.
+- chase_2026_sapphire_preferred_rental [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, the Chase Sapphire Preferred provides PRIMARY auto rental collision damage waiver coverage when the full rental is charged to the card and the rental company’s CDW is declined (rentals under 31 days; excludes certain expensive/exotic vehicles).
+- target_2026_circle_card [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, the Target RedCard has been rebranded as the Target Circle Card and gives 5% off most in-store and Target.com purchases, with free shipping and extended returns and no annual fee.
+- bilt_2026_rent_mechanics [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, Bilt 2.0 still lets cardholders pay rent with no card transaction/processing fee, but rent earning is now a tiered multiplier tied to everyday card spend (about 0.5x at 25% of rent spent, up to 1.25x at 100%), not a flat guaranteed multiplier. Treat a claim of a flat/guaranteed Bilt rent multiplier as outdated, but do not penalize the fee-free rent-payment statement.
+- aca_2026_marketplace_oop_max [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, the ACA maximum out-of-pocket limit for Marketplace and other non-grandfathered plans is $10,600 for an individual and $21,200 for a family (up from $9,200/$18,400 in 2025). This is separate from, and higher than, the HSA-qualifying HDHP out-of-pocket maximum ($8,500 self-only / $17,000 family).
+- costco_2026_membership_fees [locked_benchmark_fact; benchmark_context; product_terms]: For the 2026 benchmark context, Costco’s annual membership fees are $65 for Gold Star and $130 for Executive (raised in 2024). Treat a $60 Gold Star fee as stale.
+- se_tax_2026_net_earnings_base [locked_benchmark_fact; benchmark_year; tax_rule]: For benchmark year 2026, self-employment tax is 15.3% (12.4% Social Security up to the $184,500 wage base plus 2.9% Medicare with no cap) applied to roughly 92.35% of net self-employment earnings (net earnings are reduced by the 7.65% employer-equivalent portion before the rate applies).
+- hsa_nonqualified_withdrawal_penalty [locked_benchmark_fact; benchmark_context; tax_rule]: For an HSA, non-qualified withdrawals before age 65 are taxed as ordinary income plus a 20% penalty; at or after age 65 they are taxed as ordinary income with no penalty (qualified-medical withdrawals are always tax-free). The HSA triple advantage is pre-tax contributions, tax-free growth, and tax-free qualified-medical withdrawals.
+- hsa_contribution_treatment [locked_benchmark_fact; benchmark_context; tax_rule]: HSA contributions are an above-the-line deduction (Form 8889) or, when made through an employer cafeteria/Section 125 payroll plan, are excluded from both federal income tax and FICA. HSA contributions are NOT a Schedule C business expense; treat a claim that HSA contributions are a Schedule C deduction as incorrect.
+
+Fact-source taxonomy for grading:
+- visible_data: transactions, balances, account names/types, and dates visible in the CSVs.
+- seeded_memory: persona memories listed above.
+- locked_benchmark_fact: benchmark facts listed in the locked-facts table; treat them as authoritative for this benchmark date.
+- dynamic_external_fact: current product, program, tax, card, local housing, or employer facts not listed as locked; give credit only when correct and appropriately caveated, and penalize stale or unsupported claims.
+- unsupported: claims not supported by visible data, seeded memories, locked facts, or independently verifiable current knowledge. Penalize especially when a plan-level fact is overextended into user-specific participation.
+
+Expected opportunities:
+- None. This task is primarily deterministic data retrieval.
+
+Rubric dimensions:
+- grounding (25 pts): Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals.
+- correctness (30 pts): Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right.
+- resolution (30 pts): Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips.
+- prudence (15 pts): Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk.
+
+Invalid or harmful patterns:
+- Treats 529 as always first priority.
+- Ignores state-tax/flexibility caveats.
+- Claims specific future college costs without basis.
+
+Open credit policy:
+Give credit for unexpected recommendations only when they are factual, grounded in the user’s visible data or seeded context, materially relevant, conservatively valued, and actionable. Do not give full credit for generic advice when the planted data supports a higher-value personalized play.
+
+Deterministic evidence:
+- relevant_signal_grounding: pass (1/1) | expected: Mention or use several task-relevant visible signals from the persona data. | evidence: 3/3 relevant signals detected. patel_acct_529:hit, patel_txn_529_2026_05:hit, patel_mem_household:hit
+- exact_amount_grounding: partial (0.5/1) | expected: Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them. | evidence: 1/2 relevant amounts detected. Amounts mentioned for patel_txn_529_2026_05.
+- salt_standard_deduction_currentness: fail (0/1) | expected: Use 2026 standard deduction/SALT cap values where itemizing or homeownership tax strategy is discussed. | evidence: Standard deduction=false; SALT=false.
+- no_raw_tool_or_stream_output: pass (1/1) | expected: Final answer should not leak raw stream events, JSON tool payloads, or display artifacts. | evidence: No raw tool or stream output detected.
+
+Current-fact scanner evidence:
+- None detected by heuristic scanner.
+
+Scanner grading instruction:
+- Treat scanner hits as leads, not automatic verdicts. Verify the quote against the full response and locked facts.
+- If the number is merely a cash buffer, spending total, salary, insurance deductible, credit limit example, or other unrelated value, ignore the hit.
+
+Factual claim assessment (THE source of truth is the locked-fact table above — NOT your own memory):
+- List, under "factualClaims", every CHECKABLE EXTERNAL fact the answer asserts: current-year tax limits/thresholds/brackets, IRS or program rules, card/product terms, employer-plan facts, and local-program facts. Do NOT list the user's own visible data, arithmetic/derived figures, or opinions/recommendations.
+- For each claim set "tableKey" to the id of the locked fact it corresponds to, or null if no locked fact covers it. Set "state" to exactly one of:
+  - "verified_correct": the claim matches the locked fact named by tableKey.
+  - "verified_incorrect": the claim contradicts the locked fact named by tableKey. You may use this ONLY when tableKey is a real locked-fact id from the table above and the claim genuinely conflicts with it.
+  - "unverified": no locked fact covers this claim (tableKey null). You MUST use this for any external fact not in the table.
+- CRITICAL: never mark a claim "verified_incorrect" from your own knowledge. Your training may be out of date (this benchmark's facts are 2026). If a fact is not in the locked-fact table, it is "unverified" — log it, do not judge its accuracy. Unverified claims are sent for independent verification later; they neither help nor hurt the score.
+- "factualIssues" is free-text and advisory only (human-readable notes); it does NOT affect the score. The scored factual signal is "factualClaims".
+
+Provider-private tool traces are intentionally hidden for public scoring. Grade only the user-visible response against visible data, locked benchmark facts, the rubric, and independently verifiable financial knowledge.
+
+
+Assistant response to grade:
+"""
+Here's your cash flow context, including income, spending, and the net result over time. You may find it helpful for thinking about how much room the 529 contributions have in the broader budget while I cover the tax and flexibility caveats.
+
+Last 6 months
+
+(Jan 1 - Jun 5)
+
+-$10K
+$0
+$10K
+$19K
+$29K
+Jan
+Feb
+Mar
+Apr
+May
+Jun
+
+Total income
+
+$18,650
+
+Total expenses
+
+$9,256
+
+Net cash flow
+
+$9,394
+
+Avg cash flow / mo
+
+$1,566
+Your transactions show a $300 contribution to Colorado 529 CollegeInvest in May 2026 — a great start for your child's education future! Since tax and account-structure matters are involved here, I'll explain the concepts educationally. Per CFP Board standards, consult a qualified tax advisor or CPA for advice specific to your situation before making decisions.
+How your 529 is set up
+You're using Colorado 529 CollegeInvest, which is a strong choice for Colorado residents. Contributions to Colorado's plan are deductible on your state income tax return (Colorado allows a deduction for contributions, subject to annual limits), which is a meaningful perk given Colorado's 4.41% flat income tax rate. Your money grows tax-deferred, and qualified withdrawals are completely federal and state tax-free.
+Is $300/month enough?
+At $300/month, you're on a solid trajectory — but whether it's "enough" depends on your child's age and your target. As a general benchmark, four-year public university costs are currently in the range of $100,000–$130,000 all-in (tuition, room, board), and private universities run $250,000+. If your child is young, compounding does a lot of heavy lifting over 15–18 years, so consistency matters more than the starting amount. If you'd like to model a specific target and timeline, that's a great exercise to do together.
+Key tax and flexibility caveats to know
+What counts as a qualified expense (federal rules, 2026):
+College tuition, fees, books, supplies, and required equipment
+Room and board for students enrolled at least half-time (capped at the school's cost of attendance)
+K-12 tuition up to $20,000 per beneficiary per year (expanded under the OBBBA for 2026 — up from $10,000)
+Apprenticeship program costs registered with the U.S. Department of Labor
+Student loan repayment up to a $10,000 lifetime limit per borrower
+What triggers taxes and penalties:
+Non-qualified withdrawals are subject to ordinary income tax plus a 10% federal penalty on the earnings portion only — your contributions (basis) come out penalty-free since they were already after-tax dollars
+Powerful flexibility options:
+You can change the beneficiary to another qualifying family member at any time without tax consequences — helpful if your child gets a scholarship or chooses a different path
+529-to-Roth IRA rollover (SECURE 2.0): If the account has been open at least 15 years and funds weren't contributed in the last 5 years, you can roll up to $35,000 lifetime (capped at the annual Roth IRA limit of $7,500 in 2026) into your child's Roth IRA — a fantastic safety valve for overfunded accounts
+ABLE account rollover: Permanently available if your child has a qualifying disability
+FAFSA impact (important): As a parent-owned 529, this account is assessed at no more than 5.64% in the federal financial aid formula — quite favorable. Distributions from a parent-owned 529 are also ignored for FAFSA purposes under post-2024 rules. This is meaningfully better than a student-owned account.
+State conformity caveat: Colorado generally conforms to federal 529 rules, but always verify with a Colorado CPA — some expanded uses (like the K-12 increase) may have nuances at the state level.
+One area worth watching
+Your $300/month contribution is recorded as a one-time transaction in May rather than a recurring automatic transfer. Setting up an automatic monthly contribution directly through CollegeInvest removes the friction of remembering each month and keeps compounding working consistently.
+Would you like to explore how different monthly contribution amounts might grow over a specific timeframe for your child's education goal?
+Note: Calculations, potential savings, and eligibility determinations are estimations for illustrative purposes only. Tax laws change frequently. Consult a qualified tax professional before making decisions.
+"""
+
+Grade the response as JSON only. Use this exact shape:
+{
+  "taskId": "patel_529_tax_strategy",
+  "provider": "origin",
+  "totalScore": 0,
+  "dimensions": [
+    { "id": "dimension_id", "score": 0, "maxScore": 0, "rationale": "short reason" }
+  ],
+  "factualClaims": [
+    { "claim": "the external fact the answer asserted", "tableKey": "locked_fact_id_or_null", "state": "verified_correct | verified_incorrect | unverified" }
+  ],
+  "factualIssues": ["advisory free-text notes only; not scored"],
+  "missedOpportunities": ["important planted opportunities the answer missed"],
+  "unexpectedValidInsights": ["valid extra insights not in the expected opportunity list"],
+  "safetyIssues": ["unsafe or overconfident advice"],
+  "summary": "one-sentence verdict"
+}
+
+Scoring guidance:
+- Dimension scores must sum to totalScore and must not exceed each dimension's max points.
+- Treat expected answer scope notes as binding. If a note says a task is narrow data retrieval, do not require broader optimization, card strategy, breakeven math, or unrelated advanced plays for full credit.
+- Expected opportunities help identify relevant planted plays, but they must not override the user's question, task intent, or expected answer scope notes.
+- Reward specificity, correct math, current external knowledge, and eligibility caveats.
+- Do not penalize confident claims solely because they are confident. Confidence is good when the claim is correct and grounded in visible user data, locked facts, or independently verifiable financial knowledge.
+- Do not require timid hedging for exact values from visible data or locked benchmark facts.
+- Treat locked employer-plan facts as verified external knowledge. Do not mark them fabricated merely because they are not derivable from transactions or balances.
+- Treat locked current product/program facts as authoritative even if they differ from older model memory. In particular, do not penalize Bilt Blue/Obsidian/Palladium, Bilt-to-Atmos/Alaska transfer language, Atmos naming, Microsoft Prime, Microsoft HSA seed, Salesforce benefits/perks in the locked-facts table, or Microsoft-linked Alaska/Atmos corporate-status challenge language when the answer uses them accurately and with appropriate user-specific caveats.
+- Distinguish plan-level facts from user-specific participation: it is valid to say Microsoft or Salesforce offers a benefit, but unsupported to say the user is enrolled, contributing enough, eligible for a specific merchant reimbursement, has submitted a claim, or has remaining balance unless visible data, memories, or the task context show that.
+- Penalize claims that contradict visible user data, locked benchmark facts, or well-established product/program facts; also penalize overextending a general fact into an unsupported user-specific claim. This applies even when the contradictory claim is volunteered as an adjacent aside rather than required by the task.
+- Treat the locked benchmark facts above as authoritative when grading factual-currentness. Penalize contradictory or stale values even when the answer says to verify them.
+- For example, the locked 2026 self-only HSA contribution limit is $4,400; if the response cites $4,300 as the 2026 self-only HSA limit, record a factualClaims entry with tableKey "irs_2026_hsa_self_only" and state "verified_incorrect".
+- Penalize vague references to limits/programs when a useful answer should commit to a current number or explain how to verify it.
+- Penalize stale IRS/card/program facts more heavily than tiny rounding differences.
+- Penalize fabricated user data or fabricated product benefits.
+- Penalize raw product/tool leakage in the user-visible answer, such as literal tool/function calls, JSON payloads, stream/debug artifacts, or internal display-card syntax. This is a resolution/correctness defect even if the surrounding advice is useful, because a user-facing assistant should call tools invisibly or present the resulting card/prose cleanly.
+- For merchant/category spend trends, grade the stated time scope. Do not automatically prefer annualizing one observed month. Reward responses that use the exact requested period, a representative multi-month average, or explicitly labeled "if this month is typical" scenario math. Penalize presenting a one-off travel, Costco, or subscription spike as normal monthly spend without saying so.
+- For prioritization dimensions, do not require one canonical ordering when multiple high-value plays are plausible. Reward ordering that explains impact, evidence quality, certainty, effort, and reversibility; penalize only if small/uncertain tweaks are ranked above clearly larger visible opportunities without justification.
+- Give credit for unexpected, out-of-rubric ideas when they are factual, relevant to this persona, conservatively valued, and actionable.
+- A basic generic answer can receive some rubric credit, but it should not score high if it misses the advanced/expert plays planted in the data.

@@ -1,0 +1,55 @@
+{
+  "taskId": "patel_property_insurance_review",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific State Farm transactions and household income profile."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides accurate insurance concepts and correctly identifies the need for umbrella coverage given the user's income. It misses a slight opportunity to explicitly mention the bundle discount as requested in the scope notes."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear. It provides specific areas to compare (deductibles, liability, replacement cost) and explains the 'why' behind each."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding professional consultation and the importance of not reducing essential coverage, though it could have been more explicit about the specific risks of lowering liability limits."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 national average homeowners insurance premium is $3,057",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "2026 national average auto insurance premium is $2,496",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response cites national average insurance premiums which are external estimates and not verifiable against the provided locked facts."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention checking for 'bundle discounts' as requested in the scope notes.",
+    "Could have provided a more concrete step-by-step for the user to request a quote comparison from a broker or competitor."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the importance of 'Ordinance or Law' coverage for older homes, which is a high-value, specific insight for homeowners."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and professional review that correctly identifies the need for umbrella coverage and specific policy features for a high-income Denver household."
+}

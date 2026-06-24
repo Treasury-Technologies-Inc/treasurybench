@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_crypto_concentration",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the provided account balances and transaction context. It correctly identifies the crypto portfolio and tax reserve, though it misses the opportunity to explicitly link the business income volatility to the specific 1099 client payments visible in the transactions."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The math is accurate based on the provided balances. The claim regarding the crypto wash-sale rule is correct per the locked benchmark facts. The advice is technically sound and avoids price speculation."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear. It provides a logical framework for rebalancing. It could have been improved by explicitly mentioning the tax-lot identification strategy when selling crypto, as requested in the scope notes."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response is prudent, emphasizing the protection of the tax reserve and the 'sleep test.' It appropriately frames risk as a portfolio concentration issue rather than a market prediction."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "the IRS wash-sale rule (IRC §1091) applies only to stock and securities and does NOT apply to cryptocurrency",
+      "tableKey": "crypto_2026_wash_sale",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies that the wash-sale rule does not apply to crypto in 2026."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention tax-lot identification (e.g., FIFO vs. specific identification) when discussing the potential sale of crypto assets.",
+    "Could have more explicitly linked the irregular 1099 income patterns (Figma/Notion/Stripe) to the need for a larger cash buffer beyond just the tax reserve."
+  ],
+  "unexpectedValidInsights": [
+    "The 'Sleep Test' framing is a highly effective, personalized way to communicate risk tolerance to a self-employed user."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized assessment that correctly identifies concentration risk, respects the user's tax-reserve needs, and provides actionable, safe guidance on rebalancing."
+}

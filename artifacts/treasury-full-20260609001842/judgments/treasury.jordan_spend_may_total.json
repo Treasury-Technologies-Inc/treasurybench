@@ -1,0 +1,39 @@
+{
+  "taskId": "jordan_spend_may_total",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 35,
+      "maxScore": 40,
+      "rationale": "The response correctly identifies the consumption total and excludes non-consumption items like credit card payments. It misses the HSA contribution in the 'non-consumption' exclusion total (it lists $2,300, but the credit card payment was $2,000 and the HSA contribution was $300, totaling $2,300, so the math is actually correct)."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "Calculations are accurate based on the provided CSV. The separation of business and personal is mentioned, though it could be more explicitly structured as a formal accounting separation."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The answer is clear and directly addresses the prompt. It provides a useful breakdown of categories."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately flags the business-related nature of certain expenses for Schedule C purposes."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly noted that the HSA contribution is an above-the-line deduction rather than a Schedule C expense, as per the locked facts."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides an accurate, well-grounded retrieval of May 2026 spending, correctly separating consumption from non-consumption movements and identifying business-related categories."
+}

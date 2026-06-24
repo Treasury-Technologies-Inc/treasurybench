@@ -1,0 +1,39 @@
+{
+  "taskId": "jordan_recurring_charges_audit",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies all recurring charges from the provided CSV data, correctly categorizing them into business and personal buckets without inventing data."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "Calculations are accurate based on the May 2026 data. The response correctly identifies the nature of the charges and avoids stale or incorrect tax/program claims."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response provides a clear, actionable breakdown. It is slightly penalized for annualizing one month of data without stronger caveats regarding the variability of freelance income and expenses."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately flags that AWS is a variable expense and that HSA contributions are planned outflows rather than bills."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "The response correctly identifies that the business software/coworking stack is a higher-leverage optimization area than personal essentials like rent, given the freelancer's tax-deductible context."
+  ],
+  "safetyIssues": [],
+  "summary": "The assistant provided a precise, well-categorized audit of recurring charges grounded in the provided transaction data, with sound prioritization for a self-employed user."
+}

@@ -1,0 +1,50 @@
+{
+  "taskId": "patel_property_insurance_review",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's specific State Farm payments and Denver location, while acknowledging their household profile."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is factually sound regarding insurance mechanics. It correctly identifies the need for replacement cost coverage and umbrella insurance, though it misses the opportunity to explicitly link the umbrella recommendation to the specific net worth visible in the brokerage and retirement accounts."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The action plan is clear and actionable. It provides specific steps for the user to take with their agent. It could have been stronger by explicitly referencing the total net worth (approx. $300k+) to justify the umbrella policy limit."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats about not reducing essential coverage and emphasizes the importance of replacement cost over market value."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Umbrella insurance typically costs $200 to $400 per year for the first $1M of coverage.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The cost estimate for umbrella insurance is a general market estimate and not a locked benchmark fact; it is reasonable but unverified."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly calculate the user's total net worth (approx. $300k+) to provide a more concrete recommendation for the umbrella policy limit.",
+    "Could have suggested checking if the Salesforce or UCHealth group life/disability benefits include any accidental death or dismemberment coverage that might overlap with auto liability."
+  ],
+  "unexpectedValidInsights": [
+    "Specific mention of 'Sewer Backup' coverage as a critical add-on for Denver homes with finished basements."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and actionable insurance review that correctly prioritizes liability protection and replacement cost coverage for a Denver-based family."
+}

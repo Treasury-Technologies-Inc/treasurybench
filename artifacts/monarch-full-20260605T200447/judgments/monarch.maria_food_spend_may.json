@@ -1,0 +1,37 @@
+{
+  "taskId": "maria_food_spend_may",
+  "provider": "monarch",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The assistant correctly identified the transactions for food and groceries, accurately excluding the gas purchase from the total."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "The math is accurate: $286.41 + $214.82 (Costco) + $94.18 (Safeway) + $76.44 (Trader Joe's) = $671.85 for groceries; $42.16 + $88.70 + $31.25 = $162.11 for dining. Total $833.96."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The answer is clear and provides the requested breakdown. It missed a slight opportunity to explicitly mention that the Costco Gas was excluded, though the math implies it."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response correctly separates the categories and maintains a professional tone."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant provided an accurate, well-grounded retrieval of the user's May food spending, correctly categorizing transactions and excluding non-food items like gas."
+}

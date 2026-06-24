@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:24:00.496Z",
+  "latencyMs": 6867,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the balances you provided as of 2026-05-31, your crypto exposure does not look like an extreme concentration risk, but it is large enough to matter.\n\nApproximate breakdown\n\nAssets:\n- Capital One checking: $9,650\n- Bluevine business checking: $7,420\n- Tax reserve savings: $18,500\n- Traditional IRA: $22,400\n- HSA: $3,100\n- Brokerage: $48,000\n- Crypto: $12,500\n\nTotal assets ≈ $121,570\n\nLiabilities:\n- Chase Ink balance: $5,210\n- Amex Blue Business Plus balance: $1,185\n\nTotal liabilities ≈ $6,395\n\nNet worth from the accounts shown ≈ $115,175\n\nCrypto concentration:\n- Crypto as a percentage of total assets: about 10.3% ($12,500 / $121,570)\n- Crypto as a percentage of net worth: about 10.9%\n- Crypto as a percentage of investment assets (IRA + HSA + brokerage + crypto = about $86,000): about 14.5%\n\nHow I would view that\n\n- At roughly 10-11% of net worth, crypto is meaningful but not dominant.\n- At roughly 14-15% of your investment portfolio, crypto is a moderate allocation. A large crypto drawdown would hurt, but it would not be financially catastrophic given your other assets.\n- The bigger financial risks visible from your data are probably:\n  - Irregular self-employment income.\n  - Tax obligations that must be funded regardless of market performance.\n  - Carrying revolving credit-card balances if they are not paid in full each cycle.\n\nWhy your cash buckets matter\n\nYou have:\n- $18,500 in a dedicated tax reserve.\n- $7,420 in business checking.\n- $9,650 in personal checking.\n\nThat separation aligns with your stated preference for tax-safe cash flow. Because your tax reserve and operating cash are not sitting in crypto, a crypto decline is less likely to disrupt estimated taxes, rent, insurance premiums, or business expenses.\n\nA useful stress test\n\nIf your crypto portfolio fell:\n- 50%: loss ≈ $6,250\n- 80%: loss ≈ $10,000\n\nRelative to your estimated net worth of about $115,000, those losses would be roughly:\n- 5.4% of net worth (50% crypto drop)\n- 8.7% of net worth (80% crypto drop)\n\nUnpleasant, but not portfolio-destroying.\n\nWhat would make it a concentration risk?\n\nI would start viewing it as a more serious concentration issue if:\n- Crypto grew above roughly 20-25% of your net worth or investment portfolio.\n- You were relying on crypto to fund taxes, rent, health insurance, or business operations.\n- Most of your brokerage account was also heavily concentrated in crypto-related stocks or funds.\n\nPractical next step\n\nGiven your preference for low-admin systems:\n- Pick a target crypto allocation (for example, 5%, 10%, or 15% of investable assets).\n- Rebalance only once or twice per year.\n- If crypto appreciates enough to exceed your target by several percentage points, trim and move the excess to your brokerage account or other long-term investments.\n\nFrom the information provided, I would characterize your current crypto position as a moderate allocation rather than a major concentration risk. The cash-flow, tax, and business-reserve structure appears more important to protect than reducing crypto exposure from its current level.",
+  "taskId": "jordan_crypto_concentration",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1461,
+      "outputTokens": 843,
+      "totalTokens": 2304,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

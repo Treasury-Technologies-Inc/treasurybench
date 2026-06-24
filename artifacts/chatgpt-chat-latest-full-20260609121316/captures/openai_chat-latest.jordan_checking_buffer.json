@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:22:27.284Z",
+  "latencyMs": 7356,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Given your preference for separate business, tax, emergency, and personal buckets, I'd treat checking accounts as operating buffers rather than long-term savings.\n\nBased on the data provided:\n\n- Personal checking: $9,650\n- Business checking: $7,420\n- Tax reserve savings: $18,500\n- Brokerage: $48,000\n- Traditional IRA: $22,400\n- HSA: $3,100\n\nEstimated monthly spending from recent transactions\n\nPersonal recurring spending:\n- Rent: $2,100\n- Marketplace health insurance: $415\n- Therapy: $160\n- Internet: $80\n- Phone: $35\n- Groceries: about $365 (May spending)\n- Dining: about $185 (May spending)\n- HSA contribution: $300\n\nApproximate monthly personal cash need: about $3,600-$3,700\n\nBusiness recurring spending:\n- WeWork: $350\n- Software subscriptions (Adobe, Figma, Webflow, AWS, Google): about $210\n- Office/admin costs: variable\n\nBase business operating spend: about $560/month before travel and project-specific expenses.\n\nBecause your consulting income is uneven and you travel for clients, I'd use:\n\n1. Personal checking buffer\n- Target: 1.5-2 months of personal spending\n- Approximate target: $5,500-$7,500\n\nThis should comfortably cover rent, insurance, living costs, and autopays without needing transfers every few days.\n\n2. Business checking buffer\n- Target: 2 months of normal business expenses plus one typical travel trip\n- Approximate target:\n  - 2 × $560 recurring expenses = about $1,100\n  - Add a travel cushion similar to your Atlanta trip (~$1,100)\n  - Round up for invoice timing risk\n\nRecommended business checking target: $4,000-$6,000\n\n3. Tax reserve\nFor a Schedule C consultant, the tax bucket should generally be funded before investing.\n\nYour May gross business income was:\n- $8,500\n- $4,200\n- $1,260\n- Total: $13,960\n\nA common starting point is reserving roughly 30%-35% of net profit for federal taxes and self-employment tax, adjusted later based on actual projections.\n\nYou already have:\n- Tax reserve: $18,500\n- Last estimated payment: $4,200 on 2026-04-15\n\nWithout a full-year profit projection I can't determine whether $18,500 is exactly right, but the balance appears substantial relative to one month's income.\n\nPractical system\n\n1. Keep:\n   - Personal checking: $6,000-$7,000\n   - Business checking: $5,000-$6,000\n\n2. Route new client payments:\n   - First to business checking.\n   - Immediately move your tax percentage to Ally Tax Reserve.\n   - Leave business checking at its target buffer.\n\n3. Excess cash above those targets:\n   - If tax reserve is fully funded for upcoming estimates and your emergency fund target is met, invest excess through your brokerage or retirement accounts.\n\nUsing today's balances, a reasonable operating setup would be:\n\n- Personal checking target: ~$7,000\n- Business checking target: ~$5,500\n\nCurrent balances:\n- Personal checking: $9,650 (about $2,650 above target)\n- Business checking: $7,420 (about $1,920 above target)\n\nThat means roughly $4,500-$5,000 is currently above your suggested checking buffers. Before investing it, I'd verify that your tax reserve remains sufficient for the next estimated-tax deadlines and that your broader emergency-fund target is where you want it.",
+  "taskId": "jordan_checking_buffer",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1465,
+      "outputTokens": 907,
+      "totalTokens": 2372,
+      "reasoningTokens": 128,
+      "cachedInputTokens": 1152
+    }
+  }
+}

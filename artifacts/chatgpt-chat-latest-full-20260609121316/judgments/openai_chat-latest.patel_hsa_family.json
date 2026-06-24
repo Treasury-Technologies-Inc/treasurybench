@@ -1,0 +1,62 @@
+{
+  "taskId": "patel_hsa_family",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's specific account balances, payroll income, and existing HSA contribution patterns."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 HSA limits ($4,400/$8,750) and accurately explains the tax advantages and eligibility caveats."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. It misses a slight opportunity to explicitly reference the Salesforce HSA seed benefit as a plan-level fact to verify, though it covers the core prioritization well."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of eligibility caveats, specifically regarding FSA coordination and the necessity of confirming HDHP coverage."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA family limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA catch-up contribution for age 55+ is $1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Colorado flat state income tax rate is 4.40%",
+      "tableKey": "colorado_2026_income_tax_rate",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Salesforce $750 HSA seed benefit as a plan-level fact to verify, which would further incentivize the HDHP/HSA path."
+  ],
+  "unexpectedValidInsights": [
+    "Calculated the specific FICA tax savings potential for payroll-based HSA contributions, which is a high-leverage detail for a dual W-2 household."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, well-grounded, and highly actionable advice regarding 2026 HSA prioritization, correctly identifying tax limits and the importance of payroll-based contributions for FICA savings."
+}

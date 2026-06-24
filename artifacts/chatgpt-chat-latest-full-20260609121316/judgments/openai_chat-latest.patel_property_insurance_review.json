@@ -1,0 +1,41 @@
+{
+  "taskId": "patel_property_insurance_review",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the specific State Farm transaction amounts, the household's liquid cash position, and the persona's specific risk profile (child, dual income, assets) to ground the advice."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The advice on insurance coverage components (liability, replacement cost, deductibles) is accurate and aligns with standard financial planning for homeowners. No stale or incorrect tax/program facts were introduced."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps for comparing policies. It misses a minor opportunity to explicitly link the daycare/backup-care reliance to specific auto-coverage needs (e.g., rental car reimbursement) beyond a general mention, but the overall resolution is high."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately emphasizes maintaining liability coverage and warns against cutting essential protections just to save on premiums. It correctly caveats the use of emergency funds for higher deductibles."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly linked the Salesforce backup-care benefit to the auto-insurance rental reimbursement decision, noting that if the backup-care benefit covers transportation or if the user has other mobility options, the rental reimbursement might be redundant."
+  ],
+  "unexpectedValidInsights": [
+    "Explicitly calculated the potential annual savings based on the user's current monthly spend, providing a concrete incentive for the user to perform the review."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and grounded insurance review that correctly prioritizes liability protection and provides actionable, data-backed steps for the Patel household."
+}

@@ -1,0 +1,48 @@
+{
+  "taskId": "jordan_quarterly_estimated_taxes",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds its analysis in the provided May transactions, account balances, and the April 15 estimated tax payment."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The tax advice correctly identifies the safe-harbor rules, the June 15 deadline, and the distinction between business profit and tax reserves."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps. It is slightly conservative by not calculating a specific payment, but this is appropriate given the lack of 2025 tax data."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately emphasizes the need for 2025 tax data and provides a conservative framework for managing irregular income."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Q2 2026 estimated taxes are generally due June 15, 2026.",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Safe harbor avoids an underpayment penalty if you pay at least 90% of current-year tax OR 100% of prior-year total tax (110% if prior-year AGI exceeded $150,000).",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a highly accurate, grounded, and prudent guide for managing quarterly estimated taxes as a self-employed consultant."
+}

@@ -1,0 +1,54 @@
+{
+  "taskId": "jordan_disability_liability_need",
+  "provider": "treasury",
+  "totalScore": 90,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the user's specific financial situation, including their liquid assets, rent, and business structure."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on insurance types is accurate. The cost estimates are presented as general ranges rather than specific quotes, which is appropriate. The distinction between disability and liability is well-handled."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The action plan is clear and actionable, providing specific steps for the user to take."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding contract requirements and the need for professional advice."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Professional liability insurance typically ranges from $500 to $1,200 per year for freelance creatives.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Disability insurance generally costs 1-3% of annual income.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response uses general industry estimates for insurance premiums which are unverified but reasonable for a high-level overview."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the tax-deductibility of professional liability insurance as a business expense, contrasting it with the personal nature of disability insurance premiums."
+  ],
+  "unexpectedValidInsights": [
+    "The framing of professional liability as a 'binary gate' for mid-market client contracts is a high-leverage insight for a consultant."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a well-grounded, prioritized, and actionable framework for a solo consultant to evaluate disability and professional liability insurance."
+}

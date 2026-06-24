@@ -1,0 +1,56 @@
+{
+  "taskId": "jordan_business_banking_perks",
+  "provider": "origin",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the business checking and tax reserve accounts, though it incorrectly claims the Ally Tax Reserve balance is $0.00 when the visible data shows $18,500."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits for HSA ($4,400) and Solo 401(k) ($24,500 deferral). The claim about 6-7% underpayment penalties is unverified and potentially misleading."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 35,
+      "rationale": "Provides a strong, actionable 'Personal Payroll' system. Missed the opportunity to explicitly link the Chase Ink Business Preferred 3x categories to the business travel/internet expenses."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Includes appropriate disclaimers regarding tax advice and the need for professional consultation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 self-only HSA contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Solo 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly states the Ally Tax Reserve Savings 5391 balance is $0.00; the visible data shows $18,500.",
+    "The claim that underpayment penalties are reaching 6-7% in 2026 is unverified."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly link the Chase Ink Business Preferred 3x categories to the user's business travel and internet/phone expenses.",
+    "Failed to mention the specific benefit of the self-employed health insurance deduction (Schedule 1) for marketplace premiums."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested a '47-week denominator' pricing strategy to build in paid time off, which is highly relevant for a UX consultant."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, actionable response that provides a clear financial architecture for a freelancer, though it contains a significant factual error regarding the user's current tax reserve balance."
+}

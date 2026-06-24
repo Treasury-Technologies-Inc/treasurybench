@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_idle_cash",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the checking and savings balances and references the mortgage and daycare costs. It misses a direct mention of the specific HSA or 529 contributions as part of the cashflow analysis."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The math is generally sound and the advice is conservative. The emergency fund target is a reasonable heuristic for the persona. The interest rate assumption for Marcus is unverified but standard for the context."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. The 'sweep' rule is a high-leverage, personalized recommendation that fits the persona's goal of low-admin optimization."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Appropriately caveats the emergency fund target and the RSU strategy. It avoids aggressive investment advice for the cash buffer."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Marcus High Yield Savings is likely earning ~4.50% APY",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response assumes a 4.50% APY for the Marcus account, which is a dynamic market rate and not a locked benchmark fact."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly incorporate the Salesforce HSA seed or the wellness reimbursement as potential cashflow offsets to the monthly budget."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to set a 'sweep' rule for checking account balances is a highly actionable, low-admin strategy for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a well-grounded, personalized cash management strategy that respects the family's fixed expenses and provides a clear, actionable path for optimizing idle cash."
+}

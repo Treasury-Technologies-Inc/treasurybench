@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:13:30.038Z",
+  "latencyMs": 2782,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the May 2026 transactions, these are the charges that look recurring or subscription-like.\n\nTrue subscriptions / fitness / software\n- Netflix — $22.99 (2026-05-13)\n- Adobe — $59.99 (2026-05-14)\n- ClassPass — $89.00 (2026-05-16)\n\nMonthly total to review: $171.98\n\nRecurring phone / internet utility bills\n- AT&T Wireless — $72.00 (2026-05-09)\n- Xfinity — $89.00 (2026-05-05)\n\nMonthly total to review: $161.00\n\nCombined recurring-review total (both buckets): $332.98/month\n\nSeparately (excluded from the totals above)\n- Cascade Apartments rent — $2,350.00/month (charged 2026-05-01, with matching charges visible in March and April)\n\nI did not include groceries, dining, travel, transportation, or other spending categories because they do not appear to be fixed recurring subscriptions from the transaction data provided.",
+  "taskId": "maria_recurring_charges_audit",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1551,
+      "outputTokens": 299,
+      "totalTokens": 1850,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "taskId": "jordan_office_supplies_rewards",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links advice to the visible transactions and accounts. It correctly identifies the Ink Preferred and BBP roles, though it missed using the exact dollar amounts for the software subscriptions."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The advice on card categories is accurate for 2026. The tax advice regarding Schedule C and the simplified home office deduction is correct and appropriately caveated."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The plan is actionable and clear. It provides a specific recommendation (Ink Business Cash) and explains the mechanics of the point transfer. It avoids over-annualizing the data."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response includes necessary caveats about card coding and business/personal expense separation. It correctly identifies the need to verify internet/phone billing."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Chase Ink Business Cash earns 5% at office supply stores and on internet, cable, and phone services on the first $25,000 in combined purchases per account anniversary year",
+      "tableKey": "chase_2026_ink_business_cash",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Simplified home-office deduction is $5 per square foot of qualifying space, capped at 300 square feet",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3% on net earnings",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions the Ink Business Preferred earns 3x on shipping, advertising, and travel, which is correct, but it correctly notes it does not earn 3x on software."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the $25,000 cap on the Ink Business Cash as a potential limit for a high-spend consultant."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to pair the Ink Business Cash with the Ink Business Preferred to unlock transfer partners is a high-leverage, expert-level insight."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly relevant, accurate, and actionable optimization plan for the user's business spending, correctly leveraging the Chase Ink ecosystem while maintaining appropriate tax and business-expense boundaries."
+}

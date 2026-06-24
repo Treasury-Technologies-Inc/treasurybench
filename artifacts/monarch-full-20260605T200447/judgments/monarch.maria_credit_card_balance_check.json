@@ -1,0 +1,39 @@
+{
+  "taskId": "maria_credit_card_balance_check",
+  "provider": "monarch",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the specific $1,840 balance and links the advice to the user's actual financial situation, including checking/savings liquidity and the distinction between statement float and revolving debt."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The advice on credit card mechanics, grace periods, and interest accrual is accurate and aligns with standard financial practices for the 2026 context."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps. It could have been slightly more personalized by explicitly referencing the user's $18,450 checking balance as a clear indicator that she can afford to pay the balance in full immediately, rather than just suggesting it as a conditional."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response is highly prudent, emphasizing the need to verify interest status and cash flow before making a decision, and correctly avoiding the assumption that the balance is revolving debt."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly noted that with $18,450 in checking, the $1,840 balance is easily covered, removing the 'cash crunch' risk mentioned in the advice."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant provides a prudent, well-grounded guide for managing a credit card balance, correctly prioritizing verification of interest status and autopay settings over generic payoff advice."
+}

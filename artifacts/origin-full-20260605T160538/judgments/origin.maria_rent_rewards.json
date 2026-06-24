@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_rent_rewards",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's rent amount and annualizes it, linking it to the Cascade Apartments transaction. It also references the Ally savings account for the cash float strategy."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response uses current Bilt 2.0 terminology (Bilt Blue) and correctly identifies the fee-free nature of Bilt rent payments. It correctly identifies the 3% fee tradeoff for sign-up bonuses. However, it incorrectly describes the Bilt Blue rent earning as a flat 1x, whereas Bilt 2.0 uses a tiered multiplier based on everyday spend."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable strategies (Bilt, sign-up bonus churning, and HYSA float). It quantifies the impact of each strategy, providing a high-leverage, personalized answer."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response includes necessary caveats regarding the 'active use' requirement for Bilt and the risks of paying processing fees. It correctly advises switching back to fee-free methods after hitting sign-up bonuses."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Bilt Blue card earns 1x point per dollar on rent",
+      "tableKey": "bilt_2026_rent_mechanics",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "Bilt Rewards allows rent payment via ACH or check with no transaction fee",
+      "tableKey": "bilt_2026_rent_mechanics",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly states Bilt Blue earns a flat 1x on rent; Bilt 2.0 uses a tiered multiplier based on everyday spend."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Bilt 2.0 tiered multiplier mechanics to help the user understand how to maximize the rent earn rate beyond the base tier."
+  ],
+  "unexpectedValidInsights": [
+    "The HYSA cash float strategy is a clever, low-effort, and safe way to extract value from rent payments without any credit card risk."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly personalized and actionable guide to earning rewards on rent, correctly identifying the Bilt ecosystem and the strategic use of sign-up bonuses, though it slightly misstates the Bilt 2.0 tiered earning structure."
+}

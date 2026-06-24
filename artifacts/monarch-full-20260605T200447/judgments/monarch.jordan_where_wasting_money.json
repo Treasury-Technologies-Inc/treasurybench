@@ -1,0 +1,45 @@
+{
+  "taskId": "jordan_where_wasting_money",
+  "provider": "monarch",
+  "totalScore": 0,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 0,
+      "maxScore": 25,
+      "rationale": "The response failed to analyze any of the provided transaction or balance data, instead asking the user to provide more information or choose a reporting format."
+    },
+    {
+      "id": "correctness",
+      "score": 0,
+      "maxScore": 25,
+      "rationale": "The response provided no financial analysis or factual claims to evaluate."
+    },
+    {
+      "id": "resolution",
+      "score": 0,
+      "maxScore": 35,
+      "rationale": "The response failed to identify any opportunities, leaking value, or actionable insights, effectively stalling the task."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 15,
+      "rationale": "While not unsafe, the response failed to provide any value or professional guidance."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The assistant failed to perform the requested analysis on the provided data, instead returning a prompt for further instructions."
+  ],
+  "missedOpportunities": [
+    "Review of SaaS stack (Adobe, Figma, Webflow, Google Workspace) for consolidation or annual billing discounts.",
+    "Verification of tax reserve adequacy in the Ally account against 2026 estimated tax requirements.",
+    "Analysis of business travel expenses (Delta, Marriott, Uber) for potential rewards optimization or corporate status challenges.",
+    "Review of HSA contribution pacing against the 2026 $4,400 self-only limit.",
+    "Evaluation of credit card payment habits to ensure no interest is being paid on the Chase Ink or Amex balances."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant failed to perform the requested analysis, instead returning a meta-prompt asking the user to define the reporting scope."
+}

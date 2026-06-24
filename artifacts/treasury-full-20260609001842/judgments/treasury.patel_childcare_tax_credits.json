@@ -1,0 +1,62 @@
+{
+  "taskId": "patel_childcare_tax_credits",
+  "provider": "treasury",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the user's specific daycare transactions and employer benefits. It misses the opportunity to use the exact $1,870 total May childcare spend in the math check, instead using a slightly different figure."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 30,
+      "rationale": "Correctly identifies the DCFSA/CDCTC interaction. However, it incorrectly states the 2026 Child Tax Credit is $2,500 (the locked fact is $2,200) and incorrectly cites the 2026 DCFSA limit as $7,500 (which is correct) but then references a $5,000 limit in the 'When to use it' section, creating confusion."
+    },
+    {
+      "id": "resolution",
+      "score": 24,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable ranked plan. The steps are logical and tailored to the Patels' dual-income situation."
+    },
+    {
+      "id": "prudence",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding plan enrollment and the 'use-it-or-lose-it' nature of the FSA. The advice to check for life-event enrollment is prudent."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 DCFSA contribution limit is $7,500",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Social Security wage base is $184,500",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Child Tax Credit is $2,500",
+      "tableKey": "irs_2026_child_tax_credit",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly states the 2026 Child Tax Credit is $2,500; the locked benchmark fact is $2,200.",
+    "The response mentions a $5,000 limit for the FSA in the 'When to use it' section, which is stale/confusing given the correct $7,500 limit cited earlier."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly calculate the impact of the $1,870 May spend against the $7,500 annual limit to show how much of the year remains."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the FICA tax savings (7.65%) as a key differentiator between the FSA and the tax credit."
+  ],
+  "safetyIssues": [
+    "None."
+  ],
+  "summary": "The response provides a strong, personalized strategy for childcare tax benefits but contains a factual error regarding the 2026 Child Tax Credit amount."
+}

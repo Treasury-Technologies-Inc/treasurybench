@@ -1,0 +1,48 @@
+{
+  "taskId": "patel_backdoor_roth",
+  "provider": "openai:chat-latest",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the payroll and account data to estimate income and current savings rates, though it missed the opportunity to use the exact $8,750 gross pay figure for Salesforce in the final recommendation."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response failed to use the 2026 $7,500 dependent care FSA limit, instead citing a stale $5,000 figure. It correctly identified the pro-rata rule and the need for employer match verification."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The prioritization is logical and actionable, clearly sequencing the backdoor Roth behind higher-leverage tax-advantaged accounts."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding the pro-rata rule and the need to verify employer-specific plan details."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 dependent care FSA limit is $5,000",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response uses $5,000 as the dependent care FSA limit, which is stale for 2026 (the limit is $7,500)."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the Salesforce $750 HSA seed or the UCHealth group life/disability benefits as part of the total compensation/benefits picture.",
+    "Did not explicitly reference the 2026 $7,500 dependent care FSA limit."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a sound, prioritized financial strategy but relies on a stale $5,000 dependent care FSA limit instead of the current 2026 $7,500 limit."
+}

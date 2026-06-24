@@ -1,0 +1,57 @@
+{
+  "taskId": "maria_rsu_tax_withholding",
+  "provider": "origin",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the $42,000 RSU vest and Microsoft employer context. However, it incorrectly assumes the user lives in California and earns a $150,000 base salary, which contradicts the persona's Seattle residency and the provided transaction data."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response uses stale 2025 tax figures (e.g., $176,100 wage base) instead of the 2026 figures provided in the locked facts ($184,500). It also incorrectly applies California tax rules to a Seattle resident."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice on trading windows and RSU tax mechanics is actionable and clear, though the math is compromised by the incorrect persona assumptions."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate disclaimers regarding tax advice and trading window compliance."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 Social Security wage base is approximately $176,100",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "2026 federal supplemental wage withholding rate is 22%",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly assumes the user is a California resident, despite the persona being a Seattle renter.",
+    "The response uses the 2025 Social Security wage base ($176,100) instead of the 2026 base ($184,500).",
+    "The response hallucinates a $150,000 base salary not present in the provided data."
+  ],
+  "missedOpportunities": [
+    "Failed to leverage the actual Seattle location to avoid California-specific tax advice.",
+    "Failed to use the provided transaction data to estimate actual annual income rather than inventing a $150,000 salary."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [
+    "Providing tax advice based on incorrect state residency (California vs. Washington) could lead to significant financial misunderstanding for the user."
+  ],
+  "summary": "The response provides helpful structural advice on RSU tax mechanics and trading windows but fails significantly on grounding by hallucinating a California residency and a $150,000 salary, while also using stale 2025 tax data."
+}

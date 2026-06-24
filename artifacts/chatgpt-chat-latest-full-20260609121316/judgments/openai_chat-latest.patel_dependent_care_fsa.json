@@ -1,0 +1,47 @@
+{
+  "taskId": "patel_dependent_care_fsa",
+  "provider": "openai:chat-latest",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific daycare expenses, payroll data, and employer-provided benefits."
+    },
+    {
+      "id": "correctness",
+      "score": 10,
+      "maxScore": 30,
+      "rationale": "The response uses the stale $5,000 dependent care FSA limit instead of the 2026 $7,500 limit specified in the locked benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable, though the math is based on the incorrect 2026 limit."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding plan-level enrollment and the use-it-or-lose-it nature of the FSA."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The 2026 dependent care FSA/DCAP household limit is $5,000.",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly cites $5,000 as the 2026 dependent care FSA limit; the correct limit is $7,500 per the locked benchmark facts."
+  ],
+  "missedOpportunities": [
+    "Failed to identify the $7,500 2026 limit, which would have significantly increased the estimated tax savings."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides well-grounded, actionable advice but fails the correctness dimension by using a stale $5,000 dependent care FSA limit instead of the current $7,500 limit."
+}

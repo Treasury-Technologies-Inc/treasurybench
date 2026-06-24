@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_crypto_concentration",
+  "provider": "origin",
+  "totalScore": 25,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "The response failed to use the provided CSV data, incorrectly claiming all account balances were $0 and that they were added today, despite the prompt providing specific balances for all accounts."
+    },
+    {
+      "id": "correctness",
+      "score": 10,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the tax nature of crypto as property, but fails to perform the requested analysis because it ignored the provided account balances."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response provides a generic framework instead of the requested analysis of the user's actual crypto concentration, which was fully calculable from the provided data."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "The response includes standard disclaimers but fails to address the specific liquidity risks associated with the user's irregular income and tax-reserve needs."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Crypto is taxed as property",
+      "tableKey": "crypto_2026_wash_sale",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly claims all account balances are $0 and were added today, which contradicts the provided CSV data."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate the actual crypto concentration percentage (12,500 / total assets).",
+    "Failed to compare crypto holdings against the liquid tax reserve and brokerage balances.",
+    "Failed to provide a sizing policy based on the actual provided data."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response failed to utilize the provided account data, resulting in a generic and unhelpful assessment that ignored the user's actual financial concentration."
+}

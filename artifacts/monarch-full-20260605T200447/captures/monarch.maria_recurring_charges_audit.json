@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T04:35:41.826Z",
+  "latencyMs": 34519,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "monarch",
+  "response": "For May 1–31, 2026, your recurring charges shake out into two main groups, plus one “in-between” bill.\n\nBucket 1: Subscriptions / fitness / software (~$172)\nYou had three clear recurring services on your Chase Sapphire Preferred 8600:\n\nClassPass on May 16: $89\nAdobe on May 14: $60\nNetflix on May 13: $23\n\nTogether, that’s about $172 in true subscriptions/fitness/software for May. These are solid ones to review for ongoing value or possible downgrades/cancellations.\n\nBucket 2: Phone / internet / utilities (~$72)\n\nAT&T Wireless on May 9: $72 (Phone)\n\nThat gives you about $72 in recurring phone/internet/utility-type bills for May 2026.\n\nMixed item: Xfinity ($89)\n\nXfinity on May 5: $89, currently categorized as Utilities\n\nYou can treat Xfinity either way:\n\nIf you count it as a utility, Bucket 2 becomes about $161\nIf you count it as a subscription, Bucket 1 becomes about $261\n\nThere were no Rent charges in these filtered categories for May 2026, so nothing to exclude or flag separately there.\n\n\nClassPass\n💪\n$89.00\n\n\nAdobe\n⚪️\n$59.99\n\n\nNetflix\n⚪️\n$22.99\n\n\nAT&T Wireless\n📱\n$72.00\n\nXfinity\n⚪️\n$89.00",
+  "taskId": "maria_recurring_charges_audit"
+}

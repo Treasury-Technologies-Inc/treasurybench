@@ -1,0 +1,62 @@
+{
+  "taskId": "patel_hsa_family",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response acknowledges the HSA account but fails to use the specific account balance or the visible contribution transaction to ground the advice. It mentions the employers but does not link the specific Salesforce/Microsoft HSA seed benefits to the user's situation."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response uses vague 'mid-$4,000s' and 'mid-$8,000s' language instead of the specific 2026 limits ($4,400 and $8,750) provided in the locked facts. It correctly identifies the HSA triple tax advantage and eligibility rules."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is clear and educational, but it lacks the specific, actionable next steps requested by the task. It provides a good framework but fails to apply it to the Patel family's specific financial data."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response is appropriately caveated, emphasizing that it is educational and not tax advice, and correctly highlights the testing period for the last-month rule."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA family limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA catch-up contribution at age 55+ is $1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response uses vague ranges (mid-$4,000s/mid-$8,000s) instead of the precise 2026 IRS limits ($4,400/$8,750).",
+    "The response incorrectly suggests assuming 2025 limits unless the plan year is different, despite the benchmark date being May 2026."
+  ],
+  "missedOpportunities": [
+    "Failed to use the exact 2026 HSA family limit of $8,750.",
+    "Failed to mention the payroll/FICA tax advantage specifically for the Salesforce/UCHealth payroll context.",
+    "Failed to reference the Salesforce HSA seed benefit ($750) which is a high-leverage, personalized detail."
+  ],
+  "unexpectedValidInsights": [
+    "Clear explanation of the 'last-month rule' and the associated testing period risk."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid educational overview of HSA mechanics and eligibility but fails to leverage the specific 2026 limits and the user's visible financial data to provide a personalized, high-leverage recommendation."
+}

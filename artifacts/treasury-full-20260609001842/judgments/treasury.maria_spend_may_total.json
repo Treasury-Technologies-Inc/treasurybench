@@ -1,0 +1,47 @@
+{
+  "taskId": "maria_spend_may_total",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately retrieves and sums the May 2026 transactions, correctly excluding income and correctly identifying the top spending categories."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "Calculations are precise. The response correctly identifies the Microsoft corporate context without overstepping into unsupported claims about specific reimbursement status."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The answer is concise and addresses the prompt directly. It loses minor points for including a raw display-card syntax artifact in the final output."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately suggests checking corporate programs rather than assuming eligibility or reimbursement success."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft offers corporate discounts or reimbursement programs for travel",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The claim regarding Microsoft travel reimbursement is a general benefit reference; while consistent with the persona's employer, it is not a specific locked fact and remains unverified."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Microsoft $1,500 annual wellness reimbursement as a potential offset for the ClassPass expense, given the persona's employer."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant provided an accurate, well-grounded summary of May 2026 spending, correctly identifying the top categories and maintaining appropriate caution regarding employer benefits."
+}

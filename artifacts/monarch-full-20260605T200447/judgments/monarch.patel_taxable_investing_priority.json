@@ -1,0 +1,50 @@
+{
+  "taskId": "patel_taxable_investing_priority",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response uses the visible account balances and monthly cash flow effectively. It fails to incorporate the specific employer-provided benefits (Salesforce/UCHealth) which were available in the persona context."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the priority of high-interest debt and emergency funds. However, it misses the opportunity to leverage the specific 2026 HSA and 401(k) limits provided in the benchmark facts, opting for vague references instead."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The prioritization logic is sound and actionable. It provides a clear, logical sequence for the user's next dollars, though it lacks the depth of integrating the specific employer-sponsored perks (like the Salesforce 401k match or HSA seed) which would have elevated the advice."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The advice is safe and conservative. It correctly cautions against assuming credit card balances are revolving and emphasizes the importance of the emergency fund."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA limits will be in a similar range to current-year limits",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response refers to 2026 limits as 'similar to current-year' rather than citing the specific locked benchmark figures ($8,750 for family HSA).",
+    "The response fails to mention the Salesforce 401(k) match or HSA seed, despite these being provided in the persona context."
+  ],
+  "missedOpportunities": [
+    "Did not mention the Salesforce 401(k) match (100% on first 6%) or the Salesforce HSA seed ($750).",
+    "Did not mention the UCHealth 401(k) match (50% up to IRS limit).",
+    "Did not leverage the specific 2026 HSA family limit ($8,750) or 401(k) deferral limit ($24,500)."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, safe, and logical prioritization framework for the user's finances but misses significant opportunities to leverage specific, high-value employer benefits and 2026 tax-law facts provided in the persona context."
+}

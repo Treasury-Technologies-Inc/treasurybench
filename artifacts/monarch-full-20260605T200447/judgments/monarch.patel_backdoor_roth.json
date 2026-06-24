@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_backdoor_roth",
+  "provider": "monarch",
+  "totalScore": 45,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "The response failed to use any of the provided household data (income, employer plans, existing balances) to tailor the advice, despite the prompt providing specific payroll and account details."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response cites a stale 2024 IRA limit ($7,000) instead of the 2026 limit ($7,500). It correctly identifies the pro-rata rule and the mechanics of the backdoor Roth."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The advice is generic. It fails to calculate if the user is actually over the Roth income limits based on their payroll data or to suggest specific next steps based on their existing 401(k) and HSA balances."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding the pro-rata rule, Form 8606, and the step-transaction doctrine."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2024 IRA limit is $7,000",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response uses 2024 IRA contribution limits instead of the 2026 limits specified in the benchmark facts."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate household gross income from payroll notes to determine if they are actually over the Roth phaseout limit.",
+    "Failed to reference the Salesforce and UCHealth 401(k) plans as potential vehicles for rolling over pre-tax IRA balances to avoid the pro-rata rule.",
+    "Failed to mention the Mega Backdoor Roth potential given the Salesforce and Microsoft (UCHealth) plan details provided in the benchmark context."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a technically accurate but generic explanation of the backdoor Roth process, failing to utilize the provided household financial data to offer personalized, actionable advice."
+}

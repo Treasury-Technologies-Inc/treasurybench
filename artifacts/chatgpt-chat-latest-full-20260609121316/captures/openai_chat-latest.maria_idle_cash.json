@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:14:45.849Z",
+  "latencyMs": 8501,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the balances and recent spending in your accounts as of 2026-05-31, your cash position looks reasonable and is slightly on the high side rather than too low.\n\nWhat you have now\n- Checking: $18,450\n- Savings: $5,250\n- Total cash: $23,700\n- Credit card balance: $1,840\n\nIf you paid the Sapphire Preferred balance in full today, you'd still have about $21,860 in cash.\n\nEstimated monthly spending\n\nUsing your recent transactions:\n\n- Rent: $2,350\n- Groceries: about $672\n- Dining: about $162\n- Utilities/phone/subscriptions/fitness: about $333\n- Gas/rideshare: about $120\n\nThat's roughly $3,600-$3,700/month before discretionary travel. Travel spending in May was unusually large (about $560 between flights and rental car), so I would not automatically treat that as a recurring monthly expense.\n\nEmergency-fund comparison\n\nUsing roughly $3,650/month of spending:\n\n- 3 months expenses ≈ $11,000\n- 6 months expenses ≈ $22,000\n\nYour net cash after paying the credit card ($21,860) is almost exactly a 6-month emergency fund.\n\nOther context\n\nYou also have:\n- $48,500 in your Microsoft 401(k)\n- $62,300 in your Robinhood brokerage\n\nNotably, your brokerage balance was boosted by a $42,000 Microsoft RSU vest in May. Because you already have substantial invested assets, you do not need an unusually large cash cushion unless you're saving for a near-term goal.\n\nMy assessment\n\n- You do not appear cash-poor.\n- You are very close to a traditional 6-month emergency fund level.\n- I would not say you have \"too much\" cash, but the $18,450 sitting in checking is probably more than necessary.\n\nA practical target\n\nIf your goal is maximizing long-term growth while maintaining safety:\n\n- Keep roughly $15,000-$22,000 total in cash (checking + savings), depending on your comfort level.\n- Keep enough in checking for rent, card payments, and monthly bills (perhaps $5,000-$8,000).\n- Keep the rest of the emergency fund in a high-yield savings account.\n\nPotential opportunity\n\nIf you are comfortable with a 4-5 month emergency fund instead of 6 months, you could invest roughly $5,000-$10,000 of excess cash. The larger portfolio consideration, however, is the recent Microsoft RSU vest: reviewing how much of your brokerage remains concentrated in Microsoft stock is likely a higher-impact decision than moving a few thousand dollars between checking and savings.\n\nExact next steps\n\n1. Pay the $1,840 credit-card balance in full if you don't already do so automatically.\n2. Decide whether you want a 4-, 5-, or 6-month emergency fund.\n3. If keeping a 6-month fund, your current cash level is about right.\n4. If keeping less than 6 months, move the excess into investments.\n5. Review your Robinhood holdings and determine how much exposure you have to Microsoft after the recent RSU vest. Concentration risk there may matter more than your current cash balance.",
+  "taskId": "maria_idle_cash",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1508,
+      "outputTokens": 887,
+      "totalTokens": 2395,
+      "reasoningTokens": 192,
+      "cachedInputTokens": 1152
+    }
+  }
+}

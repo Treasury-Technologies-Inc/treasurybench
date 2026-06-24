@@ -1,0 +1,4279 @@
+[
+  {
+    "taskId": "jordan_business_banking_perks",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "employer_benefits_perks",
+    "deterministicScore": 70,
+    "latencyMs": 14140,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_mem_work:hit, jordan_acct_business_checking:hit, jordan_acct_tax_savings:hit, jordan_txn_marketplace_health_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/3 relevant amounts detected. Amounts mentioned for jordan_acct_tax_savings."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "tax_reserve_protection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Protect tax-reserve cash before treating it as investable or spendable.",
+        "evidence": "Looks for tax-reserve protection language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_business_expenses_may",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "transaction_intelligence",
+    "deterministicScore": 100,
+    "latencyMs": 23775,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_txn_coworking_2026_05:hit, jordan_txn_adobe_2026_05:hit, jordan_txn_delta_2026_05:hit, jordan_txn_office_depot_2026_05:hit"
+      },
+      {
+        "id": "exact_period_scope_may_2026",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Respect the May 2026 requested period or clearly label the observed period.",
+        "evidence": "Looks for May/2026 period scoping."
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/4 relevant amounts detected. Amounts mentioned for jordan_txn_coworking_2026_05, jordan_txn_office_depot_2026_05."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "no_income_as_spend",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not include payroll, client deposits, or other income as spending.",
+        "evidence": "No income-as-spend language detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_checking_buffer",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "cashflow_budgeting",
+    "deterministicScore": 100,
+    "latencyMs": 14062,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/4 relevant signals detected. jordan_acct_personal_checking:hit, jordan_acct_business_checking:hit, jordan_txn_rent_2026_05:hit, jordan_txn_coworking_2026_05:miss"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "3/4 relevant amounts detected. Amounts mentioned for jordan_acct_personal_checking, jordan_acct_business_checking, jordan_txn_rent_2026_05."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "tax_reserve_protection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Protect tax-reserve cash before treating it as investable or spendable.",
+        "evidence": "Looks for tax-reserve protection language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_credit_card_balance_check",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "debt_credit_health",
+    "deterministicScore": 80,
+    "latencyMs": 18355,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. jordan_acct_ink:hit, jordan_acct_bbp:hit, jordan_txn_card_payment_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "0/3 relevant amounts detected. No exact relevant signal amounts detected."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_credit_card_strategy",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "credit_cards_rewards",
+    "deterministicScore": 67,
+    "latencyMs": 11832,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/5 relevant signals detected. jordan_acct_ink:hit, jordan_acct_bbp:hit, jordan_txn_adobe_2026_05:hit, jordan_txn_delta_2026_05:hit, jordan_txn_heb_2026_05:miss"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "0/5 relevant amounts detected. No exact relevant signal amounts detected."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "card_rate_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current card category mechanics: Ink Preferred 3x is not a dining category; Blue Business Plus is flat-rate fallback.",
+        "evidence": "Ink current=true; BBP flat-rate=true."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_crypto_concentration",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "investing_equity_comp",
+    "deterministicScore": 80,
+    "latencyMs": 14422,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_acct_crypto:hit, jordan_acct_brokerage:hit, jordan_acct_tax_savings:hit, jordan_mem_work:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/3 relevant amounts detected. Amounts mentioned for jordan_acct_crypto, jordan_acct_tax_savings."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "tax_reserve_protection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Protect tax-reserve cash before treating it as investable or spendable.",
+        "evidence": "Looks for tax-reserve protection language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_disability_liability_need",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "insurance_risk_protection",
+    "deterministicScore": 88,
+    "latencyMs": 12993,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_mem_work:hit, jordan_acct_personal_checking:hit, jordan_acct_business_checking:hit, jordan_txn_client_figma_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/3 relevant amounts detected. Amounts mentioned for jordan_acct_personal_checking."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_extra_8000",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "life_planning_major_decisions",
+    "deterministicScore": 86,
+    "latencyMs": 16366,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_acct_tax_savings:hit, jordan_acct_ink:hit, jordan_acct_hsa:hit, jordan_acct_ira:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "3/4 relevant amounts detected. Amounts mentioned for jordan_acct_tax_savings, jordan_acct_hsa, jordan_acct_ira."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "tax_reserve_protection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Protect tax-reserve cash before treating it as investable or spendable.",
+        "evidence": "Looks for tax-reserve protection language."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "priority_ordering",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Provide ordered priorities.",
+        "evidence": "Looks for ordering language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_health_insurance_marketplace",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "employer_benefits_perks",
+    "deterministicScore": 93,
+    "latencyMs": 16029,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_mem_work:hit, jordan_txn_marketplace_health_2026_05:hit, jordan_acct_hsa:hit, jordan_txn_hsa_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/3 relevant amounts detected. Amounts mentioned for jordan_txn_marketplace_health_2026_05."
+      },
+      {
+        "id": "hsa_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 self-only HSA limit $4,400 and avoid stale or wrong limits.",
+        "evidence": "Looks for HSA limit."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "no_health_insurance_reduces_se_tax_claim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not claim self-employed health insurance or marketplace premiums reduce self-employment tax or the Schedule SE base.",
+        "evidence": "No false health-insurance to SE-tax reduction claim detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_home_office_deduction",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 83,
+    "latencyMs": 12318,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_txn_coworking_2026_05:hit, jordan_txn_adobe_2026_05:hit, jordan_txn_hotel_2026_05:hit, jordan_txn_spectrum_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "4/4 relevant amounts detected. Amounts mentioned for jordan_txn_coworking_2026_05, jordan_txn_adobe_2026_05, jordan_txn_hotel_2026_05, jordan_txn_spectrum_2026_05."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "self_employed_tax_coverage",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Cover self-employment tax plus estimated-tax/safe-harbor handling for freelancer tax tasks.",
+        "evidence": "Looks for self-employment and estimated-tax language."
+      },
+      {
+        "id": "no_health_insurance_reduces_se_tax_claim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not claim self-employed health insurance or marketplace premiums reduce self-employment tax or the Schedule SE base.",
+        "evidence": "No false health-insurance to SE-tax reduction claim detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_home_office_rent",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "housing_rent",
+    "deterministicScore": 100,
+    "latencyMs": 10729,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/4 relevant signals detected. jordan_txn_rent_2026_05:hit, jordan_txn_spectrum_2026_05:hit, jordan_txn_cell_2026_05:miss, jordan_txn_coworking_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "3/4 relevant amounts detected. Amounts mentioned for jordan_txn_rent_2026_05, jordan_txn_spectrum_2026_05, jordan_txn_coworking_2026_05."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_hsa",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 83,
+    "latencyMs": 11062,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. jordan_acct_hsa:hit, jordan_txn_hsa_2026_05:hit, jordan_txn_marketplace_health_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/3 relevant amounts detected. Amounts mentioned for jordan_acct_hsa, jordan_txn_marketplace_health_2026_05."
+      },
+      {
+        "id": "hsa_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 self-only HSA limit $4,400 and avoid stale or wrong limits.",
+        "evidence": "Looks for HSA limit."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_idle_cash",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "cashflow_budgeting",
+    "deterministicScore": 80,
+    "latencyMs": 16991,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_acct_personal_checking:hit, jordan_acct_business_checking:hit, jordan_acct_tax_savings:hit, jordan_mem_work:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/3 relevant amounts detected. Amounts mentioned for jordan_acct_personal_checking, jordan_acct_tax_savings."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "tax_reserve_protection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Protect tax-reserve cash before treating it as investable or spendable.",
+        "evidence": "Looks for tax-reserve protection language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_insurance_review",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "insurance_risk_protection",
+    "deterministicScore": 80,
+    "latencyMs": 11591,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. jordan_mem_work:hit, jordan_mem_household:hit, jordan_txn_marketplace_health_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/1 relevant amounts detected. Amounts mentioned for jordan_txn_marketplace_health_2026_05."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_office_supplies_rewards",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "credit_cards_rewards",
+    "deterministicScore": 75,
+    "latencyMs": 16140,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_txn_office_depot_2026_05:hit, jordan_txn_adobe_2026_05:hit, jordan_txn_aws_2026_05:hit, jordan_acct_ink:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/4 relevant amounts detected. Amounts mentioned for jordan_txn_office_depot_2026_05."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "card_rate_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current card category mechanics: Ink Preferred 3x is not a dining category; Blue Business Plus is flat-rate fallback.",
+        "evidence": "Ink current=true; BBP flat-rate=true."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_quarterly_estimated_taxes",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 88,
+    "latencyMs": 15176,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/4 relevant signals detected. jordan_txn_client_figma_2026_05:miss, jordan_txn_client_notion_2026_05:hit, jordan_txn_stripe_2026_05:hit, jordan_txn_estimated_tax_2026_04:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/4 relevant amounts detected. Amounts mentioned for jordan_txn_client_notion_2026_05, jordan_txn_estimated_tax_2026_04."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "tax_reserve_protection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Protect tax-reserve cash before treating it as investable or spendable.",
+        "evidence": "Looks for tax-reserve protection language."
+      },
+      {
+        "id": "self_employed_tax_coverage",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Cover self-employment tax plus estimated-tax/safe-harbor handling for freelancer tax tasks.",
+        "evidence": "Looks for self-employment and estimated-tax language."
+      },
+      {
+        "id": "no_solo401k_reduces_se_tax_claim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not claim Solo 401(k)/SEP/retirement contributions reduce the self-employment tax or Schedule SE base.",
+        "evidence": "No false retirement-contribution to SE-tax reduction claim detected."
+      },
+      {
+        "id": "no_health_insurance_reduces_se_tax_claim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not claim self-employed health insurance or marketplace premiums reduce self-employment tax or the Schedule SE base.",
+        "evidence": "No false health-insurance to SE-tax reduction claim detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_recurring_charges_audit",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "transaction_intelligence",
+    "deterministicScore": 67,
+    "latencyMs": 12108,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_txn_coworking_2026_05:hit, jordan_txn_marketplace_health_2026_05:hit, jordan_txn_adobe_2026_05:hit, jordan_txn_spectrum_2026_05:hit"
+      },
+      {
+        "id": "exact_period_scope_may_2026",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Respect the May 2026 requested period or clearly label the observed period.",
+        "evidence": "Looks for May/2026 period scoping."
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "4/4 relevant amounts detected. Amounts mentioned for jordan_txn_coworking_2026_05, jordan_txn_marketplace_health_2026_05, jordan_txn_adobe_2026_05, jordan_txn_spectrum_2026_05."
+      },
+      {
+        "id": "recurring_scope_boundary",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate subscriptions from recurring bills/insurance/housing and avoid treating every recurring charge as cancellable waste.",
+        "evidence": "Separates bills=true; scope labels=true; avoids invalid cancellation framing=false."
+      },
+      {
+        "id": "recurring_review_scope_strict",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "For Jordan, identify recurring business software/tools separately from personal bills/health/rent, without inferring plan tiers from price.",
+        "evidence": "Business tools detected=5/5; personal bills detected=2/3; separated=true; invented tiers=true; unrelated finance advice=false."
+      },
+      {
+        "id": "no_subscription_tier_fabrication",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not infer exact subscription tiers from charge amounts unless the tier is visible in the data.",
+        "evidence": "No unsupported subscription-tier inference detected."
+      },
+      {
+        "id": "no_unverified_public_subscription_pricing",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not cite exact public plan prices, promo rates, competitor rates, or discount percentages unless verified or framed as an unverified check.",
+        "evidence": "No unverified exact public pricing claim detected."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_rent_affordability",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "housing_rent",
+    "deterministicScore": 100,
+    "latencyMs": 12704,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_txn_rent_2026_05:hit, jordan_txn_client_figma_2026_05:hit, jordan_acct_tax_savings:hit, jordan_mem_work:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/3 relevant amounts detected. Amounts mentioned for jordan_txn_rent_2026_05, jordan_acct_tax_savings."
+      },
+      {
+        "id": "tax_reserve_protection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Protect tax-reserve cash before treating it as investable or spendable.",
+        "evidence": "Looks for tax-reserve protection language."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_roth_or_traditional_ira",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 79,
+    "latencyMs": 10988,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "2/3 relevant signals detected. jordan_acct_ira:hit, jordan_txn_client_figma_2026_05:miss, jordan_mem_work:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/2 relevant amounts detected. Amounts mentioned for jordan_acct_ira."
+      },
+      {
+        "id": "ira_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 IRA limit $7,500.",
+        "evidence": "Looks for IRA limit."
+      },
+      {
+        "id": "roth_income_phaseout_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark Roth IRA phaseout context for single filer.",
+        "evidence": "Looks for phaseout figures or phaseout discussion."
+      },
+      {
+        "id": "pro_rata_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention pro-rata rule/pre-tax IRA caveat.",
+        "evidence": "Looks for pro-rata caveat."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_scorp_or_llc",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 40,
+    "latencyMs": 17226,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_txn_client_figma_2026_05:hit, jordan_txn_client_notion_2026_05:hit, jordan_acct_business_checking:hit, jordan_mem_work:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "0/3 relevant amounts detected. No exact relevant signal amounts detected."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "self_employed_tax_coverage",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Cover self-employment tax plus estimated-tax/safe-harbor handling for freelancer tax tasks.",
+        "evidence": "Looks for self-employment and estimated-tax language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_solo401k_or_sep",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 69,
+    "latencyMs": 10835,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "2/4 relevant signals detected. jordan_mem_household:hit, jordan_txn_client_figma_2026_05:miss, jordan_txn_client_notion_2026_05:miss, jordan_acct_ira:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/3 relevant amounts detected. Amounts mentioned for jordan_acct_ira."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "self_employed_tax_coverage",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Cover self-employment tax plus estimated-tax/safe-harbor handling for freelancer tax tasks.",
+        "evidence": "Looks for self-employment and estimated-tax language."
+      },
+      {
+        "id": "pro_rata_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention pro-rata rule/pre-tax IRA caveat.",
+        "evidence": "Looks for pro-rata caveat."
+      },
+      {
+        "id": "irs_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 401(k) employee limit $24,500 where relevant and avoid stale or wrong limits.",
+        "evidence": "Looks for 2026 401(k) limit."
+      },
+      {
+        "id": "no_solo401k_reduces_se_tax_claim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not claim Solo 401(k)/SEP/retirement contributions reduce the self-employment tax or Schedule SE base.",
+        "evidence": "No false retirement-contribution to SE-tax reduction claim detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_spend_may_total",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "transaction_intelligence",
+    "deterministicScore": 88,
+    "latencyMs": 6281,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "2/3 relevant signals detected. jordan_txn_rent_2026_05:hit, jordan_txn_coworking_2026_05:hit, jordan_txn_delta_2026_05:miss"
+      },
+      {
+        "id": "exact_period_scope_may_2026",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Respect the May 2026 requested period or clearly label the observed period.",
+        "evidence": "Looks for May/2026 period scoping."
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/3 relevant amounts detected. Amounts mentioned for jordan_txn_rent_2026_05, jordan_txn_coworking_2026_05."
+      },
+      {
+        "id": "consumption_spend_total_scope",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Consumption spend should exclude card payments and savings/investment movements; clean May total is 5202.72 versus transfer-inclusive cash outflow 7502.72.",
+        "evidence": "Clean total mentioned=true; transfer boundary stated=true."
+      },
+      {
+        "id": "no_income_as_spend",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not include payroll, client deposits, or other income as spending.",
+        "evidence": "No income-as-spend language detected."
+      },
+      {
+        "id": "no_card_payment_as_spend",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not count credit-card payments as new consumption spending in spend totals.",
+        "evidence": "No card-payment-as-spend language detected."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_subscriptions_benefits",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "savings_expense_reduction",
+    "deterministicScore": 67,
+    "latencyMs": 14833,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_txn_adobe_2026_05:hit, jordan_txn_figma_software_2026_05:hit, jordan_txn_webflow_2026_05:hit, jordan_txn_coworking_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "4/4 relevant amounts detected. Amounts mentioned for jordan_txn_adobe_2026_05, jordan_txn_figma_software_2026_05, jordan_txn_webflow_2026_05, jordan_txn_coworking_2026_05."
+      },
+      {
+        "id": "recurring_scope_boundary",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate subscriptions from recurring bills/insurance/housing and avoid treating every recurring charge as cancellable waste.",
+        "evidence": "Separates bills=true; scope labels=true; avoids invalid cancellation framing=true."
+      },
+      {
+        "id": "recurring_review_scope_strict",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "For Jordan, identify recurring business software/tools separately from personal bills/health/rent, without inferring plan tiers from price.",
+        "evidence": "Business tools detected=5/5; personal bills detected=1/3; separated=true; invented tiers=true; unrelated finance advice=false."
+      },
+      {
+        "id": "no_subscription_tier_fabrication",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not infer exact subscription tiers from charge amounts unless the tier is visible in the data.",
+        "evidence": "No unsupported subscription-tier inference detected."
+      },
+      {
+        "id": "no_unverified_public_subscription_pricing",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Do not cite exact public plan prices, promo rates, competitor rates, or discount percentages unless verified or framed as an unverified check.",
+        "evidence": "Detected exact public subscription/bill pricing or discount claims without verification framing."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "hsa_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 self-only HSA limit $4,400 when a self-only HSA limit is cited.",
+        "evidence": "No self-only HSA contribution limit was cited."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_tax_optimization",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 69,
+    "latencyMs": 16951,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/4 relevant signals detected. jordan_mem_work:hit, jordan_acct_tax_savings:hit, jordan_txn_marketplace_health_2026_05:hit, jordan_txn_client_figma_2026_05:miss"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/3 relevant amounts detected. Amounts mentioned for jordan_txn_marketplace_health_2026_05."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "tax_reserve_protection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Protect tax-reserve cash before treating it as investable or spendable.",
+        "evidence": "Looks for tax-reserve protection language."
+      },
+      {
+        "id": "self_employed_tax_coverage",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Cover self-employment tax plus estimated-tax/safe-harbor handling for freelancer tax tasks.",
+        "evidence": "Looks for self-employment and estimated-tax language."
+      },
+      {
+        "id": "hsa_limit_currentness",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 self-only HSA limit $4,400 and avoid stale or wrong limits.",
+        "evidence": "Looks for HSA limit."
+      },
+      {
+        "id": "no_health_insurance_reduces_se_tax_claim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not claim self-employed health insurance or marketplace premiums reduce self-employment tax or the Schedule SE base.",
+        "evidence": "No false health-insurance to SE-tax reduction claim detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_taxable_investing_after_tax_reserve",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "investing_equity_comp",
+    "deterministicScore": 79,
+    "latencyMs": 16669,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_acct_brokerage:hit, jordan_acct_tax_savings:hit, jordan_acct_ink:hit, jordan_mem_work:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/3 relevant amounts detected. Amounts mentioned for jordan_acct_tax_savings."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "tax_reserve_protection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Protect tax-reserve cash before treating it as investable or spendable.",
+        "evidence": "Looks for tax-reserve protection language."
+      },
+      {
+        "id": "hsa_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 self-only HSA limit $4,400 and avoid stale or wrong limits.",
+        "evidence": "Looks for HSA limit."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_travel_rewards",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "credit_cards_rewards",
+    "deterministicScore": 100,
+    "latencyMs": 13719,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. jordan_txn_delta_2026_05:hit, jordan_txn_hotel_2026_05:hit, jordan_txn_uber_2026_05:hit, jordan_acct_ink:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "3/4 relevant amounts detected. Amounts mentioned for jordan_txn_delta_2026_05, jordan_txn_hotel_2026_05, jordan_txn_uber_2026_05."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "card_rate_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current card category mechanics: Ink Preferred 3x is not a dining category; Blue Business Plus is flat-rate fallback.",
+        "evidence": "Ink current=true; BBP flat-rate=false."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "jordan_where_wasting_money",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "savings_expense_reduction",
+    "deterministicScore": 92,
+    "latencyMs": 14501,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/4 relevant signals detected. jordan_acct_ink:hit, jordan_acct_tax_savings:hit, jordan_txn_coworking_2026_05:hit, jordan_txn_adobe_2026_05:miss"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/4 relevant amounts detected. Amounts mentioned for jordan_txn_coworking_2026_05."
+      },
+      {
+        "id": "business_personal_separation",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate business, personal, tax-reserve, and deductible-expense treatment for freelancer tasks.",
+        "evidence": "Looks for business/personal separation language."
+      },
+      {
+        "id": "tax_reserve_protection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Protect tax-reserve cash before treating it as investable or spendable.",
+        "evidence": "Looks for tax-reserve protection language."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_401k_contribution",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 100,
+    "latencyMs": 10181,
+    "checks": [
+      {
+        "id": "current_401k_annual_contribution",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "8% of $60,000 salary is $4,800/year.",
+        "evidence": "Looks for current contribution math."
+      },
+      {
+        "id": "irs_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 401(k) employee limit $24,500 where relevant and avoid stale or wrong limits.",
+        "evidence": "Looks for 2026 401(k) limit."
+      },
+      {
+        "id": "match_context",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Discuss employer match context.",
+        "evidence": "Looks for match."
+      },
+      {
+        "id": "no_stale_irs_limits",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not cite stale or wrong IRS contribution limits.",
+        "evidence": "No stale or wrong IRS limit language detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_401k_percent_to_limit",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 70,
+    "latencyMs": 15222,
+    "checks": [
+      {
+        "id": "current_401k_annual_contribution",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "8% of $60,000 salary is $4,800/year.",
+        "evidence": "Looks for current contribution math."
+      },
+      {
+        "id": "irs_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 401(k) employee limit $24,500 where relevant and avoid stale or wrong limits.",
+        "evidence": "Looks for 2026 401(k) limit."
+      },
+      {
+        "id": "match_context",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Discuss employer match context.",
+        "evidence": "Looks for match."
+      },
+      {
+        "id": "not_on_pace_401k_max",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Visible 8% deferrals imply about $4,800/year, which is not on pace for the 2026 $24,500 employee limit.",
+        "evidence": "Looks for not-on-pace conclusion plus contribution/limit math."
+      },
+      {
+        "id": "no_stale_irs_limits",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not cite stale or wrong IRS contribution limits.",
+        "evidence": "No stale or wrong IRS limit language detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_alaska_microsoft",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "employer_benefits_perks",
+    "deterministicScore": 100,
+    "latencyMs": 13704,
+    "checks": [
+      {
+        "id": "alaska_transaction_detection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Detect Alaska/SEA-SFO travel pattern.",
+        "evidence": "3/3 terms matched."
+      },
+      {
+        "id": "employer_linkage",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use Microsoft employer context.",
+        "evidence": "Looks for Microsoft."
+      },
+      {
+        "id": "program_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Caveat employer/travel program availability in the context of the specific program.",
+        "evidence": "Program context=true; caveat=true."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_backdoor_roth",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 100,
+    "latencyMs": 10896,
+    "checks": [
+      {
+        "id": "roth_income_phaseout_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark Roth IRA phaseout context for single filer.",
+        "evidence": "Looks for phaseout figures or phaseout discussion."
+      },
+      {
+        "id": "ira_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 IRA limit $7,500.",
+        "evidence": "Looks for IRA limit."
+      },
+      {
+        "id": "pro_rata_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention pro-rata rule/pre-tax IRA caveat.",
+        "evidence": "Looks for pro-rata caveat."
+      },
+      {
+        "id": "no_stale_irs_limits",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not cite stale or wrong IRS contribution limits.",
+        "evidence": "No stale or wrong IRS limit language detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_checking_buffer",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "cashflow_budgeting",
+    "deterministicScore": 38,
+    "latencyMs": 18428,
+    "checks": [
+      {
+        "id": "cash_balance_total",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Total cash 23700.00",
+        "evidence": "Requires the checking + savings total or at least a cash-balance discussion."
+      },
+      {
+        "id": "monthly_burn_estimate",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Estimate monthly burn/expenses for cash sizing.",
+        "evidence": "Looks for burn/spend framing."
+      },
+      {
+        "id": "idle_cash_estimate",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Estimate idle/excess cash.",
+        "evidence": "Looks for idle cash framing."
+      },
+      {
+        "id": "cash_buffer_before_long_term_lockup",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Keep cash buffer before long-term lockups.",
+        "evidence": "Looks for cash-before-lockup sequencing."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_costco_optimization",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "credit_cards_rewards",
+    "deterministicScore": 100,
+    "latencyMs": 14938,
+    "checks": [
+      {
+        "id": "costco_monthly_spend",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Observed May Costco spend 559.46 total, or 501.23 warehouse plus 58.23 gas split out.",
+        "evidence": "Accepts observed-period Costco spend or explicit warehouse/gas components; annualization should be scoped separately."
+      },
+      {
+        "id": "executive_membership_breakeven",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention Costco Executive breakeven/2% upgrade logic.",
+        "evidence": "Requires Executive Membership, 2% rewards, and breakeven/upgrade-cost logic."
+      },
+      {
+        "id": "gas_vs_warehouse_split",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate Costco gas from warehouse spend.",
+        "evidence": "Looks for gas/warehouse split."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_credit_card_balance_check",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "debt_credit_health",
+    "deterministicScore": 100,
+    "latencyMs": 10381,
+    "checks": [
+      {
+        "id": "credit_card_balance_amount",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the visible Chase Sapphire Preferred balance 1840.00.",
+        "evidence": "Looks for the linked credit-card balance."
+      },
+      {
+        "id": "autopay_statement_balance",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Recommend verifying or setting autopay to the full statement balance.",
+        "evidence": "Looks for full-statement autopay, not just minimum-payment automation."
+      },
+      {
+        "id": "no_revolving_debt_assumption",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not assume a visible current card balance is revolving debt; require statement/APR/autopay verification.",
+        "evidence": "No unsupported revolving-debt assumption detected."
+      },
+      {
+        "id": "high_interest_debt_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "If the balance is interest-bearing, pay it before lower-priority investing.",
+        "evidence": "Looks for conditional high-interest-debt priority."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_credit_card_strategy",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "credit_cards_rewards",
+    "deterministicScore": 86,
+    "latencyMs": 11754,
+    "checks": [
+      {
+        "id": "category_routing_map",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Map card choices across key categories.",
+        "evidence": "5/6 terms matched."
+      },
+      {
+        "id": "rent_rewards_math",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Bilt/no-fee rent rewards on 28200.00 annual rent.",
+        "evidence": "Requires Bilt/no-fee rent rewards plus annual rent math."
+      },
+      {
+        "id": "costco_incremental_math",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Evaluate incremental Costco card and Executive Membership economics.",
+        "evidence": "Costco=true; card economics=false; Executive/breakeven=false; incremental framing=true."
+      },
+      {
+        "id": "card_strategy_value_quantified",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Quantify annual rewards value or incremental upside, not just name cards.",
+        "evidence": "Looks for annual value math on rent/card rewards."
+      },
+      {
+        "id": "card_strategy_fee_caveats",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle annual fees, processing fees, and complexity caveats.",
+        "evidence": "Looks for fee/complexity tradeoff language."
+      },
+      {
+        "id": "card_strategy_priority_order",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Prioritize card changes by dollar impact rather than listing cards randomly.",
+        "evidence": "Looks for priority ordering tied to rent/Costco opportunities."
+      },
+      {
+        "id": "no_unbacked_rewards_headline",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not claim a large annual points/miles upside without line-item math, and keep one-time welcome bonuses separate from annual run-rate value.",
+        "evidence": "No unsupported high annual rewards headline detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_extra_10000",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "life_planning_major_decisions",
+    "deterministicScore": 100,
+    "latencyMs": 13510,
+    "checks": [
+      {
+        "id": "priority_ordering",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Provide ordered priorities.",
+        "evidence": "Looks for ordering language."
+      },
+      {
+        "id": "cash_buffer_before_long_term_lockup",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Keep cash buffer before long-term lockups.",
+        "evidence": "Looks for cash-before-lockup sequencing."
+      },
+      {
+        "id": "no_stale_irs_limits",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not cite stale or wrong IRS contribution limits.",
+        "evidence": "No stale or wrong IRS limit language detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_food_spend_may",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "transaction_intelligence",
+    "deterministicScore": 100,
+    "latencyMs": 14783,
+    "checks": [
+      {
+        "id": "food_spend_total_may",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "May food-like spend 892.19 if Costco Gas is included, or 833.96 if Costco Gas is explicitly excluded as fuel.",
+        "evidence": "Accepts either scope when the response explains the Costco Gas boundary."
+      },
+      {
+        "id": "merchant_category_boundary",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish Costco warehouse/food spend from gas and ordinary grocery-card coding.",
+        "evidence": "Looks for Costco warehouse/category-coding caveat or explicit Costco Gas exclusion."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_hsa",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 100,
+    "latencyMs": 11536,
+    "checks": [
+      {
+        "id": "hdhp_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not recommend HSA without HDHP/HSA eligibility.",
+        "evidence": "Looks for HDHP eligibility."
+      },
+      {
+        "id": "hsa_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 self-only HSA limit $4,400 and avoid stale or wrong limits.",
+        "evidence": "Looks for HSA limit."
+      },
+      {
+        "id": "employer_seed_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Caveat employer HSA seed/plan eligibility.",
+        "evidence": "Looks for employer seed caveat."
+      },
+      {
+        "id": "no_stale_irs_limits",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not cite stale or wrong IRS contribution limits.",
+        "evidence": "No stale or wrong IRS limit language detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_idle_cash",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "cashflow_budgeting",
+    "deterministicScore": 100,
+    "latencyMs": 17044,
+    "checks": [
+      {
+        "id": "cash_balance_total",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Total cash 23700.00",
+        "evidence": "Requires the checking + savings total or at least a cash-balance discussion."
+      },
+      {
+        "id": "monthly_burn_estimate",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Estimate monthly burn/expenses for cash sizing.",
+        "evidence": "Looks for burn/spend framing."
+      },
+      {
+        "id": "idle_cash_estimate",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Estimate idle/excess cash.",
+        "evidence": "Looks for idle cash framing."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_insurance_review",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "insurance_risk_protection",
+    "deterministicScore": 83,
+    "latencyMs": 10847,
+    "checks": [
+      {
+        "id": "disability_before_life",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Prioritize disability and deprioritize life insurance without dependents.",
+        "evidence": "Looks for disability/life contrast."
+      },
+      {
+        "id": "dependents_check",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use no-dependents context.",
+        "evidence": "Looks for no-dependents, living-alone, or single-household context."
+      },
+      {
+        "id": "income_replacement_math",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Discuss income replacement from $60,000 salary.",
+        "evidence": "Looks for salary-specific math, with partial credit for LTD/disability replacement-rate math."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_life_insurance_need",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "insurance_risk_protection",
+    "deterministicScore": 83,
+    "latencyMs": 14798,
+    "checks": [
+      {
+        "id": "disability_before_life",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Prioritize disability and deprioritize life insurance without dependents.",
+        "evidence": "Looks for disability/life contrast."
+      },
+      {
+        "id": "dependents_check",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use no-dependents context.",
+        "evidence": "Looks for no-dependents, living-alone, or single-household context."
+      },
+      {
+        "id": "income_replacement_math",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Discuss income replacement from $60,000 salary.",
+        "evidence": "Looks for salary-specific math, with partial credit for LTD/disability replacement-rate math."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_mega_backdoor",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 93,
+    "latencyMs": 17713,
+    "checks": [
+      {
+        "id": "mega_backdoor_definition",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Define mega backdoor Roth as after-tax 401(k) contributions plus Roth conversion/distribution.",
+        "evidence": "Looks for after-tax contribution mechanics plus Roth conversion/distribution path."
+      },
+      {
+        "id": "415c_limit_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use/caveat total defined-contribution limit.",
+        "evidence": "Looks for 415(c)/overall limit."
+      },
+      {
+        "id": "contribution_room_estimate",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Estimate remaining mega backdoor contribution room.",
+        "evidence": "Looks for room plus total limit."
+      },
+      {
+        "id": "mega_current_limits_no_stale",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark-year contribution limits and avoid stale or wrong limits.",
+        "evidence": "Looks for current 2026 limit framing."
+      },
+      {
+        "id": "mega_sequence_before_after_tax",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Sequence match/regular 401(k)/HSA before after-tax mega backdoor contributions.",
+        "evidence": "Requires HSA plus regular 401(k)/match ordering."
+      },
+      {
+        "id": "mega_plan_feature_caveat",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Caveat that mega backdoor requires plan support for after-tax contributions and Roth conversion/distribution.",
+        "evidence": "Looks for plan-feature verification language."
+      },
+      {
+        "id": "no_stale_irs_limits",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not cite stale or wrong IRS contribution limits.",
+        "evidence": "No stale or wrong IRS limit language detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_mfte_eligibility_check",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "housing_rent",
+    "deterministicScore": 90,
+    "latencyMs": 14755,
+    "checks": [
+      {
+        "id": "rent_annualized",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Annual rent 28200.00 or equivalent annualized rent/savings framing.",
+        "evidence": "Looks for annualized rent or annual savings framing tied to current rent."
+      },
+      {
+        "id": "income_household_location",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use income, household size, and location.",
+        "evidence": "4/5 terms matched."
+      },
+      {
+        "id": "mfte_caveat_presence",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Identify MFTE/MHA with eligibility/currentness caveat.",
+        "evidence": "Looks for program plus caveat."
+      },
+      {
+        "id": "mfte_savings_estimate",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Estimate or frame MFTE/MHA savings against current rent, preferably as a range.",
+        "evidence": "Looks for MFTE plus quantified or conservatively framed savings."
+      },
+      {
+        "id": "rent_exact_next_steps",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Give exact rent-saving next steps, not just generic advice.",
+        "evidence": "Looks for action verbs plus concrete MFTE/lease workflow targets."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_msft_stock_risk",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "investing_equity_comp",
+    "deterministicScore": 70,
+    "latencyMs": 12555,
+    "checks": [
+      {
+        "id": "rsu_vest_amount",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the $42,000 Microsoft RSU vest from transactions.",
+        "evidence": "Looks for RSU vest amount."
+      },
+      {
+        "id": "human_capital_linkage",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Connect employment income and stock exposure.",
+        "evidence": "Looks for human-capital linkage."
+      },
+      {
+        "id": "tax_caveats",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Mention both tax mechanics and employer trading-window/insider-trading caveats for selling equity.",
+        "evidence": "Tax mechanics=true; trading restriction=false."
+      },
+      {
+        "id": "no_account_balance_as_holdings",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Do not infer Microsoft stock holdings or single-stock exposure from account names or account balances.",
+        "evidence": "Detected account-balance/account-name language treated as Microsoft holding exposure."
+      },
+      {
+        "id": "no_stale_irs_limits",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not cite stale or wrong IRS contribution limits.",
+        "evidence": "No stale or wrong IRS limit language detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_recurring_charges_audit",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "transaction_intelligence",
+    "deterministicScore": 100,
+    "latencyMs": 11101,
+    "checks": [
+      {
+        "id": "recurring_charge_detection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Detect Netflix, Adobe, and ClassPass recurring/subscription-like charges.",
+        "evidence": "3/3 terms matched."
+      },
+      {
+        "id": "recurring_total_may",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "May subscription-like review total is $171.98 for Netflix, Adobe, and ClassPass; rent is not part of this subscription-audit total.",
+        "evidence": "Detected the intended subscription-like total."
+      },
+      {
+        "id": "maria_subscription_review_scope",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Maria subscription-like review total should include Netflix, Adobe, and ClassPass ($171.98), while utilities can only appear in a separate bills/utilities section.",
+        "evidence": "3/3 core subscription-like merchants detected; core total mentioned=true; separate utility total mentioned=true."
+      },
+      {
+        "id": "no_invalid_recurring_total_inclusions",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not include rent, payroll, income, utilities, or one-time travel in the subscription-like review total unless they are clearly labeled as a separate recurring-bills total.",
+        "evidence": "No invalid rent/utility-inclusive subscription total detected."
+      },
+      {
+        "id": "no_subscription_tier_fabrication",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not infer exact subscription tiers from charge amounts unless the tier is visible in the data.",
+        "evidence": "No unsupported subscription-tier inference detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_rent_rewards",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "credit_cards_rewards",
+    "deterministicScore": 50,
+    "latencyMs": 11559,
+    "checks": [
+      {
+        "id": "annual_rent",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Annual rent 28200.00",
+        "evidence": "Looks for annual rent."
+      },
+      {
+        "id": "fee_vs_rewards",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Compare rent processing fees against rewards value using Maria’s rent.",
+        "evidence": "Fee tradeoff=true; rent math=true."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_rental_car_trip",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "employer_benefits_perks",
+    "deterministicScore": 100,
+    "latencyMs": 23602,
+    "checks": [
+      {
+        "id": "avis_transaction_detection",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Detect Avis rental transaction.",
+        "evidence": "Looks for Avis."
+      },
+      {
+        "id": "coverage_caveats",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention rental coverage terms/exclusions in the card/rental booking context.",
+        "evidence": "Coverage=true; terms=true; booking context=true."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_rsu_tax_withholding",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "investing_equity_comp",
+    "deterministicScore": 100,
+    "latencyMs": 11045,
+    "checks": [
+      {
+        "id": "rsu_vest_amount",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the $42,000 Microsoft RSU vest from transactions.",
+        "evidence": "Looks for RSU vest amount."
+      },
+      {
+        "id": "tax_caveats",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention both tax mechanics and employer trading-window/insider-trading caveats for selling equity.",
+        "evidence": "Tax mechanics=true; trading restriction=true."
+      },
+      {
+        "id": "no_account_balance_as_holdings",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not infer Microsoft stock holdings or single-stock exposure from account names or account balances.",
+        "evidence": "No account-balance-as-holdings inference detected."
+      },
+      {
+        "id": "human_capital_linkage",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Connect employment income and stock exposure.",
+        "evidence": "Looks for human-capital linkage."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_save_on_rent",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "housing_rent",
+    "deterministicScore": 100,
+    "latencyMs": 14718,
+    "checks": [
+      {
+        "id": "rent_annualized",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Annual rent 28200.00 or equivalent annualized rent/savings framing.",
+        "evidence": "Looks for annualized rent or annual savings framing tied to current rent."
+      },
+      {
+        "id": "income_household_location",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use income, household size, and location.",
+        "evidence": "3/5 terms matched."
+      },
+      {
+        "id": "mfte_caveat_presence",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Identify MFTE/MHA with eligibility/currentness caveat.",
+        "evidence": "Looks for program plus caveat."
+      },
+      {
+        "id": "mfte_savings_estimate",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Estimate or frame MFTE/MHA savings against current rent, preferably as a range.",
+        "evidence": "Looks for MFTE plus quantified or conservatively framed savings."
+      },
+      {
+        "id": "rent_exact_next_steps",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Give exact rent-saving next steps, not just generic advice.",
+        "evidence": "Looks for action verbs plus concrete MFTE/lease workflow targets."
+      },
+      {
+        "id": "rent_secondary_rewards",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention rent rewards as a secondary play with fee caveat.",
+        "evidence": "Looks for Bilt/rent rewards and fee-awareness."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_side_income_tax",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 67,
+    "latencyMs": 11031,
+    "checks": [
+      {
+        "id": "freelance_income_amount",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use $1,200 freelance deposit.",
+        "evidence": "Looks for freelance amount."
+      },
+      {
+        "id": "tax_reserve_range",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Suggest a conservative tax reserve range.",
+        "evidence": "Looks for reserve percentage."
+      },
+      {
+        "id": "estimated_tax_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention estimated tax/quarterly payments plus safe-harbor/withholding/underpayment caveat.",
+        "evidence": "Requires estimated/quarterly tax language plus a penalty or safe-harbor framing."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_spend_may_total",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "transaction_intelligence",
+    "deterministicScore": 100,
+    "latencyMs": 8040,
+    "checks": [
+      {
+        "id": "may_2026_spend_total",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "May 2026 spending total 4197.71",
+        "evidence": "Looks for the computed May spend total."
+      },
+      {
+        "id": "category_rollup",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mentions several actual May spending categories.",
+        "evidence": "8/10 categories mentioned."
+      },
+      {
+        "id": "income_exclusion",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Spending excludes payroll and freelance income.",
+        "evidence": "Income-inclusive absolute flow would be 51494.77."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_subscriptions_benefits",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "savings_expense_reduction",
+    "deterministicScore": 75,
+    "latencyMs": 11555,
+    "checks": [
+      {
+        "id": "recurring_charge_detection",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Detect Netflix, Adobe, and ClassPass recurring/subscription-like charges.",
+        "evidence": "1/3 terms matched."
+      },
+      {
+        "id": "employer_reimbursement_linkage",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Connect recurring charges to employer reimbursement possibility.",
+        "evidence": "Looks for reimbursement linkage."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_tax_optimization",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 100,
+    "latencyMs": 16356,
+    "checks": [
+      {
+        "id": "tax_opportunity_coverage",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Cover the main planted tax opportunities.",
+        "evidence": "4/5 terms matched."
+      },
+      {
+        "id": "current_limit_checks",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Signal current-year limit awareness and avoid stale or wrong IRS limits.",
+        "evidence": "Looks for current-year limit framing."
+      },
+      {
+        "id": "no_stale_irs_limits",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not cite stale or wrong IRS contribution limits.",
+        "evidence": "No stale or wrong IRS limit language detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "maria_where_wasting_money",
+    "personaId": "maria_seattle_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "savings_expense_reduction",
+    "deterministicScore": 67,
+    "latencyMs": 12256,
+    "checks": [
+      {
+        "id": "subscription_identification",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Find recurring subscription/fitness charges.",
+        "evidence": "3/3 terms matched."
+      },
+      {
+        "id": "idle_cash_amount",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the $18,450 checking balance as idle-cash signal.",
+        "evidence": "Looks for checking balance or idle checking mention."
+      },
+      {
+        "id": "rent_amount",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Current rent 2350.00",
+        "evidence": "Looks for current rent."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_401k_contribution",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 83,
+    "latencyMs": 13333,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. patel_txn_priya_401k_2026_05_15:hit, patel_txn_priya_401k_2026_05_31:hit, patel_txn_daniel_401k_2026_05_15:hit, patel_txn_daniel_401k_2026_05_31:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "4/4 relevant amounts detected. Amounts mentioned for patel_txn_priya_401k_2026_05_15, patel_txn_priya_401k_2026_05_31, patel_txn_daniel_401k_2026_05_15, patel_txn_daniel_401k_2026_05_31."
+      },
+      {
+        "id": "irs_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 401(k) employee limit $24,500 where relevant and avoid stale or wrong limits.",
+        "evidence": "Looks for 2026 401(k) limit."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_unsupported_employer_benefit_overclaim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "For Patel, accept locked Salesforce plan-level facts but do not import Microsoft facts or overclaim user-specific benefit participation/claim status.",
+        "evidence": "No unsupported employer-specific benefit overclaim detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_401k_percent_to_limit",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 88,
+    "latencyMs": 11954,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "2/2 relevant signals detected. patel_txn_priya_payroll_2026_05_15:hit, patel_txn_daniel_payroll_2026_05_15:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/2 relevant amounts detected. Amounts mentioned for patel_txn_priya_payroll_2026_05_15."
+      },
+      {
+        "id": "irs_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 401(k) employee limit $24,500 where relevant and avoid stale or wrong limits.",
+        "evidence": "Looks for 2026 401(k) limit."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_529_tax_strategy",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 63,
+    "latencyMs": 13183,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. patel_acct_529:hit, patel_txn_529_2026_05:hit, patel_mem_household:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/2 relevant amounts detected. Amounts mentioned for patel_txn_529_2026_05."
+      },
+      {
+        "id": "salt_standard_deduction_currentness",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use 2026 standard deduction/SALT cap values where itemizing or homeownership tax strategy is discussed.",
+        "evidence": "Standard deduction=false; SALT=false."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_backdoor_roth",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 75,
+    "latencyMs": 12921,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. patel_txn_priya_payroll_2026_05_15:hit, patel_txn_daniel_payroll_2026_05_15:hit, patel_acct_hsa:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/3 relevant amounts detected. Amounts mentioned for patel_acct_hsa."
+      },
+      {
+        "id": "roth_mfj_phaseout_currentness",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 Roth IRA MFJ phaseout of $242,000 to $252,000.",
+        "evidence": "Looks for current MFJ Roth phaseout."
+      },
+      {
+        "id": "ira_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current benchmark 2026 IRA limit $7,500.",
+        "evidence": "Looks for IRA limit."
+      },
+      {
+        "id": "pro_rata_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention pro-rata rule/pre-tax IRA caveat.",
+        "evidence": "Looks for pro-rata caveat."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_checking_buffer",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "cashflow_budgeting",
+    "deterministicScore": 100,
+    "latencyMs": 13104,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/4 relevant signals detected. patel_acct_checking:hit, patel_txn_mortgage_2026_05:hit, patel_txn_daycare_2026_05:miss, patel_acct_cfu:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/4 relevant amounts detected. Amounts mentioned for patel_acct_checking, patel_txn_mortgage_2026_05."
+      },
+      {
+        "id": "no_savings_contribution_as_consumption",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate savings/investment contributions from consumption spending where scope matters.",
+        "evidence": "No contribution-as-consumption issue detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_childcare_family_spend_may",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "transaction_intelligence",
+    "deterministicScore": 100,
+    "latencyMs": 14607,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. patel_txn_daycare_2026_05:hit, patel_txn_backup_care_2026_05:hit, patel_txn_529_2026_05:hit"
+      },
+      {
+        "id": "exact_period_scope_may_2026",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Respect the May 2026 requested period or clearly label the observed period.",
+        "evidence": "Looks for May/2026 period scoping."
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "3/3 relevant amounts detected. Amounts mentioned for patel_txn_daycare_2026_05, patel_txn_backup_care_2026_05, patel_txn_529_2026_05."
+      },
+      {
+        "id": "no_savings_contribution_as_consumption",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate savings/investment contributions from consumption spending where scope matters.",
+        "evidence": "No contribution-as-consumption issue detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_childcare_tax_credits",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 80,
+    "latencyMs": 13845,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. patel_txn_daycare_2026_05:hit, patel_txn_backup_care_2026_05:hit, patel_mem_household:hit, patel_mem_employers:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/2 relevant amounts detected. Amounts mentioned for patel_txn_daycare_2026_05."
+      },
+      {
+        "id": "dependent_care_fsa_2026_limit",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 dependent care FSA/DCAP limit of $7,500, with employer-plan adoption caveats.",
+        "evidence": "Detected old $5,000 dependent-care limit language."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_college_savings_allocation",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "investing_equity_comp",
+    "deterministicScore": 83,
+    "latencyMs": 16697,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/4 relevant signals detected. patel_acct_529:hit, patel_txn_529_2026_05:hit, patel_acct_savings:hit, patel_acct_cfu:miss"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/4 relevant amounts detected. Amounts mentioned for patel_acct_529, patel_txn_529_2026_05."
+      },
+      {
+        "id": "hsa_family_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 family HSA limit of $8,750.",
+        "evidence": "Looks for $8,750 family HSA limit."
+      },
+      {
+        "id": "dependent_care_fsa_2026_limit",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 dependent care FSA/DCAP limit of $7,500, with employer-plan adoption caveats.",
+        "evidence": "Looks for $7,500 dependent-care limit."
+      },
+      {
+        "id": "priority_ordering",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Provide ordered priorities.",
+        "evidence": "Looks for ordering language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_costco_target_optimization",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "credit_cards_rewards",
+    "deterministicScore": 90,
+    "latencyMs": 12261,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. patel_txn_costco_2026_05_04:hit, patel_txn_costco_2026_05_18:hit, patel_txn_target_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/3 relevant amounts detected. Amounts mentioned for patel_txn_target_2026_05."
+      },
+      {
+        "id": "card_rate_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current card category mechanics: Ink Preferred 3x is not a dining category; Blue Business Plus is flat-rate fallback.",
+        "evidence": "Ink current=true; BBP flat-rate=true."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_credit_card_balance_check",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "debt_credit_health",
+    "deterministicScore": 100,
+    "latencyMs": 12565,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. patel_acct_cfu:hit, patel_acct_amex_gold:hit, patel_acct_checking:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "3/3 relevant amounts detected. Amounts mentioned for patel_acct_cfu, patel_acct_amex_gold, patel_acct_checking."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_credit_card_strategy",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "credit_cards_rewards",
+    "deterministicScore": 83,
+    "latencyMs": 12022,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. patel_acct_cfu:hit, patel_acct_amex_gold:hit, patel_txn_daycare_2026_05:hit, patel_txn_costco_2026_05_04:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "0/4 relevant amounts detected. No exact relevant signal amounts detected."
+      },
+      {
+        "id": "card_rate_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use current card category mechanics: Ink Preferred 3x is not a dining category; Blue Business Plus is flat-rate fallback.",
+        "evidence": "Ink current=false; BBP flat-rate=true."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "no_unsupported_employer_benefit_overclaim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "For Patel, accept locked Salesforce plan-level facts but do not import Microsoft facts or overclaim user-specific benefit participation/claim status.",
+        "evidence": "No unsupported employer-specific benefit overclaim detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_daycare_rewards",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "credit_cards_rewards",
+    "deterministicScore": 92,
+    "latencyMs": 14072,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. patel_txn_daycare_2026_05:hit, patel_txn_backup_care_2026_05:hit, patel_mem_employers:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/2 relevant amounts detected. Amounts mentioned for patel_txn_daycare_2026_05."
+      },
+      {
+        "id": "dependent_care_fsa_2026_limit",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 dependent care FSA/DCAP limit of $7,500, with employer-plan adoption caveats.",
+        "evidence": "Looks for $7,500 dependent-care limit."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_dependent_care_fsa",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "employer_benefits_perks",
+    "deterministicScore": 100,
+    "latencyMs": 12519,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. patel_mem_household:hit, patel_mem_employers:hit, patel_txn_daycare_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/1 relevant amounts detected. Amounts mentioned for patel_txn_daycare_2026_05."
+      },
+      {
+        "id": "dependent_care_fsa_2026_limit",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 dependent care FSA/DCAP limit of $7,500, with employer-plan adoption caveats.",
+        "evidence": "Looks for $7,500 dependent-care limit."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_employer_family_benefits",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "employer_benefits_perks",
+    "deterministicScore": 93,
+    "latencyMs": 14988,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. patel_mem_employers:hit, patel_txn_backup_care_2026_05:hit, patel_txn_hsa_2026_05:hit, patel_mem_household:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/2 relevant amounts detected. Amounts mentioned for patel_txn_backup_care_2026_05, patel_txn_hsa_2026_05."
+      },
+      {
+        "id": "dependent_care_fsa_2026_limit",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 dependent care FSA/DCAP limit of $7,500, with employer-plan adoption caveats.",
+        "evidence": "Detected old $5,000 dependent-care limit language."
+      },
+      {
+        "id": "hsa_family_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 family HSA limit of $8,750.",
+        "evidence": "Looks for $8,750 family HSA limit."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_unsupported_employer_benefit_overclaim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "For Patel, accept locked Salesforce plan-level facts but do not import Microsoft facts or overclaim user-specific benefit participation/claim status.",
+        "evidence": "No unsupported employer-specific benefit overclaim detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_extra_15000",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "life_planning_major_decisions",
+    "deterministicScore": 93,
+    "latencyMs": 19431,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/5 relevant signals detected. patel_acct_checking:hit, patel_acct_savings:hit, patel_acct_cfu:miss, patel_acct_hsa:hit, patel_acct_529:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/5 relevant amounts detected. Amounts mentioned for patel_acct_529."
+      },
+      {
+        "id": "card_fee_or_interest_priority",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Handle card fees, processing fees, APR/interest, or statement-balance autopay before optimizing rewards.",
+        "evidence": "Looks for fee/APR/autopay prudence language."
+      },
+      {
+        "id": "dependent_care_fsa_2026_limit",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 dependent care FSA/DCAP limit of $7,500, with employer-plan adoption caveats.",
+        "evidence": "Looks for $7,500 dependent-care limit."
+      },
+      {
+        "id": "hsa_family_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 family HSA limit of $8,750.",
+        "evidence": "Looks for $8,750 family HSA limit."
+      },
+      {
+        "id": "priority_ordering",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Provide ordered priorities.",
+        "evidence": "Looks for ordering language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_hsa_family",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 100,
+    "latencyMs": 16194,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. patel_acct_hsa:hit, patel_txn_hsa_2026_05:hit, patel_mem_household:hit, patel_mem_employers:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/2 relevant amounts detected. Amounts mentioned for patel_acct_hsa, patel_txn_hsa_2026_05."
+      },
+      {
+        "id": "hsa_family_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 family HSA limit of $8,750.",
+        "evidence": "Looks for $8,750 family HSA limit."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_idle_cash",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "cashflow_budgeting",
+    "deterministicScore": 100,
+    "latencyMs": 13698,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/4 relevant signals detected. patel_acct_checking:hit, patel_acct_savings:hit, patel_txn_mortgage_2026_05:hit, patel_txn_daycare_2026_05:miss"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/4 relevant amounts detected. Amounts mentioned for patel_acct_checking, patel_acct_savings."
+      },
+      {
+        "id": "no_savings_contribution_as_consumption",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate savings/investment contributions from consumption spending where scope matters.",
+        "evidence": "No contribution-as-consumption issue detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_insurance_review",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "insurance_risk_protection",
+    "deterministicScore": 88,
+    "latencyMs": 12993,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. patel_mem_household:hit, patel_acct_mortgage:hit, patel_txn_auto_insurance_2026_05:hit, patel_txn_home_insurance_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/3 relevant amounts detected. Amounts mentioned for patel_acct_mortgage."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_life_insurance_need",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "insurance_risk_protection",
+    "deterministicScore": 100,
+    "latencyMs": 11237,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. patel_mem_household:hit, patel_acct_mortgage:hit, patel_acct_savings:hit, patel_acct_brokerage:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/3 relevant amounts detected. Amounts mentioned for patel_acct_mortgage, patel_acct_brokerage."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_mortgage_escrow_review",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "housing_rent",
+    "deterministicScore": 75,
+    "latencyMs": 11595,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. patel_txn_mortgage_2026_05:hit, patel_acct_mortgage:hit, patel_txn_home_insurance_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "3/3 relevant amounts detected. Amounts mentioned for patel_txn_mortgage_2026_05, patel_acct_mortgage, patel_txn_home_insurance_2026_05."
+      },
+      {
+        "id": "salt_standard_deduction_currentness",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use 2026 standard deduction/SALT cap values where itemizing or homeownership tax strategy is discussed.",
+        "evidence": "Standard deduction=false; SALT=false."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_property_insurance_review",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "housing_rent",
+    "deterministicScore": 100,
+    "latencyMs": 12428,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. patel_txn_auto_insurance_2026_05:hit, patel_txn_home_insurance_2026_05:hit, patel_mem_household:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/2 relevant amounts detected. Amounts mentioned for patel_txn_auto_insurance_2026_05, patel_txn_home_insurance_2026_05."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_recurring_charges_audit",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "transaction_intelligence",
+    "deterministicScore": 100,
+    "latencyMs": 13738,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. patel_txn_disney_2026_05:hit, patel_txn_spotify_2026_05:hit, patel_txn_peloton_2026_05:hit, patel_txn_comcast_2026_05:hit"
+      },
+      {
+        "id": "exact_period_scope_may_2026",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Respect the May 2026 requested period or clearly label the observed period.",
+        "evidence": "Looks for May/2026 period scoping."
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "4/4 relevant amounts detected. Amounts mentioned for patel_txn_disney_2026_05, patel_txn_spotify_2026_05, patel_txn_peloton_2026_05, patel_txn_comcast_2026_05."
+      },
+      {
+        "id": "recurring_scope_boundary",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate subscriptions from recurring bills/insurance/housing and avoid treating every recurring charge as cancellable waste.",
+        "evidence": "Separates bills=true; scope labels=true; avoids invalid cancellation framing=true."
+      },
+      {
+        "id": "recurring_review_scope_strict",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "For Patel, identify true subscriptions like Disney/Spotify/Peloton while labeling utilities, insurance, mortgage, and daycare separately; benefits-routing tasks should catch backup care.",
+        "evidence": "Subscriptions detected=3/3; recurring bills detected=2; backup care mentioned=false; separated=true; invalid cancellable framing=false."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_spend_may_total",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "transaction_intelligence",
+    "deterministicScore": 71,
+    "latencyMs": 4371,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "1/3 relevant signals detected. patel_txn_mortgage_2026_05:hit, patel_txn_daycare_2026_05:miss, patel_txn_costco_2026_05_04:miss"
+      },
+      {
+        "id": "exact_period_scope_may_2026",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Respect the May 2026 requested period or clearly label the observed period.",
+        "evidence": "Looks for May/2026 period scoping."
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/3 relevant amounts detected. Amounts mentioned for patel_txn_mortgage_2026_05."
+      },
+      {
+        "id": "consumption_spend_total_scope",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Consumption spend should exclude card payments and savings/investment movements; clean May total is 8556.08 versus transfer-inclusive cash outflow 9256.08.",
+        "evidence": "Clean total mentioned=true; transfer boundary stated=true."
+      },
+      {
+        "id": "no_income_as_spend",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Do not include payroll, client deposits, or other income as spending.",
+        "evidence": "No income-as-spend language detected."
+      },
+      {
+        "id": "no_savings_contribution_as_consumption",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Separate savings/investment contributions from consumption spending where scope matters.",
+        "evidence": "Detected contribution language treated as consumption spending."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_subscriptions_benefits",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "savings_expense_reduction",
+    "deterministicScore": 86,
+    "latencyMs": 19749,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/3 relevant signals detected. patel_txn_peloton_2026_05:hit, patel_txn_backup_care_2026_05:hit, patel_mem_employers:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/2 relevant amounts detected. Amounts mentioned for patel_txn_peloton_2026_05, patel_txn_backup_care_2026_05."
+      },
+      {
+        "id": "recurring_scope_boundary",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Separate subscriptions from recurring bills/insurance/housing and avoid treating every recurring charge as cancellable waste.",
+        "evidence": "Separates bills=true; scope labels=true; avoids invalid cancellation framing=true."
+      },
+      {
+        "id": "recurring_review_scope_strict",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "For Patel, identify true subscriptions like Disney/Spotify/Peloton while labeling utilities, insurance, mortgage, and daycare separately; benefits-routing tasks should catch backup care.",
+        "evidence": "Subscriptions detected=3/3; recurring bills detected=1; backup care mentioned=true; separated=true; invalid cancellable framing=false."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_unsupported_employer_benefit_overclaim",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "For Patel, accept locked Salesforce plan-level facts but do not import Microsoft facts or overclaim user-specific benefit participation/claim status.",
+        "evidence": "Detected user-specific benefit/reimbursement overclaim without adequate verification language: if you aren't already claiming this, you can essentially get your peloton membership covered for free by submitting your receipts."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": [
+      {
+        "id": "stale_dependent_care_fsa_5000",
+        "severity": "critical",
+        "factType": "irs_limit",
+        "expected": "2026 dependent care assistance/DCAP/FSA exclusion limit is $7,500 for MFJ or single filers and $3,750 for MFS.",
+        "observed": "$5,000 used as the 2026 dependent care FSA/DCAP household limit.",
+        "evidence": "s an out-of-pocket hire, check the Salesforce portal first next time, as they provide subsidized backup care days. * **Dependent Care FSA (DCFSA):** Since you're paying for regular daycare at Bright Horizons, ensure you are maxing out your DCFSA (up to `$5,000` per year). This allows you to pay for daycare with pre-tax dollars, saving you roughly `$1,500–$2,000` a year depending on your tax bracket. 3. **HSA Optimiza"
+      }
+    ]
+  },
+  {
+    "taskId": "patel_tax_optimization",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "tax_strategy",
+    "deterministicScore": 94,
+    "latencyMs": 14127,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. patel_mem_household:hit, patel_txn_daycare_2026_05:hit, patel_txn_hsa_2026_05:hit, patel_txn_mortgage_2026_05:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "2/3 relevant amounts detected. Amounts mentioned for patel_txn_hsa_2026_05, patel_txn_mortgage_2026_05."
+      },
+      {
+        "id": "dependent_care_fsa_2026_limit",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 dependent care FSA/DCAP limit of $7,500, with employer-plan adoption caveats.",
+        "evidence": "Detected old $5,000 dependent-care limit language."
+      },
+      {
+        "id": "hsa_family_limit_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 family HSA limit of $8,750.",
+        "evidence": "Looks for $8,750 family HSA limit."
+      },
+      {
+        "id": "salt_standard_deduction_currentness",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use 2026 standard deduction/SALT cap values where itemizing or homeownership tax strategy is discussed.",
+        "evidence": "Standard deduction=true; SALT=true."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_unsupported_employer_benefit_overclaim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "For Patel, accept locked Salesforce plan-level facts but do not import Microsoft facts or overclaim user-specific benefit participation/claim status.",
+        "evidence": "No unsupported employer-specific benefit overclaim detected."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_taxable_investing_priority",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "investing_equity_comp",
+    "deterministicScore": 83,
+    "latencyMs": 19915,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "4/4 relevant signals detected. patel_acct_brokerage:hit, patel_acct_savings:hit, patel_acct_hsa:hit, patel_acct_cfu:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "fail",
+        "score": 0,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "0/4 relevant amounts detected. No exact relevant signal amounts detected."
+      },
+      {
+        "id": "pro_rata_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention pro-rata rule/pre-tax IRA caveat.",
+        "evidence": "Looks for pro-rata caveat."
+      },
+      {
+        "id": "dependent_care_fsa_2026_limit",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Use the benchmark 2026 dependent care FSA/DCAP limit of $7,500, with employer-plan adoption caveats.",
+        "evidence": "Looks for $7,500 dependent-care limit."
+      },
+      {
+        "id": "priority_ordering",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Provide ordered priorities.",
+        "evidence": "Looks for ordering language."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  },
+  {
+    "taskId": "patel_where_wasting_money",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "savings_expense_reduction",
+    "deterministicScore": 90,
+    "latencyMs": 17636,
+    "checks": [
+      {
+        "id": "relevant_signal_grounding",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Mention or use several task-relevant visible signals from the persona data.",
+        "evidence": "3/4 relevant signals detected. patel_txn_daycare_2026_05:hit, patel_txn_peloton_2026_05:miss, patel_acct_checking:hit, patel_acct_savings:hit"
+      },
+      {
+        "id": "exact_amount_grounding",
+        "status": "partial",
+        "score": 0.5,
+        "maxScore": 1,
+        "expected": "Use exact visible dollar amounts for the task-relevant transactions/accounts when the question depends on them.",
+        "evidence": "1/4 relevant amounts detected. Amounts mentioned for patel_acct_checking."
+      },
+      {
+        "id": "no_unsupported_employer_benefit_overclaim",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "For Patel, accept locked Salesforce plan-level facts but do not import Microsoft facts or overclaim user-specific benefit participation/claim status.",
+        "evidence": "No unsupported employer-specific benefit overclaim detected."
+      },
+      {
+        "id": "plan_participation_caveat",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Distinguish plan-level availability from user-specific enrollment, participation, or remaining balances.",
+        "evidence": "Looks for verify/check/eligible language tied to benefits or plans."
+      },
+      {
+        "id": "no_raw_tool_or_stream_output",
+        "status": "pass",
+        "score": 1,
+        "maxScore": 1,
+        "expected": "Final answer should not leak raw stream events, JSON tool payloads, or display artifacts.",
+        "evidence": "No raw tool or stream output detected."
+      }
+    ],
+    "currentFactIssues": []
+  }
+]

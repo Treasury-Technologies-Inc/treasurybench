@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_save_on_rent",
+  "provider": "fixture_generic",
+  "totalScore": 24,
+  "dimensions": [
+    {
+      "id": "basic_correctness",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "Generic rent advice is directionally reasonable."
+    },
+    {
+      "id": "data_grounding",
+      "score": 0,
+      "maxScore": 20,
+      "rationale": "Does not use Maria's rent, income, location, or household context."
+    },
+    {
+      "id": "advanced_opportunity",
+      "score": 0,
+      "maxScore": 25,
+      "rationale": "Misses MFTE/MHA and rent rewards."
+    },
+    {
+      "id": "quantified_impact",
+      "score": 0,
+      "maxScore": 15,
+      "rationale": "No quantified impact."
+    },
+    {
+      "id": "actionability",
+      "score": 5,
+      "maxScore": 10,
+      "rationale": "Some generic actions but no specific next step."
+    },
+    {
+      "id": "factual_safety",
+      "score": 7,
+      "maxScore": 10,
+      "rationale": "No obvious false claims, but very shallow."
+    },
+    {
+      "id": "unexpected_valid_insight",
+      "score": 0,
+      "maxScore": 5,
+      "rationale": "No additional grounded insight."
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": ["Seattle MFTE/MHA eligibility path.", "Annualized rent math.", "No-fee rent rewards."],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "Basic generic rent advice that misses the planted high-value opportunities."
+}

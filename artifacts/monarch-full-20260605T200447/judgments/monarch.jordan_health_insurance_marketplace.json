@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_health_insurance_marketplace",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response fails to use the visible data (e.g., the user's current $415 premium or $300 HSA contribution) to ground the advice. It ignores the persona's specific financial context."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the need for an HDHP and the eligibility requirements, but it fails to provide the 2026 specific HSA contribution limit ($4,400) or mention the 2026 ACA out-of-pocket maximums."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is clear but generic. It misses the opportunity to explain the self-employed health insurance deduction (Schedule 1) which is highly relevant to the user's tax-safe cashflow goal."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good emphasis on verifying plan eligibility and the distinction between plan-level features and personal eligibility."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA contribution limit for self-only HDHP coverage is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response failed to provide the specific 2026 HSA contribution limit, opting for a generic 'up to the IRS limit' phrasing."
+  ],
+  "missedOpportunities": [
+    "Did not mention the self-employed health insurance deduction (Schedule 1, Form 1040).",
+    "Did not use the user's actual monthly premium ($415) or HSA contribution ($300) to illustrate the advice.",
+    "Did not mention the 2026 ACA out-of-pocket maximums ($10,600 individual).",
+    "Did not explicitly link the marketplace premium to the potential for premium tax credits based on the user's 1099 income."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, safe, and clear general guidance on health insurance and HSA eligibility but fails to leverage the user's specific financial data or provide the necessary 2026 tax-year specifics."
+}

@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_life_insurance_need",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's Microsoft employment, Seattle location, and specific account balances to ground its advice. It correctly identifies the lack of dependents as the primary driver for deprioritizing life insurance."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on disability insurance and the distinction between employer-provided life insurance and private needs is accurate. The mention of the Mega Backdoor Roth is a strong, relevant insight for a Microsoft employee."
+    },
+    {
+      "id": "resolution",
+      "score": 26,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable checklist. It correctly prioritizes disability coverage over life insurance and provides specific next steps for the user to verify their benefits."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding the taxability of disability benefits and the need to verify specific plan details, which is highly prudent."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft provides 3x your base salary in life insurance at no cost",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Microsoft provides long-term disability (LTD) coverage at 60% of your base salary",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The specific percentages for Microsoft's life insurance and LTD benefits are treated as plan-level facts; while plausible for a tech employer, they are not explicitly provided in the locked benchmark facts and are marked unverified."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly calculated the monthly income replacement gap based on the $2,500 semi-monthly gross pay ($60,000 annual base) to make the disability advice even more concrete."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the Mega Backdoor Roth as a superior tax-advantaged vehicle compared to using life insurance as an investment."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and prudent response that correctly prioritizes disability income protection over life insurance for a single, high-earning tech professional."
+}

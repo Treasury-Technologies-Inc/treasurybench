@@ -1,0 +1,9 @@
+{
+  "taskId": "maria_save_on_rent",
+  "personaId": "maria_seattle_v0",
+  "provider": "fixture_generic",
+  "mode": "product_capture",
+  "capturedAt": "2026-05-31T00:00:00.000Z",
+  "latencyMs": 42000,
+  "response": "You can save money on rent by looking for cheaper neighborhoods, negotiating with your landlord, or getting a roommate. You can also watch for move-in specials."
+}

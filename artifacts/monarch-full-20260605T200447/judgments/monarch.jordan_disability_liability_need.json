@@ -1,0 +1,45 @@
+{
+  "taskId": "jordan_disability_liability_need",
+  "provider": "monarch",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response provides a solid general framework but fails to ground the advice in Jordan's specific situation (e.g., mentioning the Schedule C status, the lack of employer benefits, or the specific business expenses visible in the transactions)."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The definitions and prioritization logic are accurate and align with standard financial planning principles for a self-employed consultant."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable, though it remains somewhat generic. It misses the opportunity to explicitly link the need for disability insurance to Jordan's irregular 1099 income and lack of employer-provided safety nets."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response is appropriately cautious, emphasizing that these are not hard rules and that individual circumstances (like client contracts) dictate the priority."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response is largely conceptual and does not make specific checkable external claims (like tax limits or specific product terms) that require verification against the locked-fact table."
+  ],
+  "missedOpportunities": [
+    "Failed to explicitly reference Jordan's Schedule C status as a driver for why disability insurance is critical (since there is no employer-provided coverage).",
+    "Did not mention the importance of an emergency fund (visible in the Ally Tax Reserve and checking accounts) as a bridge for short-term disability before a policy kicks in.",
+    "Missed the opportunity to suggest reviewing client contracts for indemnity clauses, which is a standard risk-management step for a UX consultant."
+  ],
+  "unexpectedValidInsights": [
+    "The distinction between 'personal risk' (disability) and 'liability risk' (professional) is well-framed for a solo consultant."
+  ],
+  "safetyIssues": [],
+  "summary": "A sound, well-structured conceptual guide that correctly prioritizes disability insurance for a solo consultant, though it lacks the personalized grounding in Jordan's specific financial data."
+}

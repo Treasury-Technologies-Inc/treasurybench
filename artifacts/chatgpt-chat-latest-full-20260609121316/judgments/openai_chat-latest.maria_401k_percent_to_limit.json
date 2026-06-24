@@ -1,0 +1,55 @@
+{
+  "taskId": "maria_401k_percent_to_limit",
+  "provider": "openai:chat-latest",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly uses the semi-monthly payroll data to derive the annual base salary and current contribution pace. It fails to incorporate the $1,200 freelance income or the RSU vest as potential sources for 401(k) contributions, which would have been a more personalized approach."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response uses $24,000 as the 2026 401(k) limit, which is incorrect; the locked benchmark fact is $24,500. It correctly identifies the Microsoft match as a 50% match up to the IRS limit."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps and correctly identifies the need to verify plan-specific details like true-up provisions. It is slightly hampered by the incorrect limit figure."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding RSU eligibility and the importance of verifying plan-level match details before adjusting contributions."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 employee 401(k) deferral limit is $24,000",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "Microsoft matches employee 401(k) contributions at 50% up to the IRS elective deferral limit",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly cites $24,000 as the 2026 401(k) employee deferral limit instead of the correct $24,500."
+  ],
+  "missedOpportunities": [
+    "Failed to account for the $1,200 freelance income in the total compensation calculation for 401(k) pacing.",
+    "Did not explicitly mention the Microsoft Mega Backdoor Roth provision, which is a high-leverage play for someone with significant RSU income."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the risk of missing out on employer match dollars if the IRS limit is hit too early in the year without a true-up provision."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides helpful, grounded advice but uses an incorrect 2026 401(k) limit and misses the opportunity to discuss the Mega Backdoor Roth for a high-income Microsoft employee."
+}

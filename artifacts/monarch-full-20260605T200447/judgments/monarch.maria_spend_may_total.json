@@ -1,0 +1,37 @@
+{
+  "taskId": "maria_spend_may_total",
+  "provider": "monarch",
+  "totalScore": 100,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately retrieves and sums the May 2026 transactions, correctly excluding income and correctly identifying the categories."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "The math is precise ($4,197.71) and the category breakdown is accurate based on the provided CSV data."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response directly answers the user's question with a clear, concise breakdown."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately characterizes the spending as being driven by fixed housing costs and variable lifestyle choices."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant provided an accurate, well-grounded, and concise summary of the user's May 2026 spending, correctly identifying the total and category breakdown."
+}

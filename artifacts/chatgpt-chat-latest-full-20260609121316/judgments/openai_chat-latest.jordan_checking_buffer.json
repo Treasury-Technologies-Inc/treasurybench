@@ -1,0 +1,47 @@
+{
+  "taskId": "jordan_checking_buffer",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the provided transaction and balance data to calculate monthly spending and establish logical buffer targets."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the need to separate business and personal funds and provides accurate, conservative buffer recommendations based on the user's specific spending patterns."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable system for routing income and managing buffers. It misses a slight opportunity to explicitly mention the tax-deductibility of health insurance premiums as an above-the-line deduction rather than a business expense, though it correctly separates the buckets."
+    },
+    {
+      "id": "prudence",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response is highly prudent, emphasizing that buffers are for operations, not long-term savings, and advising the user to verify tax reserve sufficiency before investing excess cash."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employed health insurance premiums are an above-the-line deduction",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly noted that health insurance premiums are an above-the-line deduction (Schedule 1) rather than a Schedule C business expense, which helps clarify the tax-reserve calculation."
+  ],
+  "unexpectedValidInsights": [
+    "The inclusion of a specific 'travel cushion' in the business buffer calculation is a highly relevant, personalized insight for a consultant with irregular travel expenses."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a well-grounded, prudent, and actionable framework for managing business and personal cash buffers, correctly prioritizing tax reserves and operating liquidity."
+}

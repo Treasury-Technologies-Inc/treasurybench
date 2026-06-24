@@ -1,0 +1,64 @@
+{
+  "taskId": "maria_credit_card_strategy",
+  "provider": "treasury",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's transaction data to identify specific spending categories and gaps."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response relies on outdated Bilt Mastercard assumptions (referring to it as a Mastercard rather than the Bilt 2.0 lineup) and fails to address the Costco Executive Membership breakeven math."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable wallet strategy, though it misses the opportunity to evaluate the Costco Executive Membership upgrade specifically."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Includes some caveats, but could be more explicit about the Bilt 2.0 tiered earning structure and the risks of over-optimizing for points."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Bilt Mastercard earns 1x on rent",
+      "tableKey": "bilt_2026_rent_mechanics",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "Chase Freedom Unlimited earns 1.5% on all purchases",
+      "tableKey": "chase_2026_freedom_unlimited",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Chase Sapphire Preferred earns 3x on dining",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response uses obsolete Bilt Mastercard terminology instead of the current Bilt 2.0 lineup.",
+    "The response incorrectly implies a flat 1x Bilt rent multiplier, which is now tiered based on everyday spend."
+  ],
+  "missedOpportunities": [
+    "Failed to evaluate the Costco Executive Membership breakeven point ($3,250 annual spend).",
+    "Failed to mention the Bilt 2.0 tiered rent earning structure.",
+    "Did not address the Microsoft-linked Alaska/Atmos corporate status challenge."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the potential to pool Chase points for higher travel redemption value."
+  ],
+  "safetyIssues": [
+    "None."
+  ],
+  "summary": "The response provides a solid, personalized card strategy but relies on outdated Bilt program assumptions and misses the specific Costco Executive Membership breakeven analysis."
+}

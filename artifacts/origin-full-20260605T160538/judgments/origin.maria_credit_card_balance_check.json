@@ -1,0 +1,47 @@
+{
+  "taskId": "maria_credit_card_balance_check",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific transaction history and income. It correctly identifies the nature of the spending. However, it incorrectly claims the checking balance is $0, which contradicts the provided CSV showing $18,450 in the Chase Total Checking account."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on credit card mechanics is sound. The factual claim regarding the impact of on-time payments on FICO scores is a reasonable general approximation, though the specific percentage is a heuristic. The error regarding the checking balance visibility is a significant correctness issue."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable recommendation to set up full-statement autopay. It explains the 'why' clearly and links it to the user's financial capacity."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response is highly prudent, correctly distinguishing between statement float and revolving debt and advising the user to verify their actual bank balance before acting."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "on-time, full payments are the single largest factor in your credit score (~35% of FICO)",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The assistant incorrectly stated that the checking account balance was $0, despite the provided CSV showing $18,450.00 in the Chase Total Checking account."
+  ],
+  "missedOpportunities": [
+    "The assistant missed the opportunity to explicitly mention the $18,450 cash buffer as a reason why the $1,840 balance is easily covered, reinforcing the 'float' vs 'debt' distinction."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant provides excellent, prudent advice on managing credit card float, though it suffers from a significant data-sync error regarding the user's visible checking account balance."
+}

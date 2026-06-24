@@ -1,0 +1,59 @@
+{
+  "taskId": "jordan_business_expenses_may",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 38,
+      "maxScore": 40,
+      "rationale": "The response accurately retrieves and categorizes the May 2026 transactions. It correctly identifies business expenses and excludes personal items like groceries and rent."
+    },
+    {
+      "id": "correctness",
+      "score": 32,
+      "maxScore": 35,
+      "rationale": "Calculations are accurate. Tax rules (50% meal deduction, self-employed health insurance deduction, home office simplified method) are correctly applied for 2026."
+    },
+    {
+      "id": "resolution",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The answer is clear and actionable. It provides a breakdown and a checklist. The repetition of the entire response in the middle is a minor formatting flaw."
+    },
+    {
+      "id": "prudence",
+      "score": 4,
+      "maxScore": 5,
+      "rationale": "Appropriately flags the need for receipts and the distinction between business and personal dining."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employment tax is 15.3%",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Business meals are typically only 50% deductible",
+      "tableKey": "irs_2026_business_meals_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Simplified home office deduction is $5 per square foot up to 300 square feet",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response repeats the entire content block twice, which is a minor display error."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned that the $300 HSA contribution is not a Schedule C deduction, which it did, but could have reinforced the specific form (Form 8889) for clarity."
+  ],
+  "unexpectedValidInsights": [
+    "Provided a helpful 'Treasury Insight' card summary regarding the tax savings impact of the business expenses."
+  ],
+  "safetyIssues": [],
+  "summary": "The response accurately identifies and categorizes May 2026 business expenses, provides correct tax-treatment guidance for a self-employed consultant, and includes helpful action items, despite a minor formatting repetition."
+}

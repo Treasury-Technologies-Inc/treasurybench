@@ -1,0 +1,60 @@
+{
+  "taskId": "jordan_credit_card_strategy",
+  "provider": "treasury",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the two business cards and references specific transactions (AWS, Adobe, Webflow, Marriott, Delta, Office Depot). It fails to use the exact dollar amounts from the CSV, opting for approximations."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Card category mechanics are accurate for 2026. The advice to use Ink Preferred for travel and BBP for flat-rate spend is correct. The Ink Business Cash recommendation is a valid, high-leverage play."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "Clear, actionable routing strategy provided. The table is helpful, though it misses the opportunity to explicitly address the tax-reserve/business-separation context beyond a brief mention."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding card coding and the recommendation to verify internet/phone coding before switching."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Chase Ink Business Preferred earns 3x on travel, shipping, social media/search engine advertising, and internet/cable/phone services.",
+      "tableKey": "chase_2026_ink_business_preferred_categories",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Amex Blue Business Plus earns 2x on eligible purchases up to a yearly cap.",
+      "tableKey": "amex_2026_blue_business_plus_categories",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Chase Ink Business Cash earns 5% at office supply stores and on internet, cable, and phone services on the first $25,000.",
+      "tableKey": "chase_2026_ink_business_cash",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response estimates 2x Amex points are worth ~$0.04, which is a subjective valuation rather than a fixed fact."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly calculate the impact of the $126.85 HEB and $238.62 Costco grocery spend against the BBP flat rate vs potential future card additions.",
+    "Failed to mention the specific business/personal separation of the Capital One 360 checking account vs the Bluevine business account."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the Ink Business Cash as a high-leverage play for the user's specific office supply and telecom spend patterns."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, accurate, and actionable routing strategy that correctly leverages the user's existing business cards and identifies a high-value opportunity for an Ink Business Cash card."
+}

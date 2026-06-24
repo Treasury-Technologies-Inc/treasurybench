@@ -1,0 +1,53 @@
+{
+  "taskId": "jordan_hsa",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the user's specific HSA balance, May contribution, and marketplace insurance context."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 HSA limits and eligibility requirements, including the critical distinction between marketplace plans and HDHPs."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. Could have been slightly more explicit about the tax-reserve/business-expense separation in the final recommendation, but the advice is sound."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Strong emphasis on verifying HDHP status before continuing contributions, which is the most critical risk factor for this user."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA family contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA catch-up contribution for age 55+ is $1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, personalized, and safe advice regarding HSA funding, correctly identifying the 2026 limits and the necessity of verifying HDHP status for marketplace plans."
+}

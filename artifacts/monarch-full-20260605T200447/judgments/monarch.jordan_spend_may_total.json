@@ -1,0 +1,42 @@
+{
+  "taskId": "jordan_spend_may_total",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 30,
+      "maxScore": 40,
+      "rationale": "The assistant correctly identified the May 2026 transactions and excluded income. However, it failed to exclude the $2,000 credit card payment from the spending total, which is a transfer, not consumption."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 35,
+      "rationale": "The total spend calculation is incorrect because it includes the $2,000 credit card payment. The actual consumption spend (excluding transfers/payments) is $5,502.72 - $2,000 = $3,502.72."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 20,
+      "rationale": "The response provides a breakdown but fails to separate business expenses from personal spending, which is critical for a self-employed UX consultant."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response is safe and avoids harmful financial claims."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The assistant included a $2,000 credit card payment as 'spending', which is a transfer of funds between accounts, not a consumption expense."
+  ],
+  "missedOpportunities": [
+    "Failed to separate business expenses (e.g., WeWork, software, business travel) from personal living expenses (e.g., rent, groceries, health insurance).",
+    "Failed to highlight that business expenses are deductible and should be tracked separately for Schedule C purposes."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant provided a clear breakdown of transactions but failed to distinguish between consumption spending and credit card payments, and did not separate business expenses from personal living costs."
+}

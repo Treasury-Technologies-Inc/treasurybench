@@ -1,0 +1,286 @@
+{
+  "unverifiedClaimCount": 28,
+  "uniqueClaimCount": 28,
+  "entries": [
+    {
+      "claim": "Adobe often triggers a ~$30/mo retention discount for 12 months if you start the cancellation flow",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_subscriptions_benefits"
+      ]
+    },
+    {
+      "claim": "Ally Tax Reserve account is a great start—ensure it is a High-Yield Savings subtype",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_idle_cash"
+      ]
+    },
+    {
+      "claim": "Chase Sapphire Preferred earns 3x on dining",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_credit_card_strategy"
+      ]
+    },
+    {
+      "claim": "Chase Sapphire Preferred typical APR of 21%–28%",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_credit_card_balance_check"
+      ]
+    },
+    {
+      "claim": "Denver properties are reassessed every two years.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_mortgage_escrow_review"
+      ]
+    },
+    {
+      "claim": "Disability insurance generally costs 1-3% of annual income.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_disability_liability_need"
+      ]
+    },
+    {
+      "claim": "FICA tax savings on payroll HSA contributions is 7.65%.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_hsa"
+      ]
+    },
+    {
+      "claim": "Form 2553 must be filed within the first 75 days of the tax year.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_scorp_or_llc"
+      ]
+    },
+    {
+      "claim": "Group disability plans typically cover 50-60% of base salary",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ]
+    },
+    {
+      "claim": "Marcus High Yield Savings is likely earning ~4.50% APY",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_idle_cash"
+      ]
+    },
+    {
+      "claim": "Marcus Savings APY is ~4.40%",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_credit_card_balance_check"
+      ]
+    },
+    {
+      "claim": "Microsoft offers corporate discounts or reimbursement programs for travel",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_spend_may_total"
+      ]
+    },
+    {
+      "claim": "Microsoft provides 3x base salary for life insurance for free.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ]
+    },
+    {
+      "claim": "Microsoft provides 3x your base salary in life insurance at no cost",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_life_insurance_need"
+      ]
+    },
+    {
+      "claim": "Microsoft provides long-term disability (LTD) coverage at 60% of your base salary",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_life_insurance_need"
+      ]
+    },
+    {
+      "claim": "Microsoft provides Long-Term Disability (LTD) that covers 60% of base salary up to $15,000/month.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ]
+    },
+    {
+      "claim": "Own-Occupation disability coverage is preferred",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ]
+    },
+    {
+      "claim": "Professional liability insurance typically ranges from $500 to $1,200 per year for freelance creatives.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_disability_liability_need"
+      ]
+    },
+    {
+      "claim": "QBI Deduction (§199A) allows 20% deduction of taxable business income",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_where_wasting_money"
+      ]
+    },
+    {
+      "claim": "Refinancing break-even calculation: Closing Costs / Monthly Savings.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_mortgage_escrow_review"
+      ]
+    },
+    {
+      "claim": "Sapphire Preferred earns 1x at Costco",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_credit_card_balance_check"
+      ]
+    },
+    {
+      "claim": "Seattle MFTE and MHA are the primary programs for income-restricted housing in market-rate buildings.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_mfte_eligibility_check"
+      ]
+    },
+    {
+      "claim": "Seattle MFTE targets households earning 60–90% of Area Median Income (AMI)",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ]
+    },
+    {
+      "claim": "Switching to annual billing typically saves ~20% on Webflow",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "jordan_subscriptions_benefits"
+      ]
+    },
+    {
+      "claim": "Term life insurance is remarkably affordable when you're young.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_life_insurance_need"
+      ]
+    },
+    {
+      "claim": "Term life insurance is significantly cheaper than Whole Life",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ]
+    },
+    {
+      "claim": "UCHealth group disability policies often have a 90-day elimination period.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_checking_buffer"
+      ]
+    },
+    {
+      "claim": "Umbrella insurance typically costs $200 to $400 per year for the first $1M of coverage.",
+      "occurrences": 1,
+      "providers": [
+        "treasury"
+      ],
+      "tasks": [
+        "patel_property_insurance_review"
+      ]
+    }
+  ]
+}

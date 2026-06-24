@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:23:08.297Z",
+  "latencyMs": 6923,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on your accounts, you contributed $300 to your Fidelity HSA in May and currently have about $3,100 in the HSA.\n\nWhether you should keep funding it depends first on eligibility.\n\nKey eligibility check\n\nBecause you buy health insurance through the Marketplace, the most important question is:\n\n- Is your Marketplace plan an HSA-qualified High Deductible Health Plan (HDHP)?\n\nMany Marketplace plans are not HSA-eligible. If your plan is not HSA-qualified, you generally cannot make or receive HSA contributions for those months.\n\nYou can usually confirm this by:\n- Looking for \"HSA eligible\" or \"HSA-qualified HDHP\" in your plan documents.\n- Checking your insurer's benefit summary.\n- Reviewing Form 1095-A and plan materials if you're unsure.\n\nOther HSA eligibility requirements\n\nFor any month you contribute:\n- You must be covered by an HSA-qualified HDHP on the first day of that month.\n- You cannot have disqualifying non-HDHP coverage (for example, a general-purpose health FSA).\n- You cannot be enrolled in Medicare.\n- You cannot be claimed as someone else's dependent.\n\nContribution limits\n\nFor 2026:\n- Self-only HDHP coverage: up to $4,400\n- Family HDHP coverage: up to $8,750\n- Age 55+: additional $1,000 catch-up contribution\n\nBased on your profile:\n- You live alone and have no dependents.\n- If your coverage is self-only and HSA-eligible all year, the likely limit is $4,400 for 2026.\n\nYour current funding pace\n\nAt $300/month:\n- Annual contribution pace = $3,600\n- Compared with a $4,400 self-only limit, you'd still have about $800 of unused contribution room for the year (assuming full-year eligibility).\n\nShould you keep contributing?\n\nIf you are HSA-eligible, the HSA is usually one of the most tax-efficient places to save because:\n- Contributions reduce taxable income.\n- Growth can be tax-free.\n- Qualified medical withdrawals are tax-free.\n\nAs a self-employed Schedule C filer who already maintains separate tax and cash-flow buckets, HSA contributions can be particularly valuable because they lower current-year taxes while building a reserve for future healthcare costs.\n\nCash-flow considerations\n\nYour current balances show:\n- Tax reserve: $18,500\n- Personal checking: $9,650\n- Business checking: $7,420\n\nYou appear to have enough cash to continue a $300/month contribution, but because your income is irregular, I would still prioritize:\n1. Maintaining your tax reserve.\n2. Covering near-term business and personal expenses.\n3. Funding the HSA up to your eligible limit.\n4. Then evaluating additional IRA or taxable investing contributions.\n\nExact next step\n\nBefore making additional HSA contributions, verify whether your Marketplace plan is HSA-qualified. If you tell me:\n- The insurer,\n- Plan name, and\n- Whether coverage is self-only or family,\n\nI can help determine your HSA eligibility and estimate the tax benefit of increasing contributions.",
+  "taskId": "jordan_hsa",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1463,
+      "outputTokens": 826,
+      "totalTokens": 2289,
+      "reasoningTokens": 128,
+      "cachedInputTokens": 1152
+    }
+  }
+}

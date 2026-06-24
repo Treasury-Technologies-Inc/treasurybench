@@ -1,0 +1,52 @@
+{
+  "taskId": "patel_dependent_care_fsa",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific daycare expenses (Bright Horizons and Care.com) and correctly identifies the household's dual-income, MFJ status."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly applies the 2026 $7,500 DCAP limit and the $3,000 CDCTC expense cap. The math is sound, though it slightly oversimplifies the CDCTC credit rate (which is 50% under OBBBA, not 20%)."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable plan. The distinction between the FSA and the tax credit is well-explained, and the next steps are concrete."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately caveats that the limit is per household and that enrollment depends on employer plan availability."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 dependent care FSA/DCAP exclusion limit is $7,500 for married couples filing jointly",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Child and Dependent Care Tax Credit (CDCTC) eligible-expense caps are $3,000 for one qualifying individual",
+      "tableKey": "irs_2026_child_dependent_care_credit",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions a 20% credit rate for the CDCTC; while the expense cap is correct, the OBBBA 2026 credit rate is higher (up to 50%), though this does not change the conclusion that the FSA is superior for this income level."
+  ],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Correctly identifies the 'triple tax savings' (federal, state, and FICA) which is a high-leverage way to frame the benefit for a dual-income household."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly accurate, personalized, and actionable analysis of the dependent care FSA benefit, correctly leveraging 2026 tax limits and the user's specific childcare spending data."
+}

@@ -1,0 +1,39 @@
+{
+  "taskId": "maria_recurring_charges_audit",
+  "provider": "origin",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 30,
+      "maxScore": 40,
+      "rationale": "The response correctly identified the core subscriptions and utility bills but incorrectly included a one-time Lyft charge as a recurring subscription, which was not supported by the transaction data."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 35,
+      "rationale": "The subscription bucket total was calculated incorrectly ($199.78 vs $171.98) due to the inclusion of the one-time Lyft charge. The utility bucket total was correct."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 20,
+      "rationale": "The response followed the requested structure but failed to identify the Microsoft wellness reimbursement opportunity for the ClassPass subscription, which was a key planted opportunity."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately excluded rent from the totals and provided clear, safe disclosures."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to identify that ClassPass is an eligible expense for the Microsoft $1,500 annual wellness reimbursement."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant correctly categorized most recurring charges but failed to identify the Microsoft wellness reimbursement opportunity and incorrectly included a one-time Lyft charge in the subscription total."
+}

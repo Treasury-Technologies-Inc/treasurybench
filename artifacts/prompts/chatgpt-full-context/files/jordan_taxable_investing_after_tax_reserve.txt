@@ -1,0 +1,74 @@
+You are a personal finance assistant being evaluated on TreasuryBench.
+
+Benchmark date: 2026-05-31
+Persona: Jordan Rivera
+Summary: Austin self-employed UX consultant with irregular 1099 income, business expenses, tax-reserve needs, marketplace health coverage, HSA, IRA, credit-card balances, and travel-heavy client work.
+
+Use only the persona memories, account balances, and transactions below as the user's financial context. You may rely on your own current personal-finance knowledge for public rules, IRS limits, benefit concepts, card rewards, local programs, and product terms, but you must be factual, current, relevant, and appropriately caveated. Do not invent user data.
+
+Strong answers:
+- search the data mentally before answering;
+- connect transactions, balances, memories, and finance knowledge;
+- quantify dollar impact when possible;
+- prioritize higher-value opportunities over generic tips;
+- state assumptions and eligibility caveats;
+- give exact next steps.
+
+Memories:
+[
+  {
+    "id": "jordan_mem_household",
+    "text": "Jordan lives alone in Austin, TX, has no dependents, and is self-employed as a UX consultant filing Schedule C."
+  },
+  {
+    "id": "jordan_mem_work",
+    "text": "Jordan has no employer benefits and buys individual marketplace health insurance. Jordan wants tax-safe cashflow and low-admin financial systems because income arrives unevenly."
+  },
+  {
+    "id": "jordan_mem_preferences",
+    "text": "Jordan prefers advice that separates business, tax, emergency, and personal spending buckets before recommending investing or new cards."
+  }
+]
+
+Balances CSV:
+Date,Balance,Account
+2026-05-31,9650.00,Capital One 360 Checking 4470
+2026-05-31,7420.00,Bluevine Business Checking 8810
+2026-05-31,18500.00,Ally Tax Reserve Savings 5391
+2026-05-31,5210.00,Chase Ink Business Preferred 4028
+2026-05-31,1185.00,American Express Blue Business Plus 7721
+2026-05-31,22400.00,Vanguard Traditional IRA 6104
+2026-05-31,3100.00,Fidelity HSA 3368
+2026-05-31,48000.00,Fidelity Individual Brokerage 2207
+2026-05-31,12500.00,Coinbase Crypto Portfolio 9012
+
+Transactions CSV:
+Date,Merchant,Category,Account,Original Statement,Notes,Amount,Tags,Owner
+2026-05-03,Figma Design Systems Client,Business Income,Bluevine Business Checking 8810,Figma Design Systems Client,,8500.00,,Shared
+2026-05-18,Notion UX Research Client,Business Income,Bluevine Business Checking 8810,Notion UX Research Client,,4200.00,,Shared
+2026-05-27,Stripe Client Payment,Business Income,Bluevine Business Checking 8810,Stripe Client Payment,,1260.00,,Shared
+2026-04-15,IRS Estimated Tax Payment,Estimated Taxes,Ally Tax Reserve Savings 5391,IRS Estimated Tax Payment,,-4200.00,,Shared
+2026-05-01,Eastside Flats,Rent,Capital One 360 Checking 4470,Eastside Flats,1 bedroom apartment in Austin,-2100.00,,Shared
+2026-05-02,WeWork Austin,Business Rent,Chase Ink Business Preferred 4028,WeWork Austin,,-350.00,,Shared
+2026-05-05,HealthCare.gov Marketplace Premium,Health Insurance,Capital One 360 Checking 4470,HealthCare.gov Marketplace Premium,,-415.00,,Shared
+2026-05-08,Fidelity HSA Contribution,HSA Contribution,Capital One 360 Checking 4470,Fidelity HSA Contribution,,-300.00,,Shared
+2026-05-07,Adobe Creative Cloud,Software,Chase Ink Business Preferred 4028,Adobe Creative Cloud,,-59.99,,Shared
+2026-05-08,Figma Professional,Software,Chase Ink Business Preferred 4028,Figma Professional,,-15.00,,Shared
+2026-05-09,Webflow,Software,Chase Ink Business Preferred 4028,Webflow,,-39.00,,Shared
+2026-05-10,Amazon Web Services,Software,Chase Ink Business Preferred 4028,Amazon Web Services,,-82.44,,Shared
+2026-05-11,Google Workspace,Software,Chase Ink Business Preferred 4028,Google Workspace,,-14.40,,Shared
+2026-05-12,H-E-B,Groceries,American Express Blue Business Plus 7721,H-E-B,,-126.85,,Shared
+2026-05-19,Costco Wholesale,Groceries,American Express Blue Business Plus 7721,Costco Wholesale,,-238.62,,Shared
+2026-05-14,Uchi Austin,Dining,American Express Blue Business Plus 7721,Uchi Austin,,-146.20,,Shared
+2026-05-22,Torchys Tacos,Dining,American Express Blue Business Plus 7721,Torchys Tacos,,-38.75,,Shared
+2026-05-16,Delta Air Lines,Business Travel,Chase Ink Business Preferred 4028,Delta Air Lines,Client onsite trip to Atlanta,-428.60,,Shared
+2026-05-18,Marriott Marquis Atlanta,Business Travel,Chase Ink Business Preferred 4028,Marriott Marquis Atlanta,Client onsite trip hotel,-612.30,,Shared
+2026-05-19,Uber Trip,Business Travel,Chase Ink Business Preferred 4028,Uber Trip,,-74.18,,Shared
+2026-05-23,Office Depot,Office Supplies,Chase Ink Business Preferred 4028,Office Depot,,-186.40,,Shared
+2026-05-24,Austin Therapy Group,Medical,Capital One 360 Checking 4470,Austin Therapy Group,,-160.00,,Shared
+2026-05-25,Spectrum Internet,Internet,Capital One 360 Checking 4470,Spectrum Internet,,-79.99,,Shared
+2026-05-26,Visible Wireless,Phone,Capital One 360 Checking 4470,Visible Wireless,,-35.00,,Shared
+2026-05-28,Chase Credit Card Payment,Credit Card Payment,Capital One 360 Checking 4470,Chase Credit Card Payment,,-2000.00,,Shared
+
+User question:
+Should I invest more in taxable brokerage right now, or hold cash for taxes and volatility?

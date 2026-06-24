@@ -1,0 +1,47 @@
+{
+  "taskId": "patel_401k_percent_to_limit",
+  "provider": "openai:chat-latest",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 30,
+      "maxScore": 40,
+      "rationale": "The response correctly identifies the gross pay from the payroll notes and uses the correct number of pay periods (24). However, it fails to use the exact dollar amounts from the transactions for the current contribution rates, instead relying on the percentages provided in the notes."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 35,
+      "rationale": "The response uses an incorrect 2026 401(k) limit of $24,000 instead of the locked benchmark fact of $24,500. This significantly impacts the accuracy of the calculated percentages."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response provides a clear breakdown and addresses the user's question directly, including helpful context about payroll percentage limitations."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately caveats the advice by mentioning cash flow priorities and the distinction between employee deferrals and employer matches."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "the 2026 employee 401(k) elective deferral limit is $24,000",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response uses $24,000 as the 2026 401(k) limit, which contradicts the locked benchmark fact of $24,500."
+  ],
+  "missedOpportunities": [
+    "The response could have explicitly mentioned the Salesforce and UCHealth employer match details provided in the locked facts to provide a more comprehensive view of their retirement savings strategy."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a helpful framework for calculating contribution rates but uses an incorrect 2026 401(k) limit, leading to inaccurate percentage recommendations."
+}

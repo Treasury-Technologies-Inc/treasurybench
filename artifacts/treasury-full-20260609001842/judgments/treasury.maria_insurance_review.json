@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_insurance_review",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's Microsoft employment, single status, and net worth to tailor the advice. It correctly identifies the lack of dependents as a reason to deprioritize life insurance."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on disability insurance taxability and the prioritization of liability coverage is accurate. The response correctly identifies the Microsoft LTD plan structure as a potential gap."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Clear, actionable steps are provided. The distinction between employer-paid and employee-paid disability premiums is a high-value, expert-level insight."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding beneficiary updates and the need to verify specific plan details in the benefits portal."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft provides Long-Term Disability (LTD) that covers 60% of base salary up to $15,000/month.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Microsoft provides 3x base salary for life insurance for free.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The specific coverage percentages and limits for Microsoft's internal LTD and life insurance plans are treated as facts but are not explicitly provided in the locked benchmark facts; they are treated as unverified plan-level details."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly calculated the monthly income replacement gap based on the $2,500 semi-monthly gross pay ($60,000 annual base) to make the disability advice more concrete."
+  ],
+  "unexpectedValidInsights": [
+    "The tip regarding the taxability of disability benefits based on who pays the premiums is an excellent, high-leverage insight for a high-earner."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and actionable insurance review that correctly prioritizes disability coverage over life insurance for a single professional, with expert-level advice on tax implications."
+}

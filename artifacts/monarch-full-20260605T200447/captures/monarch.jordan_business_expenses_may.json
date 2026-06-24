@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T19:13:13.388Z",
+  "latencyMs": 31859,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "monarch",
+  "response": "From May 1 to May 31, 2026, you spent $1,651.48 on business expenses:\n\nBusiness Rent: $350.00\nBusiness Travel: $1,115.08\nOffice Supplies: $186.40\n\nA couple spots to be extra careful with:\n\nBusiness Travel: Travel, meals, and transportation can easily get mixed with personal spending. Keep this to true business trips, client meetings, and related costs only.\nOffice Supplies: Purchases from Amazon, big-box stores, or office retailers might be personal or business, so it’s worth double-checking each transaction description and receipt.\n\nBusiness Rent is usually more straightforward, just keep it consistently categorized so your business financials and any potential tax deductions stay clean and accurate.\n\n⚪️\n⚪️\n⚪️\n$0\n$300\n$600\n$900\n$1.2K",
+  "taskId": "jordan_business_expenses_may"
+}

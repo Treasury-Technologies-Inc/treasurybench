@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:15:18.082Z",
+  "latencyMs": 8183,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on your data, a mega backdoor Roth is worth investigating, but the key question is whether Microsoft's 401(k) plan allows after-tax contributions and in-plan Roth conversions (or in-service distributions).\n\nWhat I see in your finances:\n- 401(k) balance: $48,500\n- Current employee deferral: 8% of pay\n- Payroll notes show $2,500 gross pay semi-monthly, so approximately:\n  - Annual gross pay represented in these records: about $60,000\n  - Current 401(k) contribution rate: about $4,800/year (8% × $60,000)\n- Brokerage balance: $62,300\n- Recent RSU vest: $42,000 deposited to taxable brokerage\n- Cash: $23,700 across checking and savings\n\nPotential upside of a mega backdoor Roth\n- A mega backdoor Roth lets you contribute after-tax money to a 401(k) and then convert it to Roth.\n- The main benefit is moving money that would otherwise be invested in a taxable account into a Roth account where future growth can potentially be tax-free.\n- Since you already have substantial taxable assets ($62,300 brokerage), you're the type of saver who could benefit if you're able and willing to save beyond normal 401(k) limits.\n\nImportant caveat\n- Not all employers offer the necessary plan features.\n- Microsoft's plan details change over time, so you should verify:\n  - Are after-tax (non-Roth) employee contributions allowed?\n  - Are automatic in-plan Roth conversions available?\n  - What is the annual plan limit and employer contribution structure?\n\nA more important question first: are you maximizing your regular tax-advantaged space?\nFrom the records:\n- You appear to be contributing only about $4,800/year to the 401(k).\n- If your income is actually close to the payroll shown, increasing traditional or Roth 401(k) contributions would usually be the first step before using a mega backdoor Roth.\n- Every additional $1,000 contributed to a traditional 401(k) avoids current federal income tax (if you choose traditional contributions), while mega backdoor contributions are made after tax.\n\nSuggested priority order\n1. Capture the full Microsoft match (if not already doing so).\n2. Maximize normal employee 401(k) contributions if cash flow allows.\n3. Consider IRA options if eligible.\n4. Then use mega backdoor Roth capacity for additional savings.\n\nWhen a mega backdoor Roth makes the most sense\n- You are already maxing your regular 401(k) employee contribution limit.\n- You still have significant excess savings capacity.\n- You expect to invest for many years.\n- You want more tax-free retirement assets.\n\nWhen it may not be worth the effort\n- You are not yet maxing regular 401(k) contributions.\n- Cash flow is tight.\n- You need near-term liquidity for goals such as a home purchase.\n- The plan's implementation is cumbersome or generates conversion delays.\n\nFor your specific situation, the fact that you recently received a $42,000 RSU vest and already hold over $62,000 in taxable investments suggests you may have the capacity to benefit from a mega backdoor Roth. However, if the 8% contribution shown reflects your real ongoing 401(k) savings rate, I would generally prioritize increasing regular 401(k) contributions before directing money to mega backdoor contributions.\n\nIf you can tell me:\n- Your total annual compensation (base salary, bonus, RSUs),\n- Whether your current 401(k) contributions are traditional or Roth,\n- And whether Microsoft's current plan offers after-tax contributions with automatic Roth conversion,\n\nI can estimate the actual annual dollar benefit and recommend an exact contribution strategy.",
+  "taskId": "maria_mega_backdoor",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1506,
+      "outputTokens": 761,
+      "totalTokens": 2267,
+      "reasoningTokens": 0,
+      "cachedInputTokens": 1152
+    }
+  }
+}

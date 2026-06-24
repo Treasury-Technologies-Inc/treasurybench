@@ -1,0 +1,48 @@
+{
+  "taskId": "patel_401k_percent_to_limit",
+  "provider": "treasury",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 40,
+      "rationale": "The response failed to use the correct gross pay figures from the payroll notes ($8,750 and $5,000 semi-monthly), instead inventing biweekly figures ($5,200 and $3,425) that do not match the provided transaction data."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "The 2026 401(k) limit is correct, but the math is based on incorrect salary inputs and an incorrect assumption of biweekly pay periods (the data explicitly states semi-monthly)."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 20,
+      "rationale": "The response provides a clear table but the underlying data is flawed due to the incorrect pay frequency and salary assumptions."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response includes appropriate caveats regarding bonuses and the need to verify pay frequency."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "the elective deferral limit for a 401(k) is 24,500 for 2026",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly assumes biweekly pay periods for both employers, whereas the transaction data explicitly identifies them as semi-monthly."
+  ],
+  "missedOpportunities": [
+    "Failed to account for the Salesforce 401(k) match (100% on first 6%) and the UCHealth 401(k) plan, which are relevant to the household's retirement strategy.",
+    "Did not mention the potential for after-tax contributions or mega-backdoor Roth opportunities available at Salesforce and Microsoft (UCHealth) given the high income levels."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response correctly identifies the 2026 401(k) limit but fails the grounding dimension by using incorrect salary and pay-frequency data derived from the provided transactions."
+}

@@ -1,0 +1,47 @@
+{
+  "taskId": "maria_msft_stock_risk",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response acknowledges the RSU vest but fails to explicitly reference the $42,000 amount or the specific Robinhood brokerage account, keeping the advice generic rather than personalized to the user's actual data."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax mechanics and concentration risk principles are accurate. It correctly identifies the RSU vest as ordinary income and avoids stale IRS limits."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response provides a good framework but lacks a concrete, actionable plan tailored to the user's specific financial situation (e.g., no mention of the user's current cash buffer or specific Microsoft employment context)."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes good caveats about concentration risk and tax implications, but misses the critical warning regarding employer trading windows/insider trading restrictions."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The value of vested RSUs is treated as ordinary income on the date of vest.",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to explicitly reference the $42,000 RSU vest amount from the transaction history.",
+    "Failed to connect the Microsoft employment context to the specific risk of human capital and stock concentration.",
+    "Missed the critical warning about checking Microsoft's specific trading windows or insider trading policies before selling."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, accurate educational framework for managing RSU vests but fails to personalize the advice to the user's specific $42,000 transaction or provide necessary warnings about employer-specific trading restrictions."
+}

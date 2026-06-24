@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:16:41.479Z",
+  "latencyMs": 6226,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "You received $1,200 of freelance income on 2026-05-20 from “Figma Consulting Client.” The main thing that can surprise people later is taxes, because no tax is typically withheld from freelance payments.\n\nBased on your data, here’s what I would do now:\n\n1. Move money into a tax reserve today\n- Set aside 35%–40% of the $1,200 payment:\n  - 35% = $420\n  - 40% = $480\n- Put it in your Ally savings account and treat it as untouchable until tax time.\n\nWhy that much?\n- Freelance income is generally subject to:\n  - Federal income tax\n  - Self-employment tax (Social Security and Medicare)\n- Self-employment tax alone on $1,200 is roughly:\n  - $1,200 × 92.35% × 15.3% ≈ $170\n- Your actual federal tax rate depends on your total 2026 income. You have:\n  - Microsoft salary income\n  - A recent Microsoft RSU vest worth $42,000\n  - Brokerage assets and interest income\n- Because of those additional income sources, a 35%–40% reserve is a reasonable conservative starting point.\n\n2. Track deductible business expenses\nIf this consulting work is a real side business, keep records of expenses that were ordinary and necessary for earning the income, such as:\n- Software subscriptions used for client work\n- Business-related mileage or transportation\n- Home office expenses (if you qualify)\n- Professional services, domain names, cloud hosting, etc.\n\nYour records currently show an Adobe subscription ($59.99/month), but I can't determine from the data whether it was used for freelance work. Only deduct expenses that are legitimately business-related.\n\n3. Consider quarterly estimated taxes\nA single $1,200 project may not require a separate estimated payment if your payroll withholding from Microsoft will cover your total tax liability.\n\nHowever, if you expect more freelance income during 2026, you should:\n- Estimate total side-income for the year.\n- Either:\n  - Increase withholding through Microsoft payroll (often the simplest option), or\n  - Make IRS estimated tax payments.\n\nMany employees prefer increasing W-4 withholding because it can reduce the need for separate quarterly payments.\n\n4. Keep clean records\nCreate a simple folder with:\n- Client invoices\n- Payment confirmations\n- Expense receipts\n- Any 1099 forms you receive next year\n\nThis makes tax filing much easier and supports any deductions claimed.\n\nYour current cash position appears strong:\n- Checking: $18,450\n- Savings: $5,250\n\nSo reserving $420–$480 for taxes should be easy to do without affecting liquidity.\n\nIf you expect additional freelance projects this year, I can help estimate whether you should make quarterly payments and approximately how much to send to the IRS and Washington state (if applicable).",
+  "taskId": "maria_side_income_tax",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1515,
+      "outputTokens": 700,
+      "totalTokens": 2215,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

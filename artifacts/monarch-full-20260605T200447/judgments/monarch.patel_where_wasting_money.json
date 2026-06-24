@@ -1,0 +1,43 @@
+{
+  "taskId": "patel_where_wasting_money",
+  "provider": "monarch",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies and uses the specific transaction amounts for daycare, Peloton, and groceries. It misses the opportunity to leverage the specific account balances (e.g., the high checking balance vs. savings) as a potential optimization point."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response avoids making incorrect claims about tax limits or employer benefits. It correctly identifies the employer-level benefits as things to check rather than assuming enrollment."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "The response provides actionable, prioritized advice. It misses the high-leverage opportunity to discuss the Dependent Care FSA (DCAP) specifically for the $1,870 childcare spend, which is a major tax-advantaged play for this persona."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response is appropriately cautious, framing employer benefits as items to verify rather than guaranteed savings."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly suggest maximizing the Dependent Care FSA (DCAP) to cover the $1,870/month childcare costs, which is a high-leverage tax play for a dual-income household.",
+    "Did not address the high balance in the Chase Premier Plus Checking ($14,680) relative to the Marcus Savings ($28,750), missing an opportunity to suggest moving excess cash to a higher-yield vehicle.",
+    "Did not mention the Salesforce wellness reimbursement ($1,200/year) or Microsoft wellness reimbursement ($1,500/year) as potential offsets for the Peloton charge."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested a 'use-up-the-pantry' week to reduce grocery waste, which is a practical, low-admin strategy for a busy family."
+  ],
+  "safetyIssues": [],
+  "summary": "A solid, actionable response that correctly identifies spending patterns but misses high-leverage tax and cash-management optimizations specific to the provided persona data."
+}

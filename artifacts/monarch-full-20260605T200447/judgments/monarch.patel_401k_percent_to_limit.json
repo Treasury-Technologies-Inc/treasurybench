@@ -1,0 +1,47 @@
+{
+  "taskId": "patel_401k_percent_to_limit",
+  "provider": "monarch",
+  "totalScore": 25,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 40,
+      "rationale": "The response failed to use the provided payroll data ($8,750 and $5,000 semi-monthly) and instead invented arbitrary example salaries, ignoring the explicit instructions to use the payroll notes."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 35,
+      "rationale": "The 2026 401(k) limit of $24,500 is correct, but the failure to use the provided gross pay data makes the resulting calculations irrelevant to the user's actual situation."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 20,
+      "rationale": "The response provides a formula but fails to perform the requested task of calculating the specific percentages for Priya and Daniel based on their actual payroll data."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 5,
+      "rationale": "The response does not address the cashflow implications of hitting the limit, which was a core requirement of the task intent."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "the 2026 employee 401(k) deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to use the gross pay figures ($8,750 and $5,000 semi-monthly) explicitly provided in the payroll notes.",
+    "Failed to calculate the annual gross pay ($210,000 for Priya, $120,000 for Daniel) to determine the required contribution percentage.",
+    "Failed to discuss the cashflow impact of these contributions given the household's mortgage, daycare, and other expenses."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response failed to use the provided payroll data to calculate the requested contribution percentages, instead relying on arbitrary example salaries."
+}

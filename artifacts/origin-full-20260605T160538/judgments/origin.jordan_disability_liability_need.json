@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_disability_liability_need",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific income sources (Figma, Notion, Stripe) and their status as a solo consultant. It correctly identifies the lack of employer benefits as a key driver for the prioritization."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The explanation of disability insurance (own-occupation, elimination periods) and professional liability (E&O) is accurate and appropriate for a UX consultant. It correctly avoids making specific premium claims."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable recommendation to prioritize disability insurance while acknowledging the importance of both. It offers a logical path forward for a freelancer."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response includes necessary caveats, such as recommending consultation with a licensed insurance professional and noting that disability benefits interact with tax structures."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Disability insurance typically replaces 60–70% of income.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies that disability insurance and professional liability are distinct products with different risk profiles for a freelancer."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly linked the $18,500 tax reserve to the ability to afford a longer elimination period for disability insurance, which would have directly utilized the provided balance data."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to align the disability elimination period with the existing emergency fund/tax reserve is a high-leverage, personalized insight."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prudent response that correctly prioritizes disability insurance for a solo consultant based on their income reliance and lack of employer-provided safety nets."
+}

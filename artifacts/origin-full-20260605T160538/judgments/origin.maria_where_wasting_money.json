@@ -1,0 +1,49 @@
+{
+  "taskId": "maria_where_wasting_money",
+  "provider": "origin",
+  "totalScore": 45,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response cites specific transactions (Adobe, Lyft, AT&T) but fails to ground recommendations in the provided employer benefits (Microsoft wellness reimbursement) or the high-leverage rent/cash opportunities."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The math is generally sound, but the response misses the Microsoft wellness reimbursement opportunity for the ClassPass subscription, which is a key planted fact."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 35,
+      "rationale": "The response focuses on low-impact subscription cuts while ignoring the high-leverage opportunities (Microsoft wellness reimbursement, idle cash in checking, and Seattle rent-saving programs)."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "The response suggests canceling subscriptions without checking the Microsoft wellness reimbursement benefit, which is a significant oversight given the persona's employer."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Adobe single-app plans start around $20-25/month",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly identifies the Lyft transaction as a recurring subscription without sufficient evidence in the provided CSV, which only shows a single Lyft charge."
+  ],
+  "missedOpportunities": [
+    "Microsoft wellness reimbursement for ClassPass ($1,500 annual cap).",
+    "Idle cash in Chase checking ($18,450) vs. HYSA/T-bills.",
+    "Seattle MFTE/MHA rent reduction program eligibility."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides generic subscription-cutting advice while failing to leverage the specific Microsoft employee benefits and high-value cash management opportunities present in the persona data."
+}

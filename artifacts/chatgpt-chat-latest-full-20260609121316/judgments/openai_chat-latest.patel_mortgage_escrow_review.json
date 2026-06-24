@@ -1,0 +1,50 @@
+{
+  "taskId": "patel_mortgage_escrow_review",
+  "provider": "openai:chat-latest",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the specific mortgage payment, escrow components, and current account balances. It correctly identifies the user's specific insurance payment and childcare costs."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is financially sound and avoids common pitfalls. It correctly identifies the need for escrow analysis and PMI verification. It misses the opportunity to explicitly mention the 2026 standard deduction or SALT cap in the context of itemizing property taxes, though it correctly identifies the tax appeal process."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable checklist. It avoids generic advice by focusing on the specific levers available to the user (escrow, PMI, insurance, tax appeals)."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response is highly prudent, explicitly advising against refinancing without break-even analysis and cautioning against draining emergency savings."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Denver-area property taxes can rise with assessed values.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response does not explicitly cite 2026 tax law figures (standard deduction/SALT), which were expected in the scope notes for a comprehensive housing-cost review."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly link the property tax review to the 2026 SALT cap or standard deduction context provided in the benchmark facts.",
+    "Could have suggested checking if the employer benefits portal (Salesforce/UCHealth) offers specific mortgage-related discounts or legal assistance for tax appeals."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the specific monthly insurance payment from the transaction data and calculated the potential annual savings from re-shopping."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly grounded and prudent response that provides a clear, actionable strategy for reducing housing costs without taking unnecessary financial risks."
+}

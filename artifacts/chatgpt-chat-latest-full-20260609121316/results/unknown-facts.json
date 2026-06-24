@@ -1,0 +1,146 @@
+{
+  "unverifiedClaimCount": 14,
+  "uniqueClaimCount": 14,
+  "entries": [
+    {
+      "claim": "A typical rewards card APR can easily be 20%–30%+.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "patel_credit_card_balance_check"
+      ]
+    },
+    {
+      "claim": "Ally Bank interest rate is roughly 3.9% APY",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "maria_where_wasting_money"
+      ]
+    },
+    {
+      "claim": "Denver-area property taxes can rise with assessed values.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "patel_mortgage_escrow_review"
+      ]
+    },
+    {
+      "claim": "Dependent care FSA contributions avoid federal income tax and FICA taxes",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "patel_where_wasting_money"
+      ]
+    },
+    {
+      "claim": "General liability covers third-party bodily injury or property damage.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_insurance_review"
+      ]
+    },
+    {
+      "claim": "Group life insurance is often only 1–2× salary",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ]
+    },
+    {
+      "claim": "Long-term disability insurance is a high priority for self-employed individuals without employer benefits.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_insurance_review"
+      ]
+    },
+    {
+      "claim": "LTD benefits are often taxable if employer-paid and tax-free if employee-paid",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ]
+    },
+    {
+      "claim": "Professional liability (E&O) covers financial losses from project delays or mistakes.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_insurance_review"
+      ]
+    },
+    {
+      "claim": "Renters insurance covers personal property and liability.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_insurance_review"
+      ]
+    },
+    {
+      "claim": "Seattle MFTE program provides rent reductions",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ]
+    },
+    {
+      "claim": "Seattle utility discount programs exist",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ]
+    },
+    {
+      "claim": "SEP IRAs are generally pre-tax only.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_solo401k_or_sep"
+      ]
+    },
+    {
+      "claim": "Solo 401(k) allows both employee salary-deferral and employer profit-sharing contributions.",
+      "occurrences": 1,
+      "providers": [
+        "openai:chat-latest"
+      ],
+      "tasks": [
+        "jordan_solo401k_or_sep"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "taskId": "jordan_spend_may_total",
+  "provider": "openai:chat-latest",
+  "totalScore": 100,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately retrieves and categorizes all May 2026 transactions, correctly excluding income and credit card payments."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "Calculations are precise. The distinction between business and personal expenses is maintained, and the total spend is correctly identified."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The answer directly addresses the user's question with a clear breakdown and helpful context regarding cash flow."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately caveats the exclusion of the HSA contribution and the credit card payment."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant provided a highly accurate, well-grounded, and clearly structured breakdown of May 2026 spending, correctly separating business and personal expenses."
+}

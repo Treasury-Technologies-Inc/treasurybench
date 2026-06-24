@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:15:38.822Z",
+  "latencyMs": 7883,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the data I can see, a Roth IRA looks more attractive than skipping an IRA, and a backdoor Roth probably is not necessary unless your actual income is much higher than what appears in these records.\n\nWhat I see\n\n- Microsoft paystub gross pay: $2,500 semi-monthly = about $60,000/year of base salary.\n- Microsoft RSU vest in May: $42,000.\n- Freelance income: at least $1,200 received in May.\n- Current retirement assets:\n  - Microsoft 401(k): $48,500\n  - Traditional IRA: $0\n- Taxable brokerage: $62,300\n- 401(k) contribution rate: 8% (about $4,800/year based on the visible salary data).\n\nIncome estimate\n\nUsing only the visible data:\n\n- Base salary: about $60,000\n- RSU income: about $42,000\n- Known freelance income: at least $1,200\n\nThat puts you around $103,000+ before any additional freelance work, investment income, bonuses, or other compensation not shown here.\n\nWhy that matters\n\n- At roughly $103,000 of income, you would generally be comfortably under the Roth IRA income limits for a single filer.\n- If your actual Microsoft compensation is substantially higher than reflected in these transactions (for example, if the payroll data is incomplete or there are additional bonuses/RSU grants), then the answer could change.\n\nMy recommendation\n\n1. Contribute directly to a Roth IRA if your expected MAGI is below the Roth IRA phaseout range.\n   - Your Traditional IRA balance is currently $0, which keeps future backdoor Roth options clean.\n   - Roth contributions give you tax-free growth and tax-free qualified withdrawals.\n   - Given your existing taxable brokerage balance of $62,300, moving some new savings into tax-advantaged space is valuable.\n\n2. Use a backdoor Roth only if you determine your income will exceed the direct Roth limits.\n   - Because your Traditional IRA balance is $0, a backdoor Roth would be straightforward if needed.\n   - You avoid the pro-rata complications that often affect people with large pre-tax IRA balances.\n\n3. I would not skip the IRA unless cash flow is tight.\n   - You have:\n     - $18,450 checking\n     - $5,250 savings\n     - $62,300 brokerage\n   - Even after accounting for your $2,350 monthly rent and current credit-card balance, you appear to have capacity to fund an IRA.\n\nPotential dollar impact\n\n- If you contribute the annual IRA maximum and leave it invested for decades, the tax-free growth in a Roth can be worth many tens of thousands of dollars versus investing the same money in a taxable brokerage account.\n- Since you already have significant taxable investments, each additional tax-advantaged dollar is especially valuable.\n\nExact next steps\n\n- Estimate your 2026 MAGI using:\n  - W-2 wages (including RSUs)\n  - Freelance income\n  - Other income sources\n- If MAGI is below the Roth IRA phaseout range:\n  - Open/fund a Roth IRA and contribute directly.\n- If MAGI may exceed the limit:\n  - Contribute to your empty Traditional IRA and convert promptly to a Roth IRA (backdoor Roth process).\n- Keep your Traditional IRA balance at $0 before year-end if you plan to use the backdoor strategy.\n\nOne important caveat: the payroll records shown imply a relatively modest salary for a Microsoft employee. If those payroll deposits represent only part of your compensation and your true annual income is much higher, the Roth eligibility analysis could change. If you know your expected 2026 total compensation, I can tell you whether a direct Roth or backdoor Roth is the better choice.",
+  "taskId": "maria_backdoor_roth",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1510,
+      "outputTokens": 962,
+      "totalTokens": 2472,
+      "reasoningTokens": 128,
+      "cachedInputTokens": 1152
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_checking_buffer",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the provided account balances and transaction history to calculate buffers, though it missed the coworking expense in the business burn calculation."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The advice is factually sound and aligns with the persona's needs. It correctly separates business and personal buckets."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The waterfall approach is actionable and logical for a freelancer. It prioritizes tax reserves and emergency funds appropriately."
+    },
+    {
+      "id": "prudence",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The advice is conservative and safe, emphasizing the need for a dedicated HYSA and tax-reserve discipline."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The 2026 HSA contribution limit for self-only HDHP coverage is $4,400.",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions a 4.00% APY benchmark; while reasonable, it is not a locked fact and should be treated as a market-dependent estimate."
+  ],
+  "missedOpportunities": [
+    "Failed to explicitly include the WeWork coworking expense in the business burn calculation.",
+    "Did not mention the specific tax-deductibility of health insurance premiums for self-employed individuals (Schedule 1, Form 1040)."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested a monthly 'waterfall' transfer schedule, which is highly effective for managing the irregular income of a 1099 consultant."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized response that correctly separates business and personal finances for a freelancer, providing a clear, actionable waterfall strategy for cash management."
+}

@@ -1,0 +1,47 @@
+{
+  "taskId": "jordan_solo401k_or_sep",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the user's IRA balance and business checking account, though it could have more explicitly referenced the specific client income transactions to justify the 'uneven income' claim."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Accurately cites 2026 limits and correctly identifies the pro-rata rule implications for the user's existing Traditional IRA."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable recommendation with a logical next-step plan. The comparison table is helpful and accurate."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding income volatility and the need to maintain operating cash flow."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the self-employment tax impact (or lack thereof) of retirement contributions to further clarify the 'tax-safe' goal."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to roll the existing Traditional IRA into the Solo 401(k) to clear the path for future Backdoor Roth contributions is a high-leverage, expert-level insight."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly accurate, personalized comparison between a Solo 401(k) and SEP IRA, correctly identifying the pro-rata rule as a critical factor for this user's specific financial situation."
+}

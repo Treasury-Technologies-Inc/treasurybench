@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T06:06:11.339Z",
+  "latencyMs": 36635,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "monarch",
+  "response": "From May 1 to May 31, 2026, you spent $1,870.00 on kid-related expenses in the Childcare category.\n\nHere’s how that number came together:\n\nFor “childcare and kid-related expenses,” I used these categories: Child Care, Child Activities, and Childcare.\nIn May 2026, only Childcare had any spending.\nTotal outflow in Childcare for that period was $1,870.00.\n\nIf you want this to stay accurate going forward, here are a few quick things to check in Monarch:\n\nKid-related categorization\n\nMake sure daycare, aftercare, babysitting, and summer camp are in Childcare, Child Care, or Child Activities.\nScan Uncategorized, Education, and Household for any kid-related charges and recategorize them.\n\nReimbursements and FSAs\n\nIf you get money back (like from a Dependent Care FSA or your employer), categorize those as income or a separate reimbursement category.\nDon’t put reimbursements in the same expense category as the childcare itself, or your actual spending will look lower than it is.\n\nOngoing care vs activities\n\nUse Childcare for core / ongoing care (daycare, aftercare, regular nanny).\nUse Child Activities for extras (sports, classes, camps, lessons).\n\nThat setup will make it easier to see what’s fixed vs what’s more flexible in your kid spending each month.\n\n⚪️\n$0\n$500\n$1K\n$1.5K\n$2K",
+  "taskId": "patel_childcare_family_spend_may"
+}

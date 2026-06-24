@@ -1,0 +1,60 @@
+{
+  "taskId": "patel_extra_15000",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the household's account balances and current contribution habits to ground its recommendations."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits for HSA and IRA. The Salesforce match description is slightly generic but aligns with the plan-level facts provided."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable priority list. It correctly identifies the need to verify credit card balances, though it could have been more explicit about checking for revolving debt vs. statement float."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Strong emphasis on tax-advantaged accounts and employer matches. Includes appropriate caveats regarding mortgage rates and emergency fund liquidity."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 family HSA limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA phase-out for MFJ starts at $242,000",
+      "tableKey": "irs_2026_roth_mfj_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions a Salesforce match of 50% of the first 6%, which contradicts the locked benchmark fact (100% of the first 6%)."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the Dependent Care FSA limit of $7,500 for 2026, which is highly relevant given the daycare expenses.",
+    "Could have suggested checking the Salesforce ESPP or wellness reimbursement given the high daycare costs."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the lack of existing Traditional IRA balances as a key enabler for the Backdoor Roth strategy without pro-rata complications."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prioritized financial plan that correctly leverages 2026 tax limits, though it contains a minor error regarding the specific Salesforce 401(k) match percentage."
+}

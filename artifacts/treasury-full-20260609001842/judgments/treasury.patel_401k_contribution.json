@@ -1,0 +1,59 @@
+{
+  "taskId": "patel_401k_contribution",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly uses the visible payroll data for Priya and Daniel to calculate current contribution rates and annualize them against the 2026 limits."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 401(k) and HSA limits. However, it incorrectly suggests a $7,500 IRA limit for 2026 (the locked fact is $7,500, but the response implies they can do this despite high income without explicitly detailing the backdoor mechanics or income phase-out nuances)."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. It correctly identifies the gap between current contributions and the 2026 IRS limits."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Includes necessary caveats about checking employer match caps and HR portals, though it could have been more explicit about the cashflow impact of daycare and mortgage costs."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA family contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions a $1,100 catch-up for IRAs, which is correct for age 50+, but the persona does not indicate the users are over 50."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the Salesforce 401(k) match cap of $5,000 despite it being a locked fact, which would have provided a more precise 'free money' check."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the tax-saving benefit of Traditional 401(k) contributions for high earners."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, grounded advice on 401(k) and HSA contributions for 2026, though it misses a specific opportunity to reference the Salesforce match cap."
+}

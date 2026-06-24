@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T20:11:24.029Z",
+  "latencyMs": 15075,
+  "mode": "product_capture",
+  "notes": "Official Origin product capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "origin",
+  "response": "Your total food spending for May reached $833.96. This figure reflects a healthy balance between large-scale grocery stocking and enjoying the local dining scene in Seattle.\nFood spending breakdown\nYour spending was divided across seven specific transactions in your groceries and dining categories:\nGroceries: $671.85 total. This includes your two \"Costco food runs\" totaling $501.23 ($286.41 on May 4 and $214.82 on May 19), plus essential stops at Safeway ($94.18) and Trader Joe's ($76.44).\nDrinks & dining: $162.11 total. You visited Tavolata ($88.70), Oddfellows Cafe ($42.16), and Ramen Danbo ($31.25).\nYour Costco trips accounted for approximately 60% of your total food budget. Utilizing bulk shopping for over half of your food needs is a strategic way to manage costs while ensuring your kitchen is well-stocked for the month.\nWould you like to see how your food spending in May compares to your typical monthly average? 📈\n\nResults aren't guaranteed. See disclosures.",
+  "taskId": "maria_food_spend_may"
+}

@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:22:54.169Z",
+  "latencyMs": 12740,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on your profile, a solo 401(k) is likely the stronger fit than a SEP IRA, unless you want the absolute simplest administration.\n\nWhy the solo 401(k) usually wins for someone in your situation\n\n- You are self-employed with no employees and no employer retirement plan.\n- Your income is irregular, and you prefer a system that separates taxes, business cash, and investing.\n- You already have a Traditional IRA ($22,400 at Vanguard), an HSA, and taxable investments.\n\nKey advantages of a solo 401(k)\n\n- Higher contribution potential at moderate income levels.\n  - A SEP IRA generally allows only an employer-style contribution based on net self-employment earnings.\n  - A solo 401(k) allows both:\n    - Employee salary-deferral contributions, plus\n    - Employer profit-sharing contributions.\n  - This means you can often contribute substantially more than a SEP IRA if your net consulting profit is not extremely high.\n\n- Roth option availability.\n  - Many solo 401(k) providers offer Roth employee contributions.\n  - SEP IRAs are generally pre-tax only.\n\n- Better control if you later want to do backdoor Roth contributions.\n  - Your existing Traditional IRA balance already creates pro-rata complications for a backdoor Roth strategy.\n  - A solo 401(k) can sometimes accept IRA rollovers, allowing you to move pre-tax IRA assets into the 401(k) and potentially eliminate most of the pro-rata issue.\n  - A SEP IRA would add another pre-tax IRA balance and generally make the pro-rata situation larger.\n\n- Loan feature (if offered by the plan).\n  - Some solo 401(k) plans permit participant loans.\n  - SEP IRAs do not.\n\nWhere a SEP IRA is better\n\n- Simplicity.\n  - Open account.\n  - Make employer contribution.\n  - Minimal paperwork.\n- If your net Schedule C profit ends up very high and you do not care about Roth features or future backdoor Roth planning, the contribution limits become less differentiated.\n\nYour current cash-flow picture\n\nAs of 2026-05-31:\n\n- Business checking: $7,420\n- Tax reserve: $18,500\n- Personal checking: $9,650\n- Traditional IRA: $22,400\n- HSA: $3,100\n- Brokerage: $48,000\n\nRecent consulting revenue visible in May:\n- $8,500\n- $4,200\n- $1,260\n- Total: $13,960\n\nBecause your income is uneven, I would not fund retirement contributions until:\n1. Quarterly tax reserves are comfortably covered.\n2. Business operating cash is set aside.\n3. You have a clearer estimate of annual net Schedule C profit.\n\nSuggested order of operations\n\n1. Maintain the tax reserve first.\n   - You paid $4,200 in estimated taxes in April.\n   - Keep projected quarterly taxes fully funded before increasing retirement contributions.\n\n2. Open a solo 401(k) now.\n   - Opening early gives you flexibility even if you wait until later in the year to contribute.\n   - Choose a provider with low fees and strong investment options.\n\n3. Estimate 2026 net Schedule C profit around Q3/Q4.\n   - At that point you can determine the optimal employee and employer contribution amounts.\n\n4. Consider whether you want future backdoor Roth flexibility.\n   - If yes, a solo 401(k) is especially attractive because of the potential ability to roll pre-tax IRA assets into the plan (subject to plan rules).\n\nMy recommendation given your circumstances:\n- Open a solo 401(k) rather than a SEP IRA.\n- Keep using the HSA.\n- Revisit contribution amounts after you project full-year consulting profit and tax liability.\n\nIf you can provide your expected 2026 net business profit (or your 2025 Schedule C net profit), I can estimate the actual dollar contribution difference between a SEP IRA and a solo 401(k).",
+  "taskId": "jordan_solo401k_or_sep",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1466,
+      "outputTokens": 889,
+      "totalTokens": 2355,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

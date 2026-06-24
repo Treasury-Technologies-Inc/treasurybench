@@ -1,0 +1,50 @@
+{
+  "taskId": "maria_rsu_tax_withholding",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the $42,000 RSU vest, the Microsoft employment context, and the brokerage balance to the advice provided."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Tax mechanics and withholding rules are accurate for 2026. The trading-window and insider-trading caveats are correctly framed."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. The concentration math is a helpful heuristic, though it correctly notes the uncertainty regarding existing holdings."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of caveats regarding trading windows, MNPI, and the need to verify specific plan details."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Federal supplemental-wage withholding is 22% for amounts below $1,000,000",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Washington has no state wage income tax",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Explicitly suggests checking for a Rule 10b5-1 trading plan, which is a sophisticated and highly relevant consideration for Microsoft employees."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly competent, personalized, and tax-aware response that correctly identifies the critical intersection of RSU vesting, tax withholding, and employer-specific trading restrictions."
+}

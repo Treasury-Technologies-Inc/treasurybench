@@ -1,0 +1,47 @@
+{
+  "taskId": "maria_idle_cash",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately uses the provided checking and savings balances and calculates a reasonable monthly burn based on the transaction history."
+    },
+    {
+      "id": "correctness",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Calculations are accurate. The 4.5% APY assumption is a reasonable market estimate for 2026, though not explicitly provided in the locked facts."
+    },
+    {
+      "id": "resolution",
+      "score": 32,
+      "maxScore": 35,
+      "rationale": "Provides a clear, actionable plan to optimize cash. It misses the opportunity to mention the Microsoft 401(k) match or ESPP as a higher-leverage use for the surplus cash compared to a brokerage account."
+    },
+    {
+      "id": "prudence",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding liquidity and the purpose of the emergency fund. Could have been slightly more explicit about the volatility of brokerage investments for short-term cash."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly link the surplus cash to the Microsoft 401(k) or ESPP opportunities, which are higher-leverage than a standard brokerage account for a Microsoft employee."
+  ],
+  "unexpectedValidInsights": [
+    "Calculated a specific 'runway' in months, which is a highly effective way to communicate emergency fund adequacy to a user."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly personalized, accurate, and actionable analysis of the user's cash position, effectively balancing liquidity needs with yield optimization."
+}

@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T04:51:57.395Z",
+  "latencyMs": 36490,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "monarch",
+  "response": "To capture all your Costco spending from June 1, 2025 through May 31, 2026, what should I include?\n\nInclude merchants named \"Costco\", \"Costco Gas\", and \"Costco Wholesale\" for the analysis\nInclude ONLY \"Costco Gas\" and \"Costco Wholesale\" (exclude any plain \"Costco\" entries)\nI’ll specify the exact Costco merchant names I want you to use",
+  "taskId": "maria_costco_optimization"
+}

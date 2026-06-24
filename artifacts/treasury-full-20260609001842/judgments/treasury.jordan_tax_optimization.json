@@ -1,0 +1,69 @@
+{
+  "taskId": "jordan_tax_optimization",
+  "provider": "treasury",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's marketplace health insurance and estimated tax payments, though it misses the specific client income transactions."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits for HSA, 401(k), and QBI thresholds. The distinction between business expenses and SE tax is handled correctly."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 35,
+      "rationale": "Provides actionable, high-value advice. The inclusion of the QBI phase-out and safe harbor methods is highly relevant to the persona's irregular income."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Generally prudent, though it includes some raw display-card syntax at the end which is a minor resolution/formatting defect."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 QBI deduction phase-out threshold for single filers is $201,750",
+      "tableKey": "irs_2026_qbi_199a_thresholds",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Solo 401(k) employee deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Solo 401(k) total annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA catch-up contribution is $1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response uses $204,100 as a QBI threshold, which is slightly off from the locked $201,750 figure, though it correctly identifies the phase-out concept."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the 72.5 cents/mile standard mileage rate for the travel-heavy client work."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the interaction between pre-tax retirement contributions and the preservation of the QBI deduction."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, factually grounded tax strategy response that correctly applies 2026 limits to the user's self-employed profile, though it contains minor formatting artifacts."
+}

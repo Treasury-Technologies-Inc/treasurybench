@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_home_office_rent",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response fails to acknowledge the user's specific context (Jordan is a self-employed UX consultant in Austin) and ignores the provided transaction data (e.g., the WeWork expense, which is a critical signal for home-office eligibility). It treats the user as a generic persona."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax principles are generally correct and align with 2026 rules. However, it misses the opportunity to clarify that the WeWork expense is a direct business expense, whereas home rent is a home-office deduction."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response is overly generic and ends with a prompt asking the user to provide information that is already present in the persona's seeded memories and transaction history."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response correctly emphasizes the 'exclusive use' requirement and the distinction between W-2 and self-employed status, which is prudent."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "After 2017, most W-2 employees can't deduct unreimbursed home office expenses.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response is accurate regarding general IRS rules but fails to leverage the provided persona data."
+  ],
+  "missedOpportunities": [
+    "Failed to mention that the user already has a WeWork expense ($350/month), which complicates the 'principal place of business' test for a home office.",
+    "Failed to use the user's actual rent ($2,100) or internet ($79.99) amounts to provide a concrete example of the potential deduction impact.",
+    "Failed to acknowledge the user's self-employed status which was explicitly provided in the persona memory."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate general tax information but fails to utilize the provided persona data, resulting in a generic answer that ignores the user's existing business-rent expenses."
+}

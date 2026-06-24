@@ -1,0 +1,52 @@
+{
+  "taskId": "patel_401k_contribution",
+  "provider": "origin",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the May payroll data to calculate annual contributions and identifies the specific accounts. It correctly identifies the dual-earner status."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The math for the 401(k) limit is correct. The HSA limit and the 2026 IRS deferral limit are accurate. The response correctly identifies the aggregate nature of the 401(k) limit."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear. It provides a specific path to close the $500 gap and highlights the HSA as a high-leverage alternative."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes necessary disclaimers about tax advice and employer match verification. It could have been slightly more cautious about assuming the user is a dual W-2 employee at both firms simultaneously, though it frames this as a confirmation question."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HSA limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "The response could have explicitly mentioned the Salesforce 6% match cap ($5,000) as a specific target to verify, given the persona context."
+  ],
+  "unexpectedValidInsights": [
+    "The response correctly identifies that employer matches do not count against the $24,500 elective deferral limit."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly accurate, grounded analysis of the user's 401(k) contribution pace relative to 2026 IRS limits, with actionable suggestions for optimizing tax-advantaged savings."
+}

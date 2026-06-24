@@ -1,0 +1,70 @@
+{
+  "taskId": "jordan_business_banking_perks",
+  "provider": "treasury",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds recommendations in the user's specific accounts (Ally, Bluevine, Fidelity HSA, Traditional IRA) and transaction history."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Most tax and contribution limits are correct for 2026. However, the QBI phase-out threshold cited ($153,000) is incorrect for 2026 single filers ($201,750)."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 35,
+      "rationale": "Strong actionable advice on Solo 401(k) and HSA. Missed the opportunity to explicitly link the business travel expenses on the Chase Ink to the 3x category, and the QBI explanation was slightly stale."
+    },
+    {
+      "id": "prudence",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "Good separation of business/personal and tax-reserve protection. The advice is safe and appropriately caveated."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Solo 401(k) employee deferral limit 2026 is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Solo 401(k) annual additions limit 2026 is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA self-only contribution limit 2026 is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3%",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "QBI phase-out threshold for single filers is $153,000",
+      "tableKey": "irs_2026_qbi_199a_thresholds",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The QBI phase-out threshold for single filers in 2026 is $201,750, not $153,000."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the 3x category for travel on the Chase Ink Business Preferred for the Atlanta trip.",
+    "Could have suggested the SEP IRA as a simpler alternative to the Solo 401(k) given the user's desire for 'low-admin' systems."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested rolling the Traditional IRA into a Solo 401(k) to clear the path for Backdoor Roth contributions, which is a high-leverage move for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a strong, personalized financial roadmap for a freelancer, correctly identifying key tax-advantaged accounts and business-banking structures, though it contains one stale tax threshold for QBI."
+}

@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:15:30.938Z",
+  "latencyMs": 6802,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the payroll information in your transactions:\n\n- Gross base pay shown on each paystub: $2,500 semi-monthly\n- Pay frequency: 24 paychecks per year\n- Annual base pay represented in the data: about $60,000 ($2,500 × 24)\n- Current 401(k) deferral rate: 8%\n- Current contribution per paycheck: $200\n- Current annual contribution pace: about $4,800 ($200 × 24)\n\nTo be on pace for the 2026 employee 401(k) deferral limit:\n\n- Assuming the 2026 employee limit is $24,000, you would need to contribute:\n  - $24,000 ÷ $60,000 = 40% of pay\n  - Per paycheck: about $1,000 ($24,000 ÷ 24)\n\nSo, if your compensation were only the $60,000 base pay reflected in these paystubs, a 40% contribution rate would put you on pace to hit the annual employee limit.\n\nImportant caveat:\n- You had a $42,000 Microsoft RSU vest in May. If Microsoft allows 401(k) contributions from RSU-related wages or other compensation beyond your base salary, the percentage required to reach the annual limit could be lower. The exact percentage depends on what compensation is eligible for deferrals under your plan and payroll elections.\n\nHow to think about the Microsoft match\n\nI don't have Microsoft's current match formula in your account data, so I don't want to guess. The key questions are:\n\n1. What percentage must you contribute to receive the full match?\n   - If your current 8% already exceeds that threshold, increasing to 40% would not increase the match; it would only increase your own tax-advantaged savings.\n\n2. Is the match calculated each paycheck or with a year-end true-up?\n   - If there is no true-up, contributing too aggressively early in the year can sometimes cause employees to miss match dollars later in the year after hitting the IRS limit.\n   - If there is a true-up, this concern is usually reduced.\n\n3. Does the plan match on RSU-related compensation or only regular pay?\n   - This can materially affect both your match and the contribution rate needed to reach the limit.\n\nExact next steps\n\n- Log into the Microsoft 401(k) plan site and check:\n  - Match formula\n  - Whether the plan has a true-up provision\n  - Which types of compensation are eligible for deferrals\n\n- If your goal is simply to max the employee limit based on the $60,000 annual base pay shown in your payroll data, set your contribution rate to approximately 40%.\n\n- If you expect additional RSU income throughout the year, calculate the percentage using expected total eligible compensation instead of just base salary. That will likely produce a lower required percentage.\n\nIf you can provide the Microsoft match formula (or a screenshot from the plan summary), I can calculate the optimal contribution rate that maximizes both the match and your progress toward the annual limit.",
+  "taskId": "maria_401k_percent_to_limit",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1525,
+      "outputTokens": 810,
+      "totalTokens": 2335,
+      "reasoningTokens": 128,
+      "cachedInputTokens": 1152
+    }
+  }
+}

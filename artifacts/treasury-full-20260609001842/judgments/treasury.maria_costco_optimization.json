@@ -1,0 +1,59 @@
+{
+  "taskId": "maria_costco_optimization",
+  "provider": "treasury",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response uses the visible Costco transactions well, though it slightly miscalculates the total warehouse spend by excluding one transaction from the summary math."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response incorrectly states the Costco Anywhere Visa earns 4% on gas (it earns 4% on gas, but the locked fact specifies 5% on gas/EV charging up to $7,000). It also misidentifies the CSP's earning rate at Costco as 1x (it is 1x, but the response implies it's a general rule for wholesale clubs, which is correct)."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Clear, actionable advice with specific breakeven math. The inclusion of the 'price tag code' trick is a nice value-add."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding annualization and the recommendation to check renewal dates."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Costco Anywhere Visa by Citi earns 4% on gas",
+      "tableKey": "costco_2026_citi_visa",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "Costco Executive Membership gives 2% annual reward on qualifying purchases",
+      "tableKey": "costco_2026_executive_membership",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Costco membership fees are $65 for Gold Star and $130 for Executive",
+      "tableKey": "costco_2026_membership_fees",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly cites the Costco Anywhere Visa gas reward rate as 4% instead of the 5% specified in the locked facts."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the $1,250 annual reward cap for the Executive membership."
+  ],
+  "unexpectedValidInsights": [
+    "Included the 'price tag code' system (e.g., .97 for clearance, asterisk for discontinued items) which is a practical, actionable tip for warehouse shoppers."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized response that correctly identifies the breakeven point for the Executive membership, though it contains a minor factual error regarding the Costco Visa gas reward rate."
+}

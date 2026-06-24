@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:15:24.134Z",
+  "latencyMs": 6049,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the data provided, you're currently contributing 8% of pay to your Microsoft 401(k).\n\nWhat I can see:\n- Gross pay shown on each semi-monthly paystub: $2,500\n- Employee 401(k) contribution: $200 per paycheck (8%)\n- Two paychecks per month → about $5,000 gross/month\n- Annualized gross pay from these paystubs: about $60,000\n- Annualized employee 401(k) contribution at 8%: about $4,800/year\n\nWhether that's \"enough\" depends on your goal, but there are a few useful benchmarks:\n\n1. Retirement-savings benchmark\n- A common rule of thumb is saving 10%–15% of gross income for retirement, including employer contributions.\n- At your current paystub level, 15% would be about $9,000/year.\n- Your own contribution is about $4,800/year, so whether you're at or above 15% depends heavily on Microsoft's employer match and any additional retirement savings you make elsewhere.\n\n2. IRS maximum\n- For 2026, the employee 401(k) elective-deferral limit is substantially higher than your current contribution level.\n- At roughly $4,800/year, you're well below the annual limit, so you have room to increase contributions if cash flow allows.\n\n3. Your cash-flow position\nFrom the balances provided:\n- Checking: $18,450\n- Savings: $5,250\n- Brokerage: $62,300\n- 401(k): $48,500\n\nYou also recently received:\n- $42,000 Microsoft RSU vesting into your brokerage on 2026-05-10\n\nGiven your current assets:\n- Cash (checking + savings) = about $23,700\n- Investments (401(k) + brokerage) = about $110,800\n\nThat suggests you already have substantial savings relative to your monthly spending.\n\nPotential opportunity\n- Increasing from 8% to 10% would add about:\n  - $100/month\n  - $1,200/year\n- Increasing from 8% to 15% would add about:\n  - $350/month\n  - $4,200/year\n\nBecause 401(k) contributions reduce current taxable income, the reduction in take-home pay would be smaller than the contribution increase.\n\nMost important missing information\nI can't determine whether you're contributing \"enough\" without knowing Microsoft's matching formula. The first priority is usually to contribute at least enough to capture the full employer match; otherwise you're leaving compensation on the table.\n\nMy recommendation based on the numbers available:\n- Verify you're receiving the full Microsoft 401(k) match.\n- If you are already getting the full match and your goal is to accelerate retirement savings, increasing from 8% to 10%–15% is reasonable given:\n  - your $23,700 cash balance,\n  - your $62,300 taxable brokerage balance,\n  - and the recent $42,000 RSU vest.\n\nExact next step:\n- Log into Microsoft's benefits portal and check:\n  - current employee contribution rate,\n  - employer match formula,\n  - year-to-date employee contributions.\n- If you're not yet maximizing the match, raise contributions to the match threshold immediately.\n- If you are already maximizing the match, consider increasing by 1–2 percentage points now and reassessing after two pay cycles.\n\nIf you can tell me Microsoft's current match formula or your retirement age target, I can estimate a more precise contribution rate.",
+  "taskId": "maria_401k_contribution",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1505,
+      "outputTokens": 721,
+      "totalTokens": 2226,
+      "reasoningTokens": 0,
+      "cachedInputTokens": 1152
+    }
+  }
+}

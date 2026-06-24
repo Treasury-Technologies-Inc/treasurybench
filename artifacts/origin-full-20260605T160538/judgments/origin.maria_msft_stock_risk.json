@@ -1,0 +1,50 @@
+{
+  "taskId": "maria_msft_stock_risk",
+  "provider": "origin",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response acknowledges the RSU vest but fails to use the specific $42,000 amount from the transaction data, opting for generic language. It also incorrectly claims the user has $0 in accounts, ignoring the visible balances in the provided CSV."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The tax mechanics are generally correct, but the claim that California taxes capital gains as ordinary income is a hallucination for this persona (Maria lives in Seattle, WA, which has no state income tax on wages or capital gains, though it has a specific capital gains excise tax). The response also fails to mention the 22% supplemental withholding rate."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The advice is educational but lacks the 'high-leverage personalized play' requested. It fails to provide a concrete action plan or connect the vest to the user's specific financial situation beyond generic diversification advice."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate disclaimers regarding tax advice and the risks of concentration."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "California taxes capital gains as ordinary income regardless of holding period.",
+      "tableKey": "california_2026_capital_gains",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly states the user has $0 in accounts, which contradicts the provided balance CSV.",
+    "The response mentions California tax rules for a user who lives in Seattle, WA, which is irrelevant and potentially confusing."
+  ],
+  "missedOpportunities": [
+    "Failed to use the $42,000 transaction amount to calculate potential tax impact or diversification strategy.",
+    "Failed to mention the 22% federal supplemental withholding rate for RSU vests.",
+    "Failed to acknowledge the user's actual account balances (e.g., $62,300 in the brokerage) to provide a meaningful concentration analysis."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides sound educational advice but fails to ground its recommendations in the user's specific transaction data and account balances, and includes irrelevant tax information for a Washington resident."
+}

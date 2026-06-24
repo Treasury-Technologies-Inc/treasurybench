@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:23:17.567Z",
+  "latencyMs": 9268,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "As of 2026-05-31, you appear to be in a relatively strong position for estimated taxes:\n\nWhat I see\n- Tax reserve savings: $18,500\n- Estimated tax payment already made: $4,200 on 2026-04-15 (likely your Q1 payment)\n- Consulting income recorded in May:\n  - $8,500\n  - $4,200\n  - $1,260\n  - Total: $13,960\n- Business expenses recorded in May (coworking, software, travel, office supplies): about $1,862\n- Approximate May business profit before health insurance, retirement deductions, and other tax adjustments: about $12,098\n\nNext estimated-tax deadline\n- Q2 2026 estimated taxes are generally due June 15, 2026.\n\nWhat to do now\n\nOption 1: Use the safe-harbor approach (lowest audit/penalty risk)\n- Determine your 2025 total federal tax liability from your 2025 Form 1040.\n- If your 2025 AGI was:\n  - $150,000 or less: pay in 100% of that tax liability across 2026 estimates.\n  - Above $150,000: pay in 110% of that tax liability.\n- Subtract the $4,200 already paid.\n- Divide the remaining required amount among the remaining payment dates.\n\nThis approach is usually the most \"tax-safe cashflow\" method for someone with irregular consulting income.\n\nOption 2: Pay based on actual 2026 earnings\nUsing only the data available here:\n- Approximate May Schedule C profit: $12,098.\n- A common rough planning range for a self-employed consultant is reserving 25%–35% of profit for federal taxes (actual results depend on total annual income, deductions, ACA premium credits, retirement contributions, etc.).\n- On $12,098 of profit, that implies roughly:\n  - 25% reserve: about $3,025\n  - 30% reserve: about $3,629\n  - 35% reserve: about $4,234\n\nGiven that:\n- You already paid $4,200 in April.\n- You currently hold $18,500 in your tax reserve account.\n\nYour reserve appears more than adequate based on the income shown here.\n\nRecommended next step\n1. Pull your 2025 Form 1040 and find your total tax liability.\n2. Compare:\n   - Safe-harbor amount required for 2026, versus\n   - What you've already paid ($4,200).\n3. Schedule the June 15 payment from the Ally Tax Reserve account.\n4. Continue routing a fixed percentage of each client payment into the tax reserve account before moving money to personal spending.\n\nBecause your income is uneven and you prefer separate buckets, a practical system would be:\n- Business checking: receive client payments.\n- Tax reserve: automatically transfer 30% of each payment.\n- Personal checking: transfer your owner's draw after taxes and business expenses are covered.\n\nIf you can provide your 2025 total federal tax liability (or your 2025 AGI and tax due), I can estimate a specific June 15 payment amount using the IRS safe-harbor rules.",
+  "taskId": "jordan_quarterly_estimated_taxes",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1465,
+      "outputTokens": 890,
+      "totalTokens": 2355,
+      "reasoningTokens": 192,
+      "cachedInputTokens": 1152
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:17:32.471Z",
+  "latencyMs": 8501,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "openai:chat-latest",
+  "response": "Your mortgage-related payment is $3,850/month (including principal, interest, taxes, and insurance), which is one of the largest recurring expenses in your cash flow.\n\nBased on the information available, I would focus on the lowest-risk opportunities first:\n\n1. Review the escrow breakdown line by line\n- Ask Rocket Mortgage for the most recent escrow analysis.\n- Confirm how much of the $3,850 is:\n  - Principal and interest\n  - Property taxes\n  - Homeowners insurance\n  - PMI/mortgage insurance (if any)\n\nWhy it matters:\n- Insurance and taxes often change more than the loan payment itself.\n- If homeowners insurance has crept up, shopping quotes can sometimes save hundreds per year with very little effort.\n\n2. Shop homeowners insurance\nYou currently have a separate State Farm home insurance payment of $154/month ($1,848/year).\n\nCheck:\n- Whether this policy is the one tied to the mortgage.\n- Whether comparable coverage from other carriers is available.\n\nPotential impact:\n- Savings of 10–25% are common when re-shopping.\n- On a $1,848 annual premium, that could mean roughly $185–$460 per year.\n\n3. Verify you're not paying PMI\nYour mortgage balance is approximately $462,000.\n\nIf PMI is part of the mortgage payment:\n- Check your current loan-to-value (LTV).\n- If home appreciation and principal paydown have brought you below 80% LTV, you may be able to request PMI removal.\n- If the lender requires it, a new appraisal may be needed.\n\nPotential impact:\n- PMI often ranges from roughly $100–$400+ per month depending on the loan.\n\n4. Review your property-tax assessment\nDenver-area property taxes can rise with assessed values.\n\nCheck:\n- The county assessor's valuation.\n- Whether there is an appeal window.\n- Whether comparable homes support a lower valuation.\n\nPotential impact:\n- Highly variable, but successful appeals can lower annual tax costs for multiple years.\n\n5. Evaluate refinancing only if the numbers clearly work\nI would not refinance automatically.\n\nBefore considering it, determine:\n- Current interest rate\n- Remaining loan term\n- Estimated closing costs\n\nA refinance is generally worth exploring only if:\n- The new rate is meaningfully lower, and\n- You expect to stay in the home long enough to recover closing costs.\n\nExample:\n- If a refinance saved $200/month but cost $6,000 in fees, break-even would be about 30 months.\n\n6. Avoid draining investments or emergency savings to prepay the mortgage\nYou currently have:\n- $28,750 in savings\n- $14,680 in checking\n- $54,000 in taxable investments\n\nGiven your toddler, daycare expenses ($1,650/month plus occasional backup care), and dual-income household, preserving liquidity is usually safer than making a large lump-sum mortgage payment unless you have a very high interest rate.\n\n7. Check for employer relocation or mortgage-discount programs\nSince Priya works at Salesforce and Daniel works at UCHealth, it's worth reviewing benefits portals for:\n- Homeownership assistance\n- Legal-plan discounts for property-tax appeals\n- Preferred insurance programs\n\nHighest-priority checklist:\n1. Get Rocket Mortgage's escrow breakdown.\n2. Confirm whether PMI is being charged.\n3. Re-shop homeowners insurance.\n4. Review your latest property-tax assessment.\n5. Compare your current mortgage rate against available refinance rates before taking any action.\n\nIf you can provide the mortgage interest rate, original purchase price, and whether PMI is currently included, I can estimate the largest realistic savings opportunity.",
+  "taskId": "patel_mortgage_escrow_review",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1801,
+      "outputTokens": 843,
+      "totalTokens": 2644,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1664
+    }
+  }
+}

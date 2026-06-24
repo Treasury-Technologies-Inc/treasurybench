@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-09T07:31:43.608Z",
+  "latencyMs": 6281,
+  "mode": "product_capture",
+  "notes": "Official Treasury product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "treasury",
+  "response": "In May 2026, you spent a total of `$5,202.72` on consumption. This total excludes `$2,300.00` in non-consumption movements like credit card payments and HSA contributions.\n\n### May Spending Breakdown\nYour spending was heavily driven by your living and business expenses:\n\n*   **Rent**: `$2,100.00` — Your largest single category.\n*   **Business Travel**: `$1,115.08` — Your top variable expense for the month.\n*   **Health Insurance**: `$415.00` — Consistent with your marketplace plan.\n*   **Groceries**: `$365.47`\n*   **Business Rent**: `$350.00` — (e.g., coworking or office space).\n\nOther notable expenses included `Software` (`$210.83`) and `Office Supplies` (`$186.40`), which are common for your UX consulting work.\n\nGiven that a significant portion of your May spending (`$1,862.31`) was in categories likely related to your UX consulting business (Travel, Software, Business Rent, and Supplies), it's a great time to ensure these are tracked for your Schedule C filing.\n\n[Displayed spending summary card]\nCategories by total: 2026-05-01 to 2026-05-31.\nConsumption spend: $5,202.72. Excluded likely non-consumption movements: $2,300.\nTop consumption rows: Rent $2,100; Business Travel $1,115.08 (3 transactions); Health Insurance $415; Groceries $365.47 (2 transactions); Business Rent $350; Software $210.83 (5 transactions); Office Supplies $186.40; Dining $184.95 (2 transactions).",
+  "taskId": "jordan_spend_may_total"
+}

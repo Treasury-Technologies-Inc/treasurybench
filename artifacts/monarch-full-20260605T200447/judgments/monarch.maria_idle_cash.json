@@ -1,0 +1,42 @@
+{
+  "taskId": "maria_idle_cash",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The assistant correctly identified the total cash balance and attempted to estimate monthly burn, though it failed to account for the significant rent expense ($2,350) in its 'average monthly expenses' calculation, leading to a severely understated burn rate."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The math regarding the emergency fund coverage is flawed because the assistant ignored the $2,350 monthly rent in its expense calculation, which is clearly visible in the transaction data."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 35,
+      "rationale": "The assistant provided a logical framework for sizing the emergency fund but missed the opportunity to suggest specific high-yield vehicles (like MMFs or T-bills) for the excess cash, which is a key part of the task intent."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The assistant correctly caveated that the expense data was likely understated and encouraged the user to verify their own spending, which is a safe and responsible approach."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The assistant calculated average monthly expenses as $641.47, which ignores the $2,350 monthly rent payment visible in the transaction history."
+  ],
+  "missedOpportunities": [
+    "Failed to identify the specific yield opportunity for the $62,300 in the brokerage account or the excess cash in checking.",
+    "Did not suggest a tiered cash strategy (e.g., keeping 1-2 months in checking, 3-6 in HYSA, and investing excess)."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant provided a helpful framework for emergency fund sizing but significantly underestimated the user's monthly burn rate by ignoring rent, leading to an overly optimistic assessment of the user's cash position."
+}

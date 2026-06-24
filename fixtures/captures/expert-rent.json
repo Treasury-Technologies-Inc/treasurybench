@@ -1,0 +1,9 @@
+{
+  "taskId": "maria_save_on_rent",
+  "personaId": "maria_seattle_v0",
+  "provider": "fixture_expert",
+  "mode": "product_capture",
+  "capturedAt": "2026-05-31T00:00:00.000Z",
+  "latencyMs": 12000,
+  "response": "Your rent is $2,350/month, or $28,200/year, for a single-person household in Seattle with about $60,000 gross income. The non-obvious thing to check first is Seattle MFTE/MHA housing. Verify the current AMI table, participating buildings, unit availability, and exact eligibility before relying on it, but if you qualify it could save much more than generic tips like moving neighborhoods. I would search current MFTE units, compare capped 1BR rents against your current rent, then decide whether applying is worth the move friction. You could also evaluate Bilt for no-fee rent rewards, but do not pay a processing fee that exceeds the points value."
+}

@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_home_office_deduction",
+  "provider": "openai:chat-latest",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links specific transactions (WeWork, Adobe, Delta, etc.) to their tax categories and correctly identifies the user's specific financial situation."
+    },
+    {
+      "id": "correctness",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies that health insurance and HSA contributions are not Schedule C expenses. It correctly flags the 50% meal rule and the need for documentation."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps. It could have been slightly more explicit about the 2026 self-employment tax mechanics, but it covers the core requirements well."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of audit risks, specifically regarding the home office deduction and the commingling of personal expenses on business cards."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "business meals are generally only partially deductible",
+      "tableKey": "irs_2026_business_meals_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "self-employed health insurance premiums are an above-the-line deduction",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 2026 standard mileage rate (72.5 cents) if the user had car travel, though the user only had Uber/Air travel this month."
+  ],
+  "unexpectedValidInsights": [
+    "Strong emphasis on the bookkeeping risk of using a business card for personal H-E-B and Costco purchases, which aligns with the persona's preference for clean financial separation."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly grounded and prudent response that correctly separates business expenses from personal ones and provides clear, actionable tax-strategy guidance for a self-employed consultant."
+}

@@ -1,0 +1,42 @@
+{
+  "taskId": "maria_life_insurance_need",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's specific financial data (checking, savings, brokerage, 401k), employment context (Microsoft), and household status (single, renter) to tailor the advice."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is factually sound regarding insurance prioritization. It correctly identifies the lack of need for life insurance without dependents and correctly prioritizes disability insurance. It misses the opportunity to explicitly reference the Microsoft-specific HSA seed or 401k match details provided in the locked facts."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable next steps for each insurance category. It could have been improved by quantifying the income replacement gap more precisely using the provided salary data."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats about verifying employer benefits and checking policy details. It avoids over-promising on specific coverage amounts."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly mention the Microsoft 2026 HSA seed ($1,000) or the 401(k) match (50% up to the IRS limit) as specific benefits to verify for the user's financial plan.",
+    "Could have provided a more concrete calculation of the income replacement gap based on the $60,000 annual base salary implied by the $2,500 semi-monthly pay."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the recent RSU vest as a factor increasing the need for umbrella liability coverage due to the jump in net worth."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides excellent, personalized insurance prioritization for a single professional, correctly identifying disability insurance as the primary need over life insurance, though it could have leveraged specific Microsoft benefit facts more directly."
+}

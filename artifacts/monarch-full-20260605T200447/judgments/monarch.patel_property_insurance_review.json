@@ -1,0 +1,45 @@
+{
+  "taskId": "patel_property_insurance_review",
+  "provider": "monarch",
+  "totalScore": 25,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "The response completely ignores the visible State Farm transactions and the persona's specific household context (Denver, toddler, mortgage), providing a generic template instead."
+    },
+    {
+      "id": "correctness",
+      "score": 10,
+      "maxScore": 30,
+      "rationale": "The advice provided is generally accurate but generic. It fails to incorporate the specific insurance payments visible in the user's data."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response is incomplete (cuts off mid-sentence) and fails to provide actionable next steps based on the user's actual financial situation."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "The response includes basic caveats but lacks the necessary depth regarding the user's specific liability and coverage needs as a homeowner with a family."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response is truncated and incomplete, ending mid-sentence."
+  ],
+  "missedOpportunities": [
+    "Failed to reference the specific State Farm home and auto insurance payments ($154 and $218).",
+    "Failed to suggest an umbrella policy review, which is highly relevant for a dual-income household with a mortgage and assets.",
+    "Failed to tailor advice to the Denver location or the specific risks associated with the user's household profile."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [
+    "The response is incomplete, which could lead to a user acting on partial information."
+  ],
+  "summary": "The response is a generic, incomplete template that fails to utilize the provided user data or address the specific insurance review task."
+}

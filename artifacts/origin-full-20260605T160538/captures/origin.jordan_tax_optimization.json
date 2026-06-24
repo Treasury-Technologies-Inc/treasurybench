@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-07T17:24:29.774Z",
+  "latencyMs": 33745,
+  "mode": "product_capture",
+  "notes": "Official Origin product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "origin",
+  "response": "As a self-employed UX consultant with uneven income and no employer benefits, your tax situation has several high-leverage opportunities that W-2 employees simply don't have access to. Since tax matters involve specialized expertise, I'll explain these concepts educationally. Per CFP Board standards, consult a qualified tax advisor or CPA for advice specific to your situation before making decisions.\nHere's a prioritized framework for 2026:\nRetirement contributions (largest deduction available)\nThe Solo 401(k) is likely your single highest-value move. As both employer and employee, you can contribute up to $72,000 total in 2026 — combining your employee elective deferral of $24,500 plus an employer profit-sharing contribution of up to 25% of your net self-employment income. This is significantly more powerful than a SEP-IRA for most consultants earning above ~$100K, because the employee elective deferral portion fills faster.\nA SEP-IRA is simpler to administer (no annual Form 5500 filing until assets exceed $250K) and allows up to 25% of net self-employment compensation, capped at $72,000. If you value low administrative overhead — which aligns with your preference for low-admin systems — the SEP-IRA may be the right trade-off unless your income supports maximizing the full Solo 401(k) advantage",
+  "taskId": "jordan_tax_optimization"
+}

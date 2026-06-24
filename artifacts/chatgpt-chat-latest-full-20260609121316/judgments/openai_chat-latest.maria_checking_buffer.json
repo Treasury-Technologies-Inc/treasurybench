@@ -1,0 +1,47 @@
+{
+  "taskId": "maria_checking_buffer",
+  "provider": "openai:chat-latest",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the provided transaction data to estimate monthly burn and identifies the excess cash in the checking account based on the user's specific balances."
+    },
+    {
+      "id": "correctness",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "The math is accurate and the advice aligns with the provided data. The response correctly identifies that Washington has no state income tax, which simplifies the decision between bank interest and Treasuries."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps. It could have been slightly more expert by explicitly mentioning the specific Treasury money market fund tickers or the mechanics of a T-bill ladder, but the advice is highly practical."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding liquidity, the distinction between emergency funds and excess cash, and the impact of the recent RSU vest on overall financial planning."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Washington has no state income tax",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Microsoft 401(k) match or Mega Backdoor Roth potential as a higher-leverage use for the excess cash than just T-bills, given the user's high income and RSU vest."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that the May travel expenses were non-recurring and should be excluded from the monthly burn estimate."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly grounded and practical response that correctly identifies excess cash and provides a clear, safe, and actionable plan for optimizing liquidity."
+}

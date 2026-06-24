@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:18:27.347Z",
+  "latencyMs": 8010,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the balances and May cash flow, your checking balance does look higher than necessary if your goal is to keep cash working without adding much administrative burden.\n\nWhat you have now\n- Checking: $14,680\n- Marcus savings: $28,750\n- Total bank cash: $43,430\n\nApproximate monthly core spending from the transactions shown\n- Mortgage: $3,850\n- Childcare: about $1,870\n- Utilities/internet: about $283\n- Insurance: about $372\n- Auto loan: $485\n- Groceries: about $1,024\n- Household/dining/subscriptions/fitness: about $687\n- 529 contribution: $300\n- HSA contribution: $400\n\nEstimated monthly outflow: roughly $9,000–$10,000\n\nIncome\n- Net payroll deposits in May: $16,650\n\nA reasonable checking target\nGiven your steady dual W-2 income and predictable bills, a checking balance of roughly:\n- 1 month of expenses: about $10,000\n- Plus a modest overdraft buffer: $1,000–$2,000\n\nThat suggests a checking target around $10,000–$12,000.\n\nWhat I would move\nWith $14,680 currently in checking:\n- Keep about $10,000–$12,000 in checking.\n- Move approximately $3,000–$5,000 out of checking.\n\nWhere to move it\nPriority order based on your stated goals:\n\n1. High-yield savings (simplest)\n- Move $3,000–$5,000 to Marcus.\n- No additional risk or administration.\n- Keeps emergency reserves readily available.\n\n2. Taxable brokerage (if your emergency fund is already sufficient)\nYou already have:\n- Marcus savings: $28,750\n- HSA: $6,800\n- Taxable brokerage: $54,000\n\nIf you consider the Marcus account your emergency fund, you already have nearly 3 months of estimated spending in cash alone. In that case, some or all of the excess checking cash could be invested through Vanguard instead of sitting in cash.\n\nA bigger opportunity than the checking balance\nThe larger cash-allocation question is actually the combined $43,430 in bank cash.\n\nUsing your estimated spending of roughly $9,000–$10,000/month:\n- 3 months of expenses ≈ $27,000–$30,000\n- 6 months of expenses ≈ $54,000–$60,000\n\nSo:\n- If your target emergency fund is 3 months, you may have roughly $13,000–$16,000 more cash than necessary across checking and savings.\n- If your target is 6 months, your current cash position is not excessive.\n\nRecommended next step\n- Decide whether your household wants a 3-month or 6-month emergency-fund target.\n- Keep about $10,000–$12,000 in checking.\n- Move $3,000–$5,000 from checking immediately.\n- If your emergency-fund target is closer to 3 months, consider gradually investing some of the excess savings balance as well rather than only moving cash from checking to Marcus.",
+  "taskId": "patel_idle_cash",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1797,
+      "outputTokens": 876,
+      "totalTokens": 2673,
+      "reasoningTokens": 192,
+      "cachedInputTokens": 1664
+    }
+  }
+}

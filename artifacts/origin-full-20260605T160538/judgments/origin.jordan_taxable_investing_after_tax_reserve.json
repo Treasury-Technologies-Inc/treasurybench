@@ -1,0 +1,60 @@
+{
+  "taskId": "jordan_taxable_investing_after_tax_reserve",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively grounds advice in the user's specific account structure (Ally Tax Reserve, Bluevine, etc.) and persona (self-employed UX consultant). It missed using the exact dollar amounts for the tax reserve or income, which would have strengthened the prioritization."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 tax and contribution limits (e.g., $72,000 for defined contribution plans). The explanation of self-employment tax mechanics is accurate."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, logical order of operations. It correctly prioritizes tax reserves and emergency buffers over taxable investing, which is the core intent of the task."
+    },
+    {
+      "id": "prudence",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Strong emphasis on the risks of self-employed income volatility and the importance of tax-advantaged accounts. It appropriately caveats the advice with professional consultation disclaimers."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "self-employment tax is roughly 15.3% on net earnings",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Solo 401(k) total contribution limit is $72,000 in 2026",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "SEP IRA limit is 25% of net self-employment income, max $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions Q2 estimated taxes are due June 16, 2026; the locked fact states June 15, 2026."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly reference the specific balances in the Ally Tax Reserve ($18,500) vs. the recent income spikes to calculate if the reserve is currently sufficient.",
+    "Failed to mention the specific impact of the Chase Ink Business Preferred or Amex BBP on cashflow management."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the distinction between Schedule C business expenses and the self-employed health insurance deduction."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-structured, prudent response that correctly prioritizes tax and emergency reserves for a self-employed individual while providing accurate 2026 tax-advantaged contribution limits."
+}

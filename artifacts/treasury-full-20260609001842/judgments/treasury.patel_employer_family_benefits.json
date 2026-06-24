@@ -1,0 +1,62 @@
+{
+  "taskId": "patel_employer_family_benefits",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds recommendations in the user's May transactions and employer context."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Correctly identifies 2026 limits for HSA and DCFSA, though it missed the opportunity to explicitly note the plan-level nature of the Salesforce wellness reimbursement."
+    },
+    {
+      "id": "resolution",
+      "score": 32,
+      "maxScore": 35,
+      "rationale": "Provides high-leverage, actionable steps. The prioritization is logical and tied to the user's specific spending patterns."
+    },
+    {
+      "id": "prudence",
+      "score": 14,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding plan-level availability versus user-specific enrollment."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 DCFSA limit is $7,500 for a family filing jointly",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HSA contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Salesforce matches 100% of the first 6% of base salary, capped at $5,000",
+      "tableKey": "salesforce_2026_401k_match",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Salesforce offers a $100 monthly wellness reimbursement ($1,200 annually)",
+      "tableKey": "salesforce_2026_wellness_reimbursement",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly mention the potential for the Child and Dependent Care Tax Credit (CDCTC) as a separate benefit from the DCFSA."
+  ],
+  "unexpectedValidInsights": [
+    "Calculated the tax savings impact of the DCFSA contribution based on the user's 24% tax bracket."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides highly relevant, personalized, and factually accurate advice regarding the user's employer benefits, correctly applying 2026 tax limits and plan-level details."
+}

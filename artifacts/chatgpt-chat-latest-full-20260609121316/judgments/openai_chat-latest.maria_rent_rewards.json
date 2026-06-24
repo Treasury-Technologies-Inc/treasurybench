@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_rent_rewards",
+  "provider": "openai:chat-latest",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the rent amount and annualizes it, but fails to incorporate the Bilt 2.0 product lineup (Blue/Obsidian/Palladium) as specified in the benchmark facts, instead relying on outdated 'Bilt Mastercard' terminology."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The math is correct, but the product knowledge is stale. It refers to the 'Bilt Mastercard' rather than the Bilt 2.0 card lineup (Blue, Obsidian, Palladium) and ignores the tiered rent-earning mechanics introduced in the 2026 context."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear, providing a good comparison between fee-based and fee-free routes. It misses the opportunity to discuss the specific Bilt 2.0 tiers which would have provided a more precise recommendation."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response appropriately warns against fee-based payment services and suggests verifying property-specific payment methods."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Bilt Mastercard allows earning points on rent payments without a transaction fee",
+      "tableKey": "bilt_2026_rent_mechanics",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "Bilt rent rewards are generally 1 point per dollar on rent",
+      "tableKey": "bilt_2026_rent_mechanics",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response uses outdated 'Bilt Mastercard' terminology instead of the 2026 Bilt 2.0 lineup (Blue, Obsidian, Palladium).",
+    "The response incorrectly describes rent earning as a flat 1x multiplier, ignoring the 2026 tiered multiplier mechanics."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the Bilt 2.0 card lineup (Blue, Obsidian, Palladium).",
+    "Failed to explain the tiered rent-earning mechanics tied to everyday spend."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides sound financial logic regarding rent fees but relies on stale Bilt product information and ignores the 2026 tiered earning mechanics."
+}

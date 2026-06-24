@@ -1,0 +1,49 @@
+{
+  "taskId": "maria_mfte_eligibility_check",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's specific salary, RSU vest, and freelance income to analyze housing eligibility, correctly identifying the impact of non-salary income on AMI thresholds."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the nuance of RSU income in housing eligibility. It uses reasonable estimates for Seattle AMI and rent caps, though it relies on general knowledge rather than specific 2026 program tables."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps including calculating annual income and contacting property managers. It frames the savings potential well against the current $2,350 rent."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Includes necessary caveats about income definitions and program variability, though it could have been more explicit about the difference between gross and net income for program purposes."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Seattle's King County AMI for 2026 is approximately $130,000 for a 4-person household",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response uses general estimates for AMI and rent caps rather than citing specific 2026 Seattle Office of Housing tables, which is acceptable given the complexity but slightly less precise than an expert-tier response."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 2026 WA HB 1217 rent cap as a secondary protection against current rent increases while searching for restricted units."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that RSU vesting schedules can be averaged over 2-3 years by some programs, which is a high-value insight for a tech employee."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized analysis that correctly identifies the primary barrier to income-restricted housing for this user (RSU income) and provides a clear, actionable workflow for verification."
+}

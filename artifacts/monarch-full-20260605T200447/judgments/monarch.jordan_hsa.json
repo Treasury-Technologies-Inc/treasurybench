@@ -1,0 +1,59 @@
+{
+  "taskId": "jordan_hsa",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response fails to use the specific $300 May HSA contribution or the $3,100 balance visible in the data. It provides generic advice rather than grounding the answer in the user's actual financial situation."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies HSA eligibility rules and the triple tax benefit. However, it fails to provide the 2026 self-only HSA limit ($4,400), instead telling the user to look it up, which is a missed opportunity for a high-leverage, factual answer."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is clear and structured, but lacks the specific, actionable quantification requested by the task. It does not address the user's specific self-employed context regarding the HSA contribution limit for 2026."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes good caveats regarding eligibility, Medicare, and overcontribution penalties. It correctly emphasizes that eligibility is month-by-month."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA catch-up contribution for age 55+ is $1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Non-qualified HSA withdrawals before 65 are taxed as ordinary income plus 20% penalty",
+      "tableKey": "hsa_nonqualified_withdrawal_penalty",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response failed to provide the specific 2026 HSA limit ($4,400) despite it being a locked benchmark fact."
+  ],
+  "missedOpportunities": [
+    "Failed to use the $3,100 current HSA balance or the $300 May contribution in the advice.",
+    "Failed to state the 2026 self-only HSA limit of $4,400.",
+    "Did not explicitly confirm the user's self-only status based on the household memory."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, safe, and well-structured general HSA advice but fails to ground the answer in the user's specific account data or provide the requested 2026 contribution limits."
+}

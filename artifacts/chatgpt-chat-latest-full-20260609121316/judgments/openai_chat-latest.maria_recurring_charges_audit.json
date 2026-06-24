@@ -1,0 +1,39 @@
+{
+  "taskId": "maria_recurring_charges_audit",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies all recurring charges from the provided transaction data and correctly separates them into the requested buckets without inventing data."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The math is correct. However, the response missed the opportunity to mention the Microsoft wellness reimbursement for ClassPass, which was a key planted opportunity in the persona context."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response is clear and follows the formatting instructions well. It missed the expert-level play of connecting the ClassPass charge to the Microsoft wellness reimbursement benefit."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 5,
+      "rationale": "The response lacks any caveats regarding the potential for employer reimbursement or the need to verify subscription terms."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "The response failed to identify that ClassPass is an eligible expense for the Microsoft $1,500 annual wellness reimbursement, which is a high-leverage personalized play for this user."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant correctly categorized the recurring charges and performed the requested math, but missed the opportunity to provide personalized value by linking the ClassPass subscription to the user's Microsoft wellness reimbursement benefit."
+}

@@ -1,0 +1,49 @@
+{
+  "taskId": "maria_side_income_tax",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response ignores the specific $1,200 freelance income transaction visible in the data, opting for generic advice instead of calculating a concrete tax reserve based on the user's actual income."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The tax advice is generally correct, but it fails to leverage the specific 2026 tax facts provided in the benchmark (e.g., SE tax mechanics) and remains too high-level."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response is helpful but generic. It fails to provide the 'expert' level analysis requested, such as calculating a specific reserve amount from the $1,200 deposit or referencing the safe-harbor rules explicitly."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response is appropriately cautious, emphasizing that it is providing general guidance and suggesting the user share more data for a tailored plan."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "In the US, you generally need to pay quarterly estimates if you’ll owe $1,000+ in tax that isn’t already covered by withholding.",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the $1,000 threshold for estimated taxes but misses the opportunity to explain the safe-harbor rules (90% of current year or 100%/110% of prior year) which are highly relevant for a high-earner at Microsoft."
+  ],
+  "missedOpportunities": [
+    "Failed to use the $1,200 freelance income amount to provide a concrete dollar-based tax reserve example.",
+    "Did not mention the specific 15.3% self-employment tax rate or the 92.35% net earnings base.",
+    "Missed the opportunity to link the freelance income to the user's existing Microsoft W-2 withholding, which is a high-leverage way to manage the tax liability without quarterly payments."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides sound, safe, and generic freelance tax advice but fails to leverage the specific financial data and persona context provided to offer a high-leverage, personalized plan."
+}

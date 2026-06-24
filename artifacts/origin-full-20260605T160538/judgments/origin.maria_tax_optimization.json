@@ -1,0 +1,64 @@
+{
+  "taskId": "maria_tax_optimization",
+  "provider": "origin",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the visible transaction data and account balances to ground its analysis."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits (e.g., $24,500 401k limit). However, it misses the HSA opportunity entirely despite the persona having Microsoft benefits."
+    },
+    {
+      "id": "resolution",
+      "score": 22,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for 401k and freelance taxes. It fails to prioritize the HSA or mention the Microsoft-specific HSA seed."
+    },
+    {
+      "id": "prudence",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Includes appropriate disclaimers and correctly identifies the need for professional tax advice."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA contribution phaseout for single filers is $153,000 to $168,000",
+      "tableKey": "irs_2026_roth_single_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 standard deduction for single filers is $16,100",
+      "tableKey": "irs_2026_standard_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 federal withholding rate on supplemental wages is 22% up to $1,000,000",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not mention HSA eligibility or the Microsoft $1,000 annual HSA seed.",
+    "Did not discuss the Microsoft ESPP 10% discount opportunity.",
+    "Did not mention the Microsoft wellness reimbursement for ClassPass expenses."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the Q2 estimated tax deadline of June 15, 2026."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, well-grounded tax advice for 2026 but misses significant personalized opportunities related to Microsoft's specific employee benefits."
+}

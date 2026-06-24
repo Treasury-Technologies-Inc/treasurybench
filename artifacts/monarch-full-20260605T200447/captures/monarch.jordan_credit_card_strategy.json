@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T19:16:36.195Z",
+  "latencyMs": 42156,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "monarch",
+  "response": "I can’t see your cards’ issuers, networks, or rewards setups from your Monarch data, so I can’t auto‑build a precise, card‑by‑card routing plan yet.\n\nWe can still get you there if you’re up for sharing a bit more detail. Copy/paste this and fill it in for each card you actually use:\n\nCard #1\nIssuer & card name:\nNetwork (Visa/Mastercard/Amex/Discover):\nPersonal or business:\nKey rewards: (e.g., 4x dining, 3x groceries, 3x travel, 1x everything else)\nNotable perks (if any): (e.g., travel protections, software credits, office‑supply bonus, etc.)\nCard #2\nIssuer & card name:\nNetwork:\nPersonal or business:\nKey rewards:\nNotable perks:\n\n…keep going for each card you actually use.\n\nOnce you send that, I’ll turn it into a simple routing table tailored to your setup, like:\n\nSpending Category | Primary Card | Why | Backup Card\n------------------|-------------|-----|------------\nSoftware/SaaS     | …           | …   | …\nBusiness travel   | …           | …   | …\nGroceries         | …           | …   | …\nDining            | …           | …   | …\nOffice supplies   | …           | …   | …\n\nIf you’d rather not list specific cards, I can give you general rules instead (like “use your highest‑multiplier travel card for flights/hotels, grocery card for supermarkets, etc.”), it’ll just be less precise.\n\nWhich route do you want to take?",
+  "taskId": "jordan_credit_card_strategy"
+}

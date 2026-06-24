@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:24:16.014Z",
+  "latencyMs": 7404,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Given your situation as a self-employed UX consultant with no employer benefits, disability insurance would generally come before professional liability (errors & omissions) insurance.\n\nWhy disability insurance is usually the higher priority\n\n- Your ability to earn consulting income is your primary asset.\n- In May 2026, you received about $13,960 of client income ($8,500 + $4,200 + $1,260). Even if that month was above average, it shows that a few months without the ability to work could have a much larger financial impact than many other risks.\n- You live alone and do not have employer-provided short-term or long-term disability coverage.\n- If an illness or injury prevented you from working for 6–12 months, your income could drop to zero while rent, health insurance, phone, internet, and other bills continue.\n\nLooking at your current finances:\n\n- Cash:\n  - Capital One checking: $9,650\n  - Bluevine business checking: $7,420\n  - Tax reserve: $18,500\n- Investments:\n  - IRA: $22,400\n  - HSA: $3,100\n  - Brokerage: $48,000\n  - Crypto: $12,500\n\nYou do have meaningful reserves, but much of that money serves other purposes:\n- The $18,500 tax reserve should largely remain earmarked for taxes.\n- Retirement accounts are not ideal emergency funding sources.\n- Brokerage assets provide a backstop, but a prolonged disability could force liquidation of investments.\n\nWhy professional liability still matters\n\nProfessional liability (E&O) insurance is often important for consultants because:\n- Clients can allege mistakes, missed deadlines, or financial harm.\n- Many contracts require coverage.\n- Legal defense costs can be significant even if you ultimately prevail.\n\nHowever:\n- The probability of a lawsuit in a given year is typically lower than the probability that your income would be disrupted by a health issue.\n- A disability affects every future client engagement; a liability claim is usually tied to a specific project.\n\nA practical decision rule\n\nProfessional liability may move ahead of disability if:\n- A current or prospective client contract requires it.\n- You're working on projects where a design, research, or implementation error could create substantial client losses.\n- You are signing indemnification clauses that increase your exposure.\n\nOtherwise:\n- Disability first.\n- Professional liability second.\n\nSuggested order for you\n\n1. Maintain your existing cash-bucket system (business, tax reserve, personal cash).\n2. Obtain individual long-term disability quotes.\n   - Look for \"own occupation\" coverage if affordable.\n   - Review elimination periods (often 90 days) and benefit periods.\n3. Then obtain professional liability/E&O coverage sized to your client work.\n   - Many solo consultants start with limits such as $1 million per claim / $1 million aggregate or similar, depending on client requirements.\n4. Review client contracts to see whether E&O is already required.\n\nIf you can share your approximate annual consulting income and whether any client contracts currently require E&O insurance, I can help estimate how much disability coverage and liability coverage would be appropriate.",
+  "taskId": "jordan_disability_liability_need",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1459,
+      "outputTokens": 707,
+      "totalTokens": 2166,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

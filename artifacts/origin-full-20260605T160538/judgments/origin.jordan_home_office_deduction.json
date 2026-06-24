@@ -1,0 +1,58 @@
+{
+  "taskId": "jordan_home_office_deduction",
+  "provider": "origin",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response mentions the correct accounts (Bluevine, Amex) but fails to use the specific transaction amounts or categories (e.g., the actual coworking or software costs) to provide a concrete, personalized summary of the month's deductible activity."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the 2026 home office simplified deduction and the 50% meal rule. However, it provides a stale 2025 mileage rate (67 cents) instead of the 2026 rate (72.5 cents)."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable, but it lacks the precision of calculating the actual deductible impact for the user's specific May transactions, which would have been more helpful for a freelancer with uneven income."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding recordkeeping and the distinction between Schedule C and above-the-line deductions (like health insurance)."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 IRS standard mileage rate is 72.5 cents",
+      "tableKey": "irs_2026_standard_mileage_rate",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Simplified home-office deduction is $5 per square foot up to 300 sq ft",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Business meals are 50% deductible",
+      "tableKey": "irs_2026_business_meals_deduction",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response cites 67 cents as the 2025 mileage rate, which is correct, but fails to provide the 2026 rate (72.5 cents) as the primary benchmark for the current year."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate the specific deductible amount for the May transactions (e.g., Adobe, Figma, Webflow, AWS, Google Workspace, and the WeWork rent).",
+    "Did not explicitly link the Spectrum and Visible bills to the business-use percentage deduction strategy."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides sound, conservative tax advice but misses the opportunity to ground the guidance in the user's specific May transaction data and uses a stale 2025 mileage rate."
+}

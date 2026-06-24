@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_life_insurance_need",
+  "provider": "origin",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies income and major expenses but fails to use the actual account balances provided in the CSV (e.g., 401k, brokerage, savings), claiming they show as $0 when they are clearly visible."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The DIME method is a standard educational framework, but the response fails to incorporate the specific employer-provided group life/disability benefits mentioned in the persona memories."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is clear but generic. It misses the opportunity to suggest verifying the specific group life coverage amounts at UCHealth and Salesforce before purchasing individual term policies."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Appropriately suggests consulting a professional and avoids whole life insurance, but the failure to acknowledge existing assets (which are visible) weakens the prudence of the needs-based estimate."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The 2026 401(k) employee elective deferral limit is $24,500.",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly claims account balances are $0, despite the provided CSV containing specific balances for 401k, HSA, and brokerage accounts."
+  ],
+  "missedOpportunities": [
+    "Failed to mention verifying employer-provided group life and disability insurance at UCHealth and Salesforce.",
+    "Failed to use the visible $142,000 (Salesforce 401k), $98,000 (UCHealth 401k), and $54,000 (Brokerage) to offset the life insurance need calculation.",
+    "Did not explicitly suggest term life as the primary vehicle over whole life."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a helpful educational framework but fails to utilize the provided account data, leading to an inaccurate assessment of the user's current financial position and missing key employer-benefit verification steps."
+}

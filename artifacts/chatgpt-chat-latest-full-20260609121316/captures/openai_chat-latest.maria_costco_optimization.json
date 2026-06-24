@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:14:15.314Z",
+  "latencyMs": 8634,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on your recent transactions, Costco is one of your larger recurring spending categories:\n\n- Costco groceries in May: $501.23\n- Costco gas in May: $58.23\n- Total Costco spend in May: about $559\n\nAnnualized, that's roughly $6,700 of Costco-related spending if this month is typical.\n\nA few Costco-specific opportunities stand out:\n\n1. Check whether you have a Costco Executive Membership\n\n- Executive Membership pays 2% back on eligible Costco purchases (up to the program cap).\n- On roughly $6,000/year of Costco warehouse purchases, 2% is about $120/year.\n- The Executive upgrade only makes sense if the extra rewards exceed the additional membership fee versus a standard membership.\n\nExact next step:\n- Look at your Costco account or renewal notice and confirm whether you're Gold Star or Executive.\n- If you're Gold Star and your Costco spending is consistently near current levels, run the upgrade math before your next renewal.\n\n2. Your Chase Sapphire Preferred is probably not the best card for Costco purchases\n\nCostco only accepts Visa credit cards in-store, and the Chase Sapphire Preferred generally does not provide a warehouse-club bonus category.\n\nAt your spending level:\n\n- Approximate Costco warehouse spend: ~$6,000/year\n- If you're earning only 1 point per dollar now, a 2% cash-back Visa would generate roughly an additional $60/year.\n- A 3% cash-back warehouse-club card would be worth roughly $120/year more than a 1% card.\n\nExact next step:\n- Check the rewards posting on your Sapphire account for your Costco transactions.\n- If they're earning only the base rate, consider using a higher-reward Visa specifically for Costco purchases.\n\n3. Gas may deserve its own card\n\nYour Costco gas spending is modest right now (~$700/year annualized), so optimizing gas is lower priority than optimizing warehouse purchases.\n\nEven moving from 1% to 4%-5% gas rewards would only add about:\n- $20-$30/year at your current gas spending level.\n\n4. Don't over-optimize unless your Costco spending is higher than this month shows\n\nThe biggest opportunities in your overall finances are likely elsewhere:\n- A recent $42,000 Microsoft RSU vest hit your brokerage.\n- Your 401(k) contribution rate is currently 8% (about $400/month based on the payroll data).\n\nThose decisions can move hundreds or thousands of dollars per year, while Costco optimization is more likely worth roughly $60-$150/year unless your actual Costco spending is substantially higher than May.\n\nMy estimate: if you're not already using an Executive Membership and a Costco-friendly rewards Visa, the realistic upside is around $100-$250 per year combined. That's worthwhile, but smaller than optimizing retirement contributions or a concentrated Microsoft stock position.",
+  "taskId": "maria_costco_optimization",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1506,
+      "outputTokens": 736,
+      "totalTokens": 2242,
+      "reasoningTokens": 128,
+      "cachedInputTokens": 1152
+    }
+  }
+}

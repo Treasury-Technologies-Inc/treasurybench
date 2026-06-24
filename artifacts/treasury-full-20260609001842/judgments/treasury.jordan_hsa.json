@@ -1,0 +1,69 @@
+{
+  "taskId": "jordan_hsa",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links advice to the user's Fidelity HSA balance, marketplace premium, and cash reserves. It misses a explicit separation of business vs. personal accounting for the HSA contribution, though it correctly identifies it as an above-the-line deduction."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 HSA limits and eligibility criteria. The mention of the 400% FPL cliff is a helpful, though slightly generic, context for marketplace subsidies."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. The advice to lump-sum fund based on tax reserve status is a high-leverage, personalized play for a freelancer with irregular income."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Strong emphasis on verifying HDHP status and the distinction between plan-level eligibility and individual enrollment."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is 4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA family contribution limit is 8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA catch-up contribution is 1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HDHP minimum deductible is 1,700 self-only",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HDHP out-of-pocket maximum is 8,500 self-only",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The mention of a 400% FPL cliff is a general ACA concept; while helpful, the specific dollar figure cited (62,600) is an estimate and not a locked benchmark fact."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly noted that HSA contributions are not a Schedule C business expense, as this is a common point of confusion for freelancers."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to time HSA contributions based on quarterly tax liability cycles is a highly relevant, personalized strategy for a freelancer with irregular income."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, personalized, and actionable advice for a self-employed individual, correctly identifying the tax-advantaged nature of the HSA and the importance of verifying HDHP status."
+}

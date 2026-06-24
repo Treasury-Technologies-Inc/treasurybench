@@ -1,0 +1,43 @@
+{
+  "taskId": "maria_mfte_eligibility_check",
+  "provider": "monarch",
+  "totalScore": 55,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response acknowledges the user's rent but fails to use the visible income data (Microsoft payroll + freelance) to provide a concrete eligibility assessment, instead asking the user to provide it again."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The advice is factually safe but lacks the specific Seattle MFTE/MHA program context required by the task, such as mentioning the specific income-to-rent-cap relationship or the fact that these programs are building-specific."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response provides a good workflow but fails to perform the requested comparison against the $2,350 rent, which was easily calculable from the visible transactions."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding waitlists and income changes, though it misses the opportunity to warn about the specific documentation requirements for RSU/freelance income verification."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response is generic and does not leverage the provided income data to perform the requested eligibility check."
+  ],
+  "missedOpportunities": [
+    "Failed to use the visible $2,350 rent to frame the savings potential.",
+    "Failed to use the visible income data (Microsoft payroll + freelance) to provide a preliminary eligibility estimate.",
+    "Did not explicitly mention the Seattle MFTE/MHA program by name as the primary vehicle for these savings."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a helpful general workflow for checking income-restricted housing but fails to utilize the specific financial data provided in the prompt to offer a personalized assessment."
+}

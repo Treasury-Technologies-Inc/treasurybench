@@ -1,0 +1,42 @@
+{
+  "taskId": "maria_idle_cash",
+  "provider": "openai:chat-latest",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately uses the provided balances and transaction data to calculate monthly burn and current cash position."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the cash position and provides sound, conservative financial logic without violating any locked facts."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 35,
+      "rationale": "The response provides a clear, actionable plan. It misses the opportunity to explicitly suggest specific high-yield vehicles (like MMFs or T-bills) beyond a generic HYSA, but correctly identifies the concentration risk of the RSU vest as a higher-leverage insight."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is prudent, but could have been more explicit about the liquidity/settlement timing of moving funds from a brokerage account versus a savings account."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly mention specific high-yield cash instruments like Treasury Bills or Money Market Funds, which are relevant for the 'excess' cash portion.",
+    "Could have explicitly linked the Microsoft RSU concentration risk to the potential for a tax-efficient rebalancing strategy."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that the recent $42,000 RSU vest is a more significant financial event than the idle cash balance, providing a higher-leverage insight than just cash management."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, grounded response that correctly assesses the user's cash position and provides actionable, personalized advice while correctly identifying the RSU concentration as a higher-priority concern."
+}

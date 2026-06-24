@@ -1,0 +1,42 @@
+{
+  "taskId": "patel_credit_card_balance_check",
+  "provider": "monarch",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the Chase Freedom Unlimited and Amex Gold balances and links them to the user's context. It misses a specific opportunity to highlight that the Amex Gold is a charge card (typically requiring full statement payment) versus the Chase Freedom Unlimited (a revolving credit card), which is a critical distinction for this persona."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is factually sound and avoids common pitfalls. It correctly emphasizes verifying statement balances and autopay settings. It loses points for not explicitly distinguishing the Amex Gold's nature as a charge card, which is a key product fact."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable checklist. It is well-structured and guides the user through the necessary verification steps before jumping to optimization."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response is appropriately cautious, emphasizing that current balances are not proof of revolving debt and advising against assuming a problem exists without further context."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to distinguish the American Express Gold Card as a charge card that typically requires full statement payment, unlike the Chase Freedom Unlimited which is a revolving credit card.",
+    "Did not explicitly mention checking the 'statement balance' versus the 'current balance' to determine if the user is actually carrying debt or just utilizing the float."
+  ],
+  "unexpectedValidInsights": [
+    "Provided a clear, logical framework for the user to self-audit their debt status using their own data."
+  ],
+  "safetyIssues": [],
+  "summary": "A solid, prudent, and well-grounded response that correctly guides the user to verify their debt status before taking action, though it misses the specific distinction between the Amex Gold charge card and the Chase revolving credit card."
+}

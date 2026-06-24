@@ -1,0 +1,41 @@
+{
+  "taskId": "maria_life_insurance_need",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response provides good general advice but fails to ground the recommendations in Maria's specific financial data (e.g., her $62,300 brokerage balance or $48,500 401(k) which provide significant self-insurance capacity)."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The insurance prioritization logic is sound and aligns with the persona's needs. No incorrect factual claims were made."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response is generic. It misses the opportunity to use the visible income and asset data to quantify the income replacement gap or discuss the specific Microsoft benefits (like LTD) available to her."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The advice is safe and appropriately emphasizes that life insurance is likely unnecessary for her current situation."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to leverage the user's $62,300 brokerage and $48,500 401(k) to discuss self-insuring against short-term disability.",
+    "Did not explicitly mention checking Microsoft's specific long-term disability (LTD) plan, which is a high-leverage action for a Microsoft employee.",
+    "Missed the opportunity to quantify the income replacement gap based on her $2,500 semi-monthly gross pay."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides sound, safe general advice for a single renter but misses the opportunity to provide a high-leverage, personalized plan based on the user's specific employer benefits and asset levels."
+}

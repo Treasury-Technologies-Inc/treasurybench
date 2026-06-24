@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_recurring_charges_audit",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies all recurring charges from the provided CSV data, correctly categorizes them, and avoids inventing user data."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "The response correctly identifies the recurring charges and provides accurate totals. However, it cites the stale $5,000 dependent care FSA limit instead of the 2026 $7,500 limit specified in the locked facts."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response is well-structured, separates subscriptions from bills, and directly answers the user's question."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 5,
+      "rationale": "The response failed to flag the stale $5,000 limit as a potential plan-specific detail, instead presenting it as a definitive rule."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The maximum annual contribution for a dependent care FSA is $5,000.",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response cites $5,000 as the dependent care FSA limit, which is stale for 2026 (the correct limit is $7,500 per the locked benchmark facts)."
+  ],
+  "missedOpportunities": [
+    "Did not mention the Salesforce wellness reimbursement ($100/month) which could potentially offset the Peloton cost."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that the Care.com charge was a one-off expense rather than a recurring subscription."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a clear and accurate audit of recurring charges but includes a stale 2026 tax limit regarding the dependent care FSA."
+}

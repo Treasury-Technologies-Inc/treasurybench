@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:13:36.842Z",
+  "latencyMs": 6803,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Here are three savings opportunities that are directly supported by your account data and can be verified this week.\n\n1. Move excess checking cash into your high-yield savings account\n- Account signal:\n  - Chase Total Checking: $18,450 balance (2026-05-31)\n  - Ally Online Savings: $5,250 balance (2026-05-31)\n  - Ally paid $17.06 of interest on $5,250 during May.\n- Why it stands out:\n  - Your checking balance is unusually high relative to your recurring monthly bills. Rent is $2,350/month and recent card spending is well below the cash sitting in checking.\n  - Based on the May interest deposit, Ally is currently yielding roughly 3.9% APY (approximate).\n- Estimated impact:\n  - Moving $10,000 from checking to Ally could earn about:\n    - ~$32/month\n    - ~$390/year\n- Exact next step:\n  - Transfer an amount you're comfortable keeping out of checking (for example, $10,000) from Chase to Ally and verify the projected interest in Ally's rate disclosure.\n\n2. Review or cancel Adobe\n- Transaction:\n  - 2026-05-14: Adobe, -$59.99/month\n- Why it stands out:\n  - At nearly $60/month, this is one of your largest recurring subscriptions.\n  - Many people keep Adobe plans active even during periods of low usage.\n- Estimated impact:\n  - If canceled entirely:\n    - ~$60/month\n    - ~$720/year\n  - Even downgrading to a cheaper plan could save several hundred dollars annually.\n- Exact next step:\n  - Log into your Adobe account this week, check your current plan and usage, and compare it with lower-cost options before the next billing cycle.\n\n3. Review or pause ClassPass\n- Transaction:\n  - 2026-05-16: ClassPass, -$89.00/month\n- Why it stands out:\n  - It is your single largest recurring lifestyle subscription.\n  - The savings are immediate if you are not consistently using all of your credits.\n- Estimated impact:\n  - If canceled:\n    - $89/month\n    - $1,068/year\n- Exact next step:\n  - Open the ClassPass app, review the last 30–60 days of bookings, and calculate your effective cost per class. If usage is low, downgrade or pause before the next renewal.\n\nPotential annual savings:\n- Move $10,000 to Ally: about $390/year\n- Cancel Adobe: about $720/year\n- Cancel ClassPass: about $1,068/year\n\nTotal potential impact: about $2,178/year, assuming you can reduce or eliminate the two subscriptions and keep the extra cash in the high-yield savings account.",
+  "taskId": "maria_where_wasting_money",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1534,
+      "outputTokens": 733,
+      "totalTokens": 2267,
+      "reasoningTokens": 128,
+      "cachedInputTokens": 1152
+    }
+  }
+}

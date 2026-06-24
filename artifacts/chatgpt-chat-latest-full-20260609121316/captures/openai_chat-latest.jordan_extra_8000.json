@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:22:34.104Z",
+  "latencyMs": 6818,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Given your stated preference to separate business, tax, emergency, and personal buckets before investing, I would prioritize the $8,000 in this order.\n\nCurrent snapshot (2026-05-31)\n\n- Personal checking: $9,650\n- Business checking: $7,420\n- Tax reserve: $18,500\n- Credit-card balances:\n  - Chase Ink Business Preferred: $5,210\n  - Amex Blue Business Plus: $1,185\n  - Total: $6,395\n- HSA: $3,100\n- Traditional IRA: $22,400\n- Brokerage: $48,000\n\nRecommended order for the extra $8,000\n\n1. Eliminate the credit-card balances first: $6,395\n\nWhy:\n- If these balances are revolving (not paid in full by the statement due date), the effective return from paying them off is likely far higher than what you'd earn investing or saving.\n- Even if you normally pay in full, clearing them immediately simplifies cash flow during uneven consulting income periods.\n\nImpact:\n- Use $6,395 to bring both cards to $0.\n- Remaining extra cash: about $1,605.\n\n2. Put the remaining ~$1,605 into the tax reserve unless you've already projected 2026 taxes carefully\n\nWhy:\n- As a self-employed Schedule C filer, underfunding taxes creates the most expensive surprises.\n- You brought in about $13,960 of business income in May alone and have already made a $4,200 estimated payment in April. Without seeing year-to-date profit, I can't verify whether $18,500 is more than enough or just adequate.\n- Additional tax reserves improve safety without adding administrative complexity.\n\nResult:\n- Tax reserve would rise from $18,500 to roughly $20,105.\n\nWhen to do something different\n\nIf all of the following are true:\n\n- Both credit cards are already paid in full every month and not carrying interest,\n- Your estimated-tax calculations show the current $18,500 reserve is comfortably ahead of schedule,\n- You have a separate emergency fund target already met,\n\nthen I would direct the remaining $1,605 toward one of these:\n\n- HSA contributions (if you remain HSA-eligible and have not maxed the year's contribution limit)\n- Traditional IRA contributions (subject to annual limits and deductibility rules)\n- Taxable brokerage investing for long-term growth\n\nMy practical recommendation for your situation:\n\n- $6,395 → pay off Chase and Amex balances completely.\n- $1,605 → add to Ally Tax Reserve Savings.\n- Revisit tax projections before making additional brokerage or crypto investments.\n\nThat sequence best matches your goal of tax-safe cash flow and low-admin finances while dealing with irregular 1099 income.",
+  "taskId": "jordan_extra_8000",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1469,
+      "outputTokens": 675,
+      "totalTokens": 2144,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

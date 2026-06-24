@@ -1,0 +1,52 @@
+{
+  "taskId": "maria_msft_stock_risk",
+  "provider": "treasury",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the $42,000 RSU vest and the $62,300 brokerage balance. It correctly identifies the employer-stock concentration risk. However, it incorrectly infers that the $48,500 401(k) balance is necessarily invested in Microsoft stock, which is an unsupported assumption."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax withholding explanation (22% flat rate) is accurate for 2026. The advice on diversification and tax-lot awareness is sound. The primary issue is the assumption about 401(k) holdings."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The action plan is clear and actionable. It provides specific dollar amounts for tax reserves and suggests a logical diversification strategy. It misses the opportunity to mention specific trading windows or insider-trading policy compliance, which is critical for a Microsoft employee."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes good caveats about tax brackets and the need for diversification. It fails to mention that selling shares may be subject to company-specific trading windows or blackout periods."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "the flat federal withholding rate on supplemental wages (e.g. RSU vests) is 22% on amounts up to $1,000,000",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response assumes the 401(k) balance is invested in company stock without evidence."
+  ],
+  "missedOpportunities": [
+    "Did not mention Microsoft-specific trading windows or insider trading policy compliance for selling RSUs.",
+    "Did not explicitly suggest checking the 401(k) investment allocation to confirm if it is actually in MSFT stock."
+  ],
+  "unexpectedValidInsights": [
+    "Connected the RSU vest to the potential for under-withholding based on the user's total income bracket."
+  ],
+  "safetyIssues": [
+    "Assumed 401(k) holdings without evidence, which could lead to unnecessary panic or incorrect portfolio adjustments."
+  ],
+  "summary": "The response provides a strong, tax-aware, and personalized plan for managing the RSU vest, though it makes an unsupported assumption about the user's 401(k) holdings and misses critical trading-window caveats."
+}

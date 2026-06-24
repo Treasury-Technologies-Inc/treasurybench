@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_where_wasting_money",
+  "provider": "openai:chat-latest",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds its analysis in the provided transaction and balance data, correctly identifying the specific accounts and merchant categories."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Financial logic is sound and aligns with the persona's context. It correctly identifies the potential for interest leakage and tax-advantaged account optimization."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The response provides actionable, high-leverage advice. It correctly prioritizes credit card interest and client travel reimbursement as the most significant potential value leaks."
+    },
+    {
+      "id": "prudence",
+      "score": 14,
+      "maxScore": 15,
+      "rationale": "The response is appropriately cautious, using assumptions to frame its analysis and explicitly advising the user to verify eligibility and policies."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response does not explicitly cite the 2026 IRS limits, which is acceptable as it focuses on the logic of the opportunity rather than the specific limit values."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the self-employed health insurance deduction (Schedule 1) as a way to optimize the marketplace premium payment, rather than just calling it 'reasonable'."
+  ],
+  "unexpectedValidInsights": [
+    "The distinction between 'set and forget' software subscriptions and the potential for quarterly audits is a high-value, actionable insight for a freelancer."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized financial analysis that correctly identifies high-impact value leaks in credit card interest and client travel reimbursement while maintaining appropriate professional caution."
+}

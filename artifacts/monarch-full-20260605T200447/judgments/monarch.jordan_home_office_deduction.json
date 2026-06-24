@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_home_office_deduction",
+  "provider": "monarch",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response provides good general advice but fails to ground the recommendations in the specific transactions visible in the CSV (e.g., mentioning the specific Adobe, Figma, or WeWork transactions as examples of deductible items)."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax advice is accurate and aligns with IRS rules for Schedule C filers. It correctly distinguishes between business expenses and personal items."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response is clear and actionable, providing a structured monthly routine. It misses the opportunity to specifically address the user's irregular income and tax-reserve needs mentioned in the persona."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate disclaimers and emphasizes the importance of documentation and separation of business/personal finances."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Business meals are generally 50% deductible.",
+      "tableKey": "irs_2026_business_meals_deduction",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly link the user's specific transactions (e.g., WeWork, Adobe, Figma) to the deduction categories.",
+    "Did not address the user's specific need for tax-safe cashflow management given their irregular 1099 income.",
+    "Failed to mention that health insurance premiums are an above-the-line deduction rather than a Schedule C expense."
+  ],
+  "unexpectedValidInsights": [
+    "Provided a clear, actionable monthly routine for recordkeeping that is well-tailored to a freelancer."
+  ],
+  "safetyIssues": [],
+  "summary": "A solid, safe, and accurate guide to business deductions for a freelancer, though it lacks specific grounding in the user's provided transaction data."
+}

@@ -1,0 +1,41 @@
+{
+  "taskId": "jordan_scorp_or_llc",
+  "provider": "monarch",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the visible business income and expense data to frame the current business stage. It misses using the exact $1,260 Stripe payment amount, though it correctly identifies the total income."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on LLC vs. S-corp is accurate and avoids common pitfalls. It correctly identifies that S-corp election is a tax-optimization strategy rather than a liability one."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable next steps. It is slightly generic in the final recommendation, but appropriately cautious given the irregular income history."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes necessary caveats about the early, lumpy nature of the income and the administrative burden of an S-corp."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response is cut off at the end, which is a minor resolution defect."
+  ],
+  "missedOpportunities": [
+    "The response could have explicitly mentioned the need to consult a CPA specifically for the 'reasonable salary' calculation, which is a critical component of S-corp tax strategy."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "A solid, grounded assessment that correctly identifies the user's business as being in an early, lumpy stage and appropriately prioritizes understanding LLC basics over immediate S-corp election."
+}

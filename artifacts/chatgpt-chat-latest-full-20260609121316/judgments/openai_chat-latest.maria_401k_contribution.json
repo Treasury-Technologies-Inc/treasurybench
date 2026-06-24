@@ -1,0 +1,46 @@
+{
+  "taskId": "maria_401k_contribution",
+  "provider": "openai:chat-latest",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the visible payroll and asset data. It misses the opportunity to explicitly link the Microsoft-specific 401(k) match fact provided in the benchmark context, instead treating it as an unknown."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The 2026 IRS limit is correct. The math is sound. However, it fails to leverage the provided Microsoft-specific plan facts (50% match up to the IRS limit) which were available in the benchmark context."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable, but it remains generic regarding the employer match. It should have identified the Microsoft match structure as a known plan-level fact rather than asking the user to find it."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good caveats regarding cash flow and the need for verification. It correctly avoids over-committing to specific contribution increases without knowing the user's full financial picture."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "For 2026, the employee 401(k) elective-deferral limit is $24,500.",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to utilize the provided Microsoft 401(k) match fact (50% match up to the IRS limit) to provide a more precise recommendation.",
+    "Did not mention the availability of the Mega Backdoor Roth within the Microsoft plan context, which is a high-leverage play for this persona given the high brokerage balance and RSU income."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides solid, grounded advice but misses the opportunity to use specific Microsoft plan-level facts provided in the benchmark context, resulting in a less personalized and less powerful recommendation."
+}

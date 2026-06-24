@@ -1,0 +1,41 @@
+{
+  "taskId": "maria_recurring_charges_audit",
+  "provider": "monarch",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 30,
+      "maxScore": 40,
+      "rationale": "The response correctly identifies the recurring charges from the transactions. However, it incorrectly states that there were no rent charges in the filtered categories, despite the transaction list showing a $2,350 rent payment to Cascade Apartments on May 1st."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "The math for the subscription bucket ($171.99) is correct. The utility bucket is miscalculated by excluding Xfinity from the total, despite the prompt asking for a total for each bucket. The response also fails to mention the Microsoft wellness reimbursement opportunity for ClassPass, which was a key planted opportunity."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response provides the requested breakdown but includes unnecessary raw display-card syntax at the end, which detracts from the professional presentation."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response is safe and does not make unsupported financial claims."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response incorrectly claims there were no rent charges in the May 2026 data, while the transaction list clearly shows a $2,350 rent payment to Cascade Apartments."
+  ],
+  "missedOpportunities": [
+    "Failed to identify the Microsoft $1,500 annual wellness reimbursement benefit, which makes the ClassPass subscription a reimbursable expense rather than just a candidate for cancellation."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant correctly identified the recurring charges and performed the requested math, but failed to leverage the Microsoft wellness reimbursement benefit and incorrectly stated that no rent charges were present in the data."
+}

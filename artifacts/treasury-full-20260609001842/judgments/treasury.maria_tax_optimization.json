@@ -1,0 +1,71 @@
+{
+  "taskId": "maria_tax_optimization",
+  "provider": "treasury",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the Microsoft payroll data and freelance income to ground its recommendations."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits (e.g., $24,500 deferral, $72,000 total). The Solo 401(k) advice is technically sound, though it misses the HSA opportunity."
+    },
+    {
+      "id": "resolution",
+      "score": 24,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable checklist. The prioritization of the 401(k) match and estimated tax is excellent."
+    },
+    {
+      "id": "prudence",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Includes necessary caveats about tax brackets and withholding, though it could have been more explicit about verifying HDHP eligibility for HSA purposes."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 section 415(c) defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 single-filer 35% tax bracket starts at $256,225",
+      "tableKey": "irs_2026_income_tax_brackets",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 flat federal withholding rate on supplemental wages is 22%",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 estimated tax safe harbor is 110% of prior-year tax for AGI > $150,000",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the Microsoft 401(k) match structure but assumes the user is not currently on track without explicitly noting that the user's 8% contribution on $2,500 gross is $200, which is 8% of the gross, but the match is 50% of the deferral, not 50% of the first $24,500."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the HSA triple-tax advantage, despite the user having an Ally savings account and potential eligibility for a Microsoft-sponsored HDHP."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the Solo 401(k) as a strategy to shelter freelance income without triggering the pro-rata rule for potential future Backdoor Roth IRAs."
+  ],
+  "safetyIssues": [
+    "None; the advice is conservative and emphasizes verification."
+  ],
+  "summary": "A strong, factually accurate tax optimization plan that correctly leverages 2026 limits and provides actionable steps for a W-2/freelance hybrid income profile."
+}

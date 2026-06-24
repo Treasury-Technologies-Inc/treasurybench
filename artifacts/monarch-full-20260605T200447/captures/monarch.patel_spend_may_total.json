@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T06:05:31.380Z",
+  "latencyMs": 22516,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "monarch",
+  "response": "You spent $9,256.08 total in May 2026, and most of that went to a few big areas:\n\nMortgage: $3,850.00\nChildcare: $1,870.00\nGroceries: $1,023.54\nAuto Loan: $485.00\nInsurance: $372.00\n\nSo your May spending was mostly housing, childcare, and core living costs like food and transportation.\n\n🏠\n⚪️\n🍏\n⚪️\n☂️\n⚪️\n⚪️\n⚪️\n💊\n⚪️\n⚪️\n⚪️\n💪\n⚪️\n$0\n$1K\n$2K\n$3K\n$4K",
+  "taskId": "patel_spend_may_total"
+}

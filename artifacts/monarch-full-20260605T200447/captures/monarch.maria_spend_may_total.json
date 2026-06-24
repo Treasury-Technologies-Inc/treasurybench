@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T04:34:20.880Z",
+  "latencyMs": 17577,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "monarch",
+  "response": "You spent $4,197.71 in May 2026, with Rent, Groceries, and Travel making up the bulk of it.\n\nYour top categories were:\n\nRent: $2,350.00\nGroceries: $671.85\nTravel: $560.64\nThen smaller stuff like Dining ($162.11), Fitness and Utilities ($89.00 each), Subscriptions ($82.98), Phone ($72.00), Transportation ($61.90), and Gas ($58.23)\n\nBig picture: May was a higher-spend month, mostly driven by your fixed housing cost (Rent) plus variable lifestyle spending in Groceries and Travel.\n\n🏠\n🍏\n⚪️\n⚪️\n💪\n⚪️\n⚪️\n📱\n⚪️\n⛽️\n$0\n$600\n$1.2K\n$1.8K\n$2.4K",
+  "taskId": "maria_spend_may_total"
+}

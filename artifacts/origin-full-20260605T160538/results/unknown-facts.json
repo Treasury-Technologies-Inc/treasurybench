@@ -1,0 +1,206 @@
+{
+  "unverifiedClaimCount": 20,
+  "uniqueClaimCount": 20,
+  "entries": [
+    {
+      "claim": "2026 national average auto insurance premium is $2,496",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_property_insurance_review"
+      ]
+    },
+    {
+      "claim": "2026 national average homeowners insurance premium is $3,057",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_property_insurance_review"
+      ]
+    },
+    {
+      "claim": "Adobe single-app plans start around $20-25/month",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_where_wasting_money"
+      ]
+    },
+    {
+      "claim": "Alaska Airlines generally provides complimentary meals in First Class only on flights over 670 miles.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_alaska_microsoft"
+      ]
+    },
+    {
+      "claim": "Alaska typically charges a $50 fee for confirmed same-day changes.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_alaska_microsoft"
+      ]
+    },
+    {
+      "claim": "Amex Blue Business Plus earns 2x on everything up to $50,000/year",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "jordan_credit_card_balance_check"
+      ]
+    },
+    {
+      "claim": "CFP Board standards",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_recurring_charges_audit"
+      ]
+    },
+    {
+      "claim": "Current 30-year fixed rates are around 6.48% as of early June 2026",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_mortgage_escrow_review"
+      ]
+    },
+    {
+      "claim": "Disability insurance coverage targets of 60% to 70% of pre-tax income",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ]
+    },
+    {
+      "claim": "Disability insurance typically replaces 60–70% of income.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "jordan_disability_liability_need"
+      ]
+    },
+    {
+      "claim": "Funeral and end-of-life costs typically run $10,000–$15,000.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_life_insurance_need"
+      ]
+    },
+    {
+      "claim": "Life insurance death benefit benchmarks of 10 to 15 times annual income",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_insurance_review"
+      ]
+    },
+    {
+      "claim": "Microsoft typically offers group long-term disability (LTD) coverage",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_insurance_review"
+      ]
+    },
+    {
+      "claim": "Non-qualified 529 withdrawals are subject to a 10% federal penalty",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "patel_529_tax_strategy"
+      ]
+    },
+    {
+      "claim": "on-time, full payments are the single largest factor in your credit score (~35% of FICO)",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_credit_card_balance_check"
+      ]
+    },
+    {
+      "claim": "Schedule C filers can deduct business software expenses.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "jordan_subscriptions_benefits"
+      ]
+    },
+    {
+      "claim": "Seattle law requires 180 days' written notice for rent increases",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ]
+    },
+    {
+      "claim": "Seattle move-in fees are capped at 10% of first month's rent",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_save_on_rent"
+      ]
+    },
+    {
+      "claim": "Seattle's King County AMI for 2026 is approximately $130,000 for a 4-person household",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_mfte_eligibility_check"
+      ]
+    },
+    {
+      "claim": "The Sapphire Preferred earns 3x on dining and 2x on travel.",
+      "occurrences": 1,
+      "providers": [
+        "origin"
+      ],
+      "tasks": [
+        "maria_credit_card_strategy"
+      ]
+    }
+  ]
+}

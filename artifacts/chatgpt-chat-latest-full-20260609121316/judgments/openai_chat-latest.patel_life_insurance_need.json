@@ -1,0 +1,41 @@
+{
+  "taskId": "patel_life_insurance_need",
+  "provider": "openai:chat-latest",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the mortgage balance, daycare costs, and income figures. It correctly identifies the need to distinguish between employer-provided and individual coverage."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The financial logic is sound and aligns with standard needs-based insurance planning. It correctly avoids recommending whole life insurance."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable estimates and logical next steps. It misses a specific opportunity to explicitly mention checking the UCHealth group life/disability benefit details as a primary action item."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding employer coverage portability and the need for age/health data. It correctly frames the estimates as targets rather than absolute requirements."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly advise the user to check the specific UCHealth group life and disability benefit documents (as requested in the task scope) to see if they are already paying for supplemental coverage."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that 529 assets should generally be excluded from life insurance needs calculations, as they are earmarked for specific future education goals."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized needs-based analysis that correctly frames term life insurance requirements for a dual-income household with a mortgage and young child."
+}

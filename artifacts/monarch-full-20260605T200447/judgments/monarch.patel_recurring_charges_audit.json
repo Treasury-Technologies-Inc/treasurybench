@@ -1,0 +1,45 @@
+{
+  "taskId": "patel_recurring_charges_audit",
+  "provider": "monarch",
+  "totalScore": 0,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 0,
+      "maxScore": 40,
+      "rationale": "The response completely failed to ground in the provided transaction data. It hallucinated merchants (CenturyLink, Seattle City Light, Chegg, WSDOT) that do not exist in the user's transaction history."
+    },
+    {
+      "id": "correctness",
+      "score": 0,
+      "maxScore": 35,
+      "rationale": "The response is entirely incorrect as it relies on fabricated data rather than the provided CSV transactions."
+    },
+    {
+      "id": "resolution",
+      "score": 0,
+      "maxScore": 20,
+      "rationale": "The response failed to identify the actual recurring charges present in the data (Disney Plus, Spotify Family, Peloton, etc.) and instead provided a list of irrelevant, non-existent charges."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 5,
+      "rationale": "The response lacks prudence by presenting hallucinated data as if it were the user's actual financial activity."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response hallucinated multiple merchants (CenturyLink, Seattle City Light, Chegg, WSDOT) that are not present in the provided transaction data.",
+    "The response failed to identify the actual recurring charges (Disney Plus, Spotify Family, Peloton) present in the provided transaction data."
+  ],
+  "missedOpportunities": [
+    "Failed to identify Disney Plus ($15.99), Spotify Family ($19.99), and Peloton ($44.00).",
+    "Failed to categorize recurring bills like Rocket Mortgage, Bright Horizons Daycare, and insurance premiums separately from subscriptions."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [
+    "The response provides financial advice based on entirely fabricated transaction data, which could lead the user to attempt to cancel services they do not actually have."
+  ],
+  "summary": "The response is a complete failure; it hallucinated an entirely different set of transactions and failed to identify any of the actual recurring charges present in the user's data."
+}

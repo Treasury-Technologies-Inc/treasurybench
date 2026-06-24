@@ -1,0 +1,55 @@
+{
+  "taskId": "jordan_tax_optimization",
+  "provider": "origin",
+  "totalScore": 45,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response fails to ground advice in the user's specific financial data (e.g., current income, tax reserve balance, or existing IRA). It ignores the user's specific context of marketplace health insurance and HSA usage."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The tax limits cited for 2026 (Solo 401k $72k, employee deferral $24.5k) are accurate per the locked benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 35,
+      "rationale": "The response is too generic. It misses critical freelancer-specific opportunities like the self-employed health insurance deduction, estimated tax safe harbor management, and the HSA contribution strategy, which are highly relevant to the user's persona."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "While it includes a standard disclaimer, it fails to address the user's specific need for separating business/tax/personal buckets, which was a core persona preference."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Solo 401(k) total contribution limit for 2026 is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies 2026 limits but fails to connect them to the user's actual financial situation."
+  ],
+  "missedOpportunities": [
+    "Self-employed health insurance deduction (above-the-line)",
+    "Estimated tax safe harbor calculation based on 2025/2026 income",
+    "HSA contribution strategy for 2026 ($4,400 limit)",
+    "Business expense categorization (e.g., home office, travel, software)"
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate 2026 tax limits but fails to personalize the advice to the user's specific financial data, missing several high-leverage freelancer tax strategies."
+}

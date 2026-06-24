@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T19:56:12.955Z",
+  "latencyMs": 36858,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "monarch",
+  "response": "To finish checking whether your Austin rent is reasonable, I need to know how to identify your housing costs in your transactions. Which is closest to how you categorize them?\n\nUse the 'Rent' category only for housing.\nUse 'Rent' plus utilities (Water, Gas & Electric, Internet/Internet & Cable, Utilities) as housing.\nUse 'Rent' plus renter’s insurance (Insurance) and parking/fees (Parking & Tolls) as housing.\nUse all of the above housing-related categories (Rent, utilities, Insurance, Parking & Tolls).\nI categorize rent under a specific merchant/description (like my Austin complex name); use that instead and I’ll tell you the name.",
+  "taskId": "jordan_rent_affordability"
+}

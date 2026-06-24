@@ -1,0 +1,58 @@
+{
+  "taskId": "jordan_extra_8000",
+  "provider": "origin",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the user's May income and expense data to contextualize the $8,000 surplus. It correctly identifies the Ally Tax Reserve and Fidelity HSA accounts."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Correctly cites 2026 limits for HSA ($4,400) and Solo 401(k)/SEP IRA ($72,000). Tax reserve advice is prudent and aligns with self-employment tax realities."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, logical priority list. It correctly prioritizes tax reserves and emergency funds before retirement contributions."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Strong emphasis on tax-safe cash flow and the lack of employer benefits. Appropriately caveats that retirement contributions depend on gross income calculations."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 self-only HSA contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 section 415(c) defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly check for revolving credit card balances on the Chase Ink or Amex Blue Business Plus before suggesting retirement contributions, though it did mention tax reserves.",
+    "Could have provided more specific guidance on the Chase Ink Business Preferred 3x categories versus the Amex Blue Business Plus flat-rate earning for the user's business expenses."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the specific Q2 2026 estimated tax due date of June 16, 2026."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly personalized, accurate, and prudent financial prioritization plan for a self-employed consultant, correctly applying 2026 tax and contribution limits."
+}

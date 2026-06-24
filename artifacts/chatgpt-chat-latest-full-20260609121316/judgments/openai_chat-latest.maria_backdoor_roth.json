@@ -1,0 +1,47 @@
+{
+  "taskId": "maria_backdoor_roth",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the visible payroll, RSU, and freelance income data to estimate MAGI and correctly identifies the $0 Traditional IRA balance as a key enabler for the backdoor Roth strategy."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the 2026 Roth IRA contribution limit and the logic for backdoor Roth. It correctly identifies the pro-rata caveat. It is slightly conservative on the income estimate, which is appropriate given the variable nature of RSU income."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. It could have been slightly more explicit about the 2026 phaseout range ($153k-$168k) to help the user self-assess, but the advice is otherwise excellent."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of caveats, specifically regarding the uncertainty of total annual compensation and the need to verify MAGI."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 Roth IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 2026 Roth IRA phaseout range ($153,000–$168,000) to allow the user to compare their estimated $103,000+ income more precisely."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that the $0 Traditional IRA balance is a specific advantage for the user's future backdoor Roth flexibility."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and accurate assessment that correctly leverages the user's specific financial data to provide a clear, actionable retirement contribution strategy."
+}

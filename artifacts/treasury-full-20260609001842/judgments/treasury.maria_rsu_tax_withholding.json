@@ -1,0 +1,59 @@
+{
+  "taskId": "maria_rsu_tax_withholding",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links the $42,000 RSU vest to the user's employment and tax situation, though it makes a slight assumption about the current date (June 9, 2026) which is not explicitly in the provided data, though it is consistent with the benchmark date."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Tax mechanics (22% supplemental withholding, ordinary income treatment) are accurate. The mention of the 0.9% Additional Medicare Tax is a high-value, correct detail."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. The advice to check Fidelity NetBenefits and paystubs is practical and directly relevant to the user's account setup."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Appropriately caveats the trading window and the distinction between withholding and final tax liability."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "federal withholding rate for supplemental wages is a flat 22%",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Social Security (OASDI) maximum taxable wage base is $184,500",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Additional Medicare Tax applies above $200,000 single",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response assumes a specific date (June 9, 2026) which is not in the provided CSVs, though it is within the benchmark period."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the potential for using the $18,450 in checking or $5,250 in savings to cover the tax shortfall if the user prefers to hold the shares rather than sell them immediately."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the 0.9% Additional Medicare Tax as a common 'hidden' liability for high-earning RSU recipients."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly accurate, tax-aware analysis of the RSU vest, correctly identifying the withholding gap and the importance of trading-window compliance for a Microsoft employee."
+}

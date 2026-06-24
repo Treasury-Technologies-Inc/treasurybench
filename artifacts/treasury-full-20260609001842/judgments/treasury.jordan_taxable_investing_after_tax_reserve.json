@@ -1,0 +1,57 @@
+{
+  "taskId": "jordan_taxable_investing_after_tax_reserve",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the visible account balances and recent income transactions to ground its advice, though it missed using the exact transaction amounts for the credit card payment."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits (HSA $4,400, 401k $24,500). The advice on tax-advantaged accounts is accurate and aligns with the persona's self-employed status."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable prioritization. The recommendation to prioritize the Solo 401(k) and HSA over taxable brokerage is the correct high-leverage play for this persona."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Strong emphasis on tax reserves and liquidity. The response correctly identifies the risks of irregular income and the need for a business runway."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3%",
+      "tableKey": "se_tax_2026_net_earnings_base",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly address the credit card balances or the potential for optimizing business expenses on the Chase Ink Business Preferred to maximize rewards."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the Solo 401(k) as a superior tax-sheltering vehicle for a Schedule C filer compared to a taxable brokerage."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a sound, tax-efficient prioritization strategy for a self-employed consultant, correctly emphasizing tax-advantaged accounts over taxable brokerage while respecting the need for liquidity."
+}

@@ -1,0 +1,59 @@
+{
+  "taskId": "jordan_where_wasting_money",
+  "provider": "treasury",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the provided transaction and balance data, though it missed the specific Adobe transaction in the summary."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Correctly identifies 2026 HSA limits and tax rules. The QBI deduction advice is technically accurate but slightly oversimplified regarding the interaction between home office and business rent."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 35,
+      "rationale": "Provides high-leverage, actionable advice. The Solo 401(k) suggestion is an excellent, high-value insight for this persona."
+    },
+    {
+      "id": "prudence",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "Good separation of business and personal, though it could have been more explicit about the tax-reserve cash being 'untouchable' rather than just 'sweepable'."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 self-only HSA contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "QBI Deduction (§199A) allows 20% deduction of taxable business income",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "2026 elective deferral limit for 401(k) is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the 2026 HSA limit but assumes the user is eligible for the full amount without verifying HDHP enrollment status."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the potential for tax-reserve interest optimization within the Ally account itself, which is already a high-yield vehicle."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to model a Solo 401(k) to bypass the lower IRA contribution limit is a high-value, personalized insight for a self-employed consultant."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides high-value, personalized financial insights grounded in the user's data, correctly applying 2026 tax and contribution limits."
+}

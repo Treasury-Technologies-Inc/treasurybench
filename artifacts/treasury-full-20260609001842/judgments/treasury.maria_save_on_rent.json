@@ -1,0 +1,59 @@
+{
+  "taskId": "maria_save_on_rent",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's rent ($2,350) and location (Seattle) to ground the advice. It correctly identifies the need to include gross income (including RSUs) for program eligibility."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies Seattle-specific programs (MFTE/MHA) and Bilt Rewards mechanics. It avoids guaranteeing eligibility and correctly notes the need for gross income verification."
+    },
+    {
+      "id": "resolution",
+      "score": 32,
+      "maxScore": 35,
+      "rationale": "The response provides high-leverage, actionable steps. It ranks MFTE/MHA as the primary play and provides clear, logical next steps for the user."
+    },
+    {
+      "id": "prudence",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding income verification and the fact that MFTE/MHA availability is building-specific."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Seattle MFTE targets households earning 60–90% of Area Median Income (AMI)",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Bilt Blue earns 1x points on rent",
+      "tableKey": "bilt_2026_rent_mechanics",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Bilt points transfer 1:1 to Alaska Airlines",
+      "tableKey": "bilt_2026_atmos_transfer_partner",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions 'P7' buildings and specific rent escalation caps; these are local Seattle program details that are generally accurate but not explicitly in the locked facts table."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Microsoft-linked Alaska/Atmos corporate status challenge as a secondary benefit of the user's employer, given the travel spend visible in the transactions."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to request a 14-month lease to align with peak leasing months is a clever, actionable tactic for a Seattle renter."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized response that correctly identifies high-leverage Seattle rent-saving programs and provides actionable, grounded advice for lease renewal."
+}

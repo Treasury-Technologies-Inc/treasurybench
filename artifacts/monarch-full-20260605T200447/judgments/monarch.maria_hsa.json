@@ -1,0 +1,48 @@
+{
+  "taskId": "maria_hsa",
+  "provider": "monarch",
+  "totalScore": 55,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response is generic and fails to leverage the specific Microsoft employer context provided in the persona, such as the known $1,000 annual HSA seed."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies HSA mechanics and eligibility but fails to provide the specific 2026 contribution limits."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response is too generic. It asks the user to provide information that is already available in the persona (employer, HDHP status) rather than synthesizing the available data."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good handling of eligibility caveats and the distinction between HDHP and non-HDHP plans."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Non-medical withdrawals before 65 are taxed as income plus a 20% penalty.",
+      "tableKey": "hsa_nonqualified_withdrawal_penalty",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response failed to provide the 2026 HSA contribution limits ($4,400 self-only) despite the task intent explicitly testing for this."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the Microsoft $1,000 annual HSA seed benefit, which is a critical piece of the 'personalized play' for this user.",
+    "Failed to quantify the tax impact or provide the 2026 contribution limits."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate general information about HSAs but fails to utilize the specific Microsoft employer benefits and persona data provided, resulting in a generic rather than personalized recommendation."
+}

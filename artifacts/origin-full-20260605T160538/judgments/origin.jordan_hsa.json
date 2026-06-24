@@ -1,0 +1,69 @@
+{
+  "taskId": "jordan_hsa",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's self-employed status and marketplace insurance, but fails to use the specific $300 May contribution amount or the $3,100 current HSA balance in the analysis."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Correctly cites 2026 HSA limits and eligibility rules, including the OBBBA Bronze/Catastrophic plan provision. Incorrectly states HSA contributions reduce Schedule C net income; they are an above-the-line deduction on Form 1040, not a business expense."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for eligibility verification and contribution limits. The advice is well-structured for the persona's needs."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent use of caveats regarding plan-level eligibility, month-by-month rules, and the need for professional tax advice."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA family contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA catch-up contribution is $1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Bronze and Catastrophic ACA plans are HSA-compatible in 2026",
+      "tableKey": "obbba_2026_bronze_catastrophic_hsa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA contributions are a Schedule C business expense",
+      "tableKey": "hsa_contribution_treatment",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly suggests HSA contributions reduce Schedule C net income; they are an above-the-line deduction on Form 1040."
+  ],
+  "missedOpportunities": [
+    "Failed to incorporate the specific $300 May contribution transaction or the $3,100 current HSA balance into the advice."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the 2026-permanent rule allowing telehealth coverage before the deductible without disqualifying HSA eligibility."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate 2026 HSA regulatory information and helpful eligibility guidance, though it incorrectly characterizes the tax treatment of HSA contributions for self-employed individuals."
+}

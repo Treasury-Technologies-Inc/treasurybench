@@ -1,0 +1,58 @@
+{
+  "taskId": "maria_401k_contribution",
+  "provider": "monarch",
+  "totalScore": 35,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "The response is entirely generic and fails to use the provided persona data (Maria's $2,500 semi-monthly pay, 8% deferral, or Microsoft employer context) to answer the user's specific question."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response correctly cites the 2026 401(k) employee limit ($24,500) and catch-up amounts, but fails to apply them to the user's situation."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response provides a 'how-to' guide rather than answering the user's question about whether she is contributing enough, failing to perform the requested paycheck math."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "The response is safe but lacks the necessary personalization to be useful, effectively punting the analysis back to the user."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 employee 401(k) limit under age 50 is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) catch-up for age 50-59 is $8,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) super catch-up for age 60-63 is $11,250",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to calculate that Maria's current 8% deferral on $60,000 annualized base is only ~$4,800/year.",
+    "Failed to identify that Maria is missing out on the Microsoft 50% match by not contributing enough to reach the limit.",
+    "Failed to mention the Microsoft-specific 401(k) plan features like the Mega Backdoor Roth, which is highly relevant given her RSU income.",
+    "Failed to provide a concrete recommendation on how much to increase her contribution rate to capture the full match."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response is a generic template that ignores the user's specific financial data and employer context, failing to provide the requested analysis of her 401(k) contributions."
+}

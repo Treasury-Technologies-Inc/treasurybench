@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_home_office_rent",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to specific transactions (Eastside Flats, Spectrum, WeWork) and the user's persona as a self-employed UX consultant."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The tax rules for home office and internet are accurate for 2026. The distinction between Schedule C expenses and the self-employed health insurance deduction is correctly implied by the focus on business-use allocation."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps and quantified estimates. The inclusion of the WeWork caveat is a high-value, prudent addition."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of the 'exclusive use' requirement and the potential conflict with the WeWork membership."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Simplified home-office deduction is $5 per square foot, capped at 300 square feet ($1,500 max).",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3%.",
+      "tableKey": "se_tax_2026_net_earnings_base",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Explicitly addressed the potential conflict between a home-office deduction and a coworking space membership (WeWork), which is a sophisticated and highly relevant tax-prudence point."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly accurate, well-grounded, and prudent response that correctly applies 2026 tax rules to the user's specific business expenses while providing necessary caveats regarding coworking space usage."
+}

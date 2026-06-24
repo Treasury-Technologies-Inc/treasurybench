@@ -1,0 +1,53 @@
+{
+  "taskId": "maria_side_income_tax",
+  "provider": "origin",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the $1,200 Figma deposit and the Adobe subscription expense. It uses the user's specific account context (Ally savings) for tax reserves."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax mechanics (15.3% SE tax, quarterly estimates, safe harbor) are accurate for 2026. The distinction between W-2 and SE tax is correctly explained."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps including a specific reserve percentage and the logic for quarterly payments. It correctly identifies the need for a separate account."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Includes necessary caveats about consulting a tax professional and the fact that results aren't guaranteed. It avoids over-promising on specific deductions."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employment tax is 15.3% on net self-employment earnings (12.4% Social Security + 2.9% Medicare)",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "The 2026 estimated tax deadlines are typically mid-April, mid-June, mid-September, and mid-January",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 92.35% net earnings adjustment for SE tax calculation.",
+    "Could have suggested checking the Microsoft 401(k) contribution status to see if the freelance income allows for additional tax-advantaged space via a Solo 401(k) if the business structure permits."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested using the Ally savings account as a dedicated tax reserve, which is a practical use of existing account infrastructure."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, personalized, and actionable tax advice for a freelancer, correctly identifying the self-employment tax burden and providing a clear strategy for reserves and estimated payments."
+}

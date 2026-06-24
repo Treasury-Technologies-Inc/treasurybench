@@ -1,0 +1,60 @@
+{
+  "taskId": "maria_backdoor_roth",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's Microsoft employment, investment income, and $0 IRA balance to tailor the advice."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "Correctly cites 2026 limits for IRA contributions, 401(k) deferrals, and the Mega Backdoor Roth limit. Pro-rata caveat is correctly identified."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. Could have been slightly more explicit about the specific tax form filing process, but otherwise excellent."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Includes necessary caveats regarding the pro-rata rule and the need to verify plan-specific Mega Backdoor support."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 Roth IRA phaseout for single filers is $153,000 to $168,000",
+      "tableKey": "irs_2026_roth_single_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 section 415(c) defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Explicitly connected the Mega Backdoor Roth strategy to the user's Microsoft employment context."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly accurate, personalized, and actionable guide for the user's 2026 retirement strategy, correctly identifying the Backdoor Roth path and the Mega Backdoor opportunity while respecting all relevant tax limits and caveats."
+}

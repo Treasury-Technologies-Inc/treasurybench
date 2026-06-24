@@ -1,0 +1,37 @@
+{
+  "taskId": "maria_food_spend_may",
+  "provider": "origin",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies and sums the food-related transactions, correctly excluding the Costco Gas charge ($58.23) to arrive at the $833.96 total."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "The math is correct, and the categorization of Costco warehouse as food-like while excluding gas is handled appropriately."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response provides a clear breakdown. It loses a small amount of credit for not explicitly stating that the Costco Gas was excluded, though the math implies it."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response is safe and avoids making incorrect claims about rewards or card coding."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant correctly retrieved and categorized the user's food spending for May, accurately excluding the non-food Costco gas transaction."
+}

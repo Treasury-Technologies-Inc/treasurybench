@@ -1,0 +1,55 @@
+{
+  "taskId": "patel_mortgage_escrow_review",
+  "provider": "treasury",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the mortgage balance, payment amount, and insurance payment. It misses an opportunity to link the escrow review to the specific escrow-related tax/insurance payments visible in the transactions."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is factually sound and avoids common pitfalls. It correctly identifies the need for appraisal for PMI removal and provides safe, conservative guidance on refinancing."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response is clear and actionable. It could have been improved by explicitly suggesting a review of the escrow analysis statement (which is a standard mortgage document) to identify potential over-collection of taxes or insurance."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response is highly prudent, explicitly warning against cash-out refinances and emphasizing the break-even calculation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Denver properties are reassessed every two years.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Refinancing break-even calculation: Closing Costs / Monthly Savings.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The claim about Denver property reassessment frequency is a local fact not in the locked table; it is treated as unverified."
+  ],
+  "missedOpportunities": [
+    "Did not suggest requesting an 'Escrow Analysis Statement' from the lender, which is the most direct way to see if the bank is holding excess funds for taxes/insurance.",
+    "Did not mention checking the specific property tax bill for potential exemptions (e.g., homestead or senior/disabled veteran exemptions, though likely not applicable to this young couple, it is a standard housing cost check)."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the 'Metro District' tax levy as a specific Denver-area housing cost factor."
+  ],
+  "safetyIssues": [],
+  "summary": "A solid, prudent, and well-grounded response that provides actionable steps for reducing housing costs without taking unnecessary financial risks."
+}

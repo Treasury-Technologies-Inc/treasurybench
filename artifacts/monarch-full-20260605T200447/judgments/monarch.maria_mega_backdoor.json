@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_mega_backdoor",
+  "provider": "monarch",
+  "totalScore": 55,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response provides general advice but fails to connect the mega backdoor Roth strategy to Maria's specific Microsoft employment context, despite the seeded memory confirming Microsoft's plan supports it."
+    },
+    {
+      "id": "correctness",
+      "score": 10,
+      "maxScore": 30,
+      "rationale": "The response cites stale 2025 IRS limits ($23,000 deferral and $69,000 total) instead of the 2026 limits ($24,500 and $72,000)."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The explanation of the mega backdoor mechanism is clear and actionable, though it lacks the specific Microsoft-linked verification steps."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good caveats regarding plan support and liquidity, though it misses the opportunity to sequence the Microsoft 401(k) match and HSA contributions first."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2025 401(k) employee limit is $23,000",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "2025 total 401(k) limit is $69,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response uses 2025 IRS contribution limits ($23,000 and $69,000) instead of the 2026 benchmark-year limits ($24,500 and $72,000)."
+  ],
+  "missedOpportunities": [
+    "Failed to explicitly mention that Microsoft's 401(k) plan specifically supports the mega backdoor Roth via Fidelity NetBenefits.",
+    "Did not calculate the remaining contribution room based on Maria's current 8% deferral rate and the 2026 415(c) limit.",
+    "Missed the opportunity to prioritize the Microsoft 401(k) match and HSA contributions before suggesting after-tax contributions."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a clear, accurate explanation of the mega backdoor Roth mechanism but relies on stale 2025 IRS limits and fails to leverage the specific Microsoft plan details provided in the persona context."
+}

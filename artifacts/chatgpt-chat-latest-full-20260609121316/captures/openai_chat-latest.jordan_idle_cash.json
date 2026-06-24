@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:22:19.927Z",
+  "latencyMs": 6461,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the balances and recent cash flow, you do appear to have a meaningful cash cushion, but whether it's \"idle\" depends on how much runway you want for uneven freelance income and taxes.\n\nCurrent liquid cash (excluding investments):\n- Capital One checking: $9,650\n- Bluevine business checking: $7,420\n- Ally tax reserve: $18,500\n- Total cash: $35,570\n\nInvestments:\n- Brokerage: $48,000\n- Traditional IRA: $22,400\n- HSA: $3,100\n- Crypto: $12,500\n\nRecent income and spending\n\nBusiness income received in May:\n- $8,500\n- $4,200\n- $1,260\n- Total: $13,960\n\nKnown May business expenses:\n- WeWork: $350\n- Software/services: about $211\n- Travel: about $1,115\n- Office supplies: $186\n- Total business expenses: about $1,862\n\nApproximate business profit before taxes:\n- $13,960 - $1,862 = about $12,100\n\nPersonal monthly spending visible in May:\n- Rent: $2,100\n- Marketplace insurance: $415\n- Therapy: $160\n- Internet: $80\n- Phone: $35\n- HSA contribution: $300\n- Groceries: about $365\n- Dining: about $185\n- Total visible personal spending: about $3,640/month\n\nHow much cash reserve makes sense?\n\nGiven your stated preference for tax-safe cash flow and uneven 1099 income, I'd separate cash into four buckets:\n\n1. Tax reserve\n- Current: $18,500\n- You paid a $4,200 estimated payment in April.\n- If your current earnings pace continues, $18,500 is not excessive.\n- Without a full-year income estimate, I would not move tax-reserve money into investments.\n\n2. Business operating reserve\n- Monthly business overhead appears around $500-$700 in recurring costs before travel.\n- Travel can create temporary spikes.\n- Keeping roughly $5,000-$10,000 in business cash is reasonable.\n- Bluevine currently holds $7,420, which fits that range.\n\n3. Personal emergency reserve\n- Visible personal spending is roughly $3,600-$4,000/month.\n- Six months would be about $22,000-$24,000.\n- You already have $9,650 in personal checking plus a taxable brokerage account that could be tapped if needed.\n\n4. Investment cash\n- After funding the first three buckets, excess cash could potentially be invested.\n\nMy assessment\n\nI do not see a large amount of obviously idle cash.\n\nReason:\n- $18,500 tax reserve is serving a specific purpose.\n- $7,420 business checking is reasonable for a consultant with client travel and irregular payments.\n- Your personal checking balance of $9,650 is somewhat high relative to monthly spending, but not dramatically so for someone without payroll certainty.\n\nThe strongest opportunity may not be investing cash immediately, but increasing tax-advantaged contributions if eligible:\n\n- HSA balance is only $3,100 and you contributed $300 in May.\n- As a self-employed person with qualifying HDHP coverage, you may be able to contribute up to the annual IRS HSA limit for your coverage type.\n- You could also potentially make deductible Traditional IRA contributions if within IRS rules and deadlines.\n\nPractical next step\n\nI would keep:\n- Tax reserve: $18,500\n- Business operating cash: about $7,500\n- Personal checking/emergency cash: about $6,000-$8,000\n\nIf, after estimating your remaining 2026 tax liability, you determine the tax reserve is larger than needed, then any excess could be directed to:\n- HSA contributions first (if eligible),\n- IRA contributions (subject to limits and deduction rules),\n- then your taxable brokerage.\n\nThe key unknown is your expected 2026 net self-employment income. A projection of annual income and taxes would tell us whether the $18,500 tax reserve is conservative, appropriate, or excessive.",
+  "taskId": "jordan_idle_cash",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1465,
+      "outputTokens": 849,
+      "totalTokens": 2314,
+      "reasoningTokens": 0,
+      "cachedInputTokens": 1152
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "taskId": "jordan_credit_card_balance_check",
+  "provider": "monarch",
+  "totalScore": 55,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response provides a generic framework but fails to ground the advice in the user's specific account balances (Chase Ink, Amex BBP) or the recent $2,000 payment. It ignores the specific transaction data provided."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The financial principles are sound, but the response fails to apply the specific 2026 context or the user's actual financial situation. It does not address the specific credit card balances provided in the prompt."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response is too generic. It provides a 'framework' rather than a direct answer to whether Jordan's specific balances are risky, failing to use the provided data to perform the requested check."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response correctly emphasizes paying in full and separating business/personal finances, which is prudent for a freelancer."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response contains no specific external factual claims to verify against the locked-fact table, as it remains entirely generic."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate the current utilization for the Chase Ink ($5,210) and Amex BBP ($1,185) accounts.",
+    "Failed to acknowledge the $2,000 payment made on 2026-05-28 as a positive step toward managing the balance.",
+    "Did not explicitly verify if the current balances represent statement balances or revolving debt, which was a core task requirement."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a helpful but overly generic framework that fails to utilize the specific account and transaction data provided for Jordan, missing the opportunity to perform a concrete risk assessment."
+}

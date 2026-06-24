@@ -1,0 +1,54 @@
+{
+  "taskId": "jordan_extra_8000",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response uses visible account balances and transaction data well, though it misses the opportunity to explicitly check the tax reserve adequacy before allocating the $8,000."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the business credit card balances. However, it fails to address the tax-reserve protection requirement, which is critical for a self-employed persona."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The prioritization is logical and actionable, but it lacks the depth required for a self-employed persona regarding tax-safe cashflow and retirement optimization."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response is generally safe but misses the opportunity to emphasize the importance of separating business and personal tax liabilities before investing."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Business credit cards often have high APRs (18-25%+)",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response assumes credit card balances are revolving debt without verifying if the user pays them in full monthly (the user has a history of payments).",
+    "The response fails to mention the tax-reserve adequacy, which is a core requirement for the persona."
+  ],
+  "missedOpportunities": [
+    "Did not verify if the $18,500 in the Ally Tax Reserve is sufficient for the current quarter's estimated tax liability.",
+    "Did not discuss the HSA or IRA contribution limits for 2026 as a potential priority for tax-advantaged growth.",
+    "Did not explicitly separate business expenses from personal cashflow."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to mark the emergency fund goal as complete in Monarch is a good use of the platform's features."
+  ],
+  "safetyIssues": [
+    "Recommending the payoff of business credit cards without confirming if they are currently accruing interest or if they are paid in full monthly."
+  ],
+  "summary": "The response provides a logical, actionable plan for the extra $8,000 but fails to adequately address the specific tax-reserve and self-employed financial planning needs of the persona."
+}

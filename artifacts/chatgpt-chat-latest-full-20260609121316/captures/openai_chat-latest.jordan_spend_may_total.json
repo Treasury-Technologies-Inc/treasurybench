@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:20:40.264Z",
+  "latencyMs": 6898,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "For May 2026, using your transaction list and avoiding double-counting credit-card payments, your spending was approximately $5,202.72.\n\nAssumptions:\n- Excluded the $2,000 Chase credit-card payment because the underlying card purchases are already counted in their spending categories.\n- Excluded the $300 HSA contribution because it is a transfer to a savings/investment account rather than consumption spending. (If you want to treat all cash outflows as spending, add $300 and the total becomes $5,502.72.)\n\nLargest spending categories\n\n- Rent: $2,100.00\n  - Eastside Flats\n\n- Business Travel: $1,115.08\n  - Delta Air Lines: $428.60\n  - Marriott Marquis Atlanta: $612.30\n  - Uber: $74.18\n\n- Business Operations (coworking + software): $560.83\n  - WeWork: $350.00\n  - Adobe: $59.99\n  - Figma: $15.00\n  - Webflow: $39.00\n  - AWS: $82.44\n  - Google Workspace: $14.40\n\n- Health Insurance: $415.00\n  - Marketplace premium\n\n- Groceries: $365.47\n  - H-E-B: $126.85\n  - Costco: $238.62\n\nOther categories\n\n- Office Supplies: $186.40\n- Dining: $184.95\n- Medical/Therapy: $160.00\n- Internet: $79.99\n- Phone: $35.00\n\nContext for your self-employed finances:\n- Business income received in May: $13,960.00\n- Spending excluding HSA contribution: $5,202.72\n- Net cashflow before taxes and retirement investing: about +$8,757.28\n\nGiven your preference for separate buckets, the biggest business expense driver in May was travel ($1,115.08), while the largest personal expense was rent ($2,100).",
+  "taskId": "jordan_spend_may_total",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1465,
+      "outputTokens": 871,
+      "totalTokens": 2336,
+      "reasoningTokens": 384,
+      "cachedInputTokens": 0
+    }
+  }
+}

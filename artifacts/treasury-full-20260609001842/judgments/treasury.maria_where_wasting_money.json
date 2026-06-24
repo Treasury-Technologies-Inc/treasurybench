@@ -1,0 +1,52 @@
+{
+  "taskId": "maria_where_wasting_money",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively cites the checking balance, ClassPass charge, and Microsoft employer context. It misses the specific rent amount as a signal for savings."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Calculations are accurate based on the provided data. Microsoft benefit facts align with the locked benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "Surfaces high-value opportunities (HYSA, Wellness, HSA). It misses the Seattle MFTE/MHA rent-saving opportunity, which is a high-leverage play for a Seattle renter."
+    },
+    {
+      "id": "prudence",
+      "score": 14,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding verification. It avoids guaranteeing eligibility while providing clear next steps."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft offers a $1,500 annual gym/wellness reimbursement",
+      "tableKey": "microsoft_2026_wellness_reimbursement",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft contributes $1,000 annually to the HSA for employees enrolled in an eligible HDHP",
+      "tableKey": "microsoft_2026_hsa_seed",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Seattle MFTE/MHA rent reduction program: Maria is a Seattle renter paying $2,350/month; this is a high-leverage opportunity for a single-person household."
+  ],
+  "unexpectedValidInsights": [
+    "Costco Anywhere Visa recommendation based on observed Costco spend patterns."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides high-quality, personalized financial insights grounded in the user's data and employer benefits, though it misses the significant potential for rent savings via local Seattle programs."
+}

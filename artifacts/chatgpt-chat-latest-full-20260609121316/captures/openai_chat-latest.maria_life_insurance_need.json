@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:16:35.253Z",
+  "latencyMs": 7621,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the information available:\n\n- You live alone in Seattle.\n- You're a renter, not a homeowner.\n- There are no dependents or indications that anyone relies on your income.\n- You have substantial financial assets:\n  - Checking: $18,450\n  - Savings: $5,250\n  - Brokerage: $62,300\n  - 401(k): $48,500\n  - Total financial assets ≈ $134,500\n\nFor someone in that situation, life insurance is usually not the highest-priority coverage need.\n\nWhy life insurance may not be necessary right now\n- The primary purpose of life insurance is to replace income for people who depend on you financially.\n- If no one relies on your earnings, there may be little financial risk to transfer.\n- You already have enough liquid assets that final expenses and other end-of-life costs would likely be manageable by your estate.\n\nThe exception:\n- If you financially support parents, a partner, or another family member.\n- If you have large debts that someone else would become responsible for.\n- If you want to lock in very low term-insurance rates while young and healthy for future family-planning reasons.\n\nCoverage checks I'd prioritize first\n\n1. Disability insurance (highest priority)\nYour biggest asset is likely your future earning power.\n\nFrom your payroll records:\n- Gross pay shown: about $5,000/month ($2,500 semi-monthly), before considering any additional compensation.\n- You also had a recent $42,000 Microsoft RSU vest and earned freelance income.\n\nLosing the ability to work for several years would likely have a much larger financial impact than the risk of dying with no dependents.\n\nNext steps:\n- Review Microsoft's short-term and long-term disability benefits.\n- Confirm:\n  - Percentage of income replaced.\n  - Waiting period before benefits start.\n  - Maximum monthly benefit.\n  - Whether RSU income is included or excluded.\n- Consider supplemental individual disability coverage if employer coverage would leave a large income gap.\n\n2. Renters insurance\nGiven your assets and Seattle rental situation, renters insurance is usually very cost-effective.\n\nTypical benefits:\n- Personal property coverage.\n- Personal liability coverage.\n- Additional living expenses if your apartment becomes uninhabitable.\n\nNext steps:\n- Verify you have a renters policy.\n- Consider at least:\n  - Personal property coverage matching your belongings.\n  - $300,000+ liability coverage.\n  - Replacement-cost coverage rather than actual-cash-value coverage.\n\n3. Umbrella liability insurance\nYou now have approximately $134,500 in financial assets, and your brokerage balance increased significantly after a recent RSU vest.\n\nAn umbrella policy can provide an additional $1 million of liability protection above renters and auto policies.\n\nNext step:\n- If you own a vehicle or have meaningful assets to protect, get quotes for a $1 million umbrella policy and compare the annual premium to your current net worth and future earnings potential.\n\n4. Health insurance review\nAs a Microsoft employee, you likely have employer-sponsored coverage.\n\nNext steps:\n- Confirm your out-of-pocket maximum.\n- Verify whether you are eligible for an HSA-compatible plan.\n- If HSA-eligible, evaluate maximizing HSA contributions before making additional taxable investments.\n\nBottom line:\nGiven your current profile—a single renter with no dependents and roughly $134,500 in assets—I would generally place life insurance below disability insurance and renters-liability protection. The highest-value check is making sure your disability coverage is strong enough to protect your income if you cannot work.",
+  "taskId": "maria_life_insurance_need",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1519,
+      "outputTokens": 760,
+      "totalTokens": 2279,
+      "reasoningTokens": 0,
+      "cachedInputTokens": 1152
+    }
+  }
+}

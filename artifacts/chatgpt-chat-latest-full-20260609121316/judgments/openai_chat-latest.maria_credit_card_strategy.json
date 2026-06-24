@@ -1,0 +1,50 @@
+{
+  "taskId": "maria_credit_card_strategy",
+  "provider": "openai:chat-latest",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the provided transaction data to categorize spending and identify opportunities. It correctly identifies the rent and grocery categories as primary optimization targets."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the Bilt rent opportunity but relies on outdated 'Bilt Mastercard' terminology instead of the current Bilt 2.0 lineup (Blue/Obsidian/Palladium). It correctly identifies the Sapphire Preferred's strengths and weaknesses."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and prioritized by dollar impact. It provides clear next steps for the user, though it lacks specific breakeven math for the Costco Executive membership."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes necessary caveats regarding program eligibility and the importance of verifying landlord acceptance for Bilt, though it could have been more explicit about the potential for processing fees on non-Bilt rent payments."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Bilt Mastercard earns points on rent without transaction fees",
+      "tableKey": "bilt_2026_rent_mechanics",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response uses the term 'Bilt Mastercard' which is outdated for the 2026 benchmark context; it should refer to the Bilt 2.0 lineup (Blue, Obsidian, Palladium)."
+  ],
+  "missedOpportunities": [
+    "Failed to evaluate the Costco Executive Membership breakeven point ($3,250 annual spend) against the $65 incremental cost.",
+    "Did not explicitly mention the Microsoft-linked Alaska/Atmos corporate status challenge, which is a high-value, relevant opportunity for a Microsoft employee."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the potential for a 4% incremental gain on grocery spending by switching from a 1% baseline to a 5% rewards card."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, personalized credit card strategy grounded in the user's transaction data, though it uses slightly outdated Bilt terminology and misses specific employer-linked perks."
+}

@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_mortgage_escrow_review",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the $3,850 mortgage payment and references the escrow/PITI components. It correctly identifies the State Farm insurance payments from the transaction history."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The financial mechanics regarding refinancing (break-even, closing costs, term extension) are accurate. The 2026 interest rate context is reasonable. The advice to check for PMI removal and escrow analysis is correct."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps (escrow analysis, property tax appeal, insurance shopping) rather than generic advice. It correctly prioritizes low-risk, high-impact actions."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding refinancing costs and the need for a tax advisor. It avoids recommending risky moves like raiding emergency savings."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Current 30-year fixed rates are around 6.48% as of early June 2026",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions 6.48% as a current rate; this is treated as unverified as it is a dynamic market rate not in the locked facts."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly suggested checking the specific escrow statement for the 'cushion' amount, which is a common source of over-collection."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to check if homeowners insurance is being billed both through escrow and separately is a high-value, specific catch based on the transaction data."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded, prudent, and actionable response that correctly prioritizes low-risk housing cost reductions over refinancing."
+}

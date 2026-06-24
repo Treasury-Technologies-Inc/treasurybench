@@ -1,0 +1,62 @@
+{
+  "taskId": "patel_taxable_investing_priority",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the visible account balances and employer context, though it failed to use the exact dollar amounts from the transactions to calculate the current pace."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits for 401(k), HSA, and IRA. The Mega Backdoor Roth and employer-specific benefits are correctly identified."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable prioritization. The logic for moving from taxable to tax-advantaged accounts is sound and well-explained."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Includes necessary caveats regarding pro-rata rules and plan-level verification. The advice is safe and conservative."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HSA contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA contribution phase-out for MFJ is $242,000 - $252,000",
+      "tableKey": "irs_2026_roth_mfj_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not use exact transaction amounts to calculate the annual run-rate for savings, relying instead on estimates."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the Mega Backdoor Roth as a specific, high-leverage opportunity for the Salesforce plan."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly accurate, personalized prioritization strategy that correctly leverages 2026 tax limits and specific employer benefits to optimize the user's financial position."
+}

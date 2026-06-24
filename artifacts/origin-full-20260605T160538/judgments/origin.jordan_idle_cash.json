@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_idle_cash",
+  "provider": "origin",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response failed to use the provided CSV data, claiming all balances were $0 and that accounts were connected today, despite the prompt providing specific balances and transactions."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The tax and emergency fund advice is sound, but the failure to ground in the provided data makes the specific recommendations generic rather than personalized."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The framework provided is clear and actionable, but the lack of integration with the actual account balances limits the resolution."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response correctly emphasizes the need for separate buckets and acknowledges the risks of irregular income."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Texas has no state income tax",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly claims account balances are $0 and that accounts were connected today, ignoring the provided CSV data."
+  ],
+  "missedOpportunities": [
+    "Failed to use the specific account balances (e.g., $9,650 in checking, $18,500 in tax savings) to provide a concrete assessment of the user's current liquidity.",
+    "Did not analyze the specific transaction history to refine the monthly expense estimate."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the need for a 6-month emergency fund due to the lack of employer safety nets."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid conceptual framework for freelance cash management but fails to utilize the provided account data, rendering the advice generic rather than personalized."
+}

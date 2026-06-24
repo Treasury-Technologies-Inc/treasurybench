@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:17:06.872Z",
+  "latencyMs": 5760,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the May 2026 transactions provided, these appear to be recurring monthly charges worth reviewing. I've separated true subscriptions from larger recurring bills.\n\nSubscriptions / memberships\n- Disney Plus: $15.99/month\n- Spotify Family: $19.99/month\n- Peloton: $44.00/month\n\nTotal subscriptions: $79.98/month (about $960/year)\n\nRecurring household bills\n- Bright Horizons Daycare: $1,650.00/month\n- Rocket Mortgage (PITI): $3,850.00/month\n- Xcel Energy: $164.22/month\n- Xfinity Internet: $119.00/month\n- State Farm Auto Insurance: $218.00/month\n- State Farm Home Insurance: $154.00/month\n- Toyota Financial auto loan: $485.00/month\n\nRecurring savings contributions\n- Colorado 529 CollegeInvest: $300.00/month\n- HealthEquity HSA contribution: $400.00/month\n\nItems that may be recurring but need confirmation\n- Care.com Backup Care: $220.00 in May. The note says it was one day of backup childcare, so I would not assume this is monthly.\n- Kaiser Permanente medical expense: $185.40 in May paid from the HSA. This looks like a healthcare claim rather than a recurring bill.\n\nHighest-value review opportunities\n1. Xfinity Internet: $119/month is often a bill that can be reduced through retention offers, promotional plans, or competitive fiber/cable options in Denver.\n2. Insurance premiums:\n   - Auto: $218/month\n   - Home: $154/month\n   Combined: $372/month\n   Shopping bundled coverage periodically can sometimes save hundreds per year.\n3. Subscriptions:\n   - Disney+, Spotify Family, and Peloton total about $80/month.\n   - If any are underused, canceling one service saves $192–$528 per year depending on which one.\n\nOne additional observation: childcare is your largest non-housing recurring expense at $1,650/month. Given Priya has access to a dependent care FSA through Salesforce, it may be worth confirming you're using it. The maximum annual contribution can reduce taxes on up to $5,000 of eligible childcare expenses, which can be worth roughly $1,000–$2,000+ per year depending on your tax situation.",
+  "taskId": "patel_recurring_charges_audit",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1799,
+      "outputTokens": 557,
+      "totalTokens": 2356,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1664
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "taskId": "maria_save_on_rent",
+  "provider": "origin",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The assistant correctly identified the user's base salary and noted the impact of RSUs and freelance income on total income, though it could have been more precise in calculating the total 2026 gross income projection."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The assistant correctly cited the 2026 WA HB 1217 rent cap (9.683%) and the 180-day notice rule. The income thresholds for MFTE were handled with appropriate caveats."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "The assistant provided strong, actionable negotiation tactics and identified the MFTE program. However, it failed to address the rent rewards opportunity (Bilt) as requested in the task scope."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The assistant appropriately caveated MFTE eligibility and the uncertainty of RSU/freelance income, but the lack of rent rewards discussion missed a secondary savings opportunity."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Seattle 2026 maximum allowable rent increase is 9.683%",
+      "tableKey": "wa_2026_hb1217_rent_cap",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Seattle law requires 180 days' written notice for rent increases",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Seattle move-in fees are capped at 10% of first month's rent",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The 180-day notice rule and move-in fee caps are specific local regulations that are generally accurate for Seattle but were not explicitly provided in the locked facts."
+  ],
+  "missedOpportunities": [
+    "The assistant failed to mention rent rewards programs like Bilt, which was a core expected opportunity for optimizing the $28,200 annual rent expense."
+  ],
+  "unexpectedValidInsights": [
+    "The assistant provided a very helpful breakdown of the 180-day notice rule and the specific legal rent increase cap, which provides significant leverage for a tenant in Seattle."
+  ],
+  "safetyIssues": [
+    "None."
+  ],
+  "summary": "The assistant provided excellent, actionable negotiation advice and correctly identified local housing programs, but missed the opportunity to discuss rent rewards programs."
+}

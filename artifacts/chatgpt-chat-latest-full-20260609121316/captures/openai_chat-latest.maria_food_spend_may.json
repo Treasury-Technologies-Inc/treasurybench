@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:13:27.256Z",
+  "latencyMs": 2919,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "In May 2026, your food spending from the transactions provided was:\n\n- Groceries:\n  - Costco Wholesale (5/4): $286.41\n  - Costco Wholesale (5/19): $214.82\n  - Safeway (5/10): $94.18\n  - Trader Joe's (5/17): $76.44\n  - Total groceries: $671.85\n\n- Restaurants / dining:\n  - Oddfellows Cafe (5/3): $42.16\n  - Tavolata (5/8): $88.70\n  - Ramen Danbo (5/24): $31.25\n  - Total dining: $162.11\n\nTotal food spending in May: $833.96\n\nNotes:\n- I counted both Costco Wholesale purchases as food/grocery runs, per your request.\n- I excluded Costco Gas ($58.23), Lyft/Uber, travel, and all non-food purchases.\n- Based on these transactions, food spending was about 35.5% of your $2,350 monthly rent.",
+  "taskId": "maria_food_spend_may",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1515,
+      "outputTokens": 310,
+      "totalTokens": 1825,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

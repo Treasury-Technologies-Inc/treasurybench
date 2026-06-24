@@ -1,0 +1,43 @@
+{
+  "taskId": "patel_mortgage_escrow_review",
+  "provider": "monarch",
+  "totalScore": 35,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "The response failed to use the visible mortgage payment ($3,850) or any specific account data, despite the prompt explicitly requiring the use of the mortgage payment and balance. It offered to look at the data instead of using the data already provided in the context."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The advice provided is generally sound and safe, but it ignores the specific financial context provided in the prompt. It correctly identifies standard housing cost reduction strategies."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 30,
+      "rationale": "The response is generic and lacks the quantified impact or specific next steps requested. It treats the task as a general inquiry rather than a personalized review of the provided data."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "The response is safe and avoids risky financial moves, but it fails to leverage the persona's specific financial situation to provide high-leverage, personalized advice."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "No external factual claims were made that require verification against the locked-fact table."
+  ],
+  "missedOpportunities": [
+    "Failed to use the $3,850 mortgage payment and $462,000 balance to provide specific, actionable analysis.",
+    "Did not analyze the escrow/property tax/insurance components visible in the transactions.",
+    "Missed the opportunity to provide a personalized assessment of the user's current housing cost burden relative to their income."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provided generic, safe advice but failed to ground the analysis in the provided user data, resulting in a low-leverage and impersonal output."
+}

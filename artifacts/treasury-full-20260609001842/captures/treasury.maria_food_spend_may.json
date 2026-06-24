@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-09T07:19:21.591Z",
+  "latencyMs": 14783,
+  "mode": "product_capture",
+  "notes": "Official Treasury product capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "response": "In May, you spent a total of **`$833.96`** on food across groceries, Costco, and restaurants.\n\n### Spending Breakdown\n*   **Groceries:** `$671.85` (includes Costco and Safeway/Trader Joe's)\n*   **Restaurants:** `$162.11` (includes Tavolata and other dining)\n\n### Costco Deep Dive\nSpecifically at Costco, you had two large grocery runs in May totaling **`$501.23`**:\n*   **May 19:** `$214.82`\n*   **May 04:** `$286.41`\n*(Note: You also spent `$58.23` on Costco Gas on May 21, which is excluded from the food total above.)*\n\n---\n\n> ### 💡 Treasury Insight: Costco Executive Breakeven\n> Based on your May Costco spend, you're on pace for about **`$6,014`** in annual Costco purchases. Since the [Executive Membership](costco-hacks) pays for itself at **`$3,250/year`**, you're a strong candidate for the **2% annual reward**, which would earn you roughly **`$120`** back annually—more than covering the upgrade cost.\n\n### Next Steps\n- [ ] **Check membership tier:** If you aren't already an Executive member, you're likely leaving about `$55/year` in net rewards on the table.\n- [ ] **Review \"Death Star\" items:** Next time you're at the Seattle Costco, look for an **asterisk (*)** on price tags for items you buy often; it means they won't be restocked, so it may be worth grabbing an extra unit.\n- [ ] **Verify price codes:** Look for prices ending in **`.97`** (clearance) or **`.00`** (local manager markdowns) for the deepest savings on your next run.",
+  "taskId": "maria_food_spend_may"
+}

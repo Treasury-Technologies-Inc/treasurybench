@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:20:47.037Z",
+  "latencyMs": 6772,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the May 2026 transactions provided, your clearly business-related expenses totaled $1,862.31.\n\nBreakdown:\n- Business rent (WeWork Austin): $350.00\n- Software:\n  - Adobe Creative Cloud: $59.99\n  - Figma Professional: $15.00\n  - Webflow: $39.00\n  - Amazon Web Services: $82.44\n  - Google Workspace: $14.40\n  - Software subtotal: $210.83\n- Business travel:\n  - Delta Air Lines: $428.60\n  - Marriott Marquis Atlanta: $612.30\n  - Uber Trip: $74.18\n  - Travel subtotal: $1,115.08\n- Office supplies:\n  - Office Depot: $186.40\n\nTotal business expenses: $1,862.31\n\nItems to categorize carefully\n\n1. Business travel ($1,115.08)\n- Keep documentation showing the Atlanta trip was for client work.\n- Retain airfare, hotel, and transportation receipts.\n- The note \"Client onsite trip to Atlanta\" is helpful; keep supporting records (client meeting calendar invites, emails, agenda, etc.).\n\n2. Phone and internet\n- Visible Wireless: $35.00\n- Spectrum Internet: $79.99\n- These are often partially deductible for a self-employed consultant, but only the business-use percentage should generally be claimed if there is mixed personal use.\n- Consider tracking a reasonable business-use allocation going forward.\n\n3. Health insurance\n- Marketplace premium: $415.00\n- This is generally not a Schedule C business expense, but may qualify for the self-employed health insurance deduction on your individual tax return if eligible.\n- Keep it separated from business operating expenses.\n\n4. HSA contribution\n- Fidelity HSA contribution: $300.00\n- This is not a business expense.\n- It may be deductible through HSA rules if you were HSA-eligible.\n\n5. Therapy expense\n- Austin Therapy Group: $160.00\n- Generally a personal medical expense, not a business deduction.\n\n6. Personal spending on a business card\n- Groceries ($365.47 total) and dining ($184.95 total) were charged to the American Express Blue Business Plus.\n- Even though the card is a business card, these appear personal based on the categories provided.\n- Be careful not to include them in business bookkeeping or Schedule C expenses.\n- Given your preference for clean business/personal separation, this is the biggest bookkeeping risk visible in the data.\n\nCash-flow context\n- May business income deposited to Bluevine: $13,960.00\n- May business expenses: $1,862.31\n- Approximate business surplus before taxes and any unrecorded expenses: $12,097.69\n\nFor tax reporting, I would keep four buckets separate:\n- Business operating expenses (the $1,862.31 above)\n- Tax reserve (currently $18,500 in Ally Tax Reserve Savings)\n- Personal living expenses\n- Health/HSA expenses and deductions\n\nThat separation will make quarterly tax estimates and Schedule C reporting much easier.",
+  "taskId": "jordan_business_expenses_may",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1466,
+      "outputTokens": 827,
+      "totalTokens": 2293,
+      "reasoningTokens": 128,
+      "cachedInputTokens": 1152
+    }
+  }
+}

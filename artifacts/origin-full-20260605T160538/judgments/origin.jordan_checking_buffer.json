@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_checking_buffer",
+  "provider": "origin",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the provided CSV data to identify specific buckets and monthly spending patterns."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the tax payment deadline as June 15 (referenced as June 16, which is a minor error as June 15, 2026 is a Monday). The tax and buffer logic is sound."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable sequence for managing cash flow and buffers, prioritizing tax obligations."
+    },
+    {
+      "id": "prudence",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Good emphasis on separating tax reserves from operating cash and maintaining distinct emergency funds."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Q2 2026 estimated-tax payment is due June 15, 2026",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions the Q2 tax deadline as June 16, while the locked benchmark fact specifies June 15, 2026."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the HSA contribution limit for 2026 ($4,400) as a potential tax-advantaged bucket for excess cash."
+  ],
+  "unexpectedValidInsights": [
+    "The response correctly identifies the need to separate the tax reserve from the emergency fund, which is a high-leverage recommendation for a freelancer."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and actionable response that correctly separates business, personal, and tax-reserve buckets for a self-employed user."
+}

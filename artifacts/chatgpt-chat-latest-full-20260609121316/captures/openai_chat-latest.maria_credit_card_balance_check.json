@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:15:09.897Z",
+  "latencyMs": 6686,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on your current accounts, you have ample cash to cover the card:\n\n- Chase checking: $18,450\n- Ally savings: $5,250\n- Chase Sapphire Preferred balance: $1,840\n\nThe key thing to verify first is whether the $1,840 is:\n\n- The current balance, or\n- The statement balance that will be due on the next payment date\n\nThose are not always the same number.\n\nWhat to check in Chase:\n\n1. Statement balance\n   - Look for the most recent statement amount.\n   - If you pay the statement balance in full by the due date, you generally avoid interest on purchases.\n\n2. Payment due date and minimum payment\n   - Confirm the due date.\n   - Make sure no payment has already been scheduled.\n\n3. Interest charges\n   - Check the latest statement for any interest or residual interest.\n   - If interest appeared, you may have lost the grace period and should pay attention to the exact payoff amount.\n\n4. Autopay settings\n   - Verify whether autopay is already enabled and, if so, whether it is set to:\n     - Minimum payment,\n     - Fixed amount, or\n     - Statement balance.\n\nGiven your balances and cash position, I would not carry this balance for financing purposes. Credit-card interest rates are typically far higher than the interest you're earning in savings.\n\nRecommended setup:\n\n- Enable autopay for the full statement balance from your Chase checking account.\n- Keep enough cash in checking to cover the payment.\n- Continue using the card normally during the month.\n\nAs for paying immediately versus using monthly float:\n\n- If the $1,840 is simply your current balance and the due date is still ahead, treating it as normal monthly float is reasonable.\n- If the $1,840 is the statement balance and the due date is approaching, paying it now or letting statement-balance autopay handle it are both fine.\n- The most important outcome is paying the statement balance in full every month.\n\nOne additional observation: your May spending on the card appears to be roughly $1,980 based on the listed transactions, which is very close to the current $1,840 balance. That suggests this is likely normal monthly spending rather than a debt issue.\n\nExact next step:\n- Open Chase → locate \"Statement Balance,\" \"Current Balance,\" \"Payment Due Date,\" and \"Autopay.\"\n- If autopay is not already set up, set it to \"Pay Statement Balance\" from checking.\n- If you discover any interest charges on the latest statement, pay the card in full and verify that future statement balances are paid automatically.",
+  "taskId": "maria_credit_card_balance_check",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1532,
+      "outputTokens": 600,
+      "totalTokens": 2132,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "taskId": "maria_checking_buffer",
+  "provider": "treasury",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the May spending and account balances to calculate the buffer. It correctly identifies the user's location (Seattle) and the lack of state income tax."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The math is sound and the financial mechanics are accurate. The response correctly identifies that T-bill state tax benefits are irrelevant for a Washington resident."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable plan with specific dollar amounts to move. The tiered cash strategy is well-structured."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Includes reasonable caveats about liquidity and the nature of the spending spike, though it could have been slightly more conservative regarding the emergency fund sizing."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Washington state has no state income tax on wage/ordinary income.",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the lack of state income tax in Washington, which is a key factor in the T-bill vs. HYSA decision."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the Microsoft 401(k) or ESPP as alternative places for excess cash if the user's emergency fund is already fully funded.",
+    "Could have suggested checking if the current checking account is earning any interest at all, though it correctly assumes near 0%."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that T-bill state tax exemption is not a benefit for a Washington resident, simplifying the decision-making process."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and accurate cash management plan that correctly leverages the user's location and spending data to provide actionable advice."
+}

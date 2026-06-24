@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:20:33.364Z",
+  "latencyMs": 9556,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the information available, there is a meaningful chance you need additional term life insurance, especially because you have:\n\n- A 3-year-old child\n- A large mortgage balance (~$462,000)\n- Significant daycare and household expenses\n- Two incomes supporting the household\n\nI cannot tell whether you're adequately covered because I don't have your current life insurance amounts. Daniel has access to group life through UCHealth, and Priya may have employer coverage as well, but employer coverage alone is often not enough and usually isn't portable if you leave the job.\n\nA practical way to estimate coverage\n\nStart with obligations that would remain if one spouse died:\n\n1. Mortgage payoff (optional but common)\n- Mortgage balance: about $462,000\n\n2. Child-related costs\n- Daycare currently costs about $1,650/month (~$19,800/year)\n- Future expenses could include after-school care, activities, and college support\n\n3. Income replacement\n- Priya's gross pay appears to be about $210,000/year\n- Daniel's gross pay appears to be about $120,000/year\n\n4. Final expenses and transition costs\n- Often $25,000-$50,000\n\n5. Subtract financial assets available to survivors\n- Cash and savings: about $43,000\n- Taxable brokerage: about $54,000\n- Retirement accounts are substantial but are generally not ideal to rely on for near-term survivor needs\n- 529 assets are intended for your child and usually shouldn't be counted toward life insurance needs\n\nA quick estimate for Priya\n\nIf Priya died:\n\n- Mortgage: $462,000\n- Child support/college buffer: $100,000-$200,000\n- Income replacement: 8-10× income = about $1.7M-$2.1M\n- Final expenses: $25,000\n\nTotal need before assets: roughly $2.3M-$2.8M\n\nAfter subtracting accessible assets (~$97,000 cash + taxable investments), a reasonable target is often around:\n- $2.2M-$2.7M of total life insurance on Priya\n\nA quick estimate for Daniel\n\nIf Daniel died:\n\n- Mortgage: $462,000\n- Child support/college buffer: $100,000-$200,000\n- Income replacement: 8-10× income = about $1.0M-$1.2M\n- Final expenses: $25,000\n\nTotal need before assets: roughly $1.6M-$1.9M\n\nAfter accessible assets:\n- About $1.5M-$1.8M of total life insurance on Daniel\n\nA simpler rule of thumb\n\nFor a household like yours, many planners would consider roughly:\n\n- Priya: $2M-$3M term coverage\n- Daniel: $1.5M-$2M term coverage\n\nThose ranges assume you want the surviving spouse to:\n- Pay off or substantially reduce the mortgage,\n- Maintain childcare and household cash flow,\n- Continue retirement saving,\n- Help fund future education expenses.\n\nTerm length\n\nWith a 3-year-old child, common choices are:\n\n- 20-year term: covers the years until your child is in their early 20s\n- 25-year term: provides additional protection through college and early career years\n\nGiven your age is unknown, 20-year level term is often the first place to look.\n\nImportant caveat on employer coverage\n\nGroup life insurance through an employer is valuable, but:\n- Coverage amounts are often only 1-2× salary unless you elect more.\n- Coverage may disappear if employment ends.\n- Premiums can rise or coverage can change over time.\n\nFor that reason, many families use employer coverage as a supplement and purchase individual level-term policies for the core protection.\n\nNext step\n\nGather:\n- Current life insurance amounts for both of you (employer and any personal policies)\n- Whether either employer provides survivor income, pension benefits, or supplemental life\n- Your ages\n\nWith those details, I can estimate your coverage gap much more precisely and quantify whether you are underinsured, adequately insured, or carrying more coverage than necessary.",
+  "taskId": "patel_life_insurance_need",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1798,
+      "outputTokens": 984,
+      "totalTokens": 2782,
+      "reasoningTokens": 128,
+      "cachedInputTokens": 1664
+    }
+  }
+}

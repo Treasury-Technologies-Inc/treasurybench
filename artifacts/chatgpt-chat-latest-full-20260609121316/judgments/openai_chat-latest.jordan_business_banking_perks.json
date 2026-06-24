@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_business_banking_perks",
+  "provider": "openai:chat-latest",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the provided account balances and transaction history, correctly identifying the tax reserve, business checking, and specific expense categories."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies freelancer-specific systems. It correctly notes the self-employed health insurance deduction is an above-the-line deduction and correctly identifies the HSA's triple-tax advantage."
+    },
+    {
+      "id": "resolution",
+      "score": 32,
+      "maxScore": 35,
+      "rationale": "The response provides a high-leverage, actionable plan. It correctly prioritizes tax reserves and retirement planning (Solo 401k) over generic advice. It misses a specific mention of the 2026 HSA contribution limit ($4,400) which would have added precision."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response appropriately caveats that Solo 401k limits depend on net income and that HSA eligibility depends on the specific marketplace plan."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employed health insurance premiums are an above-the-line deduction",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA contributions are tax-deductible, grow tax-free, and are tax-free for qualified medical expenses",
+      "tableKey": "hsa_contribution_treatment",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 2026 HSA self-only contribution limit of $4,400 to provide a concrete target for the user."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to create a 'benefits replacement' sinking fund for PTO/sick leave is a highly relevant, non-standard insight for a freelancer."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and actionable response that correctly prioritizes tax-safe cashflow and freelancer-specific benefit structures over generic financial advice."
+}

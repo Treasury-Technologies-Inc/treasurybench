@@ -1,0 +1,70 @@
+[
+  {
+    "provider": "openai:chat-latest",
+    "taskCount": 81,
+    "avgDeterministicScore": 86,
+    "medianLatencyMs": 8010,
+    "domainScores": [
+      {
+        "domain": "cashflow_budgeting",
+        "taskCount": 6,
+        "avgDeterministicScore": 92
+      },
+      {
+        "domain": "credit_cards_rewards",
+        "taskCount": 9,
+        "avgDeterministicScore": 83
+      },
+      {
+        "domain": "debt_credit_health",
+        "taskCount": 3,
+        "avgDeterministicScore": 100
+      },
+      {
+        "domain": "employer_benefits_perks",
+        "taskCount": 6,
+        "avgDeterministicScore": 87
+      },
+      {
+        "domain": "housing_rent",
+        "taskCount": 6,
+        "avgDeterministicScore": 93
+      },
+      {
+        "domain": "insurance_risk_protection",
+        "taskCount": 6,
+        "avgDeterministicScore": 88
+      },
+      {
+        "domain": "investing_equity_comp",
+        "taskCount": 6,
+        "avgDeterministicScore": 82
+      },
+      {
+        "domain": "life_planning_major_decisions",
+        "taskCount": 3,
+        "avgDeterministicScore": 79
+      },
+      {
+        "domain": "retirement_tax_advantaged",
+        "taskCount": 9,
+        "avgDeterministicScore": 84
+      },
+      {
+        "domain": "savings_expense_reduction",
+        "taskCount": 6,
+        "avgDeterministicScore": 83
+      },
+      {
+        "domain": "tax_strategy",
+        "taskCount": 12,
+        "avgDeterministicScore": 79
+      },
+      {
+        "domain": "transaction_intelligence",
+        "taskCount": 9,
+        "avgDeterministicScore": 95
+      }
+    ]
+  }
+]

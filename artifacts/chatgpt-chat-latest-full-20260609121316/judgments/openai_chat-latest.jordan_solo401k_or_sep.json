@@ -1,0 +1,55 @@
+{
+  "taskId": "jordan_solo401k_or_sep",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's specific account balances, recent income, and existing IRA/HSA context to ground the advice."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the structural differences between Solo 401(k) and SEP IRA. It correctly notes the pro-rata issue with the existing Traditional IRA. It misses the opportunity to explicitly mention the 2026 contribution limits."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear. It provides a logical order of operations for a freelancer with irregular income."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes good caveats about waiting for annual profit estimates and tax reserves, though it could have been more explicit about the administrative burden of a Solo 401(k) (e.g., Form 5500-EZ filing requirements)."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Solo 401(k) allows both employee salary-deferral and employer profit-sharing contributions.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "SEP IRAs are generally pre-tax only.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the pro-rata rule but does not explicitly cite the 2026 contribution limits, which would have strengthened the resolution."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the 2026 elective deferral limit ($24,500) or the total defined contribution limit ($72,000) to provide concrete scale.",
+    "Could have mentioned the specific filing requirement (Form 5500-EZ) for Solo 401(k) plans once assets exceed $250,000 as a prudence/admin caveat."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the potential to roll existing Traditional IRA assets into a Solo 401(k) to clear the path for future backdoor Roth contributions."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and accurate recommendation that correctly prioritizes the Solo 401(k) for its flexibility and potential to resolve existing pro-rata IRA issues."
+}

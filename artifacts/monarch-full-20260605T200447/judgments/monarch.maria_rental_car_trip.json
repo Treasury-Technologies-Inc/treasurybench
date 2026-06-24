@@ -1,0 +1,42 @@
+{
+  "taskId": "maria_rental_car_trip",
+  "provider": "monarch",
+  "totalScore": 35,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "The response is entirely generic and fails to reference the user's specific Avis transaction, Microsoft employment, or Chase Sapphire Preferred card, despite these being explicitly provided in the persona and transaction data."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The general advice is factually sound, but it fails to apply the specific 2026-relevant card benefits (CSP primary coverage) or employer-specific perks (Microsoft corporate rental rates) available to the user."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response provides a generic checklist rather than a personalized analysis of the user's actual $312.44 Avis rental, missing the opportunity to quantify potential savings."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding insurance and rental terms, though it is too passive in its delivery."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to identify the Microsoft corporate rental discount eligibility.",
+    "Failed to mention that the Chase Sapphire Preferred provides primary rental coverage, which could have saved the user from purchasing unnecessary rental company insurance.",
+    "Failed to analyze the specific $312.44 Avis transaction for potential overpayment.",
+    "Failed to provide a concrete next step for checking the Microsoft Prime portal for rental codes."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response is a generic, non-personalized template that ignores the specific employer and credit card data provided, failing to offer the high-leverage advice requested."
+}

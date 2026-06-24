@@ -1,0 +1,44 @@
+{
+  "taskId": "maria_rent_rewards",
+  "provider": "monarch",
+  "totalScore": 35,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "The response failed to use the user's specific rent data ($2,350/month) to perform the requested annualization ($28,200/year) or personalized math, despite having the data in the provided CSV."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the general mechanics of rent rewards and fee-aware math, but fails to apply the specific Bilt 2.0 context requested in the task instructions."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 30,
+      "rationale": "The response is generic and asks the user to provide information that is already present in the provided data, failing to provide the requested personalized analysis."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "The response provides good general warnings about interest and fees, but lacks the specific, actionable advice required for this persona."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response is entirely generic and does not make specific external factual claims that require verification against the locked-fact table."
+  ],
+  "missedOpportunities": [
+    "Failed to annualize Maria's $2,350 rent to $28,200.",
+    "Failed to apply Bilt 2.0 terms (Blue/Obsidian/Palladium) to the user's specific situation.",
+    "Failed to calculate the potential annual rewards value for Maria based on her rent.",
+    "Failed to provide a concrete recommendation based on the provided transaction history."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provided generic, boilerplate advice and failed to utilize the provided user data to perform the requested personalized rent-reward analysis."
+}

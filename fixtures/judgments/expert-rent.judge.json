@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_save_on_rent",
+  "provider": "fixture_expert",
+  "totalScore": 94,
+  "dimensions": [
+    {
+      "id": "basic_correctness",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Directionally correct rent advice."
+    },
+    {
+      "id": "data_grounding",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "Uses rent, income, household, and Seattle context."
+    },
+    {
+      "id": "advanced_opportunity",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "Finds MFTE/MHA and rent rewards."
+    },
+    {
+      "id": "quantified_impact",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Annualizes rent but does not estimate MFTE capped-rent savings."
+    },
+    {
+      "id": "actionability",
+      "score": 10,
+      "maxScore": 10,
+      "rationale": "Gives concrete search and verification steps."
+    },
+    {
+      "id": "factual_safety",
+      "score": 10,
+      "maxScore": 10,
+      "rationale": "Appropriately caveats current AMI and eligibility."
+    },
+    {
+      "id": "unexpected_valid_insight",
+      "score": 4,
+      "maxScore": 5,
+      "rationale": "Adds useful rent rewards angle."
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": ["Could have estimated a plausible MFTE monthly savings range."],
+  "unexpectedValidInsights": ["Bilt/no-fee rent rewards."],
+  "safetyIssues": [],
+  "summary": "Strong data-grounded rent answer that finds the high-leverage MFTE path and avoids overclaiming."
+}

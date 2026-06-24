@@ -1,0 +1,57 @@
+{
+  "taskId": "jordan_travel_rewards",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies and uses the specific transaction amounts for Delta, Marriott, and Uber, and links them to the Chase Ink Business Preferred account."
+    },
+    {
+      "id": "correctness",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Correctly identifies tax treatment for self-employed travel and rewards. The 50% meal deduction and Schedule C treatment are accurate. Minor point deduction for not explicitly noting that the 15.3% SE tax applies to net earnings after the 7.65% employer-equivalent deduction."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Clear, actionable advice provided. The distinction between reimbursement as income vs. expense offset is well-explained. Could have been slightly more specific on the QBI impact mechanics."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent audit-proofing advice, including the need for itemized folios and business purpose documentation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Business meals while traveling are generally 50% deductible.",
+      "tableKey": "irs_2026_business_meals_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3%.",
+      "tableKey": "se_tax_2026_net_earnings_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Chase Ink Business Preferred earns 3x on travel.",
+      "tableKey": "chase_2026_ink_business_preferred_categories",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned that the 15.3% SE tax is applied to 92.35% of net earnings."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that business rewards are treated as rebates rather than taxable income."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, grounded, and actionable advice for a self-employed consultant regarding travel expenses, tax substantiation, and reward management."
+}

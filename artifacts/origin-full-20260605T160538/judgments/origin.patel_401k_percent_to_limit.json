@@ -1,0 +1,56 @@
+{
+  "taskId": "patel_401k_percent_to_limit",
+  "provider": "origin",
+  "totalScore": 35,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 10,
+      "maxScore": 40,
+      "rationale": "The response failed to use the provided payroll data (Priya $8,750, Daniel $5,000 semi-monthly) which was explicitly available in the transactions. It incorrectly claimed this information was not in the profile."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 35,
+      "rationale": "The 2026 401(k) limit ($24,500) and catch-up amounts are correct. However, the failure to use the provided salary data makes the calculation generic rather than personalized."
+    },
+    {
+      "id": "resolution",
+      "score": 0,
+      "maxScore": 20,
+      "rationale": "The response did not answer the specific question for Priya and Daniel, instead providing a generic table of hypothetical percentages."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response included appropriate disclaimers regarding tax advice and plan-specific constraints."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) catch-up contribution (age 50+) is $8,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) super catch-up (ages 60-63) is $11,250",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to calculate the specific contribution percentage for Priya ($8,750 * 24 = $210,000 annual gross) and Daniel ($5,000 * 24 = $120,000 annual gross) to reach the $24,500 limit.",
+    "Did not account for the fact that Priya and Daniel are already contributing 8% and 6% respectively, which could have been used to show the gap to the limit."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response failed to utilize the provided payroll data to answer the specific question, instead providing generic hypothetical calculations."
+}

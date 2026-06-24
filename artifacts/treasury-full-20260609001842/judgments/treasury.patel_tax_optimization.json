@@ -1,0 +1,64 @@
+{
+  "taskId": "patel_tax_optimization",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Strong use of visible data and employer context, though it missed the specific Salesforce 401k match detail."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Correctly applied 2026 limits for HSA and DCAP. The SALT cap figure was slightly off (used 40k instead of 40.4k)."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "Excellent prioritization of high-impact tax moves. The advice on HSA growth and DCAP is highly actionable."
+    },
+    {
+      "id": "prudence",
+      "score": 14,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding plan-level eligibility and the need for verification."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 Dependent Care FSA limit is $7,500",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HSA contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Married Filing Jointly standard deduction is $32,200",
+      "tableKey": "irs_2026_standard_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 SALT deduction limit is $40,400",
+      "tableKey": "irs_2026_salt_cap",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response cited a $40,000 SALT cap, while the locked benchmark fact for 2026 is $40,400."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the Salesforce 401(k) match of 100% on the first 6% of base salary, which is a high-leverage optimization."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested 'bunching' charitable contributions to exceed the standard deduction, which is a sophisticated tax-planning strategy for homeowners."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides high-quality, personalized tax optimization advice grounded in the user's specific financial data and 2026 tax rules, with only minor inaccuracies in the SALT cap figure."
+}

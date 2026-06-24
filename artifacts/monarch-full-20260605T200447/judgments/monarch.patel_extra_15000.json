@@ -1,0 +1,51 @@
+{
+  "taskId": "patel_extra_15000",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response uses the visible account balances and transaction data well, though it fails to use the exact $15,000 allocation logic against specific account types (e.g., HSA/529) and misses the specific employer-plan benefits available to the user."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response uses a stale $7,000 IRA limit instead of the 2026 $7,500 limit. It correctly identifies the need to verify debt status but lacks specific 2026 tax/contribution limit precision."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The prioritization is logical and actionable. It correctly identifies the high-interest debt as the first priority and provides a clear, ordered plan."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response includes good caveats about interest rates and employer matches, but it is overly confident in assuming the credit card balances are revolving debt without explicitly checking the statement float."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 IRA contribution limit is $7,000",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response cites $7,000 as the IRA contribution limit, which is stale for 2026 ($7,500).",
+    "The response assumes credit card balances are revolving debt without verifying if they are statement float."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the Salesforce 401(k) match (6% of base salary) or the HSA seed/contribution opportunities.",
+    "Did not leverage the 2026 dependent care FSA limit ($7,500) or the 2026 family HSA limit ($8,750) in the prioritization logic."
+  ],
+  "unexpectedValidInsights": [
+    "The response correctly identifies the psychological benefit of mortgage principal prepayments as a secondary option."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-structured and logical prioritization plan that is hampered by stale 2026 tax limit data and a failure to integrate specific employer-benefit opportunities."
+}

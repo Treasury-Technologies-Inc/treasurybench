@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:18:35.770Z",
+  "latencyMs": 8422,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the balances and transactions you shared, a practical checking-account buffer is about $8,000–$12,000, with anything above that a candidate for savings or investing (depending on your goals and emergency-fund target).\n\nHow I got there\n\nYour recurring monthly cash inflows:\n- Salesforce net pay: about $10,400/month\n- UCHealth net pay: about $6,250/month\n- Total net deposits: about $16,650/month\n\nVisible recurring monthly outflows:\n- Mortgage: $3,850\n- Daycare + backup care: about $1,870\n- Auto loan: $485\n- Utilities/internet: about $283\n- Insurance: about $372\n- 529 contribution: $300\n- HSA contribution: $400\n- Groceries: about $1,024\n- Household, dining, subscriptions, fitness: about $645\n- Medical (this month): about $185\n\nTotal visible spending: roughly $9,400/month\n\nA buffer equal to about one month of core bills is usually enough for a dual-income household with steady semi-monthly paychecks. Your largest unavoidable bills are:\n- Mortgage\n- Daycare\n- Auto loan\n- Utilities\n- Insurance\n- Groceries\n\nThose alone are roughly $7,900–$8,500/month.\n\nRecommended structure\n\n- Checking target: $10,000 (middle of the range)\n- High-yield savings: emergency fund and near-term goals\n- Investments: amounts beyond your emergency-fund target\n\nWhat that means today\n\nCurrent balances:\n- Checking: $14,680\n- Marcus savings: $28,750\n\nIf you adopt a $10,000 checking target:\n- Excess checking ≈ $4,680\n\nYou could move roughly:\n- $4,500–$5,000 to Marcus savings immediately, or\n- Invest part of that if your emergency fund is already where you want it.\n\nOne consideration before investing more\n\nYour family prioritizes cash-flow protection first, and you have:\n- A toddler\n- Significant daycare costs\n- A mortgage\n- Two incomes, but one child-dependent household\n\nYour readily available cash (checking + savings) is about $43,430. If monthly spending is around $9,400, that's about 4.6 months of expenses before counting the taxable brokerage account.\n\nMany families in your situation target:\n- 3–6 months of expenses in cash/high-yield savings\n- More if either job is volatile\n\nSince you also have a $54,000 taxable brokerage account, your overall liquidity is strong.\n\nNext steps\n1. Set a checking floor of about $10,000.\n2. Automate a sweep to Marcus whenever checking exceeds that level after payroll deposits.\n3. Review whether Priya is using the dependent care FSA and available backup-care benefit; those can produce larger annual savings than optimizing cash placement alone.\n4. If your emergency-fund target is already satisfied, direct excess cash toward:\n   - Increasing retirement contributions,\n   - Additional HSA contributions (if not maximizing),\n   - Or taxable investing.\n\nFor your specific cash-flow pattern, I would not keep more than about $12,000 sitting in checking on an ongoing basis unless you have a known large expense coming up.",
+  "taskId": "patel_checking_buffer",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1797,
+      "outputTokens": 786,
+      "totalTokens": 2583,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1664
+    }
+  }
+}

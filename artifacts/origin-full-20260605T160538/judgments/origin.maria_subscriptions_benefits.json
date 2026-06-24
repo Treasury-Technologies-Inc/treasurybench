@@ -1,0 +1,48 @@
+{
+  "taskId": "maria_subscriptions_benefits",
+  "provider": "origin",
+  "totalScore": 55,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the recurring charges (Netflix, Adobe, ClassPass) but fails to ground the analysis in the Microsoft employer context provided in the persona."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The math is generally sound, but the response misses the critical Microsoft wellness reimbursement opportunity for ClassPass, which is a high-value, planted fact."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 35,
+      "rationale": "The response provides actionable advice for general subscription management but fails to resolve the high-leverage employer benefit linkage, which was the primary intent of the task."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is generally safe and avoids overpromising, though it misses the opportunity to frame the reimbursement as a 'verify and claim' action."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft offers a $1,500 annual gym/wellness reimbursement, and ClassPass/fitness-class expenses are eligible for that reimbursement.",
+      "tableKey": "microsoft_2026_wellness_reimbursement",
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response failed to mention the Microsoft wellness reimbursement program, which is a key benefit for this persona."
+  ],
+  "missedOpportunities": [
+    "Failed to link the $89/month ClassPass subscription to the $1,500 annual Microsoft wellness reimbursement benefit.",
+    "Did not explicitly advise Maria to check her Microsoft Prime portal for potential professional tool discounts or other perks."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides helpful general subscription advice but misses the high-value, personalized opportunity to leverage Maria's Microsoft wellness reimbursement for her ClassPass subscription."
+}

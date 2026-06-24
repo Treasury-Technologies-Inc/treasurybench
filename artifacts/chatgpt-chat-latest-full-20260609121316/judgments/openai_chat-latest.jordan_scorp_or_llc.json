@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_scorp_or_llc",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds its analysis in the provided May 2026 transaction data, correctly identifying income and expense categories."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax and entity advice is accurate and avoids common pitfalls. It correctly identifies that one month is insufficient for annualization and emphasizes the need for CPA-led projections."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable next steps. It could have been slightly more specific about the interaction between the self-employed health insurance deduction and the S-corp reasonable salary requirement."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding the administrative burden of S-corps. It avoids over-promising tax savings."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "A single-member LLC is generally ignored by default for federal tax purposes and files Schedule C.",
+      "tableKey": "single_member_llc_disregarded",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the need for professional guidance and does not make definitive claims about the user's specific tax liability."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned that the self-employed health insurance deduction (above-the-line) is treated differently in an S-corp (often as a taxable fringe benefit or W-2 adjustment) compared to Schedule C."
+  ],
+  "unexpectedValidInsights": [
+    "The response correctly identifies that the existing tax reserve and quarterly estimated payments are strong indicators of a mature business operation."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prudent assessment that correctly identifies the limitations of using one month of data to make a major entity-choice decision."
+}

@@ -1,0 +1,39 @@
+{
+  "name": "treasurybench",
+  "version": "0.1.0",
+  "description": "TreasuryBench personal-finance assistant benchmark definitions and validators",
+  "type": "module",
+  "private": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "validate": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/validate.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-validate.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-validate.mjs",
+    "report": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/report.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-report.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-report.mjs",
+    "prompt": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/prompt.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-prompt.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-prompt.mjs",
+    "export-prompts": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/export-prompts.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-export-prompts.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-export-prompts.mjs",
+    "export-persona-data": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/export-persona-data.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-export-persona-data.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-export-persona-data.mjs",
+    "export-judge-prompts": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/export-judge-prompts.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-export-judge-prompts.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-export-judge-prompts.mjs",
+    "score-capture": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/score-capture.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-score-capture.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-score-capture.mjs",
+    "evaluate-captures": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/evaluate-captures.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-evaluate-captures.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-evaluate-captures.mjs",
+    "evaluate-run": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/evaluate-run.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-evaluate-run.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-evaluate-run.mjs",
+    "score-run": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/score-run.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-score-run.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-score-run.mjs",
+    "unknown-facts": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/unknown-facts.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-unknown-facts.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-unknown-facts.mjs",
+    "reground": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/reground.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-reground.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-reground.mjs",
+    "usage-report": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/usage-report.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-usage-report.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-usage-report.mjs",
+    "run-provider": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/run-provider.ts --bundle --platform=node --format=cjs --outfile=.treasurybench-tmp/treasurybench-run-provider.cjs --log-level=warning && node .treasurybench-tmp/treasurybench-run-provider.cjs",
+    "run-judge": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/run-judge.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-run-judge.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-run-judge.mjs",
+    "run-pairwise": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/run-pairwise.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-run-pairwise.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-run-pairwise.mjs",
+    "make-capture-templates": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/make-capture-templates.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-make-capture-templates.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-make-capture-templates.mjs",
+    "capture-status": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/capture-status.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-capture-status.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-capture-status.mjs",
+    "judge-prompt": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/judge-prompt.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-judge-prompt.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-judge-prompt.mjs",
+    "smoke": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/tests/smoke.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-smoke.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-smoke.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.8.6",
+    "esbuild": "^0.25.5",
+    "typescript": "^5.8.3"
+  }
+}

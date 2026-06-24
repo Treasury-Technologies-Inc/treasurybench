@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_life_insurance_need",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific mortgage balance, childcare costs, and existing retirement/brokerage assets."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is factually sound and avoids common pitfalls like recommending whole life insurance. It correctly identifies the need to verify employer-provided coverage."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable framework (DIME) and specific next steps for the user to take with their respective employers."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately caveats that employer benefits are not guaranteed and emphasizes the importance of disability insurance, which is a high-value, prudent addition."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Term life insurance is remarkably affordable when you're young.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response uses general market pricing for term life insurance ($40-$60/mo for $1M) which is reasonable but not a locked benchmark fact."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the dependent care FSA as a way to manage current childcare cashflow while evaluating insurance needs."
+  ],
+  "unexpectedValidInsights": [
+    "The inclusion of disability insurance as a critical companion to life insurance is a high-value, relevant insight for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded, prudent, and actionable response that correctly frames term life insurance needs for a young family using the DIME method."
+}

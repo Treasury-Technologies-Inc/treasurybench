@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T19:59:02.135Z",
+  "latencyMs": 46984,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "monarch",
+  "response": "For the December 1, 2025 to May 31, 2026 period, I still need to break down spending by category and merchant so I can pinpoint where you're most likely wasting money or leaking value.\n\nShow a full category and top-merchant breakdown for December 2025 through May 2026.\nFocus only on April and May 2026, where most expense data exists, and break those months down by category and merchant.\nSkip the detailed breakdown and instead identify just the top 10 spending categories and merchants from December 2025 through May 2026.",
+  "taskId": "jordan_where_wasting_money"
+}

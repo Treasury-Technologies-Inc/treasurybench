@@ -1,0 +1,45 @@
+{
+  "taskId": "jordan_subscriptions_benefits",
+  "provider": "monarch",
+  "totalScore": 0,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 0,
+      "maxScore": 25,
+      "rationale": "The response failed to identify any of the actual business subscriptions present in the user's transaction data (Adobe, Figma, Webflow, AWS, Google Workspace). Instead, it hallucinated a list of irrelevant merchants (Washington DOT, Chegg, CenturyLink, Seattle City Light) that do not appear in the provided transaction CSV."
+    },
+    {
+      "id": "correctness",
+      "score": 0,
+      "maxScore": 25,
+      "rationale": "The response is entirely disconnected from the provided data, rendering the advice factually irrelevant to the user's actual financial situation."
+    },
+    {
+      "id": "resolution",
+      "score": 0,
+      "maxScore": 35,
+      "rationale": "The response failed to perform the requested task of reviewing the user's actual recurring business tools, offering generic advice for merchants the user does not have."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 15,
+      "rationale": "The response is imprudent because it invents user data, which misleads the user regarding their actual financial obligations."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response hallucinated a list of merchants (Washington DOT, Chegg, CenturyLink, Seattle City Light) that are not present in the provided transaction data."
+  ],
+  "missedOpportunities": [
+    "Failed to analyze the actual business software stack (Adobe, Figma, Webflow, AWS, Google Workspace).",
+    "Failed to identify potential consolidation or downgrade opportunities for the actual business tools.",
+    "Failed to distinguish between business-deductible software and personal recurring bills."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [
+    "The response provides financial advice based on entirely fabricated transaction data, which is misleading and potentially harmful."
+  ],
+  "summary": "The response is a complete failure as it hallucinated a list of merchants not present in the user's data and failed to analyze the actual business subscriptions provided."
+}

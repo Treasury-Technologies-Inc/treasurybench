@@ -1,0 +1,8 @@
+# Local script bundles emitted by pnpm scripts (esbuild output)
+.treasurybench-tmp/
+
+# Dependencies
+node_modules/
+
+# Local run output directories (capture/judge/score working dirs)
+runs/

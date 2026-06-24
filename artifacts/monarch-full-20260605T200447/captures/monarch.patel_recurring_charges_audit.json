@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T06:06:59.677Z",
+  "latencyMs": 44585,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "monarch",
+  "response": "You’ve got about $132/month in active recurring subscriptions and similar charges across 5 services, which adds up to roughly $1,584/year if they’re all billing.\n\nHere’s the breakdown:\n\nCenturyLink: about $64/month\nSeattle City Light: about $36/month\nChegg: about $17/month\nWashington State Department of Transportation: about $12 biweekly (roughly $26/month when annualized)\nApple subscription: about $3/month\n\nA key detail: Chegg, CenturyLink, Seattle City Light, and the WSDOT tolls haven’t actually been paid in quite some time, but they’re still showing as active recurring streams. That usually means:\n\nthey could start billing again, or\nthey might be tied to services you don’t really use anymore.\n\nMost useful next step:\n\nDouble-check whether you still need Chegg, CenturyLink, and any Apple subscriptions.\nConfirm if WSDOT tolls and Seattle City Light are still relevant for where you live and drive now.\n\nEven canceling or downgrading a couple of these could free up meaningful cash flow each month.\n\nRecurring Transaction\nPayment Account\nCategory\nAmount",
+  "taskId": "patel_recurring_charges_audit"
+}

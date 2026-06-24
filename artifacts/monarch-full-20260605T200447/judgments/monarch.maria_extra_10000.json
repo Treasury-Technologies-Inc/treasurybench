@@ -1,0 +1,55 @@
+{
+  "taskId": "maria_extra_10000",
+  "provider": "monarch",
+  "totalScore": 45,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 8,
+      "maxScore": 20,
+      "rationale": "The response ignores the user's specific financial data (e.g., actual balances, income, and rent) in favor of a generic 'typical' persona, failing to leverage the provided CSVs."
+    },
+    {
+      "id": "correctness",
+      "score": 12,
+      "maxScore": 25,
+      "rationale": "The response uses generic tax/retirement advice rather than applying the specific Microsoft 2026 plan facts (e.g., 50% match, mega backdoor Roth availability) provided in the benchmark."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 30,
+      "rationale": "The prioritization is generic and fails to address the user's specific situation, such as the high RSU income or the specific Microsoft benefits available."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The advice is safe and conservative, but lacks the depth required for a personalized financial assistant."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 federal tax brackets (10%, 12%, 22%, 24%, 32%, 35%, 37%)",
+      "tableKey": "obbba_2025_enacted_law",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA triple tax advantage",
+      "tableKey": "hsa_nonqualified_withdrawal_penalty",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response uses generic assumptions instead of the provided user data (e.g., assuming 20% APR credit card debt when the user's transactions show no revolving debt).",
+    "The response fails to mention specific Microsoft 2026 benefits like the $1,000 HSA seed or the mega backdoor Roth capability."
+  ],
+  "missedOpportunities": [
+    "Failed to analyze the user's actual cashflow and RSU income.",
+    "Missed the opportunity to discuss the Microsoft-specific 401(k) match and mega backdoor Roth.",
+    "Did not address the user's specific rent and living expenses in Seattle."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides generic, safe financial advice but fails to utilize the provided user data and employer-specific benefits, resulting in a low-leverage, non-personalized plan."
+}

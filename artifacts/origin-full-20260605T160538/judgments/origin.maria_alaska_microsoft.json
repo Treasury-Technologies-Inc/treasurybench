@@ -1,0 +1,59 @@
+{
+  "taskId": "maria_alaska_microsoft",
+  "provider": "origin",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the Alaska Airlines transactions and the Microsoft employer context. It fails to leverage the specific brokerage/RSU data beyond a generic mention."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response contains several stale or incorrect facts: it cites a $60,000 annual salary (unsupported/incorrect based on payroll data), uses a stale 670-mile meal rule, and incorrectly claims the Chase Sapphire Preferred does not offer a free checked bag (it is a credit card, not an airline card, so this is a category error). It also references a $10K figure at the end which is unexplained."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 35,
+      "rationale": "The response surfaces the Microsoft-linked status challenge and corporate rental insurance, which are high-value insights. However, it misses the opportunity to connect the specific Bilt/Atmos transfer partner potential or provide a more concrete verification path for the status challenge."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats about consulting tax advisors and verifying program eligibility, though it makes some overconfident claims about corporate insurance coverage."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Alaska Airlines generally provides complimentary meals in First Class only on flights over 670 miles.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Alaska typically charges a $50 fee for confirmed same-day changes.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response references a $60,000 annual salary which is not supported by the provided payroll data (which shows $2,500 gross semi-monthly, or $60,000 annually, but the response frames it as 'purchasing power' in a confusing way).",
+    "The response incorrectly implies the Chase Sapphire Preferred should provide a free checked bag, which is a feature of airline-branded cards, not the CSP.",
+    "The response ends with an unexplained '$10K' string."
+  ],
+  "missedOpportunities": [
+    "Failed to explicitly link the Bilt Rewards 1:1 transfer partner status with Alaska/Atmos for the user's travel spend.",
+    "Did not provide a specific link or navigation path for the Microsoft Prime portal to verify the status challenge."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the potential for corporate rental insurance to supersede personal card coverage."
+  ],
+  "safetyIssues": [
+    "The response makes an unsupported claim about the user's annual salary which could lead to incorrect financial planning assumptions."
+  ],
+  "summary": "The response provides useful, grounded advice regarding Microsoft-specific travel perks and rental insurance, but is marred by stale airline policy claims, category errors regarding credit card benefits, and an unexplained trailing '$10K' artifact."
+}

@@ -1,0 +1,45 @@
+{
+  "taskId": "jordan_crypto_concentration",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response uses the visible account balances correctly to calculate concentration. It fails to incorporate the persona's specific context regarding irregular income and the need for business/personal separation."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The math is accurate based on the provided CSV. It correctly identifies the crypto position as a concentration risk without making price predictions. It fails to mention tax-lot considerations or the specific tax-reserve context."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The advice is clear but generic. It misses the opportunity to link the crypto reduction to the specific tax-reserve or emergency-fund goals mentioned in the persona memories."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response appropriately frames the risk as a portfolio allocation issue rather than a market prediction. It lacks specific tax-lot warnings for selling crypto."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response uses general 'typical ranges' for crypto allocation which are not locked benchmark facts but are reasonable for financial guidance."
+  ],
+  "missedOpportunities": [
+    "Failed to mention tax-lot identification (FIFO/HIFO) when selling crypto.",
+    "Failed to link the crypto reduction to the persona's need for tax-safe cashflow and irregular income management.",
+    "Did not explicitly address the separation of business and personal assets when discussing where to move the proceeds."
+  ],
+  "unexpectedValidInsights": [
+    "Provided a clear table showing the dollar-amount impact of shifting to different percentage targets."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a mathematically sound assessment of crypto concentration risk but misses opportunities to integrate the persona's specific business-consultant financial context and tax-management needs."
+}

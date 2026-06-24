@@ -1,0 +1,47 @@
+{
+  "taskId": "patel_daycare_rewards",
+  "provider": "openai:chat-latest",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the specific Bright Horizons and Care.com transactions and the Salesforce employer benefits."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response uses the stale $5,000 dependent care FSA limit instead of the 2026 $7,500 limit specified in the locked benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps and math for the user to evaluate their daycare payment strategy."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response appropriately caveats the need to verify fees and plan eligibility, though the stale tax limit reduces the overall quality of the financial advice."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "For 2026, if eligible, you can generally contribute up to $5,000 per household to a dependent care FSA.",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response cites the stale $5,000 dependent care FSA limit instead of the 2026 $7,500 limit."
+  ],
+  "missedOpportunities": [
+    "Failed to use the correct 2026 $7,500 dependent care FSA limit."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides sound, fee-aware advice for daycare payments but relies on a stale 2026 dependent care FSA limit."
+}

@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_credit_card_balance_check",
+  "provider": "treasury",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the visible balances and transactions. It correctly identifies the specific card balances and the checking account liquidity."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the Amex Gold as a charge card and the CFU as a credit card. It correctly identifies the need to verify statement balances. However, it includes a display card at the end that contains raw syntax/artifacts, which is a minor resolution defect."
+    },
+    {
+      "id": "resolution",
+      "score": 24,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear. It correctly prioritizes statement-balance verification over rewards optimization. The inclusion of the display card at the end is a slight negative for professional presentation."
+    },
+    {
+      "id": "prudence",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "The response is prudent, emphasizing the importance of paying statement balances in full and checking employer benefits before making assumptions about reimbursement."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Marcus Savings APY is ~4.40%",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response assumes a 4.40% APY for Marcus Savings; while plausible, it is an unverified external fact."
+  ],
+  "missedOpportunities": [
+    "The response could have explicitly mentioned the Salesforce 401(k) match or HSA seed as higher-leverage items than the yield arbitrage suggested."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to verify the Care.com backup care reimbursement status is a high-leverage, persona-specific insight."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, grounded analysis of the user's credit card situation, correctly prioritizing statement-balance verification over rewards optimization, though it includes minor display artifacts at the end."
+}

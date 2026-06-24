@@ -1,0 +1,73 @@
+{
+  "taskId": "maria_hsa",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's Microsoft 401(k) and links it to the potential for employer-sponsored HSA benefits, though it misses the opportunity to explicitly reference the Microsoft $1,000 annual HSA seed as a specific plan-level fact."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "All cited 2026 IRS limits and OBBBA provisions are accurate and match the locked benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable, though it could have been more specific by suggesting the user check their Microsoft Prime portal for the exact HDHP plan details."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes necessary disclaimers and emphasizes the HDHP eligibility requirement, but it could have been more explicit about the risk of non-qualified withdrawals before age 65."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA family contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA catch-up contribution (age 55+) is $1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HDHP minimum deductible $1,700 self-only / $3,400 family",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HDHP out-of-pocket maximum $8,500 self-only / $17,000 family",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "OBBBA treats Bronze and Catastrophic ACA plans as HSA-compatible",
+      "tableKey": "obbba_2026_bronze_catastrophic_hsa",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly mention the $1,000 annual Microsoft HSA seed benefit available to employees enrolled in an HDHP.",
+    "Could have provided a more direct path to verification by suggesting the user check their Microsoft Prime portal for current plan options."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly highlighted the FICA tax savings (7.65%) associated with payroll-deducted HSA contributions, which is a high-leverage detail."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, high-quality advice on HSA mechanics and 2026 tax rules, effectively grounding the strategy in the user's Microsoft employment context while maintaining appropriate eligibility caveats."
+}

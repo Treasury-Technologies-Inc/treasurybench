@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:15:46.519Z",
+  "latencyMs": 7695,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Possibly yes, but the key question is whether you're enrolled in an HSA-eligible high-deductible health plan (HDHP) through Microsoft.\n\nBased on your data:\n\n- You work at Microsoft.\n- You appear to have roughly:\n  - $60,000/year of base salary (two $2,500 gross pay periods per month).\n  - A recent $42,000 RSU vest.\n  - $1,200 freelance income in May.\n- You live in Washington, which has no state income tax.\n- You currently contribute 8% to your 401(k).\n\nWhy an HSA can be valuable\n\nAn HSA is one of the few accounts that can receive:\n- Pretax contributions.\n- Tax-free investment growth.\n- Tax-free withdrawals for qualified medical expenses.\n\nMany planners consider it even more tax-efficient than a traditional 401(k) when used for long-term investing.\n\nPotential tax savings\n\nAssuming you are HSA-eligible and contribute through payroll:\n\n- Every $1,000 contributed could save roughly:\n  - 22%–24% federal income tax, plus\n  - 7.65% FICA tax (when contributed via payroll deduction)\n\nThat's approximately $297–$317 of tax savings per $1,000 contributed.\n\nExample:\n- A $4,000 HSA contribution could reduce taxes by roughly $1,200–$1,300.\n- A maximum annual contribution could save substantially more, depending on the applicable IRS limit and your tax bracket.\n\nWhat I notice in your finances\n\nYou have:\n- $18,450 checking\n- $5,250 savings\n- $62,300 brokerage\n- $48,500 in your 401(k)\n\nGiven those balances, cash flow does not appear to be the limiting factor. If you're eligible, an HSA would likely be one of the highest-value remaining tax shelters available to you.\n\nHow to decide\n\n1. Check your Microsoft medical plan.\n   - If you're enrolled in an HSA-qualified HDHP, you can contribute.\n   - If you're in a PPO or other non-HDHP plan, you generally cannot.\n\n2. Compare expected medical spending.\n   - If you have low-to-moderate healthcare usage, the HDHP + HSA option is often attractive.\n   - If you have significant recurring medical costs, a richer non-HDHP plan can sometimes be better despite losing HSA eligibility.\n\n3. If eligible, consider contributing through payroll.\n   - Payroll HSA contributions typically avoid both federal income tax and payroll taxes.\n   - Contributing directly outside payroll usually does not provide the payroll-tax benefit.\n\n4. Consider investing the HSA.\n   - If you can cover routine medical expenses from checking or savings, many people invest the HSA balance and allow it to compound long term.\n\nMy assessment from the information available: if you're enrolled in an HSA-eligible Microsoft health plan and don't have unusually high ongoing medical expenses, using an HSA is likely a strong move because it adds a tax-advantaged account beyond your current 8% 401(k) contribution.\n\nIf you tell me which Microsoft medical plan you're enrolled in (HDHP, PPO, etc.), I can help estimate the annual tax benefit more precisely.",
+  "taskId": "maria_hsa",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1503,
+      "outputTokens": 839,
+      "totalTokens": 2342,
+      "reasoningTokens": 128,
+      "cachedInputTokens": 1152
+    }
+  }
+}

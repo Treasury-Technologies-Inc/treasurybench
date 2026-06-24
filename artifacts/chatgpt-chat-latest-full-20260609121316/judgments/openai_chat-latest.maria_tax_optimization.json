@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_tax_optimization",
+  "provider": "openai:chat-latest",
+  "totalScore": 55,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response correctly identifies the user's W-2, freelance income, and RSU vest, but fails to leverage the specific Microsoft plan-level facts provided in the benchmark (e.g., the $1,000 HSA seed or the 50% match details)."
+    },
+    {
+      "id": "correctness",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response cites stale 2026 tax limits ($23,500 for 401k and $7,000 for IRA) despite the locked benchmark facts providing the correct 2026 figures ($24,500 and $7,500)."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The prioritization is logical, but the lack of specific quantification based on the provided plan-level facts limits the impact of the advice."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response includes appropriate caveats regarding freelance income and tax withholding, though it misses the opportunity to explicitly mention the HSA triple-tax advantage."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $23,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,000",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response uses 2025 tax limits for 2026 projections, which contradicts the provided benchmark facts."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the Microsoft-specific 401(k) match (50% up to the IRS limit) and the $1,000 annual HSA seed.",
+    "Did not explicitly explain the HSA triple-tax advantage or the specific 2026 HSA contribution limit ($4,400).",
+    "Missed the opportunity to discuss the Mega Backdoor Roth potential via Microsoft's Fidelity plan."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides helpful, logical tax guidance but relies on stale 2026 tax limits and fails to incorporate specific Microsoft employee benefit facts provided in the benchmark."
+}

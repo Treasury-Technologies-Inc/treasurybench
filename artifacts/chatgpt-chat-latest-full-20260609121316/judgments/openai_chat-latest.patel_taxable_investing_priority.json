@@ -1,0 +1,57 @@
+{
+  "taskId": "patel_taxable_investing_priority",
+  "provider": "openai:chat-latest",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the provided account balances and transaction data to ground its advice, though it missed the Chase Freedom Unlimited account in its summary."
+    },
+    {
+      "id": "correctness",
+      "score": 18,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the priority of tax-advantaged accounts. However, it uses $24,000 as the 401(k) limit instead of the correct $24,500 for 2026, and it fails to mention the pro-rata rule or the specific 2026 dependent care FSA limit of $7,500."
+    },
+    {
+      "id": "resolution",
+      "score": 22,
+      "maxScore": 30,
+      "rationale": "The prioritization is logical and actionable. It correctly identifies the hierarchy of tax shelters over taxable brokerage. It could have been stronger by explicitly referencing the specific 2026 limits for HSA and DCAP."
+    },
+    {
+      "id": "prudence",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response is prudent, emphasizing the need to verify employer-specific plan rules and current contribution levels before making changes."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,000",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "Family HSA limit is in the high-$8,000 range",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly cites $24,000 as the 2026 401(k) deferral limit; the correct limit is $24,500.",
+    "The response mentions the dependent care FSA but fails to cite the specific 2026 limit of $7,500."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the pro-rata rule for potential backdoor Roth strategies.",
+    "Did not explicitly state the 2026 dependent care FSA limit of $7,500.",
+    "Did not incorporate the specific Salesforce 401(k) match details provided in the locked facts."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the tax-saving potential of the Dependent Care FSA for a high-income household."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides sound, prioritized financial advice grounded in the user's data, though it contains a minor factual error regarding the 2026 401(k) contribution limit."
+}

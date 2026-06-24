@@ -1,0 +1,47 @@
+{
+  "taskId": "maria_alaska_microsoft",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links the user's Microsoft employment and SEA-SFO travel history to the relevant corporate status challenge. It correctly identifies the user's recent travel transactions."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response accurately reflects the Microsoft-linked Alaska/Atmos status challenge and provides sound advice on program mechanics. It correctly avoids guaranteeing status and emphasizes verification."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The response provides a high-value, actionable path for the user. It includes a clever 'timing trick' for status validity and clear next steps. It is penalized slightly for including raw display-card syntax in the final output."
+    },
+    {
+      "id": "prudence",
+      "score": 14,
+      "maxScore": 15,
+      "rationale": "The response is appropriately cautious, emphasizing that status challenges require registration and that benefits like upgrades are not guaranteed on the competitive SEA-SFO route."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Alaska Airlines and Microsoft have a corporate relationship that includes shortcuts to elite status.",
+      "tableKey": "alaska_2026_microsoft_corporate_status_challenge",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response includes raw display-card syntax at the end, which should have been rendered or omitted."
+  ],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "The 'timing trick' of completing the status challenge after July 1st to extend status through the following year is a high-value, expert-level insight."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly personalized and actionable guide for a Microsoft employee to leverage Alaska Airlines status challenges, correctly caveating the process and offering a strategic timing tip."
+}

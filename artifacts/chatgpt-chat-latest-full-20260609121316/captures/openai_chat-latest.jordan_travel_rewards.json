@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:21:51.532Z",
+  "latencyMs": 7574,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on your May activity, you had a client trip to Atlanta with these business-travel charges on your Chase Ink Business Preferred:\n\n- Delta Air Lines: $428.60\n- Marriott Marquis Atlanta: $612.30\n- Uber: $74.18\n\nTotal travel spend: $1,115.08\n\nFor a self-employed Schedule C consultant, there are three separate issues to manage: reimbursement, taxes, and rewards.\n\n1. Reimbursements\n\nIf the client reimburses you:\n\n- Keep the reimbursement tied to the specific trip and invoices.\n- For bookkeeping, it's generally best to offset the travel expense rather than treating it as additional profit from the project.\n- Retain:\n  - Client agreement or email authorizing travel\n  - Airline receipt\n  - Hotel folio\n  - Uber receipts\n  - Invoice showing reimbursable expenses\n\nExample:\n- Travel costs: $1,115.08\n- Client reimbursement: $1,115.08\n\nEconomically, you're back to zero on the travel cost. Your tax reporting treatment depends on your bookkeeping method and tax preparation approach, but documentation should clearly show the reimbursement and the related expenses.\n\nIf the client does not reimburse you:\n\n- The full $1,115.08 is generally a deductible Schedule C business expense, assuming the trip was ordinary and necessary for business.\n\n2. Tax records to keep\n\nThe IRS expects you to substantiate:\n- Amount\n- Date\n- Place\n- Business purpose\n\nFor this Atlanta trip, I'd keep:\n\n- Delta receipt\n- Marriott hotel folio (not just the credit-card charge)\n- Uber receipts\n- Calendar invite, meeting agenda, or client emails showing the business purpose\n- Notes identifying which client the trip related to\n\nA simple folder structure works well:\n\n- 2026 Taxes\n  - Travel\n    - 2026-05 Atlanta Client Visit\n      - Airfare\n      - Hotel\n      - Ground transportation\n      - Client correspondence\n\nBecause you prefer low-admin systems, one folder per trip is usually sufficient.\n\n3. Travel rewards strategy\n\nYour Chase Ink Business Preferred is a strong card for your current setup.\n\nFor the May trip:\n\n- Travel purchases generally earn 3 Ultimate Rewards points per dollar on Ink Preferred.\n- Estimated points from the $1,115.08 travel spend:\n  - About 3,345 Ultimate Rewards points\n\nAt a rough value of:\n- 1.25¢/point through some Chase travel redemption options, that's about $41.81 of value.\n- Potentially more if transferred to airline or hotel partners and redeemed efficiently.\n\nSince your consulting work already generates periodic travel, continuing to place airfare, hotels, rideshare, and other business travel on the Ink Preferred is reasonable.\n\n4. Meals while traveling\n\nI don't see travel-meal transactions associated with the Atlanta trip in the records provided.\n\nIf you incurred meals while away overnight for business:\n- Keep itemized receipts.\n- Document the business purpose.\n- Business meals are generally subject to special deduction rules (currently typically 50% deductible in many cases), so maintaining records is important.\n\n5. A practical system for your finances\n\nGiven your preference for separate buckets:\n\n- Bluevine Business Checking:\n  - Client payments land here.\n- Ally Tax Reserve:\n  - Continue moving money for quarterly estimated taxes.\n- Chase Ink Preferred:\n  - Put all business travel and business software expenses here.\n- Capital One Checking:\n  - Personal spending and bill payments.\n\nThis separation makes tax prep easier and reduces the chance of accidentally missing deductions.\n\nOne thing I'd verify now: whether the Atlanta client is expected to reimburse any of the $1,115.08. If reimbursement is still outstanding, I'd invoice it promptly with copies of the airfare, hotel, and Uber receipts attached so there's a clear audit trail.",
+  "taskId": "jordan_travel_rewards",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1470,
+      "outputTokens": 776,
+      "totalTokens": 2246,
+      "reasoningTokens": 0,
+      "cachedInputTokens": 0
+    }
+  }
+}

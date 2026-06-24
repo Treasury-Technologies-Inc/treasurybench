@@ -1,0 +1,58 @@
+{
+  "taskId": "maria_mega_backdoor",
+  "provider": "origin",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response references the Microsoft plan context well but fails to integrate the user's specific financial data (e.g., current 401k balance, savings, or cashflow) to provide a concrete, personalized recommendation."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 limits ($24,500 deferral, $72,000 415(c)) and explains the mega backdoor mechanics accurately."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "Provides a clear framework but stops short of a definitive 'next step' for Maria, such as checking her specific paystub for after-tax contribution options."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent use of caveats regarding plan support, nondiscrimination testing, and the need for professional tax advice."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 section 415(c) defined-contribution limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA phaseout for single filers is $153,000 to $168,000",
+      "tableKey": "irs_2026_roth_single_phaseout",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to sequence the recommendation with the user's HSA eligibility (Microsoft plan context) or the employer match gap.",
+    "Did not use the user's visible income/savings data to calculate a realistic monthly contribution capacity."
+  ],
+  "unexpectedValidInsights": [
+    "Explicitly mentioned the risk of ACP nondiscrimination testing for highly compensated employees, which is a sophisticated and relevant insight for a Microsoft employee."
+  ],
+  "safetyIssues": [],
+  "summary": "A technically accurate and well-caveated explanation of the mega backdoor Roth, though it lacks the personalized integration of the user's specific financial data to move from educational to actionable."
+}

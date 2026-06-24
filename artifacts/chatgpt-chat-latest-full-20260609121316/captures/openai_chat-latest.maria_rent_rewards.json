@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:14:21.608Z",
+  "latencyMs": 6292,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Yes. Based on your transactions, you're paying $2,350/month to Cascade Apartments directly from checking, which suggests ACH or another fee-free bank-payment method.\n\nThe highest-value way to earn rewards on rent without adding payment fees is typically:\n\n- Bilt Mastercard\n  - Bilt allows earning points on rent payments without a transaction fee in many cases, including landlords that only accept ACH or checks (Bilt can route the payment on your behalf).\n  - Rent rewards are generally 1 point per dollar on rent, subject to program rules and caps.\n  - At your rent of $2,350/month:\n    - Annual rent = $28,200\n    - Potential rewards = about 28,200 Bilt points/year\n  - Depending on how you redeem points, that could be worth roughly:\n    - ~$280 if redeemed at ~1 cent per point\n    - Potentially $400–$560+ if transferred to travel partners and redeemed well\n\nWhat I'd avoid:\n\n- Third-party services that charge a credit-card fee of ~2.5%–3%\n  - On $2,350 rent, a 2.9% fee is about $68/month.\n  - That's about $817/year in fees.\n  - Typical credit-card rewards on rent usually won't exceed the fee, so this is often a net loss.\n\nFor your situation specifically:\n\n- You already have a Chase Sapphire Preferred, but using it through a fee-based rent-payment service would usually cost more than the rewards earned.\n- Since you're a Seattle renter paying $28,200/year in rent, Bilt is one of the few straightforward ways to generate meaningful rewards without intentionally paying extra fees.\n\nExact next steps:\n\n1. Check whether Cascade Apartments accepts ACH, checks, or an online rent portal.\n2. Verify whether Bilt supports your property's payment method.\n3. Compare:\n   - Current cost: $0 rewards, $0 fees.\n   - Bilt setup: potentially ~28,200 points/year, still with no rent-payment fee.\n4. If you pursue it, make sure you follow Bilt's current requirements (for example, minimum transaction requirements to earn points), since program terms can change.\n\nGiven your $2,350 monthly rent, the potential value is roughly a few hundred dollars per year without changing the rent amount you pay. That's much better than paying a 2%–3% processing fee to force rent onto a traditional rewards card.",
+  "taskId": "maria_rent_rewards",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1507,
+      "outputTokens": 610,
+      "totalTokens": 2117,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

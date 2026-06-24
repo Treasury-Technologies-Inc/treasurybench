@@ -1,0 +1,60 @@
+{
+  "taskId": "patel_backdoor_roth",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the household's specific payroll data, HSA balance, and lack of traditional IRA balances to tailor the advice."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 limits for 401(k), HSA, and IRA. The pro-rata rule explanation is accurate."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable waterfall. The inclusion of the Mega Backdoor Roth as a potential advanced play is highly relevant given the employer context."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately caveats the pro-rata rule and the need to verify plan-specific eligibility for Mega Backdoor and matching."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HSA contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 section 415(c) defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Explicitly linked the Mega Backdoor Roth potential to the specific employer plans (Salesforce/UCHealth) mentioned in the persona."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly personalized, accurate, and well-sequenced tax strategy that correctly prioritizes HSA and 401(k) optimization before the Backdoor Roth, while correctly identifying the lack of pro-rata risk."
+}

@@ -1,0 +1,42 @@
+{
+  "taskId": "maria_alaska_microsoft",
+  "provider": "monarch",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the Alaska Airlines travel pattern and the Microsoft employer context, though it misses the opportunity to explicitly link the user's specific Chase Sapphire Preferred card to the travel transactions."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The advice is factually sound and avoids stale or incorrect claims. It correctly emphasizes verification of program mechanics."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "The response provides a strong, actionable checklist. It misses the specific 'expert' play of explicitly mentioning the Microsoft-linked Alaska/Atmos corporate status challenge, which was a key expected opportunity."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is appropriately cautious, consistently advising the user to verify internal policies and program terms rather than assuming benefits."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "The response failed to explicitly mention the Microsoft-linked Alaska/Atmos corporate status challenge, which is a high-value, persona-specific opportunity.",
+    "The response did not explicitly connect the user's Chase Sapphire Preferred card to the travel transactions to highlight the primary rental car insurance benefit."
+  ],
+  "unexpectedValidInsights": [
+    "The response provides a comprehensive, structured checklist for business travel that is highly practical for a corporate employee."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, cautious, and actionable framework for managing business travel, though it misses the specific high-leverage opportunity to mention the Microsoft-linked Alaska/Atmos status challenge."
+}

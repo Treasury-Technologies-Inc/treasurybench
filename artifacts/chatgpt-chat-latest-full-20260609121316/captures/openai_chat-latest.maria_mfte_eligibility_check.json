@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:13:57.750Z",
+  "latencyMs": 8166,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on the data available:\n\n- Household size: 1 person\n- Current rent: $2,350/month at Cascade Apartments\n- Visible employment income: Microsoft base pay appears to be $2,500 gross semi-monthly, or about $60,000/year gross\n- Additional visible income:\n  - $1,200 freelance payment in May\n  - Microsoft RSU vest of $42,000 in May\n\nThe key question is what an affordable-housing program counts as \"income.\" Many Seattle-area programs use anticipated annual gross income, and vested RSUs, bonuses, and self-employment income may be included. Eligibility can change dramatically depending on whether those amounts are counted.\n\nHow to check\n\n1. Find the property's program type\n   - Seattle Multifamily Tax Exemption (MFTE)\n   - Seattle Office of Housing income-restricted units\n   - King County ARCH or other affordable-housing programs\n   - Each program has different income limits and rent rules.\n\n2. Calculate your likely annual household income\n   Start with:\n   - Microsoft base pay: about $60,000/year\n\n   Then determine whether to add:\n   - RSU income (the $42,000 vest)\n   - Freelance income (annualized if ongoing)\n\n   Possible scenarios:\n   - Base pay only: about $60,000\n   - Base pay + one RSU vest: about $102,000\n   - Base pay + RSU vest + ongoing freelance income: potentially higher\n\n3. Compare against Seattle income limits for a 1-person household\n   Most income-restricted properties publish limits as a percentage of Area Median Income (AMI), such as:\n   - 50% AMI\n   - 60% AMI\n   - 70% AMI\n   - 80% AMI\n\n   Property managers usually provide the exact dollar limit for the current year.\n\n4. Request a pre-screen from the leasing office\n   Ask:\n   - \"Do you count vested RSUs as income?\"\n   - \"How do you treat self-employment income?\"\n   - \"Do you use current income, prior-year tax returns, or projected annual income?\"\n   - \"What is the current income limit for a 1-person household?\"\n\nPotential savings\n\nAt your current rent of $2,350/month:\n- Annual housing cost = about $28,200\n\nIf you qualified for a unit that was:\n- $2,000/month: savings ≈ $350/month ($4,200/year)\n- $1,800/month: savings ≈ $550/month ($6,600/year)\n- $1,600/month: savings ≈ $750/month ($9,000/year)\n\nBecause Seattle affordable-housing rents can be hundreds of dollars below market, it is worth checking if your income qualifies.\n\nImportant caveat\n\nThe biggest factor is the $42,000 RSU vest. If a program counts that as income, your qualifying income could be around $102,000 before considering any freelance earnings. That may place you above the limits for some income-restricted units, while still qualifying for others with higher AMI thresholds.\n\nExact next steps\n\n- Pull your most recent Microsoft paystub and last tax return.\n- Contact 3–5 Seattle MFTE or income-restricted properties.\n- Ask for their 2026 income limits for a 1-person household and how they treat RSUs.\n- Compare those limits against:\n  - Base salary only (~$60,000)\n  - Base salary + RSUs (~$102,000)\n- If you share the specific property or program you're considering, I can help estimate your eligibility more precisely.",
+  "taskId": "maria_mfte_eligibility_check",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1523,
+      "outputTokens": 836,
+      "totalTokens": 2359,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 1152
+    }
+  }
+}

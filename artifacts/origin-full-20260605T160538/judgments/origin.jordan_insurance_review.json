@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_insurance_review",
+  "provider": "origin",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links insurance needs to the user's specific business income, location, and current health insurance/HSA activity. It misses a explicit separation of business vs personal insurance buckets in the structure."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 HSA limits and insurance priorities. The advice on E&O and cyber liability is well-aligned with the persona's work as a UX consultant."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable advice. The recommendation to check renter's insurance limits for business equipment is a high-leverage, specific insight."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Appropriately caveats the need for professional consultation and verifies plan-level vs. user-specific coverage."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 individual HSA contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions a 2026 subsidy cliff; while ACA subsidy rules are dynamic, the response correctly frames this as a consideration rather than a definitive tax event."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly suggested a Business Owner's Policy (BOP) as a bundled solution for both general liability and business property, which is often more cost-effective for consultants than separate riders."
+  ],
+  "unexpectedValidInsights": [
+    "The specific warning about 'unvetted AI tools' exclusions in 2026 professional liability policies is a highly relevant, forward-thinking insight for a UX consultant."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized insurance review that correctly prioritizes income protection and professional liability for a self-employed consultant while leveraging specific 2026 financial data."
+}

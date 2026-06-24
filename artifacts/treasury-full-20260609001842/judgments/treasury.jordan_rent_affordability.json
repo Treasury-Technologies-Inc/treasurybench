@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_rent_affordability",
+  "provider": "treasury",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the rent amount, income, and tax reserve. It misses the opportunity to explicitly reference the specific cash balances (checking/business) in the context of the move-out/move-in costs."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the QBI deduction and the nature of freelance income. However, it incorrectly suggests that the home office deduction can 'subsidize' rent through tax savings for a Schedule C filer in a way that implies a direct offset, and the advice on WeWork vs. home office is slightly misaligned with IRS rules regarding principal place of business."
+    },
+    {
+      "id": "resolution",
+      "score": 24,
+      "maxScore": 30,
+      "rationale": "Clear, actionable advice provided. The recommendation to build a 6-month runway is prudent for a freelancer. The SMART housing suggestion is a high-leverage, unexpected insight."
+    },
+    {
+      "id": "prudence",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "Good emphasis on the tax reserve and the volatility of freelance income. It avoids the trap of annualizing a single strong month."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Section 199A (QBI) Deduction allows you to deduct 20% of your net freelance profit.",
+      "tableKey": "irs_2026_qbi_199a_thresholds",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions 'SMART Housing' as a specific Austin program; while generally accurate in spirit, the specific eligibility thresholds and availability are highly variable and should be caveated as such.",
+    "The advice regarding the home office deduction is slightly imprecise; the deduction is based on the percentage of the home used for business, not a direct subsidy of rent."
+  ],
+  "missedOpportunities": [
+    "Failed to explicitly mention the impact of the self-employed health insurance deduction (Schedule 1) on the tax reserve calculation.",
+    "Did not suggest checking the specific lease break fees or move-in costs (security deposits) against the current liquid cash balance."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested checking for 'SMART Housing' units in Austin, which is a highly relevant, localized, and high-leverage suggestion for a freelancer.",
+    "Recommended a 6-month runway specifically for the freelancer persona."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized assessment that correctly identifies the risks of freelance income volatility and provides actionable, localized advice for an Austin-based consultant."
+}

@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_credit_card_balance_check",
+  "provider": "treasury",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response mentions the correct accounts and balances but fails to use the exact dollar amounts for the credit card balances ($5,210 and $1,185) and the payment ($2,000) as requested in the scope notes."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the 2026 safe harbor rule and provides accurate, current-year tax information. It correctly identifies the business/personal separation of credit reporting."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear, though it misses the opportunity to explicitly verify the statement balance vs. current balance for the user's specific cards."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response emphasizes liquidity and the importance of not cannibalizing tax reserves, which is highly prudent for a self-employed persona."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "For 2026, the high-income safe harbor (if your AGI is over $150,000) is 110% of your prior year's total tax.",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions Chase 5/24 and Amex family rules as 'invisible' rules; these are well-known industry terms but are not locked benchmark facts."
+  ],
+  "missedOpportunities": [
+    "Failed to use the exact visible balances ($5,210 and $1,185) and the $2,000 payment amount in the analysis.",
+    "Did not explicitly advise verifying the statement balance and due date to ensure full-statement autopay is active, which is a core requirement of the task."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the distinction between business and personal credit reporting for the specific cards mentioned."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides prudent, well-structured advice but fails to utilize the exact visible data points required by the task instructions."
+}

@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_checking_buffer",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the checking balance and mortgage/daycare transaction data to ground the buffer recommendation."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The math is sound and the advice is consistent with the persona's financial profile. It correctly distinguishes between checking and emergency funds."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable framework for the buffer and next steps, though it could have been more specific about the impact of the Salesforce/UCHealth benefits on the emergency fund sizing."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Strong emphasis on liquidity and bill timing. The note on disability elimination periods is a high-value, prudent addition for a family with a mortgage."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "UCHealth group disability policies often have a 90-day elimination period.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the need to verify specific plan details for disability coverage rather than assuming a 90-day period."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the Salesforce dependent care FSA or HSA seed as potential offsets to the 'essential' monthly spend calculation."
+  ],
+  "unexpectedValidInsights": [
+    "Incorporated the concept of a 'disability elimination period' as a factor in sizing the emergency fund, which is highly relevant for a dual-income household with a mortgage."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prudent response that correctly prioritizes family cashflow and provides a clear, actionable framework for managing checking buffers versus emergency savings."
+}

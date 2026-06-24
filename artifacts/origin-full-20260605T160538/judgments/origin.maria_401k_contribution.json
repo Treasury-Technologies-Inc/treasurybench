@@ -1,0 +1,51 @@
+{
+  "taskId": "maria_401k_contribution",
+  "provider": "origin",
+  "totalScore": 25,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 5,
+      "maxScore": 25,
+      "rationale": "The response failed to use the visible transaction data (which clearly shows an 8% deferral and $200 contribution) and incorrectly claimed the 401(k) balance was $0, despite the CSV showing $48,500."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "Correctly identified the 2026 IRS limit of $24,500, but failed to apply the Microsoft-specific match context provided in the locked facts."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response was generic and asked the user for information that was already present in the provided data, failing to provide the requested 'what-if' analysis."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 15,
+      "rationale": "The response included a confusing and irrelevant '-$20K' at the end and failed to provide actionable, safe advice based on the user's actual financial situation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The IRS limit for employee 401(k) deferrals this year is $24,500.",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly stated the user's 401(k) balance is $0, contradicting the provided CSV data showing $48,500."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate the current annual contribution pace ($4,800) against the $24,500 limit.",
+    "Failed to mention the Microsoft 401(k) match (50% up to the IRS limit) which was available in the locked facts.",
+    "Failed to analyze the impact of increasing contributions on take-home pay given the user's $2,500 semi-monthly gross salary."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [
+    "The response includes a trailing '-$20K' which is confusing and potentially misleading for a financial assistant."
+  ],
+  "summary": "The response failed to utilize the provided account data, incorrectly identified the user's 401(k) balance as zero, and provided generic advice instead of the requested personalized analysis."
+}

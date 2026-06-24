@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T06:15:24.248Z",
+  "latencyMs": 113951,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "monarch",
+  "response": "Right now there isn’t enough detailed retirement-plan info (ages, exact 401(k) contribution %, employer match details, and per-person breakdowns) to give you a precise, numbers-based answer.\n\nTo act\n\nTo build something useful for evaluating whether your 401(k) contributions are on pace, which next step would you like me to take?\n\nPull household income from June 1, 2025 to May 31, 2026 and list all retirement-type account balances.\nFocus only on my own data: show my income for the last 12 months and my retirement account balances.\nJust list all current retirement-type account balances for the whole household.\nSkip data pulls; help me with a checklist of what to gather manually (ages, contribution %, match, etc.) so we can assess if we’re on pace.\n\nReply with **1, 2,",
+  "taskId": "patel_401k_contribution"
+}

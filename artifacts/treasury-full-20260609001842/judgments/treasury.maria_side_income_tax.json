@@ -1,0 +1,60 @@
+{
+  "taskId": "maria_side_income_tax",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's Microsoft employment, Seattle location, and the specific $1,200 freelance deposit."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Tax rates, SE tax mechanics, and deduction rules are accurate for 2026. The mention of the Social Security wage base is correctly applied."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps including the W-4 adjustment strategy and safe harbor calculation. The advice is highly personalized."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately caveats the tax reserve percentage and emphasizes the need for documentation and separation of funds."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Social Security wage base for 2026 is $184,500",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Simplified home office deduction is $5 per square foot up to 300 sq ft",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3%",
+      "tableKey": "se_tax_2026_net_earnings_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Safe harbor avoids penalty if you pay 110% of prior-year total tax",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Suggesting the W-4 withholding adjustment as a strategy to avoid quarterly payment friction is a high-leverage, practical move for a W-2 employee."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, highly personalized tax strategy advice for a Microsoft employee with freelance income, correctly identifying SE tax obligations and offering actionable, safe methods for compliance."
+}

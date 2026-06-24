@@ -1,0 +1,41 @@
+{
+  "taskId": "jordan_rent_affordability",
+  "provider": "openai:chat-latest",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the provided transaction data, account balances, and persona context to ground its analysis."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the need to separate tax reserves and business expenses, and avoids annualizing a single month of income."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps for evaluating a move, though it could have been slightly more specific about the tax-reserve calculation methodology."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response is highly prudent, emphasizing stress-testing against low-income months and maintaining separate financial buckets."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 2026 self-employment tax rate (15.3%) or the specific impact of the Schedule C filing on the tax reserve requirement."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to evaluate lease flexibility (subletting/break terms) as a specific risk-mitigation strategy for a freelancer is a high-value, persona-aligned insight."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded, prudent, and highly personalized assessment that correctly prioritizes cash-flow stability and tax-reserve integrity for a self-employed consultant."
+}

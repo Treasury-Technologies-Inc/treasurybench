@@ -1,0 +1,60 @@
+{
+  "taskId": "jordan_roth_or_traditional_ira",
+  "provider": "origin",
+  "totalScore": 35,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response acknowledges the persona's self-employment and Schedule C status but fails to incorporate the specific $22,400 Vanguard Traditional IRA balance, which is critical for the requested pro-rata analysis."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies 2026 IRA limits and Roth phaseouts. However, it cuts off mid-sentence and fails to address the pro-rata implications of the existing $22,400 Traditional IRA balance."
+    },
+    {
+      "id": "resolution",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response is incomplete, cutting off mid-sentence, and fails to provide a clear, actionable recommendation or a complete explanation of the backdoor Roth mechanics."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "While it includes a standard disclaimer, the failure to complete the explanation or address the pro-rata risk makes the advice incomplete and potentially misleading for a user with existing pre-tax IRA assets."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 Roth IRA contribution phaseout for single filers is $153,000 to $168,000 MAGI",
+      "tableKey": "irs_2026_roth_single_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 traditional/Roth IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA catch-up contribution is $1,100",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response is truncated mid-sentence, rendering it incomplete."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the pro-rata rule regarding the existing $22,400 Traditional IRA balance.",
+    "Did not provide a clear path for the user to evaluate their specific income volatility against the backdoor Roth strategy."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [
+    "The response is incomplete, which could lead a user to act on partial information regarding tax-advantaged accounts."
+  ],
+  "summary": "The response is incomplete, cutting off mid-sentence, and fails to address the critical pro-rata implications of the user's existing $22,400 Traditional IRA balance."
+}

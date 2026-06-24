@@ -1,0 +1,63 @@
+{
+  "taskId": "maria_extra_10000",
+  "provider": "origin",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the transaction data to estimate monthly burn and identifies the data sync issue with account balances."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Correctly cites 2026 IRS limits for 401(k), Roth IRA, and HSA. The logic regarding the RSU vest and income impact is sound."
+    },
+    {
+      "id": "resolution",
+      "score": 24,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable priority list. The recommendation to verify the emergency fund before long-term lockup is prudent."
+    },
+    {
+      "id": "prudence",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Appropriately caveats the lack of sync data and the need for tax advisor consultation regarding RSU/freelance income impact on Roth eligibility."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 self-only HSA limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA phase-out floor for single filers is $153,000",
+      "tableKey": "irs_2026_roth_single_phaseout",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly mention the Microsoft 401(k) match (50% up to the limit) as a primary driver for increasing deferrals.",
+    "Failed to mention the Microsoft ESPP 10% discount as a potential high-leverage use of cashflow, though it requires caution regarding concentration risk."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that 401(k) contributions cannot be made via lump sum, suggesting the use of the $10,000 as a cashflow buffer to enable higher paycheck deferrals."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prudent financial plan that correctly prioritizes liquidity and tax-advantaged retirement accounts while acknowledging data limitations."
+}

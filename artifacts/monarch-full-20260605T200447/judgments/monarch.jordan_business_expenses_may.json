@@ -1,0 +1,42 @@
+{
+  "taskId": "jordan_business_expenses_may",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 40,
+      "rationale": "The response correctly identifies the business expenses but misses the software category entirely, which is a significant portion of the business spend."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "The total calculation is incorrect because it excludes the software category ($211.39). The math for the included categories is accurate."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 20,
+      "rationale": "The response answers the question but fails to provide a comprehensive breakdown of all business expenses, specifically omitting software."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately flags the need for caution with mixed-use categories like travel and office supplies."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response missed the software category (Adobe, Figma, Webflow, AWS, Google Workspace) which totals $211.39, leading to an undercount of business expenses."
+  ],
+  "missedOpportunities": [
+    "Failed to include software subscriptions in the business expense total.",
+    "Did not mention the potential for a business-use share of internet and phone, which was explicitly requested in the task scope."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a helpful breakdown of some business expenses but is incomplete, missing the software category and failing to address the mixed-use internet/phone expenses."
+}

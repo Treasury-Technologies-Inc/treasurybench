@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_insurance_review",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's specific financial situation, including their health insurance premium, HSA contributions, and current net worth. It misses a slight opportunity to explicitly reference the business rent/software expenses as part of the E&O risk profile."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The advice on insurance priorities is accurate and aligns with the persona's self-employed status. The tax deduction advice for health insurance is correct. The mention of SSDI is a reasonable estimate for context."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable checklist. It correctly identifies the lack of need for life insurance given the persona's status. It could have been slightly more specific about the mechanics of the self-employed health insurance deduction (Schedule 1 vs Schedule C)."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding plan-level verification and the importance of 'own-occupation' definitions in disability policies."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employed health insurance premiums are 100% deductible from gross income",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the self-employed health insurance deduction as an above-the-line deduction, which is consistent with IRS rules."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the distinction between the self-employed health insurance deduction (above-the-line) and business expenses (Schedule C) to ensure the user doesn't double-count or misclassify.",
+    "Could have mentioned cyber liability insurance given the user's heavy reliance on SaaS tools and remote client work."
+  ],
+  "unexpectedValidInsights": [
+    "The inclusion of the 'own-occupation' disability policy requirement is a high-value, expert-level insight for a consultant."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized insurance review that correctly prioritizes income protection and liability over unnecessary life insurance, grounded well in the user's specific financial data."
+}

@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:21:59.654Z",
+  "latencyMs": 8120,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "openai:chat-latest",
+  "response": "Because you're self-employed and buying coverage through the Marketplace, the most important thing to verify is whether your current plan is actually HSA-eligible. Having an HSA account and making contributions does not by itself mean you're allowed to contribute.\n\nBased on your records:\n\n- Marketplace premium: $415/month\n- Fidelity HSA balance: $3,100\n- Recent HSA contribution: $300 on 2026-05-08\n- No employer coverage, no dependents, filing Schedule C\n\nHealth insurance items to check\n\n1. Confirm whether your Marketplace plan is an HSA-qualified HDHP\n\nReview your plan documents and look for language such as:\n- \"HSA-eligible\"\n- \"HSA-qualified High Deductible Health Plan (HDHP)\"\n\nNot every Bronze plan or high-deductible plan qualifies.\n\n2. Verify the deductible and out-of-pocket limits meet IRS HDHP rules\n\nFor HSA eligibility, the plan must satisfy annual IRS HDHP requirements. The Marketplace plan's Summary of Benefits and Coverage (SBC) will show:\n- Annual deductible\n- Maximum out-of-pocket limit\n- Whether preventive care is covered before the deductible\n\n3. Check for disqualifying coverage\n\nYou generally cannot contribute to an HSA if you are covered by:\n- A non-HDHP medical plan\n- A general-purpose health FSA through another source\n- Certain reimbursement arrangements that provide first-dollar medical coverage\n- Medicare enrollment\n\nSince you're self-employed and have no employer benefits, these may not apply, but they're worth confirming.\n\nHSA-specific items to check\n\n1. Make sure your 2026 contributions are allowed\n\nIf your Marketplace plan is not HSA-qualified, any 2026 contributions may need to be removed to avoid penalties.\n\nIf it is HSA-qualified:\n- Track all contributions made during 2026\n- Include any direct deposits and transfers\n- Stay under the applicable self-only annual limit\n\n2. Consider increasing contributions if eligible\n\nYou're currently contributing $300/month, which equals:\n- $3,600 per year\n\nIf the annual self-only HSA limit for your eligibility status is higher than that, you may have additional tax-advantaged room available.\n\nFor a self-employed person:\n- HSA contributions are generally deductible on your federal return even if you do not itemize.\n- They can reduce taxable income and help offset irregular consulting income.\n\nSelf-employed tax deduction opportunity\n\nYou should also confirm you're taking the self-employed health insurance deduction if eligible.\n\nWith premiums of about:\n- $415/month\n- Approximately $4,980/year\n\nYou may be able to deduct eligible health insurance premiums on your federal return, subject to the self-employed health insurance deduction rules and sufficient self-employment income.\n\nPractical next steps\n\n- Log into HealthCare.gov and download the plan's Summary of Benefits and Coverage (SBC).\n- Search the SBC for \"HSA\" or \"HSA-qualified.\"\n- Verify whether the plan is an IRS-qualified HDHP.\n- Review your year-to-date HSA contributions at Fidelity.\n- If the plan is HSA-eligible, decide whether increasing contributions fits your cash-flow and tax-reserve system.\n- If the plan is not HSA-eligible, stop future contributions and determine whether any 2026 contributions need correction.\n\nIf you can provide the Marketplace plan name (insurer and plan title), I can help determine whether it is HSA-eligible and what contribution limit would apply.",
+  "taskId": "jordan_health_insurance_marketplace",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1463,
+      "outputTokens": 817,
+      "totalTokens": 2280,
+      "reasoningTokens": 64,
+      "cachedInputTokens": 0
+    }
+  }
+}

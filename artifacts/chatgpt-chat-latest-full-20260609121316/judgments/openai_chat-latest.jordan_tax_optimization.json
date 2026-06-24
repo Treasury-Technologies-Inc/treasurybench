@@ -1,0 +1,55 @@
+{
+  "taskId": "jordan_tax_optimization",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the provided transaction and balance data, correctly identifying the tax reserve, health insurance premiums, and specific business expenses."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response is largely accurate regarding tax rules, though it failed to explicitly state the 2026 HSA contribution limit ($4,400) as requested by the benchmark instructions."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The response provides a clear, actionable, and prioritized list of tax moves. It correctly identifies the high-leverage nature of retirement planning and expense tracking for a freelancer."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response appropriately caveats the need for verification and avoids over-promising on S-corp or specific deduction eligibility."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employed health insurance premiums are an above-the-line deduction",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA contributions are generally deductible",
+      "tableKey": "hsa_contribution_treatment",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions HSA contributions are 'generally deductible' but does not explicitly cite the 2026 self-only limit of $4,400 as required by the benchmark instructions."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly state the 2026 HSA self-only contribution limit of $4,400.",
+    "Could have provided more specific guidance on the 2026 standard mileage rate (72.5 cents) given the travel-heavy nature of the user's work."
+  ],
+  "unexpectedValidInsights": [
+    "Excellent use of the 'tax reserve' concept to provide actionable cash-flow management advice for a freelancer with irregular income."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and actionable tax strategy response that effectively uses the user's specific financial data to prioritize high-impact freelancer tax moves."
+}

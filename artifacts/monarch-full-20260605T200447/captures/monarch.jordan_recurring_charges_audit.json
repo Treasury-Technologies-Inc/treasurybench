@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T19:13:59.235Z",
+  "latencyMs": 41877,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "monarch",
+  "response": "From March 1 to May 31, 2026, there aren’t any completed recurring transactions in your Monarch data, so I can’t generate a per‑merchant recurring‑charge list for that period.\n\nHere’s what that means:\n\nI checked the last 3 full months (March, April, May 2026).\nMonarch shows some recurring patterns set up (like Washington State Department of Transportation, Chegg, CenturyLink, Apple, Seattle City Light), but there were no actual completed recurring transactions during that window.\nWith zero completed recurring charges in that time frame, I can’t calculate monthly amounts, mark them as personal vs business, or say which account they hit.\n\nWe can still review your recurring charges another way. You can pick one of these:\n\nLook at all recurring streams you’ve set up (any date) and go through which ones are worth reviewing, or\nUse a different date range (like the last 6 or 12 months, or specific dates) to try to pull in more history.\n\nReply with which you prefer:\n\n“All recurring streams I have set up”\nOr a new date range (for example, “last 6 months” or specific dates).",
+  "taskId": "jordan_recurring_charges_audit"
+}

@@ -1,0 +1,48 @@
+{
+  "taskId": "patel_dependent_care_fsa",
+  "provider": "monarch",
+  "totalScore": 45,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 10,
+      "maxScore": 25,
+      "rationale": "The response fails to use the user's specific daycare expense data ($1,650/month) to calculate a personalized impact, instead relying on generic $5,000 examples."
+    },
+    {
+      "id": "correctness",
+      "score": 10,
+      "maxScore": 30,
+      "rationale": "The response uses the stale $5,000 DCFSA limit instead of the 2026 benchmark limit of $7,500."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 30,
+      "rationale": "The advice is clear but lacks the necessary personalization for the Patel household's specific income and expense profile."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Correctly identifies the use-it-or-lose-it risk and the need for employer plan verification."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 dependent care FSA/DCAP household limit is $5,000",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_incorrect"
+    }
+  ],
+  "factualIssues": [
+    "The response cites the stale $5,000 limit for the 2026 tax year; the correct limit per the benchmark is $7,500."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate the specific annual savings for the Patels based on their $1,650/month daycare spend ($19,800/year), which would have highlighted that they would hit the $7,500 cap quickly.",
+    "Did not mention the Salesforce backup-care benefit visible in the persona memory as a complementary resource to the DCFSA."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides helpful general information but fails the benchmark by using stale 2025 tax limits and ignoring the specific daycare expense data provided in the user's transaction history."
+}

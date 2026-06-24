@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:14:37.347Z",
+  "latencyMs": 7048,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "maria_seattle_v0",
+  "provider": "openai:chat-latest",
+  "response": "Based on your transactions, the recent rental car was:\n\n- Avis Rent A Car on 2026-05-07: $312.44\n- Charged to your Chase Sapphire Preferred (CSP)\n\nWhether there was a \"better\" way depends on your goal (lowest cost, best insurance, or most rewards).\n\nWhat you likely did well\n\n- Paying with the Chase Sapphire Preferred is generally a strong choice because it includes primary rental car collision damage waiver (CDW) coverage for most personal rentals when you decline the rental company's collision coverage and pay with the card.\n- The rental qualifies as travel spending, so you should earn Chase Ultimate Rewards points on the purchase.\n- Avoiding the rental agency's collision coverage can easily save roughly $15-$35+ per day, depending on location and vehicle class.\n\nPotentially cheaper options next time\n\n1. Check Costco Travel Auto Rental\n- You already shop at Costco regularly, so if you're a Costco member, Costco Travel is worth checking every time.\n- Costco often negotiates lower rates with Avis, Budget, Alamo, and Enterprise and frequently includes a free additional driver.\n- On a rental around $312, savings of 5%-20% are common, which could mean roughly $15-$60 saved.\n\n2. Compare corporate rates if Microsoft permits them\n- Since you work at Microsoft and this appears to have been a work-related SFO trip, there may be a corporate booking portal or negotiated rental rates.\n- Depending on the agreement, corporate rates can beat public pricing and may include additional insurance protections.\n- Check your company's travel policy before using personal booking channels.\n\n3. Re-shop after booking\n- Most major rental reservations can be rebooked if prices drop before pickup.\n- Rental prices are unusually volatile, and rechecking a week or two before travel can sometimes save 10%-30%.\n\n4. Consider neighborhood locations\n- Airport rentals are often more expensive because of airport concession fees.\n- If the trip allows it, renting from a non-airport location can sometimes reduce the cost by tens of dollars.\n\nInsurance considerations\n\n- If you declined Avis's collision coverage and paid with your CSP, you likely already had one of the more valuable rental-car protections available from a consumer credit card.\n- For damage to the rental vehicle, the CSP benefit is often worth more than earning a few extra points on another card.\n- Liability insurance is separate and is not replaced by the card's collision coverage.\n\nFor this specific $312.44 rental, the biggest opportunity was probably comparison shopping through Costco Travel or a Microsoft-negotiated rate. Realistically, that may have saved somewhere in the $15-$60 range while keeping similar coverage.\n\nIf you tell me:\n- how many days the rental was,\n- whether you booked through Avis directly or a travel site,\n- and whether this was reimbursed business travel,\n\nI can estimate whether you likely overpaid and what the best booking method would have been.",
+  "taskId": "maria_rental_car_trip",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1507,
+      "outputTokens": 647,
+      "totalTokens": 2154,
+      "reasoningTokens": 0,
+      "cachedInputTokens": 1152
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "taskId": "patel_idle_cash",
+  "provider": "openai:chat-latest",
+  "totalScore": 80,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the checking and savings balances and identifies the major fixed expenses. It misses the specific daycare transaction amount (Bright Horizons + Care.com) in its summary, slightly underestimating the childcare outflow."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The math is generally sound and grounded in the provided data. It correctly identifies the cash-buffer logic without making unsafe investment claims."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for the checking balance and frames the broader emergency fund question well. It avoids over-precision."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding the emergency fund target. It treats the brokerage investment as a secondary option contingent on the emergency fund status."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "The response did not explicitly mention the dependent care FSA or the Salesforce backup-care benefit as tools to manage the childcare cashflow impact, which was a relevant persona signal."
+  ],
+  "unexpectedValidInsights": [
+    "The response correctly identifies that the total bank cash ($43,430) is the more important metric than just the checking balance, providing a more holistic view of the household's liquidity."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prudent analysis that correctly prioritizes liquidity and provides actionable steps for the household's cash management."
+}

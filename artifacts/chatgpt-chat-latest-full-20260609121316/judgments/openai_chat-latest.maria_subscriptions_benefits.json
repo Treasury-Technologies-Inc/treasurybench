@@ -1,0 +1,39 @@
+{
+  "taskId": "maria_subscriptions_benefits",
+  "provider": "openai:chat-latest",
+  "totalScore": 55,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the recurring charges from the transaction data but fails to ground the ClassPass expense in the Microsoft wellness reimbursement benefit."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The calculations are accurate based on the provided data. However, it misses the high-leverage employer benefit linkage."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 35,
+      "rationale": "While it provides actionable steps for general subscription management, it fails to surface the specific Microsoft wellness reimbursement opportunity for ClassPass, which is a key planted insight."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The advice is safe and avoids overpromising, though it lacks the necessary nuance regarding employer-specific benefit eligibility."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Failed to identify that ClassPass is an eligible expense under the Microsoft $1,500 annual wellness reimbursement program, which would make the subscription effectively free or highly subsidized."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response correctly identifies recurring charges but misses the high-value opportunity to link the ClassPass subscription to the Microsoft wellness reimbursement benefit."
+}

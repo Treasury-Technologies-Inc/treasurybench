@@ -1,0 +1,44 @@
+{
+  "taskId": "jordan_insurance_review",
+  "provider": "monarch",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the persona's self-employed status and lack of dependents. It misses an opportunity to explicitly reference the specific marketplace health insurance premium ($415) or the HSA balance ($3,100) visible in the data to make the advice more concrete."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on insurance types is accurate and aligns with the persona's needs. It correctly distinguishes between business and personal liability and emphasizes the importance of disability insurance for a 1099 consultant."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable checklist. It effectively prioritizes risks for a self-employed individual. It could have been improved by suggesting specific next steps for the user's current financial setup (e.g., checking the specific deductible on their current plan)."
+    },
+    {
+      "id": "prudence",
+      "score": 12,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding plan-level benefits and the need for professional advice. It avoids making unsafe financial claims."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response does not make specific external factual claims (like tax limits or specific product terms) that require verification against the locked-fact table, keeping it safe from stale-data errors."
+  ],
+  "missedOpportunities": [
+    "Failed to use the specific $415 monthly health insurance premium or the $3,100 HSA balance to ground the advice on medical risk.",
+    "Did not explicitly mention the tax-reserve account as a potential buffer for insurance deductibles."
+  ],
+  "unexpectedValidInsights": [
+    "Provided a helpful summary table that maps insurance types to specific gaps, which is highly actionable for a self-employed user."
+  ],
+  "safetyIssues": [],
+  "summary": "A solid, well-structured insurance review that correctly prioritizes the needs of a self-employed consultant, though it could be more grounded in the user's specific account data."
+}

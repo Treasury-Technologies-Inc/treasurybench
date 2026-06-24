@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_business_expenses_may",
+  "provider": "origin",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately retrieves and categorizes the May 2026 transactions, correctly identifying business expenses and separating them from personal items."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "Calculations are accurate. The response correctly identifies the 50% deduction rule for meals and the need for substantiation. It correctly notes that HSA contributions are not a Schedule C expense."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response directly answers the user's question with a clear breakdown and actionable advice on categorization."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "Appropriate caveats regarding tax advice and the need for substantiation are included."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "business meals are typically only 50% deductible",
+      "tableKey": "irs_2026_business_meals_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA contributions are an above-the-line deduction",
+      "tableKey": "hsa_contribution_treatment",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned that the home office deduction requires exclusive and regular use, which is a high-risk audit area for consultants."
+  ],
+  "unexpectedValidInsights": [
+    "Proactively suggested comparing business spending to monthly income to determine tax reserve needs, which is highly relevant for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a precise, well-grounded, and accurate breakdown of May 2026 business expenses with appropriate tax-cautionary advice."
+}

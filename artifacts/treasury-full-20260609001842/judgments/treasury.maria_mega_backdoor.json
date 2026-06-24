@@ -1,0 +1,70 @@
+{
+  "taskId": "maria_mega_backdoor",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the user's Microsoft employment, current 8% contribution rate, and specific account balances."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 limits and Microsoft plan features. The math on the match gap is accurate based on the provided salary and plan rules."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable hierarchy of savings. The inclusion of the Treasury Insight card is a bit meta but provides a clear summary."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately sequences the mega backdoor Roth after the match and standard deferrals, and includes necessary caveats about plan support."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA self-only limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft 401(k) matches 50% up to the IRS elective deferral limit",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft 401(k) permits after-tax contributions up to the 415(c) limit",
+      "tableKey": "microsoft_2026_mega_backdoor_roth",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 section 415(c) defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Explicitly mentions the 'automatic in-plan conversion' feature in Fidelity NetBenefits as a key step for the mega backdoor Roth."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly personalized, accurate, and well-sequenced guide for the user's retirement strategy, correctly prioritizing the Microsoft 401(k) match and standard limits before the mega backdoor Roth."
+}

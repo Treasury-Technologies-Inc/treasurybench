@@ -1,0 +1,44 @@
+{
+  "taskId": "patel_401k_contribution",
+  "provider": "monarch",
+  "totalScore": 5,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 0,
+      "maxScore": 25,
+      "rationale": "The response completely ignores the visible transaction data (Salesforce and UCHealth payroll/deferrals) and account balances provided in the prompt, claiming it lacks information that is actually present."
+    },
+    {
+      "id": "correctness",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response is factually neutral but fails to apply the provided 2026 context or the specific user data available, rendering it useless for the task."
+    },
+    {
+      "id": "resolution",
+      "score": 0,
+      "maxScore": 30,
+      "rationale": "The response provides no analysis or synthesis, instead offering a menu of data-gathering steps that the system already had access to."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 15,
+      "rationale": "The response is overly cautious to the point of being unhelpful, failing to leverage the provided data to offer even a preliminary assessment."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The assistant claims it lacks information (ages, contribution %, match details) that is either present in the seeded memories (Salesforce/UCHealth match details) or the visible transaction data (contribution percentages)."
+  ],
+  "missedOpportunities": [
+    "Failed to calculate the annualization of the visible $1,400 (Priya) and $600 (Daniel) monthly deferrals.",
+    "Failed to compare the annualized deferrals against the 2026 IRS limit of $24,500.",
+    "Failed to incorporate the Salesforce 6% match and UCHealth 50% match details provided in the seeded memories.",
+    "Failed to synthesize the impact of daycare and mortgage costs on cashflow as requested."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant failed to utilize the provided visible data and seeded memories, incorrectly claiming it lacked the information necessary to perform the requested analysis."
+}

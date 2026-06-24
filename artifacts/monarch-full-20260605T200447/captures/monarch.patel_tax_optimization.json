@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T06:56:57.235Z",
+  "latencyMs": 111799,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "monarch",
+  "response": "Here’s a 2026-focused tax-planning checklist built from the accounts you listed and general rules. This is education only, not tax advice, and it doesn’t use any hidden data. You can walk through it with your own records and a tax professional.\n\n1. Retirement accounts (401(k)s)\n\nYou have two 401(k)s totaling about $240K.\n\nQuestions to ask yourselves\n\nAre we on track to use our 2026 401(k) contribution room (employee deferrals) in each plan?\nDo we have access to:\nTraditional (pre-tax) 401(k) contributions?\nRoth 401(k) contributions?\nAfter-tax contributions with in-plan or in-service Roth conversions (“mega backdoor Roth”)?\nAre we likely to be in a higher or lower tax bracket in retirement than now?\n\nThresholds/limits to compare against\n\n2026 401(k) employee contribution limit (check the IRS site or use Monarch’s 401(k) limit tool when it’s updated).\nCatch-up contribution limit if either of you is 50+ in 2026.\nYour marginal tax bracket (from your 2025 return or a 2026 paycheck estimator) to compare:\nTax savings from pre-tax contributions vs.\nLong-term benefit of Roth contributions.\n\n**To",
+  "taskId": "patel_tax_optimization"
+}

@@ -1,0 +1,62 @@
+{
+  "taskId": "jordan_health_insurance_marketplace",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "The response effectively links advice to the user's marketplace premium, HSA account, and location. It misses a direct reference to the specific Fidelity HSA balance."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 HSA limits and the OBBBA-related HSA-compatibility for marketplace plans. The FPL calculation is accurate based on the 2025 FPL lag."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable checklist. The advice on the subsidy cliff and the self-employed health insurance deduction is highly relevant to the user's persona."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Includes necessary caveats regarding HDHP status and the distinction between business expenses and above-the-line deductions."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA-qualifying HDHP minimum deductible is $1,700",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA-qualifying HDHP out-of-pocket maximum is $8,500",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2025 FPL for a single-person household is $15,650",
+      "tableKey": "aca_2026_premium_tax_credit_fpl_lag",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly referenced the current Fidelity HSA balance of $3,100 to contextualize the contribution room."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the OBBBA-related HSA-compatibility for Bronze/Catastrophic plans, which is a high-leverage insight for a marketplace user."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, highly personalized, and actionable advice for a self-employed user navigating marketplace insurance and HSA eligibility, correctly applying 2026 tax and benefit rules."
+}

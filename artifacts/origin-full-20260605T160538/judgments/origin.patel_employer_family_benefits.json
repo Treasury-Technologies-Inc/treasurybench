@@ -1,0 +1,59 @@
+{
+  "taskId": "patel_employer_family_benefits",
+  "provider": "origin",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds recommendations in the user's specific childcare and HSA transactions."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response uses the stale $5,000 DCFSA limit instead of the 2026 $7,500 limit specified in the locked facts."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 35,
+      "rationale": "The response provides actionable steps but misses the opportunity to explicitly mention the Salesforce-specific wellness reimbursement or the specific Salesforce 401(k) match details provided in the locked facts."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response appropriately caveats the need to verify plan-level benefits and consult tax advisors."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 dependent care FSA limit is $5,000",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "2026 family HSA contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA catch-up contribution for age 55+ is $1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response cites the stale $5,000 DCFSA limit instead of the 2026 $7,500 limit."
+  ],
+  "missedOpportunities": [
+    "Did not mention the Salesforce $1,200 annual wellness reimbursement.",
+    "Did not mention the Salesforce $750 HSA seed contribution.",
+    "Did not explicitly reference the Salesforce 401(k) 6% match cap."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides helpful, grounded advice but fails to use the correct 2026 dependent care FSA limit and misses several specific Salesforce employer benefits."
+}

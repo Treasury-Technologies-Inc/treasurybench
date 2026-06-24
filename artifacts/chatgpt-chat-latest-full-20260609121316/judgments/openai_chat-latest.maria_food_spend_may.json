@@ -1,0 +1,37 @@
+{
+  "taskId": "maria_food_spend_may",
+  "provider": "openai:chat-latest",
+  "totalScore": 100,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies all food-related transactions from the provided CSV, correctly categorizing Costco and dining, and correctly excluding the Costco Gas transaction."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "The arithmetic is correct ($671.85 + $162.11 = $833.96). The exclusion of Costco Gas is explicitly noted, meeting the benchmark requirements."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The answer is direct, provides a clear breakdown, and addresses the user's specific request for scope inclusion/exclusion."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response clearly defines the scope of what was included and excluded, providing necessary transparency for the user."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response accurately retrieved and categorized the user's food spending for May 2026, correctly handling the Costco Gas exclusion and providing a clear, transparent breakdown."
+}

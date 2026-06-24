@@ -1,0 +1,54 @@
+{
+  "taskId": "patel_529_tax_strategy",
+  "provider": "monarch",
+  "totalScore": 65,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response fails to reference the specific Colorado 529 account or the $300 May contribution, providing generic advice instead of grounding in the user's actual financial activity."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response cites a $10,000 K-12 limit, which is stale for 2026 ($20,000 is the correct limit per locked facts). It correctly identifies the 10% penalty and tax-free growth mechanics."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response is clear but lacks actionable next steps specific to the Patel family's Colorado residency or their current contribution level."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Includes appropriate caveats regarding AOTC/LLC coordination and the risks of non-qualified withdrawals."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Up to $10,000 per year per beneficiary can be used for K–12 tuition",
+      "tableKey": "irs_2026_529_k12_limit",
+      "state": "verified_incorrect"
+    },
+    {
+      "claim": "10% additional tax (penalty) on the earnings for non-qualified withdrawals",
+      "tableKey": "hsa_nonqualified_withdrawal_penalty",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response incorrectly states the 2026 federal K-12 529 limit as $10,000; the locked benchmark fact for 2026 is $20,000."
+  ],
+  "missedOpportunities": [
+    "Failed to mention the Colorado state income tax deduction for 529 contributions, which is highly relevant for a Colorado resident.",
+    "Failed to acknowledge the specific $300 May contribution or the current $12,400 balance in the Colorado CollegeInvest account.",
+    "Did not provide a specific strategy for the Colorado state tax benefit cap ($39,200 for MFJ)."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides helpful general 529 information but misses critical Colorado-specific tax benefits and uses stale federal K-12 limits, failing to ground the advice in the user's visible account data."
+}

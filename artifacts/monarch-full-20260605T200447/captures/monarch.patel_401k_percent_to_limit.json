@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T06:18:13.577Z",
+  "latencyMs": 113273,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "monarch",
+  "response": "Here’s the quick way to think about it using the 2026 employee 401(k) deferral limit of $24,500.\n\nI don’t have Priya and Daniel’s actual salaries, so here are clearly labeled examples you can swap out with their real numbers.\n\nAssume:\n\nExample salary for Priya: $80,000\nExample salary for Daniel: $120,000\n\nFormula for each person\n\nUse this to get the contribution rate as a percentage of salary:\n\ncontribution_rate = (limit / salary) * 100\n\nPriya (example salary $80,000)\n\ncontribution_rate = (24,500 / 80,000) * 100\n= 0.30625 * 100\n= 30.625%\n\nSo Priya would need to contribute about 30.6% of pay to hit the 2026 employee 401(k) limit of $24,500 on an $80,000 salary.\n\nDaniel (example salary $120,000)\n\ncontribution_rate = (24,500 / 120,000) * 100\n= 0.20417 * 100\n= 20.417%\n\nSo Daniel would need to contribute about 20.4% of pay to hit the 2026 employee 401(k) limit of $24,500 on a $120,000 salary.\n\nTo get the exact percentages for Priya and Daniel, just plug their real salaries into the same formula:\n\ncontribution_rate = (24,500 / Priya’s_salary) * 100\ncontribution_rate = (24,500 / Daniel’s_salary) * 100\n\nOnce you have their actual salaries, you can drop",
+  "taskId": "patel_401k_percent_to_limit"
+}

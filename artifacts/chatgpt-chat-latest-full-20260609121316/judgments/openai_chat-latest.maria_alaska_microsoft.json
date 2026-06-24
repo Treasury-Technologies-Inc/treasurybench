@@ -1,0 +1,47 @@
+{
+  "taskId": "maria_alaska_microsoft",
+  "provider": "openai:chat-latest",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the Alaska Airlines transactions and the Microsoft employer context. It fails to explicitly link the Microsoft-linked Alaska/Atmos status challenge opportunity, which was a key expected insight."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The advice provided is factually sound and avoids stale data. It correctly identifies the need for verification of employer-specific benefits."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "The response provides actionable steps but misses the high-leverage opportunity to specifically mention the Microsoft-linked Alaska/Atmos corporate status challenge, which is a specific benchmark fact for this persona."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is appropriately cautious, emphasizing verification of employer policies and not assuming benefits. It avoids over-promising on status or reimbursement."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft is an eligible employer for an Alaska/Atmos corporate status challenge.",
+      "tableKey": "alaska_2026_microsoft_corporate_status_challenge",
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions Microsoft's travel portal but misses the specific opportunity to link the Microsoft-Alaska corporate status challenge, which is a key benchmark fact."
+  ],
+  "missedOpportunities": [
+    "Failed to explicitly surface the Microsoft-linked Alaska/Atmos corporate status challenge as a specific, high-value opportunity for the user."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides solid, prudent advice on verifying employer travel benefits but misses the specific high-leverage opportunity regarding the Microsoft-linked Alaska/Atmos corporate status challenge."
+}

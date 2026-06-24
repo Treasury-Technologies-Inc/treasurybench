@@ -1,0 +1,37 @@
+{
+  "taskId": "maria_spend_may_total",
+  "provider": "openai:chat-latest",
+  "totalScore": 100,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately retrieves and categorizes all May 2026 transactions, correctly excluding income and investment contributions."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "Calculations are precise, and the categorization is consistent with the provided transaction data."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response is concise, provides a clear breakdown, and directly answers the user's question."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately identifies the spending total and provides useful context without overstepping."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant correctly calculated the May 2026 spending total and provided a clear, accurate breakdown by category."
+}

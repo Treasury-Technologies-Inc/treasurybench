@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-06-09T19:19:57.493Z",
+  "latencyMs": 9348,
+  "mode": "full_context_baseline",
+  "notes": "Official ChatGPT full-context baseline capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "openai:chat-latest",
+  "response": "Given your situation, the Dependent Care FSA is likely the most valuable childcare tax break, and it's worth prioritizing before looking at the Child and Dependent Care Credit.\n\nWhat you're spending\n\n- Bright Horizons daycare: $1,650/month\n- Care.com backup care: $220 in May\n\nIf daycare stays consistent, you're on pace for roughly:\n- Daycare: about $19,800/year\n- Plus occasional backup care costs\n\nBecause your child is age 3 and both of you are working, these expenses are generally the type that can qualify for childcare tax benefits.\n\n1. Dependent Care FSA (likely the best option)\n\nPriya's Salesforce benefits include a dependent care FSA.\n\nFor 2026, the annual contribution limit is generally $5,000 per household if married filing jointly.\n\nHow much it could save you\n\nBased on the payroll data provided:\n\n- Priya gross pay: about $210,000/year\n- Daniel gross pay: about $120,000/year\n- Household gross income: about $330,000/year\n\nAt that income level, a $5,000 dependent care FSA contribution could save approximately:\n\n- Federal income tax: about $1,200 (assuming a 24% marginal bracket)\n- FICA tax: about $383\n- Colorado income tax: about $220 (using Colorado's current flat-rate tax structure)\n\nEstimated total tax savings: about $1,800 per year\n\nActual savings depend on your tax situation and withholding, but the order of magnitude is roughly correct.\n\n2. Child and Dependent Care Credit\n\nThis credit is separate from the FSA, but the rules interact.\n\nFor one qualifying child:\n\n- Maximum eligible expenses for the credit: $3,000\n- High-income households generally receive a 20% credit rate\n- Maximum credit without using an FSA: about $600\n\nHowever, if you use the full $5,000 Dependent Care FSA:\n\n- The $5,000 FSA benefit already exceeds the $3,000 expense limit used for the credit calculation for one child.\n- As a result, you generally would not receive an additional Child and Dependent Care Credit.\n\nIn your case:\n\n- Full $5,000 Dependent Care FSA → roughly $1,800 tax savings\n- No FSA + childcare credit only → roughly $600 tax savings\n\nThe FSA is substantially more valuable.\n\n3. What about backup care?\n\nWork-related backup-care expenses can generally qualify for the Dependent Care FSA if:\n\n- They enable you and/or your spouse to work.\n- They are not already reimbursed by an employer benefit.\n\nSince Salesforce offers a backup-care benefit, check whether any portion of those costs is already subsidized. You generally cannot receive two tax benefits for the same expense.\n\nRecommended next steps\n\n1. Check whether Priya is enrolled in the Salesforce Dependent Care FSA.\n2. If not, consider electing the maximum annual contribution during the next enrollment opportunity (or sooner if a qualifying life event permits).\n3. Track both daycare and backup-care expenses.\n4. Keep receipts and provider information for tax filing.\n5. Continue evaluating the backup-care benefit to make sure you're using any employer subsidy available before paying out of pocket.\n\nFor a family with one preschool-age child and nearly $20,000 of annual daycare costs, the Dependent Care FSA is usually the highest-value childcare tax break available.",
+  "taskId": "patel_childcare_tax_credits",
+  "usage": {
+    "provider": "openai",
+    "model": "chat-latest",
+    "usage": {
+      "inputTokens": 1794,
+      "outputTokens": 959,
+      "totalTokens": 2753,
+      "reasoningTokens": 256,
+      "cachedInputTokens": 1664
+    }
+  }
+}

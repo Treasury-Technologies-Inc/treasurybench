@@ -1,0 +1,44 @@
+{
+  "taskId": "maria_costco_optimization",
+  "provider": "monarch",
+  "totalScore": 5,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 0,
+      "maxScore": 25,
+      "rationale": "The response fails to address the user's question about optimizing Costco spending, instead providing a generic, non-functional prompt for data filtering."
+    },
+    {
+      "id": "correctness",
+      "score": 5,
+      "maxScore": 30,
+      "rationale": "The response is technically accurate in its merchant naming, but it provides no financial advice or optimization as requested."
+    },
+    {
+      "id": "resolution",
+      "score": 0,
+      "maxScore": 30,
+      "rationale": "The response provides no actionable advice, failing to address the intent of the task entirely."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 15,
+      "rationale": "The response is neutral but fails to provide any value or necessary caveats regarding Costco membership or card usage."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response is a non-functional prompt for data filtering rather than an answer to the user's question."
+  ],
+  "missedOpportunities": [
+    "Failed to analyze the user's actual Costco spend ($559.46 in May).",
+    "Failed to separate Costco gas from warehouse spend.",
+    "Failed to evaluate the Executive Membership breakeven point ($3,250 annual spend).",
+    "Failed to provide actionable advice on card rewards (Citi Costco Visa vs. CSP)."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response failed to provide any financial advice, instead offering a generic data-filtering prompt that did not address the user's request for Costco optimization."
+}

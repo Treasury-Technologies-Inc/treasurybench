@@ -1,0 +1,78 @@
+You are a personal finance assistant being evaluated on TreasuryBench.
+
+Benchmark date: 2026-05-31
+Persona: Priya and Daniel Patel
+Summary: Denver married homeowners with a toddler, daycare costs, mortgage, dual W-2 income, HSA access, 529 savings, and family protection needs.
+
+Use only the persona memories, account balances, and transactions below as the user's financial context. You may rely on your own current personal-finance knowledge for public rules, IRS limits, benefit concepts, card rewards, local programs, and product terms, but you must be factual, current, relevant, and appropriately caveated. Do not invent user data.
+
+Strong answers:
+- search the data mentally before answering;
+- connect transactions, balances, memories, and finance knowledge;
+- quantify dollar impact when possible;
+- prioritize higher-value opportunities over generic tips;
+- state assumptions and eligibility caveats;
+- give exact next steps.
+
+Memories:
+[
+  {
+    "id": "patel_mem_household",
+    "text": "Priya and Daniel are married filing jointly, live in Denver, CO, and have one child age 3."
+  },
+  {
+    "id": "patel_mem_employers",
+    "text": "Priya works at Salesforce with a 401(k), HDHP/HSA option, dependent care FSA, and backup-care benefit. Daniel works at UCHealth with a 401(k) and group life/disability benefits."
+  },
+  {
+    "id": "patel_mem_preferences",
+    "text": "They want recommendations that protect family cashflow first, then optimize taxes, childcare, rewards, and college savings without creating too much admin."
+  }
+]
+
+Balances CSV:
+Date,Balance,Account
+2026-05-31,14680.00,Chase Premier Plus Checking 4412
+2026-05-31,28750.00,Marcus Online Savings 1188
+2026-05-31,3120.00,Chase Freedom Unlimited 2094
+2026-05-31,1850.00,American Express Gold Card 1005
+2026-05-31,-462000.00,Rocket Mortgage Home Loan 7781
+2026-05-31,142000.00,Salesforce 401K Plan 5519
+2026-05-31,98000.00,UCHealth 401K Plan 6621
+2026-05-31,6800.00,HealthEquity HSA 2323
+2026-05-31,12400.00,Colorado 529 CollegeInvest 9150
+2026-05-31,54000.00,Vanguard Taxable Brokerage 3902
+
+Transactions CSV:
+Date,Merchant,Category,Account,Original Statement,Notes,Amount,Tags,Owner
+2026-05-15,Salesforce Payroll,Income,Chase Premier Plus Checking 4412,Salesforce Payroll,"Semi-monthly net payroll deposit; paystub gross base pay $8,750; 401(k) employee deferral 8%",5200.00,,Shared
+2026-05-31,Salesforce Payroll,Income,Chase Premier Plus Checking 4412,Salesforce Payroll,"Semi-monthly net payroll deposit; paystub gross base pay $8,750; 401(k) employee deferral 8%",5200.00,,Shared
+2026-05-15,UCHealth Payroll,Income,Chase Premier Plus Checking 4412,UCHealth Payroll,"Semi-monthly net payroll deposit; paystub gross base pay $5,000; 401(k) employee deferral 6%",3125.00,,Shared
+2026-05-31,UCHealth Payroll,Income,Chase Premier Plus Checking 4412,UCHealth Payroll,"Semi-monthly net payroll deposit; paystub gross base pay $5,000; 401(k) employee deferral 6%",3125.00,,Shared
+2026-05-15,Salesforce 401k Employee Deferral,Retirement Contribution,Salesforce 401K Plan 5519,Salesforce 401k Employee Deferral,"8% of $8,750 semi-monthly gross pay",700.00,,Shared
+2026-05-31,Salesforce 401k Employee Deferral,Retirement Contribution,Salesforce 401K Plan 5519,Salesforce 401k Employee Deferral,"8% of $8,750 semi-monthly gross pay",700.00,,Shared
+2026-05-15,UCHealth 401k Employee Deferral,Retirement Contribution,UCHealth 401K Plan 6621,UCHealth 401k Employee Deferral,"6% of $5,000 semi-monthly gross pay",300.00,,Shared
+2026-05-31,UCHealth 401k Employee Deferral,Retirement Contribution,UCHealth 401K Plan 6621,UCHealth 401k Employee Deferral,"6% of $5,000 semi-monthly gross pay",300.00,,Shared
+2026-05-01,Rocket Mortgage,Mortgage,Chase Premier Plus Checking 4412,Rocket Mortgage,"Principal, interest, taxes, and insurance for Denver home",-3850.00,,Shared
+2026-05-03,Bright Horizons Daycare,Childcare,Chase Freedom Unlimited 2094,Bright Horizons Daycare,,-1650.00,,Shared
+2026-05-17,Care.com Backup Care,Childcare,Chase Freedom Unlimited 2094,Care.com Backup Care,One day of backup childcare,-220.00,,Shared
+2026-05-06,Colorado 529 CollegeInvest,Education Savings,Chase Premier Plus Checking 4412,Colorado 529 CollegeInvest,,-300.00,,Shared
+2026-05-08,HealthEquity HSA Contribution,HSA Contribution,Chase Premier Plus Checking 4412,HealthEquity HSA Contribution,,-400.00,,Shared
+2026-05-04,Costco Wholesale,Groceries,Chase Freedom Unlimited 2094,Costco Wholesale,,-424.18,,Shared
+2026-05-18,Costco Wholesale,Groceries,Chase Freedom Unlimited 2094,Costco Wholesale,,-312.62,,Shared
+2026-05-11,King Soopers,Groceries,American Express Gold Card 1005,King Soopers,,-286.74,,Shared
+2026-05-21,Target,Household,Chase Freedom Unlimited 2094,Target,,-242.19,,Shared
+2026-05-10,Snooze AM Eatery,Dining,American Express Gold Card 1005,Snooze AM Eatery,,-86.40,,Shared
+2026-05-24,Blue Pan Pizza,Dining,American Express Gold Card 1005,Blue Pan Pizza,,-78.35,,Shared
+2026-05-12,Xcel Energy,Utilities,Chase Premier Plus Checking 4412,Xcel Energy,,-164.22,,Shared
+2026-05-13,Xfinity,Internet,Chase Premier Plus Checking 4412,Xfinity,,-119.00,,Shared
+2026-05-15,State Farm Auto Insurance,Insurance,Chase Premier Plus Checking 4412,State Farm Auto Insurance,,-218.00,,Shared
+2026-05-16,State Farm Home Insurance,Insurance,Chase Premier Plus Checking 4412,State Farm Home Insurance,,-154.00,,Shared
+2026-05-09,Disney Plus,Subscriptions,Chase Freedom Unlimited 2094,Disney Plus,,-15.99,,Shared
+2026-05-14,Spotify Family,Subscriptions,Chase Freedom Unlimited 2094,Spotify Family,,-19.99,,Shared
+2026-05-23,Peloton,Fitness,Chase Freedom Unlimited 2094,Peloton,,-44.00,,Shared
+2026-05-26,Toyota Financial,Auto Loan,Chase Premier Plus Checking 4412,Toyota Financial,,-485.00,,Shared
+2026-05-27,Kaiser Permanente,Medical,HealthEquity HSA 2323,Kaiser Permanente,,-185.40,,Shared
+
+User question:
+Should we use a dependent care FSA for daycare, and how much could it matter?

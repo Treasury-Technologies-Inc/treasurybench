@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-09T07:29:26.209Z",
+  "latencyMs": 11954,
+  "mode": "product_capture",
+  "notes": "Official Treasury product capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "response": "For the **2026 tax year**, the elective deferral limit for a 401(k) is `24,500`.\n\nBased on the recent payroll deposits observed in May (assuming biweekly pay periods), here is the contribution rate each of you would need to set to hit that maximum by the end of the year:\n\n### 2026 401(k) Contribution Targets\n\n| Person | Estimated Gross Pay (Biweekly) | Annualized Salary | Contribution Rate to Max |\n| :--- | :--- | :--- | :--- |\n| **Priya** (Salesforce) | `$5,200` | `$135,200` | **`18.1%`** |\n| **Daniel** (UCHealth) | `$3,425` | `$89,050` | **`27.5%`** |\n\n*Note: These estimates are based on the assumption of 26 pay periods per year. If either of you receives bonuses or commission, you may reach the limit faster and need to adjust these percentages down.*\n\n### Next Steps for Your Plan\n- [ ] **Check for \"True-Up\" Provisions:** Review your employer plan documents to see if they offer a \"true-up\" match. If you hit the `24,500` limit early in the year, some employers stop matching unless they have this provision to reconcile it at year-end.\n- [ ] **Confirm Pay Periods:** Verify if Daniel's payroll at UCHealth follows a biweekly or semi-monthly schedule, as this would change the per-pay-check amount needed to hit the `24,500` goal.\n- [ ] **Update Deferrals:** Log in to your respective benefits portals (Salesforce and UCHealth) to adjust your percentage contributions if you want to aim for the new 2026 limit.",
+  "taskId": "patel_401k_percent_to_limit"
+}

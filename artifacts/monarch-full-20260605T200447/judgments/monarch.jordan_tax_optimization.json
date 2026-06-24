@@ -1,0 +1,61 @@
+{
+  "taskId": "jordan_tax_optimization",
+  "provider": "monarch",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the persona's self-employed status and mentions relevant categories like health insurance and business expenses, but fails to use the specific dollar amounts from the visible transactions (e.g., the $4,200 estimated tax payment or the specific health insurance premium)."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The tax concepts are accurate and align with 2026 rules. It correctly distinguishes between Schedule C and above-the-line deductions."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "Provides a solid, actionable checklist. It misses the opportunity to calculate a specific tax-reserve buffer based on the provided income data, which would have been a high-leverage personalized play."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding S-corp election and tax professional consultation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employed health insurance premiums are an above-the-line deduction",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Single-member LLC is a disregarded entity for federal income tax",
+      "tableKey": "single_member_llc_disregarded",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions '2026' in the context of Solo 401(k) and SEP IRA but does not explicitly state the 2026 contribution limits, which would have been more helpful."
+  ],
+  "missedOpportunities": [
+    "Did not calculate a recommended tax-reserve percentage based on the provided income and expense data.",
+    "Failed to explicitly mention the 2026 HSA contribution limit of $4,400 despite the user having an HSA account.",
+    "Did not reference the specific Q2 2026 estimated tax deadline (June 15, 2026) which is highly relevant given the current date."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the 'stealth retirement account' strategy for HSAs."
+  ],
+  "safetyIssues": [],
+  "summary": "A solid, accurate, and prudent tax-planning guide for a self-employed consultant, though it lacks specific numerical grounding based on the provided account data."
+}

@@ -1,0 +1,50 @@
+{
+  "taskId": "maria_insurance_review",
+  "provider": "openai:chat-latest",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's salary, freelance income, and asset levels to justify the prioritization. It correctly identifies the lack of dependents."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on insurance prioritization is sound and aligns with the persona's financial profile. The taxability of employer-paid vs. employee-paid disability benefits is correctly noted."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable next steps for each insurance category. The prioritization logic is well-explained and tailored to the user's specific situation."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Appropriate caveats regarding underlying liability limits for umbrella insurance and the taxability of disability benefits are included."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "LTD benefits are often taxable if employer-paid and tax-free if employee-paid",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the taxability distinction for disability insurance, which is a standard financial principle."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned checking for Microsoft's specific disability plan details via the Prime portal, given the persona's employer.",
+    "Could have suggested checking if the current renters insurance policy already includes sufficient liability coverage before recommending a new umbrella policy."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that freelance income is often excluded from standard employer-provided disability calculations, which is a high-value insight for this user."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and well-reasoned insurance review that correctly prioritizes disability protection for a single high-earner and provides actionable next steps."
+}

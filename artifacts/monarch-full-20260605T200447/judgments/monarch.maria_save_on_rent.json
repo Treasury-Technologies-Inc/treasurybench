@@ -1,0 +1,56 @@
+{
+  "taskId": "maria_save_on_rent",
+  "provider": "monarch",
+  "totalScore": 45,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's rent and location but fails to leverage the income data ($60k gross) to evaluate MFTE/MHA eligibility."
+    },
+    {
+      "id": "correctness",
+      "score": 15,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies Seattle-specific protections like JCEO and notice requirements, but misses the high-leverage MFTE/MHA program entirely."
+    },
+    {
+      "id": "resolution",
+      "score": 10,
+      "maxScore": 35,
+      "rationale": "The response provides good negotiation tactics but fails to surface the primary expected opportunity (MFTE/MHA) and provides only generic rent reward advice."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 15,
+      "rationale": "The response is generally safe but lacks the necessary rigor regarding income-restricted housing eligibility."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Seattle generally requires a 'just cause' to terminate a tenancy.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Seattle and WA require advance notice for rent hikes (often 60 days+).",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response fails to mention the 2026 WA HB 1217 rent cap of 9.683%."
+  ],
+  "missedOpportunities": [
+    "Failed to identify MFTE/MHA (Multifamily Tax Exemption) as a high-leverage rent-saving program for a Seattle renter.",
+    "Failed to use the user's income ($60k) to perform a basic AMI eligibility check for income-restricted housing.",
+    "Failed to mention Bilt Rewards specifically as a no-fee rent payment strategy, opting for generic credit card advice."
+  ],
+  "unexpectedValidInsights": [
+    "Provided a clear, actionable breakdown of negotiation tactics based on market comps and lease terms."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides helpful general negotiation advice but misses the high-leverage Seattle-specific housing programs and specific rent-reward strategies requested."
+}

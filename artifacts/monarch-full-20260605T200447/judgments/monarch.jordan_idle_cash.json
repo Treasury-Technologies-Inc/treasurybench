@@ -1,0 +1,44 @@
+{
+  "taskId": "jordan_idle_cash",
+  "provider": "monarch",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the visible account balances and transaction data to categorize the user's cash into logical buckets (operating, tax, HSA)."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The math is accurate based on the provided data. The response correctly identifies the tax reserve as non-spendable and treats the HSA as health-specific."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and provides clear targets for a freelancer. It misses a slight opportunity to explicitly link the business expenses to the business checking account's specific role."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is prudent regarding the freelancer's irregular income, though it could have been more explicit about the risks of the crypto portfolio as a non-liquid/volatile asset."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "No external tax or program facts were asserted, so no factual claims were evaluated against the locked-fact table."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly address the volatility of the $12,500 crypto portfolio in the context of the emergency fund/idle cash assessment.",
+    "Could have suggested a specific 'tax-first' sweep mechanism for the irregular income deposits."
+  ],
+  "unexpectedValidInsights": [
+    "Provided a clear, tiered framework for freelancer cash buffers (Minimum vs. Comfortable) that aligns well with the persona's irregular income profile."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prudent assessment of a freelancer's cash position that correctly separates tax reserves from operating capital."
+}

@@ -1,0 +1,58 @@
+{
+  "taskId": "jordan_quarterly_estimated_taxes",
+  "provider": "origin",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's May income and April tax payment. It correctly identifies the account structure and the specific client payments."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax mechanics (15.3% SE tax on 92.35% of net earnings) are accurate. The June 16, 2026, deadline is correctly identified as the Q2 due date."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps and explains the safe-harbor vs. actual-income methods well. It avoids over-committing to a specific payment amount without full-year data."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Includes appropriate disclaimers regarding CFP standards and the need for professional tax advice. It correctly emphasizes the tax reserve as a protective bucket."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The 2026 Q2 estimated tax payment is due June 16, 2026.",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3% on roughly 92.35% of net self-employment income.",
+      "tableKey": "se_tax_2026_net_earnings_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Texas has no state income tax.",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the HSA contribution as an above-the-line deduction to reduce AGI, even though it doesn't reduce SE tax.",
+    "Could have provided a more concrete calculation for the safe-harbor amount based on the prior year's payment if that data were available in memory."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to set aside 25-30% of each client payment is a highly practical, actionable rule of thumb for a freelancer with irregular income."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, well-grounded, and prudent tax advice tailored to the user's self-employed status and Texas residency, correctly identifying the upcoming Q2 deadline and tax mechanics."
+}

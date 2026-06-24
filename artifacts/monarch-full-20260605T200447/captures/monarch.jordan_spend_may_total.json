@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-05T19:12:28.631Z",
+  "latencyMs": 31869,
+  "mode": "product_capture",
+  "notes": "Official Monarch product capture for TreasuryBench V1.",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "monarch",
+  "response": "You spent $5,502.72 total in May 2026 (May 1–31).\n\nYour biggest expenses were:\n\nRent: $2,100.00\nBusiness Travel: $1,115.08\nHealth Insurance: $415.00\nGroceries: $365.47\nBusiness Rent: $350.00\nSoftware: $210.83\nOffice Supplies: $186.40\nDining: $184.95\nHSA Contribution: $300.00\nInternet: $79.99\nMedical: $160.00\nPhone: $35.00\n\nTop 5 spending categories:\n\nRent\nBusiness Travel\nHealth Insurance\nGroceries\nBusiness Rent\n\nIf you want, we can dig into any of these to see where you might want to adjust next month.\n\n🏠\n⚪️\n⚪️\n🍏\n⚪️\n⚪️\n⚪️\n⚪️\n⚪️\n⚪️\n💊\n📱\n$0\n$550\n$1.1K\n$1.7K\n$2.2K",
+  "taskId": "jordan_spend_may_total"
+}

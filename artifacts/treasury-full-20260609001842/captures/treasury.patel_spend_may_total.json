@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-06-09T07:25:07.465Z",
+  "latencyMs": 4371,
+  "mode": "product_capture",
+  "notes": "Official Treasury product capture for TreasuryBench V1.",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "response": "You spent a total of `$8,556.08` in May 2026. This excludes `$700.00` in savings and investment contributions (`HSA` and `Education Savings`), which are tracked separately from your living expenses.\n\n### May 2026 Category Breakdown\n| Category | Total |\n| :--- | :--- |\n| **Mortgage** | `$3,850.00` |\n| **Childcare** | `$1,870.00` |\n| **Groceries** | `$1,023.54` |\n| **Auto Loan** | `$485.00` |\n| **Insurance** | `$372.00` |\n\n---\n\n### Non-Consumption Movements\nIn addition to your core spending, you also moved money into your future-focused accounts:\n* **HSA Contribution**: `$400.00`\n* **Education Savings**: `$300.00`\n\nWould you like to drill into the specific merchants for `Groceries` or another category?",
+  "taskId": "patel_spend_may_total"
+}

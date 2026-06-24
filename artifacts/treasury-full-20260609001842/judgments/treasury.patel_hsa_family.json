@@ -1,0 +1,55 @@
+{
+  "taskId": "patel_hsa_family",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's specific Salesforce benefits, current HSA balance, and household financial situation."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 HSA limits and tax rules. Minor deduction for the slight rounding in the monthly contribution calculation."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps and explains the 'why' behind the prioritization. The advice is highly relevant to the persona."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of caveats, particularly regarding the dual-FSA disqualification risk and the strategy of paying medical expenses out-of-pocket."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA family contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Salesforce provides a $750 annual HSA contribution",
+      "tableKey": "salesforce_2026_hsa_seed",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Dependent Care FSA limit is $7,500",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "The suggestion to treat the HSA as a 'Stealth IRA' by paying medical expenses out-of-pocket and saving receipts for future tax-free reimbursement is a high-leverage, sophisticated strategy for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, highly personalized, and prudent advice for maximizing HSA contributions while correctly navigating the complexities of family coverage and employer benefits."
+}
