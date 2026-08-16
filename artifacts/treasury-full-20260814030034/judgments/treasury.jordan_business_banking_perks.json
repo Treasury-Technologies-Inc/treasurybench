@@ -1,0 +1,68 @@
+{
+  "taskId": "jordan_business_banking_perks",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's specific financial situation, referencing the Fidelity HSA, marketplace health insurance, and the need for tax-reserve automation. It misses an opportunity to explicitly reference the specific account balances (e.g., the $18,500 in the Ally Tax Reserve) to illustrate the current cash-flow health."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "All cited 2026 tax and contribution limits (Solo 401k, HSA, SEHID, safe harbor) are accurate and align with the provided locked benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 35,
+      "rationale": "The response provides high-leverage, actionable advice tailored to a freelancer. It correctly identifies the Solo 401(k) as a superior vehicle to the IRA and provides clear, actionable steps for tax and insurance management. It could have been improved by explicitly suggesting a transition from the current IRA to a Solo 401(k) given the income levels observed."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response maintains a professional tone and correctly distinguishes between business expenses and personal tax deductions. It avoids over-promising on insurance or tax outcomes."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Solo 401(k) employee elective deferral limit for 2026 is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Section 415(c) defined-contribution annual additions limit for 2026 is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA contribution limit for self-only HDHP coverage for 2026 is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employed health insurance premiums are an above-the-line deduction on Schedule 1",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3% on net earnings",
+      "tableKey": "se_tax_2026_net_earnings_base",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly suggest moving the $22,400 in the Traditional IRA into a Solo 401(k) to maximize tax-advantaged space.",
+    "Could have suggested a specific business credit card strategy for the travel-heavy client work, given the current Chase Ink Business Preferred usage."
+  ],
+  "unexpectedValidInsights": [
+    "Explicitly linked the reduction of MAGI via pre-tax contributions to potential ACA subsidy eligibility, which is a high-value insight for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly accurate and well-grounded response that correctly identifies the primary financial levers for a self-employed consultant while adhering to 2026 tax and contribution limits."
+}

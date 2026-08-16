@@ -1,0 +1,10 @@
+{
+  "taskId": "patel_extra_15000",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "Based on your current cash buffer, debt profile, and existing contribution pace, here is the most effective priority waterfall for allocating an extra **$15,000** this year:\n\n### Recommended Allocation Plan\n\n1. **Max out the Family HSA (~$3,950)** — Top off your HealthEquity family HSA to the 2026 limit of **$8,750** ($400/month pace leaves ~$3,950 of unused tax-advantaged room).\n2. **Capture more pre-tax 401(k) space (~$8,000–$10,000)** — Increase employee deferrals toward the 2026 **$24,500** elective deferral limit (Priya's Salesforce 401(k) has ~$7,700 of remaining room at an 8% pace, and Daniel's UCHealth 401(k) has ~$17,300 of room at 6%).\n3. **Colorado 529 CollegeInvest boost (~$1,000–$3,000)** — Add extra funds to your child's 529 plan to take advantage of Colorado state income tax deductions alongside tax-free growth for education.\n\n### Why this order fits your situation\n\n- **Emergency cushion is already solid**: With **$43,430** across your Marcus Online Savings and Chase checking accounts, your liquid family reserves are in great shape.\n- **No high-interest revolving debt**: Aside from monthly credit card balances that are paid through normal cash flow, you have no high-interest debt competing for these dollars.\n- **Immediate tax savings**: Because your combined household income puts you in a higher tax bracket, filling pre-tax HSA and 401(k) space delivers an immediate federal and state tax deduction while automating your savings with zero added admin.\n\nWould you prefer to direct the entire remaining amount toward retirement tax deferrals, or lean heavier into the 529 for college planning?",
+  "latencyMs": 9453,
+  "capturedAt": "2026-08-14T04:02:49.367Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_extra_8000",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response correctly identifies and uses the specific account balances and transaction data provided."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response uses the correct 2026 HSA limit and correctly identifies the tax-deductible nature of the contribution."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The prioritization is logical and actionable, though it could have explicitly mentioned the 2026 IRA catch-up or specific tax-reserve calculation methodology."
+    },
+    {
+      "id": "prudence",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response emphasizes protecting operating cashflow and maintaining separation between business and personal accounts."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 self-only HSA contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 traditional/Roth IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 2026 IRA catch-up contribution of $1,100 for those 50+ as a future-proofing note."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the distinction between business operating cash and tax reserves for a Schedule C filer."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly grounded and accurate response that correctly prioritizes debt repayment and tax-advantaged savings for a self-employed user."
+}

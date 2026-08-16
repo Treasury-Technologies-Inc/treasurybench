@@ -1,0 +1,41 @@
+{
+  "taskId": "patel_property_insurance_review",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific State Farm payments and household context."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The insurance concepts, coverage recommendations, and liability limit suggestions are accurate and align with industry best practices for the user's profile."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides a clear, actionable checklist. It could have been slightly more specific about the impact of the umbrella policy on their specific net worth, but it is highly functional."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately emphasizes maintaining adequate coverage and warns against cutting essential liability limits."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the potential for a multi-policy discount specifically for bundling the auto and home policies already held with State Farm."
+  ],
+  "unexpectedValidInsights": [
+    "Included a specific recommendation to check for 'Ordinance or Law' coverage, which is a high-value, often overlooked detail for homeowners."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and prudent review of the user's insurance policies that correctly identifies key coverage areas and actionable steps for optimization."
+}

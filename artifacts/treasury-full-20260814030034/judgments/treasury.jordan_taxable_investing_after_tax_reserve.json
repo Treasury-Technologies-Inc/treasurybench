@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_taxable_investing_after_tax_reserve",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the provided account balances and transaction data to assess the user's liquidity and tax-reserve needs."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the 2026 HSA limit and the Q2 estimated tax deadline, and correctly separates business and personal finances."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The prioritization is sound and actionable, though it could have explicitly mentioned the specific impact of the 15.3% self-employment tax on the reserve calculation."
+    },
+    {
+      "id": "prudence",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response is highly prudent, emphasizing the need for a 6-9 month emergency fund for a self-employed consultant and advising against taxable investing while debt and tax reserves are active."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The second-quarter federal estimated tax payment is due on June 15, 2026.",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "The 2026 self-only HSA contribution limit is $4,400.",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly calculated the impact of the 15.3% self-employment tax on the required tax reserve amount based on the year-to-date income."
+  ],
+  "unexpectedValidInsights": [
+    "Identified the specific vulnerability of the business operating buffer after accounting for credit card statement balances."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a prudent, well-grounded, and factually accurate prioritization for a self-employed consultant, correctly emphasizing tax-reserve protection and emergency fund building over taxable investing."
+}

@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_recurring_charges_audit",
+  "provider": "treasury",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 35,
+      "maxScore": 40,
+      "rationale": "The response correctly identifies and categorizes the recurring charges from the provided CSV data. It misses the distinction that the HSA contribution is a voluntary transfer rather than a fixed subscription bill."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 35,
+      "rationale": "Calculations are accurate based on the May 2026 data. However, it makes an unverified claim about annual billing discounts (10-20%) without framing it as a general estimate."
+    },
+    {
+      "id": "resolution",
+      "score": 12,
+      "maxScore": 20,
+      "rationale": "The breakdown is clear and separates business from personal well. It fails to address the freelancer-specific context of tax-safe cashflow management regarding these recurring expenses."
+    },
+    {
+      "id": "prudence",
+      "score": 3,
+      "maxScore": 5,
+      "rationale": "Includes helpful caveats about reviewing usage, but lacks a specific warning about the tax-deductibility of business vs. personal expenses."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "switching from monthly to annual billing often yields a 10%–20% discount",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The claim regarding 10-20% annual billing discounts is a general industry observation, not a verified fact for the specific vendors listed."
+  ],
+  "missedOpportunities": [
+    "Did not mention the self-employed health insurance deduction (Schedule 1) for the marketplace premium.",
+    "Did not suggest using the Chase Ink Business Preferred for the internet/phone bills to maximize 3x points."
+  ],
+  "unexpectedValidInsights": [
+    "Identified the software stack overlap as a specific area for review."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a clean, accurate audit of recurring charges for the user's freelancer context, though it misses opportunities to link expenses to specific tax-deduction strategies or credit card reward optimizations."
+}

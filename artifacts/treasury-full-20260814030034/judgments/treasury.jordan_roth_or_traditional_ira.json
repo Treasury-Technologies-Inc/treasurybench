@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_roth_or_traditional_ira",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific $22,400 Traditional IRA balance and their self-employed status."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 IRA limits, Roth phase-out ranges, and the pro-rata rule implications for the user's existing balance."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable paths. It misses a minor opportunity to explicitly mention the Solo 401(k) as a potential business-structure optimization for the user's specific 1099 income, though it does mention it as a rollover vehicle."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of the pro-rata rule and the distinction between income tax and self-employment tax."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA phase-out range for single filers is $153,000 to $168,000",
+      "tableKey": "irs_2026_roth_single_phaseout",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly calculated the potential tax savings based on the user's recent income trends to make the 'Deductible Traditional' recommendation more concrete."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the synergy between Traditional IRA contributions and ACA marketplace subsidy optimization for a self-employed individual."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, personalized, and safe advice regarding IRA selection, correctly identifying the pro-rata rule as the primary constraint for this user."
+}

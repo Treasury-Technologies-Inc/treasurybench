@@ -1,0 +1,45 @@
+{
+  "taskId": "maria_subscriptions_benefits",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately identified all recurring charges and correctly linked the ClassPass subscription to the Microsoft wellness reimbursement benefit."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the Microsoft wellness reimbursement benefit. It correctly identifies the Netflix tier based on the price point. The advice is factually sound and aligns with the provided persona context."
+    },
+    {
+      "id": "resolution",
+      "score": 32,
+      "maxScore": 35,
+      "rationale": "The response provides high-leverage, personalized recommendations. It prioritizes the employer reimbursement, which is the highest-value play. It offers actionable next steps for each item."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response appropriately caveats the reimbursement claim by suggesting the user check if they have already claimed the benefit, avoiding an assumption of current status."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft offers a $1,500 annual gym/wellness reimbursement",
+      "tableKey": "microsoft_2026_wellness_reimbursement",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Identified the potential for freelance business expense deduction for Adobe, which is a relevant insight given the Figma Consulting income."
+  ],
+  "safetyIssues": [],
+  "summary": "The response is highly effective, correctly identifying recurring charges and leveraging the Microsoft wellness reimbursement benefit to provide actionable, personalized savings advice."
+}

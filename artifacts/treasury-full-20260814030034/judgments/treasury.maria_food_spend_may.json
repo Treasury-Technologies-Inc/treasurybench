@@ -1,0 +1,37 @@
+{
+  "taskId": "maria_food_spend_may",
+  "provider": "treasury",
+  "totalScore": 100,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies all relevant transactions from the provided CSV, correctly categorizes them, and correctly excludes the gas transaction."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "The math is correct ($286.41 + $214.82 + $94.18 + $76.44 + $42.16 + $88.70 + $31.25 = $833.96). The distinction between food and gas is handled correctly."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The answer is clear, provides a helpful breakdown, and directly addresses the user's question."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response explicitly notes the exclusion of the Costco Gas transaction, which is a prudent and necessary clarification."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides an accurate, well-categorized, and mathematically correct summary of the user's food spending for May 2026, correctly handling the Costco gas exclusion."
+}

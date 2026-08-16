@@ -1,0 +1,74 @@
+{
+  "taskId": "patel_backdoor_roth",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the payroll data to identify the 401(k) contribution gaps and the HSA/DCFSA opportunities. It correctly identifies the lack of existing IRA balances."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Tax limits and phase-outs are accurate for 2026. The math on 401(k) gaps is sound. The response includes a display artifact [Display artifact omitted from public capture] which is a minor resolution defect."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Clear, actionable, and prioritized. The waterfall approach is well-structured and directly addresses the user's question about sequencing."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good caveats regarding the backdoor Roth process and the need for plan-level verification for the Mega Backdoor Roth."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 married filing jointly Roth IRA phase-out range is $242,000–$252,000",
+      "tableKey": "irs_2026_roth_mfj_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 dependent care FSA limit is $7,500",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HSA contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response includes a display artifact [Display artifact omitted from public capture] which should have been rendered as a UI component or omitted."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Colorado state tax deduction for 529 contributions as a secondary tax-advantaged move."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the FICA tax savings benefit of routing HSA and DCFSA contributions through payroll."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly accurate and well-grounded response that correctly sequences tax-advantaged accounts for a high-income household, though it contains a minor display artifact."
+}

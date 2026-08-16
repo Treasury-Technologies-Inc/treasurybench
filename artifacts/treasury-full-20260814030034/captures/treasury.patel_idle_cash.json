@@ -1,0 +1,10 @@
+{
+  "taskId": "patel_idle_cash",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "You have a modest surplus in checking of about **$4,500 to $5,000**, though your overall cash structure is in very solid shape. \n\nMoving that extra cushion from your near-zero APY checking account to your high-yield savings account will keep your operating cash lean without risking overdrafts or bill-timing stress.\n\n---\n\n### How your cash breaks down today\n\n- **Chase Premier Plus Checking:** $14,680\n- **Marcus Online Savings (HYSA):** $28,750\n- **Total liquid cash:** $43,430\n- **Typical monthly cash outflows:** ~$9,256 (comprising ~$8,556 in household consumption and ~$700 in scheduled HSA and 529 contributions)\n\n---\n\n### Sizing your checking buffer\n\nA reliable cash management rule of thumb is keeping **1 month of living expenses plus a 10%–20% cushion** in checking to absorb large fixed bills (such as your $3,850 mortgage, $1,870 childcare, and active credit card statement balances) as paychecks land.\n\n- **Recommended checking baseline:** **$9,500 – $10,000**\n- **Current checking balance:** **$14,680**\n- **Available excess to move:** **~$4,500 – $5,000**\n\n---\n\n### Recommended next steps\n\n1. **Transfer $4,500 to Marcus Online Savings** — This leaves roughly $10,180 in Chase Checking to comfortably handle upcoming autopays, while lifting your dedicated emergency reserves in Marcus from $28,750 to $33,250.\n2. **Review your emergency reserve goal** — For a dual-income household with a mortgage and one dependent, a 3-to-6-month essential reserve target is approximately **$26,000 to $50,000**. Bringing Marcus to ~$33,250 covers about 4 months of essential baseline expenses.\n3. **Automate a monthly sweep** — If paychecks consistently outpace your baseline monthly spending, set up an automatic recurring transfer on payday to direct that surplus straight to Marcus, your 529 plan, or your taxable brokerage.",
+  "latencyMs": 17773,
+  "capturedAt": "2026-08-14T04:02:31.546Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

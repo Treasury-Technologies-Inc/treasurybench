@@ -1,0 +1,10 @@
+{
+  "taskId": "jordan_tax_optimization",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "### Top 2026 tax moves for self-employed consultants\n\n1. **Establish a Solo 401(k)** — A Solo 401(k) allows an employee elective deferral up to $24,500 plus an employer profit-sharing contribution up to ~20% of net self-employment earnings, capped at $72,000 for 2026.\n2. **Deduct self-employed health insurance above the line** — Marketplace health insurance premiums are 100% deductible as an adjustment to income on Form 1040 (Schedule 1), lowering your Adjusted Gross Income (AGI).\n3. **Max out your Health Savings Account (HSA)** — If your individual marketplace plan is an eligible HDHP, contributing up to the 2026 self-only limit of $4,400 provides a triple-tax advantage and directly reduces taxable income.\n4. **Capture Schedule C ordinary and necessary business expenses** — Direct business expenses (design/UX software subscriptions, hardware, business mileage at 72.5¢/mile, and dedicated home office space) reduce both federal income tax and the 15.3% self-employment tax.\n5. **Leverage the Qualified Business Income (QBI) deduction** — Eligible pass-through business income allows up to a 20% deduction on qualified net profit, subject to taxable income phase-out thresholds starting at $201,750 for single filers in 2026.\n6. **Maintain safe harbor estimated tax payments** — Paying quarterly based on 100% of your prior-year tax liability (or 110% if prior-year AGI exceeded $150,000) prevents underpayment penalties amid uneven consulting cashflow.\n\nWatch out: Self-employed retirement contributions and health insurance deductions reduce income tax and AGI, but they do not reduce your Schedule SE self-employment tax base.",
+  "latencyMs": 5895,
+  "capturedAt": "2026-08-14T04:09:47.296Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

@@ -1,0 +1,51 @@
+{
+  "taskId": "jordan_subscriptions_benefits",
+  "provider": "treasury",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies and uses the exact May transaction amounts for the business tools and recurring bills. It successfully separates business software from personal expenses."
+    },
+    {
+      "id": "correctness",
+      "score": 18,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the business tools and provides accurate advice. However, it includes a raw tool-call artifact [Display artifact omitted from public capture] in the output, which is a formatting error."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 35,
+      "rationale": "The advice is highly personalized to the UX consultant persona, focusing on AWS and Adobe. It provides actionable next steps for each."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes a good warning about Adobe's early termination fees. It avoids over-claiming plan details, though it makes a slight assumption about the user's AWS usage patterns."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Adobe's standard annual plans billed monthly include an early termination fee of 50% of the remaining commitment if canceled mid-term",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The claim regarding Adobe's 50% early termination fee is a common policy but is not a locked benchmark fact; it is treated as unverified external knowledge."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the tax-deductibility of the business tools as a secondary consideration to the actual cash savings, though it correctly noted the workspace deduction."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested checking for orphaned EBS volumes in AWS, which is a high-leverage, persona-specific insight for a UX consultant."
+  ],
+  "safetyIssues": [
+    "Included a raw tool-call artifact [Display artifact omitted from public capture] in the user-facing text."
+  ],
+  "summary": "The response provides excellent, personalized, and actionable advice for a self-employed UX consultant, though it contains a minor formatting error with a raw tool-call artifact."
+}

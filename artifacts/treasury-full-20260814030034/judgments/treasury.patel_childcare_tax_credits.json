@@ -1,0 +1,55 @@
+{
+  "taskId": "patel_childcare_tax_credits",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific daycare spending, employer benefits (Salesforce), and household filing status."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Correctly identifies 2026 limits for DCFSA ($7,500) and CDCTC. The interaction rule (dollar-for-dollar reduction) is accurately explained."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. The distinction between DCFSA and CDCTC is well-resolved for the user's income level."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately notes that DCFSA reimbursement is tied to payroll withholding and that employer plan adoption is required."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 dependent care FSA limit is $7,500",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 CDCTC expense cap is $3,000 for one child",
+      "tableKey": "irs_2026_child_dependent_care_credit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Colorado state income tax rate is 4.40%",
+      "tableKey": "colorado_2026_income_tax_rate",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Explicitly mentions the FICA tax savings (7.65%) in addition to income tax savings, which is a high-leverage detail for W-2 employees."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, personalized, and highly actionable advice regarding the 2026 childcare tax landscape, correctly prioritizing the DCFSA over the CDCTC for this household."
+}

@@ -1,0 +1,55 @@
+{
+  "taskId": "patel_insurance_review",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links advice to the mortgage balance and family status. It misses an opportunity to explicitly reference the current insurance premiums visible in the transactions to suggest a review of existing coverage levels."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on insurance mechanics is accurate. It correctly identifies the limitations of group coverage and the importance of own-occupation definitions. It avoids making unsupported claims about the user's specific employer plan enrollment."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps. It could have been improved by suggesting specific coverage amounts based on the visible income data, though it correctly identifies the need for a professional assessment."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding employer-plan portability and the need for professional audits. It maintains a conservative tone."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Employer group life policies are rarely portable",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Employer-paid disability benefit payouts are taxable",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response makes general claims about group insurance taxability and portability which are generally true but can vary by specific plan documents."
+  ],
+  "missedOpportunities": [
+    "Did not suggest reviewing the current State Farm auto and home insurance premiums visible in the transactions to see if they are competitive or if they qualify for bundling discounts.",
+    "Did not suggest checking if the employer-provided benefits (Salesforce/UCHealth) include any free basic life or disability coverage that could serve as a baseline before purchasing supplemental policies."
+  ],
+  "unexpectedValidInsights": [
+    "Explicitly mentioned the 'own-occupation' vs 'any-occupation' distinction for disability insurance, which is a high-value expert insight for high-earning professionals."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, well-grounded insurance review that correctly prioritizes family protection and provides actionable, expert-level guidance on policy types and definitions."
+}

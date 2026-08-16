@@ -1,0 +1,50 @@
+{
+  "taskId": "maria_rental_car_trip",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the user's specific card (CSP) and the recent Avis transaction. It could have been slightly more grounded by explicitly referencing the Microsoft employer context in the context of the specific rental transaction."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice regarding CSP primary coverage and corporate rates is accurate. The mention of SFO surcharges is a helpful, factual observation. The response correctly identifies the value of the CSP for rental coverage."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps. It offers a good mix of immediate (corporate codes) and strategic (price tracking, location selection) advice."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response includes necessary caveats about corporate code usage and the variability of rental pricing. It correctly identifies the primary nature of the CSP coverage."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Chase Sapphire Preferred provides primary auto rental collision damage waiver coverage",
+      "tableKey": "chase_2026_sapphire_preferred_rental",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response mentions 'Microsoft Prime' as a portal; while the benchmark notes this as a valid name, the response does not explicitly link it to the rental car booking process, which is a minor missed opportunity for specificity."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly calculate the potential dollar savings for the specific Avis transaction based on the corporate discount vs. the paid amount.",
+    "Could have explicitly mentioned checking the Microsoft Prime portal for the specific rental car discount link."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to pick up at a downtown or suburban branch to avoid airport facility fees is a high-leverage, practical insight for a Seattle-based user traveling to SFO."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized response that correctly identifies the value of the user's credit card coverage and provides actionable, high-leverage strategies for future travel savings."
+}

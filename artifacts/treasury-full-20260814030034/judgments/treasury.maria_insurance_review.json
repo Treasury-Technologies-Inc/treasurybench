@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_insurance_review",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's Microsoft employment context and single-renter status to tailor the insurance advice, though it could have explicitly referenced the $60,000 base salary (derived from paystubs) to quantify the disability coverage gap."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The advice on disability, renters, and life insurance is accurate and aligns with the persona's needs. The explanation of taxability for employer-paid LTD is a high-value, correct insight."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Clear, actionable steps are provided. The prioritization is logical and well-justified for a single professional with no dependents."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding taxability and the definition of disability. The advice to verify specific plan details in the Microsoft portal is appropriate."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft's standard benefits package provides employer-paid long-term disability (LTD) covering 60% of base salary",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Microsoft automatically provides basic group life insurance at 3x base salary at no cost",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response cites specific Microsoft benefit plan details (60% LTD, 3x life insurance) which are not in the locked benchmark facts; these are treated as unverified plan-level claims."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly calculated the monthly income replacement gap based on the $2,500 semi-monthly gross pay ($60,000 annual base) to make the disability advice more concrete."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the taxability of employer-paid LTD as a critical factor for actual take-home replacement, which is a sophisticated and highly relevant insight for a high-earner."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and accurate insurance prioritization guide that correctly identifies disability coverage as the primary need for a single professional, while providing actionable steps for Microsoft-specific benefits."
+}

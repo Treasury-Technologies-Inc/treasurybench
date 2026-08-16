@@ -1,0 +1,62 @@
+{
+  "taskId": "maria_side_income_tax",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the $1,200 freelance income to specific tax reserve math and suggests using the Ally savings account for the reserve."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "Tax rates, SE tax mechanics, and safe harbor rules are accurate for 2026. The distinction between W-2 withholding and estimated payments is handled correctly."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. It could have been slightly more proactive by suggesting a specific check of the Microsoft 401(k) or HSA status to see if those could be leveraged to offset the tax impact, but the advice is highly practical."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Includes appropriate caveats regarding the safe harbor rules and the need for ongoing tracking."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employment tax is 15.3% (12.4% Social Security + 2.9% Medicare) on 92.35% of net earnings",
+      "tableKey": "se_tax_2026_net_earnings_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Washington has no personal income tax",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Safe harbor rule covers 100% of prior year's tax liability (or 110% if AGI > $150k)",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Q2 2026 estimated tax payment is due June 15, 2026",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned that HSA contributions are not a Schedule C deduction, as this is a common point of confusion for freelancers."
+  ],
+  "unexpectedValidInsights": [
+    "Suggesting the W-4 adjustment as a 'simplest' alternative to quarterly payments is a high-leverage, practical tip for a W-2 employee with side income."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly accurate, personalized, and actionable response that correctly identifies the tax obligations for freelance income and provides clear, safe strategies for compliance."
+}

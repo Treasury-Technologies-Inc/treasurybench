@@ -31,7 +31,6 @@ const dataRetrievalRubric: ScoreDimension[] = [
   }
 ];
 
-
 const adviceRubric: ScoreDimension[] = [
   {
     id: 'grounding',
@@ -127,7 +126,14 @@ const planningRubric: ScoreDimension[] = [
 const openCreditPolicy =
   'Give credit for unexpected recommendations only when they are factual, grounded in the user’s visible data or seeded context, materially relevant, conservatively valued, and actionable. Do not give full credit for generic advice when the planted data supports a higher-value personalized play.';
 
-type NewTask = Omit<Task, 'opportunityIds' | 'scoreDimensions' | 'invalidOrHarmful' | 'openCreditPolicy' | 'deterministicChecks'> & {
+type NewTask = Omit<
+  Task,
+  | 'opportunityIds'
+  | 'scoreDimensions'
+  | 'invalidOrHarmful'
+  | 'openCreditPolicy'
+  | 'deterministicChecks'
+> & {
   rubric?: ScoreDimension[];
   invalidOrHarmful?: string[];
   opportunityIds?: string[];
@@ -205,6 +211,64 @@ const mariaTasks: Task[] = [
     ],
     openCreditPolicy,
     deterministicChecks: ['food_spend_total_may', 'merchant_category_boundary']
+  },
+  {
+    id: 'maria_spend_april_vs_may',
+    personaId: 'maria_seattle_v0',
+    domain: 'transaction_intelligence',
+    type: 'data_retrieval',
+    prompt: 'How did my total spending change from April 2026 to May 2026?',
+    intent:
+      'Test exhaustive two-period comparison, percentage-change math, and coverage disclosure.',
+    expectedAnswerNotes: [
+      'April visible spending is $2,581.10 and May visible spending is $4,197.71.',
+      'The increase is $1,616.61, approximately 62.63%.',
+      'Explain that the comparison reflects the visible ledger rather than asserting both months are equally complete.'
+    ],
+    opportunityIds: [],
+    relevantSignalIds: ['txn_rent_2026_04', 'txn_alaska_2026_04_12', 'txn_rent_2026_05'],
+    scoreDimensions: dataRetrievalRubric,
+    invalidOrHarmful: [
+      'Includes income or retirement-account contribution activity as spending.',
+      'Uses only a displayed transaction page for either monthly total.',
+      'Calculates the percentage change against the wrong base month.'
+    ],
+    openCreditPolicy,
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'income_exclusion',
+      'no_raw_tool_or_stream_output'
+    ]
+  },
+  {
+    id: 'maria_coffee_shops_may',
+    personaId: 'maria_seattle_v0',
+    domain: 'transaction_intelligence',
+    type: 'data_retrieval',
+    prompt:
+      'Which of my May transactions appear to be from coffee shops or cafes, and what were the ten highest?',
+    intent:
+      'Test schema-free semantic merchant discovery when the user does not know merchant names and broad categories are insufficient.',
+    expectedAnswerNotes: [
+      'Oddfellows Cafe at $42.16 is the visible May cafe-like merchant.',
+      'Do not include all Dining transactions merely because cafes share that category.',
+      'Be explicit that merchant-name/category inference may miss an ambiguously named venue.'
+    ],
+    opportunityIds: [],
+    relevantSignalIds: ['txn_dining_2026_05_03'],
+    scoreDimensions: dataRetrievalRubric,
+    invalidOrHarmful: [
+      'Treats every restaurant or grocery merchant as a coffee shop.',
+      'Claims semantic classification is certain when only merchant descriptors are available.',
+      'Invents merchant transactions not present in May.'
+    ],
+    openCreditPolicy,
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'no_raw_tool_or_stream_output'
+    ]
   },
   {
     id: 'maria_recurring_charges_audit',
@@ -300,7 +364,8 @@ const mariaTasks: Task[] = [
       'mfte_caveat_presence',
       'mfte_savings_estimate',
       'rent_exact_next_steps',
-      'rent_secondary_rewards'
+      'rent_secondary_rewards',
+      'no_rewards_scale_error'
     ]
   },
   {
@@ -368,7 +433,11 @@ const mariaTasks: Task[] = [
       'card_strategy_value_quantified',
       'card_strategy_fee_caveats',
       'card_strategy_priority_order',
-      'no_unbacked_rewards_headline'
+      'no_unbacked_rewards_headline',
+      'no_false_costco_period',
+      'no_false_rent_period',
+      'executive_gas_exclusion',
+      'no_rewards_scale_error'
     ]
   },
   {
@@ -397,7 +466,8 @@ const mariaTasks: Task[] = [
     deterministicChecks: [
       'costco_monthly_spend',
       'executive_membership_breakeven',
-      'gas_vs_warehouse_split'
+      'gas_vs_warehouse_split',
+      'executive_gas_exclusion'
     ]
   },
   {
@@ -420,7 +490,7 @@ const mariaTasks: Task[] = [
       'Fails to annualize rent.'
     ],
     openCreditPolicy,
-    deterministicChecks: ['annual_rent', 'fee_vs_rewards']
+    deterministicChecks: ['annual_rent', 'fee_vs_rewards', 'no_rewards_scale_error']
   },
   {
     id: 'maria_alaska_microsoft',
@@ -483,7 +553,12 @@ const mariaTasks: Task[] = [
       'Claims exact emergency-fund adequacy without acknowledging unseen expenses.'
     ],
     openCreditPolicy,
-    deterministicChecks: ['cash_balance_total', 'monthly_burn_estimate', 'idle_cash_estimate']
+    deterministicChecks: [
+      'cash_balance_total',
+      'monthly_burn_estimate',
+      'idle_cash_estimate',
+      'no_brokerage_balance_as_cash'
+    ]
   },
   {
     id: 'maria_checking_buffer',
@@ -512,7 +587,8 @@ const mariaTasks: Task[] = [
       'cash_balance_total',
       'monthly_burn_estimate',
       'idle_cash_estimate',
-      'cash_buffer_before_long_term_lockup'
+      'cash_buffer_before_long_term_lockup',
+      'no_brokerage_balance_as_cash'
     ]
   },
   {
@@ -605,7 +681,8 @@ const mariaTasks: Task[] = [
       'mega_current_limits_no_stale',
       'mega_sequence_before_after_tax',
       'mega_plan_feature_caveat',
-      'no_stale_irs_limits'
+      'no_stale_irs_limits',
+      'visible_retirement_payroll_use'
     ]
   },
   {
@@ -896,15 +973,28 @@ const patelTasks: Task[] = [
     domain: 'transaction_intelligence',
     type: 'data_retrieval',
     prompt: 'How much did we spend in May 2026, and what were the biggest categories?',
-    intent: 'Test household spend retrieval with income/contribution exclusions and family-category rollups.',
+    intent:
+      'Test household spend retrieval with income/contribution exclusions and family-category rollups.',
     expectedAnswerNotes: [
       'Exclude payroll and other income from spending.',
       'Do not treat 401(k) contribution transactions as household spending.',
       'A strong answer separates mortgage, childcare, groceries/household, insurance, utilities, subscriptions, and medical.'
     ],
-    relevantSignalIds: ['patel_txn_mortgage_2026_05', 'patel_txn_daycare_2026_05', 'patel_txn_costco_2026_05_04'],
+    relevantSignalIds: [
+      'patel_txn_mortgage_2026_05',
+      'patel_txn_daycare_2026_05',
+      'patel_txn_costco_2026_05_04'
+    ],
     rubric: dataRetrievalRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_period_scope_may_2026', 'exact_amount_grounding', 'consumption_spend_total_scope', 'no_income_as_spend', 'no_savings_contribution_as_consumption', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_period_scope_may_2026',
+      'exact_amount_grounding',
+      'consumption_spend_total_scope',
+      'no_income_as_spend',
+      'no_savings_contribution_as_consumption',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Includes payroll as spending.',
       'Misses mortgage or daycare as top categories.',
@@ -916,16 +1006,28 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'transaction_intelligence',
     type: 'data_retrieval',
-    prompt: 'How much did we spend on childcare and kid-related expenses in May, and what should I double-check?',
-    intent: 'Test exact child-related retrieval plus scope caveats for daycare, backup care, 529, and family subscriptions.',
+    prompt:
+      'How much did we spend on childcare and kid-related expenses in May, and what should I double-check?',
+    intent:
+      'Test exact child-related retrieval plus scope caveats for daycare, backup care, 529, and family subscriptions.',
     expectedAnswerNotes: [
       'Bright Horizons daycare and Care.com backup care are direct childcare.',
       'The 529 contribution is kid-related savings, not childcare expense.',
       'Disney/Spotify may be family/kid-adjacent but should not be mixed into the core childcare total without labeling scope.'
     ],
-    relevantSignalIds: ['patel_txn_daycare_2026_05', 'patel_txn_backup_care_2026_05', 'patel_txn_529_2026_05'],
+    relevantSignalIds: [
+      'patel_txn_daycare_2026_05',
+      'patel_txn_backup_care_2026_05',
+      'patel_txn_529_2026_05'
+    ],
     rubric: dataRetrievalRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_period_scope_may_2026', 'exact_amount_grounding', 'no_savings_contribution_as_consumption', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_period_scope_may_2026',
+      'exact_amount_grounding',
+      'no_savings_contribution_as_consumption',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Combines 529 savings with daycare as if they are the same category.',
       'Misses backup childcare.',
@@ -937,16 +1039,29 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'transaction_intelligence',
     type: 'data_retrieval',
-    prompt: 'Which recurring charges or subscriptions should we review, and what is the monthly amount for each?',
+    prompt:
+      'Which recurring charges or subscriptions should we review, and what is the monthly amount for each?',
     intent: 'Test recurring-charge detection without overreaching from charge names.',
     expectedAnswerNotes: [
       'Recurring candidates include Disney Plus, Spotify Family, Peloton, Xfinity, insurance, mortgage, daycare, and possibly HealthCare/HSA only if scope is labeled.',
       'A strong answer separates subscriptions from bills, insurance, debt/mortgage, and savings contributions.',
       'Do not infer premium tiers or plan details from price alone.'
     ],
-    relevantSignalIds: ['patel_txn_disney_2026_05', 'patel_txn_spotify_2026_05', 'patel_txn_peloton_2026_05', 'patel_txn_comcast_2026_05'],
+    relevantSignalIds: [
+      'patel_txn_disney_2026_05',
+      'patel_txn_spotify_2026_05',
+      'patel_txn_peloton_2026_05',
+      'patel_txn_comcast_2026_05'
+    ],
     rubric: dataRetrievalRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_period_scope_may_2026', 'exact_amount_grounding', 'recurring_scope_boundary', 'recurring_review_scope_strict', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_period_scope_may_2026',
+      'exact_amount_grounding',
+      'recurring_scope_boundary',
+      'recurring_review_scope_strict',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Calls mortgage or daycare a cancellable subscription.',
       'Invents plan tiers.',
@@ -959,15 +1074,27 @@ const patelTasks: Task[] = [
     domain: 'savings_expense_reduction',
     type: 'insight_discovery',
     prompt: 'Where are we most likely wasting money, based on our accounts and May transactions?',
-    intent: 'Test bounded opportunity discovery across family expenses, recurring charges, card routing, cash, and insurance.',
+    intent:
+      'Test bounded opportunity discovery across family expenses, recurring charges, card routing, cash, and insurance.',
     expectedAnswerNotes: [
       'High-value candidates include childcare tax/FSA treatment, Peloton/fitness benefit check, excess checking vs savings, insurance bundling/deductibles, card routing, and mortgage/escrow review.',
       'Rank by likely dollar impact and confidence.',
       'Do not make generic cancel-everything recommendations without considering family utility and tax/benefit offsets.'
     ],
-    relevantSignalIds: ['patel_txn_daycare_2026_05', 'patel_txn_peloton_2026_05', 'patel_acct_checking', 'patel_acct_savings'],
+    relevantSignalIds: [
+      'patel_txn_daycare_2026_05',
+      'patel_txn_peloton_2026_05',
+      'patel_acct_checking',
+      'patel_acct_savings'
+    ],
     rubric: discoveryRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'no_unsupported_employer_benefit_overclaim', 'plan_participation_caveat', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'no_unsupported_employer_benefit_overclaim',
+      'plan_participation_caveat',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Only gives generic budgeting tips.',
       'Misses childcare tax/FSA and cash-yield angles.',
@@ -979,16 +1106,30 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'savings_expense_reduction',
     type: 'insight_discovery',
-    prompt: 'Are any of our subscriptions or recurring charges worth changing or routing through benefits?',
-    intent: 'Test subscription review plus employer-benefit linkage without assuming participation.',
+    prompt:
+      'Are any of our subscriptions or recurring charges worth changing or routing through benefits?',
+    intent:
+      'Test subscription review plus employer-benefit linkage without assuming participation.',
     expectedAnswerNotes: [
       'Peloton is a fitness/wellness candidate to check against employer benefits, not guaranteed reimbursed.',
       'Backup care should trigger checking Salesforce backup-care benefit rules if the charge was not run through the benefit.',
       'The answer should separate cancel/keep/reroute/reimburse decisions.'
     ],
-    relevantSignalIds: ['patel_txn_peloton_2026_05', 'patel_txn_backup_care_2026_05', 'patel_mem_employers'],
+    relevantSignalIds: [
+      'patel_txn_peloton_2026_05',
+      'patel_txn_backup_care_2026_05',
+      'patel_mem_employers'
+    ],
     rubric: discoveryRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'recurring_scope_boundary', 'recurring_review_scope_strict', 'plan_participation_caveat', 'no_unsupported_employer_benefit_overclaim', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'recurring_scope_boundary',
+      'recurring_review_scope_strict',
+      'plan_participation_caveat',
+      'no_unsupported_employer_benefit_overclaim',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Claims a reimbursement was already available or unused without evidence.',
       'Treats every recurring charge as waste.',
@@ -1000,16 +1141,27 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'housing_rent',
     type: 'domain_advice',
-    prompt: 'Our mortgage payment is big. What should we check to reduce housing cost without making a risky move?',
-    intent: 'Test homeowner housing-cost advice grounded in mortgage payment, loan balance, insurance, taxes, and liquidity.',
+    prompt:
+      'Our mortgage payment is big. What should we check to reduce housing cost without making a risky move?',
+    intent:
+      'Test homeowner housing-cost advice grounded in mortgage payment, loan balance, insurance, taxes, and liquidity.',
     expectedAnswerNotes: [
       'Use the $3,850 mortgage payment and mortgage balance.',
       'Consider escrow/property-tax/insurance review, refinance only if rates/fees make sense, and avoid raiding emergency cash.',
       'Do not recommend moving or refinancing as automatic wins without rate, term, and closing-cost caveats.'
     ],
-    relevantSignalIds: ['patel_txn_mortgage_2026_05', 'patel_acct_mortgage', 'patel_txn_home_insurance_2026_05'],
+    relevantSignalIds: [
+      'patel_txn_mortgage_2026_05',
+      'patel_acct_mortgage',
+      'patel_txn_home_insurance_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'salt_standard_deduction_currentness', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'salt_standard_deduction_currentness',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Says refinance without break-even math.',
       'Ignores escrow, property tax, or insurance review.',
@@ -1021,16 +1173,26 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'housing_rent',
     type: 'domain_advice',
-    prompt: 'Should we review our homeowners and auto insurance, and what exactly should we compare?',
-    intent: 'Test concrete insurance-cost review tied to visible State Farm home/auto payments and household risks.',
+    prompt:
+      'Should we review our homeowners and auto insurance, and what exactly should we compare?',
+    intent:
+      'Test concrete insurance-cost review tied to visible State Farm home/auto payments and household risks.',
     expectedAnswerNotes: [
       'Use State Farm auto and home insurance charges.',
       'Recommend comparing deductibles, liability limits, bundle discounts, replacement-cost coverage, and umbrella fit.',
       'Avoid reducing essential liability or dwelling coverage just to cut premiums.'
     ],
-    relevantSignalIds: ['patel_txn_auto_insurance_2026_05', 'patel_txn_home_insurance_2026_05', 'patel_mem_household'],
+    relevantSignalIds: [
+      'patel_txn_auto_insurance_2026_05',
+      'patel_txn_home_insurance_2026_05',
+      'patel_mem_household'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Only says shop around.',
       'Suggests dropping important coverage without caveats.',
@@ -1042,16 +1204,30 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'credit_cards_rewards',
     type: 'domain_advice',
-    prompt: 'Given our current cards and May spending, which card should we use for groceries, dining, daycare, Costco, and utilities?',
-    intent: 'Test category routing using visible cards and merchant categories, with optional new-card suggestions clearly labeled.',
+    prompt:
+      'Given our current cards and May spending, which card should we use for groceries, dining, daycare, Costco, and utilities?',
+    intent:
+      'Test category routing using visible cards and merchant categories, with optional new-card suggestions clearly labeled.',
     expectedAnswerNotes: [
       'Use visible Amex Gold and Chase Freedom Unlimited cards.',
       'Amex Gold should be considered for supermarket/dining where accepted; Costco generally does not accept Amex in-store.',
       'Daycare/utilities may be flat-rate or fee-sensitive; do not assume credit cards are accepted without fees.'
     ],
-    relevantSignalIds: ['patel_acct_cfu', 'patel_acct_amex_gold', 'patel_txn_daycare_2026_05', 'patel_txn_costco_2026_05_04'],
+    relevantSignalIds: [
+      'patel_acct_cfu',
+      'patel_acct_amex_gold',
+      'patel_txn_daycare_2026_05',
+      'patel_txn_costco_2026_05_04'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'card_rate_currentness', 'card_fee_or_interest_priority', 'no_unsupported_employer_benefit_overclaim', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'card_rate_currentness',
+      'card_fee_or_interest_priority',
+      'no_unsupported_employer_benefit_overclaim',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Routes Costco to Amex Gold without acceptance caveat.',
       'Recommends paying daycare by card without fee math.',
@@ -1063,16 +1239,28 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'credit_cards_rewards',
     type: 'domain_advice',
-    prompt: 'We spent at Costco and Target this month. Are there better card or membership moves for those merchants?',
-    intent: 'Test merchant-specific rewards advice without bad annualization or unsupported card ownership.',
+    prompt:
+      'We spent at Costco and Target this month. Are there better card or membership moves for those merchants?',
+    intent:
+      'Test merchant-specific rewards advice without bad annualization or unsupported card ownership.',
     expectedAnswerNotes: [
       'Costco in-store acceptance and category coding matter.',
       'Target may have a merchant-specific RedCard style option but should be weighed against simplicity and visible spend.',
       'Annualization should be labeled as if May is typical, not asserted as a stable run-rate.'
     ],
-    relevantSignalIds: ['patel_txn_costco_2026_05_04', 'patel_txn_costco_2026_05_18', 'patel_txn_target_2026_05'],
+    relevantSignalIds: [
+      'patel_txn_costco_2026_05_04',
+      'patel_txn_costco_2026_05_18',
+      'patel_txn_target_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'card_rate_currentness', 'card_fee_or_interest_priority', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'card_rate_currentness',
+      'card_fee_or_interest_priority',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Overstates annual savings from a single month.',
       'Ignores Costco acceptance limits.',
@@ -1084,16 +1272,28 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'credit_cards_rewards',
     type: 'domain_advice',
-    prompt: 'Is there a smart way to earn rewards on daycare without giving back the value in fees?',
+    prompt:
+      'Is there a smart way to earn rewards on daycare without giving back the value in fees?',
     intent: 'Test fee-aware rewards math on large childcare spend.',
     expectedAnswerNotes: [
       'Use the $1,650 Bright Horizons charge and $220 backup care charge.',
       'The right answer should compare card rewards against any processing fee and consider dependent care FSA first because tax savings may dominate points.',
       'Do not assume daycare accepts fee-free credit-card payments.'
     ],
-    relevantSignalIds: ['patel_txn_daycare_2026_05', 'patel_txn_backup_care_2026_05', 'patel_mem_employers'],
+    relevantSignalIds: [
+      'patel_txn_daycare_2026_05',
+      'patel_txn_backup_care_2026_05',
+      'patel_mem_employers'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'dependent_care_fsa_2026_limit', 'card_fee_or_interest_priority', 'plan_participation_caveat', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'dependent_care_fsa_2026_limit',
+      'card_fee_or_interest_priority',
+      'plan_participation_caveat',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Optimizes points while ignoring processing fees.',
       'Misses dependent care FSA/tax angle.',
@@ -1106,7 +1306,8 @@ const patelTasks: Task[] = [
     domain: 'employer_benefits_perks',
     type: 'domain_advice',
     prompt: 'Should we use a dependent care FSA for daycare, and how much could it matter?',
-    intent: 'Test childcare-tax benefit knowledge, family context, and benefit-participation caveats.',
+    intent:
+      'Test childcare-tax benefit knowledge, family context, and benefit-participation caveats.',
     expectedAnswerNotes: [
       'They have one child age 3 and visible daycare/backup-care expenses.',
       'A dependent care FSA is employer-plan dependent and should not be assumed already elected.',
@@ -1114,7 +1315,13 @@ const patelTasks: Task[] = [
     ],
     relevantSignalIds: ['patel_mem_household', 'patel_mem_employers', 'patel_txn_daycare_2026_05'],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'dependent_care_fsa_2026_limit', 'plan_participation_caveat', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'dependent_care_fsa_2026_limit',
+      'plan_participation_caveat',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Claims they are enrolled without evidence.',
       'Ignores use-it-or-lose-it risk.',
@@ -1127,15 +1334,29 @@ const patelTasks: Task[] = [
     domain: 'employer_benefits_perks',
     type: 'insight_discovery',
     prompt: 'Which employer benefits should we check first given our family spending this month?',
-    intent: 'Test benefit discovery tied to daycare, backup care, HSA, insurance, and family needs.',
+    intent:
+      'Test benefit discovery tied to daycare, backup care, HSA, insurance, and family needs.',
     expectedAnswerNotes: [
       'Relevant checks include dependent care FSA, backup care, HSA/HDHP, disability/life insurance, and possibly wellness benefits.',
       'The answer should distinguish plan-level availability from user-specific enrollment or remaining balances.',
       'Prioritize by likely dollar impact and risk protection.'
     ],
-    relevantSignalIds: ['patel_mem_employers', 'patel_txn_backup_care_2026_05', 'patel_txn_hsa_2026_05', 'patel_mem_household'],
+    relevantSignalIds: [
+      'patel_mem_employers',
+      'patel_txn_backup_care_2026_05',
+      'patel_txn_hsa_2026_05',
+      'patel_mem_household'
+    ],
     rubric: discoveryRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'dependent_care_fsa_2026_limit', 'hsa_family_limit_currentness', 'plan_participation_caveat', 'no_unsupported_employer_benefit_overclaim', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'dependent_care_fsa_2026_limit',
+      'hsa_family_limit_currentness',
+      'plan_participation_caveat',
+      'no_unsupported_employer_benefit_overclaim',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Assumes participation or remaining reimbursement balances.',
       'Gives an employer-benefit checklist not tied to spending.',
@@ -1148,15 +1369,26 @@ const patelTasks: Task[] = [
     domain: 'cashflow_budgeting',
     type: 'domain_advice',
     prompt: 'Do we have too much idle cash in checking, and what should we move?',
-    intent: 'Test family cash-buffer sizing against mortgage, daycare, checking, and savings balances.',
+    intent:
+      'Test family cash-buffer sizing against mortgage, daycare, checking, and savings balances.',
     expectedAnswerNotes: [
       'Use checking and savings balances plus large fixed bills like mortgage and daycare.',
       'Recommend a bill-pay buffer and emergency reserve before investing.',
       'Any transfer amount should preserve near-term liquidity and avoid over-precision.'
     ],
-    relevantSignalIds: ['patel_acct_checking', 'patel_acct_savings', 'patel_txn_mortgage_2026_05', 'patel_txn_daycare_2026_05'],
+    relevantSignalIds: [
+      'patel_acct_checking',
+      'patel_acct_savings',
+      'patel_txn_mortgage_2026_05',
+      'patel_txn_daycare_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'no_savings_contribution_as_consumption', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'no_savings_contribution_as_consumption',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Invests emergency cash without caveats.',
       'Ignores family fixed expenses.',
@@ -1168,16 +1400,27 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'cashflow_budgeting',
     type: 'what_if',
-    prompt: 'What checking-account buffer should we keep before moving extra cash to savings or investments?',
+    prompt:
+      'What checking-account buffer should we keep before moving extra cash to savings or investments?',
     intent: 'Test exact buffer planning based on recurring bills and family volatility.',
     expectedAnswerNotes: [
       'A strong answer anchors on mortgage, daycare, utilities/insurance, and upcoming card payments.',
       'It should separate checking buffer from emergency fund.',
       'Do not use a one-size-fits-all one-month rule without considering bill timing.'
     ],
-    relevantSignalIds: ['patel_acct_checking', 'patel_txn_mortgage_2026_05', 'patel_txn_daycare_2026_05', 'patel_acct_cfu'],
+    relevantSignalIds: [
+      'patel_acct_checking',
+      'patel_txn_mortgage_2026_05',
+      'patel_txn_daycare_2026_05',
+      'patel_acct_cfu'
+    ],
     rubric: planningRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'no_savings_contribution_as_consumption', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'no_savings_contribution_as_consumption',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Conflates checking buffer and emergency fund.',
       'Ignores card balances and bill timing.',
@@ -1190,15 +1433,30 @@ const patelTasks: Task[] = [
     domain: 'life_planning_major_decisions',
     type: 'prioritization',
     prompt: 'If we freed up $15,000 this year, where should it go first?',
-    intent: 'Test prioritization across emergency cash, high-interest debt checks, HSA/401(k), 529, insurance, mortgage, and taxable investing.',
+    intent:
+      'Test prioritization across emergency cash, high-interest debt checks, HSA/401(k), 529, insurance, mortgage, and taxable investing.',
     expectedAnswerNotes: [
       'First verify whether credit-card balances are statement float or revolving debt.',
       'Family protection and emergency reserves should be considered before low-priority taxable investing.',
       'HSA/401(k)/529 can all be valid depending on enrollment, matching, tax rate, and goal timing.'
     ],
-    relevantSignalIds: ['patel_acct_checking', 'patel_acct_savings', 'patel_acct_cfu', 'patel_acct_hsa', 'patel_acct_529'],
+    relevantSignalIds: [
+      'patel_acct_checking',
+      'patel_acct_savings',
+      'patel_acct_cfu',
+      'patel_acct_hsa',
+      'patel_acct_529'
+    ],
     rubric: planningRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'card_fee_or_interest_priority', 'dependent_care_fsa_2026_limit', 'hsa_family_limit_currentness', 'priority_ordering', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'card_fee_or_interest_priority',
+      'dependent_care_fsa_2026_limit',
+      'hsa_family_limit_currentness',
+      'priority_ordering',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Puts 529 or taxable investing first while ignoring revolving debt and protection checks.',
       'Assumes card balances are revolving without saying to verify.',
@@ -1210,7 +1468,8 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'debt_credit_health',
     type: 'domain_advice',
-    prompt: 'Do our credit-card balances look like a problem, and what should we verify before optimizing anything else?',
+    prompt:
+      'Do our credit-card balances look like a problem, and what should we verify before optimizing anything else?',
     intent: 'Test statement-float vs revolving-debt reasoning for family card balances.',
     expectedAnswerNotes: [
       'Use the Chase Freedom Unlimited and Amex Gold balances.',
@@ -1219,7 +1478,12 @@ const patelTasks: Task[] = [
     ],
     relevantSignalIds: ['patel_acct_cfu', 'patel_acct_amex_gold', 'patel_acct_checking'],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'card_fee_or_interest_priority', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'card_fee_or_interest_priority',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Assumes they are in credit-card debt without evidence.',
       'Optimizes rewards while ignoring possible interest.',
@@ -1231,16 +1495,29 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'retirement_tax_advantaged',
     type: 'domain_advice',
-    prompt: 'Are our current 401(k) contributions on pace, and what should we change if cashflow allows?',
+    prompt:
+      'Are our current 401(k) contributions on pace, and what should we change if cashflow allows?',
     intent: 'Test contribution synthesis for two W-2 earners without claiming they are maxing.',
     expectedAnswerNotes: [
       'Use visible May deferrals: Priya $1,400 and Daniel $600 for the month.',
       'Annualize carefully and compare to current IRS employee limits per person.',
       'Mention employer-match verification and cashflow constraints without assuming exact match terms beyond memory context.'
     ],
-    relevantSignalIds: ['patel_txn_priya_401k_2026_05_15', 'patel_txn_priya_401k_2026_05_31', 'patel_txn_daniel_401k_2026_05_15', 'patel_txn_daniel_401k_2026_05_31'],
+    relevantSignalIds: [
+      'patel_txn_priya_401k_2026_05_15',
+      'patel_txn_priya_401k_2026_05_31',
+      'patel_txn_daniel_401k_2026_05_15',
+      'patel_txn_daniel_401k_2026_05_31'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'irs_limit_currentness', 'plan_participation_caveat', 'no_unsupported_employer_benefit_overclaim', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'irs_limit_currentness',
+      'plan_participation_caveat',
+      'no_unsupported_employer_benefit_overclaim',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Says they are maxing when visible deferrals show they are not.',
       'Uses stale 401(k) limits.',
@@ -1252,16 +1529,25 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'retirement_tax_advantaged',
     type: 'what_if',
-    prompt: 'What percent of pay would Priya and Daniel each need to contribute to hit the 2026 employee 401(k) limit?',
+    prompt:
+      'What percent of pay would Priya and Daniel each need to contribute to hit the 2026 employee 401(k) limit?',
     intent: 'Test calculator-backed contribution-rate math for two earners.',
     expectedAnswerNotes: [
       'Use gross pay from payroll notes: Priya $8,750 semi-monthly and Daniel $5,000 semi-monthly.',
       'Use the 2026 employee deferral limit per person.',
       'Distinguish mathematical possibility from cashflow aggressiveness.'
     ],
-    relevantSignalIds: ['patel_txn_priya_payroll_2026_05_15', 'patel_txn_daniel_payroll_2026_05_15'],
+    relevantSignalIds: [
+      'patel_txn_priya_payroll_2026_05_15',
+      'patel_txn_daniel_payroll_2026_05_15'
+    ],
     rubric: dataRetrievalRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'irs_limit_currentness', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'irs_limit_currentness',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Uses net pay instead of gross pay without caveat.',
       'Calls a mathematically possible percentage impossible.',
@@ -1273,16 +1559,28 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'retirement_tax_advantaged',
     type: 'domain_advice',
-    prompt: 'Should we prioritize HSA contributions this year, and what limit/enrollment caveats matter?',
+    prompt:
+      'Should we prioritize HSA contributions this year, and what limit/enrollment caveats matter?',
     intent: 'Test family HSA prioritization with enrollment caveats and current limits.',
     expectedAnswerNotes: [
       'They have an HSA account and a visible HSA contribution, but should still confirm HDHP coverage and family vs self-only coverage.',
       'Use the current 2026 HSA family limit if advising family coverage.',
       'Explain payroll/FICA advantage if available and medical-liquidity tradeoffs.'
     ],
-    relevantSignalIds: ['patel_acct_hsa', 'patel_txn_hsa_2026_05', 'patel_mem_household', 'patel_mem_employers'],
+    relevantSignalIds: [
+      'patel_acct_hsa',
+      'patel_txn_hsa_2026_05',
+      'patel_mem_household',
+      'patel_mem_employers'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'hsa_family_limit_currentness', 'plan_participation_caveat', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'hsa_family_limit_currentness',
+      'plan_participation_caveat',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Uses self-only HSA limit for a family without explaining coverage assumption.',
       'Claims HDHP enrollment beyond visible evidence.',
@@ -1294,7 +1592,8 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'tax_strategy',
     type: 'domain_advice',
-    prompt: 'Are we using the 529 well for our child, and what tax or flexibility caveats should we know?',
+    prompt:
+      'Are we using the 529 well for our child, and what tax or flexibility caveats should we know?',
     intent: 'Test 529 advice tied to visible contribution, Colorado context, and family goals.',
     expectedAnswerNotes: [
       'Use the Colorado 529 account and $300 May contribution.',
@@ -1303,7 +1602,12 @@ const patelTasks: Task[] = [
     ],
     relevantSignalIds: ['patel_acct_529', 'patel_txn_529_2026_05', 'patel_mem_household'],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'salt_standard_deduction_currentness', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'salt_standard_deduction_currentness',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Treats 529 as always first priority.',
       'Ignores state-tax/flexibility caveats.',
@@ -1315,16 +1619,29 @@ const patelTasks: Task[] = [
     personaId: 'patel_denver_family_v0',
     domain: 'tax_strategy',
     type: 'domain_advice',
-    prompt: 'Should we consider backdoor Roth IRAs, or are there better tax-advantaged moves first?',
-    intent: 'Test Roth/backdoor reasoning for married high-income household with other tax-advantaged accounts.',
+    prompt:
+      'Should we consider backdoor Roth IRAs, or are there better tax-advantaged moves first?',
+    intent:
+      'Test Roth/backdoor reasoning for married high-income household with other tax-advantaged accounts.',
     expectedAnswerNotes: [
       'Use household gross pay implied by payroll notes to reason about possible Roth income limits.',
       'Mention pro-rata rule and existing traditional IRA balances if known; do not invent IRA balances.',
       'Sequence against 401(k), HSA, dependent care FSA, emergency fund, and debt checks.'
     ],
-    relevantSignalIds: ['patel_txn_priya_payroll_2026_05_15', 'patel_txn_daniel_payroll_2026_05_15', 'patel_acct_hsa'],
+    relevantSignalIds: [
+      'patel_txn_priya_payroll_2026_05_15',
+      'patel_txn_daniel_payroll_2026_05_15',
+      'patel_acct_hsa'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'roth_mfj_phaseout_currentness', 'ira_limit_currentness', 'pro_rata_caveat', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'roth_mfj_phaseout_currentness',
+      'ira_limit_currentness',
+      'pro_rata_caveat',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Uses single-filer Roth limits for a married household.',
       'Ignores pro-rata rule.',
@@ -1343,9 +1660,23 @@ const patelTasks: Task[] = [
       'Avoid guaranteeing eligibility without AGI, plan, filing, and enrollment details.',
       'Prioritize by dollar impact and confidence.'
     ],
-    relevantSignalIds: ['patel_mem_household', 'patel_txn_daycare_2026_05', 'patel_txn_hsa_2026_05', 'patel_txn_mortgage_2026_05'],
+    relevantSignalIds: [
+      'patel_mem_household',
+      'patel_txn_daycare_2026_05',
+      'patel_txn_hsa_2026_05',
+      'patel_txn_mortgage_2026_05'
+    ],
     rubric: discoveryRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'dependent_care_fsa_2026_limit', 'hsa_family_limit_currentness', 'salt_standard_deduction_currentness', 'plan_participation_caveat', 'no_unsupported_employer_benefit_overclaim', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'dependent_care_fsa_2026_limit',
+      'hsa_family_limit_currentness',
+      'salt_standard_deduction_currentness',
+      'plan_participation_caveat',
+      'no_unsupported_employer_benefit_overclaim',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Gives generic deduction list.',
       'Misses childcare and HSA.',
@@ -1364,9 +1695,20 @@ const patelTasks: Task[] = [
       'Discuss dependent care FSA and child/dependent care credit interaction; do not double count the same expenses.',
       'Explain that exact benefit depends on AGI, filing status, qualifying care, and employer plan election.'
     ],
-    relevantSignalIds: ['patel_txn_daycare_2026_05', 'patel_txn_backup_care_2026_05', 'patel_mem_household', 'patel_mem_employers'],
+    relevantSignalIds: [
+      'patel_txn_daycare_2026_05',
+      'patel_txn_backup_care_2026_05',
+      'patel_mem_household',
+      'patel_mem_employers'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'dependent_care_fsa_2026_limit', 'plan_participation_caveat', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'dependent_care_fsa_2026_limit',
+      'plan_participation_caveat',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Double-counts FSA and credit on the same dollars.',
       'Guarantees eligibility or benefit amount without AGI details.',
@@ -1385,9 +1727,21 @@ const patelTasks: Task[] = [
       'Compare against emergency cash, debt-interest verification, HSA/401(k), and insurance needs.',
       'Avoid promising college-cost coverage; frame scenarios and flexibility.'
     ],
-    relevantSignalIds: ['patel_acct_529', 'patel_txn_529_2026_05', 'patel_acct_savings', 'patel_acct_cfu'],
+    relevantSignalIds: [
+      'patel_acct_529',
+      'patel_txn_529_2026_05',
+      'patel_acct_savings',
+      'patel_acct_cfu'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'hsa_family_limit_currentness', 'dependent_care_fsa_2026_limit', 'priority_ordering', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'hsa_family_limit_currentness',
+      'dependent_care_fsa_2026_limit',
+      'priority_ordering',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Ignores higher-priority protection/cashflow needs.',
       'Gives investment allocation advice without age/time-horizon caveats.',
@@ -1400,15 +1754,28 @@ const patelTasks: Task[] = [
     domain: 'investing_equity_comp',
     type: 'prioritization',
     prompt: 'Should we invest more in taxable brokerage, or are there better next dollars first?',
-    intent: 'Test taxable-investing prioritization against tax shelters, debt, emergency cash, and family insurance.',
+    intent:
+      'Test taxable-investing prioritization against tax shelters, debt, emergency cash, and family insurance.',
     expectedAnswerNotes: [
       'Use taxable brokerage, savings, HSA, 529, card balances, and mortgage/family context.',
       'Taxable investing is reasonable only after emergency fund, revolving-debt check, retirement/HSA priorities, and protection gaps.',
       'Do not assume credit-card balances are revolving.'
     ],
-    relevantSignalIds: ['patel_acct_brokerage', 'patel_acct_savings', 'patel_acct_hsa', 'patel_acct_cfu'],
+    relevantSignalIds: [
+      'patel_acct_brokerage',
+      'patel_acct_savings',
+      'patel_acct_hsa',
+      'patel_acct_cfu'
+    ],
     rubric: planningRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'pro_rata_caveat', 'dependent_care_fsa_2026_limit', 'priority_ordering', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'pro_rata_caveat',
+      'dependent_care_fsa_2026_limit',
+      'priority_ordering',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Recommends taxable investing first without checking debt/protection.',
       'Ignores family insurance and childcare cashflow.',
@@ -1421,15 +1788,26 @@ const patelTasks: Task[] = [
     domain: 'insurance_risk_protection',
     type: 'domain_advice',
     prompt: 'What insurance gaps should we review first as homeowners with a young child?',
-    intent: 'Test family protection prioritization across life, disability, liability/umbrella, home/auto, and health.',
+    intent:
+      'Test family protection prioritization across life, disability, liability/umbrella, home/auto, and health.',
     expectedAnswerNotes: [
       'Because they have a young child and mortgage, life and disability coverage deserve more attention than for a single renter without dependents.',
       'Umbrella liability may be relevant given homeownership, auto, child, and assets, but exact need depends on liability limits/assets.',
       'Do not claim exact employer coverage amounts without evidence.'
     ],
-    relevantSignalIds: ['patel_mem_household', 'patel_acct_mortgage', 'patel_txn_auto_insurance_2026_05', 'patel_txn_home_insurance_2026_05'],
+    relevantSignalIds: [
+      'patel_mem_household',
+      'patel_acct_mortgage',
+      'patel_txn_auto_insurance_2026_05',
+      'patel_txn_home_insurance_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'plan_participation_caveat', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'plan_participation_caveat',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Downplays life insurance despite dependent/mortgage context.',
       'Ignores disability-income risk.',
@@ -1448,9 +1826,19 @@ const patelTasks: Task[] = [
       'Recommend needs-based term coverage estimate, not whole life as default.',
       'Mention verifying employer group life and disability before buying individual coverage.'
     ],
-    relevantSignalIds: ['patel_mem_household', 'patel_acct_mortgage', 'patel_acct_savings', 'patel_acct_brokerage'],
+    relevantSignalIds: [
+      'patel_mem_household',
+      'patel_acct_mortgage',
+      'patel_acct_savings',
+      'patel_acct_brokerage'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'plan_participation_caveat', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'plan_participation_caveat',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Says no life insurance needed despite dependent and mortgage.',
       'Pushes whole life without need analysis.',
@@ -1472,9 +1860,22 @@ const jordanTasks: Task[] = [
       'Separate personal spending, business expenses, tax/savings movements, and card payments where scope matters.',
       'A strong answer flags that business expenses and personal spend should not be collapsed blindly.'
     ],
-    relevantSignalIds: ['jordan_txn_rent_2026_05', 'jordan_txn_coworking_2026_05', 'jordan_txn_delta_2026_05'],
+    relevantSignalIds: [
+      'jordan_txn_rent_2026_05',
+      'jordan_txn_coworking_2026_05',
+      'jordan_txn_delta_2026_05'
+    ],
     rubric: dataRetrievalRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_period_scope_may_2026', 'exact_amount_grounding', 'consumption_spend_total_scope', 'no_income_as_spend', 'no_card_payment_as_spend', 'business_personal_separation', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_period_scope_may_2026',
+      'exact_amount_grounding',
+      'consumption_spend_total_scope',
+      'no_income_as_spend',
+      'no_card_payment_as_spend',
+      'business_personal_separation',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Includes client deposits as spending.',
       'Treats card payment as new consumption without caveat.',
@@ -1486,16 +1887,29 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'transaction_intelligence',
     type: 'data_retrieval',
-    prompt: 'How much did I spend on business expenses in May, and which items should I categorize carefully?',
+    prompt:
+      'How much did I spend on business expenses in May, and which items should I categorize carefully?',
     intent: 'Test business-expense retrieval and tax-category caution.',
     expectedAnswerNotes: [
       'Business expenses include coworking, software, business travel, office supplies, and possibly a business-use share of internet/phone if substantiated.',
       'Do not include rent/medical/groceries as business expenses without evidence.',
       'Flag travel substantiation and mixed-use internet/phone as careful categories.'
     ],
-    relevantSignalIds: ['jordan_txn_coworking_2026_05', 'jordan_txn_adobe_2026_05', 'jordan_txn_delta_2026_05', 'jordan_txn_office_depot_2026_05'],
+    relevantSignalIds: [
+      'jordan_txn_coworking_2026_05',
+      'jordan_txn_adobe_2026_05',
+      'jordan_txn_delta_2026_05',
+      'jordan_txn_office_depot_2026_05'
+    ],
     rubric: dataRetrievalRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_period_scope_may_2026', 'exact_amount_grounding', 'business_personal_separation', 'no_income_as_spend', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_period_scope_may_2026',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'no_income_as_spend',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Classifies personal rent or groceries as business deductions without evidence.',
       'Misses software or travel.',
@@ -1507,16 +1921,32 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'transaction_intelligence',
     type: 'data_retrieval',
-    prompt: 'Which recurring personal or business charges should I review, and what are their monthly amounts?',
+    prompt:
+      'Which recurring personal or business charges should I review, and what are their monthly amounts?',
     intent: 'Test recurring SaaS/bills audit for freelancer context.',
     expectedAnswerNotes: [
       'Recurring candidates include WeWork, marketplace health premium, Adobe, Figma, Webflow, AWS, Google Workspace, Spectrum, Visible, and rent.',
       'Separate business SaaS from personal bills and housing.',
       'Do not infer exact plan tiers from charge amounts or cite current public promo/plan prices unless verified.'
     ],
-    relevantSignalIds: ['jordan_txn_coworking_2026_05', 'jordan_txn_marketplace_health_2026_05', 'jordan_txn_adobe_2026_05', 'jordan_txn_spectrum_2026_05'],
+    relevantSignalIds: [
+      'jordan_txn_coworking_2026_05',
+      'jordan_txn_marketplace_health_2026_05',
+      'jordan_txn_adobe_2026_05',
+      'jordan_txn_spectrum_2026_05'
+    ],
     rubric: dataRetrievalRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_period_scope_may_2026', 'exact_amount_grounding', 'recurring_scope_boundary', 'recurring_review_scope_strict', 'no_subscription_tier_fabrication', 'no_unverified_public_subscription_pricing', 'business_personal_separation', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_period_scope_may_2026',
+      'exact_amount_grounding',
+      'recurring_scope_boundary',
+      'recurring_review_scope_strict',
+      'no_subscription_tier_fabrication',
+      'no_unverified_public_subscription_pricing',
+      'business_personal_separation',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Misses obvious software subscriptions.',
       'Calls rent a cancellable subscription without labeling it separately.',
@@ -1528,16 +1958,30 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'savings_expense_reduction',
     type: 'insight_discovery',
-    prompt: 'Where am I most likely wasting money or leaking value based on my transactions and balances?',
-    intent: 'Test freelancer opportunity discovery across tax reserve, card interest, SaaS stack, cash buckets, and business deductions.',
+    prompt:
+      'Where am I most likely wasting money or leaking value based on my transactions and balances?',
+    intent:
+      'Test freelancer opportunity discovery across tax reserve, card interest, SaaS stack, cash buckets, and business deductions.',
     expectedAnswerNotes: [
       'High-value candidates include credit-card balance/interest verification, tax-reserve discipline, business expense categorization, SaaS/coworking review, HSA, and rewards on business travel/software.',
       'Rank by likely dollar impact and risk.',
       'Do not imply cutting business tools that may generate income without asking utility/value.'
     ],
-    relevantSignalIds: ['jordan_acct_ink', 'jordan_acct_tax_savings', 'jordan_txn_coworking_2026_05', 'jordan_txn_adobe_2026_05'],
+    relevantSignalIds: [
+      'jordan_acct_ink',
+      'jordan_acct_tax_savings',
+      'jordan_txn_coworking_2026_05',
+      'jordan_txn_adobe_2026_05'
+    ],
     rubric: discoveryRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'tax_reserve_protection', 'card_fee_or_interest_priority', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'tax_reserve_protection',
+      'card_fee_or_interest_priority',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Only suggests generic budgeting.',
       'Misses tax reserve and card-interest checks.',
@@ -1558,9 +2002,24 @@ const jordanTasks: Task[] = [
       'Tax deductibility reduces after-tax cost but does not make waste free.',
       'Do not infer exact plan tiers from charge amounts or cite current public promo/plan prices unless verified.'
     ],
-    relevantSignalIds: ['jordan_txn_adobe_2026_05', 'jordan_txn_figma_software_2026_05', 'jordan_txn_webflow_2026_05', 'jordan_txn_coworking_2026_05'],
+    relevantSignalIds: [
+      'jordan_txn_adobe_2026_05',
+      'jordan_txn_figma_software_2026_05',
+      'jordan_txn_webflow_2026_05',
+      'jordan_txn_coworking_2026_05'
+    ],
     rubric: discoveryRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'recurring_scope_boundary', 'recurring_review_scope_strict', 'no_subscription_tier_fabrication', 'no_unverified_public_subscription_pricing', 'business_personal_separation', 'hsa_limit_currentness', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'recurring_scope_boundary',
+      'recurring_review_scope_strict',
+      'no_subscription_tier_fabrication',
+      'no_unverified_public_subscription_pricing',
+      'business_personal_separation',
+      'hsa_limit_currentness',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Assumes plan tiers or cites exact public promo/plan prices without verification.',
       'Says business deductions make costs irrelevant.',
@@ -1572,16 +2031,28 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'housing_rent',
     type: 'domain_advice',
-    prompt: 'Is my Austin rent reasonable for my irregular freelance income, and what would you check before I move?',
+    prompt:
+      'Is my Austin rent reasonable for my irregular freelance income, and what would you check before I move?',
     intent: 'Test rent affordability for volatile income using transactions and cash reserves.',
     expectedAnswerNotes: [
       'Use $2,100 rent, irregular May client income, and cash/tax reserve balances.',
       'A strong answer avoids annualizing one strong month as stable income.',
       'Before moving, compare emergency fund, tax reserve, lease costs, commute/client needs, and roommate/negotiation options.'
     ],
-    relevantSignalIds: ['jordan_txn_rent_2026_05', 'jordan_txn_client_figma_2026_05', 'jordan_acct_tax_savings', 'jordan_mem_work'],
+    relevantSignalIds: [
+      'jordan_txn_rent_2026_05',
+      'jordan_txn_client_figma_2026_05',
+      'jordan_acct_tax_savings',
+      'jordan_mem_work'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'tax_reserve_protection', 'business_personal_separation', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'tax_reserve_protection',
+      'business_personal_separation',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Annualizes one month of freelance income as guaranteed.',
       'Ignores tax reserve.',
@@ -1600,9 +2071,19 @@ const jordanTasks: Task[] = [
       'Internet/phone may require a reasonable business-use allocation and records.',
       'WeWork may reduce or complicate the home-office story, depending on actual work pattern.'
     ],
-    relevantSignalIds: ['jordan_txn_rent_2026_05', 'jordan_txn_spectrum_2026_05', 'jordan_txn_cell_2026_05', 'jordan_txn_coworking_2026_05'],
+    relevantSignalIds: [
+      'jordan_txn_rent_2026_05',
+      'jordan_txn_spectrum_2026_05',
+      'jordan_txn_cell_2026_05',
+      'jordan_txn_coworking_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Says all rent is deductible.',
       'Ignores exclusive-use requirement.',
@@ -1614,16 +2095,31 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'credit_cards_rewards',
     type: 'domain_advice',
-    prompt: 'Given my current cards, how should I route software, business travel, groceries, dining, and office-supply spend?',
-    intent: 'Test freelancer card routing using visible Ink Business Preferred and Blue Business Plus.',
+    prompt:
+      'Given my current cards, how should I route software, business travel, groceries, dining, and office-supply spend?',
+    intent:
+      'Test freelancer card routing using visible Ink Business Preferred and Blue Business Plus.',
     expectedAnswerNotes: [
       'Use visible Chase Ink Business Preferred and Amex Blue Business Plus.',
       'Business travel/software/office categories may favor Ink depending on terms; flat non-bonus spend may favor Blue Business Plus.',
       'Do not suggest unlinked cards except as optional candidates with pros/cons.'
     ],
-    relevantSignalIds: ['jordan_acct_ink', 'jordan_acct_bbp', 'jordan_txn_adobe_2026_05', 'jordan_txn_delta_2026_05', 'jordan_txn_heb_2026_05'],
+    relevantSignalIds: [
+      'jordan_acct_ink',
+      'jordan_acct_bbp',
+      'jordan_txn_adobe_2026_05',
+      'jordan_txn_delta_2026_05',
+      'jordan_txn_heb_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'card_rate_currentness', 'card_fee_or_interest_priority', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'card_rate_currentness',
+      'card_fee_or_interest_priority',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Claims Jordan has cards not visible.',
       'Ignores business/personal separation.',
@@ -1635,16 +2131,29 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'credit_cards_rewards',
     type: 'domain_advice',
-    prompt: 'Is my office-supply and software spend being routed well, or should I consider a different setup?',
+    prompt:
+      'Is my office-supply and software spend being routed well, or should I consider a different setup?',
     intent: 'Test narrow rewards/business card optimization with fee and complexity caveats.',
     expectedAnswerNotes: [
       'Use Office Depot, Adobe, Figma, Webflow, AWS, and Google Workspace transactions.',
       'Visible cards should be evaluated first; optional new card suggestions must be framed as optional and justified by spend.',
       'Do not overstate savings from one month unless labeled as if typical.'
     ],
-    relevantSignalIds: ['jordan_txn_office_depot_2026_05', 'jordan_txn_adobe_2026_05', 'jordan_txn_aws_2026_05', 'jordan_acct_ink'],
+    relevantSignalIds: [
+      'jordan_txn_office_depot_2026_05',
+      'jordan_txn_adobe_2026_05',
+      'jordan_txn_aws_2026_05',
+      'jordan_acct_ink'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'card_rate_currentness', 'card_fee_or_interest_priority', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'card_rate_currentness',
+      'card_fee_or_interest_priority',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Opens a new card for tiny spend without math.',
       'Ignores current cards.',
@@ -1656,16 +2165,29 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'credit_cards_rewards',
     type: 'domain_advice',
-    prompt: 'I had a client trip this month. How should I think about travel rewards, reimbursements, and tax records?',
-    intent: 'Test travel spend synthesis across rewards, client reimbursement, and Schedule C substantiation.',
+    prompt:
+      'I had a client trip this month. How should I think about travel rewards, reimbursements, and tax records?',
+    intent:
+      'Test travel spend synthesis across rewards, client reimbursement, and Schedule C substantiation.',
     expectedAnswerNotes: [
       'Use Delta, Marriott, and Uber client-trip transactions.',
       'Separate rewards optimization from whether expenses are client-reimbursable and deductible.',
       'Flag receipts, business purpose, travel dates, and reimbursement treatment.'
     ],
-    relevantSignalIds: ['jordan_txn_delta_2026_05', 'jordan_txn_hotel_2026_05', 'jordan_txn_uber_2026_05', 'jordan_acct_ink'],
+    relevantSignalIds: [
+      'jordan_txn_delta_2026_05',
+      'jordan_txn_hotel_2026_05',
+      'jordan_txn_uber_2026_05',
+      'jordan_acct_ink'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'card_rate_currentness', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'card_rate_currentness',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Optimizes points while missing reimbursement/tax records.',
       'Treats reimbursed expenses as net deduction without caveat.',
@@ -1677,16 +2199,31 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'employer_benefits_perks',
     type: 'domain_advice',
-    prompt: 'Without employer benefits, what should I check about health insurance and HSA eligibility?',
-    intent: 'Test benefits replacement for self-employed user: marketplace premium, HDHP/HSA eligibility, and deduction caveats.',
+    prompt:
+      'Without employer benefits, what should I check about health insurance and HSA eligibility?',
+    intent:
+      'Test benefits replacement for self-employed user: marketplace premium, HDHP/HSA eligibility, and deduction caveats.',
     expectedAnswerNotes: [
       'Use marketplace premium and HSA contribution/account.',
       'HSA eligibility requires qualifying HDHP and no disqualifying coverage; account existence alone is not enough.',
       'Self-employed health insurance deduction and premium tax credit interactions may matter.'
     ],
-    relevantSignalIds: ['jordan_mem_work', 'jordan_txn_marketplace_health_2026_05', 'jordan_acct_hsa', 'jordan_txn_hsa_2026_05'],
+    relevantSignalIds: [
+      'jordan_mem_work',
+      'jordan_txn_marketplace_health_2026_05',
+      'jordan_acct_hsa',
+      'jordan_txn_hsa_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'hsa_limit_currentness', 'plan_participation_caveat', 'business_personal_separation', 'no_health_insurance_reduces_se_tax_claim', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'hsa_limit_currentness',
+      'plan_participation_caveat',
+      'business_personal_separation',
+      'no_health_insurance_reduces_se_tax_claim',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Assumes HSA eligibility without verifying HDHP.',
       'Ignores premium tax credit/AGI interactions.',
@@ -1698,16 +2235,28 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'employer_benefits_perks',
     type: 'insight_discovery',
-    prompt: 'What freelancer-specific perks or systems should replace the employer benefits I do not have?',
+    prompt:
+      'What freelancer-specific perks or systems should replace the employer benefits I do not have?',
     intent: 'Test self-employed benefit-system discovery without forcing employee-style benefits.',
     expectedAnswerNotes: [
       'Relevant systems include tax reserve automation, solo retirement plan, health/HSA, disability insurance, liability/E&O insurance, bookkeeping, and business banking/card separation.',
       'Tie recommendations to visible business checking, tax reserve, card balances, health premium, and business income.',
       'Do not suggest employer-only benefits.'
     ],
-    relevantSignalIds: ['jordan_mem_work', 'jordan_acct_business_checking', 'jordan_acct_tax_savings', 'jordan_txn_marketplace_health_2026_05'],
+    relevantSignalIds: [
+      'jordan_mem_work',
+      'jordan_acct_business_checking',
+      'jordan_acct_tax_savings',
+      'jordan_txn_marketplace_health_2026_05'
+    ],
     rubric: discoveryRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'tax_reserve_protection', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'tax_reserve_protection',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Suggests employer benefits Jordan cannot access.',
       'Misses tax reserve and disability/liability protection.',
@@ -1726,9 +2275,20 @@ const jordanTasks: Task[] = [
       'Tax reserve should not be treated as idle spendable cash.',
       'A strong answer defines operating buffer, personal emergency fund, tax reserve, and investable excess.'
     ],
-    relevantSignalIds: ['jordan_acct_personal_checking', 'jordan_acct_business_checking', 'jordan_acct_tax_savings', 'jordan_mem_work'],
+    relevantSignalIds: [
+      'jordan_acct_personal_checking',
+      'jordan_acct_business_checking',
+      'jordan_acct_tax_savings',
+      'jordan_mem_work'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'tax_reserve_protection', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'tax_reserve_protection',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Treats tax reserve as excess cash.',
       'Ignores irregular income.',
@@ -1740,16 +2300,28 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'cashflow_budgeting',
     type: 'what_if',
-    prompt: 'What personal and business checking buffers should I keep before moving money to tax savings or investments?',
+    prompt:
+      'What personal and business checking buffers should I keep before moving money to tax savings or investments?',
     intent: 'Test multi-bucket buffer planning.',
     expectedAnswerNotes: [
       'Separate personal bills, business operating expenses, tax reserve, and emergency reserve.',
       'Use rent, health premium, coworking/software, and credit-card balances as anchors.',
       'Do not recommend a single combined buffer without explaining buckets.'
     ],
-    relevantSignalIds: ['jordan_acct_personal_checking', 'jordan_acct_business_checking', 'jordan_txn_rent_2026_05', 'jordan_txn_coworking_2026_05'],
+    relevantSignalIds: [
+      'jordan_acct_personal_checking',
+      'jordan_acct_business_checking',
+      'jordan_txn_rent_2026_05',
+      'jordan_txn_coworking_2026_05'
+    ],
     rubric: planningRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'tax_reserve_protection', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'tax_reserve_protection',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Conflates business and personal cash.',
       'Ignores tax reserve.',
@@ -1762,15 +2334,29 @@ const jordanTasks: Task[] = [
     domain: 'life_planning_major_decisions',
     type: 'prioritization',
     prompt: 'If I have an extra $8,000 after bills this quarter, what should I do with it first?',
-    intent: 'Test prioritization for self-employed cash: taxes, debt, emergency, retirement, HSA, investing.',
+    intent:
+      'Test prioritization for self-employed cash: taxes, debt, emergency, retirement, HSA, investing.',
     expectedAnswerNotes: [
       'First verify tax reserve adequacy and whether card balances are revolving.',
       'Then consider emergency fund, HSA/IRA/solo 401(k), and taxable investing.',
       'Do not invest money that may be needed for quarterly taxes.'
     ],
-    relevantSignalIds: ['jordan_acct_tax_savings', 'jordan_acct_ink', 'jordan_acct_hsa', 'jordan_acct_ira'],
+    relevantSignalIds: [
+      'jordan_acct_tax_savings',
+      'jordan_acct_ink',
+      'jordan_acct_hsa',
+      'jordan_acct_ira'
+    ],
     rubric: planningRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'tax_reserve_protection', 'card_fee_or_interest_priority', 'priority_ordering', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'tax_reserve_protection',
+      'card_fee_or_interest_priority',
+      'priority_ordering',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Invests before checking taxes and card interest.',
       'Treats all extra cash as personal cash.',
@@ -1782,7 +2368,8 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'debt_credit_health',
     type: 'domain_advice',
-    prompt: 'Do my business credit-card balances look risky, and what should I verify before chasing rewards?',
+    prompt:
+      'Do my business credit-card balances look risky, and what should I verify before chasing rewards?',
     intent: 'Test card-balance prudence for business cards.',
     expectedAnswerNotes: [
       'Use Chase Ink and Amex Blue Business Plus balances plus $2,000 payment.',
@@ -1791,7 +2378,13 @@ const jordanTasks: Task[] = [
     ],
     relevantSignalIds: ['jordan_acct_ink', 'jordan_acct_bbp', 'jordan_txn_card_payment_2026_05'],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'card_fee_or_interest_priority', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'card_fee_or_interest_priority',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Assumes debt is revolving without verification.',
       'Optimizes rewards while ignoring possible APR.',
@@ -1810,9 +2403,23 @@ const jordanTasks: Task[] = [
       'Compare solo 401(k) employee + employer contribution flexibility against SEP IRA simplicity and pro-rata/backdoor Roth implications.',
       'Mention setup deadlines, bookkeeping/net profit, and tax-reserve sequencing.'
     ],
-    relevantSignalIds: ['jordan_mem_household', 'jordan_txn_client_figma_2026_05', 'jordan_txn_client_notion_2026_05', 'jordan_acct_ira'],
+    relevantSignalIds: [
+      'jordan_mem_household',
+      'jordan_txn_client_figma_2026_05',
+      'jordan_txn_client_notion_2026_05',
+      'jordan_acct_ira'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'self_employed_tax_coverage', 'pro_rata_caveat', 'irs_limit_currentness', 'no_solo401k_reduces_se_tax_claim', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'self_employed_tax_coverage',
+      'pro_rata_caveat',
+      'irs_limit_currentness',
+      'no_solo401k_reduces_se_tax_claim',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Annualizes one month as certain full-year income.',
       'Ignores net profit and self-employment tax.',
@@ -1833,7 +2440,15 @@ const jordanTasks: Task[] = [
     ],
     relevantSignalIds: ['jordan_acct_ira', 'jordan_txn_client_figma_2026_05', 'jordan_mem_work'],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'ira_limit_currentness', 'roth_income_phaseout_currentness', 'pro_rata_caveat', 'business_personal_separation', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'ira_limit_currentness',
+      'roth_income_phaseout_currentness',
+      'pro_rata_caveat',
+      'business_personal_separation',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Ignores pro-rata rule.',
       'Uses stale IRA limits.',
@@ -1852,9 +2467,20 @@ const jordanTasks: Task[] = [
       'HSA eligibility requires qualifying HDHP and no disqualifying coverage; marketplace premium alone does not prove HDHP.',
       'Use current self-only HSA limit if self-only coverage is assumed and label assumption.'
     ],
-    relevantSignalIds: ['jordan_acct_hsa', 'jordan_txn_hsa_2026_05', 'jordan_txn_marketplace_health_2026_05'],
+    relevantSignalIds: [
+      'jordan_acct_hsa',
+      'jordan_txn_hsa_2026_05',
+      'jordan_txn_marketplace_health_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'hsa_limit_currentness', 'plan_participation_caveat', 'business_personal_separation', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'hsa_limit_currentness',
+      'plan_participation_caveat',
+      'business_personal_separation',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Assumes HDHP eligibility without checking.',
       'Uses family HSA limit for single/no-dependents context without caveat.',
@@ -1866,16 +2492,32 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'tax_strategy',
     type: 'domain_advice',
-    prompt: 'Based on my consulting income and tax reserve, what should I do about quarterly estimated taxes?',
-    intent: 'Test estimated-tax planning with income, reserve, prior payment, and safe-harbor caveats.',
+    prompt:
+      'Based on my consulting income and tax reserve, what should I do about quarterly estimated taxes?',
+    intent:
+      'Test estimated-tax planning with income, reserve, prior payment, and safe-harbor caveats.',
     expectedAnswerNotes: [
       'Use May client income, tax reserve balance, and April 15 estimated payment.',
       'Discuss federal income tax, self-employment tax, possible state tax context for Texas, and safe-harbor rules.',
       'Do not compute a final required payment without full-year income, deductions, and prior-year tax.'
     ],
-    relevantSignalIds: ['jordan_txn_client_figma_2026_05', 'jordan_txn_client_notion_2026_05', 'jordan_txn_stripe_2026_05', 'jordan_txn_estimated_tax_2026_04'],
+    relevantSignalIds: [
+      'jordan_txn_client_figma_2026_05',
+      'jordan_txn_client_notion_2026_05',
+      'jordan_txn_stripe_2026_05',
+      'jordan_txn_estimated_tax_2026_04'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'tax_reserve_protection', 'self_employed_tax_coverage', 'no_solo401k_reduces_se_tax_claim', 'no_health_insurance_reduces_se_tax_claim', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'tax_reserve_protection',
+      'self_employed_tax_coverage',
+      'no_solo401k_reduces_se_tax_claim',
+      'no_health_insurance_reduces_se_tax_claim',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Ignores self-employment tax.',
       'Treats one month as annual income.',
@@ -1894,9 +2536,21 @@ const jordanTasks: Task[] = [
       'Flag rent/home office, meals, travel, and mixed-use expenses as needing records/business purpose.',
       'Do not invent deductions or treat personal medical/groceries as business expenses.'
     ],
-    relevantSignalIds: ['jordan_txn_coworking_2026_05', 'jordan_txn_adobe_2026_05', 'jordan_txn_hotel_2026_05', 'jordan_txn_spectrum_2026_05'],
+    relevantSignalIds: [
+      'jordan_txn_coworking_2026_05',
+      'jordan_txn_adobe_2026_05',
+      'jordan_txn_hotel_2026_05',
+      'jordan_txn_spectrum_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'self_employed_tax_coverage', 'no_health_insurance_reduces_se_tax_claim', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'self_employed_tax_coverage',
+      'no_health_insurance_reduces_se_tax_claim',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Claims all rent or meals are deductible.',
       'Misses recordkeeping requirements.',
@@ -1908,16 +2562,32 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'tax_strategy',
     type: 'insight_discovery',
-    prompt: 'What are the highest-value 2026 tax moves I should check as a self-employed consultant?',
-    intent: 'Test broad freelancer tax strategy across estimates, retirement, HSA, deductions, and entity planning.',
+    prompt:
+      'What are the highest-value 2026 tax moves I should check as a self-employed consultant?',
+    intent:
+      'Test broad freelancer tax strategy across estimates, retirement, HSA, deductions, and entity planning.',
     expectedAnswerNotes: [
       'Strong candidates include estimated-tax system, solo 401(k)/SEP, HSA, self-employed health insurance deduction, accountable reimbursement/client invoicing records, and business deductions.',
       'S-corp/LLC discussion can be valid only with profit/payroll/admin caveats.',
       'Prioritize by confidence and dollar impact.'
     ],
-    relevantSignalIds: ['jordan_mem_work', 'jordan_acct_tax_savings', 'jordan_txn_marketplace_health_2026_05', 'jordan_txn_client_figma_2026_05'],
+    relevantSignalIds: [
+      'jordan_mem_work',
+      'jordan_acct_tax_savings',
+      'jordan_txn_marketplace_health_2026_05',
+      'jordan_txn_client_figma_2026_05'
+    ],
     rubric: discoveryRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'tax_reserve_protection', 'self_employed_tax_coverage', 'hsa_limit_currentness', 'no_health_insurance_reduces_se_tax_claim', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'tax_reserve_protection',
+      'self_employed_tax_coverage',
+      'hsa_limit_currentness',
+      'no_health_insurance_reduces_se_tax_claim',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Gives generic W-2 tax tips.',
       'Misses estimated taxes and self-employment tax.',
@@ -1930,15 +2600,27 @@ const jordanTasks: Task[] = [
     domain: 'tax_strategy',
     type: 'domain_advice',
     prompt: 'Do my transactions suggest I should look into an LLC or S-corp election?',
-    intent: 'Test entity-choice advice grounded in visible business income but not overfit to one month.',
+    intent:
+      'Test entity-choice advice grounded in visible business income but not overfit to one month.',
     expectedAnswerNotes: [
       'May income is strong but one month is not enough to prove annual net profit.',
       'LLC can be liability/admin; S-corp is tax/payroll/admin and depends on net profit after reasonable salary.',
       'A strong answer recommends a CPA calculation once trailing profit is known.'
     ],
-    relevantSignalIds: ['jordan_txn_client_figma_2026_05', 'jordan_txn_client_notion_2026_05', 'jordan_acct_business_checking', 'jordan_mem_work'],
+    relevantSignalIds: [
+      'jordan_txn_client_figma_2026_05',
+      'jordan_txn_client_notion_2026_05',
+      'jordan_acct_business_checking',
+      'jordan_mem_work'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'self_employed_tax_coverage', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'self_employed_tax_coverage',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Recommends S-corp automatically from one good month.',
       'Ignores payroll/admin costs.',
@@ -1950,16 +2632,30 @@ const jordanTasks: Task[] = [
     personaId: 'jordan_austin_freelancer_v0',
     domain: 'investing_equity_comp',
     type: 'prioritization',
-    prompt: 'Should I invest more in taxable brokerage right now, or hold cash for taxes and volatility?',
+    prompt:
+      'Should I invest more in taxable brokerage right now, or hold cash for taxes and volatility?',
     intent: 'Test investing priority under tax reserve and irregular income constraints.',
     expectedAnswerNotes: [
       'Use brokerage, tax savings, checking, business checking, client income, and card balances.',
       'Tax reserve and confirmed revolving debt should be resolved before extra taxable investing.',
       'Emergency/operating reserves matter more for self-employed volatility.'
     ],
-    relevantSignalIds: ['jordan_acct_brokerage', 'jordan_acct_tax_savings', 'jordan_acct_ink', 'jordan_mem_work'],
+    relevantSignalIds: [
+      'jordan_acct_brokerage',
+      'jordan_acct_tax_savings',
+      'jordan_acct_ink',
+      'jordan_mem_work'
+    ],
     rubric: planningRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'tax_reserve_protection', 'hsa_limit_currentness', 'card_fee_or_interest_priority', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'tax_reserve_protection',
+      'hsa_limit_currentness',
+      'card_fee_or_interest_priority',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Invests tax reserve cash.',
       'Ignores credit-card APR check.',
@@ -1978,9 +2674,20 @@ const jordanTasks: Task[] = [
       'Risk should be framed as portfolio/liquidity concentration, not a crypto price prediction.',
       'Recommend sizing policy, rebalancing, and tax-lot caveats if selling.'
     ],
-    relevantSignalIds: ['jordan_acct_crypto', 'jordan_acct_brokerage', 'jordan_acct_tax_savings', 'jordan_mem_work'],
+    relevantSignalIds: [
+      'jordan_acct_crypto',
+      'jordan_acct_brokerage',
+      'jordan_acct_tax_savings',
+      'jordan_mem_work'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'tax_reserve_protection', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'tax_reserve_protection',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Gives a crypto price call.',
       'Ignores taxes and liquidity.',
@@ -1999,9 +2706,19 @@ const jordanTasks: Task[] = [
       'Life insurance is lower priority without dependents unless debts/estate goals exist.',
       'Tie to visible marketplace premium, business work, and no employer benefits.'
     ],
-    relevantSignalIds: ['jordan_mem_work', 'jordan_mem_household', 'jordan_txn_marketplace_health_2026_05'],
+    relevantSignalIds: [
+      'jordan_mem_work',
+      'jordan_mem_household',
+      'jordan_txn_marketplace_health_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'plan_participation_caveat', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'plan_participation_caveat',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Pushes life insurance first despite no dependents.',
       'Misses disability and professional liability.',
@@ -2020,9 +2737,19 @@ const jordanTasks: Task[] = [
       'Both can be important; priority depends on emergency fund, client contracts, savings, and income reliance.',
       'Do not claim exact premiums or coverage amounts without quoting.'
     ],
-    relevantSignalIds: ['jordan_mem_work', 'jordan_acct_personal_checking', 'jordan_acct_business_checking', 'jordan_txn_client_figma_2026_05'],
+    relevantSignalIds: [
+      'jordan_mem_work',
+      'jordan_acct_personal_checking',
+      'jordan_acct_business_checking',
+      'jordan_txn_client_figma_2026_05'
+    ],
     rubric: adviceRubric,
-    deterministicChecks: ['relevant_signal_grounding', 'exact_amount_grounding', 'business_personal_separation', 'no_raw_tool_or_stream_output'],
+    deterministicChecks: [
+      'relevant_signal_grounding',
+      'exact_amount_grounding',
+      'business_personal_separation',
+      'no_raw_tool_or_stream_output'
+    ],
     invalidOrHarmful: [
       'Ignores disability income risk.',
       'Ignores professional/client liability.',

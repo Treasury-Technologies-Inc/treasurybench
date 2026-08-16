@@ -1,0 +1,48 @@
+{
+  "taskId": "jordan_credit_card_balance_check",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately uses the specific account balances and transaction data provided, including the recent $2,000 payment and the specific client income sources."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the business/personal separation and provides accurate, conservative advice regarding credit card balances and interest."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response is clear and actionable. It could have been slightly more explicit about the specific steps to verify the statement balance vs. current balance, but it covers the core requirements well."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response emphasizes the importance of maintaining an operating buffer and avoiding interest, which is highly prudent for a self-employed persona."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Chase Ink Business Preferred earns 3x on travel, shipping, internet/cable/phone, and advertising",
+      "tableKey": "chase_2026_ink_business_preferred_categories",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Amex Blue Business Plus is a flat-rate card",
+      "tableKey": "amex_2026_blue_business_plus_categories",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a prudent, well-grounded analysis of the user's business credit card balances and offers clear, actionable steps for managing cash flow and rewards."
+}

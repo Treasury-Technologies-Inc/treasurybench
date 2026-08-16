@@ -1,0 +1,10 @@
+{
+  "taskId": "patel_recurring_charges_audit",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "Here is the breakdown of your recurring charges and subscriptions observed in May 2026.\n\n### Discretionary Subscriptions & Memberships\nThese total **$79.98/month** ($959.76/year) and are the prime candidates for regular review:\n\n- **Peloton** — **$44.00/month** (Fitness membership/app, paid via Chase Freedom Unlimited)\n- **Spotify Family** — **$19.99/month** (Music streaming, paid via Chase Freedom Unlimited)\n- **Disney Plus** — **$15.99/month** (Video streaming, paid via Chase Freedom Unlimited)\n\n---\n\n### Recurring Bills & Fixed Commitments\nThese are essential household and financial obligations totaling **$6,640.22/month**:\n\n- **Rocket Mortgage** — **$3,850.00/month** (Denver home principal, interest, taxes, and insurance)\n- **Bright Horizons Daycare** — **$1,650.00/month** (Monthly childcare)\n- **Toyota Financial** — **$485.00/month** (Auto loan payment)\n- **State Farm Auto Insurance** — **$218.00/month** (Vehicle insurance)\n- **Xcel Energy** — **$164.22/month** (Electric & gas utility)\n- **State Farm Home Insurance** — **$154.00/month** (Homeowners insurance)\n- **Xfinity** — **$119.00/month** (Home internet service)\n\n*(Note: May also included recurring monthly savings movements of $400.00 to HealthEquity HSA and $300.00 to Colorado 529 CollegeInvest, plus a one-off $220.00 Care.com backup care expense.)*",
+  "latencyMs": 11237,
+  "capturedAt": "2026-08-14T04:00:30.960Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

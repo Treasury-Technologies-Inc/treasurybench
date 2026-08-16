@@ -1,0 +1,59 @@
+{
+  "taskId": "jordan_solo401k_or_sep",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the user's self-employed status and existing Vanguard IRA, though it missed an opportunity to reference the specific current account balances."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Accurately cites 2026 limits and tax rules. The distinction between SE tax and income tax is handled correctly."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable recommendation with specific next steps. The comparison between Solo 401(k) and SEP IRA is well-structured."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Includes appropriate caveats regarding income volatility, tax reserves, and the pro-rata rule."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Form 5500-EZ filing requirement for Solo 401(k) at $250,000",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The $250,000 threshold for Form 5500-EZ is a standard IRS rule, but it is not explicitly listed in the provided locked facts table."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly reference the user's current Vanguard Traditional IRA balance ($22,400) when discussing the benefit of rolling it into a Solo 401(k) to clear the path for Backdoor Roths."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the potential to roll existing pre-tax IRA assets into a Solo 401(k) to avoid the pro-rata rule, which is a high-leverage move for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, high-leverage advice tailored to the user's self-employed status, correctly identifying the Solo 401(k) as superior to the SEP IRA for this persona's specific goal of enabling Backdoor Roth conversions."
+}

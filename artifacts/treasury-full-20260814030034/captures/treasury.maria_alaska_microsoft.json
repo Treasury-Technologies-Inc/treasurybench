@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_alaska_microsoft",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "### Key travel perks to verify\n\n- **Alaska corporate status challenge** — Search Microsoft's internal benefits or travel portal for an active Alaska Airlines corporate fast-track link to request temporary Atmos Silver or Gold status and an accelerated trial requirement.\n- **Corporate leisure travel codes** — Check the Microsoft employee discount site for personal travel discount codes on airlines, negotiated hotel rates, and car rental corporate discount numbers (CDNs).\n- **Atmos Rewards number attachment** — Ensure your Atmos Rewards loyalty account number is added to past and upcoming reservation records so you earn points and tier qualifying credit.\n- **Chase Sapphire Preferred coverage** — Your Sapphire Preferred used for the recent $248.20 and $231.10 Alaska bookings provides 2x travel points, trip delay reimbursement (after a 12-hour delay), and primary auto rental collision damage coverage.\n\n### What not to assume\n\n- **Corporate challenges are not retroactive** — Flights flown prior to registering for an airline status match or corporate promotion will not count toward the qualification window.\n- **Business travel tools vs. leisure use** — Do not book personal vacations through Microsoft's internal corporate booking tool (e.g., Concur) unless the portal explicitly has a designated leisure booking section.\n- **Corporate insurance does not cover personal trips** — Employer business travel accident and medical evacuation policies generally apply only to company-sanctioned business travel.\n- **Credit card baggage perks are card-specific** — Chase Sapphire Preferred does not include free checked bags on Alaska Airlines; free checked bags require elite status or an Alaska co-branded card.\n\nAre your upcoming SEA-SFO trips for personal travel or company business?",
+  "latencyMs": 18155,
+  "capturedAt": "2026-08-14T03:03:45.228Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

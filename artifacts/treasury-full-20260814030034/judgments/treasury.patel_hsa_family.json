@@ -1,0 +1,63 @@
+{
+  "taskId": "patel_hsa_family",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's specific financial situation, referencing the emergency fund, employer benefits, and the specific HSA account."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies 2026 limits and tax rules. It missed the opportunity to use the exact $6,800 HSA balance from the visible data, which would have strengthened the grounding."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The advice is clear, actionable, and provides a logical prioritization strategy. It correctly distinguishes between plan-level benefits and user-specific enrollment."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of caveats, particularly regarding FSA disqualification and the receipt-saving strategy."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 Family HSA limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HDHP minimum deductible is $3,400",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HDHP out-of-pocket maximum is $17,000",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Dependent Care FSA limit is $7,500",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not reference the specific $6,800 balance in the HealthEquity HSA account.",
+    "Did not explicitly mention the $400 contribution transaction from May 8th as a starting point for the annual goal."
+  ],
+  "unexpectedValidInsights": [
+    "Provided a clear explanation of the receipt-saving strategy for long-term tax-free growth."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly accurate and well-grounded response that correctly applies 2026 tax limits and provides prudent, actionable advice for a family HSA strategy."
+}

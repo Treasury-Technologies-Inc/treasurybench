@@ -1,0 +1,54 @@
+{
+  "taskId": "jordan_disability_liability_need",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the persona's status as a solo consultant and the lack of employer benefits. It misses an opportunity to reference the specific cash reserve (Ally Tax Reserve) as a bridge for the disability elimination period."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax treatment of disability premiums and the deductibility of E&O insurance are correctly identified. The distinction between SSDI and private disability is accurate."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice provides a clear, actionable framework for prioritization. It correctly identifies the need to check client contracts for insurance requirements."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately caveats the advice, emphasizing that contract requirements override general prioritization and that both insurances should be layered over time."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "E&O premiums are fully deductible as an ordinary business expense on Schedule C.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Individual disability premiums paid with after-tax dollars result in tax-free benefits.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the tax treatment of disability and E&O insurance, which are standard financial principles, but these are not explicitly listed in the provided locked-fact table."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly reference the $18,500 in the Ally Tax Reserve as a potential bridge for the recommended 90-day disability elimination period."
+  ],
+  "unexpectedValidInsights": [
+    "The suggestion to use the 90-day elimination period as a bridge for the cash reserve is a high-leverage, personalized recommendation."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized response that correctly prioritizes income protection for a solo consultant while providing a clear, actionable framework for evaluating professional liability needs."
+}

@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_rent_affordability",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the $2,100 rent, $18,500 tax reserve, and $9,650 checking balance. It correctly identifies the freelance income volatility."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Financial mechanics regarding tax reserves and freelance income volatility are sound. No stale tax or program facts were introduced."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for a freelancer moving in Austin. It misses a specific recommendation to leverage the business credit card for moving expenses to maximize points, but otherwise is very strong."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Strong emphasis on not touching the tax reserve and maintaining a 6-month personal buffer. It correctly identifies the risk of annualizing peak income."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Austin SMART Housing allocations at the 60%–80% MFI tiers",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The mention of SMART Housing is a local Austin program; while generally accurate in concept, it is unverified against the specific 2026 benchmark data."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly suggest using the Chase Ink Business Preferred for moving-related expenses to capture 3x points on travel/internet/phone if applicable, or to leverage the card's existing credit limit for liquidity."
+  ],
+  "unexpectedValidInsights": [
+    "Calculated the specific 'lean-month' impact on rent-to-income ratio, which is a high-value insight for a freelancer."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and prudent assessment of rent affordability for a freelancer, correctly prioritizing tax-reserve protection and income volatility over peak-month earnings."
+}

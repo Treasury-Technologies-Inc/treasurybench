@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_idle_cash",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "Your total cash amount is in a healthy range, but too much of it is sitting in the wrong place. \n\nYou have **$23,700 in total liquid cash** across two depository accounts:\n- **Chase Total Checking:** $18,450\n- **Ally Online Savings:** $5,250\n\n### Cash sizing check\n\nBased on your spending data, your baseline essential monthly expenses (rent of $2,350 plus groceries, utilities, phone, gas, and transit) average roughly **$3,300/month**:\n\n- **3-month emergency target:** ~$9,900\n- **6-month emergency target:** ~$19,800\n\nBecause you rely on a single income in Seattle, a **6-month emergency reserve (~$19,800 to $20,000)** is a prudent target. Your $23,700 total cash fully covers a 6-month safety net plus an operational buffer, meaning you have **enough cash overall**, but roughly **$14,000 is idling in checking** earning 0%.\n\n### Recommended allocation\n\n1. **Keep 1 month of expenses in checking (~$4,000–$4,500)** — Maintain enough in Chase Checking to clear rent ($2,350), bills, and autopay without overdraft risk.\n2. **Move ~$14,000 to Ally Online Savings** — Bringing your high-yield savings balance to ~$19,250–$19,500 puts your full emergency reserve in an FDIC-insured, interest-earning account.\n3. **Deploy future surplus toward investing** — Once your emergency fund is parked in high-yield savings and your checking buffer is set, route additional cash flow into tax-advantaged accounts (like your 401(k) or IRA) or taxable investments.\n\nAre you holding that checking balance for an upcoming large expense or tax payment, or would you like to set up the transfer to high-yield savings?",
+  "latencyMs": 8896,
+  "capturedAt": "2026-08-14T03:04:16.526Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

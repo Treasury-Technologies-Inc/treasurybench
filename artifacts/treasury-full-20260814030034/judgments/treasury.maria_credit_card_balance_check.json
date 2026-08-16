@@ -1,0 +1,39 @@
+{
+  "taskId": "maria_credit_card_balance_check",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the visible checking balance, the specific credit card balance, and the account name to provide personalized, actionable advice."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The advice on statement float, grace periods, and utilization reporting is accurate and aligns with standard credit card mechanics."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, step-by-step instructions. It misses a minor opportunity to explicitly mention the specific due date if it were visible, but otherwise is excellent."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response correctly distinguishes between statement balance and current balance, and emphasizes the importance of the grace period."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly suggested checking the specific payment due date from the Chase account details to ensure the autopay timing is understood."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant provides a precise, personalized, and prudent recommendation that correctly handles the distinction between statement float and revolving debt."
+}

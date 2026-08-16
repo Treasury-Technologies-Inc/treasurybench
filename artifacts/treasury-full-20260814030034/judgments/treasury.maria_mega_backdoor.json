@@ -1,0 +1,72 @@
+{
+  "taskId": "maria_mega_backdoor",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's salary, current 8% deferral, and Microsoft plan context."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "All 2026 limits (401k, 415c, IRA, HSA) are accurate and correctly applied."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Clear, actionable steps provided. Minor deduction for not explicitly calculating the specific paycheck impact of the 8% vs. max deferral."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriate caveats regarding plan support and HDHP eligibility are included."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Section 415(c) defined-contribution limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft 401(k) matches 50% up to the IRS elective deferral limit",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft 401(k) permits after-tax contributions and automatic in-plan Roth conversions",
+      "tableKey": "microsoft_2026_mega_backdoor_roth",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 2026 Social Security wage base impact on net pay, given the high income from RSUs."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the specific Fidelity NetBenefits path for automated conversions."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly accurate, personalized, and actionable guide to the mega backdoor Roth within the Microsoft 401(k) plan, correctly sequencing it after standard deferrals and HSA contributions."
+}

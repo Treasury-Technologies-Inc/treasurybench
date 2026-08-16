@@ -1,0 +1,65 @@
+{
+  "taskId": "jordan_tax_optimization",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's self-employed status, marketplace health insurance, and business expense categories."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "All tax limits and rules cited (2026 HSA, 401k, mileage, QBI, SE tax) align perfectly with the provided locked benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The advice is highly actionable and prioritizes high-impact moves. It missed a specific opportunity to reference the user's existing tax reserve balance as a tool for managing the estimated tax payments."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately distinguishes between Schedule C deductions and above-the-line adjustments, and correctly notes that retirement/health deductions do not reduce SE tax."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Solo 401(k) employee elective deferral limit is $24,500 for 2026",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Section 415(c) defined-contribution annual additions limit is $72,000 for 2026",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "HSA contribution limit for self-only HDHP coverage is $4,400 for 2026",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "IRS standard mileage rate for business use is 72.5 cents per mile for 2026",
+      "tableKey": "irs_2026_standard_mileage_rate",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "QBI deduction phase-out thresholds start at $201,750 for single filers in 2026",
+      "tableKey": "irs_2026_qbi_199a_thresholds",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly link the $18,500 in the Ally Tax Reserve to the recommended quarterly estimated tax payments."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, high-value 2026 tax planning advice tailored to the user's self-employed status, correctly applying all relevant IRS limits and structural tax rules."
+}

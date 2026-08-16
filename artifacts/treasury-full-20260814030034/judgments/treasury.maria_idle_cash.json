@@ -1,0 +1,39 @@
+{
+  "taskId": "maria_idle_cash",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately identifies the total cash balance and uses the provided transaction history to estimate monthly burn."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "Calculations are accurate based on the provided data, and the advice aligns with standard financial prudence for emergency fund sizing."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The response provides a clear, actionable plan to move idle cash. It misses a minor opportunity to explicitly mention the yield pickup potential (e.g., comparing 0% checking to current HYSA rates)."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately caveats the advice and asks clarifying questions about upcoming expenses before recommending the transfer."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly quantified the potential annual interest gain from moving the $14,000 to a HYSA to further motivate the action."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a well-grounded, personalized, and prudent analysis of the user's cash position with clear, actionable next steps."
+}

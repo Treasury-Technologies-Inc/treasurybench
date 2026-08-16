@@ -1,0 +1,10 @@
+{
+  "taskId": "patel_credit_card_balance_check",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "Your credit-card balances do not look problematic from a liquidity standpoint, as your available cash comfortably exceeds your total card balances. However, whether they are completely safe depends entirely on how they are paid each cycle.\n\n[Display artifact omitted from public capture]\n\n### What to verify before optimizing anything else\n\n1. **Full statement payoff and autopay** — Verify that both cards are set to automatically pay the **full statement balance** every billing cycle. Carrying even a small revolving balance triggers standard purchase APRs (typically 20%–30%), which instantly wipes out the value of any points or cash back.\n2. **Revolving vs. transacting balances** — Confirm that the balances reflect only routine monthly transactions (such as daycare, groceries, and dining) rather than carried debt from prior months. \n3. **Operating cash flow buffer** — Ensure your checking balance ($14,680) remains structured to absorb statement autopays without touching your emergency reserve in Marcus savings ($28,750).\n4. **Core family tax advantages first** — Before optimizing credit card rewards routing or opening new accounts, make sure higher-leverage tax-advantaged options are running smoothly, including Priya's Dependent Care FSA for childcare expenses and HSA contributions.\n\nAre both of these cards currently set up on automatic full statement payoff?",
+  "latencyMs": 12212,
+  "capturedAt": "2026-08-14T04:03:01.582Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

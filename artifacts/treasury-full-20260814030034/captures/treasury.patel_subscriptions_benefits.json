@@ -1,0 +1,10 @@
+{
+  "taskId": "patel_subscriptions_benefits",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "### Benefit routing opportunities\n\n1. **Route Peloton through Salesforce wellness reimbursement** — Salesforce provides up to $100 per month ($1,200 per year) in wellness reimbursement for eligible fitness memberships and classes. Submitting your **$44 Peloton** monthly charge could offset this expense entirely if you have unused monthly allowance.\n2. **Utilize Salesforce backup-care credits for Care.com** — In May, you had a **$220 charge** for Care.com Backup Care. Salesforce offers subsidized backup-care days through employer programs, which can significantly lower out-of-pocket costs compared to booking directly.\n3. **Fund daycare expenses via Dependent Care FSA (DCAP)** — You paid **$1,650 to Bright Horizons Daycare** in May. For 2026, the DCAP limit for married couples filing jointly is $7,500; routing eligible child care expenses through pre-tax payroll deductions saves on federal and state income taxes.\n\n[Display artifact omitted from public capture]\n\n### Other recurring subscriptions to review\n\n- **Streaming and audio services** — You have active charges for **Spotify Family ($19.99)** and **Disney Plus ($15.99)**, totaling $35.98 per month. Check whether your household is actively using both services or if switching to an annual billing plan offers savings.\n- **Utility and telecom review** — Your **Xfinity bill ($119)** and **Xcel Energy bill ($164.22)** represent recurring household overhead; periodically checking current promotions or equipment rental fees on your internet plan can help trim monthly fixed costs.",
+  "latencyMs": 8108,
+  "capturedAt": "2026-08-14T04:01:01.737Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

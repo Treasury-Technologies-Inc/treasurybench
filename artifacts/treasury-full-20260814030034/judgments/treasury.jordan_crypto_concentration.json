@@ -1,0 +1,49 @@
+{
+  "taskId": "jordan_crypto_concentration",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately uses all relevant account balances and correctly separates business, personal, and tax-reserve buckets."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The math is accurate, and the advice correctly identifies the crypto position as a concentration risk without making price predictions."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for rebalancing and tax-lot management. It missed a minor opportunity to explicitly mention the 2026 tax-safe cashflow goal by linking the crypto sale to the tax-reserve replenishment, but otherwise is excellent."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately emphasizes the need to check cost basis and tax implications before selling, and correctly frames the risk in the context of the user's irregular income."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Financial planning benchmarks generally recommend keeping speculative or single-asset volatile holdings between 3% and 5%",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response references general financial planning benchmarks for speculative asset allocation which are not defined in the locked facts; these are treated as unverified industry heuristics."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly linked the potential crypto sale to the user's goal of 'tax-safe cashflow' by suggesting that proceeds be held in the Ally Tax Reserve to buffer against future irregular income months."
+  ],
+  "unexpectedValidInsights": [
+    "The response correctly identifies the distinction between investable assets and operating cash/reserves, which is critical for a self-employed persona with irregular income."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly grounded and prudent assessment of crypto concentration risk that respects the user's specific financial structure and self-employed income volatility."
+}

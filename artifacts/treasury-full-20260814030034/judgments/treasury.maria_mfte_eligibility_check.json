@@ -1,0 +1,47 @@
+{
+  "taskId": "maria_mfte_eligibility_check",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's rent, household size, and income streams (salary, freelance, and RSU vests) to frame the eligibility discussion."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The explanation of gross income vs. take-home pay and the inclusion of RSUs/freelance income in compliance calculations is accurate and prudent."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable workflow for checking eligibility and estimates potential savings, though it could have explicitly mentioned the 2026 Seattle rent cap context as a secondary benefit."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of caveats regarding income verification, the distinction between initial and ongoing eligibility, and the need to consult property management."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Seattle MFTE/MHA programs target 40% to 90% of Area Median Income (AMI)",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the need to verify income treatment with property management, which is the most prudent approach given the variability of RSU and freelance income."
+  ],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Explicitly highlighted that initial income qualification does not necessarily lead to disqualification if income rises during the lease term."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and accurate guide to Seattle's income-restricted housing programs, correctly emphasizing the impact of variable income on eligibility."
+}

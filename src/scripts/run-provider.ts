@@ -32,7 +32,10 @@ async function main(): Promise<void> {
   const envFile = argValue('env-file');
   loadSelectedEnvFile(envFile);
 
-  const model = argValue('model', process.env.TREASURYBENCH_OPENAI_MODEL ?? 'chat-latest') ?? 'chat-latest';
+  const model =
+    argValue('model', process.env.TREASURYBENCH_OPENAI_MODEL ?? 'chat-latest') ?? 'chat-latest';
+  const baseUrl = argValue('base-url');
+  const instructions = argValue('instructions');
   const maxOutputTokens = Number(argValue('max-output-tokens', '2500'));
   const timeoutMs = Number(argValue('timeout-ms', '120000'));
   const reasoningEffortArg = argValue('reasoning-effort', 'low');
@@ -52,7 +55,8 @@ async function main(): Promise<void> {
   const providerKind = normalizeProviderName(providerName);
   const maxTasks = maxTasksArg ? Number(maxTasksArg) : undefined;
   const selectedTasks = selectTasks(onlyTask, taskListArg).slice(0, maxTasks);
-  if (selectedTasks.length === 0) throw new Error(`No task matched ${onlyTask ?? taskListArg ?? 'all tasks'}.`);
+  if (selectedTasks.length === 0)
+    throw new Error(`No task matched ${onlyTask ?? taskListArg ?? 'all tasks'}.`);
 
   if (providerKind === 'openai' && !live) {
     for (const task of selectedTasks) {
@@ -80,11 +84,13 @@ async function main(): Promise<void> {
       providerKind === 'fixture'
         ? createFixtureProvider(providerName)
         : createOpenAIFullContextProvider({
-            apiKey: readOpenAIKey(),
+            apiKey: readProviderKey(baseUrl),
             model,
             maxOutputTokens,
             timeoutMs,
-            reasoningEffort
+            reasoningEffort,
+            baseUrl,
+            instructions
           });
 
     for (const task of selectedTasks) {
@@ -101,10 +107,13 @@ async function main(): Promise<void> {
           provider: provider.name,
           mode: provider.mode,
           capturedAt: new Date().toISOString(),
-          response: `[PROVIDER_ERROR]\n${error instanceof Error ? error.stack ?? error.message : String(error)}`,
+          response: `[PROVIDER_ERROR]\n${error instanceof Error ? (error.stack ?? error.message) : String(error)}`,
           notes: 'Provider task failed; captured as an error so the rest of the run can continue.'
         };
-        console.error(`Provider task failed for ${task.id}:`, error instanceof Error ? error.message : error);
+        console.error(
+          `Provider task failed for ${task.id}:`,
+          error instanceof Error ? error.message : error
+        );
       }
       writeJson(join(captureDir, `${safeFilePart(provider.name)}.${task.id}.json`), capture);
     }
@@ -117,7 +126,9 @@ async function main(): Promise<void> {
 function normalizeProviderName(name: string): 'fixture' | 'openai' {
   if (name === 'fixture_provider' || name === 'fixture') return 'fixture';
   if (name === 'openai' || name === 'full_context_baseline') return 'openai';
-  throw new Error(`Provider ${name} is not implemented in the public harness. Available: fixture_provider, openai.`);
+  throw new Error(
+    `Provider ${name} is not implemented in the public harness. Available: fixture_provider, openai.`
+  );
 }
 
 function selectTasks(taskId: string | undefined, taskIds: string | undefined) {
@@ -126,7 +137,12 @@ function selectTasks(taskId: string | undefined, taskIds: string | undefined) {
   }
   if (taskId) return tasks.filter((task) => task.id === taskId);
   if (taskIds) {
-    const ids = new Set(taskIds.split(',').map((id) => id.trim()).filter(Boolean));
+    const ids = new Set(
+      taskIds
+        .split(',')
+        .map((id) => id.trim())
+        .filter(Boolean)
+    );
     const selected = tasks.filter((task) => ids.has(task.id));
     const missing = [...ids].filter((id) => !selected.some((task) => task.id === id));
     if (missing.length > 0) throw new Error(`Unknown task id(s): ${missing.join(', ')}`);
@@ -135,7 +151,16 @@ function selectTasks(taskId: string | undefined, taskIds: string | undefined) {
   return tasks;
 }
 
-function readOpenAIKey(): string {
+function readProviderKey(baseUrl: string | undefined): string {
+  // When targeting OpenRouter, authenticate with the OpenRouter key; otherwise
+  // use the direct OpenAI key.
+  if (baseUrl && baseUrl.includes('openrouter.ai')) {
+    const key = process.env.OPENROUTER_API_KEY;
+    if (!key) {
+      throw new Error('OPENROUTER_API_KEY is required when --base-url points at OpenRouter.');
+    }
+    return key;
+  }
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
     throw new Error('OPENAI_API_KEY is required for --provider=openai --live=true.');
@@ -156,6 +181,7 @@ function loadSelectedEnvFile(path: string | undefined): void {
 
   const allowedKeys = new Set([
     'OPENAI_API_KEY',
+    'OPENROUTER_API_KEY',
     'TREASURYBENCH_OPENAI_MODEL'
   ]);
   for (const line of readFileSync(resolvedPath, 'utf8').split(/\r?\n/)) {
@@ -173,18 +199,17 @@ function loadSelectedEnvFile(path: string | undefined): void {
 }
 
 function resolveEnvFilePath(path: string): string | undefined {
-  const candidates = [
-    path,
-    resolve(process.cwd(), path),
-    resolve(process.cwd(), '../..', path)
-  ];
+  const candidates = [path, resolve(process.cwd(), path), resolve(process.cwd(), '../..', path)];
 
   return candidates.find((candidate) => existsSync(candidate));
 }
 
 function unquoteEnvValue(value: string): string {
   const trimmed = value.trim();
-  if ((trimmed.startsWith('"') && trimmed.endsWith('"')) || (trimmed.startsWith("'") && trimmed.endsWith("'"))) {
+  if (
+    (trimmed.startsWith('"') && trimmed.endsWith('"')) ||
+    (trimmed.startsWith("'") && trimmed.endsWith("'"))
+  ) {
     return trimmed.slice(1, -1);
   }
   return trimmed;

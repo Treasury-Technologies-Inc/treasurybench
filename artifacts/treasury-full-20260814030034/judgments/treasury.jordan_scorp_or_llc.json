@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_scorp_or_llc",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the specific May 2026 transactions, business checking balances, and the persona's self-employed status."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax mechanics and 2026 limits (e.g., Social Security wage base) are accurate. The response correctly identifies the S-corp trade-offs and the distinction between LLC legal structure and tax election."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear. It appropriately cautions against over-relying on a single month of income and provides a logical path for the user."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is prudent regarding the administrative costs of an S-corp, though it could have been slightly more explicit about the specific tax-reserve implications for the user's current cash flow."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Social Security (OASDI) maximum taxable wage base for 2026 is $184,500",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3% (12.4% Social Security + 2.9% Medicare)",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the self-employed health insurance deduction (Schedule 1) as a way to reduce AGI, which is relevant given the user's marketplace insurance payments."
+  ],
+  "unexpectedValidInsights": [
+    "Highlighted the interaction between S-corp W-2 salary and Solo 401(k) contribution limits, which is a high-leverage insight for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded, accurate, and prudent assessment that correctly identifies the S-corp election as a future consideration rather than an immediate necessity based on one month of data."
+}

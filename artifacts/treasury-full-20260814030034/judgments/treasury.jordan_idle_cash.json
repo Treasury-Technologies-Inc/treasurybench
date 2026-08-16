@@ -1,0 +1,41 @@
+{
+  "taskId": "jordan_idle_cash",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the advice to the specific account balances and transaction categories provided in the CSV data."
+    },
+    {
+      "id": "correctness",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "The financial mechanics and categorization are accurate. The response correctly identifies the tax reserve and operating buffer as non-idle."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable. It provides a specific recommendation for the personal checking surplus, though it could have been slightly more explicit about the specific tax-advantaged account types available to a Schedule C filer."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response maintains appropriate caveats regarding the variable nature of freelance income and the importance of maintaining liquidity."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 2026 HSA contribution limit ($4,400) as a specific target for the excess cash identified."
+  ],
+  "unexpectedValidInsights": [
+    "The recommendation to shift excess personal checking to an HYSA while maintaining a 1-month buffer is a high-leverage, low-risk play for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a well-grounded, prudent analysis of the user's cash buckets, correctly identifying that the tax reserve and operating buffer are not idle cash while offering a concrete strategy for the personal checking surplus."
+}

@@ -1,0 +1,69 @@
+{
+  "taskId": "patel_tax_optimization",
+  "provider": "treasury",
+  "totalScore": 78,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Correctly identified HSA, 401k, and childcare signals. Failed to use the exact $1,650 childcare transaction amount, instead estimating based on a single month."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Used correct 2026 limits for 401k, HSA, and DCAP. Correctly identified the standard deduction and child tax credit."
+    },
+    {
+      "id": "resolution",
+      "score": 28,
+      "maxScore": 35,
+      "rationale": "Provided actionable, high-impact advice. The annualization of monthly spend was clearly caveated as a scenario."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Included necessary caveats for plan-level benefits, though the inclusion of a raw card-syntax artifact [Display artifact omitted from public capture] is a resolution/prudence defect."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 Dependent Care FSA limit is $7,500",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HSA contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 standard deduction is $32,200 for married filing jointly",
+      "tableKey": "irs_2026_standard_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Child Tax Credit is $2,200 per qualifying child",
+      "tableKey": "irs_2026_child_tax_credit",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response includes a raw display artifact [Display artifact omitted from public capture] which should have been rendered or omitted."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the Salesforce wellness reimbursement or backup-care benefits as potential tax-free offsets for existing expenses."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the state-tax deduction angle for Colorado 529 contributions."
+  ],
+  "safetyIssues": ["None; advice is conservative and appropriately caveated."],
+  "summary": "The response provides accurate, high-value tax optimization advice grounded in the user's data, though it contains a minor formatting error with a raw card-syntax artifact."
+}

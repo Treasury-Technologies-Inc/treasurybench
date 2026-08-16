@@ -1,0 +1,10 @@
+{
+  "taskId": "jordan_extra_8000",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "Here is the recommended order for deploying your surplus $8,000 this quarter, tailored to your self-employment setup and cash buffers.\n\n### Priority allocation plan\n\n1. **Clear current credit card balances ($6,395)** — Pay off the balances across your Chase Ink Business Preferred ($5,210) and Amex Blue Business Plus ($1,185) before statement due dates. Eliminating short-term balances protects operating cashflow and avoids high interest charges.\n2. **Fund your 2026 HSA ($1,300)** — With an existing Fidelity HSA balance of $3,100, allocating $1,300 tops off your 2026 self-only HSA contribution limit of **$4,400**. As a self-employed individual, this contribution is 100% tax-deductible above-the-line on Form 1040 and grows tax-free.\n3. **Top up your tax reserve / operating buffer ($305)** — Direct the remaining $305 to your Ally Tax Reserve Savings or Bluevine Business Checking to account for quarterly tax set-asides and uneven client cash flow.\n\n### Account placement overview\n\n- **Taxes & emergency cash:** Your $18,500 tax reserve and $9,650 personal checking provide solid near-term liquidity. Keep those separate from business operations.\n- **Retirement accounts:** For future surplus cash beyond your HSA, you have up to **$7,500** in 2026 IRA room (Vanguard Traditional IRA) or the option of a Solo 401(k) / SEP-IRA to defer additional Schedule C income.",
+  "latencyMs": 12691,
+  "capturedAt": "2026-08-14T04:08:28.932Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

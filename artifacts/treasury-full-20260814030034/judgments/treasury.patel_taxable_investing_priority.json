@@ -1,0 +1,71 @@
+{
+  "taskId": "patel_taxable_investing_priority",
+  "provider": "treasury",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the persona's household income, employer benefits, and current account balances to build a logical priority list."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits (401k, HSA, IRA). However, it includes a raw display-card artifact [Display artifact omitted from public capture] which violates the no-display-artifact rule."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable, and prioritized sequence. The math for the 401k gap is helpful, though it assumes a static marginal tax rate."
+    },
+    {
+      "id": "prudence",
+      "score": 19,
+      "maxScore": 25,
+      "rationale": "Includes necessary caveats regarding the pro-rata rule and plan-level verification. Could have been more explicit about the liquidity risk of locking up cash in retirement accounts given the toddler/daycare expenses."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HSA contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA phase-out for MFJ is $242,000–$252,000",
+      "tableKey": "irs_2026_roth_mfj_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Dependent Care FSA limit is $7,500",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the 2026 Dependent Care FSA limit as $7,500, which is consistent with the benchmark facts."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the Salesforce wellness reimbursement or the potential for the dependent care FSA to be used for the toddler's daycare costs beyond just mentioning the limit."
+  ],
+  "unexpectedValidInsights": [
+    "Calculated the specific 401(k) contribution gap based on current payroll deferral percentages."
+  ],
+  "safetyIssues": [
+    "Included a raw display-card artifact [Display artifact omitted from public capture] in the output."
+  ],
+  "summary": "A strong, factually accurate, and well-prioritized financial plan that suffers only from a minor formatting artifact and could be slightly more cautious regarding liquidity."
+}

@@ -1,0 +1,10 @@
+{
+  "taskId": "jordan_recurring_charges_audit",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "### Personal recurring charges\n\nThese monthly living expenses and utilities total **$2,629.99/mo**:\n\n- **Eastside Flats** — **$2,100.00/mo** for apartment rent.\n- **HealthCare.gov Marketplace Premium** — **$415.00/mo** for individual health insurance.\n- **Spectrum Internet** — **$79.99/mo** for home internet.\n- **Visible Wireless** — **$35.00/mo** for mobile phone service.\n\n*(Note: An additional **$160.00** was paid to Austin Therapy Group, and **$300.00** was transferred to your Fidelity HSA.)*\n\n---\n\n### Business recurring charges\n\nThese recurring workspace and software tools on your business card total **$560.83/mo**:\n\n- **WeWork Austin** — **$350.00/mo** for coworking office rent.\n- **Amazon Web Services (AWS)** — **$82.44/mo** for hosting and cloud infrastructure.\n- **Adobe Creative Cloud** — **$59.99/mo** for design software.\n- **Webflow** — **$39.00/mo** for web design and hosting.\n- **Figma Professional** — **$15.00/mo** for interface design.\n- **Google Workspace** — **$14.40/mo** for business email and storage.\n\n---\n\n### Key areas to review\n\n- **Software stack overlap ($210.83/mo total)** — Review your active design tools (Figma, Adobe, Webflow) and AWS usage to verify active client need for each license or tier.\n- **Annual billing discounts** — For core business software you plan to keep long-term (such as Figma or Google Workspace), switching from monthly to annual billing often yields a 10%–20% discount.\n- **Internet rate check** — Spectrum promotional rates frequently step up after 12–24 months; check if renegotiating or price-matching reduces this bill.",
+  "latencyMs": 17882,
+  "capturedAt": "2026-08-14T04:06:01.562Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

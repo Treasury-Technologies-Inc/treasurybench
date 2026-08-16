@@ -1,0 +1,10 @@
+{
+  "taskId": "jordan_spend_may_total",
+  "personaId": "jordan_austin_freelancer_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "In May 2026, your total consumption spending was **$5,202.72**. \n\nAn additional **$2,300.00** in cash outflows went toward balance-sheet movements and savings rather than direct consumption ($2,000.00 in credit card payments and $300.00 to your HSA).\n\nYour largest spending categories for the month were:\n- **Rent** — $2,100.00\n- **Business Travel** — $1,115.08\n- **Health Insurance** — $415.00\n- **Groceries** — $365.47\n- **Business Rent** — $350.00",
+  "latencyMs": 4793,
+  "capturedAt": "2026-08-14T04:05:37.659Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

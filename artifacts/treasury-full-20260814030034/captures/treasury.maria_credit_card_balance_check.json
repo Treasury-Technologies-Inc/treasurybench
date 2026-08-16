@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_credit_card_balance_check",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "### The Recommendation\n\nSet up **autopay for the full statement balance** and treat your card as normal monthly float. \n\nPaying off charges immediately mid-cycle is unnecessary extra maintenance, while carrying a revolving balance incurs high-interest charges and erodes the card's value. With **$18,450** sitting in your Chase checking account, you have more than enough liquid buffer to let autopay handle the full statement balance on the due date without risk of overdraft or interest.\n\n---\n\n### What to Verify First\n\n1. **Statement balance vs. current balance**\n   - Check your Chase app for the **Statement Balance** versus the **Current Balance** ($1,840). \n   - You only need to pay the **Statement Balance** by your payment due date to avoid all interest and keep your grace period active. Charges made after the statement closing date roll into the next cycle.\n\n2. **Grace period status**\n   - Confirm you paid the *previous* statement in full. If you carried a balance into this cycle, the grace period is temporarily lost and interest accrues daily on new purchases. If that is the case, paying the current balance off immediately stops further interest accrual.\n\n3. **Autopay configuration**\n   - In Chase, verify autopay is explicitly configured to pay **\"Statement Balance\"** (not \"Minimum Payment\" or a fixed dollar amount).\n   - Ensure the linked source account is set to your checking account.\n\n4. **Utilization reporting timing**\n   - Your balance of $1,840 on a $10,000 limit represents **18.4% utilization**, which is well within the healthy range (<30%). \n   - Chase typically reports your statement balance to the credit bureaus on your statement closing date. Unless you are applying for a mortgage or loan in the next 30 days, there is no need to make mid-cycle payments to depress reported utilization further.",
+  "latencyMs": 5805,
+  "capturedAt": "2026-08-14T03:04:42.576Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

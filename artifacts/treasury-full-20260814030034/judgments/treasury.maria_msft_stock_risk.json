@@ -1,0 +1,57 @@
+{
+  "taskId": "maria_msft_stock_risk",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the $42,000 RSU vest from the transaction history and links it to the user's Microsoft employment and Robinhood brokerage account."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "Tax mechanics (supplemental withholding, cost basis) are accurate for 2026. The 2026 contribution limits for IRA and 401(k) are correctly cited."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable checklist. The advice to consider selling to diversify is well-reasoned and personalized to the user's concentration risk."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately includes caveats regarding trading windows, insider trading, and the distinction between withholding and actual tax liability."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 flat federal withholding rate on supplemental wages is 22%",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Microsoft 401(k) match or Mega Backdoor Roth potential as specific vehicles for the proceeds, though it did mention maximizing tax-advantaged accounts generally."
+  ],
+  "unexpectedValidInsights": [
+    "The framing of the RSU vest as a hypothetical cash gift ('if Microsoft had given you $42,000 in cash today') is an excellent behavioral finance tool for assessing concentration risk."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a highly personalized, tax-aware, and prudent analysis of the user's RSU vest, correctly identifying the concentration risk and providing actionable steps grounded in the user's specific financial data."
+}

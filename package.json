@@ -2,6 +2,7 @@
   "name": "treasurybench",
   "version": "0.1.0",
   "description": "TreasuryBench personal-finance assistant benchmark definitions and validators",
+  "license": "MIT",
   "type": "module",
   "private": false,
   "exports": {
@@ -26,6 +27,7 @@
     "run-pairwise": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/run-pairwise.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-run-pairwise.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-run-pairwise.mjs",
     "make-capture-templates": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/make-capture-templates.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-make-capture-templates.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-make-capture-templates.mjs",
     "capture-status": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/capture-status.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-capture-status.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-capture-status.mjs",
+    "check-runtime-leakage": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/check-runtime-leakage.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-check-runtime-leakage.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-check-runtime-leakage.mjs",
     "judge-prompt": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/scripts/judge-prompt.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-judge-prompt.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-judge-prompt.mjs",
     "smoke": "node -e \"require('fs').mkdirSync('.treasurybench-tmp',{recursive:true})\" && esbuild src/tests/smoke.ts --bundle --platform=node --format=esm --outfile=.treasurybench-tmp/treasurybench-smoke.mjs --log-level=warning && node .treasurybench-tmp/treasurybench-smoke.mjs",
     "typecheck": "tsc --noEmit"

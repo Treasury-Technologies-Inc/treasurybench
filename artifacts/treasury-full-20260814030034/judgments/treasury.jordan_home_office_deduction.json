@@ -1,0 +1,57 @@
+{
+  "taskId": "jordan_home_office_deduction",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately identifies and categorizes specific transactions from the provided CSV, including software, coworking, travel, and personal expenses."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "Tax rules (50% meal deduction, Schedule 1 vs Schedule C treatment, HSA limits) are correctly applied for the 2026 tax year."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable advice. Could have been slightly more explicit about the specific record-keeping steps for the home office deduction beyond just mentioning the simplified method."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent handling of audit risks, specifically regarding the commingling of personal groceries on business cards and the distinction between Schedule C and Schedule A/1 deductions."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 self-only HSA contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Business meals are 50% deductible",
+      "tableKey": "irs_2026_business_meals_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Simplified home-office deduction is $5 per square foot up to 300 square feet",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly suggested moving the personal grocery spend to a personal card to improve the 'cleanliness' of the business books for tax preparation."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that the health insurance premium is an above-the-line deduction rather than a Schedule C expense, which is a common point of confusion for freelancers."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, grounded, and prudent tax advice for a self-employed consultant, correctly distinguishing between business expenses, personal expenses, and above-the-line deductions."
+}

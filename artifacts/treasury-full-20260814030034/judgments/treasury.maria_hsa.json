@@ -1,0 +1,52 @@
+{
+  "taskId": "maria_hsa",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's employer (Microsoft) and incorporates the specific $1,000 annual HSA seed benefit."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "All tax limits and HSA mechanics (triple advantage, FICA savings, 2026 limits) are accurate and align with the locked benchmark facts."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps and quantifies the contribution target. It misses a minor opportunity to explicitly link the payroll contribution to the user's current $2,500 gross pay frequency."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately emphasizes the need to verify HDHP enrollment before contributing and explains the tax implications of non-medical withdrawals."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft contributes $1,000 annually ($500 per half-year) to the HSA for employees enrolled in an eligible high-deductible health plan.",
+      "tableKey": "microsoft_2026_hsa_seed",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "The 2026 HSA contribution limit for self-only HDHP coverage is $4,400.",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly calculated the impact of the FICA tax savings (7.65%) on the $3,400 contribution to show the immediate net-cash-flow benefit."
+  ],
+  "unexpectedValidInsights": [
+    "Suggests the 'receipt banking' strategy (paying out-of-pocket now and reimbursing later) to maximize tax-free growth."
+  ],
+  "safetyIssues": [],
+  "summary": "An excellent, highly personalized response that correctly applies 2026 tax limits and Microsoft-specific benefits while maintaining appropriate eligibility caveats."
+}

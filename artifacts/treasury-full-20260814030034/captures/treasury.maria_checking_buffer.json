@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_checking_buffer",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "### Recommended checking buffer\n\nKeep **$4,500 to $5,000** in your Chase Total Checking account.\n\nYour observed immediate monthly outflows total **$4,190**:\n- **Rent:** $2,350 (Cascade Apartments)\n- **Credit card balance:** $1,840 (Chase Sapphire Preferred)\n\nA $5,000 balance provides roughly 1 to 1.2 months of regular cash obligations and creates a comfortable $800+ cushion against overdrafts while your semi-monthly paychecks ($1,840 each on the 15th and end of month) replenish the account.\n\n---\n\n### How much to move\n\nWith **$18,450** currently in checking, you have approximately **$13,450 to $14,000 of idle cash** that can be redeployed immediately.\n\n- **Option A: Ally Online Savings**\n  - Moving $13,450 into your existing Ally account brings your cash reserve from $5,250 to **$18,700** (covering over 4 months of essential expenses).\n  - Offers full liquidity with standard 1–2 business day transfers back to checking whenever needed.\n\n- **Option B: Short-Term Treasury Bills (T-Bills)**\n  - T-bills (4-week to 26-week maturities) lock in current market yields and are backed by the U.S. government.\n  - They are exempt from state and local income taxes (though Washington state has no personal income tax, so the tax advantage is identical to a standard HYSA for your state filing).\n\n---\n\n### Action plan\n\n1. **Keep $5,000** in Chase Checking to cover the upcoming rent cycle and credit card statement autopay.\n2. **Transfer $13,450** from Chase Checking to your Ally Online Savings account or into short-term T-bills/brokerage cash sweep.\n3. **Set up auto-transfers** on paydays to sweep any surplus above your $5,000 baseline into savings automatically.",
+  "latencyMs": 12285,
+  "capturedAt": "2026-08-14T03:04:28.814Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

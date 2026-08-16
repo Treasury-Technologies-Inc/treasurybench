@@ -1,0 +1,50 @@
+{
+  "taskId": "patel_extra_15000",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the visible account balances and payroll data to calculate remaining contribution room. It correctly identifies the lack of revolving debt."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits for HSA ($8,750) and 401(k) ($24,500). The math for remaining room is logically sound based on the provided payroll data."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable priority waterfall. It misses a specific mention of the dependent care FSA limit ($7,500) which was a key expected scope item."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Appropriately distinguishes between statement float and revolving debt and confirms the emergency fund status before suggesting investments."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 family HSA limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly mention the 2026 dependent care FSA/DCAP limit of $7,500 as a potential tax-advantaged play for their daycare expenses."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "A strong, well-grounded financial plan that correctly applies 2026 tax limits and prioritizes liquidity and tax-advantaged accounts appropriately for the user's profile."
+}

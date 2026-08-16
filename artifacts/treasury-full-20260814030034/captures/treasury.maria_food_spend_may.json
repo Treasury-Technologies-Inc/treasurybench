@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_food_spend_may",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "In May 2026, you spent **$833.96** in total on food across groceries and dining (7 transactions).\n\n### Food spending breakdown\n\n- **Costco Wholesale (Groceries):** $501.23\n  - May 4: $286.41\n  - May 19: $214.82\n- **Other Groceries:** $170.62\n  - Safeway (May 10): $94.18\n  - Trader Joe's (May 17): $76.44\n- **Restaurants & Dining:** $162.11\n  - Tavolata (May 8): $88.70\n  - Oddfellows Cafe (May 3): $42.16\n  - Ramen Danbo (May 24): $31.25\n\n*Note: A separate $58.23 transaction at Costco Gas on May 21 is tracked under Gas and is not included in this food total.*",
+  "latencyMs": 14294,
+  "capturedAt": "2026-08-14T03:00:48.543Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

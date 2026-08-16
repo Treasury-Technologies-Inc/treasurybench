@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_rent_rewards",
+  "provider": "treasury",
+  "totalScore": 80,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the annual rent from the transaction history and uses the user's specific rent amount for the fee analysis."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The math is generally sound, but the response fails to mention the Bilt 2.0 tiered earning structure, instead implying a simpler model. It correctly identifies Bilt as a fee-free rent option."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Clear, actionable advice provided. The next steps are practical and directly address the user's question."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriate warnings about processing fees and the recommendation to verify portal terms are included."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Bilt 2.0 uses the Bilt Blue, Bilt Obsidian, and Bilt Palladium card lineup.",
+      "tableKey": "bilt_2026_card_lineup",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Bilt 2.0 lets cardholders pay rent with no card transaction/processing fee.",
+      "tableKey": "bilt_2026_rent_mechanics",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response describes Bilt's rent earning as 'up to 1x' without fully explaining the Bilt 2.0 tiered multiplier mechanics tied to everyday spend."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention the Bilt 2.0 tiered multiplier mechanics (0.5x to 1.25x) which are central to the current product terms."
+  ],
+  "unexpectedValidInsights": [
+    "Included a helpful 'autopay balance protect' feature mention for Bilt users."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a solid, personalized analysis of rent rewards, correctly identifying Bilt as the primary fee-free option while accurately calculating the impact of processing fees on the user's specific rent."
+}

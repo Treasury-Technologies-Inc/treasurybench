@@ -1,0 +1,60 @@
+{
+  "taskId": "patel_dependent_care_fsa",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds the advice in the user's specific daycare expenses, employer benefits, and tax situation."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The math and tax limits are accurate based on 2026 locked facts. The distinction between FICA savings at different income levels is a high-leverage, correct insight."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "The advice is clear, actionable, and provides specific next steps. It correctly identifies the DCFSA as superior to the CDCTC for this income level."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes necessary caveats regarding plan enrollment, cash flow timing, and the distinction between plan-level availability and user-specific participation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 dependent care FSA limit is $7,500",
+      "tableKey": "irs_2026_dependent_care_fsa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Social Security wage base is $184,500",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Colorado flat state income tax rate is 4.40%",
+      "tableKey": "colorado_2026_income_tax_rate",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Child and Dependent Care Tax Credit expense caps are $3,000 for one child",
+      "tableKey": "irs_2026_child_dependent_care_credit",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "The analysis of FICA tax savings based on the Social Security wage base differential between the two employers is an excellent, high-leverage insight."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly accurate, personalized, and actionable response that correctly leverages the user's specific financial data and 2026 tax rules to maximize benefit participation."
+}

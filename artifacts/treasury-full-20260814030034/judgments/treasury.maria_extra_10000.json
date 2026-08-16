@@ -1,0 +1,68 @@
+{
+  "taskId": "maria_extra_10000",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the visible account balances and transaction history to ground its recommendations."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 IRS limits and Microsoft plan facts. The recommendation to pay off the credit card is prudent given the balance."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable priority list. It correctly identifies the Backdoor Roth opportunity given the $0 IRA balance."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Includes appropriate caveats regarding income eligibility and HDHP enrollment."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 self-only HSA limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft matches 50% of 401(k) contributions up to the elective deferral limit",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft contributes $1,000 annually to the HSA for HDHP enrollees",
+      "tableKey": "microsoft_2026_hsa_seed",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly calculate the potential tax savings of the HSA contribution vs. the 401(k) match capture.",
+    "Could have mentioned the Microsoft ESPP 10% discount as a potential future use for excess cash."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the 'clean' nature of the Backdoor Roth due to the $0 Traditional IRA balance."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly grounded and accurate financial plan that correctly prioritizes debt payoff and tax-advantaged retirement contributions based on 2026 IRS limits and Microsoft-specific benefits."
+}

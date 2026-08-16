@@ -1,0 +1,55 @@
+{
+  "taskId": "maria_costco_optimization",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately uses the May transaction data to calculate spend and provides personalized, actionable advice based on the user's specific Costco habits."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The math for the Executive Membership breakeven and the card reward rates is correct and aligns with the locked benchmark facts. The distinction between warehouse and gas spend is handled correctly."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "The advice is clear, quantified, and provides specific next steps. The inclusion of the raw card syntax [Display artifact omitted from public capture] at the end is a minor resolution defect."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response includes appropriate caveats regarding the annualization of spend and the zero-risk nature of the Executive Membership downgrade."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Costco Anywhere Visa by Citi earns 5% on Costco gas (up to $7,000/year shared gas cap, then 1%) and 2% on Costco wholesale purchases.",
+      "tableKey": "costco_2026_citi_visa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Costco Executive Membership gives a 2% annual reward on qualifying Costco purchases, capped at $1,250 per year.",
+      "tableKey": "costco_2026_executive_membership",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Costco's annual membership fees are $65 for Gold Star and $130 for Executive.",
+      "tableKey": "costco_2026_membership_fees",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "The inclusion of Costco price tag markdown codes is a helpful, actionable, and factual insight for a warehouse shopper."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides highly personalized, accurate, and actionable advice for optimizing Costco spend, correctly applying 2026 benchmark facts and user-specific transaction data."
+}

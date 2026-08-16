@@ -1,0 +1,52 @@
+{
+  "taskId": "jordan_quarterly_estimated_taxes",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately uses the May income, expense, and tax reserve data. It correctly identifies the Q1 payment and the specific client income sources."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The tax mechanics and safe harbor rules are correctly stated for 2026. The distinction between business expenses and tax reserves is well-maintained."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear. It provides a specific payment amount and due date, though it could have explicitly mentioned the 110% safe harbor rule for high earners as a caveat."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately emphasizes maintaining the tax reserve and keeping business operating funds separate."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The Q2 2026 estimated-tax payment is due June 15, 2026.",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Texas has no state personal income tax.",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the 110% safe harbor rule for high-income earners as a specific threshold to check against 2025 AGI."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested a specific post-invoice transfer rule to ensure the tax reserve is replenished automatically."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly grounded and accurate response that correctly applies 2026 tax safe harbor rules to the user's specific financial data."
+}

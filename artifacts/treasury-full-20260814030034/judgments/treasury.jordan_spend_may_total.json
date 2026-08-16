@@ -1,0 +1,39 @@
+{
+  "taskId": "jordan_spend_may_total",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 35,
+      "maxScore": 40,
+      "rationale": "The response correctly identifies and sums the transactions from the provided CSV. It successfully separates consumption from balance-sheet movements."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The math is accurate based on the provided CSV. It correctly excludes income and identifies the categories."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The answer is clear and addresses the prompt directly. It could have been improved by explicitly noting the business vs. personal distinction in the category breakdown."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately distinguishes between consumption and balance-sheet movements."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "The response could have explicitly categorized the business expenses (e.g., Business Rent, Business Travel, Software) separately from personal living expenses to better align with the persona's need for tax-safe cashflow management."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides an accurate, well-grounded summary of May 2026 spending, correctly distinguishing between consumption and balance-sheet movements."
+}

@@ -1,0 +1,10 @@
+{
+  "taskId": "patel_childcare_family_spend_may",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "In May 2026, you spent **$1,870.00** on direct childcare expenses, plus **$300.00** toward long-term college savings, for a total of **$2,170.00** across kid-related categories.\n\n### May Kid & Childcare Breakdown\n\n- **Direct Childcare ($1,870.00):**\n  - **Bright Horizons Daycare:** $1,650.00 (May 3)\n  - **Care.com Backup Care:** $220.00 (May 17)\n- **Education Savings ($300.00):**\n  - **Colorado 529 CollegeInvest:** $300.00 (May 6)\n\n---\n\n### What to Double-Check\n\n1. **Salesforce Backup Care Reimbursement / Copay**\n   - The $220.00 Care.com charge looks like an out-of-pocket payment for backup childcare. \n   - Salesforce provides backup-care benefits through its family perks. Check your benefits portal to confirm whether this full charge was an unreimbursed booking or if you can submit the receipt for employer reimbursement/subsidy.\n\n2. **Dependent Care FSA (DCFSA) Reimbursement Claims**\n   - Both the $1,650.00 Bright Horizons tuition and the $220.00 backup care payment qualify for pre-tax reimbursement under a Dependent Care FSA.\n   - For 2026, the household DCFSA contribution limit is **$7,500**. If you have payroll deductions going into a DCFSA through Salesforce, make sure you submit these May claims to pull those tax-free funds back into your checking account.\n\n3. **Potential Retail Overlaps in Household/Groceries**\n   - You had spending at **Target ($242.19)** and **Costco ($312.62 & $424.18)** categorized under Household and Groceries. If diapers, clothes, or kid supplies were included in those runs, the true total for child-related expenses is slightly higher.",
+  "latencyMs": 20078,
+  "capturedAt": "2026-08-14T04:00:19.720Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

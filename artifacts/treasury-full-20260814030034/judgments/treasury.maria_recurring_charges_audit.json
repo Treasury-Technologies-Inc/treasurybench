@@ -1,0 +1,39 @@
+{
+  "taskId": "maria_recurring_charges_audit",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies all recurring charges from the provided transaction data and correctly categorizes them into the requested buckets without including rent or one-time expenses."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The math is correct for the requested buckets. However, the response missed the opportunity to mention the Microsoft wellness reimbursement for the ClassPass charge, which was a key planted opportunity."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response is clear and follows the formatting instructions perfectly. It is slightly penalized for missing the personalized employer-benefit context."
+    },
+    {
+      "id": "prudence",
+      "score": 0,
+      "maxScore": 5,
+      "rationale": "The response is purely descriptive and lacks any cautionary notes regarding the review of these subscriptions or the potential for employer-sponsored reimbursement."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "The response failed to identify that the ClassPass subscription is eligible for the Microsoft $1,500 annual wellness reimbursement, which would have provided a high-leverage personalized insight."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant correctly identified and categorized all recurring charges but missed the opportunity to provide personalized value by linking the ClassPass expense to the Microsoft wellness reimbursement benefit."
+}

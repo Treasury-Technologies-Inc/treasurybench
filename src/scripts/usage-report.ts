@@ -8,7 +8,9 @@ if (!captureDir) {
 }
 
 const captures = readCaptures(captureDir, { skipIncomplete: true });
-const capturesWithUsage = captures.filter((capture) => capture.usage?.usage?.totalTokens !== undefined);
+const capturesWithUsage = captures.filter(
+  (capture) => capture.usage?.usage?.totalTokens !== undefined
+);
 
 console.log(`# TreasuryBench Usage Report`);
 console.log(`Capture dir: ${captureDir}`);
@@ -16,7 +18,9 @@ console.log(`Captures: ${captures.length}`);
 console.log(`Captures with usage: ${capturesWithUsage.length}`);
 
 if (capturesWithUsage.length === 0) {
-  console.log('\nNo structured usage metadata found. Re-run captures after the benchmark usage instrumentation landed.');
+  console.log(
+    '\nNo structured usage metadata found. Re-run captures after the benchmark usage instrumentation landed.'
+  );
   process.exit(0);
 }
 
@@ -51,7 +55,7 @@ printTable(
   ]
 );
 
-console.log('\n## By Provider');
+console.log('\n## By Capture Orchestrator (Inclusive Of Auxiliaries)');
 printTable(
   ['provider', 'model', 'captures', 'total_tokens', 'avg_tokens'],
   aggregateByProvider(capturesWithUsage).map((row) => [
@@ -63,12 +67,40 @@ printTable(
   ])
 );
 
+const components = capturesWithUsage.flatMap((capture) => capture.usage?.components ?? []);
+if (components.length > 0) {
+  const byComponent = new Map<
+    string,
+    { role: string; provider: string; model: string; calls: number; totalTokens: number }
+  >();
+  for (const component of components) {
+    const key = `${component.role}\t${component.provider}\t${component.model}`;
+    const row = byComponent.get(key) ?? {
+      role: component.role,
+      provider: component.provider,
+      model: component.model,
+      calls: 0,
+      totalTokens: 0
+    };
+    row.calls += 1;
+    row.totalTokens += component.usage.totalTokens;
+    byComponent.set(key, row);
+  }
+  console.log('\n## By Runtime Component');
+  printTable(
+    ['role', 'provider', 'model', 'captures', 'total_tokens'],
+    [...byComponent.values()]
+      .sort((a, b) => b.totalTokens - a.totalTokens)
+      .map((row) => [row.role, row.provider, row.model, row.calls, formatNumber(row.totalTokens)])
+  );
+}
+
 console.log('\n## Top Tasks By Tokens');
 printTable(
   ['task', 'provider', 'model', 'total_tokens', 'input', 'output', 'reasoning', 'cached_input'],
   capturesWithUsage
     .slice()
-    .sort((a, b) => ((b.usage?.usage?.totalTokens ?? 0) - (a.usage?.usage?.totalTokens ?? 0)))
+    .sort((a, b) => (b.usage?.usage?.totalTokens ?? 0) - (a.usage?.usage?.totalTokens ?? 0))
     .slice(0, 20)
     .map((capture) => {
       const usage = capture.usage?.usage;
@@ -99,14 +131,12 @@ function aggregateByProvider(captures: CapturedResponse[]) {
     const provider = capture.usage?.provider ?? capture.provider;
     const model = capture.usage?.model ?? '';
     const key = `${provider}\t${model}`;
-    const row =
-      byKey.get(key) ??
-      {
-        provider,
-        model,
-        captures: 0,
-        totalTokens: 0
-      };
+    const row = byKey.get(key) ?? {
+      provider,
+      model,
+      captures: 0,
+      totalTokens: 0
+    };
     row.captures += 1;
     row.totalTokens += capture.usage?.usage?.totalTokens ?? 0;
     byKey.set(key, row);

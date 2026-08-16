@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_rental_car_trip",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "You handled the most important protection correctly by paying with your **Chase Sapphire Preferred**, which provides **primary Auto Rental Collision Damage Waiver (CDW)** coverage. That allowed you to safely decline Avis's collision insurance, saving roughly $15–$30 per day.\n\nThere are four effective levers that could lower the cost on future bookings:\n\n### 1. Leverage Microsoft negotiated rates\n- **Corporate travel booking**: For business travel, booking through company channels (such as Concur) applies Microsoft's negotiated Avis/Budget/National corporate rates, which include built-in damage coverage and lower daily pricing.\n- **Personal leisure codes**: Microsoft also provides leisure discount codes (Avis AWD / National contract IDs) for personal trips, which frequently discount standard retail rates by 20% to 35%.\n\n### 2. Book refundable and monitor price drops\n- Rental car pricing fluctuates continuously up until pickup day based on fleet inventory.\n- Booking a \"Pay Later\" rate early and setting a price tracker (such as AutoSlash) or re-checking rates 7 days prior to departure typically saves 15% to 20% by rebooking when prices drop.\n\n### 3. Account for SFO airport surcharges\n- SFO levies customer facility charges, concession recovery fees, and local tourism taxes that add an 18% to 25% premium over downtown locations.\n- If taking BART into the city on arrival, picking up at a downtown or suburban branch can avoid airport facility fees.\n\n### 4. Compare member booking portals\n- **Costco Travel**: Often delivers lower base rates with a free additional driver included.\n- **Credit card portals**: The Chase Travel portal earns 5x points on prepaid rentals, though it requires verifying that the rate matches direct Avis pricing.",
+  "latencyMs": 22395,
+  "capturedAt": "2026-08-14T03:04:07.625Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

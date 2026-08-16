@@ -161,13 +161,45 @@ export interface ProviderRunResult {
 export interface ProviderUsage {
   provider?: string;
   model?: string;
-  usage?: {
-    inputTokens?: number;
-    outputTokens?: number;
-    totalTokens: number;
-    reasoningTokens?: number;
-    cachedInputTokens?: number;
+  /** Aggregate across the orchestrator and every metered auxiliary component. */
+  usage?: TokenUsage;
+  /** Per-model attribution. Components must sum to `usage`. */
+  components?: ProviderUsageComponent[];
+}
+
+export interface TokenUsage {
+  inputTokens?: number;
+  outputTokens?: number;
+  totalTokens: number;
+  reasoningTokens?: number;
+  cachedInputTokens?: number;
+}
+
+export interface ProviderUsageComponent {
+  /** Generic lane, not a description of any particular product's internals:
+   * `orchestrator` is whatever model drives the run, `auxiliary` any additional
+   * metered component. Reporting treats this as an opaque label. */
+  role: 'orchestrator' | 'auxiliary' | 'other';
+  provider: string;
+  model: string;
+  usage: TokenUsage;
+}
+
+export interface RuntimeManifest {
+  schemaVersion: 1;
+  capturedAt: string;
+  personaIds: string[];
+  profile: string;
+  orchestrator: {
+    provider: string;
+    model: string;
   };
+  auxiliaries: Array<{
+    role: ProviderUsageComponent['role'];
+    provider: string;
+    model: string;
+  }>;
+  configuration: Record<string, string | number | boolean | null>;
 }
 
 export type DeterministicCheckStatus = 'pass' | 'partial' | 'fail' | 'not_implemented';

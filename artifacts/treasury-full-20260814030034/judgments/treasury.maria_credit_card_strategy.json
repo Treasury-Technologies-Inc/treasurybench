@@ -1,0 +1,73 @@
+{
+  "taskId": "maria_credit_card_strategy",
+  "provider": "treasury",
+  "totalScore": 75,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the provided transaction data to map categories and identify spending patterns. It correctly identifies the rent and Costco opportunities."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies card terms and categories. However, it fails to correctly calculate the annual rent rewards value, citing 28,200 points as the capture amount but failing to account for the tiered Bilt 2.0 mechanics, and it misses the specific Costco Executive Membership breakeven math."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and clear. It provides a logical strategy for the user's current card and suggests specific, relevant alternatives."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes necessary caveats about processing fees and annual fees. It could have been more explicit about the Bilt 2.0 tiered rent earning requirements."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Chase Sapphire Preferred earns 3x on dining",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Chase Sapphire Preferred earns 3x on select streaming services",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Chase Freedom Unlimited earns 1.5% on all purchases",
+      "tableKey": "chase_2026_freedom_unlimited",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Costco Anywhere Visa by Citi earns 2% cash back at Costco",
+      "tableKey": "costco_2026_citi_visa",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Costco Anywhere Visa by Citi earns 4% on eligible gas/EV charging up to $7,000/year",
+      "tableKey": "costco_2026_citi_visa",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the Bilt Blue card but does not fully explain the Bilt 2.0 tiered rent earning mechanics, which are not a flat 1x.",
+    "The response mentions a $50 annual hotel credit for the Chase Sapphire Preferred, which is not a standard feature of that card (it is typically associated with the Sapphire Reserve)."
+  ],
+  "missedOpportunities": [
+    "Failed to perform the incremental breakeven math for the Costco Executive Membership ($130 vs $65).",
+    "Did not explicitly mention the Bilt 2.0 tiered rent earning structure, instead implying a simpler earning model."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the primary auto rental collision damage waiver benefit of the Sapphire Preferred."
+  ],
+  "safetyIssues": [
+    "Incorrectly attributed a $50 annual hotel credit to the Chase Sapphire Preferred, which could lead to user confusion regarding card benefits."
+  ],
+  "summary": "The response provides a solid, grounded analysis of the user's spending and offers actionable card recommendations, though it contains a factual error regarding the Sapphire Preferred's hotel credit and lacks depth on Bilt 2.0 rent mechanics."
+}

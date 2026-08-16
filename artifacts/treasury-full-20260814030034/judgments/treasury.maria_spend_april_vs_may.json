@@ -1,0 +1,39 @@
+{
+  "taskId": "maria_spend_april_vs_may",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately uses the visible transaction data to calculate the spending for both months and correctly identifies the rent and travel components."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "The math for the total spending and the percentage increase is correct based on the provided CSV data."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response provides a clear breakdown but fails to explicitly state that the comparison reflects the visible ledger rather than asserting both months are equally complete, as requested in the scope notes."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response is safe and does not make unsupported financial claims."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "The response did not explicitly caveat that the April ledger appears significantly less complete than the May ledger, which is the primary driver of the observed 62.6% increase."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The assistant correctly calculated the spending increase and provided a helpful breakdown, though it missed the opportunity to explicitly note the difference in ledger completeness between the two months."
+}

@@ -15,3 +15,4 @@ export * from './lib/lookup';
 export * from './lib/math';
 export * from './lib/pairwise';
 export * from './lib/providers';
+export * from './lib/run-integrity';

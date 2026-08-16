@@ -1,0 +1,50 @@
+{
+  "taskId": "jordan_insurance_review",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the user's self-employed status, lack of dependents, and marketplace health insurance, while correctly identifying the need to protect business assets."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on insurance priorities is accurate. The tax note regarding the self-employed health insurance deduction is correct, though it missed the opportunity to explicitly mention the 2026 HSA contribution limit or the specific ACA MOOP limits."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable priorities and explains the 'why' behind each, effectively separating business and personal risks."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent use of caveats regarding policy definitions (e.g., 'true own-occupation') and the distinction between business and personal liability."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Self-employed health, dental, and vision insurance premiums are 100% deductible above-the-line on Form 1040",
+      "tableKey": "se_health_insurance_deduction",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response is accurate regarding the tax treatment of health insurance premiums."
+  ],
+  "missedOpportunities": [
+    "Could have explicitly referenced the 2026 HSA self-only contribution limit ($4,400) as a way to optimize the tax-safe cashflow mentioned in the persona.",
+    "Could have mentioned the 2026 ACA marketplace out-of-pocket maximum ($10,600) to help the user better calibrate their emergency fund."
+  ],
+  "unexpectedValidInsights": [
+    "The recommendation to align the disability insurance elimination period with the existing emergency reserve is a high-leverage, personalized insight."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly professional and well-grounded insurance review that correctly prioritizes disability and professional liability for a self-employed consultant while appropriately dismissing unnecessary life insurance."
+}

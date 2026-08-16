@@ -1,0 +1,57 @@
+{
+  "taskId": "patel_where_wasting_money",
+  "provider": "treasury",
+  "totalScore": 82,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds recommendations in specific transactions (Peloton, Care.com, HSA contribution) and account balances. It misses a minor opportunity to explicitly link the mortgage/escrow or insurance bundling, but covers the primary high-value leaks."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "Financial calculations (FICA savings, interest yield) are accurate. The response correctly identifies the Salesforce wellness and backup care benefits as plan-level facts."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The response provides actionable, high-leverage insights. It ranks opportunities by impact and provides clear next steps. It is penalized slightly for over-assuming the user's eligibility for specific reimbursements without sufficient verification language."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response is generally safe but leans into over-confident claims regarding the user's specific eligibility for the wellness stipend and backup care without emphasizing the need to verify current plan enrollment status."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Salesforce wellness reimbursement of up to $100 per month ($1,200 annually)",
+      "tableKey": "salesforce_2026_wellness_reimbursement",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "FICA payroll tax exemption is 7.65%",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response assumes the user is eligible for and has not yet claimed the Salesforce wellness stipend; while the plan-level fact is correct, the user-specific claim is an assumption."
+  ],
+  "missedOpportunities": [
+    "Did not address potential insurance bundling or deductible optimization given the homeowners status.",
+    "Did not mention the potential for optimizing the Chase Freedom Unlimited vs Amex Gold card routing for grocery/dining spend."
+  ],
+  "unexpectedValidInsights": [
+    "Identified the FICA tax leak on manual HSA contributions, which is a high-value, non-obvious insight for this persona."
+  ],
+  "safetyIssues": [
+    "The response includes a raw display-card syntax artifact '[Display artifact omitted from public capture]' which should have been cleaned."
+  ],
+  "summary": "A strong, personalized analysis that identifies high-value tax and benefit leaks, though it slightly overreaches on user-specific benefit eligibility and includes a minor formatting artifact."
+}

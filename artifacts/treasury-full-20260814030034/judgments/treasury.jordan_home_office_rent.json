@@ -1,0 +1,53 @@
+{
+  "taskId": "jordan_home_office_rent",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's self-employed status and Schedule C filing. It references the internet bill (Spectrum) but fails to use the specific dollar amounts from the visible transactions to illustrate the calculation, which would have provided higher leverage."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The tax rules regarding the home office deduction (exclusive/regular use) and the simplified vs. actual method are accurate for 2026. The distinction between Schedule C expenses and above-the-line deductions is handled correctly."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable. It provides a logical framework for the user to follow. It misses the opportunity to explicitly mention the WeWork expense as a potential conflict or complementary deduction strategy for the home office claim."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response is appropriately cautious, emphasizing the exclusive-use requirement and the need for documentation, which is critical for a Schedule C filer."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "The simplified home-office deduction is $5 per square foot of qualifying space, capped at 300 square feet (maximum $1,500).",
+      "tableKey": "irs_2026_home_office_simplified",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Self-employment tax is 15.3% (12.4% Social Security + 2.9% Medicare).",
+      "tableKey": "se_tax_2026_net_earnings_base",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response correctly identifies the 15.3% self-employment tax rate but does not explicitly mention that this applies to roughly 92.35% of net earnings, though this is a minor technical omission."
+  ],
+  "missedOpportunities": [
+    "The response did not address how the existing WeWork expense ($350/month) interacts with the home office deduction; having a dedicated coworking space can sometimes complicate the 'principal place of business' argument for a home office.",
+    "The response failed to use the specific $79.99 Spectrum internet transaction to provide a concrete example of the business-use allocation."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "A solid, accurate, and prudent guide to home-office and internet deductions for a self-employed consultant, though it could be improved by integrating specific transaction data and addressing the potential conflict with the existing WeWork expense."
+}

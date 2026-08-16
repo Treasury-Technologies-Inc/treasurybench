@@ -1,0 +1,10 @@
+{
+  "taskId": "patel_401k_percent_to_limit",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "For **2026**, the IRS employee elective deferral limit for a 401(k) is **$24,500** (for individuals under age 50).\n\nBased on your semi-monthly paystubs (24 pay periods per year), here is what each of you would need to contribute across a full year:\n\n### **Priya (Salesforce)**\n* **Gross pay:** $8,750 per semi-monthly paycheck ($210,000 annualized)\n* **Current contribution:** 8% ($700 per paycheck / $16,800 per year)\n* **Required contribution rate:** **11.67%** (or **$1,020.83** per paycheck)\n* *Note:* If Salesforce's payroll system requires whole percentages, selecting **12%** ($1,050 per paycheck) will max out the plan by paycheck 24, while **11%** ($962.50 per paycheck) would total $23,100.\n\n---\n\n### **Daniel (UCHealth)**\n* **Gross pay:** $5,000 per semi-monthly paycheck ($120,000 annualized)\n* **Current contribution:** 6% ($300 per paycheck / $7,200 per year)\n* **Required contribution rate:** **20.42%** (or **$1,020.83** per paycheck)\n* *Note:* If UCHealth requires whole percentages, selecting **21%** ($1,050 per paycheck) will max out the plan by paycheck 24, while **20%** ($1,000 per paycheck) would total $24,000.",
+  "latencyMs": 10816,
+  "capturedAt": "2026-08-14T04:03:23.139Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

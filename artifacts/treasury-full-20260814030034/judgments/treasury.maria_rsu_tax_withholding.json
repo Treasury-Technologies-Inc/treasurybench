@@ -1,0 +1,50 @@
+{
+  "taskId": "maria_rsu_tax_withholding",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links the $42,000 RSU vest to the user's Microsoft employment and correctly identifies the lack of state income tax in Washington."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The tax withholding mechanics (22% supplemental rate) and the explanation of the tax gap are accurate for 2026. The mention of FICA is correct."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for tax planning and trading compliance. The advice to check the Microsoft Insider Trading Policy portal is highly relevant."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Includes appropriate caveats regarding blackout periods, pre-clearance, and the distinction between withholding and final tax liability."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "the flat federal withholding rate on supplemental wages is 22% on amounts up to $1,000,000",
+      "tableKey": "irs_2026_supplemental_wage_withholding",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Washington state has no state tax on wage/ordinary income",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Explicitly mentions the distinction between sell-to-cover and manual sales, and the importance of checking the cost basis per share."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly accurate and personalized response that correctly addresses the tax and compliance complexities of a Microsoft RSU vest for a Seattle-based employee."
+}

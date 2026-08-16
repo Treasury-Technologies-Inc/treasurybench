@@ -1,0 +1,66 @@
+{
+  "taskId": "jordan_health_insurance_marketplace",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's status as a self-employed individual and references the marketplace premium and HSA account. However, it fails to incorporate the specific dollar amounts from the user's visible transactions (e.g., the $415 premium or $300 HSA contribution) to make the advice more concrete."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The response accurately reflects 2026 tax limits, HSA eligibility rules, and the distinction between Schedule C expenses and above-the-line deductions."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable. It provides a good framework for checking eligibility, though it could have been improved by explicitly suggesting the user verify their specific plan's 'deemed HDHP' status under the new OBBBA rules."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response includes necessary caveats regarding plan-level eligibility and the interaction between subsidies and deductions, but it is slightly generic in its presentation of the self-employed health insurance deduction."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 HSA self-only contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA family contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HSA catch-up contribution is $1,000",
+      "tableKey": "irs_2026_catchup_contributions",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HDHP minimum deductible is $1,700 self-only / $3,400 family",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 HDHP out-of-pocket maximum is $8,500 self-only / $17,000 family",
+      "tableKey": "irs_2026_hdhp_limits",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not use the specific $415 premium or $300 HSA contribution amounts to illustrate the impact of the deduction or subsidy.",
+    "Could have explicitly mentioned the OBBBA 2026 provision regarding Bronze/Catastrophic plans as 'deemed HDHPs' to provide higher-leverage advice for a marketplace user."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "A technically accurate and well-structured response that correctly applies 2026 tax and health insurance rules, though it misses opportunities to ground the advice in the user's specific transaction data."
+}

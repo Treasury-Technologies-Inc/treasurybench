@@ -1,0 +1,50 @@
+{
+  "taskId": "maria_life_insurance_need",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the lack of dependents and the single-renter status. It misses an opportunity to explicitly reference the user's specific income or savings levels to quantify the 'emergency fund' recommendation."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on life insurance and disability is accurate. The recommendation to check employer LTD is correct. The renters insurance liability suggestion is standard and safe."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. It prioritizes disability over life insurance effectively. It could have been improved by explicitly mentioning the Microsoft-specific benefits portal (Prime) or the specific nature of the employer LTD plan."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Excellent use of caveats regarding employer-paid LTD taxability and the distinction between life insurance and income protection."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Renters insurance with $300,000 in liability typically costs $10 to $20 per month.",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The cost of renters insurance is a general market estimate and not a locked benchmark fact."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly link the disability recommendation to the Microsoft employer context (e.g., checking the Microsoft Prime portal for specific LTD plan details).",
+    "Did not quantify the income replacement gap using the $60,000 annual salary implied by the $2,500 semi-monthly gross pay."
+  ],
+  "unexpectedValidInsights": [
+    "Explicitly linked the emergency fund to the specific need of bridging the elimination period for disability insurance."
+  ],
+  "safetyIssues": [],
+  "summary": "A strong, personalized response that correctly prioritizes disability income protection over life insurance for a single, childless professional."
+}

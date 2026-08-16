@@ -1,26 +1,160 @@
 import assert from 'node:assert/strict';
 import { buildFullContextPrompt } from '../lib/format';
-import { deterministicScore, evaluateDeterministicChecks } from '../lib/deterministic';
+import {
+  deterministicScore,
+  evaluateDeterministicChecks,
+  findObservedAmountContradictions
+} from '../lib/deterministic';
 import { buildJudgePrompt } from '../lib/judge';
 import { auditCurrentFacts } from '../lib/current-fact-audit';
 import { parseJudgeEvaluation } from '../lib/judgment-io';
 import { getPersona, getTask } from '../lib/lookup';
 import { tasks } from '../data/tasks';
+import { personas } from '../data/personas';
+import {
+  aggregateTokenUsage,
+  buildRuntimeManifest,
+  findBenchmarkLeakage,
+  validateRuntimeManifest
+} from '../lib/run-integrity';
 
 const rentTask = getTask('maria_save_on_rent');
 const persona = getPersona(rentTask.personaId);
 const prompt = buildFullContextPrompt(persona, rentTask);
 
-assert.equal(prompt.prompt.includes('Synced account context CSV:'), false, 'full-context prompt should not include a separate account-context surface');
-assert.equal(prompt.prompt.includes('Type,Subtype,Institution,Account,Mask,Current Balance,Available Balance'), false, 'full-context prompt should not include account-context attributes');
+for (const benchmarkPersona of personas) {
+  assert.ok(
+    tasks.some((task) => task.personaId === benchmarkPersona.id),
+    `${benchmarkPersona.id} should have at least one task`
+  );
+}
+
+const disabilityTask = getTask('jordan_disability_liability_need');
+const jordan = getPersona(disabilityTask.personaId);
+assert.deepEqual(
+  findObservedAmountContradictions(
+    disabilityTask,
+    jordan,
+    'My fixed obligations include $207.50/month of health insurance.'
+  ),
+  [
+    'jordan_txn_marketplace_health_2026_05: labels 207.50 as monthly near an observed 415.00 transaction'
+  ],
+  'cadence integrity should catch a monthly amount invented by halving an observed transaction'
+);
+assert.deepEqual(
+  findObservedAmountContradictions(
+    disabilityTask,
+    jordan,
+    'The observed health-insurance charge is $415 per month, or $4,980 per year if typical.'
+  ),
+  [],
+  'cadence integrity should accept exact observed amounts and labeled annualizations'
+);
+const manifest = buildRuntimeManifest({
+  capturedAt: '2026-07-13T00:00:00.000Z',
+  personaIds: personas.map((candidate) => candidate.id),
+  profile: 'lean',
+  orchestrator: { provider: 'example-provider', model: 'example-orchestrator-v1' },
+  auxiliaries: [{ role: 'auxiliary', provider: 'example-provider', model: 'example-auxiliary-v1' }],
+  configuration: { reasoningEffort: 'medium' }
+});
+assert.deepEqual(
+  validateRuntimeManifest(manifest),
+  [],
+  'complete runtime manifest should validate'
+);
+assert.deepEqual(
+  aggregateTokenUsage([
+    {
+      role: 'orchestrator',
+      provider: 'example-provider',
+      model: 'example-orchestrator-v1',
+      usage: { inputTokens: 100, outputTokens: 20, totalTokens: 120, cachedInputTokens: 80 }
+    },
+    {
+      role: 'auxiliary',
+      provider: 'example-provider',
+      model: 'example-auxiliary-v1',
+      usage: { inputTokens: 30, outputTokens: 10, totalTokens: 40 }
+    }
+  ]),
+  {
+    inputTokens: 130,
+    outputTokens: 30,
+    totalTokens: 160,
+    reasoningTokens: undefined,
+    cachedInputTokens: 80
+  },
+  'aggregate usage should include auxiliary model tokens without inventing missing fields'
+);
+
+const leakedMemory = personas[1].memories[0].text;
+const leakage = findBenchmarkLeakage(
+  [{ path: 'src/runtime.ts', content: `const hiddenShortcut = ${JSON.stringify(leakedMemory)};` }],
+  personas
+);
+assert.ok(
+  leakage.some(
+    (finding) =>
+      finding.path === 'src/runtime.ts' &&
+      finding.personaId === personas[1].id &&
+      finding.kind === 'memory'
+  ),
+  'leakage detector should find persona literals copied into runtime code'
+);
+assert.deepEqual(
+  findBenchmarkLeakage(
+    [{ path: 'src/runtime.ts', content: 'Build a general evidence packet from user-owned data.' }],
+    personas
+  ),
+  [],
+  'leakage detector should not flag generic runtime architecture'
+);
+
+assert.equal(
+  prompt.prompt.includes('Synced account context CSV:'),
+  false,
+  'full-context prompt should not include a separate account-context surface'
+);
+assert.equal(
+  prompt.prompt.includes('Type,Subtype,Institution,Account,Mask,Current Balance,Available Balance'),
+  false,
+  'full-context prompt should not include account-context attributes'
+);
 assert.ok(prompt.prompt.includes('Balances CSV:'), 'full-context prompt should include balances');
-assert.ok(prompt.prompt.includes('Date,Balance,Account'), 'full-context prompt should use upload-shaped balance CSV');
-assert.equal(prompt.prompt.includes('Investment holdings CSV:'), false, 'full-context prompt should not use a holdings surface Treasury does not store');
-assert.ok(prompt.prompt.includes('Transactions CSV:'), 'full-context prompt should include transactions');
-assert.ok(prompt.prompt.includes('Date,Merchant,Category,Account,Original Statement,Notes,Amount,Tags,Owner'), 'full-context prompt should use upload-shaped transaction CSV');
-assert.ok(prompt.prompt.includes('Cascade Apartments'), 'full-context prompt should include rent transaction');
-assert.equal(prompt.prompt.includes('Benchmark Signal'), false, 'full-context prompt should not expose benchmark-only marker rows');
-assert.ok(prompt.prompt.includes('My rent is $2,350/month in Seattle.'), 'full-context prompt should include user question');
+assert.ok(
+  prompt.prompt.includes('Date,Balance,Account'),
+  'full-context prompt should use upload-shaped balance CSV'
+);
+assert.equal(
+  prompt.prompt.includes('Investment holdings CSV:'),
+  false,
+  'full-context prompt should not use a holdings surface Treasury does not store'
+);
+assert.ok(
+  prompt.prompt.includes('Transactions CSV:'),
+  'full-context prompt should include transactions'
+);
+assert.ok(
+  prompt.prompt.includes(
+    'Date,Merchant,Category,Account,Original Statement,Notes,Amount,Tags,Owner'
+  ),
+  'full-context prompt should use upload-shaped transaction CSV'
+);
+assert.ok(
+  prompt.prompt.includes('Cascade Apartments'),
+  'full-context prompt should include rent transaction'
+);
+assert.equal(
+  prompt.prompt.includes('Benchmark Signal'),
+  false,
+  'full-context prompt should not expose benchmark-only marker rows'
+);
+assert.ok(
+  prompt.prompt.includes('My rent is $2,350/month in Seattle.'),
+  'full-context prompt should include user question'
+);
 
 const expertRentResponse = `
 Your rent is $2,350/month, or $28,200/year, for a single-person household in Seattle on about $60,000 gross income.
@@ -36,9 +170,19 @@ You can save money on rent by looking in cheaper neighborhoods, negotiating with
 const expertResults = evaluateDeterministicChecks(rentTask, persona, expertRentResponse);
 const genericResults = evaluateDeterministicChecks(rentTask, persona, genericRentResponse);
 
-assert.equal(expertResults.some((check) => check.status === 'not_implemented'), false, 'rent task checks should all be implemented');
-assert.ok(deterministicScore(expertResults) >= 90, `expert rent response should score high, got ${deterministicScore(expertResults)}`);
-assert.ok(deterministicScore(genericResults) <= 20, `generic rent response should score low, got ${deterministicScore(genericResults)}`);
+assert.equal(
+  expertResults.some((check) => check.status === 'not_implemented'),
+  false,
+  'rent task checks should all be implemented'
+);
+assert.ok(
+  deterministicScore(expertResults) >= 90,
+  `expert rent response should score high, got ${deterministicScore(expertResults)}`
+);
+assert.ok(
+  deterministicScore(genericResults) <= 20,
+  `generic rent response should score low, got ${deterministicScore(genericResults)}`
+);
 
 const foodTask = getTask('maria_food_spend_may');
 const foodResponse = `
@@ -46,7 +190,11 @@ In May, food-like spending was $833.96 when excluding the $58.23 Costco Gas purc
 That includes Costco warehouse food runs, Safeway, Trader Joe's, and restaurants; Costco should be separated from ordinary supermarket coding.
 `;
 const foodResults = evaluateDeterministicChecks(foodTask, persona, foodResponse);
-assert.equal(deterministicScore(foodResults), 100, `reasonable food gas-exclusion response should score 100, got ${deterministicScore(foodResults)}`);
+assert.equal(
+  deterministicScore(foodResults),
+  100,
+  `reasonable food gas-exclusion response should score 100, got ${deterministicScore(foodResults)}`
+);
 
 const stockTask = getTask('maria_msft_stock_risk');
 const stockResponse = `
@@ -55,14 +203,22 @@ Before selling, confirm you still hold the shares, check cost basis and withhold
 `;
 const stockResults = evaluateDeterministicChecks(stockTask, persona, stockResponse);
 const noHoldingsCheck = stockResults.find((check) => check.id === 'no_account_balance_as_holdings');
-assert.equal(noHoldingsCheck?.status, 'pass', '401(k) match / employer-risk wording should not be treated as account-balance-as-holdings fabrication');
+assert.equal(
+  noHoldingsCheck?.status,
+  'pass',
+  '401(k) match / employer-risk wording should not be treated as account-balance-as-holdings fabrication'
+);
 
 const costcoTask = getTask('maria_costco_optimization');
 const costcoResponse = `
 You spent $501.23 at Costco warehouse in May plus $58.23 at Costco Gas. Stick with Gold Star for now: Executive earns 2%, but you need about $3,250/year or $270/month for the $65 upgrade to be worth it. Separate warehouse purchases from gas when choosing the Costco Visa.
 `;
 const costcoResults = evaluateDeterministicChecks(costcoTask, persona, costcoResponse);
-assert.equal(deterministicScore(costcoResults), 100, `Costco warehouse/gas split plus Executive threshold should score 100, got ${deterministicScore(costcoResults)}`);
+assert.equal(
+  deterministicScore(costcoResults),
+  100,
+  `Costco warehouse/gas split plus Executive threshold should score 100, got ${deterministicScore(costcoResults)}`
+);
 
 const judgePrompt = buildJudgePrompt(
   rentTask,
@@ -78,15 +234,31 @@ const judgePrompt = buildJudgePrompt(
   expertResults
 );
 
-assert.ok(judgePrompt.includes('Expected opportunities:'), 'judge prompt should include expected opportunities');
-assert.ok(judgePrompt.includes('rent_seattle_mfte'), 'judge prompt should include planted MFTE opportunity');
-assert.ok(judgePrompt.includes('unexpected ideas'), 'judge prompt should preserve open-credit policy');
-assert.ok(judgePrompt.includes('"totalScore"'), 'judge prompt should require structured JSON output');
+assert.ok(
+  judgePrompt.includes('Expected opportunities:'),
+  'judge prompt should include expected opportunities'
+);
+assert.ok(
+  judgePrompt.includes('rent_seattle_mfte'),
+  'judge prompt should include planted MFTE opportunity'
+);
+assert.ok(
+  judgePrompt.includes('unexpected ideas'),
+  'judge prompt should preserve open-credit policy'
+);
+assert.ok(
+  judgePrompt.includes('"totalScore"'),
+  'judge prompt should require structured JSON output'
+);
 
 for (const task of tasks) {
   const taskPersona = getPersona(task.personaId);
   const results = evaluateDeterministicChecks(task, taskPersona, '');
-  assert.equal(results.some((check) => check.status === 'not_implemented'), false, `${task.id} has an unimplemented deterministic check`);
+  assert.equal(
+    results.some((check) => check.status === 'not_implemented'),
+    false,
+    `${task.id} has an unimplemented deterministic check`
+  );
 }
 
 // Current-fact scanner must not false-fire: stale values need a digit boundary,
@@ -120,8 +292,16 @@ const judgeWithClaims = parseJudgeEvaluation(
     dimensions: [{ id: 'correctness', score: 27, maxScore: 30, rationale: 'ok' }],
     summary: 'test',
     factualClaims: [
-      { claim: 'real contradiction', tableKey: 'irs_2026_hsa_self_only', state: 'verified_incorrect' },
-      { claim: 'made-up correction from memory', tableKey: 'no_such_fact', state: 'verified_incorrect' },
+      {
+        claim: 'real contradiction',
+        tableKey: 'irs_2026_hsa_self_only',
+        state: 'verified_incorrect'
+      },
+      {
+        claim: 'made-up correction from memory',
+        tableKey: 'no_such_fact',
+        state: 'verified_incorrect'
+      },
       { claim: 'asserted wrong with no key', tableKey: null, state: 'verified_incorrect' },
       { claim: 'a fact not in the table', tableKey: null, state: 'unverified' }
     ]

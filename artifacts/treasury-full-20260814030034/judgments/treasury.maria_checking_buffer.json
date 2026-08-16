@@ -1,0 +1,48 @@
+{
+  "taskId": "maria_checking_buffer",
+  "provider": "treasury",
+  "totalScore": 90,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the visible checking balance, rent, and credit card payment to derive a logical buffer."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The math is accurate. The claim about Washington state income tax is correct. The T-bill tax explanation is accurate."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, quantified recommendation for the buffer and the excess cash, with actionable next steps."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Includes appropriate caveats regarding liquidity and the nature of the cash buffer."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Washington state has no personal income tax",
+      "tableKey": "state_2026_no_income_tax",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the Microsoft 401(k) or ESPP as a higher-leverage destination for excess cash if the user's emergency fund is already sufficient, given the high brokerage balance.",
+    "Could have suggested a specific money market fund (MMF) ticker or brokerage sweep option for the idle cash to simplify the 'T-bill' recommendation."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that the T-bill state tax exemption is moot for a Washington resident, showing high attention to the user's specific location."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and accurate response that correctly sizes the checking buffer based on actual spending and provides a sound strategy for deploying idle cash."
+}

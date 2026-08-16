@@ -1,0 +1,54 @@
+{
+  "taskId": "maria_where_wasting_money",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "Excellent use of specific transaction data and account balances to ground all recommendations."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "Correctly identifies Microsoft wellness reimbursement and HSA/HYSA logic. Minor deduction for the inclusion of a raw display-card syntax artifact."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "Strong, actionable insights. Missed the opportunity to suggest a broader card-routing strategy (e.g., CSP vs. other potential cards) for the identified spend categories."
+    },
+    {
+      "id": "prudence",
+      "score": 11,
+      "maxScore": 15,
+      "rationale": "Good use of caveats, though the response includes a raw display-card syntax artifact '[Display artifact omitted from public capture]' which is a resolution/correctness defect."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft offers up to a $1,500 annual wellness reimbursement.",
+      "tableKey": "microsoft_2026_wellness_reimbursement",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "ClassPass expenses are eligible for Microsoft wellness reimbursement.",
+      "tableKey": "microsoft_2026_wellness_reimbursement",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response includes a raw display-card syntax artifact '[Display artifact omitted from public capture]' which should not be visible to the user."
+  ],
+  "missedOpportunities": [
+    "Did not provide a comprehensive card-routing strategy for the user's recurring spend (e.g., Costco, dining, travel) to maximize rewards beyond the specific savings identified."
+  ],
+  "unexpectedValidInsights": [
+    "Identified the potential for business expense tax deduction for Adobe software given the freelance income signal."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides highly personalized, evidence-backed savings opportunities, though it contains a minor formatting error with a raw display-card artifact."
+}

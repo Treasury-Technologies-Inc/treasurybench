@@ -1,0 +1,52 @@
+{
+  "taskId": "maria_401k_contribution",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's 8% contribution rate, $2,500 gross pay, and recent RSU vest to provide personalized context."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The math regarding the 2026 IRS limit and Microsoft's 50% match is correct. However, the response includes a raw card syntax artifact '[Display artifact omitted from public capture]' which is a resolution/correctness defect."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is clear and actionable, though it could have been more precise about the mechanics of the remaining 14 pay periods versus the annual limit."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response acknowledges cashflow but could have been more explicit about the tax implications of significantly increasing deferrals on take-home pay."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 IRS elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft matches 50% of employee 401(k) contributions up to the IRS elective deferral limit",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly mention the Mega Backdoor Roth opportunity available through the Microsoft plan, which is a high-leverage play given the user's recent $42,000 RSU vest."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified the significant cash flow flexibility provided by the recent RSU vest to fund higher retirement contributions."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, personalized advice on 401(k) contributions and Microsoft's match, though it contains a minor formatting error (card syntax) and missed the opportunity to discuss the Mega Backdoor Roth."
+}

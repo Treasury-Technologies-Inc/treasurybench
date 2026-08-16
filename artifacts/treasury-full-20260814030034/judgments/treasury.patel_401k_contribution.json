@@ -1,0 +1,65 @@
+{
+  "taskId": "patel_401k_contribution",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response accurately uses the visible payroll data for both Priya and Daniel to calculate current contribution rates and annualize them against the 2026 limits."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "Correctly identifies the 2026 401(k) limit ($24,500) and the family HSA limit ($8,750). Employer match facts for Salesforce and UCHealth are applied correctly."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for increasing contributions. The recommendation to increase rates is specific and grounded in the remaining deferral room."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately caveats the recommendations with 'if cashflow allows' and distinguishes between plan-level benefits and user-specific enrollment."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 401(k) elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 family HSA contribution limit is $8,750",
+      "tableKey": "irs_2026_hsa_family",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Salesforce matches 100% of employee 401(k) contributions on the first 6% of base salary, capped at $5,000",
+      "tableKey": "salesforce_2026_401k_match",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Salesforce offers a $750 annual HSA seed",
+      "tableKey": "salesforce_2026_hsa_seed",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 Roth IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Calculated specific semi-monthly contribution adjustments to reach the annual limit, which is highly actionable for the user."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a precise, well-grounded analysis of the Patel family's 401(k) pacing, correctly applying 2026 IRS limits and employer-specific match data."
+}

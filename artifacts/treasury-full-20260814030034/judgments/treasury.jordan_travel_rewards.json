@@ -1,0 +1,53 @@
+{
+  "taskId": "jordan_travel_rewards",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies and uses the specific transactions for Delta, Marriott, and Uber, and links them to the Chase Ink Business Preferred account."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Correctly identifies the 50% meal deduction rule and the tax treatment of rewards. However, it misses the opportunity to explicitly distinguish between the Schedule C business expense and the above-the-line self-employed health insurance deduction, which is a key persona need."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps for substantiation and reimbursement. The distinction between gross and net reporting is helpful for a freelancer."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "Good caveats on contract terms and receipt storage. Could have been more explicit about the risk of commingling if the user doesn't maintain strict separation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Business travel meals are generally 50% deductible on Schedule C.",
+      "tableKey": "irs_2026_business_meals_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Chase Ink Business Preferred earns 3x on travel.",
+      "tableKey": "chase_2026_ink_business_preferred_categories",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly advise on the separation of business and personal accounts for tax-reserve safety, despite the persona's stated need for tax-safe cashflow.",
+    "Could have suggested using the Ally Tax Reserve account to hold the reimbursement funds until the tax liability is settled."
+  ],
+  "unexpectedValidInsights": [
+    "Correctly identified that credit card rewards on business purchases are generally treated as non-taxable rebates."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, grounded advice on travel rewards and tax substantiation for a freelancer, though it could have better integrated the persona's specific tax-reserve and account-separation needs."
+}

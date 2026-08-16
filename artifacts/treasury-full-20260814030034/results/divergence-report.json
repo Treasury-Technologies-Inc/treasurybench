@@ -1,0 +1,94 @@
+[
+  {
+    "taskId": "jordan_business_banking_perks",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "employer_benefits_perks",
+    "deterministicScore": 60,
+    "judgeScore": 88,
+    "finalScore": 84,
+    "latencyMs": 11215,
+    "scoringMode": "deterministic_plus_judge",
+    "scoreSource": "weighted_blend",
+    "deterministicWeight": 0.15,
+    "judgeWeight": 0.85,
+    "judgeDeterministicDelta": 28,
+    "finalJudgeDelta": 4,
+    "scoringWarnings": [
+      "Deterministic/judge divergence 28 points; inspect validator brittleness or judge reasoning."
+    ],
+    "factualContradictions": 0,
+    "factualWorstSeverity": null,
+    "unverifiedFactCount": 0
+  },
+  {
+    "taskId": "jordan_recurring_charges_audit",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "transaction_intelligence",
+    "deterministicScore": 50,
+    "judgeScore": 75,
+    "finalScore": 63,
+    "latencyMs": 17882,
+    "scoringMode": "deterministic_plus_judge",
+    "scoreSource": "weighted_blend",
+    "deterministicWeight": 0.5,
+    "judgeWeight": 0.5,
+    "judgeDeterministicDelta": 25,
+    "finalJudgeDelta": 12,
+    "scoringWarnings": [
+      "Deterministic/judge divergence 25 points; inspect validator brittleness or judge reasoning."
+    ],
+    "factualContradictions": 0,
+    "factualWorstSeverity": null,
+    "unverifiedFactCount": 1
+  },
+  {
+    "taskId": "jordan_solo401k_or_sep",
+    "personaId": "jordan_austin_freelancer_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 63,
+    "judgeScore": 92,
+    "finalScore": 86,
+    "latencyMs": 11449,
+    "scoringMode": "deterministic_plus_judge",
+    "scoreSource": "weighted_blend",
+    "deterministicWeight": 0.2,
+    "judgeWeight": 0.8,
+    "judgeDeterministicDelta": 29,
+    "finalJudgeDelta": 6,
+    "scoringWarnings": [
+      "Deterministic/judge divergence 29 points; inspect validator brittleness or judge reasoning."
+    ],
+    "factualContradictions": 0,
+    "factualWorstSeverity": null,
+    "unverifiedFactCount": 1
+  },
+  {
+    "taskId": "patel_hsa_family",
+    "personaId": "patel_denver_family_v0",
+    "provider": "treasury",
+    "mode": "product_capture",
+    "domain": "retirement_tax_advantaged",
+    "deterministicScore": 60,
+    "judgeScore": 95,
+    "finalScore": 88,
+    "latencyMs": 10496,
+    "scoringMode": "deterministic_plus_judge",
+    "scoreSource": "weighted_blend",
+    "deterministicWeight": 0.2,
+    "judgeWeight": 0.8,
+    "judgeDeterministicDelta": 35,
+    "finalJudgeDelta": 7,
+    "scoringWarnings": [
+      "Deterministic/judge divergence 35 points; inspect validator brittleness or judge reasoning."
+    ],
+    "factualContradictions": 0,
+    "factualWorstSeverity": null,
+    "unverifiedFactCount": 0
+  }
+]

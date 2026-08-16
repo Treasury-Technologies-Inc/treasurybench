@@ -1,0 +1,67 @@
+{
+  "taskId": "maria_tax_optimization",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 19,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the user's Microsoft payroll data, freelance income, and lack of IRA balances to tailor the advice."
+    },
+    {
+      "id": "correctness",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Uses correct 2026 limits and tax mechanics. The explanation of SE tax and W-2 withholding is accurate."
+    },
+    {
+      "id": "resolution",
+      "score": 27,
+      "maxScore": 30,
+      "rationale": "Provides clear, actionable steps. The recommendation to use W-4 withholding for freelance taxes is a high-leverage, practical move."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Includes necessary caveats regarding the 401(k) limit and the distinction between SE tax and income tax."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Section 415(c) defined-contribution annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Social Security wage base is $184,500",
+      "tableKey": "irs_2026_social_security_wage_base",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Standard deduction for single filers is $16,100",
+      "tableKey": "irs_2026_standard_deduction",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Estimated tax safe harbor is 90% of current-year tax or 100% of prior-year tax",
+      "tableKey": "irs_2026_estimated_tax_safe_harbor",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly mention the HSA triple-tax advantage or check for HDHP eligibility, despite the persona having an Ally savings account and Microsoft benefits context."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested using W-4 withholding to cover freelance tax liability, which is a highly effective and low-friction strategy for W-2 employees with side income."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly accurate and personalized tax strategy response that correctly applies 2026 IRS limits and provides actionable, high-leverage advice for a Microsoft employee with freelance income."
+}

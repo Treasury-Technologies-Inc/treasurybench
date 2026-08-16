@@ -1,0 +1,37 @@
+{
+  "taskId": "maria_spend_may_total",
+  "provider": "treasury",
+  "totalScore": 100,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies all May 2026 transactions, correctly excludes income, and correctly scopes the data to the requested month."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "The total spend calculation of $4,197.71 is mathematically correct based on the provided transaction data. Categories are correctly grouped."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response is concise, directly answers the user's question, and provides a clear breakdown of spending."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response is factual and does not make unsafe financial claims or overreach into unsupported advice."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response is a highly accurate, well-grounded, and concise retrieval of the user's May 2026 spending data."
+}

@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_life_insurance_need",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "**You do not need to purchase an individual life insurance policy right now.** \n\nLife insurance exists primarily to replace your income for people who rely on you financially—such as a spouse, dependent children, or co-signers on shared debts. Because no one depends on your income, paying out-of-pocket for extra life insurance is unnecessary. Any basic life coverage provided automatically through an employer benefits package is more than sufficient to cover basic final expenses.\n\n### Higher-priority coverage checks\n\n1. **Long-term disability (LTD) insurance** — Protects your ongoing earning power, which is your largest financial asset as a single earner. Check your employer's plan to see what percentage of salary is covered, whether benefits are taxable, and if equity or bonuses are excluded.\n2. **Renters insurance with liability** — Covers personal belongings against fire or theft and provides personal liability protection if an accident occurs in your home. A policy with $300,000 in liability typically costs just $10 to $20 per month.\n3. **Health deductible and elimination fund** — Ensures your emergency savings can absorb your annual health plan maximum out-of-pocket limit while bridging the standard 90-day waiting period before long-term disability benefits take effect.\n\nDo you currently have an active renters insurance policy in place, or would you like help evaluating the liability limit on your current lease?",
+  "latencyMs": 20811,
+  "capturedAt": "2026-08-14T03:09:27.484Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

@@ -451,7 +451,7 @@ export const lockedFactTable: LockedFact[] = [
     kind: 'locked_benchmark_fact',
     currentness: 'benchmark_context',
     userSpecificity: 'product_terms',
-    text: 'For the 2026 benchmark context, the Costco Anywhere Visa by Citi earns 5% back on gas at Costco (5% on gas/EV charging combined up to $7,000/year, then 1%), 2% back at Costco warehouse and Costco.com, 3% on restaurants and eligible travel, and 1% on everything else. It earns 2% (not 5%) on in-warehouse Costco purchases.'
+    text: 'For the 2026 benchmark context, the Costco Anywhere Visa by Citi earns 5% back on gas at Costco and 4% back on other eligible gas and EV charging; those two gas categories share a combined $7,000/year spend cap, then earn 1%. It also earns 2% at Costco warehouse and Costco.com, 3% on restaurants and eligible travel, and 1% on everything else. It earns 2% (not 5%) on non-gas in-warehouse Costco purchases.'
   },
   {
     id: 'costco_2026_executive_membership',
@@ -564,6 +564,9 @@ export function lockedFactCurrentValues(key: string): string[] {
 
 export function lockedFactsText(): string {
   return lockedFactTable
-    .map((fact) => `- ${fact.id} [${fact.kind}; ${fact.currentness}; ${fact.userSpecificity}]: ${fact.text}`)
+    .map(
+      (fact) =>
+        `- ${fact.id} [${fact.kind}; ${fact.currentness}; ${fact.userSpecificity}]: ${fact.text}`
+    )
     .join('\n');
 }

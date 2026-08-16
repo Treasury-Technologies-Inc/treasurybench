@@ -1,0 +1,52 @@
+{
+  "taskId": "maria_save_on_rent",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the user's $2,350 rent, Seattle location, and employment context to ground its recommendations."
+    },
+    {
+      "id": "correctness",
+      "score": 20,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies Seattle-specific programs and lease rules. However, it contains a minor scale error in the Bilt rewards calculation (28,200 points valued at $423 is correct, but the prompt's 'no_rewards_scale_error' check flagged a potential confusion in the logic)."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "Excellent prioritization of MFTE/MHA as a high-leverage play. Next steps are concrete and actionable."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding eligibility and property-specific participation. Avoids guaranteeing outcomes."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Seattle Municipal Code (SMC 7.24) requires 180 days' written advance notice for rent increases.",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Washington State HB 1217 caps annual residential rent increases at the lesser of 7% plus CPI or 10%.",
+      "tableKey": "wa_2026_hb1217_rent_cap",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [
+    "The response references SMC 7.24 for the 180-day notice rule; while this is a common Seattle tenant protection, the specific code citation should be verified against the most current municipal code."
+  ],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Included specific mention of EDRA (Economic Displacement Relocation Assistance) as a leverage point for tenants facing large rent hikes."
+  ],
+  "safetyIssues": [],
+  "summary": "A highly personalized and actionable response that correctly identifies Seattle-specific housing programs and provides clear, grounded steps for rent optimization."
+}

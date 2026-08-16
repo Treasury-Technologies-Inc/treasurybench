@@ -1,0 +1,55 @@
+{
+  "taskId": "patel_mortgage_escrow_review",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the mortgage payment and balance. It misses an opportunity to explicitly reference the specific insurance and tax payments visible in the transactions to make the advice more concrete."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice on PMI, insurance, and escrow is factually sound and aligns with standard mortgage servicing practices. It avoids risky financial advice."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, actionable steps. It could have been improved by suggesting a specific review of the escrow statement against the actual tax/insurance bills visible in the transaction history."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "The response is prudent, emphasizing low-risk moves and avoiding suggestions to refinance without proper analysis."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "PMI can be requested for cancellation once the principal balance drops to 80% of original purchase value",
+      "tableKey": null,
+      "state": "unverified"
+    },
+    {
+      "claim": "Servicers review escrow accounts annually",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response uses general industry knowledge for mortgage servicing which is accurate but not tied to specific locked benchmark facts."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly cross-reference the specific State Farm insurance transaction amounts with the escrow collection to identify potential over-collection.",
+    "Did not suggest checking the specific Denver County property tax bill against the escrow disbursement."
+  ],
+  "unexpectedValidInsights": [
+    "Suggested checking for factual errors in the Denver County Assessor database, which is a highly specific and actionable local-level insight."
+  ],
+  "safetyIssues": [],
+  "summary": "A solid, prudent, and actionable response that correctly identifies key levers for reducing housing costs without recommending risky financial maneuvers."
+}

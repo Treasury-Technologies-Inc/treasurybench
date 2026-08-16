@@ -1,0 +1,10 @@
+{
+  "taskId": "patel_spend_may_total",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "In May 2026, your total consumption spending was **$8,556.08**. An additional **$700.00** went toward savings transfers ($400 HSA Contribution and $300 Education Savings), bringing total outflows to **$9,256.08** (covering observed transactions through May 27).\n\n### Key spending drivers\n\n- **Fixed essentials** — Mortgage ($3,850.00) and Childcare ($1,870.00) accounted for roughly 67% of your total consumption spend.\n- **Variable expenses** — Groceries was the largest flexible category at $1,023.54, followed by Auto Loan ($485.00) and Insurance ($372.00).\n- **Discretionary & household** — Household ($242.19), Medical ($185.40), and Dining ($164.75) remained modest.",
+  "latencyMs": 4190,
+  "capturedAt": "2026-08-14T03:59:59.640Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

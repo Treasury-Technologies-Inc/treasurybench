@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_coffee_shops_may",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "### May Coffee Shop & Cafe Transactions\n\nAcross all 18 expense transactions in May 2026, only **one** transaction is from a cafe or coffee shop:\n\n- **Oddfellows Cafe** — **$42.16** on May 3, 2026 (Chase Sapphire Preferred ••••8600)\n\nBecause there was only one matching transaction during the month, there are no additional cafe or coffee shop purchases to rank. For broader dining context, your other two May dining expenses were **Tavolata** ($88.70 on May 8) and **Ramen Danbo** ($31.25 on May 24).",
+  "latencyMs": 6599,
+  "capturedAt": "2026-08-14T03:01:07.468Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

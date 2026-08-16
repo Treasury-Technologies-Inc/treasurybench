@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_spend_may_total",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "In May 2026, your total spending was **$4,197.71**.\n\nYour largest spending categories were:\n- **Rent** — $2,350.00\n- **Groceries** — $671.85\n- **Travel** — $560.64\n- **Dining** — $162.11\n- **Fitness** — $89.00\n- **Utilities** — $89.00",
+  "latencyMs": 3865,
+  "capturedAt": "2026-08-14T03:00:34.248Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

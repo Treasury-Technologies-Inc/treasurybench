@@ -1,0 +1,44 @@
+{
+  "taskId": "patel_idle_cash",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the visible checking and savings balances and correctly identifies the mortgage and childcare as primary fixed expenses. It misses the opportunity to explicitly link the specific payroll deposit frequency to the buffer logic."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The math is sound and grounded in the provided data. It correctly identifies the cash surplus. It treats contributions as consumption in the monthly outflow calculation, which is a minor logic error."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable recommendation with specific dollar amounts. The steps are logical and easy to follow."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Includes appropriate caveats regarding emergency reserve goals and the nature of the buffer. It avoids over-precision."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [
+    "The response treats 529 and HSA contributions as monthly consumption/outflows rather than savings/investment allocations, which slightly mischaracterizes the household's cashflow structure."
+  ],
+  "missedOpportunities": [
+    "The response did not leverage the Salesforce/UCHealth employer benefits (e.g., HSA seed, wellness reimbursement) to optimize the cashflow further, despite the persona having these available.",
+    "Failed to mention the potential for using the taxable brokerage or 529 for longer-term goals rather than just keeping everything in the HYSA."
+  ],
+  "unexpectedValidInsights": [
+    "The recommendation to set up an automatic sweep on payday is a high-leverage, low-admin action that fits the persona's preference for simplicity."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and actionable response that correctly identifies the idle cash surplus and provides a conservative, logical plan for reallocating funds while maintaining necessary liquidity."
+}

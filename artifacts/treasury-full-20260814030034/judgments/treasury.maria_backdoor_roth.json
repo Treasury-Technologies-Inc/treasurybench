@@ -1,0 +1,55 @@
+{
+  "taskId": "maria_backdoor_roth",
+  "provider": "treasury",
+  "totalScore": 100,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly identifies the user's $0 Traditional IRA balance, references the Microsoft RSU vest as a MAGI risk, and uses the correct 2026 IRA contribution limit."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "All tax limits (2026 IRA limit, Roth phaseout, 401k deferral) are accurate per the locked benchmark facts. The pro-rata explanation is correct."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable step-by-step guide for the backdoor Roth and correctly identifies the Mega Backdoor Roth as an additional opportunity."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "Appropriately caveats the income phaseout risk and the need for Form 8606 reporting."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "2026 Roth IRA contribution phaseout for single filers is $153,000 to $168,000",
+      "tableKey": "irs_2026_roth_single_phaseout",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 traditional/Roth IRA contribution limit is $7,500",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 401(k) employee elective deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [
+    "Correctly identified the Mega Backdoor Roth opportunity specific to the Microsoft 401(k) plan."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, personalized, and actionable advice regarding the backdoor Roth IRA, correctly leveraging the user's specific financial data and current 2026 tax rules."
+}

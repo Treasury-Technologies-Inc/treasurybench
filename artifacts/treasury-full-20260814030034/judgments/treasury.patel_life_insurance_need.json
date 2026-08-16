@@ -1,0 +1,49 @@
+{
+  "taskId": "patel_life_insurance_need",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively uses the mortgage balance, child age, and income levels. It misses a specific reference to the taxable brokerage balance as a liquid asset offset, though it mentions the category generally."
+    },
+    {
+      "id": "correctness",
+      "score": 28,
+      "maxScore": 30,
+      "rationale": "The advice is factually sound and avoids common pitfalls like recommending whole life. It correctly identifies the limitations of group life insurance."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "Provides a clear, actionable framework (DIME) and specific coverage ranges. It could have been slightly more precise by explicitly referencing the employer-provided disability benefits mentioned in the persona memories."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Good use of caveats regarding portability and the need to verify employer-specific plan details."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Employer group policies typically provide 1–2x annual base salary",
+      "tableKey": null,
+      "state": "unverified"
+    }
+  ],
+  "factualIssues": [
+    "The response relies on general industry standards for group life insurance rather than specific plan documents, which is appropriate given the persona data does not contain the specific group life policy terms."
+  ],
+  "missedOpportunities": [
+    "Did not explicitly mention verifying the specific UCHealth group life and disability benefit terms before purchasing individual coverage, as requested in the scope notes."
+  ],
+  "unexpectedValidInsights": [
+    "The use of the DIME framework is a highly effective, standard, and conservative approach for this persona."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides a well-grounded, needs-based analysis for term life insurance, correctly prioritizing term over whole life and providing a clear, actionable framework for the Patel family."
+}

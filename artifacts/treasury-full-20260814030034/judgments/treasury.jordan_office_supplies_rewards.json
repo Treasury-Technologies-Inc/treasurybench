@@ -1,0 +1,55 @@
+{
+  "taskId": "jordan_office_supplies_rewards",
+  "provider": "treasury",
+  "totalScore": 85,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response effectively links advice to the specific transactions (Office Depot, Adobe, AWS, etc.) and accounts (Ink Preferred, Blue Business Plus) visible in the provided data."
+    },
+    {
+      "id": "correctness",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response correctly identifies the Ink Preferred 3x categories and the flat-rate nature of the BBP. It correctly identifies the Ink Business Cash 5x categories. It fails to explicitly separate business/personal/tax-reserve buckets as requested by the persona summary."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The advice is actionable and provides clear, quantified impact. It avoids over-annualizing without caveat, though it could have been more explicit about the 'if typical' nature of the monthly spend."
+    },
+    {
+      "id": "prudence",
+      "score": 10,
+      "maxScore": 15,
+      "rationale": "The response suggests a new card (Ink Cash) but provides the necessary context regarding the existing annual fee and points synergy. It lacks a strong warning about the impact of new credit inquiries or the administrative burden of managing multiple business cards."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Chase Ink Business Preferred earns 3x on shipping, social media/search engine advertising, travel, and internet/cable/phone services.",
+      "tableKey": "chase_2026_ink_business_preferred_categories",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Chase Ink Business Cash earns 5% at office supply stores and on internet, cable, and phone services on the first $25,000 in combined purchases per account anniversary year.",
+      "tableKey": "chase_2026_ink_business_cash",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Amex Blue Business Plus earns 2x Membership Rewards points per dollar on all everyday business spend up to $50,000 per year.",
+      "tableKey": "amex_2026_blue_business_plus_categories",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "The response did not address the persona's need to separate business, tax-reserve, and personal spending buckets, which was a core preference in the persona summary."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, actionable advice on optimizing credit card rewards for business expenses, though it misses the persona's specific preference for financial bucket separation."
+}

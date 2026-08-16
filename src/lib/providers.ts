@@ -1,4 +1,10 @@
-import type { CapturedResponse, ProviderMode, ProviderRunRequest, ProviderRunResult, ProviderUsage } from '../schema';
+import type {
+  CapturedResponse,
+  ProviderMode,
+  ProviderRunRequest,
+  ProviderRunResult,
+  ProviderUsage
+} from '../schema';
 import { buildPrompt } from './format';
 
 export interface BenchmarkProvider {
@@ -7,7 +13,10 @@ export interface BenchmarkProvider {
   run(request: ProviderRunRequest): Promise<ProviderRunResult>;
 }
 
-export async function runProviderTask(provider: BenchmarkProvider, request: Omit<ProviderRunRequest, 'prompt'>): Promise<CapturedResponse> {
+export async function runProviderTask(
+  provider: BenchmarkProvider,
+  request: Omit<ProviderRunRequest, 'prompt'>
+): Promise<CapturedResponse> {
   const prompt = buildPrompt(request.persona, request.task, provider.mode);
   const result = await provider.run({ ...request, prompt });
   return {
@@ -44,6 +53,13 @@ interface OpenAIProviderOptions {
   maxOutputTokens: number;
   timeoutMs: number;
   reasoningEffort?: 'minimal' | 'low' | 'medium' | 'high';
+  /**
+   * Override the Responses API endpoint. Defaults to api.openai.com; point at any
+   * OpenAI-compatible proxy to reach models not available on your own account.
+   */
+  baseUrl?: string;
+  /** Override the system instructions (e.g. to test conciseness constraints). */
+  instructions?: string;
 }
 
 export function createOpenAIFullContextProvider(options: OpenAIProviderOptions): BenchmarkProvider {
@@ -56,7 +72,7 @@ export function createOpenAIFullContextProvider(options: OpenAIProviderOptions):
       const timeout = setTimeout(() => controller.abort(), options.timeoutMs);
       let response: Response;
       try {
-        response = await fetch('https://api.openai.com/v1/responses', {
+        response = await fetch(options.baseUrl ?? 'https://api.openai.com/v1/responses', {
           method: 'POST',
           headers: {
             Authorization: `Bearer ${options.apiKey}`,
@@ -66,6 +82,7 @@ export function createOpenAIFullContextProvider(options: OpenAIProviderOptions):
           body: JSON.stringify({
             model: options.model,
             instructions:
+              options.instructions ??
               'Answer as a careful personal-finance assistant. Use the provided user context, be factual and current, quantify impact, state assumptions, and avoid inventing user data.',
             input: request.prompt.prompt,
             max_output_tokens: options.maxOutputTokens,

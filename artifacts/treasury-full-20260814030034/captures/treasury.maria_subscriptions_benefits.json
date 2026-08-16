@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_subscriptions_benefits",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "Based on your recent transactions, you have **5 recurring subscriptions and utility bills** totaling **$332.98/month** (excluding rent):\n\n- **ClassPass**: $89.00/mo\n- **Xfinity**: $89.00/mo\n- **AT&T Wireless**: $72.00/mo\n- **Adobe**: $59.99/mo\n- **Netflix**: $22.99/mo\n\n### Opportunities to optimize\n\n1. **ClassPass ($89/mo — up to $1,068/yr savings)** — Microsoft's benefits package provides up to **$1,500 per year** in gym and wellness reimbursement. If you haven't already claimed this benefit for the year, submit your ClassPass receipts through the employee benefits portal to have this fully reimbursed.\n2. **Adobe ($59.99/mo)** — If you use Adobe for your freelance consulting work, keep receipts to claim it as a deductible business expense. If it is for personal use, review whether you need the complete Creative Cloud plan or if a single-app plan or annual billing discount reduces the cost.\n3. **Xfinity Internet ($89/mo)** — At $89/month for standalone internet, contact Xfinity customer support or check local Seattle fiber options to negotiate a promotional rate or switch to a lower tier, which typically saves $20–$35/month.\n4. **AT&T Wireless ($72/mo)** — Verify whether your account has the Microsoft corporate employee signature discount applied, or check if your monthly data usage aligns with a cheaper tier.\n5. **Netflix ($22.99/mo)** — A $22.99/month charge reflects the multi-stream Premium tier. If you don't need four simultaneous 4K streams, switching to the Standard plan ($15.49/mo) saves about $7.50/month ($90/yr).\n\nWould you like help looking into any of these specific accounts or benefits?",
+  "latencyMs": 21716,
+  "capturedAt": "2026-08-14T03:10:07.092Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

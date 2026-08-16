@@ -1,0 +1,62 @@
+{
+  "taskId": "jordan_where_wasting_money",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response effectively grounds advice in the provided transaction and balance data, correctly identifying the tax reserve, business checking, and specific spending patterns."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The response correctly cites 2026 tax limits (Solo 401k, HSA) and provides accurate financial advice consistent with the locked facts."
+    },
+    {
+      "id": "resolution",
+      "score": 30,
+      "maxScore": 35,
+      "rationale": "The response provides high-leverage, actionable insights (Solo 401k, HSA funding, card routing) that are highly relevant to the persona's self-employed status."
+    },
+    {
+      "id": "prudence",
+      "score": 14,
+      "maxScore": 15,
+      "rationale": "The response maintains a professional tone, separates business/personal finances, and avoids unsafe financial claims."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Traditional IRA maxes out at $7,500 for 2026",
+      "tableKey": "irs_2026_ira_limit",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Solo 401(k) employee deferral limit is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Solo 401(k) annual additions limit is $72,000",
+      "tableKey": "irs_2026_415c_defined_contribution",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "2026 self-only HSA contribution limit is $4,400",
+      "tableKey": "irs_2026_hsa_self_only",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly mention the potential for the home office deduction (simplified method) given the Schedule C filing status."
+  ],
+  "unexpectedValidInsights": [
+    "Identified the specific accounting risk of mixing personal groceries/dining on the Amex Blue Business Plus."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides highly personalized, accurate, and actionable financial advice tailored to the user's self-employed status and 2026 tax rules."
+}

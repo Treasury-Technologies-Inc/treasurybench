@@ -1,0 +1,126 @@
+{
+  "unverifiedClaimCount": 20,
+  "uniqueClaimCount": 20,
+  "entries": [
+    {
+      "claim": "Adobe's standard annual plans billed monthly include an early termination fee of 50% of the remaining commitment if canceled mid-term",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["jordan_subscriptions_benefits"]
+    },
+    {
+      "claim": "Austin SMART Housing allocations at the 60%–80% MFI tiers",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["jordan_rent_affordability"]
+    },
+    {
+      "claim": "Chase Sapphire Preferred earns 3x on dining",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["maria_credit_card_strategy"]
+    },
+    {
+      "claim": "Chase Sapphire Preferred earns 3x on select streaming services",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["maria_credit_card_strategy"]
+    },
+    {
+      "claim": "E&O premiums are fully deductible as an ordinary business expense on Schedule C.",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["jordan_disability_liability_need"]
+    },
+    {
+      "claim": "Employer group life policies are rarely portable",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["patel_insurance_review"]
+    },
+    {
+      "claim": "Employer group policies typically provide 1–2x annual base salary",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["patel_life_insurance_need"]
+    },
+    {
+      "claim": "Employer-paid disability benefit payouts are taxable",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["patel_insurance_review"]
+    },
+    {
+      "claim": "FICA payroll tax exemption is 7.65%",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["patel_where_wasting_money"]
+    },
+    {
+      "claim": "Financial planning benchmarks generally recommend keeping speculative or single-asset volatile holdings between 3% and 5%",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["jordan_crypto_concentration"]
+    },
+    {
+      "claim": "Form 5500-EZ filing requirement for Solo 401(k) at $250,000",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["jordan_solo401k_or_sep"]
+    },
+    {
+      "claim": "Individual disability premiums paid with after-tax dollars result in tax-free benefits.",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["jordan_disability_liability_need"]
+    },
+    {
+      "claim": "Microsoft automatically provides basic group life insurance at 3x base salary at no cost",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["maria_insurance_review"]
+    },
+    {
+      "claim": "Microsoft's standard benefits package provides employer-paid long-term disability (LTD) covering 60% of base salary",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["maria_insurance_review"]
+    },
+    {
+      "claim": "PMI can be requested for cancellation once the principal balance drops to 80% of original purchase value",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["patel_mortgage_escrow_review"]
+    },
+    {
+      "claim": "Renters insurance with $300,000 in liability typically costs $10 to $20 per month.",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["maria_life_insurance_need"]
+    },
+    {
+      "claim": "Seattle MFTE/MHA programs target 40% to 90% of Area Median Income (AMI)",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["maria_mfte_eligibility_check"]
+    },
+    {
+      "claim": "Seattle Municipal Code (SMC 7.24) requires 180 days' written advance notice for rent increases.",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["maria_save_on_rent"]
+    },
+    {
+      "claim": "Servicers review escrow accounts annually",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["patel_mortgage_escrow_review"]
+    },
+    {
+      "claim": "switching from monthly to annual billing often yields a 10%–20% discount",
+      "occurrences": 1,
+      "providers": ["treasury"],
+      "tasks": ["jordan_recurring_charges_audit"]
+    }
+  ]
+}

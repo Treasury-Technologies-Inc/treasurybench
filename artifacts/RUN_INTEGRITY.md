@@ -9,12 +9,14 @@ be read as favoring any provider, it is disclosed here with the magnitude.
 
 | Provider | Lane | Final | Factually Clean | Notes |
 | --- | --- | ---: | ---: | --- |
-| Treasury | product contender | 85.5 | 93% | live PWA agent with tool calls |
+| Treasury (Aug 2026, current) | product contender | 89 | 100% | live PWA agent with tool calls; 83 tasks |
+| Treasury (Jun 2026, superseded) | product contender | 85.5 | 93% | live PWA agent with tool calls |
 | ChatGPT (`chat-latest`) | full-context baseline | 79.6 | 83% | reference baseline, **not** a product contender (idealized in-prompt context) |
 | Origin | product contender | 71.0 | 86% | 73.1 excluding capture-harness import failures — see below |
 | Monarch | product contender | 52.1 | 86% | |
 
-Scores are task-weighted across all 81 final scored rows per provider, judge-primary
+Scores are task-weighted across every final scored row per provider (81 for the
+June runs, 83 for Treasury's August run), judge-primary
 where judge output exists, with factual contradictions against the locked-fact
 table applying hard caps (material 65, dangerous 40). Equal-weighted-domain,
 per-domain, and Factual Integrity breakdowns are in each run's
@@ -86,7 +88,9 @@ definitive, and is planned as follow-up validation.
 
 ## Capture-date spread
 
-- Treasury and the ChatGPT baseline were captured **2026-06-09**.
+- Treasury's **current** run was captured **2026-08-14**. No competitor has been
+  re-measured since June, so any Treasury-vs-rival comparison spans two dates.
+- Treasury's superseded June run and the ChatGPT baseline were captured **2026-06-09**.
 - Monarch and Origin were captured **2026-06-05**.
 - The benchmark date (used for all fact-currentness grading) is locked to each
   persona's `asOfDate` (**2026-05-31**), so fact grading is identical regardless
@@ -176,7 +180,12 @@ captures this appears two ways, by design:
 - `[Displayed Treasury Insight card]` followed by the card's summary and
   `Highlights:` line — the normal case. The card text is user-visible advice and
   is kept in the capture so the answer is graded on its full visible content.
-- `[Display artifact omitted from public capture]` — used on the two captures
+- `[Display artifact omitted from public capture]` — in the **August 2026 run**
+  this marker also replaces the product's inline display placeholder wherever it
+  appeared mid-answer (38 occurrences across 33 files: 12 captures, 12 judge
+  prompts, and 14 references inside 9 judgments). Redaction is applied
+  after judging, so no score is affected. In the **June 2026 run** it was used on
+  two captures
   (`treasury.jordan_business_banking_perks.json`, `treasury.patel_401k_contribution.json`)
   where the product additionally emitted raw display/stream output. The raw
   internal rendering detail is redacted to avoid publishing product internals,
@@ -187,7 +196,8 @@ captures this appears two ways, by design:
 ## Coverage
 
 V1 uses **3 synthetic personas** (a Seattle Microsoft employee, a Denver
-dual-income family, an Austin freelancer) across 81 tasks. All three are
+dual-income family, an Austin freelancer) across 83 tasks (81 for the June runs,
+which predate two added spending tasks). All three are
 relatively affluent US tech-worker households. The benchmark does not yet cover
 low-income, retiree, non-US, or thin-file profiles, and results should not be
 generalized to them. All personas and financial data are synthetic (see

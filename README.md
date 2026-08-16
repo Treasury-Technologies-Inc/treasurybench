@@ -2,17 +2,38 @@
 
 Personal-finance assistant benchmark — evaluate how well AI-powered finance products and frontier models use real user data to surface high-leverage financial opportunities.
 
-**v0.1.0** · 3 personas · 81 tasks · 12 domains · judge-primary scoring with table-grounded factual verification
+**v0.2.0** · 3 personas · 83 tasks · 12 domains · judge-primary scoring with table-grounded factual verification
+
+> **Two measurement dates.** Treasury's current result is the **August 2026** run
+> (83 tasks). Origin, Monarch and the ChatGPT baseline were measured in **June 2026**
+> (81 tasks) and have not been re-measured — they may have improved since. Any
+> Treasury-vs-rival comparison below therefore spans two dates, and says so.
 
 ---
 
-## Results — v0.1.0
+## Results
 
-### Leaderboard
+### Current Treasury run — August 2026 (v0.2.0)
+
+| Provider | Lane | Score | Factually Clean | Median Latency | Measured |
+| --- | --- | ---: | ---: | ---: | --- |
+| **Treasury** | Product contender | **89** | **100%** (83/83) | 11.6s | 2026-08-14 |
+
+Treasury scored 89 across 83 tasks with **zero** material and **zero** dangerous
+factual contradictions, winning all 12 domains against the June competitor set.
+Restricted to the June run's exact 81 tasks it also scores 89, so the change is
+not an artifact of the two tasks added since. It is a **single sample** — four
+tasks regressed 10+ points versus June and are named, un-investigated, in that
+run's `RUN_NOTES.md`.
+
+### June 2026 cross-provider run (v0.1.0)
+
+Every column below — including Treasury's — is the June measurement, so the
+providers are comparable with each other.
 
 | Provider | Lane | Score | Factually Clean | Median Latency |
 | --- | --- | ---: | ---: | ---: |
-| **Treasury** | Product contender | **85.5** | 93% | 13.7s |
+| Treasury (superseded) | Product contender | 85.5 | 93% | 13.7s |
 | ChatGPT `chat-latest` | Full-context baseline † | 79.6 | 83% | 8.0s |
 | **Origin** | Product contender | **71.0** ‡ | 86% | 46.0s |
 | **Monarch** | Product contender | **52.1** | 86% | 100.7s |
@@ -23,9 +44,11 @@ Personal-finance assistant benchmark — evaluate how well AI-powered finance pr
 
 Scores are 0–100, judge-primary with table-grounded factual caps. Stale or wrong financial facts (contribution limits, tax rules, program terms) hard-cap the task score regardless of prose quality — material errors cap at 65, dangerous errors at 40. Full scoring architecture: [SCORING.md](SCORING.md).
 
-### By Domain
+### By Domain — June 2026 run
 
-Best score per row bolded. † marks the full-context baseline (not a product contender).
+Treasury's current per-domain scores are in
+`artifacts/treasury-full-20260814030034/results/final-summary.md` and are higher in
+most domains. Best score per row bolded. † marks the full-context baseline (not a product contender).
 
 | Domain | Tasks | Treasury | Origin | Monarch | ChatGPT † |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -42,7 +65,7 @@ Best score per row bolded. † marks the full-context baseline (not a product co
 | Debt & Credit Health | 3 | 84 | 80 | 81 | **96** |
 | Life Planning & Major Decisions | 3 | **90** | 79 | 51 | 71 |
 
-### By Persona
+### By Persona — June 2026 run
 
 | Persona | Treasury | Origin | Monarch | ChatGPT † |
 | --- | ---: | ---: | ---: | ---: |
@@ -52,7 +75,7 @@ Best score per row bolded. † marks the full-context baseline (not a product co
 
 ### Factual Integrity
 
-Share of answers with no locked-fact contradiction across 81 tasks. Dangerous = incorrect fact that could cause real financial harm (e.g. stale contribution limit cited as actionable advice).
+June 2026 run. Share of answers with no locked-fact contradiction across 81 tasks. Treasury's August run is 100% clean (83/83), 0 material, 0 dangerous. Dangerous = incorrect fact that could cause real financial harm (e.g. stale contribution limit cited as actionable advice).
 
 | Provider | Factually Clean | Material errors | Dangerous errors |
 | --- | ---: | ---: | ---: |
@@ -71,7 +94,8 @@ All captures, judge prompts, judgments, and scored results are in `artifacts/`.
 
 | Run | Score | Tasks | Captured | Notes |
 | --- | ---: | ---: | --- | --- |
-| `treasury-full-20260609001842` | 85.5 | 81 | 2026-06-09 | Live Treasury PWA advisor with tool calls |
+| `treasury-full-20260814030034` | **89** | 83 | 2026-08-14 | Current. Live Treasury PWA advisor with tool calls |
+| `treasury-full-20260609001842` | 85.5 | 81 | 2026-06-09 | Superseded by the August run |
 | `chatgpt-chat-latest-full-20260609121316` | 79.6 | 81 | 2026-06-09 | Full-context baseline — not a product contender |
 | `origin-full-20260605T160538` | 71.0 / 73.1 | 81 | 2026-06-05 | 73.1 excluding 16 balance-import failures |
 | `monarch-full-20260605T200447` | 52.1 | 81 | 2026-06-05 | |
@@ -101,7 +125,7 @@ Three synthetic US households with transaction history, account balances, saved 
 
 ### Tasks
 
-81 natural user questions (27 per persona) across 12 domains. Tasks are phrased like real user questions — "How can I save money on rent?" not "Identify Seattle MFTE eligibility." The assistant must infer the opportunity from the persona's signals.
+83 natural user questions (29 / 27 / 27 per persona) across 12 domains. Tasks are phrased like real user questions — "How can I save money on rent?" not "Identify Seattle MFTE eligibility." The assistant must infer the opportunity from the persona's signals.
 
 ### Scoring
 

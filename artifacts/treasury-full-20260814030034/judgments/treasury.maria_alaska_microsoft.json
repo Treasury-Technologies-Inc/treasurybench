@@ -1,0 +1,52 @@
+{
+  "taskId": "maria_alaska_microsoft",
+  "provider": "treasury",
+  "totalScore": 92,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 24,
+      "maxScore": 25,
+      "rationale": "Correctly identified the Alaska Airlines transactions and the Microsoft employer context."
+    },
+    {
+      "id": "correctness",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "Accurately referenced the Microsoft-linked Alaska/Atmos status challenge and card benefits."
+    },
+    {
+      "id": "resolution",
+      "score": 32,
+      "maxScore": 35,
+      "rationale": "Provided actionable steps for the status challenge and clear caveats regarding corporate vs. personal travel."
+    },
+    {
+      "id": "prudence",
+      "score": 13,
+      "maxScore": 15,
+      "rationale": "Appropriately caveated that status challenges are not retroactive and that corporate insurance does not apply to personal trips."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "Microsoft is an eligible employer for an Alaska/Atmos corporate status challenge",
+      "tableKey": "alaska_2026_microsoft_corporate_status_challenge",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Chase Sapphire Preferred provides primary auto rental collision damage waiver coverage",
+      "tableKey": "chase_2026_sapphire_preferred_rental",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Could have explicitly mentioned the potential for using the Microsoft ESPP or 401(k) match to build liquidity for future travel, though this was not strictly required by the prompt."
+  ],
+  "unexpectedValidInsights": [
+    "Distinguished between corporate booking tools and personal travel booking, which is a high-value practical insight for a corporate employee."
+  ],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, personalized, and actionable advice regarding the user's Microsoft-linked travel benefits and Alaska Airlines loyalty program, while maintaining appropriate professional boundaries."
+}

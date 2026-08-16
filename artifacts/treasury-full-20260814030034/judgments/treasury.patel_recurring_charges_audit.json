@@ -1,0 +1,37 @@
+{
+  "taskId": "patel_recurring_charges_audit",
+  "provider": "treasury",
+  "totalScore": 100,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response accurately identifies all recurring transactions from the provided CSV data, correctly categorizing them into discretionary subscriptions and fixed obligations."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "Calculations for monthly totals are accurate based on the May 2026 transaction data. No stale or incorrect external facts were introduced."
+    },
+    {
+      "id": "resolution",
+      "score": 20,
+      "maxScore": 20,
+      "rationale": "The response directly answers the user's question with a clear, logical breakdown and appropriate separation of subscription types."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately distinguishes between fixed financial commitments and discretionary subscriptions, avoiding harmful advice to cancel essential bills."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides a precise, well-grounded audit of recurring charges for May 2026, correctly separating discretionary subscriptions from essential household bills."
+}

@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_recurring_charges_audit",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "### Subscriptions, fitness, and software\n\nThese are discretionary memberships and recurring digital services observed in May:\n\n- **ClassPass** (Fitness, May 16): $89.00\n- **Adobe** (Subscriptions, May 14): $59.99\n- **Netflix** (Subscriptions, May 13): $22.99\n\n**Subscriptions/fitness/software total:** $171.98\n\n---\n\n### Phone and internet utility bills\n\nThese are essential communication and home utility services observed in May:\n\n- **AT&T Wireless** (Phone, May 9): $72.00\n- **Xfinity** (Utilities/Internet, May 5): $89.00\n\n**Phone/internet utility bills total:** $161.00\n\n---\n\n### Separate note on housing\n\n- **Cascade Apartments** (Rent, May 1): $2,350.00 (excluded from the review totals above).",
+  "latencyMs": 9627,
+  "capturedAt": "2026-08-14T03:01:17.100Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

@@ -1,0 +1,10 @@
+{
+  "taskId": "patel_college_savings_allocation",
+  "personaId": "patel_denver_family_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "Yes, your current **$300/month** contribution ($3,600/year) to the Colorado 529 CollegeInvest plan is well-calibrated and fits cleanly alongside your other financial priorities.\n\n### How your 529 compares to your overall picture\n\n- **Strong head start for age 3** — With **$12,400** already in the Colorado 529 and roughly 15 years until college, continuing at $300/month provides steady compounding without locking up too much liquidity early on.\n- **Retirement and long-term wealth remain prioritized** — You hold **$240,000 across your 401(k) plans** ($142,000 at Salesforce and $98,000 at UCHealth) plus **$54,000 in taxable brokerage** and **$6,800 in your HSA**. Because retirement cannot be borrowed for while college costs offer multiple funding avenues (scholarships, financial aid, loans, 529-to-Roth rollovers), keeping retirement primary is the right balance.\n- **Healthy cash reserve intact** — You maintain **$43,430 in liquid cash** ($28,750 in Marcus High Yield Savings and $14,680 in checking), meaning your 529 deposits do not stress everyday family cash flow or emergency reserves.\n- **State tax efficiency** — Contributing to Colorado's direct CollegeInvest plan allows Colorado taxpayers to claim a state income tax deduction on eligible contributions.\n\n### Recommended next actions\n\n- **Maintain current pace** — Keep the automatic $300/month contribution in place while your child is young. \n- **Revisit around middle school** — As your child approaches ages 11–13 and educational paths become clearer, evaluate whether you want to adjust the target up or ease off.",
+  "latencyMs": 13550,
+  "capturedAt": "2026-08-14T04:04:40.635Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

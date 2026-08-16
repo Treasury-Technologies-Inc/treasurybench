@@ -1,0 +1,41 @@
+{
+  "taskId": "jordan_checking_buffer",
+  "provider": "treasury",
+  "totalScore": 88,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 18,
+      "maxScore": 20,
+      "rationale": "The response effectively uses the visible account balances and transaction data to anchor the buffer recommendations. It correctly identifies the business and personal checking accounts and uses the specific transaction amounts for rent and insurance."
+    },
+    {
+      "id": "correctness",
+      "score": 22,
+      "maxScore": 25,
+      "rationale": "The math is generally sound and grounded in the provided data. It correctly separates business and personal finances. It avoids conflating tax reserves with operating cash."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The routing order is logical and actionable. It provides a clear, prioritized sequence for cash flow management that fits the persona's irregular income needs."
+    },
+    {
+      "id": "prudence",
+      "score": 23,
+      "maxScore": 25,
+      "rationale": "The advice is conservative and emphasizes maintaining liquidity for credit card payoffs and tax obligations before investing. It appropriately suggests a range for buffers rather than a single rigid number."
+    }
+  ],
+  "factualClaims": [],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "The response could have explicitly mentioned the HSA contribution limit for 2026 ($4,400) to provide more concrete guidance on the 'investing' portion of the surplus."
+  ],
+  "unexpectedValidInsights": [
+    "The inclusion of pending credit card balances as a specific component of the business checking buffer is a high-leverage, practical insight for a freelancer."
+  ],
+  "safetyIssues": [],
+  "summary": "A well-grounded and prudent financial plan that correctly separates business and personal buckets while providing actionable, data-backed buffer targets."
+}

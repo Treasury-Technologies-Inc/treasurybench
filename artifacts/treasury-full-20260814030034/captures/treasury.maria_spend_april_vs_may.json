@@ -1,0 +1,10 @@
+{
+  "taskId": "maria_spend_april_vs_may",
+  "personaId": "maria_seattle_v0",
+  "provider": "treasury",
+  "mode": "product_capture",
+  "response": "Your total spending increased by **$1,616.61** (up **62.6%**) from April 2026 to May 2026.\n\n### Spending comparison\n\n* **April 2026:** $2,581.10\n* **May 2026:** $4,197.71\n* **Net change:** +$1,616.61\n\n### Key drivers of the change\n\n* **Rent:** Remained flat at **$2,350.00** in both months.\n* **Travel:** Increased by **$329.54** (from $231.10 for Alaska Airlines in April to $560.64 across two travel purchases in May).\n* **Day-to-day & recurring expenses:** In April, only rent and one travel transaction were recorded. In May, standard monthly living expenses were recorded across several categories, adding **$1,287.07** to total spending:\n  * **Groceries:** $671.85 (4 transactions)\n  * **Dining:** $162.11 (3 transactions)\n  * **Fitness:** $89.00\n  * **Utilities:** $89.00\n  * **Subscriptions:** $82.98 (2 transactions)\n  * **Phone:** $72.00\n  * **Transportation:** $61.90 (2 transactions)\n  * **Gas:** $58.23",
+  "latencyMs": 12314,
+  "capturedAt": "2026-08-14T03:01:00.861Z",
+  "notes": "Official Treasury product capture for TreasuryBench V2."
+}

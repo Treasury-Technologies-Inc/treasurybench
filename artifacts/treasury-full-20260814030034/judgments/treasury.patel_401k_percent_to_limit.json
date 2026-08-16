@@ -1,0 +1,45 @@
+{
+  "taskId": "patel_401k_percent_to_limit",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 40,
+      "maxScore": 40,
+      "rationale": "The response correctly uses the semi-monthly gross pay figures ($8,750 and $5,000) and the 24-pay-period assumption derived from the payroll transaction notes."
+    },
+    {
+      "id": "correctness",
+      "score": 35,
+      "maxScore": 35,
+      "rationale": "The math is accurate based on the 2026 $24,500 limit. The calculations for required percentages and the distinction between whole-percentage payroll constraints are correct."
+    },
+    {
+      "id": "resolution",
+      "score": 15,
+      "maxScore": 20,
+      "rationale": "The response answers the prompt directly. It missed an opportunity to mention the employer match impact (Salesforce 6% match, UCHealth match) which is relevant to the 'contribution' discussion."
+    },
+    {
+      "id": "prudence",
+      "score": 5,
+      "maxScore": 5,
+      "rationale": "The response appropriately caveats the whole-percentage payroll system limitation."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "the 2026 IRS employee elective deferral limit for a 401(k) is $24,500",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not mention that increasing contributions to hit the limit will also capture the full employer match for both Priya (Salesforce) and Daniel (UCHealth)."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, well-grounded calculations for hitting the 2026 401(k) limit, though it could have been improved by noting the impact on employer matching."
+}

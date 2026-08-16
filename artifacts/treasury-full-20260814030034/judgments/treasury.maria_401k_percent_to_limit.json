@@ -1,0 +1,51 @@
+{
+  "taskId": "maria_401k_percent_to_limit",
+  "provider": "treasury",
+  "totalScore": 95,
+  "dimensions": [
+    {
+      "id": "grounding",
+      "score": 25,
+      "maxScore": 25,
+      "rationale": "The response correctly uses the user's semi-monthly gross pay of $2,500, the current 8% deferral rate, and the number of pay periods to calculate the current pace and the required catch-up percentage."
+    },
+    {
+      "id": "correctness",
+      "score": 30,
+      "maxScore": 30,
+      "rationale": "The response accurately cites the 2026 IRS elective deferral limit of $24,500 and correctly describes the Microsoft 401(k) match structure as 50% up to the IRS limit with immediate vesting."
+    },
+    {
+      "id": "resolution",
+      "score": 25,
+      "maxScore": 30,
+      "rationale": "The response provides clear, quantified math for the target deferral percentage. It misses a specific recommendation on how to handle the cashflow impact (e.g., using the $62,300 brokerage balance or $18,450 checking balance to offset lower take-home pay), which would have been a higher-leverage personalized play."
+    },
+    {
+      "id": "prudence",
+      "score": 15,
+      "maxScore": 15,
+      "rationale": "The response appropriately notes that high deferral percentages may require adjustments to fit cash flow and suggests using variable compensation as a strategy."
+    }
+  ],
+  "factualClaims": [
+    {
+      "claim": "the IRS elective deferral limit for employee 401(k) contributions is $24,500 for 2026",
+      "tableKey": "irs_2026_401k_employee_deferral",
+      "state": "verified_correct"
+    },
+    {
+      "claim": "Microsoft matches 50 cents on the dollar for every employee deferral dollar up to the full IRS elective deferral limit",
+      "tableKey": "microsoft_2026_401k_match",
+      "state": "verified_correct"
+    }
+  ],
+  "factualIssues": [],
+  "missedOpportunities": [
+    "Did not explicitly suggest using the $62,300 brokerage balance or $18,450 checking balance to bridge the cashflow gap if Maria chooses to increase her 401(k) deferral significantly.",
+    "Could have mentioned the potential for Mega Backdoor Roth contributions given the Microsoft plan context, though this was not the primary question."
+  ],
+  "unexpectedValidInsights": [],
+  "safetyIssues": [],
+  "summary": "The response provides accurate, well-grounded math regarding the 2026 401(k) limit and Microsoft's match, though it could have been more proactive in suggesting how to manage the resulting cashflow impact."
+}
