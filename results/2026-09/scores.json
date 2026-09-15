@@ -1,0 +1,146 @@
+[
+  {
+    "product": "Treasury",
+    "overall": 95,
+    "categories": {
+      "cashflow_budgeting": 93,
+      "credit_cards_rewards": 95,
+      "debt_credit_health": 99,
+      "employer_benefits_perks": 98,
+      "housing_rent": 97,
+      "insurance_risk_protection": 96,
+      "investing_equity_comp": 96,
+      "life_planning_major_decisions": 94,
+      "retirement_tax_advantaged": 91,
+      "savings_expense_reduction": 93,
+      "tax_strategy": 93,
+      "transaction_intelligence": 97
+    },
+    "dimensions": {
+      "grounding": 98,
+      "correctness": 98,
+      "resolution": 96,
+      "prudence": 96
+    }
+  },
+  {
+    "product": "ChatGPT",
+    "overall": 89,
+    "categories": {
+      "cashflow_budgeting": 87,
+      "credit_cards_rewards": 82,
+      "debt_credit_health": 99,
+      "employer_benefits_perks": 89,
+      "housing_rent": 93,
+      "insurance_risk_protection": 91,
+      "investing_equity_comp": 90,
+      "life_planning_major_decisions": 95,
+      "retirement_tax_advantaged": 88,
+      "savings_expense_reduction": 80,
+      "tax_strategy": 96,
+      "transaction_intelligence": 91
+    },
+    "dimensions": {
+      "grounding": 92,
+      "correctness": 93,
+      "resolution": 88,
+      "prudence": 95
+    }
+  },
+  {
+    "product": "Perplexity",
+    "overall": 84,
+    "categories": {
+      "cashflow_budgeting": 84,
+      "credit_cards_rewards": 72,
+      "debt_credit_health": 86,
+      "employer_benefits_perks": 73,
+      "housing_rent": 90,
+      "insurance_risk_protection": 95,
+      "investing_equity_comp": 86,
+      "life_planning_major_decisions": 81,
+      "retirement_tax_advantaged": 91,
+      "savings_expense_reduction": 74,
+      "tax_strategy": 88,
+      "transaction_intelligence": 89
+    },
+    "dimensions": {
+      "grounding": 90,
+      "correctness": 88,
+      "resolution": 86,
+      "prudence": 91
+    }
+  },
+  {
+    "product": "Origin",
+    "overall": 76,
+    "categories": {
+      "cashflow_budgeting": 73,
+      "credit_cards_rewards": 74,
+      "debt_credit_health": 95,
+      "employer_benefits_perks": 82,
+      "housing_rent": 79,
+      "insurance_risk_protection": 84,
+      "investing_equity_comp": 67,
+      "life_planning_major_decisions": 75,
+      "retirement_tax_advantaged": 65,
+      "savings_expense_reduction": 72,
+      "tax_strategy": 73,
+      "transaction_intelligence": 85
+    },
+    "dimensions": {
+      "grounding": 76,
+      "correctness": 84,
+      "resolution": 77,
+      "prudence": 84
+    }
+  },
+  {
+    "product": "Quicken Simplifi",
+    "overall": 61,
+    "categories": {
+      "cashflow_budgeting": 60,
+      "credit_cards_rewards": 50,
+      "debt_credit_health": 93,
+      "employer_benefits_perks": 37,
+      "housing_rent": 57,
+      "insurance_risk_protection": 60,
+      "investing_equity_comp": 49,
+      "life_planning_major_decisions": 62,
+      "retirement_tax_advantaged": 60,
+      "savings_expense_reduction": 62,
+      "tax_strategy": 57,
+      "transaction_intelligence": 88
+    },
+    "dimensions": {
+      "grounding": 52,
+      "correctness": 74,
+      "resolution": 51,
+      "prudence": 72
+    }
+  },
+  {
+    "product": "Monarch",
+    "overall": 53,
+    "categories": {
+      "cashflow_budgeting": 63,
+      "credit_cards_rewards": 38,
+      "debt_credit_health": 88,
+      "employer_benefits_perks": 44,
+      "housing_rent": 56,
+      "insurance_risk_protection": 67,
+      "investing_equity_comp": 56,
+      "life_planning_major_decisions": 50,
+      "retirement_tax_advantaged": 37,
+      "savings_expense_reduction": 51,
+      "tax_strategy": 43,
+      "transaction_intelligence": 75
+    },
+    "dimensions": {
+      "grounding": 44,
+      "correctness": 63,
+      "resolution": 46,
+      "prudence": 66
+    }
+  }
+]

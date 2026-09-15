@@ -1,0 +1,1362 @@
+{
+  "product": "ChatGPT",
+  "answers": [
+    {
+      "questionId": "maria_401k_contribution",
+      "answer": "Based on your connected data through May 31, 2026, you’re contributing 8% of your $60,000 annualized base pay to your Microsoft 401(k): $200 per semimonthly paycheck, or about $4,800/year if that rate continues.\n\nMicrosoft currently matches 50¢ per $1 you contribute, so at 8% you’d receive roughly another 4% ($2,400/year) from Microsoft. That puts your combined retirement savings at about 12% of salary. Microsoft’s benefits site cites Fidelity’s suggestion to save at least 15% of salary for retirement. \n[Microsoft Benefits]\n\nI’d increase your contribution from 8% to 10%. On your current base pay, that works out approximately to:\n\n\t8% now\t10%\nYour contribution\t$4,800/yr\t$6,000/yr\nMicrosoft match\t$2,400\t$3,000\nTotal saved\t$7,200\t$9,000\nTotal savings rate\t12%\t15%\n\nSo the increase would cost you about $50 more per paycheck before taxes ($250 instead of $200), while adding another $600/year of Microsoft match.\n\nThere’s also substantial room above that: the 2026 employee 401(k) limit is $24,500, and Microsoft will match 50% of eligible pre-tax/Roth contributions all the way up to that limit—a maximum Microsoft match of $12,250. \n[IRS] [+1]\n\nSo: 8% is decent, but I’d call 10% the better minimum target for you. If your monthly cash flow comfortably supports it, moving beyond 10% captures even more unusually generous Microsoft matching.",
+      "score": 94,
+      "dimensions": {
+        "grounding": {
+          "score": 23,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 25,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 14,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_401k_percent_to_limit",
+      "answer": "Based on your connected data posted through May 31, 2026, you’re contributing 8% of $2,500 semi-monthly gross pay = $200/paycheck, and I see $400 of 2026 employee deferrals so far.\n\nThe 2026 basic employee 401(k) limit is $24,500. \n[IRS] [+1]\n\nAt your current $60,000 annualized base pay, the math looks like this:\n\nTarget\tContribution rate\nCurrent rate\t8%\n$24,500 ÷ $60,000\t40.8%\nMicrosoft plan maximum election\t65%\n\nSo, if you were contributing for a full calendar year at this compensation, about 41% would put you on pace to max the basic $24,500 limit.\n\nThere’s an important wrinkle this year: your synced records show only $400 contributed through May 31. To get from $400 to $24,500 using only the 14 regular semi-monthly paychecks from June–December would require about 68.9% of your $2,500 gross pay. Microsoft caps contribution elections at 65%, so regular base-pay checks alone wouldn’t quite get you there. Your annual review bonus is also eligible compensation, though, so a sufficiently high election on the bonus could close the gap. \n[Microsoft Benefits]\n\nHow to think about the Microsoft match\n\nMicrosoft's match is unusually straightforward: 50¢ for every $1 you contribute as pre-tax and/or Roth, all the way up to the IRS basic deferral limit. Thus:\n\nContribute $10,000 → Microsoft contributes $5,000\n\nContribute $20,000 → Microsoft contributes $10,000\n\nMax $24,500 → Microsoft contributes $12,250\n\nMicrosoft says you receive that full $12,250 maximum if you contribute the full $24,500, and the match is 100% vested immediately. \n[Microsoft Benefits] [+1]\n\nThat means I would not think of this as a typical “contribute 6% to get the full match” plan. Every additional matched dollar you contribute, up through $24,500, earns another $0.50 from Microsoft. Your current 8% election would generate only about $2,400/year of employee contributions on a full $60,000 base-pay year, plus roughly $1,200 of Microsoft match; maxing the basic limit would make the employer contribution $12,250.\n\nPractical target: roughly 41% as your steady-state election for a full $60K compensation year. For 2026 specifically, because the connected data only shows $400 through May, you'd need to run substantially higher—potentially the 65% maximum for remaining regular checks plus an appropriate bonus election—to reach $24,500. Microsoft says changes generally take effect within one or two pay periods. \n[Microsoft Benefits]\n\nIf you're age 50+, there are additional 2026 catch-up limits, but Microsoft does not match the catch-up portion. \n[Microsoft Benefits] [+1]",
+      "score": 83,
+      "dimensions": {
+        "grounding": {
+          "score": 23,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 24,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 28,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 12,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_alaska_microsoft",
+      "answer": "Your connected history shows two recent Alaska Airlines trips on your Chase Sapphire Preferred: SFO→SEA on April 12 ($231.10) and SEA→SFO on May 6 ($248.20). Given that pattern and your Microsoft employment, there are two unusually relevant Alaska perks to check before booking again.\n\nMicrosoft employee Alaska fast-track status: Alaska currently has a Microsoft-specific offer that gives eligible employees trial Atmos Silver status for 180 days after registration. During that window, 2 qualifying round trips keep Silver, 4 earn Gold, and 10 earn Platinum. Your prior flights don’t automatically count: qualifying flights must occur after registration, be credited to your Atmos account, and Saver fares/award travel and certain partner flights don’t qualify. \n[Alaska Airlines]\n\n5% Microsoft leisure discount: Through September 30, 2026, eligible Microsoft employees can register for six 5%-off codes for Alaska/Hawaiian flights; travel can occur through November 17, 2026. The discount applies to base fare, not taxes/fees, and is for new bookings. \n[Alaska Airlines]\n\nVerify the Microsoft corporate booking channel for work trips. Alaska has managed corporate-travel arrangements that can provide company-specific pricing or traveler benefits, but the public Alaska page does not establish exactly what Microsoft’s current work-travel agreement includes. Check Microsoft’s internal travel portal before booking independently. \n[Alaska Airlines]\n\nWhat not to assume: don’t assume Microsoft employment automatically gives you Alaska status, free bags, upgrades, or discounted fares; the public offers require registration and have eligibility rules. Don’t assume your April/May SEA–SFO segments retroactively satisfy the fast-track challenge. And don’t assume Saver fares are a cheap way to complete it—they specifically do not count toward the Microsoft fast-track, and Saver fares also aren’t eligible for complimentary status upgrades. \n[Alaska Airlines]\n\nFor your next SEA–SFO trip, I’d do this in order: register for the Microsoft fast-track first → register for the 5% leisure offer if it’s personal travel → compare Microsoft’s internal corporate fare if it’s business travel → make sure your Atmos number is attached and avoid Saver if you’re pursuing status. Since today is September 13, the 5% registration/purchase deadline is only a little over two weeks away. \n[Alaska Airlines]",
+      "score": 97,
+      "dimensions": {
+        "grounding": {
+          "score": 23,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 24,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 35,
+          "outOf": 35
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_backdoor_roth",
+      "answer": "Based on your connected finances, I’d favor a backdoor Roth IRA for 2026 rather than skipping it or making a direct Roth contribution.\n\nYour records are synced through May 31, 2026, so this is based on posted data through that date. You already had a $42,000 Microsoft RSU vest in May in addition to wages and other income, making it plausible that your full-year MAGI could exceed the direct-Roth threshold. For 2026, direct Roth contributions phase out at $153,000–$168,000 MAGI for single filers. The IRA contribution limit is $7,500 if you're under 50. \n[IRS] [+1]\n\nThe particularly favorable part of your setup is that your connected Fidelity Traditional IRA currently has a $0 balance. That makes a backdoor Roth comparatively clean: contribute $7,500 of after-tax money to the Traditional IRA, then convert it to a Roth IRA soon afterward. The major thing to verify first is that you don't have any other pre-tax Traditional, SEP, or SIMPLE IRA balances elsewhere; those can cause the pro-rata rule to make part of the conversion taxable.\n\nI would prioritize your dollars roughly as follows:\n\nFirst capture your full Microsoft 401(k) match, if you aren't already doing so. Your connected 401(k) shows only $400 of employee contributions through May 31, so this deserves attention before an IRA.\n\nThen do a $7,500 backdoor Roth if you have the cash available. You have about $23,700 in connected checking + savings, so the contribution appears financially feasible, though I'd preserve an adequate emergency reserve.\n\nDon't make a direct Roth contribution yet unless you can establish that your 2026 MAGI will stay below the phase-out. With RSUs, waiting until tax time to discover you exceeded the limit creates unnecessary cleanup.\n\nDon't skip the IRA solely because your income is high. High income is precisely when the backdoor method becomes useful, assuming the pro-rata issue is clear.\n\nOne important tax detail: record the nondeductible Traditional IRA contribution on Form 8606, and ideally convert soon after contributing so there is little or no investment gain to tax.\n\nSo my recommendation is 401(k) match first → $7,500 backdoor Roth → additional retirement investing, rather than direct Roth or skipping it. \n[IRS] [+1]",
+      "score": 98,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 28,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_bank_bonus_idle_cash",
+      "answer": "Yes. Based on your linked data, I’d prioritize checking bonuses that use your payroll, rather than moving most of your cash into a savings promo.\n\nYour linked cash balances total about $23,675 — $18,425 in Chase checking and $5,250 in Ally savings — but those balances are only synced through May 31, 2026. I tried refreshing them and the connection still didn’t advance past May 31, so treat that number as stale. Your historical Microsoft payroll is about $1,840 twice monthly, which makes several direct-deposit bonuses easy to hit.\n\nThe best candidates right now are:\n\nWells Fargo: $500 checking bonus. The current offer requires only $1,000 in direct deposits, according to the September bonus roundup. With your payroll, that should be straightforward. \n[Doctor Of Credit]\n\nWSECU: $500 checking bonus. This is particularly relevant in Washington; the reported bonus requires $1,000+ direct deposit. Separately, WSECU’s own site confirms its checking products have no monthly fee options and that $1,000/month of qualifying direct deposits can also unlock 5% APY on the first $1,000. \n[Doctor Of Credit] [+1]\n\nKeyBank: up to $500. The current offer is available in Washington and reportedly requires only $500+ of direct deposit. This is another strong “redirect one paycheck, collect bonus” candidate. \n[Doctor Of Credit]\n\nSoFi: up to $675, but part of that total comes from a shopping/cash-back portal whose payout can fluctuate. It requires roughly $3,000+ direct deposit, so you could potentially qualify with two paychecks. I’d rank it below a clean $500 bank-direct offer because of the extra moving parts. \n[Doctor Of Credit]\n\nI would not make the E*TRADE $400 savings bonus your first move, even though it’s a legitimate offer. E*TRADE currently gives $400 for depositing at least $20,000, maintaining it through the qualification period, plus a fixed 4.00% APY for six months. The offer ends September 30. \n[E*TRADE]\n With the last known $23,675 of liquid cash, moving $20,000 would leave only about $3,675 outside that account. Your March–May recorded outflows averaged roughly $3,043/month, so that would make your readily available cushion fairly thin. The money isn’t literally locked, but dipping below the qualification requirement risks losing the bonus.\n\nAlso, I’d skip the current Chase checking bonus despite its attractive headline: you already have a Chase Total Checking account, so I would not assume you qualify as a new checking customer. \n[Doctor Of Credit]\n\nMy order would be: Wells Fargo or WSECU first, then KeyBank. They let you monetize payroll rather than tying up $20k. Once one bonus posts and its account-retention requirements are satisfied, you can decide whether to rotate the direct deposit to the next offer. Always check the final offer page immediately before opening, especially eligibility/lookback language and early-closure fees.\n\nIf your current cash balance is still around $24k, I’d keep roughly $10k–$15k readily accessible and bonus-churn with payroll rather than tying almost all of it to one savings promotion.",
+      "score": 88,
+      "dimensions": {
+        "grounding": {
+          "score": 23,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 24,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 24,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 14,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_checking_buffer",
+      "answer": "Based on your linked data posted through May 31, 2026, I’d target about $6,000–$7,000 in checking. Your data shows roughly $2,350/month rent plus a recent ~$1,840 credit-card statement, with Microsoft net pay of about $1,840 twice monthly. That checking target covers a full rent + card-payment cycle and leaves roughly $1,800–$2,800 of timing/error cushion.\n\nWith $18,425 available in checking, that means roughly $11,400–$12,400 could be moved out of checking. You already have $5,250 in Ally savings, so I’d probably structure the cash like this:\n\nChecking: ~$6,500\n\nHigh-yield savings: build this to roughly $10,000–$12,000 total for immediately accessible emergency/irregular spending\n\nT-bills: anything above that cash reserve can reasonably go into short-term Treasuries if you don't expect to need it immediately\n\nUsing the midpoint, you could move about $11,925 from checking now. Of that, I'd put roughly $5,000–$7,000 into savings and the remaining $5,000–$7,000 into short-duration T-bills. That keeps you liquid without leaving nearly $18,500 earning little in checking.\n\nThe important caveat is that your accounts haven't synced beyond May 31, so I wouldn't move the full amount until you've confirmed there haven't been large September expenses or upcoming one-offs since then.",
+      "score": 77,
+      "dimensions": {
+        "grounding": {
+          "score": 21,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 26,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 24,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 13,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_coffee_shops_may",
+      "answer": "Based on your fully synced May 2026 transactions, I found only one charge that clearly appears to be from a coffee shop or cafe:\n\nRank\tDate\tMerchant\tAmount\n1\tMay 3\tOddfellows Cafe\t$42.16\n\nI don’t see nine additional May transactions that reasonably look like coffee shops/cafes, so there isn’t a legitimate top ten to rank from the available data. I excluded other dining charges such as Tavolata and Ramen Danbo because they appear to be restaurants rather than cafes.",
+      "score": 100,
+      "dimensions": {
+        "grounding": {
+          "score": 40,
+          "outOf": 40
+        },
+        "correctness": {
+          "score": 35,
+          "outOf": 35
+        },
+        "resolution": {
+          "score": 20,
+          "outOf": 20
+        },
+        "prudence": {
+          "score": 5,
+          "outOf": 5
+        }
+      }
+    },
+    {
+      "questionId": "maria_costco_optimization",
+      "answer": "Based on the data I can see through May 31, you spent $559.46 at Costco in May: $501.23 in warehouse purchases across two trips, plus $58.23 on Costco gas. That’s enough Costco usage that a few optimizations are worth considering.\n\nThe biggest one is Executive membership. It costs $65 more per year than Gold Star and earns 2% on qualifying purchases. The break-even is about $3,250/year of eligible spend. Your May warehouse pace alone annualizes to roughly $6,015, which would generate about $120/year of Executive rewards if that pace is representative—comfortably above the incremental fee. Gas does not count toward the Executive 2% reward. \n[Costco Customer Service] [+1]\n\nI’d also revisit which card you use there. All three May Costco transactions hit your Chase Sapphire Preferred. Costco warehouses accept Visa, so the CSP works, but it generally isn’t a particularly strong Costco-earning card. If you already have another Visa with a better warehouse-club or flat-rate return, it could be a better default. I wouldn’t open a new card solely for ~$500/month of Costco spend unless the broader rewards math also works.\n\nThe other opportunity is behavioral: you made two sizable warehouse trips only 15 days apart—$286.41 on May 4 and $214.82 on May 19. That isn’t inherently bad, but Costco’s pack sizes make overbuying unusually easy. A simple “Costco list + one planned stock-up trip” each month can matter more than squeezing another 1% out of a credit card, particularly if it reduces perishables, duplicates, or impulse buys.\n\nSo my priority order would be: (1) upgrade to Executive if ~$3,250+ of annual eligible Costco spending is normal for you, (2) use your best existing Visa rather than automatically using the Sapphire Preferred, and (3) consolidate warehouse trips where practical. I would keep using Costco gas if its local price advantage is meaningful; just don’t count that spend when evaluating Executive membership.\n\nIf you want, I can also compare your Costco spending against your other grocery spending and tell you whether Costco is actually reducing your food costs or just increasing the size of the basket.",
+      "score": 97,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 29,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 27,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_credit_card_balance_check",
+      "answer": "Based on the connected data, I’d treat the $1,840 as normal monthly float only if you confirm you’re still in the grace-period regime. Your Chase checking had about $18,425 available versus the card’s $1,840 current balance, so liquidity is not the constraint here. The data I can see is only current through May 31, 2026, though, so I would not use that old balance snapshot to decide whether a payment is due today.\n\nFirst verify these items directly on the latest Chase statement/app:\n\nStatement balance — this is the key number to pay, not necessarily the $1,840 current balance.\n\nPayment due date and whether the statement balance has already been paid.\n\nPurchase APR and whether any interest was charged on the latest statement.\n\nAutopay setting — ideally set to “statement balance”, not minimum payment.\n\nAny 0% promotional APR, cash advance, balance transfer, or installment-plan balance, because those can change the optimal treatment.\n\nIf the card shows $0 interest charged, no carried balance, and an intact grace period, there is little financial reason to pay the $1,840 immediately. I’d set autopay for the full statement balance on or shortly before the due date and let new purchases remain normal monthly float.\n\nIf you carried any portion of the prior statement balance, are currently accruing interest, or are unsure whether the grace period has been lost, then I’d pay the card off immediately and keep paying new charges aggressively until Chase confirms the grace period is restored.\n\nOne caution: I found no identifiable interest charges or Chase card-payment transactions in the connected history through May 31, but that is not enough to prove you’ve been paying in full—the liability feed is missing the relevant statement/APR fields. So the latest Chase statement is the source of truth here.",
+      "score": 98,
+      "dimensions": {
+        "grounding": {
+          "score": 24,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 29,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 30,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_credit_card_strategy",
+      "answer": "Based on the accounts I can see, your only connected credit card is the Chase Sapphire Preferred (CSP), so I can optimize that card confidently but I can’t see any unlinked cards you may already own. Your transaction history is synced through May 31, 2026, so I used March–May spending as the sample.\n\nYour CSP actually became substantially better on June 15: it now earns 3x on dining, gas/EV charging, online groceries, and eligible streaming; 2x on other travel; and 5x through Chase Travel. \n[Chase Media Center] [+1]\n\nPurchase\tCard I'd use\tWhy\nRestaurants / cafés\tCSP\t3x\nGas / EV charging\tCSP\t3x; this is a new 2026 benefit\nFlights booked directly\tCSP\t2x + strong travel protections\nHotels / rental cars directly\tCSP\t2x; compare with 5x through Chase Travel\nChase Travel bookings\tCSP\t5x\nOnline groceries\tCSP\t3x, excluding wholesale clubs, Target and Walmart\nNetflix / eligible streaming\tCSP\t3x\nCostco warehouse purchases\tA 2%+ Visa, not CSP\tCSP is basically a 1x card here\nPhysical Safeway / Trader Joe's\tA better grocery/catch-all card\tCSP's 3x grocery rate is specifically online\nUtilities / Adobe / misc. purchases\tA 1.5–2%+ catch-all\tCSP earns only 1x\n\nThe clearest leakage in your recent spending is Costco. You put $501.23 at Costco in just three months on the CSP. The Costco Anywhere Visa currently earns 2% at Costco/Costco.com, 5% on Costco gas, 4% on other eligible gas/EV charging, and 3% on restaurants and eligible travel. \n[Citi]\n That would have earned roughly $10 on those Costco purchases instead of ~501 CSP points. The incremental gain isn't enormous by itself, though, so I wouldn't open that card solely for $5-ish of extra rewards over three months unless Costco remains a major recurring expense.\n\nA simpler addition to your setup would be a catch-all card. For example, the no-annual-fee Chase Freedom Unlimited earns 1.5x on otherwise-unbonused spending, while keeping the rewards in the Chase ecosystem; it also earns 3x on dining/drugstores and 5x through Chase Travel. \n[Chase] [+1]\n You'd then have a very easy rule: CSP for travel/dining/gas/online grocery/streaming; Freedom Unlimited for almost everything else.\n\nOne wrinkle: if you already have a Chase Freedom/Freedom Flex, activate its Q3 categories immediately. Through September 30, 2026, the current 5% categories include gas, public transit, EV charging and select live entertainment, up to the quarterly cap, and activation closes September 14. That beats your CSP's 3x for those purchases this quarter. \n[Chase] [+1]\n\nMy priority order: first stop using the CSP as a 1x catch-all, then optimize Costco/physical groceries. I would not add several specialized cards based on your recent volume—the extra complexity would probably outweigh the incremental rewards. A CSP + good catch-all Visa is likely the sweet spot for you.",
+      "score": 66,
+      "dimensions": {
+        "grounding": {
+          "score": 16,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 20,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 18,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 10,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_extra_10000",
+      "answer": "Based on the connected data through May 31, 2026, I’d put the first dollar toward tax-advantaged retirement space, not more cash or taxable investing, assuming the Chase card is normal statement float that you pay in full.\n\nYou had about $23,700 in cash ($18,450 checking + $5,250 savings) before this extra $10,000. Your observed recurring/basic spending suggests roughly $3,200–$3,600/month of core-to-normal expenses, dominated by $2,350 rent. That means your existing cash is already around 6–7 months of spending, so adding the whole $10,000 to reserves looks unnecessarily conservative unless you expect a job change, major purchase, or unusually large near-term expense.\n\nHere’s how I’d rank the choices:\n\nVerify the Chase Sapphire Preferred is paid in full each statement. The connected balance was $1,840, but the feed does not provide its APR or statement balance. If any portion is revolving at a normal credit-card APR, paying that off becomes the immediate #1 move. If it is simply monthly float with autopay for the full statement balance, don’t prepay it just because cash is available.\n\nIncrease your 401(k) contribution rate. Only $400 of employee deferrals appeared in the connected 2026 history through May 31. The 2026 employee 401(k) limit is $24,500, so there is potentially a lot of unused space. \n[IRS] [+1]\n Because 401(k) contributions have to come through payroll, I’d use part of this $10,000 as a cash buffer while increasing payroll deferrals substantially for the rest of 2026.\n\nMax an HSA next, if you are HSA-eligible. For 2026 the limit is $4,400 self-only or $8,750 family, including employer contributions. \n[IRS]\n I don’t see an HSA among the connected accounts, so I would verify your Microsoft medical-plan election and year-to-date employer/employee HSA contributions before funding one.\n\nFund a Roth IRA or backdoor Roth. Your connected Traditional IRA currently shows a $0 balance, which is particularly convenient for a backdoor Roth because it reduces the chance of a pro-rata issue from existing pre-tax IRA balances. The 2026 IRA limit is $7,500. Direct Roth eligibility phases out at modified AGI of $153,000–$168,000 for single filers; above that range, a backdoor Roth may be the appropriate route. \n[IRS] [+1]\n\nTaxable investing comes last. You already had about $62,300 in the connected Robinhood brokerage. Given the unused tax-advantaged space implied by the data, I would not add this $10,000 to taxable brokerage before addressing 401(k)/HSA/IRA opportunities.\n\nWhat I would do with the $10,000\n\nAssuming no revolving card debt, no major expense within 12 months, and HSA eligibility is still unknown, my first move would be:\n\nKeep the $10,000 temporarily in your high-yield savings account and immediately raise your 401(k) payroll contribution enough to get much closer to the $24,500 annual limit. Then use the $10,000 cash to replace the smaller paychecks. This preserves liquidity while converting ordinary cash into tax-advantaged retirement savings over the remaining pay periods.\n\nAfter setting that payroll rate, I’d direct the remaining pool roughly as follows: HSA to its remaining 2026 limit if eligible → $7,500 Roth/backdoor Roth → taxable brokerage only after those are handled.\n\nThe biggest caveat is freshness: the connected accounts are synced only through May 31, while today is September 13. So I would verify your current card statement status, current 401(k) YTD contributions, and HSA YTD contributions before actually moving the money. Those three numbers could change the ordering materially.",
+      "score": 93,
+      "dimensions": {
+        "grounding": {
+          "score": 18,
+          "outOf": 20
+        },
+        "correctness": {
+          "score": 24,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 26,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 24,
+          "outOf": 25
+        }
+      }
+    },
+    {
+      "questionId": "maria_food_spend_may",
+      "answer": "In May, you spent $833.96 on food across your fully synced connected accounts.\n\nGroceries + Costco food runs: $671.85\n\nRestaurants: $162.11\n\nThat includes two Costco grocery trips totaling $501.23, plus Safeway and Trader Joe’s. I excluded the $58.23 Costco Gas charge because it was transportation, not food.",
+      "score": 100,
+      "dimensions": {
+        "grounding": {
+          "score": 40,
+          "outOf": 40
+        },
+        "correctness": {
+          "score": 35,
+          "outOf": 35
+        },
+        "resolution": {
+          "score": 20,
+          "outOf": 20
+        },
+        "prudence": {
+          "score": 5,
+          "outOf": 5
+        }
+      }
+    },
+    {
+      "questionId": "maria_hsa",
+      "answer": "Yes—if your Microsoft health plan is HSA-eligible, I’d strongly consider using an HSA and usually prioritize it before additional taxable investing.\n\nYour connected accounts show a Microsoft 401(k), substantial cash, and a taxable brokerage account, but no linked HSA. That makes the key question eligibility, not whether the HSA itself is attractive. For 2026, you generally need qualifying high-deductible health-plan coverage and no disqualifying coverage such as a general-purpose health FSA. \n[IRS] [+1]\n\nThe reason I’d favor it is the unusually strong tax treatment: contributions can be pre-tax, investment growth is tax-deferred, and qualified medical withdrawals are tax-free. If contributions run through payroll, they can also avoid Social Security and Medicare taxes in many cases. The 2026 contribution limit is $4,400 for self-only coverage or $8,750 for family coverage, including employer contributions; people 55+ can generally add another $1,000. \n[IRS] [+1]\n\nFor you, I’d use this priority order:\n\nGet the full Microsoft 401(k) match.\n\nIf your health plan qualifies, contribute enough to the HSA to capture any Microsoft HSA contribution/incentive.\n\nThen, assuming you have adequate cash reserves and no expensive revolving card debt, work toward maxing the HSA.\n\nInvest HSA dollars you don't expect to need soon rather than leaving the whole balance in cash.\n\nAfter that, compare extra 401(k)/Roth contributions versus taxable brokerage investing.\n\nOne thing I wouldn’t assume is that simply choosing a plan with a large deductible makes you eligible. For 2026, an HSA-qualified HDHP has specific IRS requirements, including at least a $1,700 self-only / $3,400 family deductible and applicable out-of-pocket limits. \n[IRS] [+1]\n\nNext step: check your Microsoft benefits enrollment page for the exact medical plan you’re enrolled in, whether it says HSA eligible, and how much Microsoft contributes to the HSA. With those three details, I can tell you exactly how much you should contribute for the rest of 2026.",
+      "score": 96,
+      "dimensions": {
+        "grounding": {
+          "score": 24,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 26,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_idle_cash",
+      "answer": "Based on the connected data through May 31, 2026, you appear to have more cash than you need in checking, but not an unreasonable amount of total liquid cash.\n\nYou have about $23,700 in bank cash: $18,450 in Chase checking and $5,250 in Ally savings. Your observed March–May spending was roughly $3,043/month, so that cash represents about 7.8 months of spending. Even after reserving $1,840 to pay the Chase Sapphire Preferred statement balance, you'd have about $21,860, or roughly 7.2 months.\n\nA reasonable framework from these numbers is:\n\n3 months: about $9,100\n\n4 months: about $12,200\n\n6 months: about $18,300\n\nSo I would probably target roughly $12,000–$18,000 of total cash reserves, depending on job stability, upcoming large purchases, and how conservative you want to be. That suggests perhaps $4,000–$10,000 is currently above your emergency/near-term cash requirement.\n\nThe bigger inefficiency is where the cash sits. $18,450 in checking is probably excessive. I'd keep perhaps one month of normal expenses plus upcoming bills there—roughly $4,000–$6,000 given your current pattern—and move the rest of the reserve to a high-yield savings account, money-market fund, or short-term Treasuries. Any amount above your chosen emergency reserve could then compete with things like retirement/HSA/Roth contributions or investing.\n\nOne important caveat: your connected accounts are only synced through May 31, while today is September 13, so I would treat these figures as a framework rather than a current-balance recommendation.",
+      "score": 96,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 25,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 30,
+          "outOf": 35
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_insurance_review",
+      "answer": "For your situation, I’d check the gaps in this order:\n\nDisability insurance first. Your Microsoft paycheck is your most important financial asset right now. Your connected data shows semi-monthly Microsoft payroll of about $1,840 per paycheck, and you have substantial savings/investments but not enough to make loss of earned income irrelevant. Start by checking Microsoft’s short-term and long-term disability benefits: what percentage of pay they replace, the monthly cap, waiting period, benefit duration, and whether employer-paid benefits would be taxable. If long-term disability only replaces, say, 50–60% of base salary and excludes meaningful bonus/stock compensation, an individual supplemental policy may deserve consideration.\n\nRenters insurance and personal liability next. As a renter, the property component is relatively inexpensive, but the more important item is often personal liability coverage. Verify that you actually have an active renters policy and check the liability limit—I'd generally want at least $300,000, and often $500,000 if readily available. Also check replacement-cost coverage for your belongings rather than actual-cash-value coverage, plus loss-of-use coverage.\n\nUmbrella insurance after you verify the underlying liability limits. You currently have roughly $136,500 in connected cash/investment balances before subtracting the credit-card balance, so you have assets worth protecting. An umbrella starts becoming more attractive as assets and future earning power grow. But it usually requires minimum renters and auto liability limits first, so don't buy it before checking those underlying policies. A $1 million umbrella is the first quote I'd investigate, particularly if you drive regularly.\n\nLife insurance is lowest priority today. With no dependents, you generally don't need a large term-life policy whose purpose is income replacement. First verify whether Microsoft provides basic employer life insurance. Beyond enough to cover final expenses or any obligations someone else would inherit, additional coverage is probably optional unless you expect dependents soon, have someone financially reliant on you, or want to lock in insurability while healthy.\n\nSo the immediate checklist is: Microsoft LTD details → renters liability limit → auto liability/umbrella eligibility → employer life benefit. I would spend your insurance-shopping effort on disability and liability before buying additional life insurance.\n\nOne limitation: your connected financial data is current only through May 31, 2026, and it does not contain the actual terms of your Microsoft benefits or insurance policies, so I would not assume any employer coverage amount until you verify the plan documents.",
+      "score": 90,
+      "dimensions": {
+        "grounding": {
+          "score": 23,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 28,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 27,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 14,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_life_insurance_need",
+      "answer": "Given that you’re single, rent, and have no dependents, life insurance is probably not the first coverage gap to prioritize right now. Your connected financial profile also shows you live alone and work at Microsoft, so the more relevant first checks are likely employer benefits and protections that cover your own income and liability exposure.\n\nI’d prioritize them in this order:\n\nDisability insurance first — your income is probably your biggest financial asset. Check Microsoft’s short- and long-term disability coverage, the replacement percentage, monthly cap, waiting period, whether benefits are taxable, and whether employer coverage alone would actually cover your fixed expenses.\n\nRenters insurance / personal liability second — make sure your policy covers replacement cost for belongings and has a healthy liability limit. This is usually inexpensive and protects against losses that life insurance would not address.\n\nUmbrella insurance third — worth checking if you have meaningful assets, drive frequently, or otherwise have elevated liability exposure. It usually sits on top of renters and auto liability.\n\nLife insurance last for now — it becomes more important if someone depends on your income, you acquire a mortgage jointly with someone, want to provide for family, or have debts/obligations another person would realistically need to absorb.\n\nOne exception: if Microsoft gives you basic group life insurance at little or no cost, it generally makes sense to keep that benefit even if you don’t need to buy additional individual coverage.\n\nSo your best next move is reviewing Microsoft’s disability coverage and your renters liability limits before shopping for more life insurance.",
+      "score": 79,
+      "dimensions": {
+        "grounding": {
+          "score": 19,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 28,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 21,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 14,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_mega_backdoor",
+      "answer": "Based on your connected data, I would not prioritize a mega backdoor Roth yet. Your better first move is to increase your regular Microsoft 401(k) contribution substantially.\n\nYour Fidelity 401(k) shows an 8% employee deferral, or $200 on a $2,500 semi-monthly paycheck. Posted data through May 31, 2026 shows only $400 of employee contributions. Meanwhile, the 2026 regular 401(k) employee limit is $24,500, and the total defined-contribution limit—including employee, employer, and after-tax contributions—is $72,000. \n[IRS] [+1]\n\nThe reason regular 401(k) contributions should come first is particularly strong at Microsoft: Microsoft's plan materials say pre-tax and Roth 401(k) contributions receive a 50% employer match, while after-tax contributions used for a mega backdoor Roth do not receive the match. The plan also supports after-tax contributions and Roth in-plan conversions, so the mega-backdoor mechanism is available once you reach that stage. \n[Microsoft Benefits] [+1]\n\nSo I'd use this order:\n\nRaise your normal pre-tax/Roth 401(k) contribution toward the $24,500 limit. Every additional eligible dollar is much more attractive while Microsoft is matching 50%.\n\nKeep an adequate cash reserve and pay your card statement in full. You currently have about $23,700 in checking + savings, and your $1,840 Chase statement shows no interest charge, so nothing in the connected data suggests expensive debt should jump ahead.\n\nUse a regular/backdoor Roth IRA if appropriate. Your Traditional IRA currently has a $0 balance, which is especially convenient if your income makes a backdoor Roth IRA necessary.\n\nThen do the mega backdoor Roth with additional savings you genuinely want earmarked for retirement.\n\nThere's also an important practical issue this year: at the contribution pace visible in your data, you're nowhere near exhausting the ordinary $24,500 bucket. A mega backdoor Roth is generally most valuable after you've filled that ordinary 401(k) space; Fidelity describes it similarly—as an additional strategy for people who have already maxed normal 401(k) contributions or need additional Roth capacity. \n[Fidelity]\n\nRecommendation: no mega backdoor Roth right now. Increase your regular Microsoft 401(k) deferral first. Once you're on pace to max the $24,500 employee contribution and capture the associated Microsoft match, I'd revisit the mega backdoor. At that point, your substantial taxable brokerage balance also makes shifting new savings toward tax-advantaged Roth space more compelling.",
+      "score": 96,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 28,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 14,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_mfte_eligibility_check",
+      "answer": "Based on your connected data, it is worth checking—but you should treat this as an income-certification exercise first, not an apartment search first.\n\nYou are paying $2,350/month in Seattle and have a 1-person household. Your financial data is synced only through May 31, 2026, and it shows two Microsoft payroll deposits of $1,840 in May, a $1,200 consulting payment, and a large $42,000 RSU-related inflow. Those deposits do not equal the income figure an MFTE landlord will use: Seattle requires projected gross income before taxes/deductions for the following 12 months, with income sources verified. \n[Seattle.gov]\n\nFor 2026–27, Seattle's one-person MFTE Program 6 limits run from $68,970 at 60% AMI, $80,465 at 70%, $91,960 at 80%, to $103,455 at 90% AMI. Program 7 includes units at a broader range of AMI levels, and the exact income ceiling depends on the particular apartment's restriction. \n[Seattle.gov] [+1]\n\nThe potential savings against your $2,350 rent can be meaningful, but only at lower AMI tiers. For a current Program 7 1-bedroom, the 2026 maximum rent is approximately $2,312 at 75% AMI, $2,158 at 70%, $2,004 at 65%, and $1,850 at 60%. That corresponds to savings of roughly $38, $192, $346, or $500 per month, respectively, before comparing differences in utilities, parking, location, amenities, and moving costs. An 80%-AMI 1-bedroom has a $2,467 maximum, so it would not automatically beat your current $2,350 rent. \n[Seattle.gov]\n\nI would check it this way:\n\nBuild the landlord-style income number. Take your current Microsoft gross base salary from your paystub × 12, then add expected cash bonus, anticipated RSU/stock compensation that the certification rules count, consulting income, interest, and any other projected income. Do not use the $1,840 paycheck deposits as your salary figure.\n\nCompare that number to the one-person limit for each actual unit. Ask the property manager: “What AMI percentage is this specific unit, and what is the current one-person income ceiling?” Different units in the same building can have different restrictions.\n\nOnly pursue units with a real rent advantage. With your $2,350 baseline, I’d target roughly 70% AMI or below for a 1BR unless a 75%-AMI unit is materially better than your current apartment. A nominal $38/month discount probably isn't worth moving.\n\nGet certified before assuming you qualify. The building—not the City—handles the application and income certification. Seattle maintains participating MFTE/MHA/income-restricted properties, but availability must be checked with each property's management. \n[Seattle.gov]\n\nOne important warning from your data: the $42,000 RSU vest plus Microsoft employment and consulting income means I would not infer that you're under an MFTE ceiling simply from your take-home payroll. Your gross compensation package is the deciding number, and stock compensation could materially change the result.\n\nIf your projected qualifying gross income is under about $80,000, I would actively investigate MFTE units; around $80k–$100k, check specific 70–90% AMI/P7 units carefully; substantially above that, the pool of useful income-restricted options becomes much smaller. \n[Seattle.gov]",
+      "score": 91,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 28,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 29,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 14,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_msft_stock_risk",
+      "answer": "The connected finance data is only synced through May 31, 2026, so I can’t verify a September vest yet. The latest visible RSU event is a $42,000 Microsoft RSU vest on May 10, deposited into your taxable brokerage. I also see about $23,700 in checking/savings and a $1,840 Chase Sapphire Preferred statement balance with no interest charge shown.\n\nGiven that setup, I would generally sell most or all of the vested Microsoft shares soon after vesting and diversify, unless you would deliberately take $42,000 of cash today and buy Microsoft stock with it. Your salary and future RSUs already make your finances materially dependent on Microsoft, so holding every vest compounds employer/stock concentration risk.\n\nA sensible order would be:\n\nConfirm taxes were properly withheld on the vest. RSUs are generally taxed as compensation at vesting; selling soon afterward usually means little additional capital gain or loss.\n\nPay the credit-card statement balance in full by the due date, but there’s no visible reason to rush it before then if you’re not accruing interest.\n\nKeep an adequate emergency/near-term cash reserve. You already have roughly $23.7k visible in checking and savings, so I would not automatically park the whole vest in cash.\n\nUse tax-advantaged space before adding more taxable investments where appropriate—especially your 401(k), HSA if eligible, and IRA/backdoor Roth strategy.\n\nInvest the remainder in diversified low-cost funds rather than replacing the RSUs with another concentrated stock position.\n\nOne important caveat: the finance feed classifies that $42,000 vest oddly as a cash/dividend transaction and currently exposes no position-level holdings, so I can’t tell how many MSFT shares you still own or calculate your exact Microsoft concentration. If your September data syncs, I can give you a precise “sell $X / keep $Y / invest $Z” recommendation based on the new vest and your full portfolio.",
+      "score": 92,
+      "dimensions": {
+        "grounding": {
+          "score": 24,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 29,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 27,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 13,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_next_card_bonus",
+      "answer": "Based on the cards and spending currently visible to Finances, I’d put the Atmos Rewards Summit Visa Infinite at the top of your list, with one important caveat: your connected transaction data is only synced through May 31, 2026, so I’m basing the fit on that history rather than your complete September spending.\n\nYou already have a Chase Sapphire Preferred, and your visible travel includes Alaska Airlines. The Summit’s current offer is 80,000 Atmos points plus a 25,000-point Global Companion Award after $4,000 in 90 days, with a $395 annual fee. It also gives eight Alaska Lounge passes per year, a free checked bag, 3x on Alaska/Hawaiian, dining and foreign purchases, and 10,000 status points annually. For a Seattle-based Alaska flyer, that combination is unusually well aligned. \n[Bank of America]\n\nMy ranking for you would be:\n\nAtmos Rewards Summit Visa Infinite — best fit. The bonus is effectively more than just the headline 80,000 points because of the additional 25,000-point companion award, and the $4,000 hurdle looks more realistic than some competing premium-card offers. \n[Bank of America]\n\nChase Sapphire Reserve — biggest straightforward points offer. It is currently offering 100,000 Ultimate Rewards points after $6,000 in three months, but the annual fee is $795. More importantly, because you already hold a Sapphire Preferred, Chase explicitly says the Reserve bonus may not be available depending on prior Sapphire ownership/bonuses. I would verify eligibility before applying. \n[Chase Credit Cards]\n\nCapital One Venture X — safest general-purpose alternative. 75,000 miles after $4,000 in three months, plus a $300 annual Capital One Travel credit and 10,000 anniversary miles. It’s less tailored to your Alaska usage but easier to justify long term than many premium cards. \n[Capital One] [+1]\n\nAtmos Rewards Ascent — best low-fee option. Its limited-time offer is 70,000 points plus a $99 Companion Fare after only $2,500 in 90 days, for a $95 annual fee. If you mainly care about extracting a strong bonus without adding another expensive premium card, this is arguably the cleanest play. \n[Bank of America]\n\nI would not choose Amex Platinum purely for the sign-up bonus right now unless Amex shows you a strong personalized offer during its approval flow. The publicly accessible page currently emphasizes its $895 annual fee and benefits rather than a fixed public welcome offer, so I wouldn’t assume a particular bonus. \n[American Express]\n\nMy pick: Summit if you expect to keep flying Alaska; Ascent if you mainly want the highest low-risk bonus-to-fee ratio. I’d only take the Sapphire Reserve instead if Chase confirms you qualify for the 100k bonus and you can comfortably hit $6,000 without manufacturing spend.",
+      "score": 61,
+      "dimensions": {
+        "grounding": {
+          "score": 18,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 20,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 18,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 12,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_recurring_charges_audit",
+      "answer": "Based on fully synced May 2026 activity, these are the charges I’d treat as recurring/subscription-like:\n\nBucket\tMay charge\tAmount\nSubscriptions / fitness / software\tNetflix\t$22.99\n\tAdobe\t$59.99\n\tClassPass\t$89.00\n\tBucket total\t$171.98/mo\nPhone / internet utilities\tXfinity\t$89.00\n\tAT&T Wireless\t$72.00\n\tBucket total\t$161.00/mo\n\nSo the two review buckets total $332.98/month, or about $3,996/year if they stay unchanged.\n\nRent is separate: Cascade Apartments — $2,350/month, excluded from both totals as requested.\n\nThe recurring detector also flagged Costco and Alaska Airlines based on spending patterns, but I would not classify those as subscriptions or fixed utility bills; they look more like repeat discretionary purchases/travel.",
+      "score": 100,
+      "dimensions": {
+        "grounding": {
+          "score": 40,
+          "outOf": 40
+        },
+        "correctness": {
+          "score": 35,
+          "outOf": 35
+        },
+        "resolution": {
+          "score": 20,
+          "outOf": 20
+        },
+        "prudence": {
+          "score": 5,
+          "outOf": 5
+        }
+      }
+    },
+    {
+      "questionId": "maria_rent_rewards",
+      "answer": "Yes. Your rent is $2,350/month, currently paid from Chase checking, so you’re earning essentially nothing on about $28,200/year of rent.\n\nThe cleanest option worth checking is Bilt. Its current cards can earn rewards on rent while Bilt processes the landlord-facing payment as ACH, avoiding the typical 2–3% credit-card convenience fee. The no-annual-fee Bilt Blue card explicitly supports fee-free housing payments. \n[Bilt] [+1]\n\nOne important 2026 wrinkle: Bilt’s rent earning structure is no longer simply “1 point per dollar no matter what.” The housing-only option ties your rent multiplier to how much everyday spending you put on the Bilt card, with up to 1.25× on housing. \n[Bilt]\n So I would not move lots of spending off your Sapphire Preferred just to manufacture extra rent points unless the math actually beats the rewards you’re giving up.\n\nAt your $2,350 rent, even 1× would mean roughly 28,200 Bilt points/year for an expense you already have. By contrast, putting rent directly on a normal rewards card usually makes little sense: a 2.5–3% processing fee would cost about $705–$846/year, generally more than the points are worth.\n\nMy move: keep paying by ACH unless Cascade Apartments supports Bilt’s ACH setup; if it does, Bilt is a genuine “earn something without paying a dumb fee” opportunity. I would not pay a percentage fee just to use your existing Chase card. \n[Bilt]\n\nYour connected finance data is current through May 31, 2026, so I’m basing the $2,350 figure on the latest posted rent I can see.",
+      "score": 98,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 28,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_rental_car_trip",
+      "answer": "Yes—probably, depending on how you booked it.\n\nYour recent rental was $312.44 at Avis on May 7 for the SFO work trip, charged to your Chase Sapphire Preferred. I can see the charge, but not whether you used Microsoft’s negotiated Avis rate.\n\nThe strongest option would likely have been Microsoft’s corporate Avis booking channel/rate. Microsoft’s Avis agreement says U.S. rentals can include insurance plus exemptions from several fees, and it specifically requires booking under the corporate AWD arrangement to receive the corporate terms. \n[Tripism]\n For a work trip, I’d prioritize that negotiated rate and its included protections over squeezing out a few extra credit-card points.\n\nIf the Microsoft rate wasn’t available, your Sapphire Preferred was still a good card to use. Direct travel earns 2x, while a rental booked through Chase Travel earns 5x. \n[Chase] [+1]\n On $312.44, that’s roughly 625 points direct vs. 1,562 through Chase Travel, about 937 extra points. But I wouldn’t give up a materially cheaper corporate rate or better corporate insurance just to earn those points.\n\nAlso, Sapphire Preferred currently provides primary rental collision/theft coverage up to $60,000 when its conditions are met, including paying with the covered card and generally declining the rental agency’s CDW/LDW. \n[Chase Assets]\n That coverage does not replace liability insurance.\n\nSo for your next Microsoft work rental, I’d compare in this order: Microsoft corporate Avis rate → Chase Travel price → Avis public/direct price, and book whichever has the lowest all-in cost after insurance/fees. If your May rental already used Microsoft’s corporate rate, you likely booked it about as well as you could have.",
+      "score": 65,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 26,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 28,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_rsu_tax_withholding",
+      "answer": "Your connected data shows a $42,000 Microsoft RSU vest on May 10, 2026. The feed does not show the share count, vest-date FMV, or shares/cash withheld for taxes, so those are the first items to verify before deciding how much MSFT to sell.\n\nFor taxes, check the vest statement and the corresponding Microsoft paystub. RSU value at vest is generally wage compensation; for 2026, separately paid supplemental wages can be withheld federally at a flat 22% below the $1 million supplemental-wage threshold, plus Social Security and Medicare as applicable. \n[IRS] [+1]\n On $42,000, 22% federal withholding would be $9,240. That 22% is only withholding—not necessarily your final tax rate. If your marginal federal rate is, say, 32%, the federal-income-tax gap on this vest alone could be roughly $4,200 before considering the rest of your return. Your connected cash data only shows posted transactions through May 31, and only two visible Microsoft net paychecks of $1,840 each, so it isn't enough to determine your actual annual bracket.\n\nAlso verify Social Security withholding against the 2026 $184,500 wage base and Medicare withholding. Medicare has no wage cap, and employers begin withholding an extra 0.9% Additional Medicare Tax once wages they pay you exceed $200,000 for the year. \n[IRS] [+1]\n Because you’re in Washington, there is no state individual wage income tax, but a later sale can create a capital gain or loss; Washington’s separate capital-gains tax can matter for sufficiently large long-term gains, so preserve the vest-date cost basis. \n[Department of Revenue] [+1]\n\nFor the trading side, don’t infer from the fact that the RSUs vested that you’re automatically free to sell them. Microsoft’s public Business Standards explicitly prohibit trading while you possess material nonpublic information and point employees to an internal Insider Trading Policy and Restricted Trading Window Policy. \n[Microsoft]\n Before entering a discretionary sale, check your internal Microsoft compliance/trading-window page for: whether you are currently in an open window, whether your role requires pre-clearance, whether a special blackout applies, and whether you possess any material nonpublic information even if the normal window is open.\n\nMy sequence would be: (1) download the May 10 vest confirmation and paystub, (2) reconcile gross vest value → federal withholding → Social Security/Medicare → net shares delivered, (3) compare the federal withholding percentage with your expected marginal rate and reserve cash/add payroll withholding if there’s a shortfall, (4) confirm the internal Microsoft trading-window/preclearance status, and only then (5) decide how many shares to sell based on diversification rather than the tax event itself. Selling immediately after vest usually creates little additional federal capital gain/loss because basis is generally around the vest-date value; holding afterward is economically a fresh decision to own MSFT.\n\nGiven the brokerage record I can see, I would not place a sell decision based on the $42,000 number alone until you verify the withheld shares and vest-date basis—the connected feed labels the vest unusually as a cash/dividend transaction and shows no corresponding MSFT holding detail.",
+      "score": 99,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 29,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_save_on_rent",
+      "answer": "Yes. At $2,350/month, there are a few Seattle-specific checks worth doing before you renew. The biggest potential dollar win is income-restricted housing, but your connected data cannot establish eligibility by itself because the City generally uses gross household income, while the Microsoft payroll deposits I can see are net cash deposits.\n\nYour financial data is currently synced only through May 31, 2026. You live alone, and the visible May inflows include two $1,840 Microsoft payroll deposits, $1,200 of consulting income, and a $42,000 Microsoft RSU vest. That RSU makes it especially important not to infer program eligibility from paycheck deposits alone.\n\nCheck\tWhat matters for you\tRough savings at $2,350 rent\nMFTE / income-restricted unit\tVerify gross annual household income, including compensation the program requires you to report, against the specific building/unit's AMI tier. Seattle has 6,600+ MFTE homes. \n[Seattle.gov] [+1]\n\tPotentially $2,000–$9,600+/yr, depending on unit/tier\nRenewal increase legality\tSeattle requires 180 days' notice. For most covered units, the 2026 annual cap is 9.683%; exemptions exist. \n[Washington State Department of Commerce] [+1]\n\tAvoiding an invalid max-size increase could protect up to $227.55/mo\nLease vs. month-to-month\tWA/Seattle rules generally prohibit charging >5% more for month-to-month versus a lease. \n[Seattle.gov]\n\tUp to $117.50/mo / $1,410 yr\nRenewal negotiation\tAsk for flat rent, free weeks, parking/storage concessions, or a longer fixed term rather than accepting sticker rent\tA 3% concession = $70.50/mo / $846 yr\nPayment method\tPrefer fee-free ACH/autopay unless rewards clearly exceed the fee\tAvoiding a 3% card fee = $70.50/mo / $846 yr\nThe MFTE check is the one I would do first\n\nFor a one-person household, 2026–27 MFTE Program 6 income limits run from about $68,970 at 60% AMI, $91,960 at 80%, and $103,455 at 90%. \n[Seattle.gov]\n Program 7 has multiple AMI tiers as well.\n\nThe potential rent difference is meaningful. For example, current Program 7 one-bedroom maximum rents, including applicable fees/basic utilities, are approximately $1,850 at 60% AMI, $2,158 at 70%, $2,312 at 75%, and $2,467 at 80%. \n[Seattle.gov]\n Compared with your $2,350:\n\na $1,850 unit would save about $500/month = $6,000/year;\n\na $2,158 unit would save about $192/month = $2,304/year;\n\na $2,312 unit would save about $38/month = $456/year.\n\nBut don't assume you qualify from the $3,680/month of visible Microsoft deposits. The property will want a defined gross-income calculation, and equity compensation/consulting income can materially affect it. Seattle directs applicants to contact each participating building for certification and availability. \n[Seattle.gov]\n\nBefore signing your current renewal\n\nCheck the date and method of delivery of any increase notice. Seattle requires at least 180 days' written notice, and the notice has formal requirements. Also total up rent plus landlord-charged parking, storage, and recurring fees—the rules apply to broader “housing costs,” not just base rent. \n[Seattle.gov] [+1]\n\nA 9.683% increase on $2,350 would be about $227.55/month, taking rent to roughly $2,577.55. That's the 2026 statewide ceiling for a covered tenancy, not a reasonable target for your landlord; some properties are exempt. \n[Washington State Department of Commerce]\n\nFor negotiation, I'd frame your walk-away alternatives numerically. Asking them to keep rent flat is equivalent to saving whatever increase they proposed. Even negotiating an increase down by $100/month is $1,200/year. Also ask whether they can waive or discount parking/storage, offer a renewal credit, or give a better rate for a 12- or 18-month fixed lease. A month-to-month premium generally cannot exceed 5%, which at your rent is about $117.50/month. \n[Seattle.gov]\n\nOne program that probably won't help unless circumstances line up\n\nSeattle's Economic Displacement Relocation Assistance (EDRA) applies if housing costs rise 10% or more within 12 months, you intend to move, and household income is at or below 80% AMI. For a one-person household, Seattle lists the 2026 threshold as $81,700. Qualifying assistance is roughly three months of current housing costs, which at $2,350 would be about $7,050. \n[Seattle.gov] [+1]\n\nBecause the normal 2026 rent cap is 9.683%, EDRA is now more situational—for example, combined housing-cost changes or an exempt property could matter. I would treat this as a protection to know about, not something to plan around.\n\nMy order of operations: get your projected 2026 gross W-2 compensation + taxable RSU income + consulting income + other countable income, check it against Seattle MFTE units you would actually live in, then use those alternatives as leverage in your renewal negotiation. Separately, pay the $2,350 by fee-free ACH/autopay unless your landlord/payment platform offers genuinely fee-free rewards; a typical 3% convenience fee costs $846/year, which overwhelms ordinary card rewards.\n\nIf you share the proposed renewal rent and whether you're in a studio/1BR/2BR, I can calculate the exact renewal increase, the legal thresholds, and the MFTE rent comparison.",
+      "score": 89,
+      "dimensions": {
+        "grounding": {
+          "score": 23,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 25,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 31,
+          "outOf": 35
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_side_income_tax",
+      "answer": "Based on posted data through May 31, 2026 across your currently synced accounts, I see one likely freelance payment: $1,200 from “Figma Consulting Client” on May 20. Your finance connection has no transaction visibility after May 31, so I can’t verify any later freelance receipts.\n\nFor that $1,200, I’d do four things now:\n\nMove $360–$420 (30–35%) into a separate tax bucket. Before business-expense deductions, the self-employment-tax component alone is roughly $170: $1,200 × 92.35% × 15.3%. Federal income tax can be due on top of that. The IRS generally requires estimated payments when you expect to owe at least $1,000 at filing, although as a W-2 employee you can alternatively increase withholding on your paycheck. \n[IRS] [+1]\n\nTrack legitimate freelance expenses. Software, supplies, business-use services, and other ordinary/necessary expenses can reduce your Schedule C net profit—and therefore both income tax and self-employment tax. Keep receipts and note the business purpose.\n\nDecide between estimated payments and extra W-2 withholding. Since you also receive Microsoft payroll, increasing withholding through your W-4 can be simpler than making separate quarterly estimated payments. The IRS explicitly allows this approach. \n[IRS]\n\nCheck the Seattle business paperwork. If you're actually conducting the freelance business in Seattle, the city generally requires a business license certificate and tax return. For 2026, Seattle raised its B&O tax threshold to $2 million, so $1,200 of freelance revenue by itself would not produce Seattle B&O tax, though filing/license requirements can still apply. \n[Seattle.gov] [+1]\n\nOne important distinction: taxes are based on net freelance profit, not simply the $1,200 deposit. If you had, say, $200 of deductible expenses, you'd be calculating from roughly $1,000 of net profit instead.\n\nFor now, I’d earmark $400 of the $1,200, keep a simple income/expense ledger, and revisit your 2026 withholding once you know whether this was a one-off gig or recurring freelance work.",
+      "score": 98,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 28,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_spend_april_vs_may",
+      "answer": "Your total posted spending increased from $2,581.10 in April 2026 to $4,197.71 in May 2026, across currently synced accounts through May 31.\n\nThat’s an increase of $1,616.61, or about 62.6%.\n\nThe biggest reason was that rent stayed flat at $2,350, while non-rent spending rose sharply: May added $671.85 groceries, $560.64 travel, plus dining, utilities/phone, fitness, subscriptions, and transportation. April’s only non-rent spending was $231.10 of travel.\n\nSo the change was almost entirely from higher discretionary/variable spending rather than housing.",
+      "score": 100,
+      "dimensions": {
+        "grounding": {
+          "score": 40,
+          "outOf": 40
+        },
+        "correctness": {
+          "score": 35,
+          "outOf": 35
+        },
+        "resolution": {
+          "score": 20,
+          "outOf": 20
+        },
+        "prudence": {
+          "score": 5,
+          "outOf": 5
+        }
+      }
+    },
+    {
+      "questionId": "maria_spend_may_total",
+      "answer": "In May 2026, you spent $4,197.71 across 18 posted transactions. All relevant connected accounts show full transaction-history coverage through May 31, so this appears to be a complete May total.\n\nYour biggest categories were:\n\nCategory\tMay spend\nHousing\t$2,350.00\nGroceries\t$671.85\nTravel\t$560.64\nDining & drinks\t$162.11\nBills & utilities\t$161.00\nTransportation\t$120.13\nHealth & wellness\t$89.00\nEntertainment\t$82.98\n\nHousing was about 56% of all spending. Excluding housing, you spent $1,847.71, with groceries and travel accounting for roughly two-thirds of that.",
+      "score": 100,
+      "dimensions": {
+        "grounding": {
+          "score": 40,
+          "outOf": 40
+        },
+        "correctness": {
+          "score": 35,
+          "outOf": 35
+        },
+        "resolution": {
+          "score": 20,
+          "outOf": 20
+        },
+        "prudence": {
+          "score": 5,
+          "outOf": 5
+        }
+      }
+    },
+    {
+      "questionId": "maria_subscriptions_benefits",
+      "answer": "Based on your synced accounts through May 31, 2026, I’d review a few charges, but I would not treat everything the recurring detector found as a subscription.\n\nAdobe — $59.99/mo: highest-priority subscription to question. That’s about $720/year. If you’re not using the paid apps regularly, canceling or moving to a cheaper plan has the biggest straightforward savings.\n\nClassPass — $89/mo: worth keeping only if you consistently use the credits. At $1,068/year, even modest underuse can make direct class purchases or a cheaper tier better.\n\nNetflix — $22.99/mo: smaller dollars, but an easy optimization. Downgrading or rotating it on only when you’re actively watching could save roughly $100–$200/year, depending on the alternative.\n\nXfinity — $89/mo and AT&T Wireless — $72/mo: these are recurring utilities rather than subscriptions. Together they’re $161/mo. They’re worth an annual plan/competitor check because even a $20–$30 combined monthly reduction is $240–$360/year.\n\nYour clear subscription/fitness/software total is $171.98/month, or about $2,064/year. I’d review Adobe first, then ClassPass, then Netflix. If you cut Adobe and trim the other two rather than canceling everything, a realistic target is roughly $700–$1,200/year of savings.\n\nThe recurring detector also flags Costco and Alaska Airlines, but your transaction data shows those as grocery purchases and airfare, respectively—not subscriptions—so I would not cancel or budget them as recurring bills. Rent at $2,350/month is genuinely recurring but obviously belongs in a separate housing decision.",
+      "score": 63,
+      "dimensions": {
+        "grounding": {
+          "score": 16,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 24,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 13,
+          "outOf": 35
+        },
+        "prudence": {
+          "score": 12,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "maria_tax_optimization",
+      "answer": "Based on the connected data posted through May 31, 2026, I can see a $1,200 freelance payment, Microsoft payroll with 8% employee 401(k) deferrals ($200 on each $2,500 gross paycheck), and W-2 employment. Here are the 2026 tax moves I’d check first.\n\nCover the freelance tax exposure. If the full $1,200 is net Schedule C profit and you have no deductible business expenses, self-employment tax is roughly $170: $1,200 × 92.35% × 15.3%. The actual amount can be lower if your 2026 W-2 Social Security wages approach the $184,500 Social Security wage base, because W-2 wages and self-employment earnings share that cap. Medicare has no wage cap. You generally owe self-employment tax once net self-employment earnings reach $400. \n[IRS] [+1]\n\nDon’t automatically send a quarterly payment just because you freelanced once. Estimated payments generally become relevant if you expect to owe at least $1,000 after withholding/credits and your withholding won’t reach the safe harbor: generally the smaller of 90% of 2026 tax or 100% of 2025 tax. If your 2025 AGI exceeded $150,000—$75,000 married filing separately—the prior-year safe harbor becomes 110%. Because you have W-2 wages, increasing Microsoft withholding via Form W-4 can be simpler than making separate estimates. \n[IRS]\n\nIf an estimated payment is needed, watch the dates. The 2026 federal due dates are April 15, June 15, September 15, 2026, and January 15, 2027. Income earned unevenly during the year can qualify for the annualized-income method rather than assuming it was earned evenly all year. \n[IRS]\n\nRevisit your 401(k) rate. The 2026 employee elective-deferral limit is $24,500. Age-50+ catch-up is $8,000, while ages 60–63 can use an $11,250 catch-up if the plan permits. The overall defined-contribution limit, including employer contributions and after-tax contributions, is $72,000 before catch-ups. Your visible May rate is only 8%; if $200 twice monthly continued for 24 paychecks, that would be about $4,800/year, well below the employee limit. I would not assume that annualized figure is your actual 2026 total, though, because the feed stops May 31. \n[IRS] [+1]\n\nBe careful if you open a solo 401(k) for freelance income. Your $24,500 employee deferral limit is shared across your Microsoft 401(k) and any solo 401(k). You do not get another $24,500 employee limit. A solo plan can potentially permit an additional employer contribution based on self-employment earnings, subject to the special self-employed calculation and the overall plan limits. For only $1,200 of freelance revenue, the administrative complexity may outweigh the benefit unless more freelance income is coming. \n[IRS]\n\nIRA/backdoor Roth is worth checking separately. The 2026 combined traditional + Roth IRA contribution limit is $7,500, or $8,600 if 50+. Direct Roth contributions phase out at MAGI $153,000–$168,000 for single/head-of-household filers and $242,000–$252,000 married filing jointly. Since you already have a workplace plan, a deductible traditional IRA also has income phase-outs; for a single filer covered at work, that is $81,000–$91,000. Your connected traditional IRA currently shows a $0 balance, which is favorable if a backdoor Roth becomes appropriate because the pro-rata rule is driven by pretax IRA balances at year-end. \n[IRS] [+1]\n\nHSA: check your Microsoft health-plan election before contributing. For 2026 the HSA maximum is $4,400 self-only / $8,750 family. Eligibility requires qualifying HDHP coverage; the 2026 HDHP minimum deductible is $1,700 self-only / $3,400 family, with maximum out-of-pocket limits of $8,500 / $17,000. A general-purpose health FSA or HRA can disqualify HSA contributions. Employer HSA contributions count toward the same annual limit. \n[IRS] [+1]\n\nTrack freelance expenses now. Ordinary and necessary business expenses reduce Schedule C profit and therefore usually reduce both income tax and self-employment tax. For a consulting payment, that might include legitimate software, payment-processing fees, business supplies, or the business-use share of qualifying costs. Don’t deduct ordinary W-2 employee expenses as freelance expenses just because they are work-related.\n\nThe QBI deduction may apply to freelance profit. For 2026, the §199A threshold is $201,750 of taxable income for most non-joint returns, with a phase-in range through $276,750; for married filing jointly it is $403,500–$553,500. Above the threshold, the type of consulting business and wage/property limitations can matter. \n[IRS]\n\nWashington/Seattle: Washington has no individual state income tax, but freelancing can still create business-registration/reporting obligations. In Seattle, businesses generally need a city business license tax certificate and must file a city business tax return. Starting in 2026, Seattle’s B&O taxable-revenue threshold is $2 million, so a $1,200 consulting payment by itself would be nowhere near the tax threshold, although filing/license requirements can still apply. \n[Seattle.gov] [+1]\n\nFor your situation, the highest-value checks are: (1) estimate full-year Microsoft wages and federal withholding, (2) project your total 2026 freelance net profit, (3) raise W-4 withholding if needed to hit the safe harbor, and (4) decide whether to increase your 401(k) toward the $24,500 limit before year-end. The $1,200 freelance payment alone probably doesn’t justify elaborate tax structuring, but it does justify making sure withholding is sufficient and saving receipts for legitimate expenses.",
+      "score": 92,
+      "dimensions": {
+        "grounding": {
+          "score": 17,
+          "outOf": 20
+        },
+        "correctness": {
+          "score": 25,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 25,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 24,
+          "outOf": 25
+        }
+      }
+    },
+    {
+      "questionId": "maria_where_wasting_money",
+      "answer": "Based on your synced data through May 31, 2026, these are the three easiest savings checks I’d do this week:\n\nCheck\tExact signal\tPotential impact\nClassPass: cancel/pause/downgrade if underused\t$89 posted May 16; detected as a $89/month recurring charge\t$89/mo · $1,068/yr if eliminated\nAdobe: confirm you still need the $59.99 plan\t$59.99 posted May 14; detected as $59.99/month recurring\t$59.99/mo · $719.88/yr if canceled\nXfinity: check for a cheaper tier/promo\t$89 posted May 5; detected as $89/month recurring\tA $20–$30 reduction would save $240–$360/yr\n\nI’d start with ClassPass because it has the largest clearly optional recurring charge. Adobe is next, especially if you can use an employer-provided license or no longer need the full plan. For Xfinity, the $20–$30 estimate is a scenario rather than a guaranteed saving—verify available plans before changing service.\n\nOne balance-related check is also worth doing: you had $18,450 in Chase checking versus $5,250 in Ally savings as of May 31. If more than your near-term bills/emergency buffer is sitting in checking, moving some of it to a higher-yield account could add interest without cutting spending. I can quantify that precisely once we compare the actual APYs.\n\nI wouldn’t count your $1,840 Chase Sapphire balance as a savings opportunity yet: the liability data shows $0 interest charged, so there’s no evidence you’re currently carrying costly revolving debt.",
+      "score": 65,
+      "dimensions": {
+        "grounding": {
+          "score": 18,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 20,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 17,
+          "outOf": 35
+        },
+        "prudence": {
+          "score": 10,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_401k_contribution",
+      "answer": "Based on the latest available linked data—still only through May 31, 2026, even after refreshing both 401(k) connections—you’re contributing at a solid rate, but neither account is on pace to hit the 2026 employee maximum.\n\n\tPriya\tDaniel\nCurrent semi-monthly deferral\t$700\t$300\nAnnualized at 24 pay periods\t$16,800\t$7,200\n2026 employee limit\t$24,500\t$24,500\nAnnualized gap\t$7,700\t$17,300\nDeferral needed per paycheck to max over a full 24-paycheck year\t~$1,021\t~$1,021\n\nThe 2026 elective-deferral limit is $24,500 per person; catch-up limits are higher for eligible employees age 50+. \n[IRS] [+1]\n\nOn cash flow, your recurring take-home payroll is about $16,650/month, while identified recurring household outflows are roughly $8,377/month. You also have about $43,430 in checking and savings in the linked accounts. That suggests there may be meaningful capacity to raise retirement contributions, though the cash-flow data does not capture every discretionary or irregular expense.\n\nI’d use this order:\n\nFirst make sure both of you are getting the full employer match. I don’t have the Salesforce or UCHealth match formulas in the connected data, so I wouldn’t sacrifice any match.\n\nIf cash flow remains comfortable, raise Priya from $700 toward roughly $1,000 per paycheck first. That is a relatively modest ~$300/paycheck increase and gets her close to a max-rate contribution.\n\nThen increase Daniel incrementally, perhaps $300 → $500 → $700 per paycheck rather than immediately jumping to ~$1,000. His gap is much larger, so this protects household liquidity while materially improving retirement savings.\n\nKeep your existing cash buffer intact before pushing both accounts all the way to the maximum. Because traditional 401(k) deferrals generally reduce taxable income, a $1 increase in contributions normally reduces take-home by less than $1, depending on your tax situation.\n\nIf both ultimately reached $24,500, you’d contribute $49,000 combined for 2026 versus an annualized $24,000 at the May pace—an additional $25,000/year of retirement saving.\n\nBecause the account feeds stop at May 31, I would not use those catch-up-per-paycheck numbers to change September elections blindly; the correct amount now depends on each person’s actual 2026 YTD contributions shown on the latest paystub. If you give me those two YTD 401(k) figures, I can calculate the exact per-paycheck percentages needed to max out by December without overshooting.",
+      "score": 99,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 29,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_401k_percent_to_limit",
+      "answer": "Based on the connected data posted through May 31, 2026, and assuming 14 semi-monthly paychecks remain:\n\n\tPriya\tDaniel\n2026 employee 401(k) limit\t$24,500\t$24,500\nRecorded YTD employee deferrals\t$1,400\t$600\nStill needed\t$23,100\t$23,900\nNeeded per remaining paycheck\t$1,650\t$1,707\nObserved payroll deposit\t$5,200/check\t$3,125/check\nNeeded rate using that pay proxy\t31.7%\t54.6%\n\nThe IRS employee elective-deferral limit for 2026 is $24,500 for someone under 50. \n[IRS] [+1]\n\nOne important caveat: the $5,200 and $3,125 figures in the connected account are payroll deposits to checking, which are normally net pay, not gross eligible compensation. So 31.7% and 54.6% are not necessarily the percentages they should enter in their 401(k) portals. The precise election is:\n\nPriya: $1,650 ÷ gross eligible pay per paycheck\nDaniel: $1,707 ÷ gross eligible pay per paycheck\n\nSo the useful target is $1,650/check for Priya and about $1,707/check for Daniel; payroll can translate those into the correct gross-pay percentages. Also, this assumes the connected 401(k) records contain all 2026 deferrals through May 31 and that neither has contributed to another employer plan this year.",
+      "score": 57,
+      "dimensions": {
+        "grounding": {
+          "score": 22,
+          "outOf": 40
+        },
+        "correctness": {
+          "score": 20,
+          "outOf": 35
+        },
+        "resolution": {
+          "score": 10,
+          "outOf": 20
+        },
+        "prudence": {
+          "score": 5,
+          "outOf": 5
+        }
+      }
+    },
+    {
+      "questionId": "patel_529_tax_strategy",
+      "answer": "Based on the connected data, the 529 looks like a sensible part of your plan, but I would treat it as a secondary savings priority rather than something to maximize aggressively right now. As of May 31, the CollegeInvest 529 balance was $12,400, and the latest visible contribution was $300 on May 6. I don’t see enough synced history to confirm that $300 is an established monthly contribution, so I wouldn’t project from it as though it were recurring.\n\nGiven that your child is still young, the account has a long runway for tax-free growth. Your Colorado plan is especially attractive because Colorado taxpayers can deduct CollegeInvest contributions from state taxable income; for 2026, married joint filers can deduct up to $39,200 per beneficiary. That is a deduction, not a dollar-for-dollar tax credit, so there generally isn’t a reason to contribute all the way to that ceiling solely for the tax break. \n[College Invest] [+1]\n\nThe bigger planning point is flexibility. Money used for qualified education expenses can come out free of federal and Colorado income tax. CollegeInvest can cover eligible college, graduate, trade/vocational, and certain apprenticeship costs, and the beneficiary can generally be changed to another qualifying family member. \n[College Invest] [+1]\n If your child receives a scholarship, you also have several outs, including keeping the money for other eligible costs, changing beneficiaries, or withdrawing up to the scholarship amount without the usual 10% federal penalty on earnings—although income tax on earnings can still apply. \n[College Invest]\n\nThe main caveats are:\n\nOverfunding is still possible. A nonqualified withdrawal generally makes the earnings portion taxable and subjects it to a 10% federal penalty; Colorado deductions previously claimed may also be recaptured. \n[College Invest]\n\nColorado treatment can be narrower than federal treatment. For example, CollegeInvest currently says K–12 tuition withdrawals are treated as nonqualified for Colorado purposes even though federal 529 rules allow certain K–12 tuition withdrawals. \n[College Invest]\n\nThe Roth-IRA escape hatch helps but isn’t unlimited. Unused 529 assets can potentially be rolled directly to the beneficiary’s Roth IRA, subject to the annual IRA limit, a $35,000 lifetime cap, a 15-year account-age rule, and restrictions on contributions made in the preceding five years. IRS guidance confirms those federal rules; CollegeInvest notes that Colorado’s treatment of these rollovers is still a separate state-tax consideration. \n[IRS] [+1]\n\nInvestment flexibility has limits. CollegeInvest generally restricts investment-option changes, so a simple age-based allocation can be preferable if you don’t want much administration. \n[College Invest]\n\nFor your household, I’d keep contributing to the 529, but only after preserving your cash cushion and taking good advantage of the more valuable retirement/HSA tax shelters. In other words, $12,400 at this stage is a healthy start, not a shortfall that warrants sacrificing current cash flow or retirement savings to fix. If cash flow improves, gradually raising the contribution is reasonable; I would not target the $39,200 Colorado deduction ceiling as the goal in itself.",
+      "score": 93,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 28,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_backdoor_roth",
+      "answer": "Yes. Based on your connected finances, backdoor Roth IRAs are worth considering for both of you, but I’d put a few moves ahead of them.\n\nYour paystub data implies roughly $210k annual gross for Priya and $120k for Daniel, or about $330k combined before other income/deductions. That likely puts you above the 2026 direct Roth IRA income cutoff for married filing jointly: contributions phase out from $242k–$252k MAGI. The 2026 IRA limit is $7,500 per person, so a backdoor strategy could move $15,000/year into Roth accounts. \n[IRS] [+1]\n\nI’d prioritize your available tax shelters roughly this way:\n\nGet every available 401(k) employer match first.\n\nMax an HSA if you’re eligible. The 2026 family HSA limit is $8,750, and its combination of deductible contributions, tax-free growth, and tax-free qualified medical withdrawals generally makes it more valuable than a Roth IRA. \n[IRS]\n\nIncrease your traditional 401(k) contributions substantially. Your current payroll data shows Priya contributing about $16,800/year at 8% and Daniel about $7,200/year at 6%, versus a $24,500 2026 employee limit each. At your income, the immediate tax deduction from filling that unused 401(k) room is likely more valuable than prioritizing Roth dollars first. \n[IRS]\n\nUse the dependent-care FSA if you have eligible childcare expenses. For 2026 the exclusion is up to $7,500 for married filing jointly, subject to the employer plan rules. \n[IRS]\n\nThen fund two backdoor Roth IRAs — $7,500 each.\n\nAfter that, put additional long-term savings toward the 529 and/or taxable brokerage depending on how strongly you want to earmark money for college.\n\nThere’s one important backdoor-Roth caveat: the pro-rata rule. I don’t see any traditional, SEP, or SIMPLE IRA among your connected accounts, which is ideal. If either of you has an old pre-tax IRA elsewhere, though, converting a nondeductible IRA contribution may become partly taxable. Employer 401(k) balances do not cause that problem.\n\nSo I wouldn’t skip the backdoor Roth; I’d just treat it as the next layer after the highest-value payroll tax shelters. Given your current contribution rates, the biggest opportunity appears to be filling more of your roughly $25,000 combined unused annual 401(k) employee-deferral capacity before directing the full $15,000 to backdoor Roths.\n\nOne limitation: your connected-account data is currently synced only through May 31, 2026, so I’m basing the contribution pace on the payroll information available through that date.",
+      "score": 92,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 28,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_checking_buffer",
+      "answer": "Based on the connected data through May 31, I’d target a checking buffer of about $8,000–$10,000.\n\nYour recurring checking outflows shown in May were about $5,690/month, dominated by the $3,850 mortgage, while regular payroll deposits were about $16,650/month. Given that cadence, keeping roughly 1.5 months of known checking obligations gives you enough room for timing mismatches, a larger-than-usual bill, or a payroll delay without leaving too much idle cash.\n\nAt the May 31 available checking balance of $14,640, that would imply roughly $4,500–$6,500 of excess checking cash that could reasonably be swept elsewhere. You also had $28,750 in savings, so the checking account itself doesn’t need to double as your full emergency fund.\n\nI’d use a simple rule: keep $9,000 as the checking floor; periodically sweep anything above $10,000. Move the excess first to high-yield savings if it is part of your emergency fund or needed within ~3 years; otherwise, after your higher-priority tax-advantaged contributions are covered, it can go toward investments.\n\nOne qualification: your financial connection is only current through May 31, 2026, so this recommendation is based on posted data through that date, not your September balance.",
+      "score": 79,
+      "dimensions": {
+        "grounding": {
+          "score": 14,
+          "outOf": 20
+        },
+        "correctness": {
+          "score": 18,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 24,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 20,
+          "outOf": 25
+        }
+      }
+    },
+    {
+      "questionId": "patel_childcare_family_spend_may",
+      "answer": "Based on posted May transactions through May 31 across the fully synced checking and credit-card accounts:\n\nChildcare: $1,870\n\nBright Horizons Daycare: $1,650\n\nCare.com Backup Care: $220\n\nOther clearly kid-related: $300 contribution to Colorado 529 CollegeInvest\n\nTotal including the 529 contribution: $2,170\n\nI’d double-check the $242.19 Target purchase on May 21 for diapers, clothing, toys, or other child-specific items, since it is categorized only as “Household.” I’d also decide whether you want the 529 contribution treated as “kid spending” or as savings/investing; for ordinary household-spending analysis, I’d normally report $1,870 of expenses and keep the $300 529 contribution separate.\n\nNothing else in May is clearly identifiable from the transaction descriptions as child-specific, and I don’t see an obvious childcare reimbursement offset in the posted activity.",
+      "score": 89,
+      "dimensions": {
+        "grounding": {
+          "score": 40,
+          "outOf": 40
+        },
+        "correctness": {
+          "score": 34,
+          "outOf": 35
+        },
+        "resolution": {
+          "score": 19,
+          "outOf": 20
+        },
+        "prudence": {
+          "score": 5,
+          "outOf": 5
+        }
+      }
+    },
+    {
+      "questionId": "patel_childcare_tax_credits",
+      "answer": "Based on your connected data, the Dependent Care FSA is likely the first childcare tax break I’d prioritize for you, rather than relying primarily on the Child and Dependent Care Credit.\n\nIn May, you paid $1,650 to Bright Horizons plus $220 for backup care = $1,870 of childcare in one month. Your child is age 3, and Priya’s Salesforce benefits include a dependent-care FSA. At that spending level, you appear likely to have more than enough qualifying expenses to use the full FSA election.\n\nFor 2026, the federal dependent-care FSA exclusion increased to $7,500 for married couples filing jointly. \n[IRS]\n Contributions generally avoid federal income tax and, when applicable, payroll taxes. With your roughly $330,000 annualized base pay from the payroll data, the income-tax savings alone on a full $7,500 election could plausibly be around $1,800 if those dollars would otherwise fall in a 24% marginal bracket, before considering any payroll-tax savings.\n\nThe alternative is the Child and Dependent Care Credit. Your child qualifies by age, and daycare used so both spouses can work generally qualifies. \n[IRS] [+1]\n For one child, however, only $3,000 of expenses can be used to calculate the credit. Employer dependent-care benefits—including FSA dollars—reduce that $3,000 expense limit dollar-for-dollar, so you cannot double-dip the same expenses. \n[IRS] [+1]\n At your income level, that makes the FSA generally much more valuable than preserving expenses for the credit.\n\nA practical approach for you would be:\n\nAim to elect the full $7,500 DCFSA for 2026 if you still have an enrollment opportunity and expect daycare to continue. Just four months resembling May would exceed $7,500.\n\nSubmit ordinary daycare first against the FSA; keep invoices/receipts and Bright Horizons' tax ID because Form 2441/provider identification is part of the tax reporting process. \n[IRS]\n\nBe careful with the $220 backup-care charge. Since Salesforce also offers a backup-care benefit, determine whether any part was employer-subsidized. You can generally reimburse only your actual unreimbursed qualifying cost; don't claim an employer-paid portion again.\n\nDon't confuse this with the Child Tax Credit. It is a separate provision, and qualifying taxpayers can potentially claim it alongside childcare-related tax benefits. \n[IRS]\n\nOne thing I'd specifically double-check is whether Priya is already making 2026 dependent-care FSA payroll contributions. The bank feed shows the daycare spending, but not a clearly identified DCFSA withholding. If she's currently at $0, this could be one of your more useful remaining tax-benefit opportunities for childcare.",
+      "score": 100,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 30,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_college_savings_allocation",
+      "answer": "Yes. Based on the connected data available through May 31, 2026, a $300/month 529 contribution looks reasonable relative to your other priorities.\n\nYou have about $43,430 in checking and savings, roughly $240,000 across the two 401(k)s, and $12,400 already in the 529. Your current retirement deferrals appear to be about $2,000/month combined—$1,400/month for Priya and $600/month for Daniel—so college saving is meaningfully smaller than retirement saving, which is the right ordering in most cases. You’re also contributing about $400/month to the HSA.\n\nI’d keep the 529 around $300/month for now rather than increasing it aggressively. The main reason is that your 401(k) contribution rates—8% and 6%—still leave room for additional tax-advantaged retirement saving if cash flow permits. Retirement is generally the harder goal to finance later, while college has more flexibility through scholarships, school choice, student earnings, and borrowing.\n\nSo I’d rank additional dollars roughly as: maintain your cash buffer and pay cards in full, capture all employer retirement matching, make good use of the HSA and other valuable workplace benefits, increase retirement contributions toward your desired targets, and then raise the 529. At your current level, the 529 is substantial enough to build steadily without appearing to compromise those higher-priority goals.\n\nOne caveat: your connected financial data is current only through May 31, so this assessment reflects balances and contributions posted through that date rather than your September position.",
+      "score": 85,
+      "dimensions": {
+        "grounding": {
+          "score": 24,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 28,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 26,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 14,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_costco_target_optimization",
+      "answer": "Your connected data is currently synced only through May 31, 2026, so I can’t verify September purchases yet. In the latest fully synced month, you spent $736.80 at Costco and $242.19 at Target, all on your Chase Freedom Unlimited.\n\nThe Chase Freedom Unlimited earns 1.5% on ordinary purchases, so those transactions earned roughly $11.05 at Costco and $3.63 at Target. \n[Chase]\n\nFor Target, the clearest upgrade is a Target Circle Debit Card if you want to avoid opening another credit line. It gives 5% off eligible Target purchases, has no annual/monthly fee, and links to your checking account. On your $242.19 May Target spend, that would have been about $12.11 off, versus roughly $3.63 from Freedom Unlimited—about $8.48 better for that month. The credit version offers the same core 5% Target discount. \n[Target] [+1]\n\nFor Costco, there are two separate levers. The Costco Anywhere Visa currently earns 2% on Costco and Costco.com purchases, versus your Freedom Unlimited’s 1.5%, so on $736.80 the incremental gain would have been only about $3.68. That card becomes more compelling if you also spend heavily on Costco gas, where it currently earns 5%, or other eligible gas/EV charging at 4% up to the combined annual cap. \n[Citi] [+1]\n\nThe bigger Costco decision is Executive Membership. It costs an extra $65/year and earns a 2% annual reward on qualifying Costco purchases, so the simple break-even point is about $3,250 of qualifying annual spend. Your May Costco spending alone annualizes to roughly $8,842, which would generate about $177/year of Executive rewards if that pace held—around $112 net of the $65 upgrade fee. Purchases made before upgrading don’t count toward that reward. \n[Costco] [+1]\n\nSo I’d prioritize the moves this way: Target Circle Debit Card first, because the incremental savings are large and there’s no annual fee or new credit line; Costco Executive Membership next if your Costco spending is routinely above ~$3,250/year; and Costco Visa only if your Costco/gas spending is high enough to justify adding another card, since the warehouse-spend advantage over Freedom Unlimited is only 0.5 percentage point.",
+      "score": 94,
+      "dimensions": {
+        "grounding": {
+          "score": 24,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 29,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 29,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_credit_card_balance_check",
+      "answer": "Based on the connected data through May 31, 2026, the credit-card balances do not look like a problem by themselves.\n\nThe Chase Freedom Unlimited shows $3,120 on a $20,000 limit (15.6%), and the Amex Gold shows $1,850 on an $11,000 limit (16.8%). Combined, that is $4,970 on $31,000 of reported credit limits, or about 16.0% utilization. Neither account is flagged overdue, and the reported minimum payments are only $62 and $37.\n\nWhat I would verify before optimizing rewards, memberships, investing, or moving more cash elsewhere:\n\nConfirm both cards are being paid in full every statement cycle. The connected liability data does not provide APRs, statement balances, or recent payment amounts, and I found no card-payment credits in the March–May transaction history. That may simply be a data limitation, but it means I cannot confirm from these records that you are avoiding interest.\n\nCheck the actual current balances. The account feed is stale relative to today: its latest data is May 31, 2026. So the 16% utilization figure is useful historically, not a reliable picture of September.\n\nVerify autopay settings. Ideally, autopay should be for the full statement balance, not merely the minimum payment. The existence of a $62/$37 minimum tells us what was required, not what you actually paid.\n\nCheck for any interest or late-fee charges on recent statements. If either card is revolving at a typical credit-card APR, eliminating that balance should outrank rewards optimization and most additional taxable investing.\n\nDistinguish normal monthly spend from carried debt. A $4,970 balance can be completely benign if it is ordinary spending that will be paid by the due date; the same balance is materially more concerning if it rolls month to month.\n\nYou also had about $43,430 in checking and savings as of May 31, so the reported card balances were small relative to available cash. If you confirm that both cards are paid in full and no interest is accruing, I would treat the balances as normal working balances rather than debt that needs intervention. If either is revolving, I would prioritize paying it off before doing much else.",
+      "score": 99,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 29,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 30,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_credit_card_strategy",
+      "answer": "Based on the cards currently linked and your May spending, I’d use them this way:\n\nCategory\tBest current card\tWhy\nGroceries\tAmex Gold\t4X Membership Rewards at U.S. supermarkets, up to $25,000/year. \n[American Express] [+1]\n\nDining\tAmex Gold\t4X at restaurants worldwide, versus 3% back on Freedom Unlimited. \n[American Express] [+1]\n\nDaycare\tChase Freedom Unlimited\tNo daycare bonus on either card, so CFU’s 1.5% baseline beats Gold’s 1X. \n[American Express] [+1]\n\nCostco\tChase Freedom Unlimited\tCostco warehouses accept Visa, and CFU earns 1.5%. Amex Gold isn’t usable in-store, and warehouse clubs wouldn’t qualify for its supermarket 4X anyway. \n[Costco] [+1]\n\nUtilities\tChase Freedom Unlimited\tNeither card has a general utilities bonus; CFU’s 1.5% baseline is preferable to Gold’s 1X, assuming the utility doesn’t charge a card fee. \n[American Express] [+1]\n\nYour May activity already mostly followed that pattern: $286.74 at King Soopers plus $164.75 of dining went on Amex Gold, while $736.80 of Costco purchases and $1,870 of daycare/backup care went on Freedom Unlimited. The main opportunity is utilities: you paid $164.22 to Xcel and $119 to Xfinity from checking. Moving those to Freedom Unlimited would earn roughly $4.25/month at May’s spending level, but only if there’s no convenience fee that wipes out the reward.\n\nSo the easy household rule is: Gold for ordinary supermarkets + restaurants; Freedom Unlimited for Costco + daycare + uncategorized everyday spend. For utilities, use CFU only where credit-card payment is fee-free.\n\nOne caveat: your connected financial data is current only through May 31, 2026, so this recommendation is based on that card lineup and posted May spending.",
+      "score": 95,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 30,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_daycare_rewards",
+      "answer": "Yes. Based on your May data, the key is to keep the payment fee below the reward rate.\n\nYou paid $1,650 to Bright Horizons on your Chase Freedom Unlimited. That card currently earns 1.5% back on ordinary purchases, so that daycare payment generates about $24.75/month, or roughly $297/year, assuming similar tuition. \n[Chase] [+1]\n\nThat gives you a simple break-even rule:\n\nNo card fee: definitely use the Freedom Unlimited.\n\nFee below 1.5%: you still come out ahead, though only modestly.\n\nFee around 1.5%: basically a wash.\n\nFee above 1.5%: ACH/check is better financially, unless you have another reason to use the card such as earning a valuable welcome bonus.\n\nFor example, a 2.5% processing fee on $1,650 is $41.25, while your Freedom Unlimited earns only $24.75, leaving you $16.50 worse off each month. Your Amex Gold is less attractive for daycare because non-bonus purchases earn just 1 Membership Rewards point per dollar. \n[American Express] [+1]\n\nOne potentially useful exception is a new-card welcome bonus. Daycare is a large, predictable expense, so temporarily paying a ~2–3% fee can make sense if it helps earn, say, a several-hundred-dollar bonus you would otherwise miss. But for ongoing tuition, I’d use Freedom Unlimited only if Bright Horizons charges no fee or less than ~1.5%; otherwise pay by fee-free ACH.\n\nYour connected data shows the $1,650 Bright Horizons payment posting directly to Freedom Unlimited, but it does not show a separate processing fee, so there’s a decent chance you may already be getting the best-case outcome. I’d verify on the daycare invoice or payment portal that the card price is identical to ACH.",
+      "score": 60,
+      "dimensions": {
+        "grounding": {
+          "score": 14,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 18,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 16,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 12,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_dependent_care_fsa",
+      "answer": "Yes. Based on your spending and benefits, a dependent care FSA looks quite attractive.\n\nYou spent $1,650 on daycare in May, plus another $220 on backup care. If the $1,650 daycare payment is typical, that alone is about $19,800/year, so you have more than enough qualifying expenses to use the full FSA election. Priya’s Salesforce benefits include a dependent care FSA, and your child is age 3, which fits the general under-13 requirement for qualifying care.\n\nFor 2026, the dependent-care FSA exclusion increased to $7,500 per household for married couples filing jointly. \n[IRS] [+1]\n Your payroll data implies roughly $330,000 of annual gross wages before pretax deductions. After your current 401(k) contributions and standard deduction, you appear to remain in the 24% federal marginal bracket. \n[IRS]\n\nAt a $7,500 election, a reasonable estimate is:\n\nFederal income-tax savings at 24%: about $1,800\n\nMedicare-tax savings: roughly $176, including the likely effect of the additional Medicare tax at your combined income level\n\nColorado income-tax savings at 4.4%: approximately $330, assuming the exclusion flows through your Colorado taxable income as expected; Colorado’s 2026 estimated-tax materials use a 4.4% rate. \n[Colorado Department of Revenue]\n\nEstimated total: about $2,300/year, or roughly 31 cents saved per $1 put through the FSA\n\nI would therefore lean toward electing the full $7,500, provided you are confident you’ll incur at least that much of eligible care during the plan year. Your regular daycare expense makes that risk look low.\n\nThere is one important interaction with the Child and Dependent Care Credit: expenses paid with tax-free dependent-care benefits generally can’t also be used for the credit. \n[IRS] [+1]\n With one child, however, your income level and expense pattern make the FSA substantially more valuable than preserving expenses solely for the credit; at higher incomes the credit percentage is generally only 20%, so the maximum credit on $3,000 of one-child qualifying expenses has historically been $600. The pretax FSA benefit for you is much larger.\n\nTwo things to verify during benefits enrollment: make sure Salesforce’s 2026 plan actually permits the new $7,500 maximum, rather than retaining a lower plan limit, and check whether its backup-care subsidy counts toward the same dependent-care-assistance limit. The IRS notes that employer-provided dependent-care benefits can count alongside FSA contributions toward the annual exclusion. \n[IRS]\n\nSo, in round numbers: putting $7,500 through the dependent care FSA could save your household roughly $2,300 in 2026 taxes versus paying the same daycare bill entirely with after-tax dollars.",
+      "score": 100,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 30,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_employer_family_benefits",
+      "answer": "Based on your posted May spending, I’d check employer benefits in this order:\n\nDependent Care FSA first. You paid $1,650 to Bright Horizons daycare in May, so childcare is the clearest recurring expense that may qualify for pre-tax treatment. Priya’s Salesforce benefits include a dependent care FSA, making this the highest-priority item to verify: annual limit, enrollment/change rules, eligible expenses, and whether you can comfortably use the full election.\n\nSalesforce backup-care benefit. You also paid $220 to Care.com Backup Care. Before treating that as a normal out-of-pocket cost, check exactly what Salesforce subsidizes, how many backup-care days are included, and whether reimbursement or discounted care should have applied. This could be an immediate cash-flow win.\n\nHSA/HDHP economics. You contributed $400 to the HealthEquity HSA and had $229.40 of health/wellness spending, including $185.40 at Kaiser. Since Priya has an HDHP/HSA option, compare the employer HSA contribution, premiums, deductible/out-of-pocket maximum, and whether your current HSA contributions are taking full advantage of payroll tax savings.\n\nBoth 401(k) plans and employer matches. You have Salesforce and UCHealth 401(k)s. Confirm the match formulas and that neither of you is leaving match money unclaimed before increasing taxable investing or the $300/month 529 contribution. The match is generally the first retirement benefit to capture.\n\nDaniel’s group life and disability coverage. With a child, mortgage, and substantial monthly obligations, UCHealth’s employer-paid or subsidized life and disability benefits deserve a review. Check benefit amounts, definitions of disability, waiting periods, portability, and whether supplemental coverage is inexpensive enough to fill any gap.\n\nThe spending data is fully synced through May 31, 2026. The biggest signal is childcare: $1,870 of family/kids spending in May, versus $229.40 of health/wellness spending. So I’d put dependent-care FSA + backup care clearly ahead of further rewards-card or 529 optimization.",
+      "score": 92,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 23,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 33,
+          "outOf": 35
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_extra_15000",
+      "answer": "Based on the connected data posted through May 31, 2026, I’d direct the extra $15,000 toward tax-advantaged accounts before adding more to the 529 or taxable brokerage. You already had about $43,430 in checking + savings, so this doesn’t look like a household that needs to park the full $15,000 in cash.\n\nMy order would be:\n\nProtect the cash buffer and pay credit cards in full. Your cards showed about $4,970 combined in current balances. I would not invest extra dollars ahead of those balances unless you’ve confirmed they’re simply normal statement balances being paid in full. If either card is revolving at a high APR, paying it off becomes priority #1.\n\nCapture every available 401(k) employer match. The 2026 employee 401(k) deferral limit is $24,500 per person. \n[IRS] [+1]\n Your connected feed shows Priya contributing roughly $700/paycheck and Daniel $300/paycheck in May, but it doesn’t contain enough year-to-date contribution history for me to determine precisely how far each is from the limit. I’d increase whichever contribution rate is needed first to secure any unclaimed match, then consider pushing both plans higher.\n\nMax the HSA if you’re HSA-eligible. For 2026, the contribution limit is $8,750 for family HDHP coverage or $4,400 for self-only coverage, including employer contributions. \n[IRS] [+1]\n Given the tax treatment, I would generally put HSA dollars ahead of extra 529 or taxable investing. Your HSA balance was about $6,800, and the data shows ongoing contributions, but we’d need the employer contribution amount and actual 2026 YTD total to calculate the remaining room exactly.\n\nUse the dependent-care FSA for daycare if eligible. This is technically a payroll election rather than somewhere you deposit the $15,000, but freed-up cash can make the paycheck reduction easier to absorb. The 2026 dependent-care FSA limit is $7,500 for married filing jointly. \n[IRS]\n With a 3-year-old and ongoing childcare, this deserves priority alongside the retirement/HSA decisions rather than simply writing a larger 529 check.\n\nThen choose between more 401(k), 529, and taxable investing. You already have about $240,000 across the two 401(k)s, $12,400 in the 529, and $54,000 taxable. Given your preference to protect family cash flow first, I would favor additional retirement contributions before materially accelerating the 529. Your existing $300/month 529 contribution is already building college savings; I wouldn’t make the 529 the first destination for this particular $15,000.\n\nSo, if the cards are paid in full and your existing ~$43k cash reserve is adequate, a reasonable deployment would be roughly $5k–$9k toward remaining HSA capacity and $6k–$10k of additional 401(k) deferrals, adjusted for whatever each employer matches and what has already been contributed in 2026. I would put $0 of the incremental $15k into taxable brokerage or an extra 529 lump sum until those higher-value tax shelters have been checked first.\n\nThe two facts that could materially change that split are Priya and Daniel’s exact employer-match formulas and their 2026 YTD 401(k)/HSA contributions.",
+      "score": 96,
+      "dimensions": {
+        "grounding": {
+          "score": 20,
+          "outOf": 20
+        },
+        "correctness": {
+          "score": 25,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 27,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 24,
+          "outOf": 25
+        }
+      }
+    },
+    {
+      "questionId": "patel_hsa_family",
+      "answer": "Yes—if Priya is actually enrolled in the HSA-eligible HDHP, I’d put HSA contributions fairly high on your priority list this year, generally after preserving your family cash buffer and capturing any 401(k) employer match, but before extra taxable investing and usually before incremental 529 contributions.\n\nYour connected data currently shows about $14,680 in checking, $28,750 in savings, and $6,800 in the HealthEquity HSA as of May 31. That gives you enough liquid cash that increasing HSA contributions looks reasonable, assuming there isn’t a near-term expense we haven’t accounted for. I can see only limited 2026 HSA contribution activity in the synced records, so I would not infer your year-to-date contribution total from that alone—payroll contributions and employer deposits need to be checked before choosing a catch-up amount.\n\nFor 2026, the HSA contribution limit is $4,400 for self-only HDHP coverage or $8,750 for family HDHP coverage. Employer contributions and payroll salary-reduction contributions count toward that same limit. Someone age 55+ can add a $1,000 catch-up contribution. The corresponding HSA-qualified HDHP thresholds are a minimum deductible of $1,700 self-only / $3,400 family and a maximum in-network out-of-pocket amount of $8,500 / $17,000. \n[IRS] [+1]\n\nThe enrollment caveats matter more than the account itself. To contribute for a given month, you generally need to be covered by an HSA-qualified HDHP on the first day of that month, not be enrolled in Medicare, not be someone else’s tax dependent, and not have disqualifying additional medical coverage. A general-purpose health FSA or HRA can disqualify HSA contributions, including potentially coverage through a spouse; limited-purpose dental/vision FSAs and certain post-deductible arrangements are permitted. Your dependent-care FSA, by contrast, is a different benefit and does not itself create this health-FSA conflict. \n[IRS] [+1]\n\nThere are also two traps worth checking. First, if you became HSA-eligible partway through 2026, your normal limit may be prorated by eligible months. The IRS “last-month rule” can sometimes allow the full annual limit if you are eligible on December 1, but it comes with a testing period extending through the following December; losing eligibility during that period can create taxable income plus an additional tax. Second, married couples do not each get an $8,750 family limit: where the married-person rules apply, the family limit is shared between the spouses, although each age-55 catch-up must go into that spouse’s own HSA. \n[IRS]\n\nSo my ordering for you would be: cash reserve → full employer retirement matches → HSA → additional 401(k)/other tax-advantaged saving → taxable brokerage/extra 529, with the exact middle ordering depending on your tax bracket and plan investment quality. HSA payroll contributions are especially attractive because qualifying cafeteria-plan contributions can avoid federal income tax and Social Security/Medicare tax, whereas a direct personal HSA contribution generally gives you an income-tax deduction but not the same payroll-tax benefit. \n[IRS]\n\nBefore increasing it, I’d verify Priya’s 2026 HDHP enrollment dates, self-only versus family coverage, employer HSA contribution, and YTD employee payroll contributions. Those four numbers tell us exactly how much room remains.",
+      "score": 98,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 30,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_idle_cash",
+      "answer": "Based on the latest synced data, yes—you likely have more cash sitting in checking than you need. Your Chase checking had $14,680 as of May 31, 2026, while Marcus savings had $28,750.\n\nYour detected recurring monthly outflows are roughly $8,400/month when I account for Costco occurring about twice monthly. Given that payroll also lands in checking regularly, I’d target a checking floor of about $9,000–$10,000. That gives you roughly one month of recurring bills plus some timing/error cushion without keeping an unnecessarily large balance there.\n\nThat means I’d be comfortable moving approximately $4,500–$5,500 from checking to Marcus savings now, assuming there aren’t unusually large checks, property-tax payments, vacations, or other near-term expenses not visible in the connected data. I would not move the full excess above one month of expenses; the $10,000-ish buffer protects you from the mortgage and other bills hitting shortly before payroll.\n\nOne important caveat: your connected accounts are synced only through May 31, so this recommendation is based on balances and activity through that date, not your actual September 13 balances. Before making the transfer, I’d verify today’s checking balance and any large pending payments. If those still look similar, $5,000 to Marcus is a sensible move.",
+      "score": 94,
+      "dimensions": {
+        "grounding": {
+          "score": 23,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 28,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 27,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 14,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_insurance_review",
+      "answer": "Based on your connected data through May 31, 2026, I’d review your insurance in this order. You have a roughly $462,000 mortgage, one young child, substantial retirement/investment assets, and I can see recurring State Farm homeowners ($154) and auto ($218) payments—but I don’t see evidence here of individually owned life, disability, or umbrella coverage.\n\nTerm life insurance for both parents. This is the first gap I’d verify. With a 3-year-old and a large mortgage, each spouse’s death would create both an income-loss problem and a childcare/household-services problem. Employer group life is useful, but I generally would not rely on it as the main protection because it may be limited and tied to employment. A practical review should ask whether the death benefit can cover the mortgage, several years of family expenses/childcare, and your desired education funding, minus assets that could realistically be used.\n\nLong-term disability coverage. Your future earning power is likely a much larger asset than your current portfolio. Daniel has employer group disability benefits noted in your records; I’d verify Priya’s coverage too, then check each policy’s benefit percentage, monthly cap, definition of disability, waiting period, tax treatment, and whether coverage follows you after leaving the employer. A high salary can make a seemingly generous “60% of pay” benefit inadequate if there is a low monthly cap.\n\nUmbrella liability insurance. With a home, vehicles, a growing asset base, and a child, this moves fairly high on the list. First make sure your underlying homeowners and auto liability limits meet the umbrella carrier’s required minimums. Then price at least $1 million of umbrella coverage; depending on income and net worth, you may decide more is appropriate.\n\nHomeowners replacement-cost and catastrophe gaps. You clearly have homeowners coverage, but the premium alone doesn’t tell us whether it is sufficient. Review dwelling replacement cost—not the home’s market value—plus extended/replacement-cost protection, personal-property replacement cost, loss-of-use limits, water/sewer backup, service-line coverage, ordinance/law coverage, and your deductible. Also check whether any region-specific hazards relevant to your home are excluded or require separate coverage.\n\nAuto liability / uninsured-underinsured motorist coverage. Before optimizing deductibles or collision premiums, make sure bodily-injury liability and UM/UIM limits are strong enough to protect your household. This matters particularly because an umbrella policy usually sits on top of those limits.\n\nAfter those, I’d review estate-planning-adjacent items—beneficiaries on life insurance and retirement accounts, guardianship documents, wills, and possibly a trust—not because they are insurance products, but because insurance proceeds need a sensible destination when there is a minor child.\n\nYour most useful next step is to pull the declaration/benefit pages for homeowners, auto, employer life, and employer disability and compare actual limits. Based on what I can see today, life insurance and disability are the two areas I would verify first, rather than assuming the existing home and auto policies are the biggest gaps.",
+      "score": 100,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 30,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_life_insurance_need",
+      "answer": "Yes — based on the financial picture available through May 31, 2026, I’d expect you likely need a meaningful amount of term life insurance beyond basic employer coverage, especially with a 3-year-old child and a $462,000 mortgage.\n\nA useful way to size it is not a flat “10× salary” rule, but:\n\nInsurance need = debt payoff + income replacement + child/education costs + final expenses − assets you’re willing to spend down.\n\nFor your household, the biggest components are:\n\nMortgage: about $462k.\n\nIncome replacement: your recurring payroll deposits are roughly $124,800/year for Priya and $75,000/year for Daniel based on currently synced data. Those appear to be payroll cash flows rather than verified gross salaries, so I would not use them as exact salary figures.\n\nChildcare: currently about $1,650/month, plus about $220/month of backup care.\n\nCollege: you already have about $12,400 in the 529 and are contributing about $300/month.\n\nAvailable assets: roughly $43k in checking/savings and $54k in taxable brokerage, plus retirement accounts. I would generally avoid counting all retirement assets against the life-insurance need because consuming them early could undermine the surviving spouse’s retirement security.\n\nUsing those numbers as a planning starting point, I’d investigate roughly $1.5–2.0 million of 20- or 25-year level term coverage for Priya and around $1.0–1.5 million for Daniel. Those aren't precise prescriptions; they're sensible quote ranges given the mortgage, dependent child, and income disparity.\n\nFor example, a $1.5M policy could conceptually cover the $462k mortgage, leave roughly $800k–$900k to replace several years of earnings and provide a longer-term income cushion, and leave another ~$100k–$200k for childcare/education and other transition costs. A $2M policy gives substantially more flexibility to preserve investments rather than forcing the surviving spouse to liquidate them.\n\nThe most important thing to check before buying anything is your existing employer-provided life coverage. Daniel has group life benefits in the household information I can see, but I don't have the actual death benefit amount; I also don't have a confirmed amount for Priya. Employer life insurance is useful, but I normally wouldn't make it the foundation of a young family's plan because it can disappear or change when employment changes.\n\nSo my practical target would be: price individual level-term policies large enough that total coverage (individual + employer) reaches approximately those ranges, rather than automatically buying that entire amount on top of work coverage. A term extending until your child is financially independent and the mortgage/retirement assets are much further along—roughly 20–25 years—fits your situation well.",
+      "score": 94,
+      "dimensions": {
+        "grounding": {
+          "score": 24,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 29,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 28,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 14,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_mortgage_escrow_review",
+      "answer": "Based on the connected data posted through May 31, 2026, your mortgage is about $462,000 outstanding with a $3,850 monthly payment. I’d work through the housing cost in this order:\n\nGet the payment breakdown first: principal + interest, property taxes, homeowners insurance, and any mortgage insurance/HOA. The connected mortgage data doesn’t expose your rate, remaining term, or escrow details, so refinancing before knowing those would be premature.\n\nReview property taxes and insurance before touching the loan. Your connected checking also shows $154/month for State Farm homeowners insurance. Re-shopping coverage, checking deductibles/discounts, and reviewing whether the property assessment is appealable can lower carrying cost without resetting your mortgage.\n\nCheck for PMI/MIP. If any mortgage insurance is embedded in the $3,850 payment and your equity now qualifies for removal, eliminating it can be one of the cleanest savings opportunities.\n\nOnly refinance on a full break-even calculation. Compare the new rate and payment with closing costs, points, the new loan term, and how long you expect to stay. A lower monthly payment can be misleading if it comes mainly from restarting a 30-year amortization.\n\nAvoid draining liquidity to make the mortgage feel smaller. Your connected checking and savings total about $43,430, and you also have childcare and other sizable recurring obligations. A large principal paydown or recast can make sense in some cases, but I would preserve a strong family emergency reserve first.\n\nTreat recasting as a lower-risk alternative to refinancing if you already intend to make a significant lump-sum principal payment. It can lower the required payment without changing your existing interest rate, although lender rules and fees vary.\n\nThe key missing number is your current mortgage interest rate. If it is already well below prevailing refinance rates, I’d focus almost entirely on taxes, insurance, PMI, and possibly a recast rather than replacing the loan. If you give me the rate and approximate remaining term—or connect data that exposes them—I can calculate the refinance break-even point and show which housing-cost lever is most promising.",
+      "score": 93,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 28,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_next_card_bonus",
+      "answer": "Based on the spending currently synced through May 31, my top pick is the Capital One Venture Rewards card.\n\nYou already have a Chase Freedom Unlimited and Amex Gold. Your recent spending includes a lot of purchases that don’t get especially strong category bonuses on those cards—particularly Costco, Target and miscellaneous family spending. Venture gives 2 miles per dollar on essentially everything, so it complements your current setup rather than duplicating it.\n\nMore importantly, its current limited-time welcome offer is unusually strong: 75,000 miles after $4,000 of purchases in the first 3 months, plus a one-time $300 Capital One Travel credit for hotels/vacation rentals in the first year, with a $95 annual fee. \n[Capital One] [+1]\n That beats the standard Venture X offer for your situation unless you specifically value airport lounges enough to justify its $395 fee. \n[Capital One]\n\nThe $4,000 hurdle also looks realistic without manufacturing spend. Your connected cards showed roughly $3,380 of posted card spending in the available period, and the underlying family expenses include Costco, groceries, Target, dining, utilities and childcare-related purchases. I would not count the mortgage, HSA/529 contributions, or daycare toward the bonus unless you already know they can be paid by card without a fee that wipes out the rewards.\n\nMy ranking would be:\n\nCapital One Venture — best next card now. $4,000 requirement, 75K miles + $300 first-year stays credit, $95 fee. \n[Capital One]\n\nChase Sapphire Preferred — best alternative. Currently 75,000 Ultimate Rewards points after $5,000 in 3 months, $95 annual fee. It pairs very nicely with your existing Freedom Unlimited because those points can become transferable Ultimate Rewards, but the spending hurdle is $1,000 higher and today's bonus isn't as compelling as Venture's added $300 credit. \n[Chase Credit Cards] [+1]\n\nCiti Strata Premier — reasonable, but less additive. The current public offer is 60,000 points after $4,000 in 3 months with a $95 annual fee. Its 3x supermarket and restaurant categories overlap substantially with your Amex Gold, so I wouldn't open it first. \n[NerdWallet]\n\nOne caveat: the connected financial data doesn't tell me when you opened your existing cards or how many new cards you've opened recently. That matters especially for Chase eligibility, and Capital One says you aren't eligible for the Venture bonus if you've received a Venture or Venture X new-card bonus within the past 48 months. \n[Capital One]\n\nSo, assuming no eligibility issue and that you can use the $300 hotel credit naturally, I'd open Venture next and put your normal non-Amex-category family purchases on it until you reach $4,000—without increasing spending just to earn the bonus.",
+      "score": 82,
+      "dimensions": {
+        "grounding": {
+          "score": 22,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 28,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 22,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 14,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_property_insurance_review",
+      "answer": "Yes. Given that you own a home with a substantial mortgage and are protecting family cash flow, I’d review both homeowners and auto now rather than optimizing purely for the lowest premium. Your connected data shows May charges of $154 for State Farm homeowners insurance and $218 for State Farm auto insurance. Your financial data is synced through May 31, 2026, so I’d treat those as the latest posted amounts I can see, not necessarily the full annual premiums.\n\nFor homeowners insurance, compare quotes using the same coverage assumptions. The most important items are dwelling replacement cost—not the home’s market value—plus extended or guaranteed replacement-cost coverage, personal-property coverage and whether it is replacement cost vs. actual cash value, liability limits, loss-of-use coverage, and your deductible. In Colorado, I’d pay special attention to the separate terms for wind/hail, roof settlement, wildfire-related coverage, water backup, service lines, ordinance/law coverage, and any exclusions or sublimits. Colorado’s Division of Insurance specifically highlights wildfire, hail, and disaster preparedness as major homeowners-insurance issues. \n[DORA - Division of Insurance] [+1]\n\nFor auto, compare bodily-injury and property-damage liability limits first—not just collision/comprehensive deductibles. Also line up uninsured/underinsured-motorist protection, medical-payments coverage, collision and comprehensive deductibles, rental reimbursement, roadside assistance, and the treatment of newer-car replacement/OEM parts if relevant. I would generally avoid reducing liability limits simply to save premium when you have meaningful assets and income to protect.\n\nThe quote sheet I’d use is essentially:\n\nCompare\tCurrent policy vs. each quote\nAnnual premium\tTotal after all fees\nHome dwelling limit\tSame replacement-cost estimate\nHome deductible\tInclude separate wind/hail deductible\nExtended replacement\t% above dwelling limit\nRoof coverage\tReplacement cost vs. depreciated value\nWater backup / service line\tLimit + deductible\nOrdinance/law\tCoverage limit\nPersonal liability\tSame limit\nAuto liability\tSame limits across quotes\nUM/UIM\tSame limits\nCollision/comprehensive\tSame deductibles\nUmbrella eligibility\tPrice for $1M+ layer\nDiscounts\tBundle, claims-free, telematics, alarms, etc.\n\nOne item worth pricing alongside this review is a personal umbrella policy. With a home, retirement/investment assets, and a family to protect, the incremental cost of substantially more liability protection can be more valuable than squeezing another modest discount out of the base policies. I’d ask each insurer for a quote at your existing home/auto limits and another showing whatever underlying limits are required for a $1 million umbrella, then compare the combined cost.\n\nAlso, don’t assume bundling is automatically cheapest. Get at least one bundled home+auto quote and one or two unbundled combinations. And compare insurers on claims handling and financial strength as well as price. Colorado’s DOI explicitly encourages consumers to shop among insurers when conditions or coverage change rather than assuming every carrier behaves the same way. \n[DORA - Division of Insurance]\n\nIf your current declarations pages are available, the next useful step is to compare the actual State Farm limits and deductibles against this checklist; the premium alone isn’t enough to tell whether you’re overpaying or underinsured.",
+      "score": 100,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 30,
+          "outOf": 30
+        },
+        "resolution": {
+          "score": 30,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_recurring_charges_audit",
+      "answer": "Based on your connected accounts, which are fully synced through May 31, 2026, I’d focus first on recurring charges where you can realistically cancel, downgrade, renegotiate, or shop around.\n\nRecurring charge\tMonthly amount\tWhat to review\nCare.com Backup Care\t$220.00\tWhether you’re using it enough to justify the cost\nState Farm Auto Insurance\t$218.00\tRe-shop rates/discounts and check deductibles\nState Farm Home Insurance\t$154.00\tCompare bundled pricing and coverage\nXfinity\t$119.00\tRenegotiate plan, speed, equipment, promos\nPeloton\t$44.00\tUsage vs. membership cost\nSpotify Family\t$19.99\tWhether the family plan is still needed\nDisney Plus\t$15.99\tUsage / overlapping streaming services\n\nThose seven represent $790.98/month, or about $9,492/year, so they’re the best discretionary/negotiable group to review.\n\nThere are several larger recurring commitments too: Rocket Mortgage $3,850/month, Bright Horizons daycare $1,650, Toyota Financial $485, and Xcel Energy about $164.22. I wouldn’t treat these like subscriptions, but the mortgage, car payment, childcare arrangements, and utility plan are worth periodic cost reviews.\n\nTwo other detected monthly outflows are actually savings/investment contributions rather than expenses: HealthEquity HSA $400/month and Colorado 529 $300/month. I would not cut those just to reduce “subscriptions” without considering your broader priorities.\n\nOne false-positive-looking item is Costco, detected as semi-monthly at an average $368.40 per visit. That’s recurring shopping behavior—not a fixed subscription—and works out to roughly $736.80/month at the detected frequency.\n\nIf you want, I can next rank these by easiest potential savings and estimate how much you could reasonably cut per year.",
+      "score": 70,
+      "dimensions": {
+        "grounding": {
+          "score": 35,
+          "outOf": 40
+        },
+        "correctness": {
+          "score": 31,
+          "outOf": 35
+        },
+        "resolution": {
+          "score": 19,
+          "outOf": 20
+        },
+        "prudence": {
+          "score": 5,
+          "outOf": 5
+        }
+      }
+    },
+    {
+      "questionId": "patel_spend_may_total",
+      "answer": "In May 2026, you spent $9,070.68 across your fully synced checking, savings, and credit-card accounts, based on posted non-transfer transactions through May 31.\n\nCategory\tMay spend\nHousing\t$3,850.00\nFamily & kids\t$1,870.00\nFinancial\t$1,557.00\nGroceries\t$1,023.54\nBills & utilities\t$283.22\nShopping\t$242.19\nDining & drinks\t$164.75\nHealth & wellness\t$44.00\nEntertainment\t$35.98\n\nThe biggest three categories—housing, family/kids, and financial—were about 80% of total May spending. Housing alone was roughly 42%.\n\nOne category I’d inspect before drawing budgeting conclusions is the $1,557 “financial” bucket, since it may contain contributions, fees, or other transactions that aren’t ordinary household consumption.",
+      "score": 70,
+      "dimensions": {
+        "grounding": {
+          "score": 30,
+          "outOf": 40
+        },
+        "correctness": {
+          "score": 20,
+          "outOf": 35
+        },
+        "resolution": {
+          "score": 14,
+          "outOf": 20
+        },
+        "prudence": {
+          "score": 4,
+          "outOf": 5
+        }
+      }
+    },
+    {
+      "questionId": "patel_subscriptions_benefits",
+      "answer": "Yes. Based on the recurring charges detected through May 31, 2026, there are three especially worthwhile benefit-routing opportunities, plus a few smaller cleanup items.\n\nBright Horizons daycare — $1,650/month: This is the biggest opportunity. Priya has access to a dependent-care FSA, so eligible daycare expenses should generally be routed through that benefit up to the applicable household limit before paying entirely with after-tax dollars. You can usually still pay the provider normally and submit eligible expenses for reimbursement.\n\nCare.com Backup Care — $220/month: Priya’s Salesforce benefits specifically include a backup-care benefit. I would check whether this $220 charge is duplicating something already subsidized by the employer, or whether booking through the employer benefit portal would reduce the out-of-pocket cost. This is the clearest recurring charge to investigate for outright savings.\n\nHealthEquity HSA contribution — $400/month: You’re currently sending this from checking. If Priya is HSA-eligible and Salesforce allows HSA contributions through payroll, payroll contributions are usually preferable to an after-tax bank transfer because they can receive more favorable payroll-tax treatment. Make sure employer contributions and all personal contributions are coordinated so you don't exceed the annual limit.\n\nFor the smaller subscriptions, Peloton $44, Spotify Family $19.99, and Disney+ $15.99 total about $80/month, or ~$960/year. They’re not large individually, but Peloton is worth checking against any employer wellness/fitness reimbursement. Spotify and Disney+ are better candidates for a simple usage review or rotating subscriptions rather than benefit routing.\n\nI’d also check Xfinity at $119/month against any employer work-from-home/internet reimbursement, but I don’t currently have a stored benefit showing that Salesforce or UCHealth reimburses it, so I wouldn’t count on savings there.\n\nThe priority order I’d use is: backup-care benefit → dependent-care FSA → HSA via payroll → wellness/internet reimbursements → entertainment subscription cleanup. The first three could be materially more valuable than optimizing card rewards on these charges.",
+      "score": 100,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 25,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 35,
+          "outOf": 35
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_tax_optimization",
+      "answer": "Based on your connected data through May 31, 2026, I’d put these 2026 tax moves at the top of your checklist. Your account data is fully synced through that date, but I don’t have June–September transactions yet, so the contribution projections below use the payroll patterns visible in May.\n\nIncrease both 401(k) deferrals if cash flow allows. Your May paystubs show Priya at 8% on $8,750 semi-monthly gross pay and Daniel at 6% on $5,000. Annualized, that implies roughly $16,800 and $7,200 of employee deferrals, versus the $24,500 2026 limit per person. That leaves approximately $7,700 for Priya and $17,300 for Daniel of potential additional pre-tax/Roth 401(k) space. \n[IRS] [+1]\n\nUse the dependent-care FSA aggressively. You spent $1,870 on childcare just in May ($1,650 Bright Horizons plus $220 backup care), so you appear very likely to have enough annual eligible expenses to use the full benefit. For 2026, the dependent-care FSA exclusion rises to $7,500 for married filing jointly. Since one employer offers a dependent-care FSA, this is one of your clearest tax-saving opportunities. At your apparent income level, the FSA will generally be more valuable than relying solely on the child/dependent-care credit; excluded FSA expenses also reduce the expense base available for that credit. \n[IRS] [+2] [IRS] [+2]\n\nVerify and potentially maximize the HSA. You have a HealthEquity HSA and made a $400 contribution from checking in May. If you have qualifying family HDHP coverage, the 2026 HSA limit is $8,750, including employer contributions; self-only is $4,400. Before adding money, check payroll and employer HSA contributions so you don’t exceed the combined limit. If eligible, I’d generally prioritize this ahead of extra taxable investing because of the HSA’s unusually strong tax treatment. \n[IRS]\n\nKeep making the Colorado 529 contribution, but don’t let the deduction drive excessive saving. You contributed $300 in May to CollegeInvest. For Colorado joint filers, the 2026 state deduction cap is $39,200 per tax filing, per beneficiary, so your current contribution level is nowhere near the cap. Extra 529 funding can produce a Colorado deduction, but I’d first fill attractive 401(k), HSA and dependent-care-FSA opportunities. \n[College Invest] [+1]\n\nConsider backdoor Roth IRAs rather than direct Roth contributions. Your visible payroll implies roughly $330,000 of annual gross salary before bonuses or other income. The 2026 direct Roth IRA phaseout for married filing jointly is $242,000–$252,000 of modified AGI, so you are likely above it even after workplace deductions. The IRA contribution limit is $7,500 each in 2026. A backdoor Roth may therefore be useful, but first check whether either spouse has existing pre-tax traditional/SEP/SIMPLE IRA balances because of the pro-rata rule. \n[IRS] [+1]\n\nReview taxable brokerage gains and losses before year-end. You have about $54,000 in a taxable Vanguard brokerage account. I don’t see enough transaction history to calculate unrealized gains or tax-loss-harvesting opportunities, but this account deserves a November/December review: harvest losses where sensible, avoid unnecessary short-term gains, and coordinate any sales with purchases in retirement accounts to avoid wash-sale problems.\n\nRevisit itemizing this year instead of automatically assuming the standard deduction wins. The 2026 married-filing-jointly standard deduction is $32,200. You also have a sizeable mortgage and are homeowners. In 2026 the SALT deduction ceiling is $40,400, although it begins phasing down once MAGI exceeds $505,000. Mortgage interest plus property/state taxes and charitable gifts could therefore make itemizing more relevant than in prior years. You’ll need your mortgage-interest/property-tax totals to know. \n[IRS] [+1]\n\nMake sure withholding still fits after these changes. With roughly $330,000 of annualized base salary, two jobs, investment assets and potentially several large pre-tax elections, a midyear withholding projection is worthwhile. Increasing traditional 401(k), dependent-care FSA and HSA deductions can materially lower taxable wages, so withholding should be reviewed after benefit elections rather than independently.\n\nOne item I would not optimize around heavily is the Child Tax Credit: the credit is up to $2,200 per qualifying child, but the full-credit income threshold for joint filers is $400,000, so based on the salary pattern I can see you may still qualify; bonuses, investment income and other compensation could change that. \n[IRS]\n\nPriority order for your household: dependent-care FSA → capture all employer retirement matching → HSA → increase 401(k)s toward $24,500 each → evaluate backdoor Roths → then decide how much extra belongs in the 529 versus taxable brokerage.\n\nThe biggest immediate opportunities visible in your data are the unused 401(k) room (about $25,000 combined based on current salary/deferral rates) and the new $7,500 dependent-care FSA limit.",
+      "score": 99,
+      "dimensions": {
+        "grounding": {
+          "score": 25,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 25,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 35,
+          "outOf": 35
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    },
+    {
+      "questionId": "patel_taxable_investing_priority",
+      "answer": "Based on the connected data posted through May 31, 2026, I would not make taxable brokerage the first destination for additional dollars yet. You already have about $54,000 in taxable brokerage, alongside roughly $240,000 in the two 401(k)s, $6,800 in the HSA, $12,400 in the 529, and $43,430 in checking/savings.\n\nA sensible priority order is:\n\nMake sure both 401(k)s capture every employer-match dollar. Your May records show Priya contributing about $1,400/month and Daniel about $600/month. Before adding to taxable, I'd verify their match formulas and whether either contribution rate needs to rise.\n\nPrioritize the HSA if you're eligible and can afford to invest it. The HSA balance is only $6,800, and its tax treatment generally makes additional HSA dollars more valuable than ordinary taxable investing.\n\nConsider additional 401(k) contributions and/or Roth IRA/backdoor Roth space. I don't see IRA accounts among the connected accounts. If you're eligible for a deductible/Roth contribution—or a backdoor Roth is appropriate—I'd usually fill that tax-advantaged space before increasing taxable investing.\n\nVerify the credit-card balances are being paid in full. The connected balances were $3,120 on Chase Freedom Unlimited and $1,850 on Amex Gold. The liability feed did not provide APRs or statement balances, so I would not invest incremental cash while carrying revolving card debt.\n\nThen increase taxable brokerage. Once the items above are handled and your cash reserve is where you want it, taxable investing is a very reasonable next destination. It gives you much more flexibility than retirement accounts or the 529, which fits well for medium- or long-term goals that aren't strictly retirement or college.\n\nI would not automatically divert more toward the 529 before taxable brokerage. You already have $12,400 there, and retirement/HSA funding generally deserves priority over accelerating college savings. Taxable brokerage is especially useful once your tax-advantaged targets are on track because the money remains available for early retirement, a future home change, large family expenses, or other goals.\n\nThe biggest missing piece is that the connected accounts are only current through May 31, not September. So my provisional recommendation is: match → HSA → additional retirement/Roth space → taxable brokerage, while keeping enough of that $43,430 cash reserve for your family buffer. If your 401(k)s and HSA are already on pace to hit your desired 2026 targets, then yes, taxable brokerage is probably the right next dollar.",
+      "score": 84,
+      "dimensions": {
+        "grounding": {
+          "score": 17,
+          "outOf": 20
+        },
+        "correctness": {
+          "score": 23,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 26,
+          "outOf": 30
+        },
+        "prudence": {
+          "score": 21,
+          "outOf": 25
+        }
+      }
+    },
+    {
+      "questionId": "patel_where_wasting_money",
+      "answer": "Based on the accounts and May 2026 posted transactions through May 31 across fully synced accounts, I’d focus on a few areas. I would not treat the mortgage, daycare, HSA contribution, or 529 contribution as “waste” just because they’re large.\n\nInternet: Xfinity — $119/month. This is one of the clearest bills to renegotiate or shop. Even a $30–$50/month reduction would save roughly $360–$600/year.\n\nInsurance — $372/month combined. State Farm auto was $218 and homeowners $154 in May, about $4,464/year at that run rate. Requoting both together is worth doing; a 10% reduction alone would be about $446/year. Compare identical deductibles, liability limits, replacement-cost coverage, and umbrella eligibility rather than just premiums.\n\nSubscriptions / fitness — about $80/month. Peloton $44, Spotify Family $19.99, and Disney+ $15.99 total $79.98/month, or roughly $960/year. None is alarming individually, but this is the easiest category to cut immediately if usage is low.\n\nGroceries / warehouse spending — $1,023.54 in May. Costco alone was $736.80, plus $286.74 at King Soopers. This may be perfectly reasonable for your household, but because of its size, even a 5–10% reduction is worth $51–$102/month—more than canceling most subscriptions. Costco is where I’d check for impulse/non-grocery purchases disguised inside the grocery category.\n\nTarget — $242.19. One transaction isn't enough to call this waste, but Target/superstore purchases are a common place where discretionary household spending gets buried. I’d inspect the receipt rather than automatically cutting it.\n\nThere’s also a $220 Care.com backup-care charge. The recurring detector labels it monthly, but the transaction note says it was one day of backup childcare, so I would not assume that $220 repeats every month. I would check whether either employer provides subsidized backup care or reimbursement before paying similar charges again.\n\nTwo things that don’t look like leakage: there were no detected fees or interest charges, and the $400 HSA plus $300 529 transactions are transfers toward financial goals rather than consumption.\n\nOne other potential inefficiency is cash placement: you had about $14,680 in checking and $28,750 in savings as of May 31. If checking materially exceeds the buffer you need for monthly bills, the excess may be earning less than it could elsewhere.\n\nPriority order: shop Xfinity → requote insurance → audit Peloton/streaming → inspect Costco/Target habits → verify backup-care benefits. Those are more likely to produce meaningful savings than squeezing dining, which was only $164.75 in May.",
+      "score": 90,
+      "dimensions": {
+        "grounding": {
+          "score": 24,
+          "outOf": 25
+        },
+        "correctness": {
+          "score": 25,
+          "outOf": 25
+        },
+        "resolution": {
+          "score": 27,
+          "outOf": 35
+        },
+        "prudence": {
+          "score": 15,
+          "outOf": 15
+        }
+      }
+    }
+  ]
+}

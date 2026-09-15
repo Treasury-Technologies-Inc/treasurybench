@@ -2,6 +2,14 @@
 
 Personal-finance assistant benchmark — evaluate how well AI-powered finance products and frontier models use real user data to surface high-leverage financial opportunities.
 
+## Latest answer results — September 2026
+
+[59 questions, final answers, scores and rubric](results/2026-09/README.md) for
+six products: Treasury 95, ChatGPT 89, Perplexity 84, Origin 76,
+Quicken Simplifi 61 and Monarch 53.
+
+The sections below preserve the earlier framework releases and historical results.
+
 **v0.2.0** · 3 personas · 83 tasks · 12 domains · judge-primary scoring with table-grounded factual verification
 
 > **Two measurement dates.** Treasury's current result is the **August 2026** run
@@ -13,7 +21,7 @@ Personal-finance assistant benchmark — evaluate how well AI-powered finance pr
 
 ## Results
 
-### Current Treasury run — August 2026 (v0.2.0)
+### Historical Treasury run — August 2026 (v0.2.0)
 
 | Provider | Lane | Score | Factually Clean | Median Latency | Measured |
 | --- | --- | ---: | ---: | ---: | --- |
