@@ -22,8 +22,11 @@ answers describe those fictional scenarios, not customers.
 - [Scoring rubric](SCORING.md) and [per-question criteria](rubric.json).
 
 Question IDs join the files. Answers preserve the captured wording, including
-mistakes and clarification requests. `[redacted]` replaces private identifiers;
-redactions do not change the scores. This is an answer-and-score release, not an
+mistakes and clarification requests. `[redacted]` marks omitted private identifiers, test-account subscription and
+budget details, inconsistent profile references, and data-source labels. Scores
+were assigned to the original, unredacted answers and have not changed. Omitted
+text may have contributed to an answer’s score; these are redacted excerpts, not
+complete verbatim captures. This is an answer-and-score release, not an
 execution log or a reproducible account configuration. It does not establish
 identical product execution or a statistical population ranking. Operational
 metadata and response-time measurements are not included.
