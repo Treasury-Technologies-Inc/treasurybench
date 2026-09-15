@@ -2,18 +2,93 @@
 
 Personal-finance assistant benchmark — evaluate how well AI-powered finance products and frontier models use real user data to surface high-leverage financial opportunities.
 
+## Latest results — September 2026
+
+**6 products · 59 questions · 12 financial categories**
+
+Treasury received the highest overall score. It led 8 categories outright,
+tied first in 2, and trailed ChatGPT in Tax Strategy and Life Planning & Major
+Decisions. Scores are out of 100; bold marks the highest score, including ties.
+
+### Overall results
+
+| Product | Overall score | Final answers |
+| --- | ---: | --- |
+| Treasury | **95** | [59 answers](results/2026-09/treasury.json) |
+| ChatGPT | 89 | [59 answers](results/2026-09/chatgpt.json) |
+| Perplexity | 84 | [59 answers](results/2026-09/perplexity.json) |
+| Origin | 76 | [59 answers](results/2026-09/origin.json) |
+| Quicken Simplifi | 61 | [59 answers](results/2026-09/simplifi.json) |
+| Monarch | 53 | [59 answers](results/2026-09/monarch.json) |
+
+### Quality dimensions
+
+| Measure | Treasury | ChatGPT | Perplexity | Origin | Quicken Simplifi | Monarch |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Grounding | **98** | 92 | 90 | 76 | 52 | 44 |
+| Correctness | **98** | 93 | 88 | 84 | 74 | 63 |
+| Resolution | **96** | 88 | 86 | 77 | 51 | 46 |
+| Prudence | **96** | 95 | 91 | 84 | 72 | 66 |
+
+Grounding measures use of financial context; correctness covers facts and math;
+resolution measures how well the answer resolves the question; prudence covers
+conditions, uncertainty and tradeoffs. Dimension scores are separate from the
+composite overall score.
+
+### Results by category
+
+| Category | Treasury | ChatGPT | Perplexity | Origin | Quicken Simplifi | Monarch |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Debt & Credit Health | **99** | **99** | 86 | 95 | 93 | 88 |
+| Employer Benefits & Perks | **98** | 89 | 73 | 82 | 37 | 44 |
+| Housing & Rent | **97** | 93 | 90 | 79 | 57 | 56 |
+| Transaction Intelligence | **97** | 91 | 89 | 85 | 88 | 75 |
+| Insurance & Risk Protection | **96** | 91 | 95 | 84 | 60 | 67 |
+| Investing & Equity Compensation | **96** | 90 | 86 | 67 | 49 | 56 |
+| Credit Cards & Rewards | **95** | 82 | 72 | 74 | 50 | 38 |
+| Life Planning & Major Decisions | 94 | **95** | 81 | 75 | 62 | 50 |
+| Cashflow & Budgeting | **93** | 87 | 84 | 73 | 60 | 63 |
+| Savings & Expense Reduction | **93** | 80 | 74 | 72 | 62 | 51 |
+| Tax Strategy | 93 | **96** | 88 | 73 | 57 | 43 |
+| Retirement & Tax-Advantaged Accounts | **91** | 88 | **91** | 65 | 60 | 37 |
+
+### Results by synthetic household
+
+| Household | Treasury | ChatGPT | Perplexity | Origin | Quicken Simplifi | Monarch |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Maria — Seattle | **95** | 89 | 82 | 76 | 62 | 54 |
+| Patel family — Denver | **95** | 89 | 86 | 76 | 60 | 53 |
+
+Overall and category scores average the final task scores; quality dimensions
+average the awarded share of each dimension's available points. Household rows
+average the questions for that household. Displayed averages round to whole points.
+
+[Questions](results/2026-09/questions.json) ·
+[Scores](results/2026-09/scores.json) ·
+[Scoring rubric](results/2026-09/SCORING.md) ·
+[Dataset overview](results/2026-09/README.md)
+
+Treasury maintains this evaluation. This release publishes final answers and
+scores, not execution logs or account configurations. It is not evidence of
+identical execution or a statistically significant population ranking.
+
+## Historical results — June and August 2026
+
+<details>
+<summary>View earlier results and artifacts</summary>
+
 **v0.2.0** · 3 personas · 83 tasks · 12 domains · judge-primary scoring with table-grounded factual verification
 
-> **Two measurement dates.** Treasury's current result is the **August 2026** run
+> **Two measurement dates.** Treasury's result in this historical comparison is the **August 2026** run
 > (83 tasks). Origin, Monarch and the ChatGPT baseline were measured in **June 2026**
-> (81 tasks) and have not been re-measured — they may have improved since. Any
+> (81 tasks) for that comparison; the September results above supersede it. Any
 > Treasury-vs-rival comparison below therefore spans two dates, and says so.
 
 ---
 
 ## Results
 
-### Current Treasury run — August 2026 (v0.2.0)
+### Historical Treasury run — August 2026 (v0.2.0)
 
 | Provider | Lane | Score | Factually Clean | Median Latency | Measured |
 | --- | --- | ---: | ---: | ---: | --- |
@@ -46,7 +121,7 @@ Scores are 0–100, judge-primary with table-grounded factual caps. Stale or wro
 
 ### By Domain — June 2026 run
 
-Treasury's current per-domain scores are in
+Treasury's August per-domain scores are in
 `artifacts/treasury-full-20260814030034/results/final-summary.md` and are higher in
 most domains. Best score per row bolded. † marks the full-context baseline (not a product contender).
 
@@ -90,11 +165,12 @@ ChatGPT's 12 dangerous errors drive the largest gap between its judged quality (
 
 ## Published Artifacts
 
-All captures, judge prompts, judgments, and scored results are in `artifacts/`.
+Historical captures, judge prompts, judgments, and scored results are in `artifacts/`.
+The September answer-and-score release is in [`results/2026-09/`](results/2026-09/README.md).
 
 | Run | Score | Tasks | Captured | Notes |
 | --- | ---: | ---: | --- | --- |
-| `treasury-full-20260814030034` | **89** | 83 | 2026-08-14 | Current. Live Treasury PWA advisor with tool calls |
+| `treasury-full-20260814030034` | **89** | 83 | 2026-08-14 | Historical August result |
 | `treasury-full-20260609001842` | 85.5 | 81 | 2026-06-09 | Superseded by the August run |
 | `chatgpt-chat-latest-full-20260609121316` | 79.6 | 81 | 2026-06-09 | Full-context baseline — not a product contender |
 | `origin-full-20260605T160538` | 71.0 / 73.1 | 81 | 2026-06-05 | 73.1 excluding 16 balance-import failures |
@@ -104,7 +180,14 @@ Each run directory contains `captures/`, `judge-prompts/`, `judgments/`, and `re
 
 ---
 
-## What's Being Tested
+</details>
+
+## Benchmark framework (v0.2.0)
+
+The framework below describes the earlier 83-task release. The September
+publication uses the 59 questions linked above.
+
+### What's Being Tested
 
 TreasuryBench asks whether a personal-finance assistant can:
 

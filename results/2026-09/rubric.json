@@ -1,0 +1,1713 @@
+[
+  {
+    "questionId": "maria_401k_contribution",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_401k_percent_to_limit",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_alaska_microsoft",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Finds and cites the relevant signals in transactions, balances, memories, employer context, location, or accounts."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Gets calculations, financial rules, current facts, and program mechanics right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 35,
+        "guidance": "Surfaces the high-value personalized opportunity, estimates impact, and gives exact next actions."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Separates verified facts from assumptions, handles eligibility and participation caveats, and avoids unsafe overreach."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_backdoor_roth",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_bank_bonus_idle_cash",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_checking_buffer",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_coffee_shops_may",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 40,
+        "guidance": "Uses the visible transactions, balances, date range, categories, accounts, and memories correctly without inventing user data."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 35,
+        "guidance": "Calculates totals, signs, category boundaries, and external facts accurately for the benchmark context."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 20,
+        "guidance": "Answers the exact question with a useful breakdown, clear explanation, and no unnecessary detours."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 5,
+        "guidance": "Flags material scope, classification, pending-data, or uncertainty caveats when they affect the answer."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_costco_optimization",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_credit_card_balance_check",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_credit_card_strategy",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_extra_10000",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 20,
+        "guidance": "Bases the plan on the visible accounts, transactions, memories, cashflow, goals, and user constraints."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Uses correct math, limits, product/program facts, tax mechanics, and financial sequencing."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Makes a decision, prioritizes the next move, quantifies tradeoffs, and explains why that order fits the user."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 25,
+        "guidance": "Explains certainty, downside, liquidity, tax risk, fees, eligibility, and when another reasonable order may be better."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_food_spend_may",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 40,
+        "guidance": "Uses the visible transactions, balances, date range, categories, accounts, and memories correctly without inventing user data."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 35,
+        "guidance": "Calculates totals, signs, category boundaries, and external facts accurately for the benchmark context."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 20,
+        "guidance": "Answers the exact question with a useful breakdown, clear explanation, and no unnecessary detours."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 5,
+        "guidance": "Flags material scope, classification, pending-data, or uncertainty caveats when they affect the answer."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_hsa",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_idle_cash",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Finds and cites the relevant signals in transactions, balances, memories, employer context, location, or accounts."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Gets calculations, financial rules, current facts, and program mechanics right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 35,
+        "guidance": "Surfaces the high-value personalized opportunity, estimates impact, and gives exact next actions."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Separates verified facts from assumptions, handles eligibility and participation caveats, and avoids unsafe overreach."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_insurance_review",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_life_insurance_need",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_mega_backdoor",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_mfte_eligibility_check",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_msft_stock_risk",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_next_card_bonus",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_recurring_charges_audit",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 40,
+        "guidance": "Uses the visible transactions, balances, date range, categories, accounts, and memories correctly without inventing user data."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 35,
+        "guidance": "Calculates totals, signs, category boundaries, and external facts accurately for the benchmark context."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 20,
+        "guidance": "Answers the exact question with a useful breakdown, clear explanation, and no unnecessary detours."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 5,
+        "guidance": "Flags material scope, classification, pending-data, or uncertainty caveats when they affect the answer."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_rent_rewards",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_rental_car_trip",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_rsu_tax_withholding",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_save_on_rent",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Finds and cites the relevant signals in transactions, balances, memories, employer context, location, or accounts."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Gets calculations, financial rules, current facts, and program mechanics right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 35,
+        "guidance": "Surfaces the high-value personalized opportunity, estimates impact, and gives exact next actions."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Separates verified facts from assumptions, handles eligibility and participation caveats, and avoids unsafe overreach."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_side_income_tax",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_spend_april_vs_may",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 40,
+        "guidance": "Uses the visible transactions, balances, date range, categories, accounts, and memories correctly without inventing user data."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 35,
+        "guidance": "Calculates totals, signs, category boundaries, and external facts accurately for the benchmark context."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 20,
+        "guidance": "Answers the exact question with a useful breakdown, clear explanation, and no unnecessary detours."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 5,
+        "guidance": "Flags material scope, classification, pending-data, or uncertainty caveats when they affect the answer."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_spend_may_total",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 40,
+        "guidance": "Uses the visible transactions, balances, date range, categories, accounts, and memories correctly without inventing user data."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 35,
+        "guidance": "Calculates totals, signs, category boundaries, and external facts accurately for the benchmark context."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 20,
+        "guidance": "Answers the exact question with a useful breakdown, clear explanation, and no unnecessary detours."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 5,
+        "guidance": "Flags material scope, classification, pending-data, or uncertainty caveats when they affect the answer."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_subscriptions_benefits",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Finds and cites the relevant signals in transactions, balances, memories, employer context, location, or accounts."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Gets calculations, financial rules, current facts, and program mechanics right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 35,
+        "guidance": "Surfaces the high-value personalized opportunity, estimates impact, and gives exact next actions."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Separates verified facts from assumptions, handles eligibility and participation caveats, and avoids unsafe overreach."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_tax_optimization",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 20,
+        "guidance": "Bases the plan on the visible accounts, transactions, memories, cashflow, goals, and user constraints."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Uses correct math, limits, product/program facts, tax mechanics, and financial sequencing."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Makes a decision, prioritizes the next move, quantifies tradeoffs, and explains why that order fits the user."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 25,
+        "guidance": "Explains certainty, downside, liquidity, tax risk, fees, eligibility, and when another reasonable order may be better."
+      }
+    ]
+  },
+  {
+    "questionId": "maria_where_wasting_money",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Finds and cites the relevant signals in transactions, balances, memories, employer context, location, or accounts."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Gets calculations, financial rules, current facts, and program mechanics right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 35,
+        "guidance": "Surfaces the high-value personalized opportunity, estimates impact, and gives exact next actions."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Separates verified facts from assumptions, handles eligibility and participation caveats, and avoids unsafe overreach."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_401k_contribution",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_401k_percent_to_limit",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 40,
+        "guidance": "Uses the visible transactions, balances, date range, categories, accounts, and memories correctly without inventing user data."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 35,
+        "guidance": "Calculates totals, signs, category boundaries, and external facts accurately for the benchmark context."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 20,
+        "guidance": "Answers the exact question with a useful breakdown, clear explanation, and no unnecessary detours."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 5,
+        "guidance": "Flags material scope, classification, pending-data, or uncertainty caveats when they affect the answer."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_529_tax_strategy",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_backdoor_roth",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_checking_buffer",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 20,
+        "guidance": "Bases the plan on the visible accounts, transactions, memories, cashflow, goals, and user constraints."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Uses correct math, limits, product/program facts, tax mechanics, and financial sequencing."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Makes a decision, prioritizes the next move, quantifies tradeoffs, and explains why that order fits the user."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 25,
+        "guidance": "Explains certainty, downside, liquidity, tax risk, fees, eligibility, and when another reasonable order may be better."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_childcare_family_spend_may",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 40,
+        "guidance": "Uses the visible transactions, balances, date range, categories, accounts, and memories correctly without inventing user data."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 35,
+        "guidance": "Calculates totals, signs, category boundaries, and external facts accurately for the benchmark context."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 20,
+        "guidance": "Answers the exact question with a useful breakdown, clear explanation, and no unnecessary detours."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 5,
+        "guidance": "Flags material scope, classification, pending-data, or uncertainty caveats when they affect the answer."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_childcare_tax_credits",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_college_savings_allocation",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_costco_target_optimization",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_credit_card_balance_check",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_credit_card_strategy",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_daycare_rewards",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_dependent_care_fsa",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_employer_family_benefits",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Finds and cites the relevant signals in transactions, balances, memories, employer context, location, or accounts."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Gets calculations, financial rules, current facts, and program mechanics right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 35,
+        "guidance": "Surfaces the high-value personalized opportunity, estimates impact, and gives exact next actions."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Separates verified facts from assumptions, handles eligibility and participation caveats, and avoids unsafe overreach."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_extra_15000",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 20,
+        "guidance": "Bases the plan on the visible accounts, transactions, memories, cashflow, goals, and user constraints."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Uses correct math, limits, product/program facts, tax mechanics, and financial sequencing."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Makes a decision, prioritizes the next move, quantifies tradeoffs, and explains why that order fits the user."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 25,
+        "guidance": "Explains certainty, downside, liquidity, tax risk, fees, eligibility, and when another reasonable order may be better."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_hsa_family",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_idle_cash",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_insurance_review",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_life_insurance_need",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_mortgage_escrow_review",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_next_card_bonus",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_property_insurance_review",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Links advice to the visible transactions, balances, memories, employer, location, accounts, and goals."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 30,
+        "guidance": "Gets math, financial mechanics, tax limits, product/program facts, and eligibility facts right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Gives a clear answer, quantified impact where possible, and exact next steps instead of generic tips."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Handles caveats, uncertainty, tradeoffs, reversibility, fees, participation/enrollment checks, and downside risk."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_recurring_charges_audit",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 40,
+        "guidance": "Uses the visible transactions, balances, date range, categories, accounts, and memories correctly without inventing user data."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 35,
+        "guidance": "Calculates totals, signs, category boundaries, and external facts accurately for the benchmark context."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 20,
+        "guidance": "Answers the exact question with a useful breakdown, clear explanation, and no unnecessary detours."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 5,
+        "guidance": "Flags material scope, classification, pending-data, or uncertainty caveats when they affect the answer."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_spend_may_total",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 40,
+        "guidance": "Uses the visible transactions, balances, date range, categories, accounts, and memories correctly without inventing user data."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 35,
+        "guidance": "Calculates totals, signs, category boundaries, and external facts accurately for the benchmark context."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 20,
+        "guidance": "Answers the exact question with a useful breakdown, clear explanation, and no unnecessary detours."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 5,
+        "guidance": "Flags material scope, classification, pending-data, or uncertainty caveats when they affect the answer."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_subscriptions_benefits",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Finds and cites the relevant signals in transactions, balances, memories, employer context, location, or accounts."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Gets calculations, financial rules, current facts, and program mechanics right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 35,
+        "guidance": "Surfaces the high-value personalized opportunity, estimates impact, and gives exact next actions."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Separates verified facts from assumptions, handles eligibility and participation caveats, and avoids unsafe overreach."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_tax_optimization",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Finds and cites the relevant signals in transactions, balances, memories, employer context, location, or accounts."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Gets calculations, financial rules, current facts, and program mechanics right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 35,
+        "guidance": "Surfaces the high-value personalized opportunity, estimates impact, and gives exact next actions."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Separates verified facts from assumptions, handles eligibility and participation caveats, and avoids unsafe overreach."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_taxable_investing_priority",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 20,
+        "guidance": "Bases the plan on the visible accounts, transactions, memories, cashflow, goals, and user constraints."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Uses correct math, limits, product/program facts, tax mechanics, and financial sequencing."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 30,
+        "guidance": "Makes a decision, prioritizes the next move, quantifies tradeoffs, and explains why that order fits the user."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 25,
+        "guidance": "Explains certainty, downside, liquidity, tax risk, fees, eligibility, and when another reasonable order may be better."
+      }
+    ]
+  },
+  {
+    "questionId": "patel_where_wasting_money",
+    "dimensions": [
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "points": 25,
+        "guidance": "Finds and cites the relevant signals in transactions, balances, memories, employer context, location, or accounts."
+      },
+      {
+        "id": "correctness",
+        "label": "Correctness",
+        "points": 25,
+        "guidance": "Gets calculations, financial rules, current facts, and program mechanics right."
+      },
+      {
+        "id": "resolution",
+        "label": "Resolution",
+        "points": 35,
+        "guidance": "Surfaces the high-value personalized opportunity, estimates impact, and gives exact next actions."
+      },
+      {
+        "id": "prudence",
+        "label": "Prudence",
+        "points": 15,
+        "guidance": "Separates verified facts from assumptions, handles eligibility and participation caveats, and avoids unsafe overreach."
+      }
+    ]
+  }
+]

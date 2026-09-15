@@ -1,0 +1,356 @@
+[
+  {
+    "id": "maria_401k_contribution",
+    "question": "Am I contributing enough to my 401(k)?",
+    "category": "retirement_tax_advantaged",
+    "type": "what_if"
+  },
+  {
+    "id": "maria_401k_percent_to_limit",
+    "question": "What 401(k) contribution percentage would put me on pace for the 2026 employee limit, and how should I think about the Microsoft match?",
+    "category": "retirement_tax_advantaged",
+    "type": "what_if"
+  },
+  {
+    "id": "maria_alaska_microsoft",
+    "question": "I have recent Alaska SEA-SFO flights and work at Microsoft. What airline or employer travel perks should I verify before my next trip, and what should I not assume?",
+    "category": "employer_benefits_perks",
+    "type": "insight_discovery"
+  },
+  {
+    "id": "maria_backdoor_roth",
+    "question": "Should I do a Roth IRA, backdoor Roth, or skip it?",
+    "category": "tax_strategy",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_bank_bonus_idle_cash",
+    "question": "Are there any bank account bonuses worth opening right now with the cash I have sitting around?",
+    "category": "cashflow_budgeting",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_checking_buffer",
+    "question": "How much should I keep in checking for near-term bills, and how much could I move to savings or T-bills?",
+    "category": "cashflow_budgeting",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_coffee_shops_may",
+    "question": "Which of my May transactions appear to be from coffee shops or cafes, and what were the ten highest?",
+    "category": "transaction_intelligence",
+    "type": "data_retrieval"
+  },
+  {
+    "id": "maria_costco_optimization",
+    "question": "Is there anything smarter I should be doing with Costco?",
+    "category": "credit_cards_rewards",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_credit_card_balance_check",
+    "question": "My Chase Sapphire Preferred shows a $1,840 balance. Should I pay it off immediately, set autopay, or treat it as normal monthly float? What should I verify first?",
+    "category": "debt_credit_health",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_credit_card_strategy",
+    "question": "Given my current credit card strategy, which cards should I use for which purchases, and where could I earn more?",
+    "category": "credit_cards_rewards",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_extra_10000",
+    "question": "I have an extra $10,000 after normal bills. Compare cash reserves, credit-card payoff, retirement/HSA/Roth options, and investing, then recommend the first move with assumptions.",
+    "category": "life_planning_major_decisions",
+    "type": "prioritization"
+  },
+  {
+    "id": "maria_food_spend_may",
+    "question": "How much did I spend on food in May, including groceries, Costco food runs, and restaurants?",
+    "category": "transaction_intelligence",
+    "type": "data_retrieval"
+  },
+  {
+    "id": "maria_hsa",
+    "question": "Should I be using an HSA?",
+    "category": "tax_strategy",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_idle_cash",
+    "question": "Do I have too much cash sitting around, or not enough?",
+    "category": "cashflow_budgeting",
+    "type": "insight_discovery"
+  },
+  {
+    "id": "maria_insurance_review",
+    "question": "I am a single renter with no dependents and Microsoft paychecks. Which insurance gaps should I check first: disability, renters/liability, umbrella, or life insurance?",
+    "category": "insurance_risk_protection",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_life_insurance_need",
+    "question": "Do I need life insurance right now as a single renter with no dependents, or should I prioritize another coverage check?",
+    "category": "insurance_risk_protection",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_mega_backdoor",
+    "question": "Should I do a mega backdoor Roth or not?",
+    "category": "retirement_tax_advantaged",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_mfte_eligibility_check",
+    "question": "Based on my Seattle rent, household size, and visible income, how should I check whether an income-restricted apartment could save me money?",
+    "category": "housing_rent",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_msft_stock_risk",
+    "question": "I had an RSU vest hit my brokerage this month. What should I do with it?",
+    "category": "investing_equity_comp",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_next_card_bonus",
+    "question": "Which credit card should I open next? I want the best sign-up bonus for me.",
+    "category": "credit_cards_rewards",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_recurring_charges_audit",
+    "question": "Which May 2026 charges look recurring or subscription-like? Separate true subscriptions/fitness/software from recurring phone/internet utility bills, and give the monthly total for each bucket I should review. Exclude rent from both bucket totals; you can mention it separately if you notice it.",
+    "category": "transaction_intelligence",
+    "type": "data_retrieval"
+  },
+  {
+    "id": "maria_rent_rewards",
+    "question": "Can I earn anything back on rent without paying dumb fees?",
+    "category": "credit_cards_rewards",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_rental_car_trip",
+    "question": "Was there a better way to book my recent rental car?",
+    "category": "employer_benefits_perks",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_rsu_tax_withholding",
+    "question": "After a $42,000 Microsoft RSU vest, what tax-withholding and trading-window checks should I make before deciding what to sell?",
+    "category": "investing_equity_comp",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_save_on_rent",
+    "question": "My rent is $2,350/month in Seattle. Are there Seattle-specific programs, lease tactics, or payment strategies I should check before renewing? Show the eligibility/data checks and estimated savings.",
+    "category": "housing_rent",
+    "type": "insight_discovery"
+  },
+  {
+    "id": "maria_side_income_tax",
+    "question": "I got some freelance income this month. What should I do so it does not bite me later?",
+    "category": "tax_strategy",
+    "type": "domain_advice"
+  },
+  {
+    "id": "maria_spend_april_vs_may",
+    "question": "How did my total spending change from April 2026 to May 2026?",
+    "category": "transaction_intelligence",
+    "type": "data_retrieval"
+  },
+  {
+    "id": "maria_spend_may_total",
+    "question": "How much did I spend in May 2026, and what were the biggest categories?",
+    "category": "transaction_intelligence",
+    "type": "data_retrieval"
+  },
+  {
+    "id": "maria_subscriptions_benefits",
+    "question": "Are any of my subscriptions or recurring charges worth changing?",
+    "category": "savings_expense_reduction",
+    "type": "insight_discovery"
+  },
+  {
+    "id": "maria_tax_optimization",
+    "question": "I have W-2 Microsoft income, 401(k) contributions, and a freelance payment this month. Which 2026 tax moves should I check, and what exact limits or caveats matter?",
+    "category": "tax_strategy",
+    "type": "insight_discovery"
+  },
+  {
+    "id": "maria_where_wasting_money",
+    "question": "Based on my transactions and balances, identify up to 3 easy savings I can verify this week. For each one, cite the exact transaction or account signal and estimate the monthly or annual impact.",
+    "category": "savings_expense_reduction",
+    "type": "insight_discovery"
+  },
+  {
+    "id": "patel_401k_contribution",
+    "question": "Are our current 401(k) contributions on pace, and what should we change if cashflow allows?",
+    "category": "retirement_tax_advantaged",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_401k_percent_to_limit",
+    "question": "What percent of pay would Priya and Daniel each need to contribute to hit the 2026 employee 401(k) limit?",
+    "category": "retirement_tax_advantaged",
+    "type": "what_if"
+  },
+  {
+    "id": "patel_529_tax_strategy",
+    "question": "Are we using the 529 well for our child, and what tax or flexibility caveats should we know?",
+    "category": "tax_strategy",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_backdoor_roth",
+    "question": "Should we consider backdoor Roth IRAs, or are there better tax-advantaged moves first?",
+    "category": "tax_strategy",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_checking_buffer",
+    "question": "What checking-account buffer should we keep before moving extra cash to savings or investments?",
+    "category": "cashflow_budgeting",
+    "type": "what_if"
+  },
+  {
+    "id": "patel_childcare_family_spend_may",
+    "question": "How much did we spend on childcare and kid-related expenses in May, and what should I double-check?",
+    "category": "transaction_intelligence",
+    "type": "data_retrieval"
+  },
+  {
+    "id": "patel_childcare_tax_credits",
+    "question": "How should we think about childcare tax breaks for our daycare spending?",
+    "category": "tax_strategy",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_college_savings_allocation",
+    "question": "Is our 529 contribution level reasonable compared with our other goals?",
+    "category": "investing_equity_comp",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_costco_target_optimization",
+    "question": "We spent at Costco and Target this month. Are there better card or membership moves for those merchants?",
+    "category": "credit_cards_rewards",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_credit_card_balance_check",
+    "question": "Do our credit-card balances look like a problem, and what should we verify before optimizing anything else?",
+    "category": "debt_credit_health",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_credit_card_strategy",
+    "question": "Given our current cards and May spending, which card should we use for groceries, dining, daycare, Costco, and utilities?",
+    "category": "credit_cards_rewards",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_daycare_rewards",
+    "question": "Is there a smart way to earn rewards on daycare without giving back the value in fees?",
+    "category": "credit_cards_rewards",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_dependent_care_fsa",
+    "question": "Should we use a dependent care FSA for daycare, and how much could it matter?",
+    "category": "employer_benefits_perks",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_employer_family_benefits",
+    "question": "Which employer benefits should we check first given our family spending this month?",
+    "category": "employer_benefits_perks",
+    "type": "insight_discovery"
+  },
+  {
+    "id": "patel_extra_15000",
+    "question": "If we freed up $15,000 this year, where should it go first?",
+    "category": "life_planning_major_decisions",
+    "type": "prioritization"
+  },
+  {
+    "id": "patel_hsa_family",
+    "question": "Should we prioritize HSA contributions this year, and what limit/enrollment caveats matter?",
+    "category": "retirement_tax_advantaged",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_idle_cash",
+    "question": "Do we have too much idle cash in checking, and what should we move?",
+    "category": "cashflow_budgeting",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_insurance_review",
+    "question": "What insurance gaps should we review first as homeowners with a young child?",
+    "category": "insurance_risk_protection",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_life_insurance_need",
+    "question": "Do we likely need more term life insurance, and how should we estimate the amount?",
+    "category": "insurance_risk_protection",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_mortgage_escrow_review",
+    "question": "Our mortgage payment is big. What should we check to reduce housing cost without making a risky move?",
+    "category": "housing_rent",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_next_card_bonus",
+    "question": "Which credit card should we open next? We want the best sign-up bonus that actually fits our family spending.",
+    "category": "credit_cards_rewards",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_property_insurance_review",
+    "question": "Should we review our homeowners and auto insurance, and what exactly should we compare?",
+    "category": "housing_rent",
+    "type": "domain_advice"
+  },
+  {
+    "id": "patel_recurring_charges_audit",
+    "question": "Which recurring charges or subscriptions should we review, and what is the monthly amount for each?",
+    "category": "transaction_intelligence",
+    "type": "data_retrieval"
+  },
+  {
+    "id": "patel_spend_may_total",
+    "question": "How much did we spend in May 2026, and what were the biggest categories?",
+    "category": "transaction_intelligence",
+    "type": "data_retrieval"
+  },
+  {
+    "id": "patel_subscriptions_benefits",
+    "question": "Are any of our subscriptions or recurring charges worth changing or routing through benefits?",
+    "category": "savings_expense_reduction",
+    "type": "insight_discovery"
+  },
+  {
+    "id": "patel_tax_optimization",
+    "question": "What 2026 tax moves should we check based on our family transactions and accounts?",
+    "category": "tax_strategy",
+    "type": "insight_discovery"
+  },
+  {
+    "id": "patel_taxable_investing_priority",
+    "question": "Should we invest more in taxable brokerage, or are there better next dollars first?",
+    "category": "investing_equity_comp",
+    "type": "prioritization"
+  },
+  {
+    "id": "patel_where_wasting_money",
+    "question": "Where are we most likely wasting money, based on our accounts and May transactions?",
+    "category": "savings_expense_reduction",
+    "type": "insight_discovery"
+  }
+]
